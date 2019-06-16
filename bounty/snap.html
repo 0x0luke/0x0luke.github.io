@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OWASP Amass Network Mapping</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        div#tooltip {
+            position: absolute;        
+            display: inline-block;
+            padding: 10px;
+            font-family: 'Open Sans' sans-serif;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #999;
+            border-radius: 2px;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="graphDiv"></div>
+    <div id="tooltip"></div>
+
+<script>
+/* global d3 */
+
+var graph = {
+    nodes: [
+    
+        {id: 0, num: 44, label: "domain: snapchat.com, Source: Forward DNS", color: "red" },
+    
+        {id: 1, num: 1, label: "domain: googlehosted.com, Source: Forward DNS", color: "red" },
+    
+        {id: 2, num: 2, label: "subdomain: developer.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 3, num: 30, label: "subdomain: ghs.googlehosted.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 4, num: 2, label: "subdomain: auth.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 5, num: 1, label: "domain: l.google.com, Source: Forward DNS", color: "red" },
+    
+        {id: 6, num: 2, label: "subdomain: app.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 7, num: 2, label: "subdomain: feelinsonice.l.google.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 8, num: 2, label: "subdomain: accounts.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 9, num: 1, label: "domain: googleapis.com, Source: Forward DNS", color: "red" },
+    
+        {id: 10, num: 2, label: "subdomain: blog.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 11, num: 2, label: "subdomain: c.storage.googleapis.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 12, num: 1, label: "domain: google.com, Source: Forward DNS", color: "red" },
+    
+        {id: 13, num: 2, label: "subdomain: calendar.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 14, num: 2, label: "subdomain: ghs.google.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 15, num: 2, label: "subdomain: docs.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 16, num: 1, label: "domain: sendgrid.net, Source: Forward DNS", color: "red" },
+    
+        {id: 17, num: 2, label: "subdomain: link.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 18, num: 5, label: "subdomain: map.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 19, num: 2, label: "address: 99.86.115.11", color: "orange" },
+    
+        {id: 20, num: 5, label: "netblock: 99.86.112.0/21", color: "pink" },
+    
+        {id: 21, num: 2, label: "as: 16509, Desc: AMAZON-02 - Amazon.com, Inc., US", color: "blue" },
+    
+        {id: 22, num: 2, label: "address: 99.86.115.3", color: "orange" },
+    
+        {id: 23, num: 2, label: "address: 99.86.115.124", color: "orange" },
+    
+        {id: 24, num: 2, label: "address: 99.86.115.50", color: "orange" },
+    
+        {id: 25, num: 2, label: "subdomain: ops.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 26, num: 5, label: "subdomain: maps.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 27, num: 2, label: "address: 52.85.140.96", color: "orange" },
+    
+        {id: 28, num: 5, label: "netblock: 52.85.140.0/23", color: "pink" },
+    
+        {id: 29, num: 2, label: "address: 52.85.140.9", color: "orange" },
+    
+        {id: 30, num: 2, label: "address: 52.85.140.33", color: "orange" },
+    
+        {id: 31, num: 2, label: "address: 52.85.140.56", color: "orange" },
+    
+        {id: 32, num: 2, label: "subdomain: partners.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 33, num: 2, label: "subdomain: profiles.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 34, num: 2, label: "subdomain: ads.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 35, num: 2, label: "subdomain: developers.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 36, num: 2, label: "subdomain: jaguar-prod.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 37, num: 2, label: "subdomain: geofilters-community-api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 38, num: 2, label: "subdomain: store.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 39, num: 2, label: "domain: us-east-1.elb.amazonaws.com, Source: Forward DNS", color: "red" },
+    
+        {id: 40, num: 2, label: "subdomain: content-insights-revenue.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 41, num: 2, label: "subdomain: unified-insights-external-lb-970772359.us-east-1.elb.amazonaws.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 42, num: 2, label: "subdomain: advertising.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 43, num: 2, label: "subdomain: publish.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 44, num: 1, label: "domain: appspot.com, Source: Forward DNS", color: "red" },
+    
+        {id: 45, num: 2, label: "subdomain: api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 46, num: 2, label: "subdomain: feelinsonice-hrd.appspot.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 47, num: 2, label: "subdomain: scan.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 48, num: 2, label: "subdomain: studio-crash.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 49, num: 2, label: "subdomain: connect-api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 50, num: 2, label: "subdomain: search.snapchat.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 51, num: 2, label: "subdomain: lensstudio.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 52, num: 1, label: "domain: cloudfront.net, Source: Forward DNS", color: "red" },
+    
+        {id: 53, num: 2, label: "subdomain: intg.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 54, num: 2, label: "subdomain: d889emgu1evay.cloudfront.net, Source: ThreatCrowd", color: "green" },
+    
+        {id: 55, num: 2, label: "subdomain: businesshelp.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 56, num: 2, label: "subdomain: rsp.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 57, num: 2, label: "subdomain: ad-center.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 58, num: 2, label: "subdomain: rtam-collector.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 59, num: 5, label: "subdomain: partnerhub-api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 60, num: 4, label: "address: 216.239.32.21", color: "orange" },
+    
+        {id: 61, num: 2, label: "netblock: 216.239.32.0/24", color: "pink" },
+    
+        {id: 62, num: 5, label: "as: 15169, Desc: GOOGLE - Google LLC, US", color: "blue" },
+    
+        {id: 63, num: 4, label: "address: 216.239.34.21", color: "orange" },
+    
+        {id: 64, num: 2, label: "netblock: 216.239.34.0/24", color: "pink" },
+    
+        {id: 65, num: 4, label: "address: 216.239.36.21", color: "orange" },
+    
+        {id: 66, num: 2, label: "netblock: 216.239.36.0/24", color: "pink" },
+    
+        {id: 67, num: 4, label: "address: 216.239.38.21", color: "orange" },
+    
+        {id: 68, num: 2, label: "netblock: 216.239.38.0/24", color: "pink" },
+    
+        {id: 69, num: 2, label: "subdomain: snap.publish.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 70, num: 2, label: "subdomain: s.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 71, num: 2, label: "subdomain: pro-stories.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 72, num: 3, label: "subdomain: impala-external-lb-1441126057.us-east-1.elb.amazonaws.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 73, num: 2, label: "subdomain: ds.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 74, num: 9, label: "subdomain: places-manager-api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 75, num: 3, label: "address: 2001:4860:4802:36::15", color: "orange" },
+    
+        {id: 76, num: 5, label: "netblock: 2001:4860::/32", color: "pink" },
+    
+        {id: 77, num: 3, label: "address: 2001:4860:4802:34::15", color: "orange" },
+    
+        {id: 78, num: 3, label: "address: 2001:4860:4802:38::15", color: "orange" },
+    
+        {id: 79, num: 3, label: "address: 2001:4860:4802:32::15", color: "orange" },
+    
+        {id: 80, num: 2, label: "subdomain: snaporiginals.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 81, num: 2, label: "subdomain: whatis.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 82, num: 2, label: "subdomain: pro-insights.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 83, num: 3, label: "subdomain: omnicollector.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 84, num: 2, label: "address: 52.71.3.121", color: "orange" },
+    
+        {id: 85, num: 2, label: "netblock: 52.70.0.0/15", color: "pink" },
+    
+        {id: 86, num: 2, label: "as: 14618, Desc: AMAZON-AES - Amazon.com", color: "blue" },
+    
+        {id: 87, num: 2, label: "address: 34.232.248.131", color: "orange" },
+    
+        {id: 88, num: 2, label: "netblock: 34.224.0.0/12", color: "pink" },
+    
+        {id: 89, num: 2, label: "subdomain: geofilters.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 90, num: 9, label: "subdomain: am-api.snapchat.com, Source: ThreatCrowd", color: "green" },
+    
+    ],
+    edges: [
+    
+        {source: 0, target: 2, label: "root_of" },
+    
+        {source: 0, target: 4, label: "root_of" },
+    
+        {source: 0, target: 6, label: "root_of" },
+    
+        {source: 0, target: 8, label: "root_of" },
+    
+        {source: 0, target: 10, label: "root_of" },
+    
+        {source: 0, target: 13, label: "root_of" },
+    
+        {source: 0, target: 15, label: "root_of" },
+    
+        {source: 0, target: 17, label: "root_of" },
+    
+        {source: 0, target: 18, label: "root_of" },
+    
+        {source: 0, target: 25, label: "root_of" },
+    
+        {source: 0, target: 26, label: "root_of" },
+    
+        {source: 0, target: 32, label: "root_of" },
+    
+        {source: 0, target: 33, label: "root_of" },
+    
+        {source: 0, target: 34, label: "root_of" },
+    
+        {source: 0, target: 35, label: "root_of" },
+    
+        {source: 0, target: 36, label: "root_of" },
+    
+        {source: 0, target: 37, label: "root_of" },
+    
+        {source: 0, target: 38, label: "root_of" },
+    
+        {source: 0, target: 40, label: "root_of" },
+    
+        {source: 0, target: 42, label: "root_of" },
+    
+        {source: 0, target: 43, label: "root_of" },
+    
+        {source: 0, target: 45, label: "root_of" },
+    
+        {source: 0, target: 47, label: "root_of" },
+    
+        {source: 0, target: 48, label: "root_of" },
+    
+        {source: 0, target: 49, label: "root_of" },
+    
+        {source: 0, target: 50, label: "root_of" },
+    
+        {source: 0, target: 51, label: "root_of" },
+    
+        {source: 0, target: 53, label: "root_of" },
+    
+        {source: 0, target: 55, label: "root_of" },
+    
+        {source: 0, target: 56, label: "root_of" },
+    
+        {source: 0, target: 57, label: "root_of" },
+    
+        {source: 0, target: 58, label: "root_of" },
+    
+        {source: 0, target: 59, label: "root_of" },
+    
+        {source: 0, target: 69, label: "root_of" },
+    
+        {source: 0, target: 70, label: "root_of" },
+    
+        {source: 0, target: 71, label: "root_of" },
+    
+        {source: 0, target: 73, label: "root_of" },
+    
+        {source: 0, target: 74, label: "root_of" },
+    
+        {source: 0, target: 80, label: "root_of" },
+    
+        {source: 0, target: 81, label: "root_of" },
+    
+        {source: 0, target: 82, label: "root_of" },
+    
+        {source: 0, target: 83, label: "root_of" },
+    
+        {source: 0, target: 89, label: "root_of" },
+    
+        {source: 0, target: 90, label: "root_of" },
+    
+        {source: 1, target: 3, label: "root_of" },
+    
+        {source: 2, target: 3, label: "cname_to" },
+    
+        {source: 4, target: 3, label: "cname_to" },
+    
+        {source: 5, target: 7, label: "root_of" },
+    
+        {source: 6, target: 7, label: "cname_to" },
+    
+        {source: 8, target: 3, label: "cname_to" },
+    
+        {source: 9, target: 11, label: "root_of" },
+    
+        {source: 10, target: 11, label: "cname_to" },
+    
+        {source: 12, target: 14, label: "root_of" },
+    
+        {source: 13, target: 14, label: "cname_to" },
+    
+        {source: 15, target: 3, label: "cname_to" },
+    
+        {source: 17, target: 16, label: "cname_to" },
+    
+        {source: 18, target: 19, label: "a_to" },
+    
+        {source: 18, target: 22, label: "a_to" },
+    
+        {source: 18, target: 23, label: "a_to" },
+    
+        {source: 18, target: 24, label: "a_to" },
+    
+        {source: 20, target: 19, label: "contains" },
+    
+        {source: 20, target: 22, label: "contains" },
+    
+        {source: 20, target: 23, label: "contains" },
+    
+        {source: 20, target: 24, label: "contains" },
+    
+        {source: 21, target: 20, label: "has_prefix" },
+    
+        {source: 21, target: 28, label: "has_prefix" },
+    
+        {source: 25, target: 3, label: "cname_to" },
+    
+        {source: 26, target: 27, label: "a_to" },
+    
+        {source: 26, target: 29, label: "a_to" },
+    
+        {source: 26, target: 30, label: "a_to" },
+    
+        {source: 26, target: 31, label: "a_to" },
+    
+        {source: 28, target: 27, label: "contains" },
+    
+        {source: 28, target: 29, label: "contains" },
+    
+        {source: 28, target: 30, label: "contains" },
+    
+        {source: 28, target: 31, label: "contains" },
+    
+        {source: 32, target: 3, label: "cname_to" },
+    
+        {source: 33, target: 3, label: "cname_to" },
+    
+        {source: 34, target: 3, label: "cname_to" },
+    
+        {source: 35, target: 3, label: "cname_to" },
+    
+        {source: 36, target: 3, label: "cname_to" },
+    
+        {source: 37, target: 3, label: "cname_to" },
+    
+        {source: 38, target: 3, label: "cname_to" },
+    
+        {source: 39, target: 41, label: "root_of" },
+    
+        {source: 39, target: 72, label: "root_of" },
+    
+        {source: 40, target: 41, label: "cname_to" },
+    
+        {source: 42, target: 3, label: "cname_to" },
+    
+        {source: 43, target: 3, label: "cname_to" },
+    
+        {source: 44, target: 46, label: "root_of" },
+    
+        {source: 45, target: 46, label: "cname_to" },
+    
+        {source: 47, target: 3, label: "cname_to" },
+    
+        {source: 48, target: 3, label: "cname_to" },
+    
+        {source: 49, target: 3, label: "cname_to" },
+    
+        {source: 50, target: 3, label: "cname_to" },
+    
+        {source: 51, target: 3, label: "cname_to" },
+    
+        {source: 52, target: 54, label: "root_of" },
+    
+        {source: 53, target: 54, label: "cname_to" },
+    
+        {source: 55, target: 3, label: "cname_to" },
+    
+        {source: 56, target: 3, label: "cname_to" },
+    
+        {source: 57, target: 3, label: "cname_to" },
+    
+        {source: 58, target: 3, label: "cname_to" },
+    
+        {source: 59, target: 60, label: "a_to" },
+    
+        {source: 59, target: 63, label: "a_to" },
+    
+        {source: 59, target: 65, label: "a_to" },
+    
+        {source: 59, target: 67, label: "a_to" },
+    
+        {source: 61, target: 60, label: "contains" },
+    
+        {source: 62, target: 61, label: "has_prefix" },
+    
+        {source: 62, target: 64, label: "has_prefix" },
+    
+        {source: 62, target: 66, label: "has_prefix" },
+    
+        {source: 62, target: 68, label: "has_prefix" },
+    
+        {source: 62, target: 76, label: "has_prefix" },
+    
+        {source: 64, target: 63, label: "contains" },
+    
+        {source: 66, target: 65, label: "contains" },
+    
+        {source: 68, target: 67, label: "contains" },
+    
+        {source: 69, target: 3, label: "cname_to" },
+    
+        {source: 70, target: 3, label: "cname_to" },
+    
+        {source: 71, target: 72, label: "cname_to" },
+    
+        {source: 73, target: 3, label: "cname_to" },
+    
+        {source: 74, target: 60, label: "a_to" },
+    
+        {source: 74, target: 65, label: "a_to" },
+    
+        {source: 74, target: 63, label: "a_to" },
+    
+        {source: 74, target: 67, label: "a_to" },
+    
+        {source: 74, target: 75, label: "aaaa_to" },
+    
+        {source: 74, target: 77, label: "aaaa_to" },
+    
+        {source: 74, target: 78, label: "aaaa_to" },
+    
+        {source: 74, target: 79, label: "aaaa_to" },
+    
+        {source: 76, target: 75, label: "contains" },
+    
+        {source: 76, target: 77, label: "contains" },
+    
+        {source: 76, target: 78, label: "contains" },
+    
+        {source: 76, target: 79, label: "contains" },
+    
+        {source: 80, target: 3, label: "cname_to" },
+    
+        {source: 81, target: 3, label: "cname_to" },
+    
+        {source: 82, target: 72, label: "cname_to" },
+    
+        {source: 83, target: 84, label: "a_to" },
+    
+        {source: 83, target: 87, label: "a_to" },
+    
+        {source: 85, target: 84, label: "contains" },
+    
+        {source: 86, target: 85, label: "has_prefix" },
+    
+        {source: 86, target: 88, label: "has_prefix" },
+    
+        {source: 88, target: 87, label: "contains" },
+    
+        {source: 89, target: 3, label: "cname_to" },
+    
+        {source: 90, target: 60, label: "a_to" },
+    
+        {source: 90, target: 63, label: "a_to" },
+    
+        {source: 90, target: 65, label: "a_to" },
+    
+        {source: 90, target: 67, label: "a_to" },
+    
+        {source: 90, target: 75, label: "aaaa_to" },
+    
+        {source: 90, target: 79, label: "aaaa_to" },
+    
+        {source: 90, target: 77, label: "aaaa_to" },
+    
+        {source: 90, target: 78, label: "aaaa_to" },
+    
+    ]
+};
+
+var graphWidth = window.innerWidth,
+    graphHeight = window.innerHeight;
+
+var graphCanvas = d3.select('#graphDiv')
+    .append('canvas')
+    .classed('mainCanvas', true)
+    .attr('width', graphWidth + 'px')
+    .attr('height', graphHeight + 'px')
+    .node();
+
+var ctx = graphCanvas.getContext('2d');
+
+var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+var r = 5,
+    max = 44,
+    simulation = d3.forceSimulation()
+        .nodes(graph.nodes)
+        .force("link", d3.forceLink()
+            .links(graph.edges)
+            .distance(nodeLinkDistance)
+            .strength(nodeLinkStrength)
+            .id(function(d) { return d.id; }))
+        .force("charge", d3.forceManyBody()
+            .strength(nodeChargeStrength)
+            .distanceMax(graphWidth *2))
+        .force("collide", d3.forceCollide()
+            .radius(nodeCollideRadius))
+        .force("center", d3.forceCenter(graphWidth / 2, graphHeight / 2))
+        .on("tick", update),
+    transform = d3.zoomIdentity;
+
+d3.select(graphCanvas)
+    .call(d3.drag()
+        .container(graphCanvas)
+        .subject(dragsubject)
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended))
+    .call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed));
+
+function nodePercent(n) {
+    return n.num / max;
+}
+
+function nodeRadius(n) {
+    return (1.5 * r) + ((3 * r) * nodePercent(n));
+}
+
+function nodeCollideRadius(n) {
+    return nodeRadius(n) + 1;
+}
+
+function nodeLinkDistance(e) {
+    var n1 = graph.nodes[e.source.id],
+        n2 = graph.nodes[e.target.id];
+
+    var avg = (nodePercent(n1) + nodePercent(n2)) / 2;
+    
+    return 60 * avg;
+}
+
+function nodeLinkStrength(e) {
+    var n1 = graph.nodes[e.source.id],
+        n2 = graph.nodes[e.target.id];
+
+    var avg = (nodePercent(n1) + nodePercent(n2)) / 2;
+
+    return 1 - (1 * avg);
+}
+
+function nodeChargeStrength(n) {
+    return -100 + (-300 * nodePercent(n));
+}
+
+function zoomed() {
+    transform = d3.event.transform;
+    update()
+}
+
+function update() {
+    ctx.save();
+    ctx.clearRect(0, 0, graphWidth, graphHeight);
+    ctx.translate(transform.x, transform.y);
+    ctx.scale(transform.k, transform.k);
+
+    graph.edges.forEach(drawEdge);
+    graph.nodes.forEach(drawNode);
+
+    if (closeNode) {
+        d3.select('#tooltip')
+            .style('opacity', 0.8)
+            .style('top', transform.applyY(closeNode.y) + 5 + 'px')
+            .style('left', transform.applyX(closeNode.x) + 5 + 'px')
+            .html(closeNode.label);
+    }  else {
+        d3.select('#tooltip')
+            .style('opacity', 0);
+    }
+
+    ctx.restore();
+}
+
+function drawNode(d) {
+    var size = nodeRadius(d);
+
+    ctx.beginPath();
+    ctx.fillStyle = d.color;
+    ctx.moveTo(d.x, d.y);
+    ctx.arc(d.x, d.y, size, 0, 2 * Math.PI);
+    ctx.strokeStyle = "#333333";
+    ctx.stroke();
+    ctx.fill();
+}
+
+function drawEdge(e) {
+    var dx = e.target.x - e.source.x,
+        dy = e.target.y - e.source.y,
+        align = 'center';
+
+    ctx.beginPath()
+    ctx.moveTo(e.source.x, e.source.y);
+    ctx.lineTo(e.target.x, e.target.y);
+    ctx.strokeStyle = "#aaa";
+    ctx.stroke();
+
+    var pad = 1/2;
+
+    ctx.save();
+    ctx.textAlign = align
+    ctx.translate(e.source.x + dx * pad, e.source.y + dy * pad);
+
+    if (dx < 0) {
+        ctx.rotate(Math.atan2(dy, dx) - Math.PI);
+    } else {
+        ctx.rotate(Math.atan2(dy, dx));
+    }
+
+    ctx.fillStyle = "#aaa";
+    ctx.fillText(e.label, 0, 0);
+    ctx.restore();
+}
+
+var closeNode;
+d3.select("canvas").on("mousemove", function(d) {
+    var p = d3.mouse(this);
+
+    closeNode = findNode(p[0], p[1]);
+    update();
+})
+
+function findNode(x, y) {
+    var i,
+        newx = transform.invertX(x),
+        newy = transform.invertY(y),
+        dx,
+        dy,
+        radius;
+
+    for (i = graph.nodes.length - 1; i >= 0; --i) {
+        node = graph.nodes[i];
+        dx = newx - node.x;
+        dy = newy - node.y;
+        radius = nodeRadius(node);
+
+        if (dx * dx + dy * dy < radius * radius) {
+            return node;
+        }
+    }
+}
+
+function dragsubject() {
+    var node = findNode(d3.event.x, d3.event.y);
+
+    node.x = transform.applyX(node.x);
+    node.y = transform.applyY(node.y);
+    return node
+}
+
+function dragstarted() {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d3.event.subject.fx = transform.invertX(d3.event.subject.x);
+    d3.event.subject.fy = transform.invertY(d3.event.subject.y);
+}
+
+function dragged() {
+    d3.event.subject.fx = transform.invertX(d3.event.x);
+    d3.event.subject.fy = transform.invertY(d3.event.y);
+}
+
+function dragended() {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d3.event.subject.fx = null;
+    d3.event.subject.fy = null;
+}
+
+update();
+
+</script>
+</body>
+</html>
+e(e) {
+    var dx = e.target.x - e.source.x,
+        dy = e.target.y - e.source.y,
+        align = 'center';
+
+    ctx.beginPath()
+    ctx.moveTo(e.source.x, e.source.y);
+    ctx.lineTo(e.target.x, e.target.y);
+    ctx.strokeStyle = "#aaa";
+    ctx.stroke();
+
+    var pad = 1/2;
+
+    ctx.save();
+    ctx.textAlign = align
+    ctx.translate(e.source.x + dx * pad, e.source.y + dy * pad);
+
+    if (dx < 0) {
+        ctx.rotate(Math.atan2(dy, dx) - Math.PI);
+    } else {
+        ctx.rotate(Math.atan2(dy, dx));
+    }
+
+    ctx.fillStyle = "#aaa";
+    ctx.fillText(e.label, 0, 0);
+    ctx.restore();
+}
+
+var closeNode;
+d3.select("canvas").on("mousemove", function(d) {
+    var p = d3.mouse(this);
+
+    closeNode = findNode(p[0], p[1]);
+    update();
+})
+
+function findNode(x, y) {
+    var i,
+        newx = transform.invertX(x),
+        newy = transform.invertY(y),
+        dx,
+        dy,
+        radius;
+
+    for (i = graph.nodes.length - 1; i >= 0; --i) {
+        node = graph.nodes[i];
+        dx = newx - node.x;
+        dy = newy - node.y;
+        radius = nodeRadius(node);
+
+        if (dx * dx + dy * dy < radius * radius) {
+            return node;
+        }
+    }
+}
+
+function dragsubject() {
+    var node = findNode(d3.event.x, d3.event.y);
+
+    node.x = transform.applyX(node.x);
+    node.y = transform.applyY(node.y);
+    return node
+}
+
+function dragstarted() {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d3.event.subject.fx = transform.invertX(d3.event.subject.x);
+    d3.event.subject.fy = transform.invertY(d3.event.subject.y);
+}
+
+function dragged() {
+    d3.event.subject.fx = transform.invertX(d3.event.x);
+    d3.event.subject.fy = transform.invertY(d3.event.y);
+}
+
+function dragended() {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d3.event.subject.fx = null;
+    d3.event.subject.fy = null;
+}
+
+update();
+
+</script>
+</body>
+</html>
