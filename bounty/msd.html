@@ -1,0 +1,1924 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OWASP Amass Network Mapping</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        div#tooltip {
+            position: absolute;        
+            display: inline-block;
+            padding: 10px;
+            font-family: 'Open Sans' sans-serif;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #999;
+            border-radius: 2px;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="graphDiv"></div>
+    <div id="tooltip"></div>
+
+<script>
+/* global d3 */
+
+var graph = {
+    nodes: [
+    
+        {id: 0, num: 134, label: "domain: msd.com, Source: Forward DNS", color: "red" },
+    
+        {id: 1, num: 2, label: "domain: jobs2web.com, Source: Forward DNS", color: "red" },
+    
+        {id: 2, num: 2, label: "subdomain: jobs.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 3, num: 3, label: "subdomain: merck.jobs2web.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 4, num: 8, label: "domain: edgekey.net, Source: Forward DNS", color: "red" },
+    
+        {id: 5, num: 2, label: "subdomain: login.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 6, num: 4, label: "subdomain: login-ut.msd.com.edgekey.net, Source: Brute Forcing", color: "green" },
+    
+        {id: 7, num: 2, label: "subdomain: images.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 8, num: 2, label: "address: 35.241.59.232", color: "orange" },
+    
+        {id: 9, num: 2, label: "netblock: 35.240.0.0/14", color: "pink" },
+    
+        {id: 10, num: 5, label: "as: 15169, Desc: GOOGLE - Google LLC, US", color: "blue" },
+    
+        {id: 11, num: 2, label: "subdomain: login-ut.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 12, num: 2, label: "domain: edgesuite.net, Source: Forward DNS", color: "red" },
+    
+        {id: 13, num: 2, label: "subdomain: www.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 14, num: 3, label: "subdomain: kona-waa.merck.edgesuite.net, Source: Crtsh", color: "green" },
+    
+        {id: 15, num: 1, label: "domain: us-east-1.elb.amazonaws.com, Source: Forward DNS", color: "red" },
+    
+        {id: 16, num: 2, label: "subdomain: workfront.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 17, num: 4, label: "subdomain: workfront-1440857683.us-east-1.elb.amazonaws.com, Source: Crtsh", color: "green" },
+    
+        {id: 18, num: 7, label: "subdomain: la.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 19, num: 7, label: "address: 35.234.140.243", color: "orange" },
+    
+        {id: 20, num: 2, label: "netblock: 35.232.0.0/14", color: "pink" },
+    
+        {id: 21, num: 2, label: "subdomain: autodiscover.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 22, num: 1, label: "address: 54.62.192.7", color: "orange" },
+    
+        {id: 23, num: 2, label: "domain: customer.level3.net, Source: Forward DNS", color: "red" },
+    
+        {id: 24, num: 3, label: "ns: ns9.customer.level3.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 25, num: 2, label: "domain: ns.els-gms.att.net, Source: Forward DNS", color: "red" },
+    
+        {id: 26, num: 4, label: "ns: cbru.br.ns.els-gms.att.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 27, num: 3, label: "ns: ns6.customer.level3.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 28, num: 4, label: "ns: cmtu.mt.ns.els-gms.att.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 29, num: 10, label: "domain: merck.com, Source: Forward DNS", color: "red" },
+    
+        {id: 30, num: 3, label: "mx: hubie.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 31, num: 3, label: "mx: molly.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 32, num: 3, label: "mx: martian.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 33, num: 3, label: "mx: taz.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 34, num: 3, label: "mx: bugs.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 35, num: 3, label: "mx: pluto.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 36, num: 3, label: "mx: barvie.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 37, num: 3, label: "mx: marvin.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 38, num: 3, label: "mx: wily.merck.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 39, num: 4, label: "address: 80.250.97.65", color: "orange" },
+    
+        {id: 40, num: 11, label: "netblock: 80.250.96.0/20", color: "pink" },
+    
+        {id: 41, num: 3, label: "as: 25061, Desc: ANLX-UK, GB", color: "blue" },
+    
+        {id: 42, num: 2, label: "subdomain: profesionales.msd.com.co, Source: CertSpotter", color: "green" },
+    
+        {id: 43, num: 6, label: "subdomain: san.mercktrials.com.edgekey.net, Source: CertSpotter", color: "green" },
+    
+        {id: 44, num: 3, label: "subdomain: registration.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 45, num: 2, label: "address: 35.189.247.128", color: "orange" },
+    
+        {id: 46, num: 2, label: "netblock: 35.189.224.0/19", color: "pink" },
+    
+        {id: 47, num: 2, label: "subdomain: profesionales.msd.com.pe, Source: CertSpotter", color: "green" },
+    
+        {id: 48, num: 4, label: "subdomain: san1.kona.merck.edgekey.net, Source: CertSpotter", color: "green" },
+    
+        {id: 49, num: 2, label: "subdomain: merckpartner-ut.msd.com, Source: BufferOver", color: "green" },
+    
+        {id: 50, num: 3, label: "subdomain: merckpartner-ut.msd.com.edgekey.net, Source: BufferOver", color: "green" },
+    
+        {id: 51, num: 2, label: "subdomain: corporativo.msd.com.pe, Source: CertSpotter", color: "green" },
+    
+        {id: 52, num: 2, label: "subdomain: profesionales.msd.com.ar, Source: CertSpotter", color: "green" },
+    
+        {id: 53, num: 2, label: "subdomain: clinicaldevelopmentsuppliers.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 54, num: 2, label: "address: 52.26.119.242", color: "orange" },
+    
+        {id: 55, num: 2, label: "netblock: 52.24.0.0/14", color: "pink" },
+    
+        {id: 56, num: 2, label: "as: 16509, Desc: AMAZON-02 - Amazon.com, Inc., US", color: "blue" },
+    
+        {id: 57, num: 2, label: "subdomain: disclosure.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 58, num: 3, label: "address: 62.209.169.126", color: "orange" },
+    
+        {id: 59, num: 2, label: "netblock: 62.209.160.0/19", color: "pink" },
+    
+        {id: 60, num: 1, label: "as: 12552, Desc: IPO-EU, SE", color: "blue" },
+    
+        {id: 61, num: 2, label: "subdomain: pacientes.msd.com.pe, Source: CertSpotter", color: "green" },
+    
+        {id: 62, num: 3, label: "subdomain: pacientes.msd.com.pe.edgekey.net, Source: CertSpotter", color: "green" },
+    
+        {id: 63, num: 2, label: "subdomain: identity.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 64, num: 2, label: "address: 155.91.16.113", color: "orange" },
+    
+        {id: 65, num: 8, label: "netblock: 155.91.16.0/24", color: "pink" },
+    
+        {id: 66, num: 3, label: "as: 7054, Desc: MERCK - Merck and Co., Inc., US", color: "blue" },
+    
+        {id: 67, num: 2, label: "subdomain: consumidores.msd.com.mx, Source: CertSpotter", color: "green" },
+    
+        {id: 68, num: 2, label: "subdomain: taleo.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 69, num: 2, label: "address: 68.233.76.211", color: "orange" },
+    
+        {id: 70, num: 2, label: "netblock: 68.233.72.0/21", color: "pink" },
+    
+        {id: 71, num: 1, label: "as: 7160, Desc: NETDYNAMICS - Oracle Corporation, US", color: "blue" },
+    
+        {id: 72, num: 2, label: "subdomain: profesionales.msd.com.ve, Source: CertSpotter", color: "green" },
+    
+        {id: 73, num: 3, label: "subdomain: profesionales.msd.com.ve.edgekey.net, Source: CertSpotter", color: "green" },
+    
+        {id: 74, num: 8, label: "subdomain: ap.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 75, num: 2, label: "subdomain: profesionales.msd.com.ec, Source: CertSpotter", color: "green" },
+    
+        {id: 76, num: 3, label: "subdomain: profesionales.msd.com.mx, Source: CertSpotter", color: "green" },
+    
+        {id: 77, num: 2, label: "address: 34.232.223.19", color: "orange" },
+    
+        {id: 78, num: 3, label: "netblock: 34.224.0.0/12", color: "pink" },
+    
+        {id: 79, num: 7, label: "as: 14618, Desc: AMAZON-AES - Amazon.com, Inc., US", color: "blue" },
+    
+        {id: 80, num: 2, label: "address: 54.174.137.131", color: "orange" },
+    
+        {id: 81, num: 2, label: "netblock: 54.174.0.0/15", color: "pink" },
+    
+        {id: 82, num: 2, label: "subdomain: secure.emeac.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 83, num: 2, label: "subdomain: webcast-editor-tool3.msd.com, Source: BufferOver", color: "green" },
+    
+        {id: 84, num: 12, label: "address: 78.136.2.122", color: "orange" },
+    
+        {id: 85, num: 3, label: "netblock: 78.136.0.0/18", color: "pink" },
+    
+        {id: 86, num: 1, label: "as: 15395, Desc: RACKSPACE-LON, GB", color: "blue" },
+    
+        {id: 87, num: 2, label: "subdomain: digitalexecution.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 88, num: 2, label: "address: 107.23.170.65", color: "orange" },
+    
+        {id: 89, num: 2, label: "netblock: 107.23.128.0/17", color: "pink" },
+    
+        {id: 90, num: 2, label: "subdomain: msd-athero-webcast-clinical-outcome-trials.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 91, num: 3, label: "domain: s3-website-eu-west-1.amazonaws.com, Source: Forward DNS", color: "red" },
+    
+        {id: 92, num: 2, label: "subdomain: public-disclosure.msd.com, Source: BufferOver", color: "green" },
+    
+        {id: 93, num: 3, label: "subdomain: public-disclosure.msd.com.s3-website-eu-west-1.amazonaws.com, Source: BufferOver", color: "green" },
+    
+        {id: 94, num: 3, label: "subdomain: dmc.msd.com, Source: FindSubdomains", color: "green" },
+    
+        {id: 95, num: 3, label: "address: 136.147.129.27", color: "orange" },
+    
+        {id: 96, num: 3, label: "netblock: 136.147.129.0/24", color: "pink" },
+    
+        {id: 97, num: 4, label: "as: 22606, Desc: EXACT-7 - ExactTarget, Inc., US", color: "blue" },
+    
+        {id: 98, num: 3, label: "subdomain: emeac.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 99, num: 2, label: "subdomain: cryopreservationinartdec22015.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 100, num: 2, label: "subdomain: identity-ut.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 101, num: 2, label: "address: 155.91.16.17", color: "orange" },
+    
+        {id: 102, num: 2, label: "subdomain: hss.msd.com, Source: BufferOver", color: "green" },
+    
+        {id: 103, num: 2, label: "address: 155.91.16.147", color: "orange" },
+    
+        {id: 104, num: 2, label: "subdomain: secure.la.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 105, num: 2, label: "subdomain: diabetessymposiaaugust30.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 106, num: 2, label: "subdomain: msd-eas-webcast.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 107, num: 3, label: "address: 155.91.16.175", color: "orange" },
+    
+        {id: 108, num: 2, label: "subdomain: fertilitycosendometriumwebcasteu-eemea1.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 109, num: 3, label: "subdomain: uat-mcm.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 110, num: 2, label: "address: 35.205.223.190", color: "orange" },
+    
+        {id: 111, num: 2, label: "netblock: 35.204.0.0/15", color: "pink" },
+    
+        {id: 112, num: 2, label: "subdomain: webcast-editor-tool2.msd.com, Source: ThreatCrowd", color: "green" },
+    
+        {id: 113, num: 7, label: "address: 78.136.60.134", color: "orange" },
+    
+        {id: 114, num: 3, label: "address: 155.91.16.177", color: "orange" },
+    
+        {id: 115, num: 2, label: "subdomain: www.disclosure.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 116, num: 2, label: "subdomain: virtualeventcatalog.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 117, num: 3, label: "subdomain: www.corporativo.msd.com.pe, Source: CertSpotter", color: "green" },
+    
+        {id: 118, num: 3, label: "address: 52.54.143.111", color: "orange" },
+    
+        {id: 119, num: 2, label: "netblock: 52.54.0.0/15", color: "pink" },
+    
+        {id: 120, num: 3, label: "address: 34.238.132.5", color: "orange" },
+    
+        {id: 121, num: 6, label: "domain: anlx.net, Source: Forward DNS", color: "red" },
+    
+        {id: 122, num: 9, label: "ns: ns5.anlx.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 123, num: 8, label: "ns: ns4.anlx.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 124, num: 9, label: "ns: ns2.anlx.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 125, num: 9, label: "ns: ns1.anlx.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 126, num: 8, label: "ns: ns3.anlx.net, Source: Forward DNS", color: "cyan" },
+    
+        {id: 127, num: 9, label: "mx: email.msd.com, Source: Brute Forcing", color: "purple" },
+    
+        {id: 128, num: 2, label: "subdomain: mail.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 129, num: 2, label: "address: 155.91.16.155", color: "orange" },
+    
+        {id: 130, num: 2, label: "subdomain: webcast-editor-tool.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 131, num: 4, label: "mx: 65.emeac.email.msd.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 132, num: 3, label: "subdomain: mta.dmc.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 133, num: 2, label: "address: 13.111.96.168", color: "orange" },
+    
+        {id: 134, num: 2, label: "netblock: 13.111.96.0/24", color: "pink" },
+    
+        {id: 135, num: 3, label: "subdomain: mta.ma-dev.msd.com, Source: BufferOver", color: "green" },
+    
+        {id: 136, num: 2, label: "address: 13.111.13.145", color: "orange" },
+    
+        {id: 137, num: 3, label: "netblock: 13.111.13.0/24", color: "pink" },
+    
+        {id: 138, num: 2, label: "subdomain: admin.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 139, num: 2, label: "address: 81.91.104.52", color: "orange" },
+    
+        {id: 140, num: 17, label: "netblock: 81.91.96.0/20", color: "pink" },
+    
+        {id: 141, num: 2, label: "subdomain: cvriskinra-webcast.msd.com, Source: SiteDossier", color: "green" },
+    
+        {id: 142, num: 3, label: "domain: s7.exacttarget.com, Source: Forward DNS", color: "red" },
+    
+        {id: 143, num: 3, label: "subdomain: ma-dev.msd.com, Source: Forward DNS", color: "green" },
+    
+        {id: 144, num: 4, label: "mx: inbound-reply.s7.exacttarget.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 145, num: 3, label: "mx: reply-mx.s7.exacttarget.com, Source: Forward DNS", color: "purple" },
+    
+        {id: 146, num: 2, label: "subdomain: la-trk.email.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 147, num: 2, label: "address: 81.91.104.164", color: "orange" },
+    
+        {id: 148, num: 2, label: "subdomain: eu-trk.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 149, num: 2, label: "address: 81.91.104.133", color: "orange" },
+    
+        {id: 150, num: 8, label: "subdomain: ap-uat.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 151, num: 3, label: "address: 80.250.97.66", color: "orange" },
+    
+        {id: 152, num: 2, label: "subdomain: maileater.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 153, num: 2, label: "address: 80.250.97.39", color: "orange" },
+    
+        {id: 154, num: 3, label: "subdomain: msd-v2-webinterface-dev.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 155, num: 2, label: "address: 81.91.104.163", color: "orange" },
+    
+        {id: 156, num: 2, label: "subdomain: secure.ap.email.msd.com, Source: Crtsh", color: "green" },
+    
+        {id: 157, num: 2, label: "subdomain: ap-trk.email.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 158, num: 4, label: "address: 81.91.104.166", color: "orange" },
+    
+        {id: 159, num: 2, label: "subdomain: engagezone.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 160, num: 2, label: "address: 173.245.97.8", color: "orange" },
+    
+        {id: 161, num: 2, label: "netblock: 173.245.96.0/20", color: "pink" },
+    
+        {id: 162, num: 1, label: "as: 29748, Desc: CARPATHIA-HOSTING - Carpathia Hosting, LLC, US", color: "blue" },
+    
+        {id: 163, num: 2, label: "subdomain: apac.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 164, num: 2, label: "address: 80.250.97.33", color: "orange" },
+    
+        {id: 165, num: 3, label: "subdomain: 15.ap.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 166, num: 2, label: "address: 81.91.104.15", color: "orange" },
+    
+        {id: 167, num: 2, label: "subdomain: dehcc.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 168, num: 9, label: "subdomain: eucan.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 169, num: 3, label: "address: 81.91.104.176", color: "orange" },
+    
+        {id: 170, num: 3, label: "subdomain: 87.ap.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 171, num: 2, label: "address: 80.250.97.87", color: "orange" },
+    
+        {id: 172, num: 2, label: "address: 81.91.104.240", color: "orange" },
+    
+        {id: 173, num: 3, label: "subdomain: 88.ap.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 174, num: 2, label: "address: 80.250.97.88", color: "orange" },
+    
+        {id: 175, num: 4, label: "mx: 240.ap.email.msd.com, Source: HackerTarget", color: "purple" },
+    
+        {id: 176, num: 3, label: "subdomain: 86.ap.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 177, num: 2, label: "address: 80.250.97.86", color: "orange" },
+    
+        {id: 178, num: 3, label: "mx: mx1.eucan.email.msd.com, Source: HackerTarget", color: "purple" },
+    
+        {id: 179, num: 10, label: "subdomain: mcm.email.msd.com, Source: Forward DNS", color: "green" },
+    
+        {id: 180, num: 3, label: "mx: mx1.mcm.email.msd.com, Source: HackerTarget", color: "purple" },
+    
+        {id: 181, num: 3, label: "subdomain: 85.ap.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 182, num: 2, label: "address: 80.250.97.85", color: "orange" },
+    
+        {id: 183, num: 2, label: "subdomain: personalizedapproachovarianstimulationeu-eemea2.msd.com, Source: VirusTotal", color: "green" },
+    
+        {id: 184, num: 3, label: "subdomain: eu.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 185, num: 2, label: "address: 80.250.97.73", color: "orange" },
+    
+        {id: 186, num: 3, label: "subdomain: 222.ap.email.msd.com, Source: HackerTarget", color: "green" },
+    
+        {id: 187, num: 2, label: "address: 81.91.104.222", color: "orange" },
+    
+        {id: 188, num: 3, label: "mx: mx1.ap-uat.email.msd.com, Source: HackerTarget", color: "purple" },
+    
+        {id: 189, num: 2, label: "subdomain: r.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 190, num: 2, label: "address: 54.208.183.220", color: "orange" },
+    
+        {id: 191, num: 2, label: "netblock: 54.208.0.0/15", color: "pink" },
+    
+        {id: 192, num: 2, label: "ptr: 15.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 193, num: 2, label: "address: 198.101.141.228", color: "orange" },
+    
+        {id: 194, num: 2, label: "netblock: 198.101.128.0/18", color: "pink" },
+    
+        {id: 195, num: 2, label: "as: 19994, Desc: RACKSPACE - Rackspace Hosting, US", color: "blue" },
+    
+        {id: 196, num: 2, label: "address: 166.78.195.22", color: "orange" },
+    
+        {id: 197, num: 2, label: "netblock: 166.78.192.0/18", color: "pink" },
+    
+        {id: 198, num: 2, label: "subdomain: internal.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 199, num: 2, label: "address: 81.91.104.157", color: "orange" },
+    
+        {id: 200, num: 2, label: "ptr: 166.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 201, num: 2, label: "ptr: 176.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 202, num: 2, label: "ptr: 65.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 203, num: 2, label: "ptr: 87.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 204, num: 2, label: "ptr: 222.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 205, num: 2, label: "ptr: 88.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 206, num: 2, label: "ptr: 73.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 207, num: 2, label: "ptr: 208.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 208, num: 2, label: "ptr: 163.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 209, num: 2, label: "ptr: 200.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 210, num: 2, label: "ptr: 240.104.91.81.in-addr.arpa", color: "yellow" },
+    
+        {id: 211, num: 2, label: "ptr: 85.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 212, num: 2, label: "ptr: 86.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 213, num: 2, label: "ptr: 184.97.250.80.in-addr.arpa", color: "yellow" },
+    
+        {id: 214, num: 2, label: "domain: creatormail.co.uk, Source: Forward DNS", color: "red" },
+    
+        {id: 215, num: 2, label: "subdomain: img.ap-uat.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 216, num: 4, label: "subdomain: cslb.creatormail.co.uk, Source: Brute Forcing", color: "green" },
+    
+        {id: 217, num: 2, label: "subdomain: img.eucan.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 218, num: 2, label: "subdomain: pages.dmc.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 219, num: 4, label: "subdomain: pages.virt.s7.exacttarget.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 220, num: 2, label: "ptr: 145.13.111.13.in-addr.arpa", color: "yellow" },
+    
+        {id: 221, num: 2, label: "subdomain: uk.email.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 222, num: 2, label: "address: 81.91.104.167", color: "orange" },
+    
+        {id: 223, num: 2, label: "ptr: 168.96.111.13.in-addr.arpa", color: "yellow" },
+    
+        {id: 224, num: 2, label: "subdomain: www.virtualeventcatalog.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 225, num: 2, label: "domain: b.akamaiedge.net, Source: Forward DNS", color: "red" },
+    
+        {id: 226, num: 7, label: "subdomain: e3760.b.akamaiedge.net, Source: Forward DNS", color: "green" },
+    
+        {id: 227, num: 2, label: "subdomain: corporativo.msd.com.co, Source: URLScan", color: "green" },
+    
+        {id: 228, num: 3, label: "subdomain: www.infovph.com.edgekey.net, Source: URLScan", color: "green" },
+    
+        {id: 229, num: 2, label: "subdomain: corporativo.msd.com.ec, Source: URLScan", color: "green" },
+    
+        {id: 230, num: 5, label: "subdomain: kona.merck.edgesuite.net, Source: URLScan", color: "green" },
+    
+        {id: 231, num: 2, label: "subdomain: www.msd.com.tr, Source: URLScan", color: "green" },
+    
+        {id: 232, num: 5, label: "subdomain: www.msd.lt.edgekey.net, Source: URLScan", color: "green" },
+    
+        {id: 233, num: 2, label: "subdomain: www.corporativo.msd.com.mx, Source: URLScan", color: "green" },
+    
+        {id: 234, num: 2, label: "subdomain: www.msd.com.hk, Source: URLScan", color: "green" },
+    
+        {id: 235, num: 2, label: "subdomain: www.msd.com.ar, Source: URLScan", color: "green" },
+    
+        {id: 236, num: 2, label: "subdomain: www.msd.com.tw, Source: URLScan", color: "green" },
+    
+        {id: 237, num: 3, label: "subdomain: www.corporativo.msd.com.ve, Source: URLScan", color: "green" },
+    
+        {id: 238, num: 2, label: "subdomain: www.msd.com.ph, Source: URLScan", color: "green" },
+    
+        {id: 239, num: 2, label: "domain: g1.akamai.net, Source: Forward DNS", color: "red" },
+    
+        {id: 240, num: 4, label: "subdomain: a1694.g1.akamai.net, Source: Forward DNS", color: "green" },
+    
+        {id: 241, num: 2, label: "domain: ksd.akamaiedge.net, Source: Forward DNS", color: "red" },
+    
+        {id: 242, num: 3, label: "subdomain: e6855.ksd.akamaiedge.net, Source: Forward DNS", color: "green" },
+    
+        {id: 243, num: 3, label: "subdomain: e7949.b.akamaiedge.net, Source: Forward DNS", color: "green" },
+    
+        {id: 244, num: 4, label: "subdomain: a1603.g1.akamai.net, Source: Forward DNS", color: "green" },
+    
+        {id: 245, num: 2, label: "address: 107.178.254.9", color: "orange" },
+    
+        {id: 246, num: 2, label: "netblock: 107.178.192.0/18", color: "pink" },
+    
+        {id: 247, num: 2, label: "address: 52.22.35.82", color: "orange" },
+    
+        {id: 248, num: 2, label: "netblock: 52.20.0.0/14", color: "pink" },
+    
+        {id: 249, num: 2, label: "address: 52.86.83.185", color: "orange" },
+    
+        {id: 250, num: 2, label: "netblock: 52.86.0.0/15", color: "pink" },
+    
+        {id: 251, num: 2, label: "address: 155.91.38.99", color: "orange" },
+    
+        {id: 252, num: 7, label: "netblock: 155.91.38.0/24", color: "pink" },
+    
+        {id: 253, num: 2, label: "address: 155.91.37.10", color: "orange" },
+    
+        {id: 254, num: 4, label: "netblock: 155.91.37.0/24", color: "pink" },
+    
+        {id: 255, num: 2, label: "address: 80.250.97.157", color: "orange" },
+    
+        {id: 256, num: 2, label: "ptr: 244.13.111.13.in-addr.arpa", color: "yellow" },
+    
+        {id: 257, num: 3, label: "subdomain: mta.sfmc-test.msd.com, Source: Reverse DNS", color: "green" },
+    
+        {id: 258, num: 2, label: "address: 155.91.38.115", color: "orange" },
+    
+        {id: 259, num: 3, label: "address: 136.147.189.244", color: "orange" },
+    
+        {id: 260, num: 2, label: "netblock: 136.147.189.0/24", color: "pink" },
+    
+        {id: 261, num: 2, label: "address: 155.91.38.113", color: "orange" },
+    
+        {id: 262, num: 2, label: "address: 99.99.99.132", color: "orange" },
+    
+        {id: 263, num: 2, label: "netblock: 99.96.0.0/13", color: "pink" },
+    
+        {id: 264, num: 3, label: "as: 7018, Desc: ATT-INTERNET4 - AT&T Services, Inc., US", color: "blue" },
+    
+        {id: 265, num: 2, label: "address: 2001:1890:1ff:9f1:99:99:99:132", color: "orange" },
+    
+        {id: 266, num: 3, label: "netblock: 2001:1890::/29", color: "pink" },
+    
+        {id: 267, num: 2, label: "address: 155.91.16.2", color: "orange" },
+    
+        {id: 268, num: 2, label: "address: 155.91.37.28", color: "orange" },
+    
+        {id: 269, num: 2, label: "subdomain: diabetessymposiaaugust23.msd.com, Source: Alterations", color: "green" },
+    
+        {id: 270, num: 2, label: "subdomain: diabetessymposiaaugust24.msd.com, Source: Alterations", color: "green" },
+    
+        {id: 271, num: 2, label: "address: 68.94.156.132", color: "orange" },
+    
+        {id: 272, num: 2, label: "netblock: 68.88.0.0/13", color: "pink" },
+    
+        {id: 273, num: 2, label: "address: 2001:1890:1ff:9f0:68:94:156:132", color: "orange" },
+    
+        {id: 274, num: 2, label: "address: 155.91.38.111", color: "orange" },
+    
+        {id: 275, num: 3, label: "subdomain: e16869.ksd.akamaiedge.net, Source: Forward DNS", color: "green" },
+    
+        {id: 276, num: 2, label: "address: 81.91.109.25", color: "orange" },
+    
+        {id: 277, num: 2, label: "address: 2001:b70:403:1:100::5", color: "orange" },
+    
+        {id: 278, num: 4, label: "netblock: 2001:b70::/32", color: "pink" },
+    
+        {id: 279, num: 2, label: "address: 155.91.38.100", color: "orange" },
+    
+        {id: 280, num: 2, label: "address: 209.244.4.85", color: "orange" },
+    
+        {id: 281, num: 3, label: "netblock: 209.244.0.0/14", color: "pink" },
+    
+        {id: 282, num: 1, label: "as: 3356, Desc: LEVEL3 - Level 3 Parent, LLC, US", color: "blue" },
+    
+        {id: 283, num: 2, label: "address: 81.91.100.11", color: "orange" },
+    
+        {id: 284, num: 2, label: "address: 23.63.87.150", color: "orange" },
+    
+        {id: 285, num: 2, label: "netblock: 23.63.86.0/23", color: "pink" },
+    
+        {id: 286, num: 2, label: "as: 16625, Desc: AKAMAI-AS - Akamai Technologies, Inc., US", color: "blue" },
+    
+        {id: 287, num: 2, label: "address: 155.91.37.9", color: "orange" },
+    
+        {id: 288, num: 2, label: "address: 209.244.4.148", color: "orange" },
+    
+        {id: 289, num: 2, label: "address: 81.91.102.38", color: "orange" },
+    
+        {id: 290, num: 2, label: "address: 2001:b70:203:1:100::1", color: "orange" },
+    
+        {id: 291, num: 2, label: "address: 217.146.97.65", color: "orange" },
+    
+        {id: 292, num: 2, label: "netblock: 217.146.96.0/20", color: "pink" },
+    
+        {id: 293, num: 1, label: "as: 16353, Desc: MERULA UK Routing, GB", color: "blue" },
+    
+        {id: 294, num: 2, label: "address: 81.91.102.39", color: "orange" },
+    
+        {id: 295, num: 2, label: "address: 2001:b70:203:1:100::2", color: "orange" },
+    
+        {id: 296, num: 2, label: "subdomain: fertilitycosendometriumwebcasteu-eemea2.msd.com, Source: Alterations", color: "green" },
+    
+        {id: 297, num: 2, label: "address: 52.218.84.228", color: "orange" },
+    
+        {id: 298, num: 2, label: "netblock: 52.218.80.0/21", color: "pink" },
+    
+        {id: 299, num: 2, label: "address: 136.147.129.25", color: "orange" },
+    
+        {id: 300, num: 2, label: "address: 81.91.100.15", color: "orange" },
+    
+        {id: 301, num: 2, label: "subdomain: diabetessymposiaaugust22.msd.com, Source: Alterations", color: "green" },
+    
+        {id: 302, num: 2, label: "address: 155.91.38.114", color: "orange" },
+    
+        {id: 303, num: 2, label: "subdomain: www.diabetessymposiaaugust23.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 304, num: 2, label: "subdomain: www.diabetessymposiaaugust24.msd.com, Source: Brute Forcing", color: "green" },
+    
+        {id: 305, num: 2, label: "address: 72.247.178.91", color: "orange" },
+    
+        {id: 306, num: 3, label: "netblock: 72.247.178.0/23", color: "pink" },
+    
+        {id: 307, num: 4, label: "as: 20940, Desc: AKAMAI-ASN1, US", color: "blue" },
+    
+        {id: 308, num: 2, label: "address: 72.247.178.104", color: "orange" },
+    
+        {id: 309, num: 2, label: "address: 23.36.209.44", color: "orange" },
+    
+        {id: 310, num: 2, label: "netblock: 23.36.208.0/20", color: "pink" },
+    
+        {id: 311, num: 2, label: "address: 95.100.156.65", color: "orange" },
+    
+        {id: 312, num: 3, label: "netblock: 95.100.156.0/24", color: "pink" },
+    
+        {id: 313, num: 2, label: "address: 95.100.156.26", color: "orange" },
+    
+        {id: 314, num: 2, label: "address: 104.82.236.88", color: "orange" },
+    
+        {id: 315, num: 2, label: "netblock: 104.82.224.0/20", color: "pink" },
+    
+        {id: 316, num: 2, label: "address: 13.111.13.244", color: "orange" },
+    
+        {id: 317, num: 2, label: "address: 104.85.27.46", color: "orange" },
+    
+        {id: 318, num: 2, label: "netblock: 104.85.16.0/20", color: "pink" },
+    
+        {id: 319, num: 2, label: "subdomain: sfmc-test.msd.com, Source: Forward DNS", color: "green" },
+    
+        {id: 320, num: 2, label: "subdomain: personalizedapproachovarianstimulationeu-eemea1.msd.com, Source: Alterations", color: "green" },
+    
+        {id: 321, num: 2, label: "subdomain: pages.ma-dev.msd.com, Source: Brute Forcing", color: "green" },
+    
+    ],
+    edges: [
+    
+        {source: 0, target: 2, label: "root_of" },
+    
+        {source: 0, target: 5, label: "root_of" },
+    
+        {source: 0, target: 7, label: "root_of" },
+    
+        {source: 0, target: 11, label: "root_of" },
+    
+        {source: 0, target: 13, label: "root_of" },
+    
+        {source: 0, target: 16, label: "root_of" },
+    
+        {source: 0, target: 18, label: "root_of" },
+    
+        {source: 0, target: 21, label: "root_of" },
+    
+        {source: 0, target: 127, label: "root_of" },
+    
+        {source: 0, target: 42, label: "root_of" },
+    
+        {source: 0, target: 44, label: "root_of" },
+    
+        {source: 0, target: 47, label: "root_of" },
+    
+        {source: 0, target: 49, label: "root_of" },
+    
+        {source: 0, target: 51, label: "root_of" },
+    
+        {source: 0, target: 52, label: "root_of" },
+    
+        {source: 0, target: 53, label: "root_of" },
+    
+        {source: 0, target: 57, label: "root_of" },
+    
+        {source: 0, target: 61, label: "root_of" },
+    
+        {source: 0, target: 63, label: "root_of" },
+    
+        {source: 0, target: 67, label: "root_of" },
+    
+        {source: 0, target: 68, label: "root_of" },
+    
+        {source: 0, target: 72, label: "root_of" },
+    
+        {source: 0, target: 74, label: "root_of" },
+    
+        {source: 0, target: 75, label: "root_of" },
+    
+        {source: 0, target: 76, label: "root_of" },
+    
+        {source: 0, target: 82, label: "root_of" },
+    
+        {source: 0, target: 83, label: "root_of" },
+    
+        {source: 0, target: 87, label: "root_of" },
+    
+        {source: 0, target: 90, label: "root_of" },
+    
+        {source: 0, target: 92, label: "root_of" },
+    
+        {source: 0, target: 94, label: "root_of" },
+    
+        {source: 0, target: 98, label: "root_of" },
+    
+        {source: 0, target: 99, label: "root_of" },
+    
+        {source: 0, target: 100, label: "root_of" },
+    
+        {source: 0, target: 102, label: "root_of" },
+    
+        {source: 0, target: 104, label: "root_of" },
+    
+        {source: 0, target: 105, label: "root_of" },
+    
+        {source: 0, target: 106, label: "root_of" },
+    
+        {source: 0, target: 108, label: "root_of" },
+    
+        {source: 0, target: 109, label: "root_of" },
+    
+        {source: 0, target: 112, label: "root_of" },
+    
+        {source: 0, target: 115, label: "root_of" },
+    
+        {source: 0, target: 116, label: "root_of" },
+    
+        {source: 0, target: 117, label: "root_of" },
+    
+        {source: 0, target: 128, label: "root_of" },
+    
+        {source: 0, target: 130, label: "root_of" },
+    
+        {source: 0, target: 131, label: "root_of" },
+    
+        {source: 0, target: 132, label: "root_of" },
+    
+        {source: 0, target: 135, label: "root_of" },
+    
+        {source: 0, target: 138, label: "root_of" },
+    
+        {source: 0, target: 141, label: "root_of" },
+    
+        {source: 0, target: 143, label: "root_of" },
+    
+        {source: 0, target: 146, label: "root_of" },
+    
+        {source: 0, target: 148, label: "root_of" },
+    
+        {source: 0, target: 150, label: "root_of" },
+    
+        {source: 0, target: 152, label: "root_of" },
+    
+        {source: 0, target: 154, label: "root_of" },
+    
+        {source: 0, target: 156, label: "root_of" },
+    
+        {source: 0, target: 157, label: "root_of" },
+    
+        {source: 0, target: 159, label: "root_of" },
+    
+        {source: 0, target: 163, label: "root_of" },
+    
+        {source: 0, target: 165, label: "root_of" },
+    
+        {source: 0, target: 180, label: "root_of" },
+    
+        {source: 0, target: 167, label: "root_of" },
+    
+        {source: 0, target: 168, label: "root_of" },
+    
+        {source: 0, target: 178, label: "root_of" },
+    
+        {source: 0, target: 170, label: "root_of" },
+    
+        {source: 0, target: 175, label: "root_of" },
+    
+        {source: 0, target: 173, label: "root_of" },
+    
+        {source: 0, target: 176, label: "root_of" },
+    
+        {source: 0, target: 179, label: "root_of" },
+    
+        {source: 0, target: 181, label: "root_of" },
+    
+        {source: 0, target: 183, label: "root_of" },
+    
+        {source: 0, target: 184, label: "root_of" },
+    
+        {source: 0, target: 188, label: "root_of" },
+    
+        {source: 0, target: 186, label: "root_of" },
+    
+        {source: 0, target: 189, label: "root_of" },
+    
+        {source: 0, target: 192, label: "root_of" },
+    
+        {source: 0, target: 198, label: "root_of" },
+    
+        {source: 0, target: 200, label: "root_of" },
+    
+        {source: 0, target: 201, label: "root_of" },
+    
+        {source: 0, target: 202, label: "root_of" },
+    
+        {source: 0, target: 203, label: "root_of" },
+    
+        {source: 0, target: 204, label: "root_of" },
+    
+        {source: 0, target: 205, label: "root_of" },
+    
+        {source: 0, target: 206, label: "root_of" },
+    
+        {source: 0, target: 207, label: "root_of" },
+    
+        {source: 0, target: 208, label: "root_of" },
+    
+        {source: 0, target: 209, label: "root_of" },
+    
+        {source: 0, target: 210, label: "root_of" },
+    
+        {source: 0, target: 211, label: "root_of" },
+    
+        {source: 0, target: 212, label: "root_of" },
+    
+        {source: 0, target: 213, label: "root_of" },
+    
+        {source: 0, target: 215, label: "root_of" },
+    
+        {source: 0, target: 217, label: "root_of" },
+    
+        {source: 0, target: 218, label: "root_of" },
+    
+        {source: 0, target: 220, label: "root_of" },
+    
+        {source: 0, target: 221, label: "root_of" },
+    
+        {source: 0, target: 223, label: "root_of" },
+    
+        {source: 0, target: 224, label: "root_of" },
+    
+        {source: 0, target: 227, label: "root_of" },
+    
+        {source: 0, target: 229, label: "root_of" },
+    
+        {source: 0, target: 231, label: "root_of" },
+    
+        {source: 0, target: 233, label: "root_of" },
+    
+        {source: 0, target: 234, label: "root_of" },
+    
+        {source: 0, target: 235, label: "root_of" },
+    
+        {source: 0, target: 236, label: "root_of" },
+    
+        {source: 0, target: 237, label: "root_of" },
+    
+        {source: 0, target: 238, label: "root_of" },
+    
+        {source: 0, target: 256, label: "root_of" },
+    
+        {source: 0, target: 257, label: "root_of" },
+    
+        {source: 0, target: 269, label: "root_of" },
+    
+        {source: 0, target: 270, label: "root_of" },
+    
+        {source: 0, target: 296, label: "root_of" },
+    
+        {source: 0, target: 301, label: "root_of" },
+    
+        {source: 0, target: 303, label: "root_of" },
+    
+        {source: 0, target: 304, label: "root_of" },
+    
+        {source: 0, target: 319, label: "root_of" },
+    
+        {source: 0, target: 320, label: "root_of" },
+    
+        {source: 0, target: 321, label: "root_of" },
+    
+        {source: 0, target: 24, label: "ns_to" },
+    
+        {source: 0, target: 26, label: "ns_to" },
+    
+        {source: 0, target: 27, label: "ns_to" },
+    
+        {source: 0, target: 28, label: "ns_to" },
+    
+        {source: 0, target: 30, label: "mx_to" },
+    
+        {source: 0, target: 31, label: "mx_to" },
+    
+        {source: 0, target: 32, label: "mx_to" },
+    
+        {source: 0, target: 33, label: "mx_to" },
+    
+        {source: 0, target: 34, label: "mx_to" },
+    
+        {source: 0, target: 35, label: "mx_to" },
+    
+        {source: 0, target: 36, label: "mx_to" },
+    
+        {source: 0, target: 37, label: "mx_to" },
+    
+        {source: 0, target: 38, label: "mx_to" },
+    
+        {source: 0, target: 114, label: "a_to" },
+    
+        {source: 1, target: 3, label: "root_of" },
+    
+        {source: 1, target: 193, label: "a_to" },
+    
+        {source: 2, target: 3, label: "cname_to" },
+    
+        {source: 3, target: 196, label: "a_to" },
+    
+        {source: 4, target: 6, label: "root_of" },
+    
+        {source: 4, target: 43, label: "root_of" },
+    
+        {source: 4, target: 48, label: "root_of" },
+    
+        {source: 4, target: 50, label: "root_of" },
+    
+        {source: 4, target: 62, label: "root_of" },
+    
+        {source: 4, target: 73, label: "root_of" },
+    
+        {source: 4, target: 228, label: "root_of" },
+    
+        {source: 4, target: 232, label: "root_of" },
+    
+        {source: 5, target: 6, label: "cname_to" },
+    
+        {source: 6, target: 226, label: "cname_to" },
+    
+        {source: 7, target: 8, label: "a_to" },
+    
+        {source: 9, target: 8, label: "contains" },
+    
+        {source: 10, target: 9, label: "has_prefix" },
+    
+        {source: 10, target: 20, label: "has_prefix" },
+    
+        {source: 10, target: 46, label: "has_prefix" },
+    
+        {source: 10, target: 111, label: "has_prefix" },
+    
+        {source: 10, target: 246, label: "has_prefix" },
+    
+        {source: 11, target: 6, label: "cname_to" },
+    
+        {source: 12, target: 14, label: "root_of" },
+    
+        {source: 12, target: 230, label: "root_of" },
+    
+        {source: 13, target: 14, label: "cname_to" },
+    
+        {source: 14, target: 240, label: "cname_to" },
+    
+        {source: 15, target: 17, label: "root_of" },
+    
+        {source: 16, target: 17, label: "cname_to" },
+    
+        {source: 17, target: 247, label: "a_to" },
+    
+        {source: 17, target: 249, label: "a_to" },
+    
+        {source: 18, target: 19, label: "a_to" },
+    
+        {source: 18, target: 124, label: "ns_to" },
+    
+        {source: 18, target: 123, label: "ns_to" },
+    
+        {source: 18, target: 122, label: "ns_to" },
+    
+        {source: 18, target: 125, label: "ns_to" },
+    
+        {source: 18, target: 126, label: "ns_to" },
+    
+        {source: 20, target: 19, label: "contains" },
+    
+        {source: 21, target: 22, label: "a_to" },
+    
+        {source: 23, target: 24, label: "root_of" },
+    
+        {source: 23, target: 27, label: "root_of" },
+    
+        {source: 24, target: 288, label: "a_to" },
+    
+        {source: 25, target: 26, label: "root_of" },
+    
+        {source: 25, target: 28, label: "root_of" },
+    
+        {source: 26, target: 271, label: "a_to" },
+    
+        {source: 26, target: 273, label: "aaaa_to" },
+    
+        {source: 27, target: 280, label: "a_to" },
+    
+        {source: 28, target: 262, label: "a_to" },
+    
+        {source: 28, target: 265, label: "aaaa_to" },
+    
+        {source: 29, target: 30, label: "root_of" },
+    
+        {source: 29, target: 31, label: "root_of" },
+    
+        {source: 29, target: 32, label: "root_of" },
+    
+        {source: 29, target: 33, label: "root_of" },
+    
+        {source: 29, target: 34, label: "root_of" },
+    
+        {source: 29, target: 35, label: "root_of" },
+    
+        {source: 29, target: 36, label: "root_of" },
+    
+        {source: 29, target: 37, label: "root_of" },
+    
+        {source: 29, target: 38, label: "root_of" },
+    
+        {source: 29, target: 267, label: "a_to" },
+    
+        {source: 30, target: 253, label: "a_to" },
+    
+        {source: 31, target: 287, label: "a_to" },
+    
+        {source: 32, target: 268, label: "a_to" },
+    
+        {source: 33, target: 261, label: "a_to" },
+    
+        {source: 34, target: 302, label: "a_to" },
+    
+        {source: 35, target: 251, label: "a_to" },
+    
+        {source: 36, target: 279, label: "a_to" },
+    
+        {source: 37, target: 258, label: "a_to" },
+    
+        {source: 38, target: 274, label: "a_to" },
+    
+        {source: 40, target: 39, label: "contains" },
+    
+        {source: 40, target: 151, label: "contains" },
+    
+        {source: 40, target: 153, label: "contains" },
+    
+        {source: 40, target: 164, label: "contains" },
+    
+        {source: 40, target: 171, label: "contains" },
+    
+        {source: 40, target: 174, label: "contains" },
+    
+        {source: 40, target: 177, label: "contains" },
+    
+        {source: 40, target: 182, label: "contains" },
+    
+        {source: 40, target: 185, label: "contains" },
+    
+        {source: 40, target: 255, label: "contains" },
+    
+        {source: 41, target: 40, label: "has_prefix" },
+    
+        {source: 41, target: 140, label: "has_prefix" },
+    
+        {source: 41, target: 278, label: "has_prefix" },
+    
+        {source: 42, target: 43, label: "cname_to" },
+    
+        {source: 43, target: 243, label: "cname_to" },
+    
+        {source: 44, target: 45, label: "a_to" },
+    
+        {source: 46, target: 45, label: "contains" },
+    
+        {source: 47, target: 48, label: "cname_to" },
+    
+        {source: 48, target: 226, label: "cname_to" },
+    
+        {source: 49, target: 50, label: "cname_to" },
+    
+        {source: 50, target: 226, label: "cname_to" },
+    
+        {source: 51, target: 43, label: "cname_to" },
+    
+        {source: 52, target: 43, label: "cname_to" },
+    
+        {source: 53, target: 54, label: "a_to" },
+    
+        {source: 55, target: 54, label: "contains" },
+    
+        {source: 56, target: 55, label: "has_prefix" },
+    
+        {source: 56, target: 298, label: "has_prefix" },
+    
+        {source: 57, target: 58, label: "a_to" },
+    
+        {source: 59, target: 58, label: "contains" },
+    
+        {source: 60, target: 59, label: "has_prefix" },
+    
+        {source: 61, target: 62, label: "cname_to" },
+    
+        {source: 62, target: 226, label: "cname_to" },
+    
+        {source: 63, target: 64, label: "a_to" },
+    
+        {source: 65, target: 64, label: "contains" },
+    
+        {source: 65, target: 101, label: "contains" },
+    
+        {source: 65, target: 103, label: "contains" },
+    
+        {source: 65, target: 107, label: "contains" },
+    
+        {source: 65, target: 114, label: "contains" },
+    
+        {source: 65, target: 129, label: "contains" },
+    
+        {source: 65, target: 267, label: "contains" },
+    
+        {source: 66, target: 65, label: "has_prefix" },
+    
+        {source: 66, target: 252, label: "has_prefix" },
+    
+        {source: 66, target: 254, label: "has_prefix" },
+    
+        {source: 67, target: 43, label: "cname_to" },
+    
+        {source: 68, target: 69, label: "a_to" },
+    
+        {source: 70, target: 69, label: "contains" },
+    
+        {source: 71, target: 70, label: "has_prefix" },
+    
+        {source: 72, target: 73, label: "cname_to" },
+    
+        {source: 73, target: 226, label: "cname_to" },
+    
+        {source: 74, target: 19, label: "a_to" },
+    
+        {source: 74, target: 125, label: "ns_to" },
+    
+        {source: 74, target: 124, label: "ns_to" },
+    
+        {source: 74, target: 126, label: "ns_to" },
+    
+        {source: 74, target: 123, label: "ns_to" },
+    
+        {source: 74, target: 122, label: "ns_to" },
+    
+        {source: 74, target: 175, label: "mx_to" },
+    
+        {source: 75, target: 48, label: "cname_to" },
+    
+        {source: 76, target: 77, label: "a_to" },
+    
+        {source: 76, target: 80, label: "a_to" },
+    
+        {source: 78, target: 77, label: "contains" },
+    
+        {source: 78, target: 120, label: "contains" },
+    
+        {source: 79, target: 78, label: "has_prefix" },
+    
+        {source: 79, target: 81, label: "has_prefix" },
+    
+        {source: 79, target: 89, label: "has_prefix" },
+    
+        {source: 79, target: 119, label: "has_prefix" },
+    
+        {source: 79, target: 191, label: "has_prefix" },
+    
+        {source: 79, target: 248, label: "has_prefix" },
+    
+        {source: 79, target: 250, label: "has_prefix" },
+    
+        {source: 81, target: 80, label: "contains" },
+    
+        {source: 82, target: 19, label: "a_to" },
+    
+        {source: 83, target: 84, label: "a_to" },
+    
+        {source: 85, target: 84, label: "contains" },
+    
+        {source: 85, target: 113, label: "contains" },
+    
+        {source: 86, target: 85, label: "has_prefix" },
+    
+        {source: 87, target: 88, label: "a_to" },
+    
+        {source: 89, target: 88, label: "contains" },
+    
+        {source: 90, target: 84, label: "a_to" },
+    
+        {source: 91, target: 93, label: "root_of" },
+    
+        {source: 91, target: 297, label: "a_to" },
+    
+        {source: 92, target: 93, label: "cname_to" },
+    
+        {source: 93, target: 91, label: "cname_to" },
+    
+        {source: 94, target: 95, label: "a_to" },
+    
+        {source: 94, target: 145, label: "mx_to" },
+    
+        {source: 96, target: 95, label: "contains" },
+    
+        {source: 96, target: 299, label: "contains" },
+    
+        {source: 97, target: 96, label: "has_prefix" },
+    
+        {source: 97, target: 134, label: "has_prefix" },
+    
+        {source: 97, target: 137, label: "has_prefix" },
+    
+        {source: 97, target: 260, label: "has_prefix" },
+    
+        {source: 98, target: 19, label: "a_to" },
+    
+        {source: 98, target: 131, label: "mx_to" },
+    
+        {source: 99, target: 84, label: "a_to" },
+    
+        {source: 100, target: 101, label: "a_to" },
+    
+        {source: 102, target: 103, label: "a_to" },
+    
+        {source: 104, target: 19, label: "a_to" },
+    
+        {source: 105, target: 84, label: "a_to" },
+    
+        {source: 106, target: 107, label: "a_to" },
+    
+        {source: 108, target: 84, label: "a_to" },
+    
+        {source: 109, target: 110, label: "a_to" },
+    
+        {source: 111, target: 110, label: "contains" },
+    
+        {source: 112, target: 113, label: "a_to" },
+    
+        {source: 115, target: 58, label: "a_to" },
+    
+        {source: 116, target: 113, label: "a_to" },
+    
+        {source: 117, target: 118, label: "a_to" },
+    
+        {source: 117, target: 120, label: "a_to" },
+    
+        {source: 119, target: 118, label: "contains" },
+    
+        {source: 121, target: 122, label: "root_of" },
+    
+        {source: 121, target: 123, label: "root_of" },
+    
+        {source: 121, target: 124, label: "root_of" },
+    
+        {source: 121, target: 125, label: "root_of" },
+    
+        {source: 121, target: 126, label: "root_of" },
+    
+        {source: 121, target: 283, label: "a_to" },
+    
+        {source: 122, target: 276, label: "a_to" },
+    
+        {source: 122, target: 277, label: "aaaa_to" },
+    
+        {source: 123, target: 300, label: "a_to" },
+    
+        {source: 124, target: 294, label: "a_to" },
+    
+        {source: 124, target: 295, label: "aaaa_to" },
+    
+        {source: 125, target: 289, label: "a_to" },
+    
+        {source: 125, target: 290, label: "aaaa_to" },
+    
+        {source: 126, target: 291, label: "a_to" },
+    
+        {source: 127, target: 39, label: "a_to" },
+    
+        {source: 127, target: 122, label: "ns_to" },
+    
+        {source: 127, target: 123, label: "ns_to" },
+    
+        {source: 127, target: 124, label: "ns_to" },
+    
+        {source: 127, target: 125, label: "ns_to" },
+    
+        {source: 127, target: 126, label: "ns_to" },
+    
+        {source: 127, target: 127, label: "mx_to" },
+    
+        {source: 128, target: 129, label: "a_to" },
+    
+        {source: 130, target: 113, label: "a_to" },
+    
+        {source: 131, target: 39, label: "a_to" },
+    
+        {source: 132, target: 133, label: "a_to" },
+    
+        {source: 134, target: 133, label: "contains" },
+    
+        {source: 135, target: 136, label: "a_to" },
+    
+        {source: 137, target: 136, label: "contains" },
+    
+        {source: 137, target: 316, label: "contains" },
+    
+        {source: 138, target: 139, label: "a_to" },
+    
+        {source: 140, target: 139, label: "contains" },
+    
+        {source: 140, target: 147, label: "contains" },
+    
+        {source: 140, target: 149, label: "contains" },
+    
+        {source: 140, target: 155, label: "contains" },
+    
+        {source: 140, target: 158, label: "contains" },
+    
+        {source: 140, target: 166, label: "contains" },
+    
+        {source: 140, target: 169, label: "contains" },
+    
+        {source: 140, target: 172, label: "contains" },
+    
+        {source: 140, target: 187, label: "contains" },
+    
+        {source: 140, target: 199, label: "contains" },
+    
+        {source: 140, target: 222, label: "contains" },
+    
+        {source: 140, target: 276, label: "contains" },
+    
+        {source: 140, target: 283, label: "contains" },
+    
+        {source: 140, target: 289, label: "contains" },
+    
+        {source: 140, target: 294, label: "contains" },
+    
+        {source: 140, target: 300, label: "contains" },
+    
+        {source: 141, target: 113, label: "a_to" },
+    
+        {source: 142, target: 144, label: "root_of" },
+    
+        {source: 142, target: 145, label: "root_of" },
+    
+        {source: 142, target: 219, label: "root_of" },
+    
+        {source: 143, target: 144, label: "mx_to" },
+    
+        {source: 143, target: 95, label: "a_to" },
+    
+        {source: 144, target: 259, label: "a_to" },
+    
+        {source: 145, target: 259, label: "a_to" },
+    
+        {source: 146, target: 147, label: "a_to" },
+    
+        {source: 148, target: 149, label: "a_to" },
+    
+        {source: 150, target: 151, label: "a_to" },
+    
+        {source: 150, target: 125, label: "ns_to" },
+    
+        {source: 150, target: 124, label: "ns_to" },
+    
+        {source: 150, target: 126, label: "ns_to" },
+    
+        {source: 150, target: 123, label: "ns_to" },
+    
+        {source: 150, target: 122, label: "ns_to" },
+    
+        {source: 150, target: 188, label: "mx_to" },
+    
+        {source: 152, target: 153, label: "a_to" },
+    
+        {source: 154, target: 155, label: "a_to" },
+    
+        {source: 156, target: 19, label: "a_to" },
+    
+        {source: 157, target: 158, label: "a_to" },
+    
+        {source: 159, target: 160, label: "a_to" },
+    
+        {source: 161, target: 160, label: "contains" },
+    
+        {source: 162, target: 161, label: "has_prefix" },
+    
+        {source: 163, target: 164, label: "a_to" },
+    
+        {source: 165, target: 166, label: "a_to" },
+    
+        {source: 167, target: 39, label: "a_to" },
+    
+        {source: 168, target: 169, label: "a_to" },
+    
+        {source: 168, target: 122, label: "ns_to" },
+    
+        {source: 168, target: 125, label: "ns_to" },
+    
+        {source: 168, target: 124, label: "ns_to" },
+    
+        {source: 168, target: 126, label: "ns_to" },
+    
+        {source: 168, target: 123, label: "ns_to" },
+    
+        {source: 168, target: 178, label: "mx_to" },
+    
+        {source: 170, target: 171, label: "a_to" },
+    
+        {source: 173, target: 174, label: "a_to" },
+    
+        {source: 175, target: 172, label: "a_to" },
+    
+        {source: 176, target: 177, label: "a_to" },
+    
+        {source: 178, target: 169, label: "a_to" },
+    
+        {source: 179, target: 125, label: "ns_to" },
+    
+        {source: 179, target: 126, label: "ns_to" },
+    
+        {source: 179, target: 122, label: "ns_to" },
+    
+        {source: 179, target: 124, label: "ns_to" },
+    
+        {source: 179, target: 123, label: "ns_to" },
+    
+        {source: 179, target: 180, label: "mx_to" },
+    
+        {source: 179, target: 158, label: "a_to" },
+    
+        {source: 180, target: 158, label: "a_to" },
+    
+        {source: 181, target: 182, label: "a_to" },
+    
+        {source: 183, target: 84, label: "a_to" },
+    
+        {source: 184, target: 185, label: "a_to" },
+    
+        {source: 186, target: 187, label: "a_to" },
+    
+        {source: 188, target: 151, label: "a_to" },
+    
+        {source: 189, target: 190, label: "a_to" },
+    
+        {source: 191, target: 190, label: "contains" },
+    
+        {source: 192, target: 165, label: "ptr_to" },
+    
+        {source: 194, target: 193, label: "contains" },
+    
+        {source: 195, target: 194, label: "has_prefix" },
+    
+        {source: 195, target: 197, label: "has_prefix" },
+    
+        {source: 197, target: 196, label: "contains" },
+    
+        {source: 198, target: 199, label: "a_to" },
+    
+        {source: 200, target: 179, label: "ptr_to" },
+    
+        {source: 201, target: 168, label: "ptr_to" },
+    
+        {source: 202, target: 131, label: "ptr_to" },
+    
+        {source: 203, target: 170, label: "ptr_to" },
+    
+        {source: 204, target: 186, label: "ptr_to" },
+    
+        {source: 205, target: 173, label: "ptr_to" },
+    
+        {source: 206, target: 184, label: "ptr_to" },
+    
+        {source: 207, target: 109, label: "ptr_to" },
+    
+        {source: 208, target: 154, label: "ptr_to" },
+    
+        {source: 209, target: 179, label: "ptr_to" },
+    
+        {source: 210, target: 175, label: "ptr_to" },
+    
+        {source: 211, target: 181, label: "ptr_to" },
+    
+        {source: 212, target: 176, label: "ptr_to" },
+    
+        {source: 213, target: 44, label: "ptr_to" },
+    
+        {source: 214, target: 216, label: "root_of" },
+    
+        {source: 214, target: 255, label: "a_to" },
+    
+        {source: 215, target: 216, label: "cname_to" },
+    
+        {source: 216, target: 245, label: "a_to" },
+    
+        {source: 217, target: 216, label: "cname_to" },
+    
+        {source: 218, target: 219, label: "cname_to" },
+    
+        {source: 219, target: 299, label: "a_to" },
+    
+        {source: 220, target: 135, label: "ptr_to" },
+    
+        {source: 221, target: 222, label: "a_to" },
+    
+        {source: 223, target: 132, label: "ptr_to" },
+    
+        {source: 224, target: 107, label: "a_to" },
+    
+        {source: 225, target: 226, label: "root_of" },
+    
+        {source: 225, target: 243, label: "root_of" },
+    
+        {source: 226, target: 284, label: "a_to" },
+    
+        {source: 227, target: 228, label: "cname_to" },
+    
+        {source: 228, target: 275, label: "cname_to" },
+    
+        {source: 229, target: 230, label: "cname_to" },
+    
+        {source: 230, target: 244, label: "cname_to" },
+    
+        {source: 231, target: 232, label: "cname_to" },
+    
+        {source: 232, target: 242, label: "cname_to" },
+    
+        {source: 233, target: 230, label: "cname_to" },
+    
+        {source: 234, target: 232, label: "cname_to" },
+    
+        {source: 235, target: 230, label: "cname_to" },
+    
+        {source: 236, target: 232, label: "cname_to" },
+    
+        {source: 237, target: 120, label: "a_to" },
+    
+        {source: 237, target: 118, label: "a_to" },
+    
+        {source: 238, target: 114, label: "a_to" },
+    
+        {source: 239, target: 240, label: "root_of" },
+    
+        {source: 239, target: 244, label: "root_of" },
+    
+        {source: 240, target: 311, label: "a_to" },
+    
+        {source: 240, target: 313, label: "a_to" },
+    
+        {source: 241, target: 242, label: "root_of" },
+    
+        {source: 241, target: 275, label: "root_of" },
+    
+        {source: 242, target: 314, label: "a_to" },
+    
+        {source: 243, target: 317, label: "a_to" },
+    
+        {source: 244, target: 305, label: "a_to" },
+    
+        {source: 244, target: 308, label: "a_to" },
+    
+        {source: 246, target: 245, label: "contains" },
+    
+        {source: 248, target: 247, label: "contains" },
+    
+        {source: 250, target: 249, label: "contains" },
+    
+        {source: 252, target: 251, label: "contains" },
+    
+        {source: 252, target: 258, label: "contains" },
+    
+        {source: 252, target: 261, label: "contains" },
+    
+        {source: 252, target: 274, label: "contains" },
+    
+        {source: 252, target: 279, label: "contains" },
+    
+        {source: 252, target: 302, label: "contains" },
+    
+        {source: 254, target: 253, label: "contains" },
+    
+        {source: 254, target: 268, label: "contains" },
+    
+        {source: 254, target: 287, label: "contains" },
+    
+        {source: 256, target: 257, label: "ptr_to" },
+    
+        {source: 257, target: 316, label: "a_to" },
+    
+        {source: 260, target: 259, label: "contains" },
+    
+        {source: 263, target: 262, label: "contains" },
+    
+        {source: 264, target: 263, label: "has_prefix" },
+    
+        {source: 264, target: 266, label: "has_prefix" },
+    
+        {source: 264, target: 272, label: "has_prefix" },
+    
+        {source: 266, target: 265, label: "contains" },
+    
+        {source: 266, target: 273, label: "contains" },
+    
+        {source: 269, target: 84, label: "a_to" },
+    
+        {source: 270, target: 113, label: "a_to" },
+    
+        {source: 272, target: 271, label: "contains" },
+    
+        {source: 275, target: 309, label: "a_to" },
+    
+        {source: 278, target: 277, label: "contains" },
+    
+        {source: 278, target: 290, label: "contains" },
+    
+        {source: 278, target: 295, label: "contains" },
+    
+        {source: 281, target: 280, label: "contains" },
+    
+        {source: 281, target: 288, label: "contains" },
+    
+        {source: 282, target: 281, label: "has_prefix" },
+    
+        {source: 285, target: 284, label: "contains" },
+    
+        {source: 286, target: 285, label: "has_prefix" },
+    
+        {source: 286, target: 310, label: "has_prefix" },
+    
+        {source: 292, target: 291, label: "contains" },
+    
+        {source: 293, target: 292, label: "has_prefix" },
+    
+        {source: 296, target: 84, label: "a_to" },
+    
+        {source: 298, target: 297, label: "contains" },
+    
+        {source: 301, target: 84, label: "a_to" },
+    
+        {source: 303, target: 84, label: "a_to" },
+    
+        {source: 304, target: 113, label: "a_to" },
+    
+        {source: 306, target: 305, label: "contains" },
+    
+        {source: 306, target: 308, label: "contains" },
+    
+        {source: 307, target: 306, label: "has_prefix" },
+    
+        {source: 307, target: 312, label: "has_prefix" },
+    
+        {source: 307, target: 315, label: "has_prefix" },
+    
+        {source: 307, target: 318, label: "has_prefix" },
+    
+        {source: 310, target: 309, label: "contains" },
+    
+        {source: 312, target: 311, label: "contains" },
+    
+        {source: 312, target: 313, label: "contains" },
+    
+        {source: 315, target: 314, label: "contains" },
+    
+        {source: 318, target: 317, label: "contains" },
+    
+        {source: 319, target: 144, label: "mx_to" },
+    
+        {source: 320, target: 84, label: "a_to" },
+    
+        {source: 321, target: 219, label: "cname_to" },
+    
+    ]
+};
+
+var graphWidth = window.innerWidth,
+    graphHeight = window.innerHeight;
+
+var graphCanvas = d3.select('#graphDiv')
+    .append('canvas')
+    .classed('mainCanvas', true)
+    .attr('width', graphWidth + 'px')
+    .attr('height', graphHeight + 'px')
+    .node();
+
+var ctx = graphCanvas.getContext('2d');
+
+var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+var r = 5,
+    max = 134,
+    simulation = d3.forceSimulation()
+        .nodes(graph.nodes)
+        .force("link", d3.forceLink()
+            .links(graph.edges)
+            .distance(nodeLinkDistance)
+            .strength(nodeLinkStrength)
+            .id(function(d) { return d.id; }))
+        .force("charge", d3.forceManyBody()
+            .strength(nodeChargeStrength)
+            .distanceMax(graphWidth *2))
+        .force("collide", d3.forceCollide()
+            .radius(nodeCollideRadius))
+        .force("center", d3.forceCenter(graphWidth / 2, graphHeight / 2))
+        .on("tick", update),
+    transform = d3.zoomIdentity;
+
+d3.select(graphCanvas)
+    .call(d3.drag()
+        .container(graphCanvas)
+        .subject(dragsubject)
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended))
+    .call(d3.zoom().scaleExtent([1 / 10, 8]).on("zoom", zoomed));
+
+function nodePercent(n) {
+    return n.num / max;
+}
+
+function nodeRadius(n) {
+    return (1.5 * r) + ((3 * r) * nodePercent(n));
+}
+
+function nodeCollideRadius(n) {
+    return nodeRadius(n) + 1;
+}
+
+function nodeLinkDistance(e) {
+    var n1 = graph.nodes[e.source.id],
+        n2 = graph.nodes[e.target.id];
+
+    var avg = (nodePercent(n1) + nodePercent(n2)) / 2;
+    
+    return 60 * avg;
+}
+
+function nodeLinkStrength(e) {
+    var n1 = graph.nodes[e.source.id],
+        n2 = graph.nodes[e.target.id];
+
+    var avg = (nodePercent(n1) + nodePercent(n2)) / 2;
+
+    return 1 - (1 * avg);
+}
+
+function nodeChargeStrength(n) {
+    return -100 + (-300 * nodePercent(n));
+}
+
+function zoomed() {
+    transform = d3.event.transform;
+    update()
+}
+
+function update() {
+    ctx.save();
+    ctx.clearRect(0, 0, graphWidth, graphHeight);
+    ctx.translate(transform.x, transform.y);
+    ctx.scale(transform.k, transform.k);
+
+    graph.edges.forEach(drawEdge);
+    graph.nodes.forEach(drawNode);
+
+    if (closeNode) {
+        d3.select('#tooltip')
+            .style('opacity', 0.8)
+            .style('top', transform.applyY(closeNode.y) + 5 + 'px')
+            .style('left', transform.applyX(closeNode.x) + 5 + 'px')
+            .html(closeNode.label);
+    }  else {
+        d3.select('#tooltip')
+            .style('opacity', 0);
+    }
+
+    ctx.restore();
+}
+
+function drawNode(d) {
+    var size = nodeRadius(d);
+
+    ctx.beginPath();
+    ctx.fillStyle = d.color;
+    ctx.moveTo(d.x, d.y);
+    ctx.arc(d.x, d.y, size, 0, 2 * Math.PI);
+    ctx.strokeStyle = "#333333";
+    ctx.stroke();
+    ctx.fill();
+}
+
+function drawEdge(e) {
+    var dx = e.target.x - e.source.x,
+        dy = e.target.y - e.source.y,
+        align = 'center';
+
+    ctx.beginPath()
+    ctx.moveTo(e.source.x, e.source.y);
+    ctx.lineTo(e.target.x, e.target.y);
+    ctx.strokeStyle = "#aaa";
+    ctx.stroke();
+
+    var pad = 1/2;
+
+    ctx.save();
+    ctx.textAlign = align
+    ctx.translate(e.source.x + dx * pad, e.source.y + dy * pad);
+
+    if (dx < 0) {
+        ctx.rotate(Math.atan2(dy, dx) - Math.PI);
+    } else {
+        ctx.rotate(Math.atan2(dy, dx));
+    }
+
+    ctx.fillStyle = "#aaa";
+    ctx.fillText(e.label, 0, 0);
+    ctx.restore();
+}
+
+var closeNode;
+d3.select("canvas").on("mousemove", function(d) {
+    var p = d3.mouse(this);
+
+    closeNode = findNode(p[0], p[1]);
+    update();
+})
+
+function findNode(x, y) {
+    var i,
+        newx = transform.invertX(x),
+        newy = transform.invertY(y),
+        dx,
+        dy,
+        radius;
+
+    for (i = graph.nodes.length - 1; i >= 0; --i) {
+        node = graph.nodes[i];
+        dx = newx - node.x;
+        dy = newy - node.y;
+        radius = nodeRadius(node);
+
+        if (dx * dx + dy * dy < radius * radius) {
+            return node;
+        }
+    }
+}
+
+function dragsubject() {
+    var node = findNode(d3.event.x, d3.event.y);
+
+    node.x = transform.applyX(node.x);
+    node.y = transform.applyY(node.y);
+    return node
+}
+
+function dragstarted() {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d3.event.subject.fx = transform.invertX(d3.event.subject.x);
+    d3.event.subject.fy = transform.invertY(d3.event.subject.y);
+}
+
+function dragged() {
+    d3.event.subject.fx = transform.invertX(d3.event.x);
+    d3.event.subject.fy = transform.invertY(d3.event.y);
+}
+
+function dragended() {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d3.event.subject.fx = null;
+    d3.event.subject.fy = null;
+}
+
+update();
+
+</script>
+</body>
+</html>
