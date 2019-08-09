@@ -1,0 +1,25 @@
+200 OK
+Pragma: no-cache
+Content-Language: en
+Content-Type: text/html;charset=utf-8
+X-Xss-Protection: 1; mode=block; report=https://okta.report-uri.com/r/d/xss/enforce
+Cache-Control: no-cache, no-store
+Set-Cookie: ADRUM_BTa=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BT1=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BTa="R:1120|g:9185ca54-4ee1-4cc9-a1be-188a236b72a3"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 04:21:12 GMT; Path=/ ADRUM_BTa="R:1120|g:9185ca54-4ee1-4cc9-a1be-188a236b72a3|n:Okta_6d5b1e30-d05a-4894-a37b-81b5f6c60e0e"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 04:21:12 GMT; Path=/ ADRUM_BT1="R:1120|i:12171"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 04:21:12 GMT; Path=/ ADRUM_BT1="R:1120|i:12171|e:49"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 04:21:12 GMT; Path=/ sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ JSESSIONID=8CEE88208AEAA86230EBEC20313D4133; Path=/; Secure; HttpOnly t=spring; Path=/ DT=DI0pvpeOH2fQqSXJlaOsBQUDg; Expires=Fri, 06-Aug-2021 04:20:42 GMT; Path=/; Secure sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Vary: Accept-Encoding
+X-Okta-Request-Id: XUpRmkZ7QfDia2uJwIeL9wAABaM
+Retry-Count: 0
+X-Rate-Limit-Remaining: 769
+Report-To: {"group":"csp-report","max_age":31536000,"endpoints":[{"url":"https://okta.report-uri.com/r/d/csp/reportOnly"}],"include_subdomains":true}
+Content-Security-Policy-Report-Only: default-src 'self' ok4static.oktacdn.com spotify.okta.com; connect-src 'self' ok4static.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com; script-src 'unsafe-inline' 'unsafe-eval' 'self' ok4static.oktacdn.com; style-src 'unsafe-inline' 'self' ok4static.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-src 'self' login.okta.com; img-src 'self' ok4static.oktacdn.com spotify.okta.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-ancestors 'self'; report-uri https://okta.report-uri.com/r/d/csp/reportOnly; report-to csp-report
+X-Frame-Options: SAMEORIGIN
+Date: Wed, 07 Aug 2019 04:20:42 GMT
+Server: nginx
+X-Robots-Tag: none
+Strict-Transport-Security: max-age=315360000
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.io/r/default/hpkp/reportOnly"
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: IE=edge
+Expires: 0
+P3p: CP="HONK"
+X-Rate-Limit-Limit: 850
+X-Rate-Limit-Reset: 1565151655

@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>Support</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:lqVcPj4E28ikTGEb1OcMQ/ShY3LJRqwsXF75czC15Bg28Ep5iJrgQ0IGWOoaFdiueicH/pWAP+/Gn42/+otoFQ==" />
+  <link rel="canonical" href="https://support.gengo.com/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://support.gengo.com/hc/en-us" />
+<link rel="alternate" hreflang="ja" href="https://support.gengo.com/hc/ja" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p19.zdassets.com/hc/theming_assets/25042/211914/style.css?digest=360312221954" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/25042/91625207ae386e62c462855c22e5b8755b6ca7a1.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5711737-9', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+
+window.$zopim || (function(d, s) //load zopim
+
+{
+
+    var z = $zopim = function(c) {
+
+            z._.push(c)
+
+        },
+
+        $ = z.s = d.createElement(s),
+
+        e = d.getElementsByTagName(s)[0];
+
+    z.set = function(o) {
+
+        z.set.
+
+        _.push(o)
+
+    };
+
+    z._ = [];
+
+    z.set._ = [];
+
+    $.async = !0;
+
+    $.setAttribute('charset', 'utf-8');
+
+    $.src = '//v2.zopim.com/?2ATowjqplcbwaiJCKFH76LDlsgbU2s1o';
+
+    z.t = +new Date;
+
+    $.
+
+    type = 'text/javascript';
+
+    e.parentNode.insertBefore($, e)
+
+})(document, 'script');
+
+
+
+//only load after zopim loads
+
+$zopim(function() {
+
+    var onlinestatus = ""; //monitor account online status
+
+    $zopim.livechat.setOnStatus(function(status) {
+
+        onlinestatus = status;
+
+    });
+
+
+
+    //offset from corner of screen
+
+    $zopim.livechat.button.setOffsetHorizontal(50);
+
+    //show only relevant departments
+
+    $zopim.livechat.departments.filter('English', 'Español', '日本語');
+
+
+
+    //see if the support departments are online
+
+    function support_online() {
+
+        var zopimen = $zopim.livechat.departments.getDepartment('English');
+
+        var zopimes = $zopim.livechat.departments.getDepartment('Español');
+
+        var zopimja = $zopim.livechat.departments.getDepartment('日本語');
+
+        if (zopimen["status"] == 'online'
+
+            || zopimes["status"] == 'online'
+
+            || zopimja["status"] == 'online') {
+
+            return 1;
+
+        } else {
+
+            return 0;
+
+        }
+
+    }
+
+    
+
+    var switcha = 0;
+
+    var switchb = 0;
+
+
+
+    //always show button if user minimizes chat window
+
+    $zopim.livechat.window.onHide(function() {
+
+            //just to change the button text if chatting
+
+            if (onlinestatus == 'online' && $zopim.livechat.isChatting()) {
+
+                $zopim.livechat.setGreetings({
+
+                    'online': 'Chat started',
+
+                    'away': 'Support Chat Unavailable',
+
+                    'offline' : 'Support Chat Unavailable'
+
+                });
+
+            }
+
+            
+
+            //just to change the button text if offline
+
+            if (onlinestatus == 'offline') {
+
+                if (!$zopim.livechat.isChatting()) {
+
+                    switchb++;
+
+                }
+
+                if (switcha) {
+
+                    $zopim.livechat.setGreetings({
+
+                        'online': 'Chat with Support',
+
+                        'away': 'Please email support@gengo.com',
+
+                        'offline' : 'Please email support@gengo.com'
+
+                    });
+
+                    switcha = 0;
+
+                } else {
+
+                    $zopim.livechat.setGreetings({
+
+                        'online': 'Chat with Support',
+
+                        'away': 'Support Chat Unavailable',
+
+                        'offline' : 'Support Chat Unavailable'
+
+                    });
+
+                    switcha = 1;
+
+                }
+
+            }
+
+            bubble(onlinestatus);
+
+
+
+            // if the user tries to clear the button, let it disappear
+
+            if (switchb < 4) {
+
+                $zopim.livechat.button.show();
+
+            } else if (switchb < 5) {
+
+                $zopim.livechat.window.show();
+
+            }
+
+    });
+
+
+
+    //after loading always show the window if a chat is active
+
+    $zopim.livechat.setOnConnected(function() {
+
+        if ($zopim.livechat.isChatting()) {
+
+            $zopim.livechat.window.show();
+
+        }
+
+    });
+
+
+
+    // if we are sending messages but it is minimized, make it pop up
+
+    $zopim.livechat.setOnUnreadMsgs(function(unreadMsgCount) {
+
+        if (unreadMsgCount > 0) {
+
+          $zopim.livechat.window.show();
+
+        }
+
+    });
+
+
+
+    $zopim.livechat.setOnStatus(bubble); //change visibility based on account online status
+
+    //change visibility based on account online status
+
+    function bubble(status) {
+
+        if (status == "") {
+
+            return;
+
+        }
+
+        // if support team is online, set the widget to online
+
+        if (support_online()) {
+
+            switchb = 0;
+
+            if (status != 'online') {
+
+                $zopim.livechat.setStatus("online");
+
+            }
+
+            //if chat window is not showing
+
+            if (!$zopim.livechat.window.getDisplay()) {
+
+                $zopim.livechat.button.show(); //show chat button
+
+            }
+
+        } else { // if the support team is offline set widget to offline
+
+            if (status != 'offline') {
+
+                $zopim.livechat.setStatus("offline");
+
+            }
+
+        }
+
+    }
+
+
+
+    // to get logged in user email
+
+    function getEmailFromDataLayer() {
+
+        for (i = 0; i < dataLayer.length; i++) { 
+
+            var d = dataLayer[i];
+
+            if (d.event === 'user_info') {
+
+                return d.email;
+
+            }
+
+        }
+
+        return 0;
+
+    }
+
+
+
+    //if on order form set the name & email
+
+    if (~location.href.indexOf("gengo.com/order") && getEmailFromDataLayer()) {
+
+        $zopim.livechat.setName(document.getElementById(
+
+            "user_info_dropdown").innerHTML.replace(/\s[¥€$][\d,\.]+/,
+
+            ''
+
+        ));
+
+        $zopim.livechat.setEmail(getEmailFromDataLayer());
+
+    } 
+
+    if (~location.href.indexOf("support.gengo.com")) {
+
+        if (HelpCenter.user.email)  {
+            $zopim.livechat.setEmail(HelpCenter.user.email);
+            $zopim.livechat.setName(HelpCenter.user.name);
+        }
+
+
+    }
+
+
+
+    //if page is in japanese
+
+    if (document.documentElement.lang === "ja") {
+
+        //set department to japanese by default
+
+        setTimeout(function() {
+
+            if ($zopim.livechat.departments.getDepartment('日本語')["status"] == 'online') {
+
+                $zopim.livechat.departments.setVisitorDepartment('日本語');
+
+            }
+
+        }, 3000);
+
+        $zopim.livechat.departments.setLabel('言語：');
+
+        $zopim.livechat.concierge.setName('ご質問はありますか?');
+
+        $zopim.livechat.concierge.setTitle('サポートにおつなぎしています');
+
+        //set greeting to japanese
+
+        $zopim.livechat.setGreetings({
+
+            'online': 'サポートチャットを開始する',
+
+            'away': 'アウェー',
+
+            'offline': 'アウェー'
+
+        });
+
+    }
+
+
+
+    var oldLocation = location.href;
+
+    setInterval(function() {
+
+        if(location.href != oldLocation) {
+
+            $zopim.livechat.sendVisitorPath(); // send URL change to Zopim
+
+            oldLocation = location.href;
+
+        }
+
+        // remove 'awaiting agent' when chat starts
+
+        if ($zopim.livechat.isChatting()) {
+
+            $zopim.livechat.concierge.setTitle('');
+
+        }
+
+    }, 5000); // check every 5 second
+
+});
+
+</script>
+
+<!--End of Zendesk Chat Script-->
+  <script type="text/javascript" src="//p19.zdassets.com/hc/theming_assets/25042/211914/script.js?digest=360312221954"></script>
+</head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <a title="Home" href="/hc/en-us">
+        <img src="//theme.zdassets.com/theme_assets/25042/3a8fd2fdee7921179b3f735013a5dd4c46bb7f88.svg" alt="Logo">
+      </a>
+      support
+    </div>
+    <nav class="user-nav">
+      <a href="/hc/en-us/categories/204289607-Customer-Support" class="customer">Customer</a>
+      <a href="/hc/en-us/categories/204289667-Translator-Support" class="translator">Translator</a>
+      <a href="https://gengo.com/developers/" class="developer">Developer</a>
+      <span class="border"></span>
+      <a class="submit-a-request" href="/hc/en-us/requests/new">
+      	Submit a request
+      </a>
+      
+        <div class="dropdown language-selector" aria-haspopup="true">
+          <a class="dropdown-toggle">
+            English (US)
+          </a>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            
+              <a href="/hc/change_language/ja?return_to=%2Fhc%2Fja" dir="ltr" rel="nofollow" role="menuitem">
+                日本語
+              </a>
+            
+          </span>
+        </div>
+      
+        <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.gengo.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+
+  <main role="main">
+    <div class="container-home">
+  <section class="hero-unit search-box">
+    <div class="container">
+      <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+    </div>
+  </section>
+
+  <section class="knowledge-base">
+    
+      <div class="category-tree">
+        
+          <section class="category">
+            
+              <h2><a href="/hc/en-us/categories/204289607-Customer-Support">Customer Support</a></h2>
+            
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788547-1-Getting-Started">
+                    <span>1. Getting Started</span>
+                    <span class="sub-counter">(6)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360000979908-Making-sure-your-content-is-suitable-for-Gengo">Making sure your content is suitable for Gengo</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438547-How-is-Gengo-different-from-a-Traditional-agency-">How is Gengo different from a Traditional agency?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438507-What-languages-does-Gengo-support-">What languages does Gengo support?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438447-How-much-will-my-translation-cost-Can-I-get-a-quote-">How much will my translation cost? Can I get a quote?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438487-How-does-Gengo-assess-quality-">How does Gengo assess quality?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438467-3-simple-steps-to-a-great-Gengo-translation">3 simple steps to a great Gengo translation</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788467-2-Your-First-Order">
+                    <span>2. Your First Order</span>
+                    <span class="sub-counter">(12)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438047-The-Gengo-Ordering-Process-with-Video-Tutorial">The Gengo Ordering Process with Video Tutorial</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437947-What-types-of-files-can-I-upload-">What types of files can I upload?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438007-Our-Quality-Levels">Our Quality Levels</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438067-I-can-t-find-my-order-Where-is-it-">I can&#39;t find my order. Where is it?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438087-Ordering-multiple-translations-at-once">Ordering multiple translations at once</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437987-How-long-will-my-translation-take-">How long will my translation take?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788467-2-Your-First-Order" class="see-all-articles">
+                      See all 12 articles
+                    </a>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788527-3-Getting-your-order-back">
+                    <span>3. Getting your order back</span>
+                    <span class="sub-counter">(4)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438387-How-do-I-check-the-status-of-my-translation-">How do I check the status of my translation?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438407-Reviewing-your-translation">Reviewing your translation</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438427-I-like-this-translator-Can-I-use-them-again-">I like this translator! Can I use them again?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438367-Can-I-delete-jobs-afterwards-so-that-my-data-is-kept-private-">Can I delete jobs afterwards so that my data is kept private?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788447-4-High-Volume-Integration-Resale">
+                    <span>4. High Volume, Integration, &amp; Resale</span>
+                    <span class="sub-counter">(12)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360001398807-Gengo-API-Checklist-Critical-Steps-for-a-Healthy-Integration">Gengo API Checklist - Critical Steps for a Healthy Integration</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437927-How-Can-I-Localize-My-App-or-Site-With-Gengo-">How Can I Localize My App or Site With Gengo?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437907-Gengo-API-Frequently-Asked-Questions">Gengo API Frequently Asked Questions</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437707-What-capacity-can-you-support-through-the-Gengo-API-">What capacity can you support through the Gengo API?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437807-How-will-my-users-know-when-their-translation-has-been-done-for-API-jobs-">How will my users know when their translation has been done (for API jobs)?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231437787-How-long-does-it-take-and-how-much-does-it-cost-to-integrate-">How long does it take, and how much does it cost to integrate?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788447-4-High-Volume-Integration-Resale" class="see-all-articles">
+                      See all 12 articles
+                    </a>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788507-Troubleshooting">
+                    <span>Troubleshooting</span>
+                    <span class="sub-counter">(6)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438287-Why-is-my-credit-card-being-declined-">Why is my credit card being declined?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438347-Order-form-doesn-t-load-on-IE">Order form doesn&#39;t load on IE</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438327-What-web-browsers-and-operating-systems-does-Gengo-support-">What web browsers and operating systems does Gengo support?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438307-Why-am-I-getting-an-error-through-the-order-form-">Why am I getting an error through the order form?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438247-I-purchased-credits-but-they-haven-t-been-added-to-my-Gengo-account">I purchased credits but they haven&#39;t been added to my Gengo account</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438267-Why-is-Gengo-s-word-count-different-from-my-software-">Why is Gengo’s word count different from my software?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788487-Account-Management">
+                    <span>Account Management</span>
+                    <span class="sub-counter">(3)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438227-Basic-Account-Settings-">Basic Account Settings </a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438187-How-do-I-get-a-receipt-or-invoice-">How do I get a receipt or invoice?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231438207-How-do-I-close-my-account-">How do I close my account?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206764488-Known-Issues">
+                    <span>Known Issues</span>
+                    <span class="sub-counter">(1)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231714228-Orders-sometimes-don-t-show">Orders sometimes don&#39;t show</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+
+            
+          </section>
+        
+          <section class="category">
+            
+              <h2><a href="/hc/en-us/categories/204289667-Translator-Support">Translator Support</a></h2>
+            
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788807-1-Getting-Started">
+                    <span>1. Getting Started</span>
+                    <span class="sub-counter">(4)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441387-Our-translation-process-From-start-to-finish">Our translation process: From start to finish</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441367-How-do-I-become-a-Gengo-translator-">How do I become a Gengo translator?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441407-I-want-to-be-a-translator-but-I-have-a-customer-account-">I want to be a translator but I have a customer account. </a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441347-How-do-I-customize-my-account-settings-">How do I customize my account settings?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788847-2-Testing-as-a-Gengo-translator">
+                    <span>2. Testing as a Gengo translator</span>
+                    <span class="sub-counter">(4)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441607-The-testing-process-from-start-to-finish">The testing process from start to finish</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441627-I-can-t-find-the-test-for-my-language-pair">I can&#39;t find the test for my language pair</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441567-Do-you-have-any-learning-resources-for-translators-">Do you have any learning resources for translators?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441587-What-is-a-Language-Specialist-and-how-do-I-apply-">What is a Language Specialist and how do I apply?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788767-3-Your-First-Job">
+                    <span>3. Your First Job</span>
+                    <span class="sub-counter">(13)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360019035694-More-than-translation-The-AI-Workbench">More than translation: The AI Workbench</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360010214234-What-is-Post-editing-Machine-Translation-PEMT-">What is Post-editing Machine Translation (PEMT)?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441087-How-do-I-claim-jobs-">How do I claim jobs?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441187-How-do-I-set-up-and-use-an-RSS-feed-reader-">How do I set up and use an RSS feed reader?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441067-What-file-formats-will-I-be-working-in-">What file formats will I be working in?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360001123788-What-are-Edit-jobs-">What are Edit jobs?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788767-3-Your-First-Job" class="see-all-articles">
+                      See all 13 articles
+                    </a>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788747-4-Job-Submission-Approval-Process">
+                    <span>4. Job Submission &amp; Approval Process</span>
+                    <span class="sub-counter">(7)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440887-Revisions-rejections-resolving-issues-with-customers">Revisions, rejections &amp; resolving issues with customers</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440947-How-can-I-fix-validation-errors-">How can I fix validation errors?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440867-My-file-is-in-the-required-format-Why-can-t-I-upload-it-">My file is in the required format. Why can&#39;t I upload it?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440847-Why-do-the-characters-in-my-txt-file-job-look-garbled-">Why do the characters in my .txt file job look garbled?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440907-Can-I-edit-a-submitted-translation-">Can I edit a submitted translation?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231440927-Why-isn-t-my-job-approved-yet-What-s-reviewable-jobs-">Why isn&#39;t my job approved yet? What&#39;s &quot;reviewable jobs&quot;?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788747-4-Job-Submission-Approval-Process" class="see-all-articles">
+                      See all 7 articles
+                    </a>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788827-5-Getting-Paid">
+                    <span>5. Getting Paid</span>
+                    <span class="sub-counter">(7)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360018049074-Will-I-receive-a-1099-MISC-form-">Will I receive a 1099-MISC form?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441507-Submitting-and-updating-tax-forms">Submitting and updating tax forms</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441467-How-do-I-get-paid-">How do I get paid?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441527-I-didn-t-receive-my-payout-What-happened-">I didn&#39;t receive my payout. What happened?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441547-Can-I-get-paid-to-my-credit-card-">Can I get paid to my credit card?</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441447-Where-can-I-see-all-of-my-previous-payouts-">Where can I see all of my previous payouts?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788827-5-Getting-Paid" class="see-all-articles">
+                      See all 7 articles
+                    </a>
+                  
+                
+              </section>
+            
+              <section class="section">
+                <h3>
+                  
+                  <a href="/hc/en-us/sections/206788787-6-Metrics-and-Reputation">
+                    <span>6. Metrics and Reputation</span>
+                    <span class="sub-counter">(10)</span>
+                    <span class="follow_link">»</span>
+                  </a>
+                </h3>
+                
+                  <ul class="article-list">
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360019412053-Improving-your-overall-Translator-Score">Improving your overall Translator Score</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/360008835674-The-public-translator-profile">The public translator profile</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/115002394227-Job-Reviews-GoCheck-Error-Types">Job Reviews: GoCheck Error Types</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441287-How-Gengo-measures-quality">How Gengo measures quality</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441227-Quality-Expectations-Job-review-process">Quality Expectations: Job review process</a>
+                      </li>
+                    
+                      <li >
+                        
+                        <a href="/hc/en-us/articles/231441327-How-do-I-obtain-a-reference-letter-">How do I obtain a reference letter?</a>
+                      </li>
+                    
+                  </ul>
+                  
+                    <a href="/hc/en-us/sections/206788787-6-Metrics-and-Reputation" class="see-all-articles">
+                      See all 10 articles
+                    </a>
+                  
+                
+              </section>
+            
+
+            
+          </section>
+        
+
+        
+      </div>
+    
+  </section>
+
+  <section class="community">
+    
+      <h4>
+        Community
+        <a href="/hc/en-us/community/topics">Community</a>
+      </h4>
+      <div data-app="recent-activity" data-url="/hc/api/internal/recent_activities?locale=en-us"></div>
+    
+  </section>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <a title="Home" href="/hc/en-us">
+        <img src="//theme.zdassets.com/theme_assets/25042/3a8fd2fdee7921179b3f735013a5dd4c46bb7f88.svg" alt="Logo">
+      </a>
+      support
+    </div>
+    <nav class="footer-user-nav">
+      <a href="https://gengo.com/" class="home">Home</a>
+      <a href="/hc/en-us/categories/204289607-Customer-Support" class="customer">Customer</a>
+      <a href="/hc/en-us/categories/204289667-Translator-Support" class="translator">Translator</a>
+      <a href="https://gengo.com/developers/" class="developer">Developer</a>
+    </nav>
+    <div class="footer-translation">
+      <a href="https://gengo.com/order/?from=support">
+        <button class="btn btn-large btn-red order">Order Translation</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="social">
+      <a class="facebook" href="https://www.facebook.com/mygengo">
+        <img src="//theme.zdassets.com/theme_assets/25042/33d8d9625f5875c2ad702ff5fd9c1407c8d37935.png" title="Gengo on Facebook"/>
+      </a>
+      <a class="twitter" href="https://www.twitter.com/gengoit">
+        <img src="//theme.zdassets.com/theme_assets/25042/ce85e867f1bc60711db51679ea36b80e93c8e5f8.png" title="Gengo on Twitter"/>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/company/gengo">
+        <img src="//theme.zdassets.com/theme_assets/25042/620021d0b6a678d2a607ed4b63dfc08caeebed19.png" title="Gengo one LinkedIn"/>
+      </a>
+      <a class="youtube" href="https://www.youtube.com/user/gengo">
+        <img src="//theme.zdassets.com/theme_assets/25042/6c61ba7b9c1fc36270735597b091da4eecda70d9.png" title="Gengo on Youtube"/>
+      </a>
+    </div>
+    <div class="footnote">
+      <span> © 2008-2016 Gengo, Inc. </span>
+      <span class="legal"><a href="https://gengo.com/legal">Legal</a></span>
+      <span class="quality"><a href="https://gengo.com/quality-policy/">Quality Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="powered-by-zendesk">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+    <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+  </svg>
+
+  <a href="https://www.zendesk.com/help-center/?utm_source=helpcenter&utm_medium=poweredbyzendesk&utm_campaign=text&utm_content=Gengo" target="_blank" >Powered by Zendesk</a>
+</div>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://mygengo.zendesk.com/auth/v2/host.js" data-brand-id="211914" data-return-to="https://support.gengo.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="211914,true,true"></script>
+  <script type="text/javascript" src="https://p19.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"mygengo","environment":"production","name":"Gengo"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:92Fi3rMYca3Xvyo4FyVD9OVzuL0/7iM9LgV/1TpfcFBXNHSZBYZKJjH1E8nZ15cZa/XcMWMosP60xAsZ8GH8XQ==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://mygengo.zendesk.com","current_host_mapping":"support.gengo.com","current_path":null,"authentication_domain":"https://mygengo.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.gengo.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.gengo.com/hc/en-us","arrange_content_url":"https://support.gengo.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.gengo.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://mygengo.zendesk.com/knowledge/user_segments?brand_id=211914","has_community_enabled":true,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://mygengo.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.gengo.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.gengo.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://mygengo.zendesk.com/knowledge/arrange?brand_id=211914","article_verification_url":"https://mygengo.zendesk.com/knowledge/verification?brand_id=211914","has_article_verification":false,"guide_language_settings_url":"https://support.gengo.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://mygengo.zendesk.com/knowledge/import_articles?brand_id=211914","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.gengo.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkC0mE6E2hlbHBfY2VudGVyX2lkaQTWw+sLOg1icmFuZF9pZGkDyjsDOgx1c2VyX2lkMDoOdXNlcl9yb2xlSSIOYW5vbnltb3VzBjoGRVQ6C2xvY2FsZUkiCmVuLXVzBjsLVA==--6bb8d52a93e5094a6a26b5ceeae714db65827dd8");
+})();
+
+  </script>
+</body>
+</html>

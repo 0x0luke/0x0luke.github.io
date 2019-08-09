@@ -1,0 +1,28 @@
+200 OK
+X-Sorting-Hat-Podid: 108
+Retry-Count: 0
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8c2905d9-649c-4fc3-9abe-16ecd03ab38b
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Sorting-Hat-Shopid: 2825322605
+X-Shopify-Stage: production
+Cf-Ray: 50296e110b9cbfc0-MAN
+X-Frame-Options: DENY
+X-Alternate-Cache-Key: cacheable:570c6d6e88d54fb8d96fdf631cc56c63
+X-Dc: gcp-us-central1,gcp-us-central1
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Server: cloudflare
+X-Download-Options: noopen
+Date: Wed, 07 Aug 2019 12:59:49 GMT
+Content-Type: text/html; charset=utf-8
+X-Shardid: 108
+X-Permitted-Cross-Domain-Policies: none
+X-Shopid: 2825322605
+X-Cache: hit, server
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8c2905d9-649c-4fc3-9abe-16ecd03ab38b
+Set-Cookie: __cfduid=de5ee7597d303759d9955a7ac22b20d561565182789; expires=Thu, 06-Aug-20 12:59:49 GMT; path=/; domain=.ca.store.ui.com; HttpOnly _shopify_y=9293ab06-868d-46e9-afc4-aa157553950c; path=/; expires=Sat, 07 Aug 2021 00:38:13 -0000 cart_currency=CAD; path=/; expires=Wed, 21 Aug 2019 12:59:49 -0000 _orig_referrer=; Expires=Wed, 21-Aug-19 12:59:49 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 12:59:49 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Wed, 21-Aug-19 12:59:49 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 12:59:49 -0000; HttpOnly
+Content-Language: en
+Strict-Transport-Security: max-age=7889238
+Etag: cacheable:4199a0c25f9a2a96aa62f607cf1beb8a
+X-Request-Id: 8c2905d9-649c-4fc3-9abe-16ecd03ab38b
+X-Content-Type-Options: nosniff
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}

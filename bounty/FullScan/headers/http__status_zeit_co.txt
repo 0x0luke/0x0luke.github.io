@@ -1,0 +1,22 @@
+200 OK
+Cf-Ray: 5026a4e3dceb3663-MAN
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Github-Request-Id: 451A:349E:1AC4E:22228:5D4A5926
+Via: 1.1 varnish
+Vary: Accept-Encoding
+X-Fastly-Request-Id: 1adc0d9552fe88c301e2e5bebf9ed896b1041e66
+Date: Wed, 07 Aug 2019 04:52:57 GMT
+X-Proxy-Cache: MISS
+X-Timer: S1565153578.699485,VS0,VE85
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=db397979108370b84217527cd19e8f8001565153577; expires=Thu, 06-Aug-20 04:52:57 GMT; path=/; domain=.zeit-status.co; HttpOnly
+Last-Modified: Thu, 11 Jul 2019 15:58:28 GMT
+Access-Control-Allow-Origin: *
+Expires: Wed, 07 Aug 2019 05:02:57 GMT
+Cache-Control: max-age=600
+X-Cache: MISS
+Age: 0
+X-Served-By: cache-lhr6335-LHR
+X-Cache-Hits: 0
+Server: cloudflare

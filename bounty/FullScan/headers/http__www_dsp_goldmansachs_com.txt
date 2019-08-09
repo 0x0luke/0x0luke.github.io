@@ -1,0 +1,16 @@
+200 OK
+Content-Type: text/html;charset=UTF-8
+Content-Security-Policy: default-src 'self' gap: https://cdn.plaid.com https://*.marcus.com https://*.marcus.com https://*.gs.com 'unsafe-inline'; font-src 'self' https://*.zopim.com  https://*.marcus.com https://*.gs.com data:; script-src 'self' https://assets.adobedtm.com https://*.zopim.com https://static.zdassets.com https://ekr.zdassets.com https://assets.zendesk.com https://honestdollarhelp.zendesk.com https://honestdollarhelp.zendesk.com https://help.invest.goldman.com https://gsinvest.zendesk.com https://gsam.122.2o7.net https://d456155-014-e2.dc.gs.com https://maps.googleapis.com https://*.marcus.com https://cdn.plaid.com https://analytics.twitter.com 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://*.marcus.com wss://*.zopim.com https://static.zdassets.com https://ekr.zdassets.com https://*.marcus.com https://gsam.122.2o7.net https://honestdollarhelp.zendesk.com https://honestdollarhelp.zendesk.com https://help.invest.goldman.com https://gsinvest.zendesk.com https://dspsandbox.zendesk.com https://gsdsp.zendesk.com https://help.dsp.goldmansachs.com https://*.gs.com https://*.demdex.net 'unsafe-inline' data:; object-src 'self' https://*.marcus.com; child-src gap: 'self' https://*.gs.com https://*.marcus.com https://*.marcus.com https://cdn.plaid.com https://*.demdex.net https://*.docusign.net https://*.docusign.com; frame-src gap: 'self' https://h.online-metrix.net/ https://*.gs.com https://*.marcus.com https://*.marcus.com https://cdn.plaid.com https://*.demdex.net https://*.docusign.net https://*.docusign.com; img-src 'self' * data:; style-src 'self' https://d456155-014-e2.dc.gs.com 'unsafe-inline';
+X-Akamai-Transformed: 9 7276 0 pmb=mRUM,1
+Retry-Count: 0
+Set-Cookie: JSESSIONID=AEA1C4738703C9995EA91D0D96469E31; Path=/; Secure; HttpOnly NSC_psjhjo.ipoftuepmmbs.dpn-443-wc=30dfa3dbc876edaf3d15800261fc9eebb520d65faef5c20ebfa128957945578a878eb107;expires=Wed, 07-Aug-2019 03:36:26 GMT;path=/;secure;httponly ak_bmsc=49534A0C96994D63E188A39DAAAD46DC5F653F844A420000C2464A5D2208605F~pldjpwPaxJO9eo2OFldBORLUqDeRpIpBe7fg5Do8cLQLClqQ7Y1O5KZfAvecarn3lmWGIbw4gKqD7jTPtH8ExCp6Q1uW/djmPuvV9oYWhUStg7D5dCckZe1lZKhdN9KrFC7lsPs+bZWoY4i0EYCTtFQgzQLfk/nanIVGh8ZeGr+MQxQi1jRvGvJ7tEdKHJBX4pO3cU7dHmxx+hn8gauHxRZf8V9FcIc0mszxZMrN7OF9oc2qbrdh5OcMI/MhfDg1lx; expires=Wed, 07 Aug 2019 05:34:26 GMT; max-age=7200; path=/; domain=.dsp.goldmansachs.com; HttpOnly
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Access-Control-Allow-Credentials: true
+Vary: Accept-Encoding
+Date: Wed, 07 Aug 2019 03:34:26 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Cache-Control: max-age=0, no-store, must-revalidate
+Access-Control-Allow-Origin: https://help.dsp.goldmansachs.com

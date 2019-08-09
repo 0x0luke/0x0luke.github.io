@@ -1,0 +1,17 @@
+200 OK
+Strict-Transport-Security: max-age=300
+Content-Language: en
+Cache-Control: public, max-age=1800
+Date: Thu, 08 Aug 2019 11:02:04 GMT
+X-Cache: HIT
+X-Timer: S1565262125.777756,VS0,VE0
+Vary: Accept-Encoding,Accept-Language,X-UA-Device
+Server: Apache
+Age: 527
+X-Served-By: cache-lhr6320-LHR
+X-Powered-By: PHP/7.1.30
+Content-Type: text/html; charset=utf-8
+X-Cache-Hits: 10
+Retry-Count: 0
+Accept-Ranges: bytes
+Via: 1.1 varnish

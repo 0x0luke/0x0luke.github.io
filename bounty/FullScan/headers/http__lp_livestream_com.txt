@@ -1,0 +1,23 @@
+200 OK
+Vary: Accept-Encoding
+Cache-Control: no-cache, no-store, private, must-revalidate, max-age=0, max-stale=0, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Fri, 02 Aug 2019 03:43:06 GMT
+X-Goog-Stored-Content-Length: 41023
+X-Frame-Options: SAMEORIGIN
+Age: 1
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 07:34:39 GMT
+X-Cache-Hits: 2, 1
+X-Timer: S1565249679.420726,VS0,VE0
+X-Goog-Stored-Content-Encoding: identity
+Retry-Count: 0
+X-Served-By: cache-jfk8136-JFK, cache-lcy19274-LCY
+Etag: "2f5c8f63021cba7197c49a464ca6789a"
+X-Goog-Generation: 1564717386813897
+X-Goog-Metageneration: 2
+X-Cache: HIT, HIT
+Expires: 0
+Via: 1.1 varnish
+X-Goog-Meta-Mtime: 2019-08-06T16:32:39.460685156+05:30
+Content-Type: text/html; charset=utf-8

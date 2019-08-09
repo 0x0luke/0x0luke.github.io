@@ -1,0 +1,19 @@
+200 OK
+Pinterest-Version: 3c5b704
+X-Cdn: akamai
+X-Upstream-Proxy: pythonvianode
+Pinterest-Generated-By: coreapp-webapp-prod-0a0189b3, coreapp-webapp-prod-0a0189b3 coreapp-webapp-prod-0a0189b3 coreapp-webapp-prod-0a0189b3
+Date: Wed, 07 Aug 2019 04:04:51 GMT
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+X-Envoy-Upstream-Service-Time: 181
+Set-Cookie: _auth=0; expires=Sat, 01-Aug-2020 04:04:51 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=LMKdn6M6ksMdUBLNlKJp6m0yCP9tabVg; expires=Wed, 05-Aug-2020 04:04:51 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSZkNVM3WE9xWGdkUHF1SndmS05EdGVQcFhlRG5sTkVha0ZFREtFMGhtMDhzWDc0NXJ0TnorUXpNbWV3OWZrQmJpeTF4SGhWVDNzb2hDd2l0aW1jUHIxR2ZjT2RUV0JUVTNFbUFpaDU5WWRYNDNKUzRQS2RDR1N1NzF2LzVER2taa1NzcjMxbXJXZ1REd0UrekpRVmliUHc9PSZreWFCbWVuUmVhQkt1djAxRTJIaFlzYUw4dG89; expires=Sat, 01-Aug-2020 04:04:51 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="906166bf-ee40-43ec-bba3-e39abcbf889d"; Max-Age=86400; Path=/; HttpOnly
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-ecvuSaPeSl' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Pinterest-Rid: 6017664230499614
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Vary: User-Agent, Cookie, Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Upstream-Env: python node

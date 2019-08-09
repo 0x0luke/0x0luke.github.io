@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html;charset=utf-8
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+X-Hs-Combine-Css: Retry-0
+Retry-Count: 0
+Set-Cookie: __cfduid=de572ab1459873ab02b8c7710a83079bd1565159525; expires=Thu, 06-Aug-20 06:32:05 GMT; path=/; domain=.hs-sites.com; HttpOnly __cfruid=23599e9fad750135fc04df5cfefd650b2361a849-1565159525; path=/; domain=.hs-sites.com; HttpOnly
+Cf-Ray: 5027361b6855d210-MAN
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Group-Id: 6366549040
+X-Robots-Tag: none
+X-Trace: 2B4B3B91A211F5333F87DF1AD6E100B3BE4F5D979D000000000000000000
+Server: cloudflare
+Date: Wed, 07 Aug 2019 06:32:05 GMT
+Cache-Control: s-maxage=7200,max-age=5
+Edge-Cache-Tag: CG-3809112,P-3809112,L-5287950408,L-5287950452,L-5287950610,E-5287950319,E-5287950396,MENU-6379931213,PGS-ALL,SW-1,SD-12,FM-3809112,B-6366549040
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/post_listing_asset.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/comment_listing_asset.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/rss_listing_asset.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+X-Powered-By: HubSpot
+Access-Control-Allow-Credentials: false

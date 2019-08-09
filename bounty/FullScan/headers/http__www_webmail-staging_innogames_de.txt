@@ -1,0 +1,17 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Via: 1.1 varnish
+Age: 732
+Strict-Transport-Security: max-age=300
+X-Timer: S1565249616.901524,VS0,VE0
+Vary: Accept-Encoding,Accept-Language,X-UA-Device
+X-Powered-By: PHP/7.1.30
+Content-Language: en
+Cache-Control: public, max-age=1800
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 07:33:35 GMT
+X-Served-By: cache-lhr6324-LHR
+X-Cache: HIT
+X-Cache-Hits: 15
+Server: Apache
+Retry-Count: 0

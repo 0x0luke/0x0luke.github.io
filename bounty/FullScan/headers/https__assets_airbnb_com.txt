@@ -1,0 +1,15 @@
+403 Forbidden
+Vary: Origin, Access-Control-Request-Headers, Access-Control-Request-Method
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 08:50:14 GMT
+Access-Control-Allow-Origin: *
+Set-Cookie: bm_sz=BA48C920107521E0E2422B4C8DA05CA0~YAAQQmzUF6SVtWxsAQAATOVrcARIVi2WfKaN2apCce+A9+HxCxy5T6jiXgNBpDwApaf2Kns5amEND7rc1U7UwFMbG3AGM25rIOA0GJLyH1UWaLYZyk3jp5JEZ/m/R+gAuc5zsnZn4yNPrP8XhYOuR0nAHrbeO7jAJb87jfD7KqtBE5bfTqQOFOZEmVcpGpbu; Domain=.airbnb.com; Path=/; Expires=Thu, 08 Aug 2019 12:50:14 GMT; Max-Age=14400; HttpOnly _abck=7ABAF31639DCE390D326F1DCB08B46FE~-1~YAAQQmzUF6WVtWxsAQAATOVrcALwAbFyfAEv8uGvUnyr6cweplZ0vHfGa38SuMu0bB5k/lKbjDRnGrEgxeJBE/2FQg8zo+YcBBDcWakVlvF8AUrhgiJZqQl+V5amIFmIwenlLzGVFRUK0WO7IXi8qOlHjrsHqq0wfD/W7BTYW6hrragTERXA77MGK4QnKO5MyAsK5korPULXKCC2SF2cOJWsBlZ5AkDZ7GsXXM0eAhVNqBNDZNRG4nWBiWYYXLTWArBwn4iKX+QTJCUeN0RxpbeItgBhXFXmwl49VQ==~-1~-1~-1; Domain=.airbnb.com; Path=/; Expires=Fri, 07 Aug 2020 08:50:14 GMT; Max-Age=31536000; Secure
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Id-2: TDHeEcnbdpftvGKLfq0eqDveTvnJIRS5pEGdAYsCY7Jto1FGAwsJWPW6rNIeJh3TRssPwfpHIFM=
+X-Edgeconnect-Midmile-Rtt: 61
+X-Amz-Request-Id: C2857CAEFB258DF9
+Access-Control-Allow-Methods: GET
+X-Edgeconnect-Origin-Mex-Latency: 37
+Content-Type: application/xml
+Server: AmazonS3
+Content-Length: 243

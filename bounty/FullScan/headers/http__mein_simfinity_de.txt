@@ -1,0 +1,9 @@
+200 OK
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store, private
+Set-Cookie: SESSIONID=f4042c13df6f6929e8a41f5c15f3e76c; path=/; samesite=strict; secure; HttpOnly LBSYS=app2; Path=/; secure; HttpOnly; SameSite=Strict LBSYSZLB=4-c0a8a625-50; expires=Wed,  7-Aug-2019 04:08:31 GMT; path=/; secure; HttpOnly; SameSite=Strict
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=86400
+Vary: Accept-Encoding
+Date: Wed, 07 Aug 2019 03:58:31 GMT
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0

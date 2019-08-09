@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html
+Date: Thu, 08 Aug 2019 07:18:09 GMT
+Etag: "76039-33b0-58d630b467980"
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=104 origin; dur=780
+Accept-Ranges: bytes
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Thu, 11 Jul 2019 07:50:14 GMT
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,3
+Vary: Accept-Encoding
+Cache-Control: must-revalidate, max-age=3600
+Expires: Thu, 08 Aug 2019 08:18:09 GMT

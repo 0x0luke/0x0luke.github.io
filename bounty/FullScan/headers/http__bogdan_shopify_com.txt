@@ -1,0 +1,18 @@
+404 Not Found
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=5b007fe3-e031-449f-a3f5-9041e8dc77e5
+X-Shopify-Stage: production
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=5b007fe3-e031-449f-a3f5-9041e8dc77e5
+X-Download-Options: noopen
+Cf-Ray: 50266fdacd11d220-MAN
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+X-Request-Id: 5b007fe3-e031-449f-a3f5-9041e8dc77e5
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Retry-Count: 0
+Set-Cookie: __cfduid=d1c94c7b91c15d2aadd8bab362595fe5d1565151405; expires=Thu, 06-Aug-20 04:16:45 GMT; path=/; domain=.bogdan.shopify.com; HttpOnly
+Date: Wed, 07 Aug 2019 04:16:45 GMT

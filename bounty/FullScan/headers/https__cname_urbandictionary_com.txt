@@ -1,0 +1,16 @@
+200 OK
+X-Amz-Meta-Surrogate-Control: max-age=864000
+Content-Type: text/html; charset=utf-8
+Via: 1.1 varnish
+Vary: Accept-Encoding,Fastly-SSL
+Cache-Control: max-age=3600
+Age: 82201
+X-Cache: HIT
+X-Cache-Hits: 11
+Last-Modified: Wed, 07 Aug 2019 15:35:14 GMT
+Accept-Ranges: bytes
+X-Served-By: cache-lhr6342-LHR
+X-Timer: S1565276422.503645,VS0,VE0
+Retry-Count: 0
+Etag: "6d343522ebd48b1b130202be2c334912"
+Date: Thu, 08 Aug 2019 15:00:21 GMT

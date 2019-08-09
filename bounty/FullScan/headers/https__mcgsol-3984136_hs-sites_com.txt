@@ -1,0 +1,17 @@
+200 OK
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Group-Id: 5395589266
+Edge-Cache-Tag: CG-3984136,P-3984136,L-5442143249,L-5442143254,L-5467902454,E-5442143247,E-5442143248,MENU-5442231160,PGS-ALL,SW-3,SD-36,B-5395589266
+Content-Type: text/html;charset=utf-8
+Cache-Control: s-maxage=7200,max-age=5
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/hub/3984136/hub_generated/template_assets/1564420438863/combined-css-ab40e6785de3f401b3f1902b5d673429.css>; rel=preload; as=style </hs/hsstatic/AsyncSupport/static-1.58/js/comment_listing_asset.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+Server: cloudflare
+Retry-Count: 0
+Set-Cookie: __cfduid=d6dbeac70b8565560e457999f5e66f6f21565257208; expires=Fri, 07-Aug-20 09:40:08 GMT; path=/; domain=.information.mcgsol.com; HttpOnly __cfruid=df758d18e057a463f6a2defb3762080c3ee6cb27-1565257208; path=/; domain=.information.mcgsol.com; HttpOnly
+Cf-Ray: 503086ef794bd21c-MAN
+X-Powered-By: HubSpot
+X-Trace: 2BF71149FF834FE66669CACB8BF7D9037B5617721A000000000000000000
+Date: Thu, 08 Aug 2019 09:40:08 GMT
+Cf-Cache-Status: EXPIRED
+Access-Control-Allow-Credentials: false
+Vary: Accept-Encoding

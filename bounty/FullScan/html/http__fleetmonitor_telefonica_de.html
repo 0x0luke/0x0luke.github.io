@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fleet Monitor Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="AUTHOR" content="Thomas Baumeister, Frank Tilchner" />
+	<meta name="ROBOTS" content="index,follow" />
+</head>
+<body class="claro">
+	<div id="main">
+		<form action="index.php" method="post" name="loginForm">
+			<div widgetid="linton_widgets_login_Login_0" id="linton_widgets_login_Login_0" class="login">
+				<div class="login-logo">
+									<a id="box-link" href="http://m2m.telefonica.com/german" target="_blank"></a>
+				</div>
+				<div widgetid="linton_widgets_login_LoginBox_0" id="linton_widgets_login_LoginBox_0" class="login-box-container login-box">
+					<div class="login-box login-box-narrow login-box-section">
+						<div class="header-title-image"></div>
+						<div class="header-title">Welcome to Fleet Monitor</div>
+						<div class="login-form">
+							<div class="form-row">
+								<label class="form-row-label" id="UsernameLabel" for="Login">User Name</label>
+								<div widgetid="Login" class="dijit dijitReset dijitInline dijitLeft username form-row-value form-row-value-top dijitTextBox" id="widget_Login" role="presentation">
+									<div class="dijitReset dijitInputField dijitInputContainer">
+										<input value="" data-automation-id="loginUsername" id="Login" tabindex="0" class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="on" name="Login" type="text">
+										<span class="dijitPlaceHolder dijitInputField">User Name</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label class="form-row-label" id="PasswordLabel" for="Password">Password</label>
+								<div widgetid="Password" class="dijit dijitReset dijitInline dijitLeft password form-row-value form-row-value-bottom dijitTextBox" id="widget_Password" role="presentation">
+									<div class="dijitReset dijitInputField dijitInputContainer">
+										<input value="" data-automation-id="loginPassword" id="Password" tabindex="0" class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="on" name="Password" type="password">
+										<span class="dijitPlaceHolder dijitInputField">Password</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label class="form-row-label" id="LanguageLabel" for="Language">Language</label>
+								<div widgetid="Language" class="dijit dijitReset dijitInline dijitLeft dijitSelect form-row-value form-row-value-bottom dijitTextBox" id="widget_Language" role="presentation">
+									<div class="dijitReset dijitInputField dijitButtonText">
+										<select data-automation-id="loginLanguage" id="Language" tabindex="0" class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="on" name="Language" >
+											<option value="cs" >Čeština (Česká republika)</option><option value="da" >Dansk (Danmark)</option><option value="de" >Deutsch (Deutschland)</option><option value="en-GB" >English (United Kingdom)</option><option value="en-US"  selected="selected">English (United States)</option><option value="es" >Espagnol (Espagne)</option><option value="fr" >Français (France)</option><option value="it-IT" >Italiano (Italia)</option><option value="hu" >Magyar (Magyarország)</option><option value="nl" >Nederlands (Holland)</option><option value="no" >Norsk (Norge)</option><option value="pl" >Polski (Polska)</option><option value="ro" >Română (România)</option><option value="sk" >Slovák (Slovensko)</option><option value="fi" >Suomen (Suomi)</option><option value="sv" >Svenska (Sverige)</option><option value="ru" >Русский (Россия)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="validation-summary-errors-container">
+								<div id="validationMessages" data-dojo-attach-point="validationMessages" class="validation-summary-errors" >
+								 
+								</div>
+							</div>
+							<div class="login-buttons">
+
+								<span widgetid="dijit_form_Button_0" class="dijit dijitReset dijitInline submit-button" role="presentation">
+									<span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation">
+										<span style="-moz-user-select: none;" id="dijit_form_Button_0" tabindex="0" class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="dijit_form_Button_0_label">
+											<span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+											<span class="dijitReset dijitToggleButtonIconChar">●</span>
+											<span data-automation-id="loginButton" class="dijitReset dijitInline dijitButtonText" id="dijit_form_Button_0_label" data-dojo-attach-point="containerNode" onclick="loginForm.submit()">Login</span>
+											<input type="submit" style="visibility:hidden;"/>
+										</span>
+									</span>
+									<input value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode" type="button">
+								</span>
+							</div>
+							<div class="support-phonenumber">
+								<div class="paragraph">
+									<span>Hotline:</span>
+									<span class="phonenumber-value"> +49 (0) 40 51 900 66 77 (workdays from 08:00am to 04:00pm)</span>
+								</div>
+							</div>
+							<div class="support-email-address">
+								<div class="paragraph">
+									<span id="supportEmail">Mail:</span>
+											<span> <a href="telefonica-service@trackunit.com">telefonica-service@trackunit.com</a></span>
+								</div>
+							</div>
+							<div class="link-O2-cookie-policy">
+								<div class="paragraph">
+									<a id="link-O2-cookie-policy" target="_blank" href="https://www.telefonica.de/verantwortung/lebensqualitaet-steigern/datenschutz.html">Cookie-Richtlinien von O2</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-info">
+						<a href="http://www.trackunit.com" target="_blank"><div class="powered-by-trackunit"></div></a>
+						<div class="paragraph" id="FooterInfo">EU Guidelines: I hereby agree that this website stores cookies on my computer. Please find further information about data protection <a href="https://www.telefonica.de/verantwortung/lebensqualitaet-steigern/datenschutz.html" target="_blank" data-dojo-attach-point="cookieLink">here</a> .</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

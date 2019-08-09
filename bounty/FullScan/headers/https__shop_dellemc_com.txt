@@ -1,0 +1,16 @@
+200 OK
+Pragma: no-cache
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+Expires: Thu, 08 Aug 2019 09:10:34 GMT
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html;charset=UTF-8
+Content-Language: en
+Cache-Control: max-age=0, no-cache, no-store
+Server: Apache-Coyote/1.1
+Www-Authenticate: Basic realm="CT"
+Vary: Accept-Encoding
+Set-Cookie: JSESSIONID=1EA587AEB34DF1B7D74773B325ACB713; Path=""; HttpOnly
+Access-Control-Allow-Origin: *
+Date: Thu, 08 Aug 2019 09:10:34 GMT

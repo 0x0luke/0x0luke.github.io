@@ -1,0 +1,16 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Content-Language: en-us
+X-Frame-Options: DENY
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Page-View-Id: f7289c7e-dead-4677-b3a7-157c7b394b1e
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Date: Thu, 08 Aug 2019 11:15:10 GMT
+Set-Cookie: __cfduid=d54f0b64ae33c1344f0e1c831b78e670f1565262910; expires=Fri, 07-Aug-20 11:15:10 GMT; path=/; domain=.lyst.com; HttpOnly; Secure csrftoken=xqU07ZA1YhsSGVCoc8zJ7JiLzXD0ipCbtqaMb6nVEQWWCu35dS237oJSZmyMKtmm; expires=Thu, 06 Aug 2020 11:15:10 GMT; Max-Age=31449600; Path=/ country=GB; expires=Fri, 07 Aug 2020 11:15:10 GMT; Max-Age=31536000; Path=/ analytics1=03b27e09-429c-48a1-aa39-4f2301fe92bb:0:0:1565262910:d8d29441-35cd-42ca-baf8-4da4f7cc7b70; Domain=lyst.com; expires=Fri, 07 Aug 2020 11:15:10 GMT; Max-Age=31536000; Path=/ backend_web=3; Domain=.lyst.com; Path=/; Max-Age=7776000
+Cache-Control: private
+Vary: Cookie, Authorization
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Retry-Count: 0
+Uwsgi-Encoding: gzip
+Cf-Ray: 503112246928d224-MAN

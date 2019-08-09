@@ -1,0 +1,9 @@
+400 Bad Request
+X-Envoy-Upstream-Service-Time: 0
+Content-Length: 11
+Retry-Count: 0
+Access-Control-Allow-Headers: origin, content-type, accept, x-nimbus-clientid
+Access-Control-Allow-Origin: *
+Content-Type: text/plain
+Date: Thu, 08 Aug 2019 09:06:45 GMT
+Server: istio-envoy

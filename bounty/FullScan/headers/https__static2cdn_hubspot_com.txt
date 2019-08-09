@@ -1,0 +1,16 @@
+403 Forbidden
+Via: 1.1 4278118a12a0d89e17a517194fb2e732.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: I2Cj9eyz7h89Mlsgu7EsIZuPNWfNjHyv5-hD4drv2OOCP8Lk3T5CKQ==
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Server: cloudflare
+Date: Thu, 08 Aug 2019 10:29:06 GMT
+Retry-Count: 0
+X-Cache: Error from cloudfront
+Vary: Accept-Encoding
+Content-Type: application/xml
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=da8ead77a3637e69c15865029bdb82e951565260146; expires=Fri, 07-Aug-20 10:29:06 GMT; path=/; domain=.hubspot.com; HttpOnly
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Cf-Pop: LHR50-C1
+Cf-Cache-Status: EXPIRED
+Cf-Ray: 5030ceab0a32362d-MAN

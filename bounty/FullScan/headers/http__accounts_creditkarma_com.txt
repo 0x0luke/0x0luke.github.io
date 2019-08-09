@@ -1,0 +1,20 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Allow-Headers: Content-type
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0, no-cache, no-store
+Set-Cookie: CKTRACEID=cc80609d-8b15-4961-bf37-b6a8a8c1fe6b; path=/; domain=.creditkarma.com; secure; HttpOnly CKPERSISTID=psc-bd0ded14add148e65f29f083cb393f9f; expires=Sat, 16-Jun-2029 07:07:25 GMT; Max-Age=311040000; path=/; domain=.creditkarma.com; secure
+Vary: Accept-Encoding
+X-Src: web068.us-central
+Content-Security-Policy-Report-Only: default-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net https://bam.nr-data.net; connect-src https://stats.g.doubleclick.net https://www.google-analytics.com https://www.creditkarma.com https://api.amplitude.com https://accounts.creditkarma.com/; style-src https://accounts.creditkarma.com https://creditkarmacdn-a.akamaihd.net 'unsafe-inline' 'report-sample'; script-src data: blob: https://accounts.creditkarma.com https://creditkarmacdn-a.akamaihd.net https://sierra.kilo.ckapis.com https://ajax.googleapis.com 'unsafe-inline' 'report-sample' https://www.google-analytics.com https://js-agent.newrelic.com https://bam.nr-data.net https://seal.digicert.com; img-src data: https://creditkarmacdn-a.akamaihd.net https://ck-assets.imgix.net https://www.google.com https://www.google-analytics.com https://sierra.kilo.ckapis.com https://stats.g.doubleclick.net https://accounts.creditkarma.com; font-src data: https://accounts.creditkarma.com https://creditkarmacdn-a.akamaihd.net https://fonts.gstatic.com; worker-src https://4449091.fls.doubleclick.net; child-src https://creditkarmacdn-a.akamaihd.net https://4449091.fls.doubleclick.net; frame-src https://creditkarmacdn-a.akamaihd.net https://tags.creditkarma.com; report-uri https://sponge.creditkarma.com/csp-report
+Expires: Thu, 08 Aug 2019 07:07:25 GMT
+Pragma: no-cache
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://www.creditkarma.com
+Access-Control-Expose-Headers: Refresh
+Server: CK-FG-server
+Date: Thu, 08 Aug 2019 07:07:25 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Access-Control-Allow-Credentials: true

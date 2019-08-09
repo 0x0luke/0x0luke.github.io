@@ -1,0 +1,8 @@
+404 Not Found
+Access-Control-Allow-Headers: Access-Control-Allow-Origin, Content-Type, Connection, Host, Referer, User-Agent, Content-Length, Authorization, X-Requested-With, Cache-Control, Accept, Accept-Encoding, Accept-Language, Origin, X-Session-ID, Access-Control-Request-Headers, Access-Control-Request-Method
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS
+Server: nginx
+Date: Thu, 08 Aug 2019 07:04:12 GMT
+Content-Type: application/json
+Retry-Count: 0

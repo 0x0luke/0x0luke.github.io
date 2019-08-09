@@ -1,0 +1,16 @@
+401 Authorization Required
+Via: 1.1 varnish 1.1 varnish
+Date: Thu, 08 Aug 2019 15:01:53 GMT
+Retry-Count: 0
+Content-Type: application/vnd.vimeo.error+json
+Cache-Control: private, no-store, no-cache
+X-Vimeo-Dc: ge
+X-Cache-Hits: 0, 0
+X-Timer: S1565276513.480584,VS0,VE90
+Server: nginx
+Www-Authenticate: Bearer error="invalid_token"
+X-Served-By: cache-bwi5147-BWI, cache-lcy19279-LCY
+X-Cache: MISS, MISS
+Vary: Accept,Vimeo-Client-Id,Accept-Encoding
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Accept-Ranges: bytes bytes

@@ -1,0 +1,16 @@
+200 OK
+Link: <https://apps.meraki.io/wp-json/>; rel="https://api.w.org/"
+Wpe-Backend: apache
+X-Pass-Why: 
+Date: Thu, 08 Aug 2019 11:18:17 GMT
+Retry-Count: 0
+Vary: Accept-Encoding Accept-Encoding Accept-Encoding,Cookie
+X-Cacheable: SHORT
+X-Cache: HIT: 3
+X-Cache-Group: normal
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: __cfduid=da60f3bdcbc14103c05813a61f6f78f9b1565263097; expires=Fri, 07-Aug-20 11:18:17 GMT; path=/; domain=.meraki.io; HttpOnly; Secure apbct_timestamp=1565262883; path=/ apbct_prev_referer=https%3A%2F%2Fapps.meraki.io%2Fdetails%2Fbasking-automation%2F; path=/ apbct_site_landing_ts=1565262883; path=/ apbct_page_hits=1; path=/ apbct_cookies_test=%257B%2522cookies_names%2522%253A%255B%2522apbct_timestamp%2522%252C%2522apbct_prev_referer%2522%252C%2522apbct_site_landing_ts%2522%252C%2522apbct_page_hits%2522%255D%252C%2522check_value%2522%253A%2522fbf92178658f03e3a83387c65cd7ed96%2522%257D; path=/
+Cache-Control: max-age=600, must-revalidate
+Cf-Ray: 503116b72c5dd224-MAN

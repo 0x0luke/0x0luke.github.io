@@ -1,0 +1,14 @@
+404 Not Found
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+X-Hubspot-Notfound: true
+Content-Type: text/html;charset=utf-8
+Retry-Count: 0
+Set-Cookie: __cfduid=d8535ed54d96f224bff8d2e6da62b776b1565156613; expires=Thu, 06-Aug-20 05:43:33 GMT; path=/; domain=.hs-sitesqa.com; HttpOnly
+X-Trace: 2B8082D0B1A82DB56AA3BB0B22811A37EB5299022B3B62F3745EC9AF0501
+Server: cloudflare
+Date: Wed, 07 Aug 2019 05:43:35 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: s-maxage=5,max-age=5
+Cf-Ray: 5026ef055fe4bfe3-MAN
+Access-Control-Allow-Credentials: false

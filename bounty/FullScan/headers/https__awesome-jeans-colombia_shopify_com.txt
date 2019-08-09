@@ -1,0 +1,19 @@
+404 Not Found
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Dc: gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Cf-Ray: 5029010d4c4ad214-MAN
+Date: Wed, 07 Aug 2019 11:45:24 GMT
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9ae078cb-6d8b-4748-9423-ded8971d6daf
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9ae078cb-6d8b-4748-9423-ded8971d6daf
+Set-Cookie: __cfduid=d78ca255e8ea868bc25ed016ae14ddee01565178324; expires=Thu, 06-Aug-20 11:45:24 GMT; path=/; domain=.awesome-jeans-colombia.shopify.com; HttpOnly
+X-Request-Id: 9ae078cb-6d8b-4748-9423-ded8971d6daf
+X-Download-Options: noopen
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+X-Shopify-Stage: production

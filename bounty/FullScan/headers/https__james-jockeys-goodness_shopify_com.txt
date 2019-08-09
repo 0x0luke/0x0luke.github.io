@@ -1,0 +1,19 @@
+404 Not Found
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Date: Thu, 08 Aug 2019 14:25:07 GMT
+Set-Cookie: __cfduid=d5e6fd63d72169985df7acff0311f13851565274307; expires=Fri, 07-Aug-20 14:25:07 GMT; path=/; domain=.james-jockeys-goodness.shopify.com; HttpOnly
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=fad990dd-eec1-4e97-beb0-45342b230c92
+Retry-Count: 0
+X-Request-Id: fad990dd-eec1-4e97-beb0-45342b230c92
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=fad990dd-eec1-4e97-beb0-45342b230c92
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 503228656e0ebfc0-MAN

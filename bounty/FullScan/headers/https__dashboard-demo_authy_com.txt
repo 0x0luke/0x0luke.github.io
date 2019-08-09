@@ -1,0 +1,13 @@
+200 OK
+Set-Cookie: _authy_dashboard_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFVEkiRWU2NDlmYzZjYzgyMjM3ZThjMzk1%0AM2Q4YWQ2NTA3ZmE2OWNlZDM4ODI0NTJmNzgxYzczYzNlY2VjYjQxOTUyNTAG%0AOwBGSSIJY3NyZgY7AEZJIiU3YjM4NzE2OGNmMDRmZjFkNzNjZjkyYzQ2OTBj%0AMzQxMAY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi0xMjRkNzliODY2ZWNhYTEyNjQ0ODUxZTU2MmRjYjI2NDc2Y2FkY2M1%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBGSSINQkFDS19VUkkG%0AOwBUIgYvSSILX2ZsYXNoBjsARnsA%0A--8cdecfb9ec9ca1cb1df6a61c3c1c4c64d4a5419e; path=/; expires=Thu, 15 Aug 2019 09:06:08 -0000; secure; HttpOnly
+Content-Type: text/html;charset=utf-8
+Strict-Transport-Security: max-age=31536000; includeSubDomains max-age=31536000; includeSubdomains
+X-Xss-Protection: 1; mode=block
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 50305520fb4e3651-MAN
+Date: Thu, 08 Aug 2019 09:06:08 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0

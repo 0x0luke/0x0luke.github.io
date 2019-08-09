@@ -1,0 +1,28 @@
+200 OK
+Server: nginx
+Date: Thu, 08 Aug 2019 07:12:56 GMT
+Age: 0
+X-Served-By: cache-lcy19242-LCY
+Access-Control-Allow-Origin: *
+X-Timer: S1565248376.135257,VS0,VE79
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: origin
+X-Proxy-Cache: MISS
+X-Github-Request-Id: 6B68:6607:12E75:1A361:5D4B7BE0
+Last-Modified: Mon, 15 Jul 2019 17:33:12 GMT
+Expires: Fri, 09 Aug 2019 07:12:56 GMT
+Cache-Control: max-age=86400
+Etag: W/"5d2cb8d8-64eb"
+X-Cache: HIT
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Via: 1.1 varnish
+X-Cache-Hits: 1
+Vary: Accept-Encoding
+X-Fastly-Request-Id: 9f03c6bba88f7155b3085b9d4d6d25555ef29483
+Expect-Ct: max-age=0
+Retry-Count: 0
+X-Xss-Protection: 1;mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=0 max-age=31536000
+Content-Security-Policy: default-src https: blob: data: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'

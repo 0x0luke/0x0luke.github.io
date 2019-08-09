@@ -1,0 +1,11 @@
+200 OK
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Reset: 1565261360
+Lb_pool: mesos_external_pool
+Set-Cookie: CTK=1dhodhqjknkrv800; Expires=Tue, 12-Aug-2036 05:37:50 GMT; Path=/ INDEED_CSRF_TOKEN=CBPlA8N8Jb6jPOpjhjivDe8BCb3sunIW; Path=/ LV="LA=1565261359:CV=1565261359:TS=1565261359"; Version=1; Max-Age=536870911; Expires=Tue, 12-Aug-2036 05:37:50 GMT; Path=/ UD="LA=1565261359:CV=1565261359:TS=1565261359"; Version=1; Max-Age=536870911; Expires=Tue, 12-Aug-2036 05:37:50 GMT; Path=/ hpnoproxy=1; Expires=Wed, 06-Nov-2019 10:49:19 GMT; Path=/ LV="LA=1565261359:CV=1565261359:TS=1565261359"; Version=1; Max-Age=536870911; Expires=Tue, 12-Aug-2036 05:37:50 GMT; Path=/ UD="LA=1565261359:CV=1565261359:TS=1565261359"; Version=1; Max-Age=536870911; Expires=Tue, 12-Aug-2036 05:37:50 GMT; Path=/
+Content-Security-Policy: block-all-mixed-content; object-src 'none'; form-action 'self' *.indeed.com *.indeed.co.uk  ; frame-src 'self' *.indeed.com *.indeed.co.uk https://smartlock.google.com/ https://www.google.com/recaptcha/ https://www.youtube.com/embed/; default-src 'self' 'unsafe-inline' data: *.indeed.com *.indeed.co.uk d3hbwax96mbv6t.cloudfront.net d3hbwax96mbv6t.cloudfront.net https://smartlock.google.com/ https://accounts.google.com/ https://cdn.ravenjs.com/3.14.2/raven.min.js d3hbwax96mbv6t.cloudfront.net d12632ofg6v5f7.cloudfront.net d2q79iu7y748jz.cloudfront.net d3s4xzh46vzktb.cloudfront.net d1ymdoy4af119w.cloudfront.net d3fw5vlhllyvee.cloudfront.net www.google-analytics.com https://www.facebook.com/tr/ https://sb.scorecardresearch.com https://connect.facebook.net *.serving-sys.com maps.googleapis.com csi.gstatic.com https://ad.doubleclick.net/ddm/activity/ https://www.google.com/recaptcha/ https://www.gstatic.com https://www.youtube.com https://pp.d2-apps.net/v1/impressions/log dpuk71x9wlmkf.cloudfront.net;
+Date: Thu, 08 Aug 2019 10:49:19 GMT
+Content-Type: text/html;charset=UTF-8
+X-Ratelimit-Remaining: 999
+Server: nginx
+Retry-Count: 0

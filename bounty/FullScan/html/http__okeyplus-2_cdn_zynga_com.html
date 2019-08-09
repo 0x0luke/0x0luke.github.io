@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      font: 12px Arial, Helvetica, Sans-serif;
+     }
+
+    .welcomeSprite {
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-image: url("img/welcomeSprite.png");
+      text-align: center;
+      margin: auto;
+      display: block;
+    }
+
+    .btnAccept {
+      width: 204px;
+      height: 50px;
+      background-position: -1px -433px;
+      text-align: center;
+      color:#fff;
+      text-decoration: none;
+      font-size: 22px;
+      line-height: 46px;
+      margin-top: 10px;
+      text-shadow: 0 2px 2px rgba(0,0,0,1);
+    }
+
+    .btnAccept:hover {
+      background-position: -1px -381px
+    }
+
+    .btnAccept:active {
+      background-position: -207px -381px
+    }
+
+    .welcomePopup {
+      width: 285px;
+      height: 378px;
+      padding: 0 20px 0 190px;
+      background-position: -1px -1px;
+      position:absolute;
+      z-index:9999;
+      left:50%;
+      margin-left: -245px;
+      top:50px;
+    }
+    .wTitle {
+      color: #fff;
+      text-align: center;
+      padding: 42px 0 8px 0;
+      margin: 0;
+      text-shadow: 0 2px 2px rgba(0,0,0,1);
+      font-size: 20px;
+    }
+    .wContent {
+      font-size: 15px;
+      color: #2d2d2d;
+      padding: 35px 0 0px 0;
+      text-align: center;
+      height: 120px;
+    }
+    .wLink {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #4c6bb4;
+      padding: 10px 0 0;
+    }
+    .wLink:hover {
+      color:#163579;
+    }
+    .background-image {
+        background: url('/assets/img/legal_bg_image.jpg?v=1') no-repeat;
+        background-size: cover;
+        display: block;
+        width: 760px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top:0;
+        z-index: 1;
+        height: 778px;
+        margin: 0 auto;
+    }
+
+    .background-image2 {
+        background: url('/assets/img/legal_bg_image_footer.jpg') no-repeat;
+        background-size: cover;
+        display: block;
+        width: 760px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 800px;
+        z-index: 2;
+        height: 531px;
+        margin: 0 auto;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+	window.fbAsyncInit = function() 
+	{
+
+	    FB.init({
+	        appId  : '144120355635913',
+	        status : true, // check login status
+	        cookie : true, // enable cookies to allow the server to access the session
+	        xfbml  : true, // parse XFBML
+	        frictionlessRequests : true,
+	        version: 'v3.2',
+	        channelUrl : document.location.protocol+'//okeyplus.zynga.com/channel.html',
+	        oauth  : true // enable OAuth 2.0
+	    }, 
+	    {
+	        apiKey: 'KT_API_KEY', 
+	        useTestServer: false 
+	    });
+		FB.login(function(response) {
+			top.location.href = "https://apps.facebook.com/okeyplus/";
+		  
+		}, {
+                        scope: 'email,user_friends'});
+
+	};
+
+	(function(d){
+	    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+	    js = d.createElement('script'); js.id = id; js.async = true;
+	    js.src = "//connect.facebook.net/tr_TR/sdk.js";	    d.getElementsByTagName('head')[0].appendChild(js);
+	}(document));
+
+
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+  <div class="background-image"></div>
+  <div class="background-image2"></div>
+
+</body>
+
+</html>

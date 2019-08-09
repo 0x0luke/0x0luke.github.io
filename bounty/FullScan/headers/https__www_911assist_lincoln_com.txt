@@ -1,0 +1,13 @@
+200 OK
+Etag: "76039-33b0-58d630b467980"
+Expires: Thu, 08 Aug 2019 12:13:07 GMT
+Server-Timing: cdn-cache; desc=HIT edge; dur=1
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,3
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 11:13:07 GMT
+Retry-Count: 0
+Last-Modified: Thu, 11 Jul 2019 07:50:14 GMT
+Content-Type: text/html
+Cache-Control: must-revalidate, max-age=3600

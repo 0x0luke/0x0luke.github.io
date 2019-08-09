@@ -1,0 +1,12 @@
+400 Bad Request
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d20fd56a75bc3f1c397dc7cb0ba64a8dc1565260275; expires=Fri, 07-Aug-20 10:31:15 GMT; path=/; domain=.hubspot.com; HttpOnly
+X-Trace: 2BC193F7F5ECE1C3A488495180EB16D0A23DAC1BEB000000000000000000
+Vary: Accept-Encoding
+Access-Control-Allow-Credentials: false
+Server: cloudflare
+Cf-Ray: 5030d1d21cee364b-MAN
+Date: Thu, 08 Aug 2019 10:31:15 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Retry-Count: 0

@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=11,edge" />
+		<script type="text/javascript">
+			var config = {"sydneyReverseGeocoding":"https://api.tomtom.com/lbs/services/reverseGeocode/3/jsonp?key=pnwma7wthchce5hw2ktaf455&type=Basic","sydneyMapLocation":"https://api.tomtom.com/lbs/services/mapLocation/3/jsonp?key=pnwma7wthchce5hw2ktaf455&projection=EPSG4326","socialLanguageMap":"{\"ARG\":6,\"BEL\":5,\"BRA\":30,\"CZE\":10,\"DAN\":14,\"DEU\":3,\"ESP\":6,\"FRA\":2,\"ITA\":7,\"LUX\":2,\"HUN\":31,\"MAR\":2,\"MEX\":40,\"NLD\":5,\"NOR\":16,\"AUT\":3,\"POL\":9,\"PRT\":17,\"ZAF\":28,\"FIN\":24,\"SWE\":18,\"TUR\":26,\"GBR\":1,\"USA\":4,\"GRC\":48,\"RUS\":32}","social.msr.url":"https://www.tomtom.com/mapshare/tools/iFrame","buildId":"30170","social.msr.webservices":"https://www.tomtom.com/mapshare/tools/ws/","social.redirect.url":"https://www.mapsharetool.com/external-iframe/external.jsp","social.msr.customer.id":"External","bid":"_buildid_","externalInfoUrl":"http://www.mapsharetool.com/external-iframe/info.jsp"};
+			var bid = config["buildId"];
+			var iframeMSRConfigSrc = "iframeMSRConfig.js?" + bid;
+			var iframeMSRSrc = "iframeMSR.js?" + bid;
+
+			var iframeMSRConfigjs = document.createElement("script");
+			iframeMSRConfigjs.type = "text/javascript";
+			iframeMSRConfigjs.src = iframeMSRConfigSrc;
+			document.head.appendChild(iframeMSRConfigjs); 
+
+			var iframeMSRjs = document.createElement("script");
+			iframeMSRjs.type = "text/javascript";
+			iframeMSRjs.src = iframeMSRSrc;
+			document.head.appendChild(iframeMSRjs);
+		</script>
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="iframeMSRConfig.js?"></script> -->
+		<script type="text/javascript" src="JSONP.js"></script>
+		<script type="text/javascript" src="countryLidMapping.js"></script>
+		<script type="text/javascript" src="lidUtils.js"></script>
+		<!-- <script type="text/javascript" src="iframeMSR.js?"></script> -->
+		<link rel="stylesheet" href="css/rialto.css"/>
+		
+
+</head>
+
+<body style="overflow-y:hidden;top: 60px;">
+	 
+	<div id="iframeMSR" style="height:100%;overflow-y:hidden;"></div> 
+
+	<div id="overlay">
+		<div id="message">
+			<b>Allow Safari to access necessary cookies by following these instructions :</b> <br /><br />
+			Click "Safari" app menu in menu bar and select "Preferences". Click on "Privacy" tab and uncheck "Prevent
+			cross-site tracking" under "Website Tracking".<br /><br />
+			For iPad, Go to "Settings" and select "Safari". Under "Privacy & Security", turn off "Prevent cross-site
+			tracking".
+		</div>
+		<div id="button-ok" onclick="off()">
+			<div id="button-text-ok">Okay</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var browser = (function (agent) {
+			switch (true) {
+				case agent.indexOf("edge") > -1:
+					return "edge";
+				case agent.indexOf("opr") > -1 && !!window.opr:
+					return "opera";
+				case agent.indexOf("chrome") > -1 && !!window.chrome:
+					return "chrome";
+				case agent.indexOf("trident") > -1:
+					return "ie";
+				case agent.indexOf("firefox") > -1:
+					return "firefox";
+				case agent.indexOf("safari") > -1:
+					return "safari";
+				default:
+					return "other";
+			}
+		})(window.navigator.userAgent.toLowerCase());
+		if (browser == "safari") {
+			document.getElementById("overlay").style.display = "block";
+		}
+
+		function off() {
+			document.getElementById("overlay").style.display = "none";
+		}
+	</script>
+</body>
+</html>

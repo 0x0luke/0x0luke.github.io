@@ -1,0 +1,11 @@
+200 OK
+Strict-Transport-Security: max-age=31536000
+Server: nginx/1.14.1
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-store, no-cache, must-revalidate
+X-Frame-Options: SAMEORIGIN deny
+Date: Thu, 08 Aug 2019 09:24:35 GMT
+Retry-Count: 0
+Set-Cookie: PHPSESSID=2a01d382fbfbe5cb40f3e2b5aa15f12e; expires=Thu, 15-Aug-2019 09:24:35 GMT; Max-Age=604800; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache

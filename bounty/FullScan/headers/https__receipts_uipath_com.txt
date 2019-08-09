@@ -1,0 +1,14 @@
+405 METHOD NOT ALLOWED
+Allow: OPTIONS, POST
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Max-Age: 1000
+Date: Wed, 07 Aug 2019 13:00:23 GMT
+Content-Length: 178
+Set-Cookie: __cfduid=de10cbf806cf9af8b78f800a2a693278d1565182821; expires=Thu, 06-Aug-20 13:00:21 GMT; path=/; domain=.uipath.com; HttpOnly; Secure
+Access-Control-Allow-Headers: origin, x-csrftoken, content-type, accept
+Server: cloudflare
+Content-Type: text/html
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 50296edb6f67d218-MAN
+Retry-Count: 0

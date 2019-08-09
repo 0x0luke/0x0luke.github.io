@@ -1,0 +1,17 @@
+200 OK
+Server: nginx
+Content-Type: text/html
+Strict-Transport-Security: max-age=631139040; includeSubdomains; preload;
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Referrer-Policy: same-origin
+Content-Security-Policy: base-uri 'self';block-all-mixed-content ;child-src brickftp.com go.oncehub.com;connect-src 'self' *.s3.amazonaws.com s3.amazonaws.com s3-us-east-1.amazonaws.com s3-ap-southeast-2.amazonaws.com s3-ca-central-1.amazonaws.com s3-eu-west-1.amazonaws.com s3-eu-west-2.amazonaws.com s3-eu-central-1.amazonaws.com s3-ap-northeast-1.amazonaws.com s3-ap-southeast-1.amazonaws.com sentry.io;default-src 'self';font-src 'self' data:;form-action 'self';frame-src brickftp.com go.oncehub.com;img-src 'self' data: https:;media-src 'self' *.amazonaws.com;object-src 'self';plugin-types application/pdf application/x-shockwave-flash;report-uri https://actionverb.report-uri.io/r/default/csp/enforce;script-src 'self';style-src 'self' 'unsafe-inline';upgrade-insecure-requests
+Last-Modified: Tue, 06 Aug 2019 19:19:44 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Feature-Policy: geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'
+Date: Thu, 08 Aug 2019 09:08:45 GMT
+Etag: W/"5d49d2d0-35b"
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Expect-Ct: enforce, max-age=60, report-uri="https://actionverb.report-uri.com/r/d/ct/enforce"

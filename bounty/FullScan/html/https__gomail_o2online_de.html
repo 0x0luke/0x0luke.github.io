@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store" />
+<meta http-equiv="Expires" content="0" /> 
+<meta http-equiv="Content-Language" content="german"/>
+<title>
+Login</title>
+<link rel="shortcut icon" href="/images/favicon.ico"/>
+<link type="text/css" rel="stylesheet" href="/css/style.css" />
+<script language="javascript" type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.tipsy.js"></script></head>
+<body>
+<div class="wrapper">
+	<div class="header">
+	  <div class="logo"><a href="#"><img src="/images/logo.jpg" alt="O2" /></a></div>
+	</div>
+   <div id="js-red"><noscript>Achtung! Um diese Seite korrekt nutzen zu können und die Registrierung abzuschließen, aktivieren Sie bitte Javascript.<br/></noscript></div>
+    <script>
+    $(document).ready(function()
+    {
+	$(".tooltipIconDefault").tipsy({
+	    gravity: 'sw',
+	    fade: false,
+	    opacity: 1,
+	    html: true,
+	    live: true,
+	    title: function() {
+		var i = $(this).attr("id").replace('tipIcon', 'tipText');
+		return $("#" + i).html();
+	    }
+	});
+	$("#webmailloginsubmit").on('click', function()
+	{
+	    if ($("#pass").val().length > 2 && $("#imapuser").val().length > 2)
+	    {
+		$("#webmaillogin").submit();
+	    }
+	});
+
+	$("#cploginsubmit").on('click', function()
+	{
+	    if ($("#portaluser").val().length > 2 && $("#password").val().length > 2)
+	    {
+		$("#cploginform").submit();
+	    }
+	});
+
+    });
+</script>
+<div class="content_wrrapper">
+        
+    <div class="content_wrapper_control_panel">
+	<div class="header_control_panel"></div>
+	<div class="content_control_panel">
+	    <div class="content_title">
+		<p>Webmail</p>
+	    </div>
+	    <div class="content_form_panel">
+		<form id="webmaillogin" action="https://mail.o2online.de/api/bf/redirect" method="POST">
+		    <div><span>
+			    <p class="description">Senden und empfangen Sie E-Mails und verwalten Sie Kontakte, Kalender und Notizen.</p>
+			    <p class="control_panel_label">E-Mail-Adresse
+			    			    <div id="tipIconEmail" class="tooltipIconDefault" original-title=""></div>
+			    <div id="tipTextEmail" class="tooltip">
+				<span>Bitte melden Sie sich mit Ihrer vollständigen E-Mail Adresse oder Ihrem E-Mail Alias und Kennwort an.</span>
+			    </div>
+						    </p>
+			    <input autocomplete="off" id="imapuser" name="imapuser" class="control_panel_input" type="text"/></span></div>
+		    <div><span><p class="control_panel_label">Passwort</p><input autocomplete="off" id="pass" name="pass" class="control_panel_input" type="password"/></span></div>
+		    <span class="remember_me">
+			<p class="forgot_password"><a href="https://mail.o2online.de/ajax_login/forgotPassword.php">Passwort vergessen?</a></p>
+		    </span>
+		</form>
+		<div class="login_button">
+		    <div class="left_button_bg"></div>
+		    <div class="middle_login_button_bg">
+			<p><a id="webmailloginsubmit" href="#">Anmelden</a></p>
+		    </div>
+		    <div class="right_button_bg"></div>
+		</div>
+	    </div>
+	</div>
+	<div class="footer_control_panel"></div>
+    </div>
+
+    <div class="content_wrapper_control_panel" id="control_panel_login">
+	<div class="header_control_panel"></div>
+	<div class="content_control_panel">
+	    <div class="content_title">
+		<p>Control Panel</p>
+	    </div>
+	    <div class="content_form_panel">
+		<form id="cploginform" action="https://mailadmin.o2online.de/portal/api/login" method="POST">
+		    <div><span>
+			    <p class="description">Verwalten Sie Ihre E-Mail Adressen wie z.B. erstellen,  ändern oder löschen von Alias Konten.</p>
+			    <p class="control_panel_label">Benutzername
+			    <div id="tipIconUsername" class="tooltipIconDefault" original-title=""></div>
+			    <div id="tipTextUsername" class="tooltip">
+				<span>Bitte melden Sie sich mit Ihrem Benutzernamen und Kennwort an. Der Benutzername kann Ihre Rufnummer oder ein von Ihnen selbst vergebener Benutzername sein.</span>
+			    </div>
+			    </p>
+			    <input autocomplete="off" id="portaluser" name="portaluser" class="control_panel_input" type="text"/></span></div>
+		    <div><span><p class="control_panel_label">Passwort</p><input autocomplete="off" id="password" name="password" class="control_panel_input"  type="password"/></span></div>
+		    <input type="hidden" name="CustomError" value='https://gomail.o2online.de?error=loginportal'/>
+		    <input type="hidden" name="Environment" value='https://mailadmin.o2online.de/portal/api/login'/>
+		    <input type="hidden" name="CustomLogin" value='https://gomail.o2online.de'/>
+		    <span class="remember_me">
+			<p class="forgot_password"><a href="https://mail.o2online.de/ajax_login/forgotPassword.php">Passwort vergessen?</a></p>
+		    </span>
+		</form>
+		<div class="login_button">
+		    <div class="left_button_bg"></div>
+		    <div class="middle_login_button_bg">
+			<p><a id="cploginsubmit" href="#">Anmelden</a></p>
+		    </div>
+		    <div class="right_button_bg"></div>
+		</div>
+	    </div>
+	</div>
+	<div class="footer_control_panel"></div>
+    </div>
+
+</div>
+    
+</div>
+</body>
+</html>
+
+	

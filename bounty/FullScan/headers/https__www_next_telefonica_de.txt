@@ -1,0 +1,21 @@
+200 OK
+Date: Wed, 07 Aug 2019 07:53:28 GMT
+Access-Control-Allow-Credentials: false
+X-Hs-Content-Id: 7401828812
+Retry-Count: 0
+Cache-Control: s-maxage=7200,max-age=5
+Edge-Cache-Tag: CT-7401828812,P-2740726,CW-5921749183,CW-5922249745,CW-6208329114,CW-7401879238,CW-7402082332,CW-7402285400,E-7401878679,E-7423750703,PGS-ALL,SW-2,SD-26
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/hub/2740726/hub_generated/template_assets/1562776446995/combined-css-803ffc1a3a5b794bf3f68c9a555e2b4a.css>; rel=preload; as=style </hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script
+X-Trace: 2B4365CAF264ECE1B5642BAEA49C88ADBE1A0C1FAE000000000000000000
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d61a5f236ad7557aad713e96128fbe5fe1565164408; expires=Thu, 06-Aug-20 07:53:28 GMT; path=/; domain=.next.telefonica.de; HttpOnly __cfruid=6c6dc0e687de8164862310109d86f8b766f22234-1565164408; path=/; domain=.next.telefonica.de; HttpOnly
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+X-Powered-By: HubSpot
+Cf-Cache-Status: HIT
+Cf-Ray: 5027ad51f864bfde-MAN
+Content-Security-Policy: upgrade-insecure-requests
+Strict-Transport-Security: max-age=0
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Hub-Id: 2740726

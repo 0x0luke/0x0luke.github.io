@@ -1,0 +1,20 @@
+200 OK
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Vhost: publish
+X-Frame-Options: SAMEORIGIN
+Cf-Cache-Status: HIT
+Cache-Control: public, max-age=30
+Expires: Wed, 07 Aug 2019 03:58:55 GMT
+X-Content-Type-Options: nosniff
+X-Dispatcher: dispatcher2useast1
+Date: Wed, 07 Aug 2019 03:58:25 GMT
+Strict-Transport-Security: max-age=63072000; includeSubdomains;
+Vary: Accept-Encoding,User-Agent
+Server: cloudflare
+Retry-Count: 0
+Content-Type: text/html;charset=utf-8
+Cf-Ray: 502654fe2ef3d21c-MAN
+Age: 2893
+Content-Security-Policy: default-src 'self'; child-src https://cdn.appdynamics.com blob:; connect-src 'self' https://api.marcus.com https://gsmosaic.tt.omtrdc.net https://v.marcus.com https://c.go-mpulse.net https://maps.googleapis.com https://dpm.demdex.net https://track.neuro-id.com https://api.neuro-id.com/v2/process https://api.neuro-id.com/v2/a https://gsmarcusprod.112.2o7.net https://adservice.google.com https://www.google-analytics.com https://*.akstat.io https://smetrics.marcus.com https://stats.g.doubleclick.net https://prod.eum.appd.gs.com; font-src 'self' data:; frame-src 'self' https://ad.doubleclick.net https://googleads.g.doubleclick.net https://gsmosaic.demdex.net https://*.docusign.net https://*.docusign.com https://v.marcus.com https://6187420.fls.doubleclick.net https://*.goldmansachsiavstage.yodlee.com https://cdn.plaid.com https://*.liveperson.net https://*.lpsnmedia.net https://assets.adobedtm.com https://www.youtube.com https://connect.facebook.net https://bid.g.doubleclick.net https://cdn.appdynamics.com; frame-ancestors 'self' https://gsmosaic.experiencecloud.adobe.com; img-src 'self' https://c.contentsquare.net https://www.google.com https://googleads.g.doubleclick.net https://secure.adnxs.com https://pubads.g.doubleclick.net https://adservice.google.com https://www.googleadservices.com https://v.marcus.com https://www.google-analytics.com https://*.online-metrix.net https://ad.doubleclick.net https://bat.bing.com https://stats.g.doubleclick.net https://www.facebook.com https://dpm.demdex.net https://www.googletagmanager.com https://secure.leadback.advertising.com https://smetrics.marcus.com https://gsmarcusprod.112.2o7.net https://*.lpsnmedia.net https://col.eum-appdynamics.com https://*.linkedin.com https://snap.licdn.com https://c0.adalyser.com http://smtp.cft.site.gs.com data:; media-src 'self' https://*.lpsnmedia.net; object-src 'self'; script-src 'self' https://assets.adobedtm.com https://www.googletagmanager.com https://*.liveperson.net https://*.lpsnmedia.net https://gsmosaic.tt.omtrdc.net https://gsmosaic.demdex.net https://v.marcus.com https://connect.facebook.net https://www.googleadservices.com https://s.yimg.com https://bat.bing.com https://www.google-analytics.com https://sp.analytics.yahoo.com https://googleads.g.doubleclick.net https://t.contentsquare.net https://ep.bankrate.com https://maps.googleapis.com https://c.go-mpulse.net https://cdn.plaid.com https://smetrics.marcus.com https://s.go-mpulse.net https://track.neuro-id.com https://gsmarcusprod.112.2o7.net https://www.google-analytics.com https://www.youtube.com https://s.ytimg.com https://cdn.appdynamics.com https://ds-aksb-a.akamaihd.net https://*.linkedin.com https://c0.adalyser.com https://snap.licdn.com blob: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';
+X-Request-Id: XUosRLtIQIHz9fkJ4IT6SwAAACo
+X-Xss-Protection: 1; mode=block

@@ -1,0 +1,15 @@
+200 OK
+Content-Security-Policy: default-src 'self' data: 'unsafe-inline' 'unsafe-eval';
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000
+Content-Length: 65200
+Cache-Control: no-cache, no-store,no-store
+Set-Cookie: ASP.NET_SessionId1=kljkewc3fyatlmybdsy4long; path=/; secure; HttpOnly
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 04:23:22 GMT
+Expires: -1
+X-Robots-Tag: noindex
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN

@@ -1,0 +1,19 @@
+200 OK
+X-Amz-Cf-Id: SE1BwNdW-7wah8efMg7CYzxk0fKVR1skJwFSJUnQLjybkdJygd2dQg==
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 50325a684d4bbfca-MAN
+Set-Cookie: __cfduid=d1b8f107901c7a0dfa187f53157d4c4401565276355; expires=Fri, 07-Aug-20 14:59:15 GMT; path=/; domain=.upwork.com; HttpOnly __cfruid=e96b1a5f08bb5c786eb6b1f975e25affcb7267c3-1565276356; path=/; domain=.upwork.com; HttpOnly
+X-Status-Page-Id: 55a1f951d0ef560d6e00006e
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 14:59:16 GMT
+Via: 1.1 varnish, 1.1 ccf34ecc11e5579d8083b17d9d39a622.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR62-C2
+X-Cache: RefreshHit from cloudfront
+Server: cloudflare
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+X-Varnish: 335688880 335670414
+Content-Type: text/html; charset=utf-8
+Etag: W/"fd63-u2CaslJmMtYZYgPhy3opG02zGdU"

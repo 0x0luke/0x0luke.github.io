@@ -1,0 +1,24 @@
+200 OK
+Expires: 0
+Server: nginx
+Content-Security-Policy-Report-Only: default-src 'self' ok1static.oktacdn.com hubspot.okta.com; connect-src 'self' ok1static.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com; script-src 'unsafe-inline' 'unsafe-eval' 'self' ok1static.oktacdn.com; style-src 'unsafe-inline' 'self' ok1static.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-src 'self' login.okta.com; img-src 'self' ok1static.oktacdn.com hubspot.okta.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; report-uri https://okta.report-uri.com/r/d/csp/reportOnly; report-to csp-report
+Pragma: no-cache
+Content-Language: en
+X-Rate-Limit-Remaining: 837
+X-Rate-Limit-Reset: 1565161103
+Strict-Transport-Security: max-age=315360000
+X-Content-Type-Options: nosniff
+X-Robots-Tag: none
+Date: Wed, 07 Aug 2019 06:57:38 GMT
+Retry-Count: 0
+Cache-Control: no-cache, no-store
+Report-To: {"group":"csp-report","max_age":31536000,"endpoints":[{"url":"https://okta.report-uri.com/r/d/csp/reportOnly"}],"include_subdomains":true}
+X-Ua-Compatible: IE=edge
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.io/r/default/hpkp/reportOnly"
+Content-Type: text/html;charset=utf-8
+X-Okta-Request-Id: XUp2YqLmw8LXwZr6J2bIfgAABq0
+X-Xss-Protection: 1; mode=block; report=https://okta.report-uri.com/r/d/xss/enforce
+Vary: Accept-Encoding
+P3p: CP="HONK"
+X-Rate-Limit-Limit: 850
+Set-Cookie: ADRUM_BTa=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BT1=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BTa="R:832|g:4c3bb7fe-6bf4-4ccf-8047-fd0299b61f0f"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 06:58:08 GMT; Path=/ ADRUM_BTa="R:832|g:4c3bb7fe-6bf4-4ccf-8047-fd0299b61f0f|n:Okta_6d5b1e30-d05a-4894-a37b-81b5f6c60e0e"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 06:58:08 GMT; Path=/ ADRUM_BT1="R:832|i:14616"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 06:58:08 GMT; Path=/ ADRUM_BT1="R:832|i:14616|e:36"; Version=1; Max-Age=30; Expires=Wed, 07-Aug-2019 06:58:08 GMT; Path=/ sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ JSESSIONID=6A3E923E58113E179D6EED03FC645AC7; Path=/; Secure; HttpOnly t=summer; Path=/ DT=DI0nLRMxAmBQcC8TXFKBsTfhA; Expires=Fri, 06-Aug-2021 06:57:38 GMT; Path=/; Secure sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/

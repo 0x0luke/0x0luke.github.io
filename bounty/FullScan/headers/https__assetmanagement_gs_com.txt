@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html
+Date: Thu, 08 Aug 2019 09:30:08 GMT
+Vary: Accept-Encoding
+Server: Apache
+Etag: "13873fa-gzip"
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+X-Datastream-Cache-Status: 0
+Gs: b1
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0
+Content-Security-Policy: default-src 'self' gap: https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline'; font-src 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com data:; script-src 'self' https://assets.adobedtm.com https://ds-aksb-a.akamaihd.net https://*.gsam.com https://*.gs.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com https://gsam.122.2o7.net https://api.darksky.net 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://gsam.122.2o7.net https://*.gs.com https://*.gsam.com https://*.demdex.net https://*.omtrdc.net https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline' data:; object-src 'self'; child-src gap: 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com; frame-src gap: 'self' https://t2.jiji.com https://www.google.com https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com https://vds.issproxy.com; img-src 'self' * data:; style-src 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline';
+X-Datastream-Midmile-Rtt: 6
+X-Datastream-Origin-Mex-Latency: 129
+Set-Cookie: NSC_psjhjo.htbn.ht.dpn-443-wc=30dfa3dbd818f29ca9e477e0db319ceac6e2dad9461e0e85c9f8408fe74798493c861108;path=/;secure;httponly
+Strict-Transport-Security: max-age=16070400; includeSubDomains; preload

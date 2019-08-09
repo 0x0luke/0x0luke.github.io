@@ -1,0 +1,23 @@
+200 OK
+Cf-Ray: 5030c3136b3dbfde-MAN
+Strict-Transport-Security: max-age=31104000; includeSubDomains; preload
+Vary: Accept-Encoding
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Id: 3571494225
+Date: Thu, 08 Aug 2019 10:21:12 GMT
+Retry-Count: 0
+Cf-Cache-Status: HIT
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-3571494225,P-53,L-4062488779,L-4255443445,L-5499022143,CW-2635099965,CW-4016564425,CW-4358122149,CW-4494620827,CW-5304652277,CW-5413765982,CW-5482839749,DB-1053726,DB-450201,E-4498951407,E-4625916024,E-4859375882,E-4866993690,E-4941906428,E-5652591807,E-6042118386,E-8384041284,E-8915548226,PGS-ALL,SW-0,SD-3
+X-Hs-Hub-Id: 53
+X-Trace: 2B2D81E1100783D0BABA8B15380D7D10B954D8CAC2000000000000000000
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d5ad7a5e3482d382eb0ffd865da9e66ca1565259671; expires=Fri, 07-Aug-20 10:21:11 GMT; path=/; domain=.help.hubspot.com; HttpOnly __cfruid=a2267222bc2c0dba7feb66b10a040f7a3c562a39-1565259672; path=/; domain=.help.hubspot.com; HttpOnly
+Cache-Control: s-maxage=7200,max-age=5
+Content-Security-Policy: upgrade-insecure-requests
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script
+X-Hs-Combine-Css: Retry
+X-Hs-Content-Campaign-Id: 4e70b4f8-158d-4de1-9f53-09035754cecd
+X-Powered-By: HubSpot

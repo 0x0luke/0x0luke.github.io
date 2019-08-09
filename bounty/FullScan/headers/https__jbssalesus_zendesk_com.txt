@@ -1,0 +1,13 @@
+200 OK
+Strict-Transport-Security: max-age=31536000;
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: ALLOW-FROM https://hub.jetbrains.com/api/rest/saml2/oauth
+Cache-Control: no-cache, no-store, no-transform, must-revalidate
+Content-Security-Policy: frame-ancestors https://hub.jetbrains.com
+Last-Modified: Tue, 06 Aug 2019 12:48:34 GMT
+Date: Thu, 08 Aug 2019 15:53:20 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Referrer-Policy: strict-origin-when-cross-origin
+Server: nginx
+Content-Type: text/html

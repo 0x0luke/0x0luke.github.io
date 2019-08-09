@@ -1,0 +1,12 @@
+500 Server Error
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:26:59 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+X-Application-Context: application:aws,AWS_PROD,prod:8080
+Content-Type: application/json;charset=utf-8
+Content-Length: 92
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate

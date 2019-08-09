@@ -1,0 +1,16 @@
+200 OK
+Vary: Accept-Encoding,Fastly-SSL
+Retry-Count: 0
+Etag: "6d343522ebd48b1b130202be2c334912"
+Cache-Control: max-age=3600
+X-Cache-Hits: 4
+Accept-Ranges: bytes
+X-Served-By: cache-lhr6339-LHR
+Last-Modified: Wed, 07 Aug 2019 15:35:14 GMT
+X-Amz-Meta-Surrogate-Control: max-age=864000
+X-Timer: S1565276362.590364,VS0,VE0
+Via: 1.1 varnish
+Age: 82141
+X-Cache: HIT
+Content-Type: text/html; charset=utf-8
+Date: Thu, 08 Aug 2019 14:59:21 GMT

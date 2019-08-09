@@ -1,0 +1,20 @@
+401 Unauthorized
+Retry-Count: 0
+Www-Authenticate: Bearer error="invalid_request", error_description="No bearer token found in the request"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Last-Modified: Tue, 11 Jun 2019 19:30:12 GMT
+Content-Type: text/html
+X-Datastream-Origin-Mex-Latency: 286
+Etag: "255-58b11534fd900-gzip"
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Datastream-Midmile-Rtt: 141
+X-Datastream-Cache-Status: 0
+Server: GS
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, no-cache
+Date: Wed, 07 Aug 2019 03:34:24 GMT
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://assets.adobedtm.com https://v.marcus.com;  connect-src 'self'  https://v.marcus.com; img-src 'self' https://v.marcus.com data: https://goldmansachs.d2.sc.omtrdc.net https://gspwm.d2.sc.omtrdc.net; style-src 'self' 'unsafe-inline' ; font-src 'self' data:;frame-src 'self' https://v.marcus.com; frame-ancestors 'self';

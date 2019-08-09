@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <base href="/">
+        <title>Soundtrap - Make music online</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+        <meta name="description" content="Make music online together by recording and using loops. Invite friends to collaborate. It's free and no download is required. Works on Mac, Windows, Chromebooks, iPhone, Android and Linux."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-itunes-app" content="app-id=991031323">
+    <meta name="google-site-verification" content="J8JpsDmeYOqJV1m6hQOf0raKsAquUmO4pjc49lm8-Vc" />
+    <meta name="referrer" content="origin" />
+    <meta name="theme-color" content="#3e1165">
+        <link rel="shortcut icon" href="https://static.soundtrap.com/public/images/favicon_16px_b17.png
+" type="image/png">
+    <link rel="shortcut icon" href="https://static.soundtrap.com/public/images/favicon_32px_b17.png
+" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://static.soundtrap.com/public/images/favicon_57px_b17.png
+" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://static.soundtrap.com/public/images/favicon_114px_b17.png
+" />
+    <link rel="manifest" href="/manifest.json">
+        <link href="https://static.soundtrap.com/scripts/29mmyoWi.access.css
+" rel="stylesheet" media="none" onload="if(media!='all')media='all'" type="text/css">
+    <link preload href="https://static.soundtrap.com/scripts/3Jj0n_4x.landingCss.css
+" rel="stylesheet">
+    <link preload rel="stylesheet" href="https://static.soundtrap.com/scripts/1x4s23Gu.musicmakers.css
+">
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDXQVRL');</script>
+<!-- End Google Tag Manager -->
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '144021426022153'); // Insert your pixel ID here.
+fbq('track', 'PageView', {
+  loggedIn: false
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=144021426022153&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-35585094-2', 'soundtrap.com');
+ga('set', 'transport', 'beacon');
+    ga('set', '\x64\x69\x6d\x65\x6e\x73\x69\x6f\x6e\x31', '\x6e\x6f\x74\x5f\x6c\x6f\x67\x67\x65\x64\x5f\x69\x6e');
+//ga('send', 'pageview');
+</script>
+    <script type="text/javascript">
+      (function () {
+        if (!navigator.serviceWorker) {
+          return;
+        }
+
+        navigator.serviceWorker.getRegistration('offlinesw.js').then(function(ServiceWorkerRegistration) {
+          if (!ServiceWorkerRegistration) {
+            return;
+          }
+          ServiceWorkerRegistration.unregister().then(function (success) {
+            console.log('Was service worker unregistered? ', success);
+          }).catch(function (reason) {
+            console.log('Service worker unregister failed: ', reason);
+          });
+        }).catch(function (reason) {
+          console.log('Failed to get offlinesw for unregistration. Reason: ', reason);
+        });
+      })();
+    </script>
+  </head>
+
+  <body class="musicmakers__container">
+    <div id="fb-root"></div>
+    <div class="landing">
+      <header class="landing__header header">
+        <img src="https://static.soundtrap.com/public/images/logo-soundtrap.svg
+" alt="Soundtrap" class="logo logo--big">
+
+        <div class="mobilenav">
+          <button class="mobilenav__button" onclick="document.getElementById('navigation__mobileJoinContainer').classList.toggle('has-hidden');">Join Now</button>
+                                <div id="navigation__mobileJoinContainer" class="has-hidden">
+              <button class="navigation__joinAlternative" onclick="this.classList.add('deferred-click');document.querySelector('.angular__signup--personal').click()">
+                <div class="navigation__iconContainer navigation__personalIconContainer">
+                  <img class="navigation__icon" src="/public/images/user.svg" />
+                </div>
+                <h5 class="navigation__joinText st-title-standard">
+                  Personal Use
+                </h5>
+              </button>
+              <a class="navigation__joinAlternative" href="/edu/">
+                <div class="navigation__iconContainer navigation__eduIconContainer">
+                  <img class="navigation__icon" src="/public/images/education.svg" />
+                </div>
+                <h5 class="navigation__joinText st-title-standard">
+                  Educational Use
+                </h5>
+              </a>
+            </div>
+          
+
+          <button class="mobilenav__hamburger">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+
+        <nav class="navigation has-hidden">
+          <a href="/musicmakers" class="navigation__link">Music Makers</a>
+          <a href="/storytellers" class="navigation__link">Storytellers</a>
+          <a href="/edu" class="navigation__link">Education</a>
+          <hr class="navigation__divider">
+          <a class="navigation__link" onclick="this.classList.add('deferred-click');document.querySelector('.angular__login').click()">Log in</a>
+          <button class="navigation__link navigation__link--button navigation__join-button" onclick="document.getElementById('navigation__joinContainer').classList.toggle('has-hidden');">Join Now</button>
+
+                                <div id="navigation__joinContainer" class="has-hidden">
+              <button class="navigation__joinAlternative" onclick="this.classList.add('deferred-click');document.querySelector('.angular__signup--personal').click()">
+                <div class="navigation__iconContainer navigation__personalIconContainer">
+                  <img class="navigation__icon" src="/public/images/user.svg" />
+                </div>
+                <h5 class="navigation__joinText st-title-standard">
+                  Personal Use
+                </h5>
+              </button>
+              <a class="navigation__joinAlternative" href="/edu/">
+                <div class="navigation__iconContainer navigation__eduIconContainer">
+                  <img class="navigation__icon" src="/public/images/education.svg" />
+                </div>
+                <h5 class="navigation__joinText st-title-standard">
+                  Educational Use
+                </h5>
+              </a>
+            </div>
+                  </nav>
+      </header>
+      
+<section class="hero has-viewheight-full has-flex has-content-centered has-relative" ng-controller="LandingCtrl as landing">
+  <figure class="image has-viewheight-full has-relative hero__image" data-skip-hidden>
+    <!-- Base64 this and inline -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAKCAYAAABWiWWfAAACSklEQVQ4Ty2SzUtUYRjFf+/9mLk6owUpzqioRJZKaZJUREVEi76oKHARpODCKGjVok3r+kPatEpoGa0qCCNJSvIrGFMnhjFH5+vOzL3vvU/MTLtncZ7fOXCOiiWOCSjAAiKAiaCBauMGH4UNCBCCsjlgHyJUJmV/n1BqCAFKNCqWGGrABANTdaBUK1HTREseT1eQhlGNukY1DD3AIGq10dXeTaa4g6f3oAk7Lk3X+lOUs8lRLgxfJ+UL31Jf2MisoIM8iAtKo6QODJopseg52I9hOqT3UqhY8pQgJkoZCBUQh6tjV7hx/hYFHeXj9yXeLbwl0DmQPOp/MsFCoRvJZyYuU7a7USMnn8hmdhUJXQxDEPERTM4Mn2bm2hSBGWdxfZu5D3P8zf8C8nQ6CTxV4va5m0TaLA539dLZkUDNPHgjP9YXWNlaIgh3sIwIoVQIMRjo6ufF7HOUHSeT07x+/wqbIo/vTxNri+G7FVTEIggFr1pFjYxNycXxe6xtrjO/+gmRLJ2t/bg6j2WFvJx9xsDQILriE2m3kTDELdUwLYUywKvW0L6PFqkXMCGHE6NcmrjLdjbFavozg8k+pu5MEmtvwXEczKiNCHjFGoZTnwu4pSra86iU9tjN/GF5cb4OG5d61Ud6hnk6/Yh4ewumaWPaFq1xB0MpJAhQpkkYhlRLNcqFPJtLX9lYWaawnyVdzLFVKddhJ6Q5ToujfUM8nJymtzeJ9gXDMGiJRagWi+TS2xT3c6TXfrLxO0XOLZCpldn1Krihhw59/gE/4g17mg3BhQAAAABJRU5ErkJggg=="
+        class="image__thumb hero__image--thumb has-cover-fit"/>
+    <picture class="hero__picture">
+      <!-- if inefficient then opt for color only fallback, e.g. dominant color -->
+      <!-- Top image is first to load if webp is top and works its preferred -->
+      <source type="image/webp"
+          data-srcset="/public/images/musicmakers/hero-tiny_1.webp 480w,
+            /public/images/musicmakers/hero-small_1.webp 960w,
+            /public/images/musicmakers/hero-medium_1.webp 1440w,
+            /public/images/musicmakers/hero_1.webp 1920w">
+      <source type="image/jpg"
+        data-srcset="/public/images/musicmakers/hero-tiny.jpg 480w,
+          /public/images/musicmakers/hero-small.jpg 960w,
+          /public/images/musicmakers/hero-medium.jpg 1440w,
+          /public/images/musicmakers/hero.jpg 1920w">
+      <img class="image__full hero__image--full has-cover-fit has-hidden">
+    </picture>
+    <video playsinline autoplay loop muted class="hero__video has-floating has-cover-fit">
+      <source src="https://static.soundtrap.com/public/videos/musicmakers/header.webm
+" type="video/webm">
+      <source src="https://static.soundtrap.com/public/videos/musicmakers/header_h264.mp4
+" type="video/mp4">
+    </video>
+  </figure>
+  <div class="hero__container has-floating has-text-centered has-medium-padding">
+    <h1 class="hero__title has-shadow">Your everywhere studio</h1>
+    <button class="is-desktop hero__cta" onclick="document.getElementById('hero__joinContainer').classList.toggle('has-hidden');">Join Now</button>
+    <div id="hero__joinContainer" class="has-hidden">
+      <button class="hero__joinAlternative" onclick="this.classList.add('deferred-click');document.querySelector('.angular__signup--personal').click()">
+        <div class="hero__iconContainer hero__personalIconContainer">
+          <img class="hero__icon" src="/public/images/user.svg" />
+        </div>
+        <h5 class="hero__joinText st-title-standard">
+          Personal Use
+        </h5>
+      </button>
+      <a class="hero__joinAlternative" href="/edu/">
+        <div class="hero__iconContainer hero__eduIconContainer">
+          <img class="hero__icon" src="/public/images/education.svg" />
+        </div>
+        <h5 class="hero__joinText st-title-standard">
+          Educational Use
+        </h5>
+      </a>
+      </div>
+    <a class="store-banner is-mobile" target="_blank">
+      <img class="store-banner__image" />
+    </a>
+  </div>
+</section>
+<section class="inourblood">
+  <div class="inourblood__container has-medium-padding">
+    <h1 class="inourblood__title">Music making is in our blood</h1>
+    <p class="inourblood__description st-body-standard">Make some noise, explore a new sound, create a song or collaborate with others. Welcome to the collective of passionate creators, whether you already are one or aspire to become one.</p>
+  </div>
+  <figure class="image inourblood__figure">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAABUUlEQVQoU03QP0sCcQDG8ed3J/m78/yBijeqcC7Ozb4At6SX0OLUEgi9gWhoaHRorEEQp4LAySBQz4Ywzj9HcnXRFZcmlZoe50UEnc/8gQe+BP42JEl6ZozFOI6HIAgYjd4wnU7hOM6KrEFBkqSxoijBRCJBJpMJTNOEZVlYLpfeOozJsvxaKBR4WZZh2zba7TYMw4Cu6/iHoihuptNpNZ/Pk9+7Xq+H4XAIGgyiPxj4kFK6wxg7KZVKYIyhUqkgEong+vIKakf1YTgc3gsEAkfFYhGUUlSrVUSjUdy3Oujbpg/j8fgBIWQ/lUohl8uhVqvBmc1wp2lYEc6HiqLsZjKZY0opyWazqNfreFS7MMdP+PRcEM/zSLPZ3OZ5/nA+nytdTQPhONw0WrhtaCBf79A/LJByubyVTCZPXdcVQ6EQ+evmYLH4xsXZOTSjD/PlAT99qosKSAoGPQAAAABJRU5ErkJggg=="
+       class="image__thumb inourblood__image"/>
+    <picture class="inourblood__picture">
+      <source type="image/webp"
+        data-srcset="/public/images/musicmakers/inourblood_1.webp 1072w,
+          /public/images/musicmakers/inourblood-medium_1.webp 804w,
+          /public/images/musicmakers/inourblood-small_1.webp 536w"
+        sizes="
+          (max-width: 900px) 100vw,
+          70vw">
+      <source type="image/png"
+        data-srcset="/public/images/musicmakers/inourblood.png 1072w,
+          /public/images/musicmakers/inourblood-medium.png 804w,
+          /public/images/musicmakers/inourblood-small.png 536w"
+        sizes="
+          (max-width: 900px) 100vw,
+          70vw">
+      <img class="image__full inourblood__image has-hidden" />
+    </picture>
+  </figure>
+</section>
+
+<section class="studio has-relative">
+  <figure class="studio__image image has-relative">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAADYklEQVRIS51VXYsUVxA9997uHmeMcRF1JWHzQQKCoIhiBJd9SDQGIsiQiBAS90Xzd4IvPiiiD4KPIvgURFEhJIawieRLkigGs4lukmFntnuyfT+lqqfb3tllx9jQTE/dW7eqzjlVV/R6C8E5C2sthBBQSiGKInjvQU8IgX9pjb6t8QhBVGtk98EjiiS/pZ+UkvfTW36zE8B7yEa+Yu7PXlCJg/MGY2Nj5R7eVAavjACuXnmEH+50ioOFQgiUaMDU/nHsmdy0LOG670rf4vHsQmi0ApJGAu8dCA1AIJYxnPUQglAoEKDn4tm/8OWNf8hQnUdr7Y834732liUJlAiWvvWCSptI0yxYaxD8ACoQzA5fnP4Fs992uUIBwQEpJKGvc8PBJWRBj5TY/dGr2H5oYlTBy9ZFr9cLlBll5Jxjbqjya+fv4f5381CDSoln7XKsbTVhcoK/QMCTLnyOfR+8hl0HJ0ZSUGqpQiDLspBlGfI85+CtVgvWAZ9dmsXtuz0E72B1xjxHjXVcLQIQvIWzOYIzSFrrMX1gCz6cGh9JQRm4hEKkaRq01ojjuILHGYc7J6/j8e0H8BSNVQEI0kKkEJyv7AUVAluPvYU32juXQVyiO6yH6n+n0wmk+EglcN7CGA1vHO6e+Rxz3/yKl9ds4PAmWPybL8BqA5k7bExe5JZ13uFRPo9txw/izSNTjFS9batKB21cz5DbsNvtBmMKERZaE4yG6WTw/+llFd06dxkPb33PnQEpuHMaKsGuTw9hx9G3/78IiQJKQAoJbTQPIc6svwivTaH8AQV0+m+nr2Lu5s9sLWotntdPvItXjk6uSkG5WKeFNZCmKaRU0DrnPZFU+OPUBfz91cxgBkhoZ6GkwDoZo280Fp1DTFOTZoZSeGm6jYkj7z+TCJckQG04nFnwHov3HsLNd7l8oUh4jrfpmZ9gfrxfuDQTgGgSwAvt/Vj7zt4Vp+cw76UAWSukAeoCpSK+D+I44v0ksOGWIfvvpy4gu/E1zwFHwhrMjs2fHMbGwweeTwP9fh/NZrNyrkM0fKJP+wiL+dNRXMxpyFYTotlYVQMrncsI0ASMVAzrTAVhkiRLDqvP8+HZXp9u9duzhHrEXZCyBsiRuqEMvBoKo3Am+uqJELU0Zektr2Iqmp4nbJ8S0JKpc2gAAAAASUVORK5CYII="
+         class="image__thumb studio__image--thumb" />
+    <picture class="studio__picture">
+      <source type="image/webp" data-srcset="/public/images/musicmakers/studio-first-frame_1.webp 1440w">
+      <source type="image/png" data-srcset="/public/images/musicmakers/studio-first-frame.png 1440w">
+      <img class="image__full studio__image--full">
+    </picture>
+  </figure>
+  <video playsinline autoplay loop muted class="studio__video has-floating">
+    <source src="https://static.soundtrap.com/public/videos/musicmakers/studio.webm
+" type="video/webm">
+    <source src="https://static.soundtrap.com/public/videos/musicmakers/studio_h264.mp4
+" type="video/mp4">
+  </video>
+  <div class="studio__container has-medium-padding">
+    <h3 class="studio__title">When you have the urge to create</h3>
+    <p class="studio__description">Explore our extensive collection of beats, loops and instruments or connect your own instrument. If you have the urge to create, there are no longer any excuses.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature has-medium-padding">
+    <div class="feature-container">
+      <h3 class="feature__big-title">Power features</h3>
+    </div>
+  </div>
+  <div class="feature has-medium-padding">
+    <figure class="feature__icon">
+      <img data-src="/public/images/musicmakers/img-autotune.svg" alt="AutoTune">
+    </figure>
+    <div class="feature__container">
+      <h3 class="feature__title">AutoTune</h3>
+      <p class="feature__description">Soundtrap's AutoTune feature offers you the ability to pitch and modify your voice recordings.</p>
+      <p class="feature__note">(Powered by Antares)</p>
+    </div>
+  </div>
+  <div class="feature has-medium-padding">
+    <figure class="feature__icon">
+      <img data-src="/public/images/musicmakers/img-automation.svg" alt="Automation">
+    </figure>
+    <div class="feature__container">
+      <h3 class="feature__title">Automation</h3>
+      <p class="feature__description">Create professional sounds with this powerful tool. Tweak the volume, pan and use the sweep effect to your heart's content.</p>
+    </div>
+  </div>
+  <div class="feature has-medium-padding">
+    <figure class="feature__icon">
+      <img data-src="/public/images/musicmakers/img-amplifier.svg" alt="Amplifier">
+    </figure>
+    <div class="feature__container">
+      <h3 class="feature__title">Amplifier</h3>
+      <p class="feature__description">Connect your own microphone, guitar or any other instrument.</p>
+    </div>
+  </div>
+  <div class="feature has-medium-padding">
+    <figure class="feature__icon">
+      <img data-src="/public/images/musicmakers/img-loops-presets.svg" alt="Loops & Presets">
+    </figure>
+    <div class="feature__container">
+      <h3 class="feature__title">Loops & Presets</h3>
+      <p class="feature__description">+ 4,000 high quality beats and presets. You want it? We've got it.</p>
+    </div>
+  </div>
+  <div class="feature has-medium-padding">
+    <figure class="feature__icon">
+      <img data-src="/public/images/musicmakers/img-patterns.svg" alt="Patterns Beatmaker">
+    </figure>
+    <div class="feature__container">
+      <h3 class="feature__title">Patterns<br />Beatmaker</h3>
+      <p class="feature__description">Make your own beats in a easy and intuitive way.</p>
+    </div>
+  </div>
+</section>
+<section class="collaborate has-relative">
+  <div class="collaborate__imagecontainer has-relative">
+    <figure class="collaborate__image image collabperson1 has-relative">
+      <!-- Base64 this and inline -->
+      <img src="data:image/png;base64,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"
+           class="image__thumb collabperson1__thumb"/>
+      <picture class="collabperson1__picture">
+        <!-- if inefficient then opt for color only fallback, e.g. dominant color -->
+        <!-- Top image is first to load if webp is top and works its preferred -->
+        <source type="image/webp"
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-01-large_1.webp 1245w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-medium_1.webp 934w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-small_1.webp 623w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-tiny_1.webp 311w"
+          sizes="
+            (max-width: 700px) 70vw,
+            40vw"
+        >
+        <source type="image/png"
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-01-large.png 1245w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-medium.png 934w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-small.png 623w,
+            /public/images/musicmakers/img-musicmaker-collaborate-01-tiny.png 311w"
+          sizes="
+            (max-width: 700px) 70vw,
+            40vw"
+        >
+        <img class="image__full collabperson1__full has-hidden" >
+      </picture>
+    </figure>
+    <figure class="collaborate__image collabperson2 image has-relative">
+      <!-- Base64 this and inline -->
+      <img src="data:image/png;base64,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"
+           class="image__thumb collabperson2__thumb"/>
+      <picture class="collabperson2__picture">
+        <!-- if inefficient then opt for color only fallback, e.g. dominant color -->
+        <!-- Top image is first to load if webp is top and works its preferred -->
+        <source type="image/webp"
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-02-large_1.webp 1233w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-medium_1.webp 925w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-small_1.webp 617w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-tiny_1.webp 308w"
+          sizes="
+            (max-width: 700px) 70vw,
+            36vw"
+        >
+        <source
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-02-large.png 1233w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-medium.png 925w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-small.png 617w,
+            /public/images/musicmakers/img-musicmaker-collaborate-02-tiny.png 308w"
+          sizes="
+            (max-width: 700px) 70vw,
+            36vw"
+        >
+        <img class="image__full collabperson2__full has-hidden" >
+      </picture>
+    </figure>
+    <figure class="collaborate__image collabperson3 image has-relative">
+      <!-- Base64 this and inline -->
+      <img src="data:image/png;base64,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"
+           class="image__thumb collabperson3__thumb"/>
+      <picture class="collabperson3__picture">
+        <!-- if inefficient then opt for color only fallback, e.g. dominant color -->
+        <!-- Top image is first to load if webp is top and works its preferred -->
+        <source type="image/webp"
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-03-large_1.webp 1755w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-medium_1.webp 1316w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-small_1.webp 878w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-tiny_1.webp 439w"
+          sizes="
+            (max-width: 700px) 70vw,
+            36vw"
+        >
+        <source type="image/png"
+          data-srcset="/public/images/musicmakers/img-musicmaker-collaborate-03-large.png 1755w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-medium.png 1316w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-small.png 878w,
+            /public/images/musicmakers/img-musicmaker-collaborate-03-tiny.png 439w"
+          sizes="
+            (max-width: 700px) 70vw,
+            36vw"
+        >
+        <img class="image__full collabperson3__full has-hidden" >
+      </picture>
+    </figure>
+  </div>
+  <div class="collaborate__container">
+    <h1 class="collaborate__title">Collaborate with anyone...</h1>
+    <p class="collaborate__description">Share all of your creative moments and collaborate in real time with your bandmates, other artists or anyone else. Make new music with friends and new friends with music.</p>
+  </div>
+</section>
+<section class="multidev">
+  <figure class="multidev__image image has-relative">
+    <!-- Base64 this and inline -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAEHElEQVQ4T53U+29TdRjH8ff39EIvbGDBMWBuc2MOBhiuQ8AgTIQYBeMSL5DFqJioQU28EI36I0ZhydQgCUIMRQKIE0YEJKBylTggA7UMB9ugdB20K13X9ZxezzlfsyUSYgwRP3/A6/nkyZNHPO987lRSYV3AUH5pTvuDcFTnDiKecb0l82SvcbdhdJ11WC/GFHO7ifTJrBlqSWZ6oNG4nSdaZ9XKpq4SzqtpqlIaMUWSUgRZgdQU0RkRco0KTacTX0f/DRKRKc9K3BYuawbb/fdxORdDUZLYMJic1hki0Y+6bGcChqy9oHlD/0TEjXkrpEylEVLBOizK5bCHI5EKWlSFgDVEua4yJa3zo8vmC+eMx1vSWwO3IuJa7QfSpauYNjuG/xoCA2FLcV3R2fR7DeeUAJP1GGU5U37vtp44FvfOB+TfiPgkb42cPCLC7Fl2pKpiBkMIhwvopzPlYHXbdHJOH8vjORrzbeaf/WFXBwcyN4HasZ9Ld2IIc209PLU4hyJ19PMdYLMh8sO8e2oxAXsbL8YzA4D0S7H0bGLzvpvAdw0B2fTtHpx/OFhefJHpkwS5UBSZSKK4Muy7XoS3F5YlYhx3W7lkVw6rveqjF2jMDiCi56omD265xp6N+1mQ6OOx2Sk8BXayrZ1gSjSbztqOCrR0NzPTOtvy7T3ZnFzYonl9g4AWz8hkwmBnw3lO7vDxoH6dJdUa+R4LeiCE7FcJKYKPO4opT4WQGPKk01J/JL7lvYFlimzWlNIwiAbTNB8KsqvhMBP6kiwpC1J8rxNT1TBDEYLSwsYrpSSyITxmVjtjs8z4NeFtEwc2dcuJ8z0UFttJxjKcOx7Fu/oQng6NxUXdTKkS2I00RugGhqKy2T+eQH+UuMh+tT2ZfFmscnwkrZXTebL+AaYuyEeNpmk+2MM39UeQ4TjjcyY15WEqSkGGI2QyKp8FRmHGYu0tFlkjChgrFzKDkkkreGFrDaVVTjJqjq72DM1NftqDbcR9knHqVR6ekGWsGiDYn2L9JWeu18ysEnbyZD4epiqVzKl+k7ov51EywYGpSywWQTplEOpIEO7u43Tjb5S3tjI3z8/ebhNfl1SFFUUOxY4NN1OpYuSIpcx7ehqFlW6ZNjKktKx0ue1i3Phicc+kAnZ9eJBHuo5jxsOs9w9DTGO02Umsz411Ww/ZsuE4JhZyVxLsR6249xtkEirpmSWOijUNuzdYkuEUQ7ftYEy0nbasDQH8AKwErtzucRQw8pWXltR/seydRZbA+16qlU7QtEHADgye5e3ihlHl1uqfN+zcPbHtRBuFPx1mZmFsEPjPGY79iUWldeveWPt2UV/EELm9x+4MGJg0hpGVZZ77X53z0KLXlr9eZ7mjBrdWHc3ouqWzVq7/3wBgK2LMp38BFdADUvPUyGQAAAAASUVORK5CYII="
+         class="image__thumb multidev__image--thumb"/>
+    <picture class="multidev__picture">
+      <source type="image/webp" media="(max-width: 480px)"
+              data-srcset="/public/images/musicmakers/img-musicmaker-urge-mobile_1.webp 750w"
+              sizes="(max-width: 480px) 100vw, 60vw">
+      <source type="image/png" media="(max-width: 480px)"
+              data-srcset="/public/images/musicmakers/img-musicmaker-urge-mobile.png 750w"
+              sizes="(max-width: 480px) 100vw, 60vw">
+      <source type="image/webp" media="(min-width: 481px)"
+              data-srcset="/public/images/musicmakers/img-musicmaker-urge@2x_1.webp 1734w,
+              /public/images/musicmakers/img-musicmaker-urge@3x_1.webp 2601w,
+              /public/images/musicmakers/img-musicmaker-urge_1.webp 867w"
+              sizes="(max-width: 480px) 100vw, 60vw">
+      <source type="image/png" media="(min-width: 481px)"
+              data-srcset="/public/images/musicmakers/img-musicmaker-urge@3x.png 2601w,
+              /public/images/musicmakers/img-musicmaker-urge@2x.png 1734w,
+              /public/images/musicmakers/img-musicmaker-urge.png 867w"
+              sizes="(max-width: 480px) 100vw, 60vw">
+      <img class="image__full multidev__image--full has-hidden" >
+    </picture>
+  </figure>
+  <div class="multidev__container has-medium-padding">
+    <figure class="multidev__icon">
+      <img data-src="public/images/musicmakers/img-multidevice.svg" alt="Devices">
+    </figure>
+    <h3 class="multidev__title">...from anywhere on any device</h3>
+    <p class="multidev__description">The online studio gives you the ability to record, edit and collaborate on any device, anywhere you go—so you can create a track whenever you feel inspired! Even better, all of your projects are stored online in the cloud.<br><br>Don’t wait, go and create!</p>
+  </div>
+</section>
+
+
+<section class="usecases has-relative">
+  <div class="usecases__video"></div>
+  <div class="usecases__container">
+    <h1 class="usecases__title">Music made on Soundtrap</h1>
+    <div class="usecase">
+      <div class="usecase__soundbite">
+        <figure class="soundbite__picture">
+          <img src="" class="image__thumb has-cover-fit"/>
+        </figure>
+        <div class="soundbite__play"></div>
+      </div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+    <div class="usecase">
+      <div class="usecase__soundbite"><div class="soundbite__play"></div></div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+    <div class="usecase">
+      <div class="usecase__soundbite"><div class="soundbite__play"></div></div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+    <div class="usecase">
+      <div class="usecase__soundbite"><div class="soundbite__play"></div></div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+    <div class="usecase">
+      <div class="usecase__soundbite"><div class="soundbite__play"></div></div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+    <div class="usecase">
+      <div class="usecase__soundbite"><div class="soundbite__play"></div></div>
+      <h3 class="usecase__title">Artist</h3>
+      <p class="usecase__description">Song Title</p>
+    </div>
+  </div>
+
+</section>
+<section class="banner has-relative">
+  <figure class="banner__image image has-floating">
+    <!-- Base64 this and inline -->
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAAJABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABQcICf/EACUQAAIBBAAEBwAAAAAAAAAAAAECAwQFBhEABxITISIxNUJ0s//EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAbEQABBAMAAAAAAAAAAAAAAAACAAEDEQQSIf/aAAwDAQACEQMRAD8AefOHlzPk2L1lstVgtdWzxuaAQRCklopteVzIOruKfRl6RvwIIIBEkYtgfMnHcxIo8YttxuWMSxm5pLSyVFLG7ozIAF6e42yX1sBdodsSQugvxPAC1e5X37q/hHwBQgRbO3U45EgtVr//2Q=="
+         class="image__thumb has-cover-fit"/>
+    <video playsinline autoplay loop muted class="banner__video has-floating">
+      <source src="https://static.soundtrap.com/public/videos/storytellers/header.webm
+" type="video/webm">
+      <source src="https://static.soundtrap.com/public/videos/storytellers/header_h264.mp4
+" type="video/mp4">
+    </video>
+  </figure>
+  <div class="banner__container has-medium-padding">
+    <div class="banner__text">
+      <h2 class="banner__title">Explore Soundtrap for Storytellers</h2>
+      <p class="banner__description">Your one stop shop for high quality podcast creation</p>
+    </div>
+    <a class="banner__cta" href="/storytellers">
+      <figure class="banner__icon">
+        <img data-src="/public/images/storytellers/arrow-right-purple0.svg" alt="->">
+      </figure>
+      <span>Check it out</span>
+    </a>
+  </div>
+</section>
+    </div>
+
+    <footer class="footer v2 has-medium-padding">
+  <section class="footer__top">
+    <div class="footer__logo">
+      <figure>
+        <img data-src="/public/images/logo-soundtrap.svg" alt="Soundtrap">
+      </figure>
+    </div>
+    <div class="footer__container">
+      <nav class="footer__nav--links">
+        <div class="footer__column">
+          <a class="footer__link" href="/discover" translate="tags.footer.discover" translate-default="Discover">Discover</a>
+          <a class="footer__link" href="/search" translate="tags.footer.search" translate-default="Search">Search</a>
+          <a class="footer__link" href="/login" translate="tags.footer.login" translate-default="Log in" >Log in</a>
+          <a class="footer__link" href="/" translate="tags.footer.signup" translate-default="Sign up">Sign up</a>
+          <a class="footer__link" href="http://support.soundtrap.com" target="_blank" rel="noopener noreferrer" translate="tags.footer.support" translate-default="Support">Support</a>
+          <a class="footer__link" href="/tutorials" translate="tags.footer.tutorials" translate-default="Tutorials">Tutorials</a>
+        </div>
+        <div class="footer__column">
+                                <a class="footer__link" href="/pricing" translate="tags.footer.pricing" translate-default="Pricing">Pricing</a>
+                    <a class="footer__link" href="https://press.soundtrap.com" translate="tags.footer.press" translate-default="Press">Press</a>
+          <a class="footer__link" href="http://blog.soundtrap.com" translate="tags.footer.blog" translate-default="Soundtrap blog">Soundtrap blog</a>
+          <a class="footer__link" href="http://edublog.soundtrap.com/" translate="tags.footer.edublog" translate-default="Soundtrap EDU blog">Soundtrap EDU blog</a>
+          <a class="footer__link" href="https://soundtrap.zendesk.com/hc/en-us/community/topics" translate="tags.footer.community" translate-default="Community">Community</a>
+        </div>
+        <div class="footer__column">
+          <a class="footer__link" href="/edu" translate="tags.footer.edu" translate-default="Soundtrap for education">Soundtrap for Education</a>
+          <a class="footer__link" href="/developers" translate="tags.footer.developers" translate-default="Developers">Developers</a>
+          <a class="footer__link" href="http://jobs.soundtrap.com" translate="tags.footer.jobs" translate-default="Jobs">Jobs</a>
+        </div>
+      </nav>
+      <nav class="footer__nav--social">
+        <div class="footer__social">
+          <a class="social__logo" href="https://www.facebook.com/soundtrapsite/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img data-src="/public/images/facebook.svg" alt="Facebook">
+            </picture>
+          </a>
+          <a class="social__link" href="https://www.facebook.com/soundtrapsite/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <div class="footer__social">
+          <a class="social__logo" href="https://twitter.com/soundtrap" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <img data-src="/public/images/twitter.svg" alt="Twitter">
+            </picture>
+          </a>
+          <a class="social__link" href="https://twitter.com/soundtrap" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <div class="footer__social">
+          <a class="social__logo" href="https://www.youtube.com/user/soundtrapsite" target="_blank" rel="noopener noreferrer">
+              <picture>
+                <source type="image/webp"
+                        data-srcset="/public/images/youtube_1.webp">
+                <source type="image/webp"
+                        data-srcset="/public/images/youtube@2x_1.webp @2x">
+                <source type="image/webp"
+                        data-srcset="/public/images/youtube@3x_1.webp @3x">
+                <source
+                    data-srcset="/public/images/youtube.png">
+                <source
+                    data-srcset="/public/images/youtube@2x.png @2x">
+                <source
+                    data-srcset="/public/images/youtube@3x.png @3x">
+                <img>
+              </picture>
+          </a>
+          <a class="social__link" href="https://www.youtube.com/user/soundtrapsite" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer__social">
+          <a class="social__logo" href="https://instagram.com/soundtrap/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source type="image/webp"
+                      data-srcset="/public/images/instagram_1.webp">
+              <source type="image/webp"
+                      data-srcset="/public/images/instagram@2x_1.webp @2x">
+              <source type="image/webp"
+                      data-srcset="/public/images/instagram@3x_1.webp @3x">
+              <source
+                  data-srcset="/public/images/instagram.png">
+              <source
+                  data-srcset="/public/images/instagram@2x.png @2x">
+              <source
+                  data-srcset="/public/images/instagram@3x.png @3x">
+              <img>
+            </picture>
+          </a>
+          <a class="social__link" href="https://instagram.com/soundtrap/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section class="footer__bottom">
+    <div class="footer__languagepicker">
+       <input type="hidden" name="authenticityToken" value="521df8464405bf2cba4e850b94a962eb71d527ff"/>
+       <select class="form-control languagepicker" name="languagepicker">
+         <option value="de" label="Deutsch">Deutsch</option>
+         <option value="en" selected="selected" label="English">English</option>
+         <option value="es" label="Español">Español</option>
+         <option value="fr" label="Français">Français</option>
+         <option value="sv" label="Svenska">Svenska</option>
+       </select>
+    </div>
+    <nav class="footer__nav--legal">
+      <a class="footer__link" href="/legal/" translate="tags.footer.privacy" translate-default="Privacy">Privacy</a>
+      <a class="footer__link" href="https://static.soundtrap.com/public/legal/community_guidelines.pdf
+" translate="tags.footer.guidelines" translate-default="Community guidelines">Community guidelines</a>
+      <a class="footer__link" href="/legal/terms" translate="tags.footer.terms" translate-default="Terms of use">Terms of use</a>
+      <a class="footer__link" href="https://static.soundtrap.com/public/legal/cookies_policy.pdf
+" translate="tags.footer.cookies" translate-default="Cookies">Cookies</a>
+    </nav>
+    <div class="footer__copyright">@ 2019 Spotify AB</div>
+  </section>
+</footer>
+
+    <div id="spinner"></div>
+    <!-- Give angular as little as possible -->
+    <div class="angular" id="ng-app"  ng-controller="LandingCtrl as landing">
+      <a class="angular__signup--personal" ng-click="landing.gotoSignupPersonal()"></a>
+      <a class="angular__signup--joinschool" ng-click="landing.gotoJoinSchool()"></a>
+      <a class="angular__signup--createschool" ng-click="landing.gotoCreateSchoolAccount()"></a>
+      <a class="angular__login" ng-click="landing.login({edu:false})"></a>
+      <st-language-picker></st-language-picker>
+    </div>
+
+    <!-- Reduced angular templates -->
+    <script type="text/ng-template" id="/public/dialogs/signup/personal/header.html">
+      <h4 class="title">
+  <span class="soundtrap-logo"><img src="/public/images/Soundtrap_Symbol_White.svg" alt="Soundtrap"></span>
+  {{ dialog.title || ('view.dialogs.signup_beta.title' | translate) }}
+</h4>    </script>
+
+    <script type="text/ng-template" id="/public/dialogs/signup/personal/body.html">
+      <div class="controller-wrapper" ng-controller="LoginCtrl as login"
+     ng-init="login.setup({'edu': !!dialog.extraOptions.edu, 'eduTrialSignup': eduTrialSignup, 'url': signup.dialog.extraOptions.url, 'eduCode': dialog.extraOptions.eduCode})">
+  <div class="columns" ng-controller="SignupDialogCtrl as signup" ng-class="{ 'email-shown': signup.isEmailFormShown }"
+       ng-init="signup.eduTrialSignup = eduTrialSignup; signup.eduCode = dialog.extraOptions.eduCode; signup.edu = !!dialog.extraOptions.edu; signup.url = dialog.extraOptions.url || '';">
+    <div class="buttons" ng-if="!login.needsAgeCheck">
+      <div>
+        <div class="login-button login-button-gp google-white"><a class="btn btn-xs-block google-signup-button" ng-click="login.loginGoogle()"><span
+            class="signupdivider"></span>{{'view.dialogs.signup_beta.sign_up_with' | translate}} <strong>Google</strong></a></div>
+        <div class="login-button login-button-fb" ng-if="!signup.isEduSignup()"><a class="btn btn-xs-block" ng-click="login.loginFacebook()"><span class="signupdivider"></span>{{'view.dialogs.signup_beta.sign_up_with'
+          | translate}} <strong>Facebook</strong></a></div>
+        <div class="login-button login-button-ms" ng-if="signup.isEduSignup()"><a class="btn btn-xs-block" ng-click="login.loginMicrosoft()"><span class="signupdivider"></span>{{'view.dialogs.signup_beta.sign_up_with'
+          | translate}} <strong>Office 365</strong></a></div>
+      </div>
+      <a href="" class="login-link login-link-email" ng-click="signup.onShowEmail()"><span
+          class="glyphicons glyphicons-envelope"></span>{{'view.dialogs.signup_beta.email_instead_link' | translate}}</a>
+    </div>
+    <div class="email-form" ng-if="!login.needsAgeCheck">
+      <form class="signup-form" ng-submit="signup.submit()" id="signup-form" name="signup.formSignup">
+        <div ng-repeat="error in signup.errorMessage" class="alert alert-danger" ng-show="error" ng-bind-html="error"></div>
+
+        <label for="l_email" translate="view.dialogs.signup_beta.email_signup_headline"></label>
+
+        <div class="form-group">
+          <input ng-class="{'st-error': signup.errorMessage.email}" placeholder="{{ 'view.dialogs.signup_beta.email_placeholder' | translate }}"
+                 type="text" class="form-control" ng-model-options="{ updateOn: 'blur' }" id="l_email" name="email"
+                 title="{{ 'view.dialogs.signup_beta.email_placeholder' | translate }}" ng-model="signup.email" tabindex="1" required/>
+        </div>
+
+        <div class="form-group">
+          <input ng-class="{'st-error': signup.errorMessage.password}" placeholder="{{ 'view.dialogs.signup_beta.password_placeholder' | translate }}"
+                 type="password" class="form-control" id="l_password" name="password"
+                 title="{{ 'view.dialogs.signup_beta.password_placeholder' | translate }}" ng-model="signup.password"
+                 ng-model-options="{ updateOn: 'blur' }" tabindex="2" required/>
+        </div>
+
+        <div ng-if="signup.isEduSignup() && !signup.hideNameField">
+          <label for="l_firstName" translate="view.dialogs.signup_beta.name.label"></label>
+
+          <div class="form-group">
+            <input ng-class="{'st-error': signup.errorMessage.first_name}" type="text" class="form-control" id="l_firstName" name="firstName"
+                   title="{{ 'view.dialogs.signup_beta.first_name.placeholder' | translate }}" ng-model="signup.firstName"
+                   ng-model-options="{ updateOn: 'blur' }" tabindex="3" required placeholder="{{ 'view.dialogs.signup_beta.first_name.placeholder' | translate }}" />
+          </div>
+
+          <div class="form-group">
+            <input ng-class="{'st-error': signup.errorMessage.last_name}" type="text" class="form-control" id="l_lastName" name="lastName"
+                   title="{{ 'view.dialogs.signup_beta.last_name.placeholder' | translate }}" ng-model="signup.lastName"
+                   ng-model-options="{ updateOn: 'blur' }" tabindex="3" required placeholder="{{ 'view.dialogs.signup_beta.last_name.placeholder' | translate }}" />
+          </div>
+        </div>
+
+        <span ng-if="!signup.isEduSignup()">
+          <label for="signup-country" translate="view.dialogs.signup.choose_country"></label>
+
+          <div id="signup-country" class="form-group" ng-init="signup.input.country">
+            <select required ng-options="country.code as country.name for country in signup.countries" ng-model="signup.countryCode"
+                    class="form-control" name="country" tabindex="3">
+              <option value="" disabled translate="view.dialogs.signup.country"></option>
+            </select>
+          </div>
+
+          <label for="signup-date-of-birth" translate="view.dialogs.signup.date_of_birth"></label>
+
+          <div id="signup-date-of-birth" class="form-group date-of-birth">
+            <input type="number" min="1900" max="2018" maxlength="4" placeholder="{{ 'view.dialogs.signup.year' | translate }}" required
+                   ng-model="signup.birthYear" class="form-control" name="birthYear" tabindex="4">
+            <select required ng-options="month.id as month.label for month in signup.months" ng-model="signup.birthMonth" class="form-control"
+                    name="birthMonth" tabindex="5">
+              <option value="" disabled translate="view.dialogs.signup.month"></option>
+            </select>
+            <input type="number" min="1" max="31" maxlength="2" required ng-model="signup.birthDay"
+                   placeholder="{{ 'view.dialogs.signup.day' | translate }}" class="form-control" name="birthDay" tabindex="6">
+          </div>
+        </span>
+
+        <div ng-if="signup.edu && !signup.eduTrialSignup">
+          <label for="l_eduCode" translate="view.dialogs.signup_beta.edu_code.label"></label>
+          <div class="form-group">
+            <input ng-class="{'st-error': signup.errorMessage.eduCode}" type="text" class="form-control" id="l_eduCode" name="eduCode"
+                   title="{{ 'view.dialogs.signup_beta.edu_code.title' | translate }}" ng-model="signup.eduCode"
+                   ng-model-options="{ updateOn: 'blur' }" tabindex="3" required ng-disabled="signup.isEduCodeLocked" />
+          </div>
+        </div>
+
+        <!-- grecaptcha-placeholder div must be empty, otherwise recaptcha library refuses to render anything in it -->
+        <div id="grecaptcha-placeholder" style="display:none"></div>
+
+        <div class="text-center">
+          <input ng-if="signup.canGoBackToTrialDialog" type="button" value="{{ 'view.dialogs.signup_beta.back_btn' | translate }}"
+                 class="btn btn-trans" ng-click="signup.backToTrialDialog()"/>
+          <input type="submit" id="s_submit" value="{{ 'view.dialogs.signup_beta.sign_up_btn' | translate }}" class="btn button_D_pr_L"
+                 tabindex="16"/>
+        </div>
+
+        <div class="already spacer10" ng-if="!signup.canGoBackToTrialDialog">
+          <div class="text-center"><a href="" class="small-link" ng-click="signup.goToLogin()"
+                                      translate="view.dialogs.signup_beta.existing_user_label"></a></div>
+        </div>
+      </form>
+    </div>
+    <div class="age-check-form" ng-if="login.needsAgeCheck">
+      <form ng-submit="login.submitAgeCheck()" id="age-check-form">
+        <p translate="view.dialogs.signup.age_check_description"></p>
+
+        <label for="age-check-country" translate="view.dialogs.signup.choose_country"></label>
+        <div id="age-check-country" class="form-group" ng-init="login.input.country">
+          <select required ng-options="country.code as country.name for country in login.countries" ng-model="login.countryCode" class="form-control"
+                  tabindex="1">
+            <option value="" disabled translate="view.dialogs.signup.country"></option>
+          </select>
+        </div>
+
+        <label for="age-check-date-of-birth" translate="view.dialogs.signup.date_of_birth"></label>
+        <div id="age-check-date-of-birth" class="form-group date-of-birth">
+          <input type="number" min="1900" max="2018" maxlength="4" placeholder="{{ 'view.dialogs.signup.year' | translate }}" required
+                 ng-model="login.birthYear" class="form-control" tabindex="2">
+          <select required ng-options="month.id as month.label for month in login.months" ng-model="login.birthMonth" class="form-control"
+                  tabindex="3">
+            <option value="" disabled translate="view.dialogs.signup.month"></option>
+          </select>
+          <input type="number" min="1" max="31" maxlength="2" required ng-model="login.birthDay"
+                 placeholder="{{ 'view.dialogs.signup.day' | translate }}" class="form-control" tabindex="4">
+        </div>
+
+        <div class="text-center">
+          <input type="submit" value="{{ 'view.dialogs.ok' | translate }}" class="btn button_D_pr_L" tabindex="16"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>    </script>
+
+    <script type="text/ng-template" id="/public/dialogs/signup/personal/footer.html">
+      <p translate="view.dialogs.signup.bysigning1"></p>
+<p translate="view.dialogs.signup.bysigning2"></p>
+    </script>
+
+    <!-- All script tags that are not async to bottom -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDXQVRL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Shim hooks -->
+    <script type="text/javascript">
+  !function(){const t=window,e=(()=>{const t=[];return{run:(...e)=>t.push(e),_initialize:e=>{t.forEach(t=>e.run(...t))}}})(),n=(()=>{const t=[];let e=!1;return{app:{bootstrap:()=>e=!0},util:{Dialog:(...e)=>t.push(e)},_initialize:n=>{e&&n.app.bootstrap(),t.forEach(t=>n.util.Dialog(...t))}}})();t.soundtrapModule=t.soundtrapModule||e,t.ST=t.ST||n,t.isManualBoostrapping=!0;const o=setInterval(function(){"com.soundtrap.app"===t.soundtrapModule.name&&(clearInterval(o),e._initialize(t.soundtrapModule),c=!0)},300),a=setInterval(function(){t.ST.$&&c&&(clearInterval(a),angular.element(()=>{n._initialize(t.ST);const e=document.querySelector("#ng-app")||document;angular.bootstrap(e,["com.soundtrap.app"]),document.body.classList.add("angular-loaded"),setTimeout(u,600)}))},300);let c=!1;let l=!1;const r=[],i="deferred-click";function s(t){const e=t.target;t.stopPropagation(),e.classList.contains(i)||l||(r.push(t),e.classList.add(i))}function u(){l=!0,[...document.querySelectorAll("[ng-click]")].forEach(t=>(function(t,e){t.classList.remove(i),t.removeEventListener(e,s,!1)})(t,"click")),r.length&&function(t){const e=t&&t.target,n=t&&t.type;e&&n&&((t=document.createEvent("HTMLEvents")).initEvent(n,!0,!1),e.dispatchEvent(t))}(r[r.length-1]),[...document.querySelectorAll("."+i)].forEach(t=>{t.classList.remove(i)})}[...document.querySelectorAll("[ng-click]")].forEach(t=>{t.addEventListener("click",s,!1)})}();</script>
+    <script type="text/javascript">
+      // GLOBAL config
+      window['com.soundtrap.config'] = {
+        'recurly_public_key' : 'ewr1-MQRIq2udGb7Fd8TtrPA7fF', // Legacy
+        'recurly_us_public_key' : 'ewr1-GYKgMa1fHMK222KTGy1RnI',  // us
+        'recurly_row_public_key' : 'ewr1-SGjo3NAh7hC75NROxhABC3', // row
+        'googleAuthClientId': "646313254549-s2tfsgk0b3aimmcmrgj2ojluusime84c.apps.googleusercontent.com",
+        'soundcloudClientId': "20be7f94f4629406fafbebd3035dc68d",
+        'facebookAppId': "349901718375178",
+        'authToken': "521df8464405bf2cba4e850b94a962eb71d527ff",
+        'trkPix': true,
+        'msAuthClientId': "e0d6a74d-4b4f-42cb-9cd5-c2a20061315a",
+        'templateCacheBustingTable': {"eduAdminDirectoryView.html":"b6ea5fc93b54624815f43ab07bf7581c","loginBlockResponse.html":"7569dc5d8bf93fcb749d147d1f5f78a6","bulkRoleAssignmentDialog.html":"9282675638ad63a26a383f1a3470db4a","editUserDialog.html":"dd1ca9692ac04a7dd77012adce3a61ea","editCoverPhotoDialog.html":"84fca22f68c23bbbad8ba9b97a0197de","openProjectSupervisedDialog.html":"73610c12fb4764ab4de588d30d397ead","eduRequestDialog.html":"7cd38ea4fe7c22b61de42a4c698bae35","privateProfileTabs.html":"c1d5e460f658f110b1ab2c7e46642198","timeRestoreDialog.html":"3fda483ad612fcf9e2dc601e49dbd495","collaboratorDialog.html":"efb4ffaa2fff0153f45f0e0bb3402b49","eduCheckoutConfirmationDialog.html":"286d364942e3258382d82e41e0356d04","activationNag/failure.html":"a753717a01aa70e50f7d5cafa49c69f3","eduMigrationTermsDialog.html":"22ce5e86bff2c593aaa8a05946699d39","activationNag/emailchanged.html":"24cd3c78186a437cf4b6d302cc80b5e0","pushNotificationDialog.html":"66cf9729747bd4409c5e342bdbd0757d","projectInviteDialog.html":"4b8ebca213d170dbeb0fd9bdfdaeaa3d","msLogin.html":"3e1de47e3e6cee35510b4d76f1d35d20","eduChangeSeatsQuotaDialog.html":"8fa60d6d3371afb868e2913e5ddbdb20","bulkRemoveUsersDialog.html":"8f80ae21317737fc3aca02989cd54b9b","requestTeacherAccountDialog.html":"38c98ac8b50cc53f866d4e2d2330e3cd","eduCanvasConnectDialog.html":"01ea84fe0a1e0c09726457fe6eb22142","eduNagDialog.html":"b88f41dff489d8fe6ec444d0be90edb0","educationalPayDialog.html":"cf162ecee825ce702b92ac013f35313e","friendInviteDialog.html":"75b78fc3803975c1e193f893baf39c8f","recurlyForm.html":"2af7dfcc08014e2bb8d22b7840f0f8c6","updateMemberDialog.html":"05f71d0564763b8fa0a693f530f37bda","createAssignmentDialog.html":"4d93954a4ceb55a8e3a10ba4a3e3e04e","createSchoolDialog.html":"a7912d09663858f2504300a05c6c35bd","purposeDialog.html":"ccacd2e8225ade5d4a4eb8760617f031","soundbite.html":"d41d8cd98f00b204e9800998ecf8427e","passwordChangeView.html":"2dab1e5d6112b55d4073c9919b3433cf","eduAdminPanel.html":"f3c18025c03b2c550109580bf0502550","educationalCheckoutDialogTrampoline.html":"143a9810e3dd838872a3854046b029a2","requestPaymentByOtherDialog.html":"469f8d324f8cdecc2923352c50b2fe23","activationNag/main.html":"870d43a66a7c8becf2cd0206e902c7b7","eduAgreementDialog.html":"61500426b332850a14e31d8a420ed0dd","eduAdminAddUsersView.html":"a3504fcb395be0a9e143b35e70a1f1b6","eduAdminSidePanel.html":"5a8a80dd14b27d20488f5d2b6b0709c0","feedbackDialog.html":"09b1d9f17e5fd298815b77033296bfb0","eduAdminSubscriptionView.html":"1972d1dc5639c32dc922e8d5b5b31423","createMultiSchoolsDialog.html":"383c63a26b51c7c058599163f4e09870","activationNag/resend.html":"8830b11a73c326c52c686c425b7ec087","blockDialog.html":"d0e301f6feb7e775d56f36980ccf291f","shareVideoDialog.html":"c41c1e9d7a99f1c11fc3d907e06c48f4","pricingEducation.html":"92bebadb84fa888ec047b82160ff38be","pricingPersonal.html":"6259317fb4491648c6ee29826d820a2d","eduTrialDialog.html":"2c7d10d9625926b7d14677c37568efbf","makeProjectPublicDialog.html":"54f3afd90bc56feeb4231b0eb2ec14a8","profile/privateProfileMiddleBanner.html":"113b28d9af253385694c26c40ada9874","activationNag/success.html":"656c2a934e27aa3781b83f4e17d7cb82","pricingPersonalV2.html":"d6b551c5ac11510a5f0698a546c881d5","eduAdminTranscriptionsView.html":"628d6a662f0af271b2eaa5c74e6dbd71","moveProjectsDialog.html":"711ef4c093c9505aa9a409bb626f1d31","educationalCheckoutDialog.html":"0904f3ecac55cab92d1df63b37545914","adm/productParameterPicker.html":"a0a9e60f336f6dd4778c03cdecde7c71","eduRenewalDialog.html":"3812251ee1533d2d05ac53f62800c4fc","eduMemberListing.html":"8cae6ab08e881b20354f4cf941b668ca","mergeAccount.html":"b31cfa7e5630f09062a54f231661c0b3","eduSignupOptionsDialog.html":"355f5a2014fd9be7abe9a5327b7997c3","activationNag/changeemail.html":"9b60cce69e5374ecf5359d1e4e040894","eduAdminGroupView.html":"4d4f484ea0f2b68dda0e1d8b57d87c54","confirmDialog.html":"26fb2dc6723bc4e7e110da380fb3222a","facePileDialog.html":"1a12055249bb644fc1f1968e5ac45517","eduSchoologyImportDialog.html":"879ac1c919ab6760f55841d0a23b5470","conversationTitle.html":"335b9c4ed3d9e61e4f3384afcb0fb720","activationNag/sentagain.html":"ae5d07ad159e5778d8235e13de8bd2b1","singleVideoDialog.html":"4c8c526640ee90333a58f04fdfc886ee","addCreatedGroupDialog.html":"de3c7de35721624b3b6754050a617302","checkoutDialog.html":"6b8e1d99ef25e3a7cb8dc8f5f01b0cb4","promotePremium.html":"ebc732acb7a6742ecb94f73ba92a03f2","eduGoogleDirImportDialog.html":"41645f05707dbe476d59a83185dbbc53","tagListDialog.html":"82c9a741d182d56ac122811d8caeeb7a","infoDialog.html":"97ecb71582378ba5224a7dbbf386748e","addGroupDialog.html":"02e80c05db05ed88d73d9e88fd64ae77","addToGroupPartialHeaderDialog.html":"e193ea32a721d9b3c66048dbcd0e332b","activationNag/activationNagDialog.html":"e6e1f87775913a9b87bfbc6a6ebf2bc4","signupOptionsDialog.html":"13769844b5eb7d500c1ee0f384d47966","dialogs/songexploder.html":"537ede36dae86ff9f61c1a500aa339a6","pricingEducationTrampoline.html":"5ed81c55a100b525484d96e7c0b96f98","joinSchool.html":"15667f62afdcc1c8727812a1c81761dd","celebrationDialog.html":"2b8600d61c770edadf12722e71c18628","bulkImportDialog.html":"5f39bcb5f0ca12d151b0b6cd52edc1e6","giftSoundtrapDialog.html":"2a1628f983399f8bbe11c3fc0581edd5","eduClassroomImportDialog.html":"fcf85c74ade8faa23e52f4d3e4a39fb5","eduAdminAccountView.html":"e6ba4403c1c02c2a0332a2eab4252a6f","staticArea.html":"e53d6c38b648a29c347a2f7950e946b5","updateBillingInfoDialog.html":"ee58799c7281dd01221f68ae97d2ffe4","eduPayNoTrial.html":"11428a8f321a67ca79048c0fc1757724","sendMessageDialog.html":"b022f63b33819b7c5fd368bf2b698a38","profileListing.html":"f5e9d0f9d3154473bf6e58dca573b9c0","eduAdminPermissionView.html":"d6f8c8240042217b31d6b0a81f89afa4","paymentErrorDialog.html":"4b6f70a83ef9c094466e28dc8f3fcb68","billingInfo.html":"eab3d68a620deb7c407467789647919b","orderSummary.html":"e7a6a95dc02cc98430e735578680529d","claimTrophyDialog.html":"c72f3532a00d1d78adbb2f36383f07cf","basicInputDialog.html":"f19bf62323d038dacfbf4407743cb2fb","contactSalesDialog.html":"d66488fbd773a77e20b8fa6a24e04866","trialDialog.html":"31693eee0a47ef112821bc976d8d7a5b","loginFailDialog.html":"d381e706b413aa8277949694c3f036b6","profile/privateProfileTopBanner.html":"6e86c8c3249cf80683004d7f9976b642","reportDialog.html":"efba73071c16e4ac3558ee9521c0bcd1","utilityDialog.html":"d8bf1b34fadc4b83de3a94155560b9ea","addToGroupPartialDialog.html":"491cfec7a421170be65ef7097650841d","eduDistrictPanel.html":"30f314622b136a4ff800a16bbf3292d9","adm/productPrice.html":"5ffb664deb0614bece9ba1d6f5a5e659"},
+        'vapidPublicKey': "BDIiCuv2xsmr8otfrWMbzKXOVBCPACwr2iXkZY//Pmls33Tz29Ufp1BjBvPjLg5sLtZb1jcXzX8fCr21Dunhf2U\u003d",
+        'locale': "en",
+        'languageConfigurations': [{"key":"de","web":true,"studio":true,"label":"Deutsch"},{"key":"en","web":true,"studio":true,"label":"English"},{"key":"es","web":true,"studio":true,"label":"Español"},{"key":"fr","web":true,"studio":true,"label":"Français"},{"key":"it","web":false,"studio":false,"label":"Italiano"},{"key":"nl-NL","web":false,"studio":false,"label":"Nederlands"},{"key":"pt","web":false,"studio":false,"label":"Português"},{"key":"pt-BR","web":false,"studio":false,"label":"Português (Brasil)"},{"key":"sv","web":true,"studio":true,"label":"Svenska"}],
+        'recaptchaSitekey': "6LdKDRoUAAAAAHREnv4URRKPfshJnG-LFXmqQJzh",
+        'isLoggedIn': false,
+        'isPlayDevMode': false,
+        'isPlayTestMode': false,
+        'experiments': ["{   \"namespace\": {     \"unit\": \"userid\",     \"segments\": 1,     \"name\": \"studioTemplateDialogExperiment\"   },   \"experiment_definitions\": [     {       \"definition\": \"Studio_Template_Dialog_Experiment_1\",       \"assign\": {         \"op\": \"seq\",         \"seq\": [           {             \"op\": \"set\",             \"var\": \"version\",             \"value\": {               \"choices\": {                 \"op\": \"array\",                 \"values\": [                   \"A\",                   \"B\",                   \"C\"                 ]               },               \"unit\": {                 \"op\": \"get\",                 \"var\": \"userid\"               },               \"op\": \"uniformChoice\"             }           }         ]       }     }   ],   \"default_experiment\": \"Studio_Template_Dialog_Experiment_1\",   \"experiment_sequence\": [     {       \"action\": \"add\",       \"definition\": \"Studio_Template_Dialog_Experiment_1\",       \"name\": \"Instance_of_Studio_Template_Dialog_Experiment_1\",       \"segments\": 1     }   ] }","{   \"namespace\": {     \"salt\": \"pricing_page_toggle_fix\",     \"unit\": \"inTestGroup\",     \"segments\": 1,     \"name\": \"pricingPageToggleExperiment\"   },   \"experiment_definitions\": [     {       \"definition\": \"Pricing_Page_Toggle_Experiment_1\",       \"assign\": {         \"op\": \"seq\",         \"seq\": [           {             \"op\": \"set\",             \"var\": \"version\",             \"value\": {               \"choices\": {                 \"op\": \"array\",                 \"values\": [                   \"toggle\",                   \"no_toggle_control\"                 ]               },               \"unit\": {                 \"op\": \"get\",                 \"var\": \"inTestGroup\"               },               \"op\": \"uniformChoice\"             }           }         ]       }     }   ],   \"default_experiment\": \"Pricing_Page_Toggle_Experiment_1\",   \"experiment_sequence\": [     {       \"action\": \"add\",       \"definition\": \"Pricing_Page_Toggle_Experiment_1\",       \"name\": \"Instance_of_Pricing_Page_Toggle_Experiment_1\",       \"segments\": 1     }   ] }"],
+        'termsOfUseOld': '/public/legal/terms_of_use.pdf?_=b0dfb79968a0',
+        'termsOfUseUS': '/public/legal/tou_us_200818.html?date=1703818',
+        'termsOfUseWorld': '/public/legal/tou_world_200818.html?date=170818',
+        'privacyUS': '/public/legal/privacy_policy.pdf?_=95b92ba40b3f',
+        'privacyWorld': '/public/legal/privacy_policy_world.pdf?_=fb155f99a4ff',
+        'dpa': '/public/legal/dpa.pdf?_=c3a4fc79def9',
+        'creatorCampaignEligibility': "notEligible",
+        'annualDiscountOfferDaysLeft': null,
+      };
+    </script>
+    <script type="text/javascript">
+      window.__DEV__ = false;
+      window.__FAKEPROD__ = false      // sminit constants
+
+                        soundtrapModule.run(['$rootScope', function($rootScope) {
+        $rootScope.studio_compatible = true;
+        $rootScope.os_okay = true;
+      }]);
+
+      // create the angular module
+      ST.app.bootstrap();
+    </script>
+    
+                <script async src="https://static.soundtrap.com/scripts/ec9e0f93b367fafb07ef.landing.js
+"></script>
+    <script async src="https://static.soundtrap.com/scripts/a673afaf2c067927f90c.access.js
+"></script>
+    </body>
+</html>

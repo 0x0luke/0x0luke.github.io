@@ -1,0 +1,27 @@
+200 OK
+X-Sorting-Hat-Shopid: 7067445
+Content-Language: en
+X-Permitted-Cross-Domain-Policies: none
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+X-Alternate-Cache-Key: cacheable:30eefcf98352eb3bcd8b664d60ce7867
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=69ef3f9d-c1f6-43b1-8170-8a8870f0b164
+X-Dc: gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+X-Sorting-Hat-Podid: 60
+X-Shardid: 60
+Strict-Transport-Security: max-age=7889238
+Etag: cacheable:7492935ef9bc9fc5a8260e61159d48cb
+X-Cache: hit, server
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Shopid: 7067445
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=d14abed265a45fe8f8a3203534d9a6f161565182887; expires=Thu, 06-Aug-20 13:01:27 GMT; path=/; domain=.urbandictionary.store; HttpOnly _shopify_y=16830add-c10e-48dc-bb00-c429c6a113a7; path=/; expires=Sat, 07 Aug 2021 00:39:51 -0000 _orig_referrer=https%3A%2F%2Fwww.urbandictionary.store%2F; Expires=Wed, 21-Aug-19 13:01:27 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 13:01:27 -0000; secure; HttpOnly _landing_page=%2F; Expires=Wed, 21-Aug-19 13:01:27 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 13:01:27 -0000; HttpOnly
+X-Shopify-Stage: production
+X-Request-Id: 69ef3f9d-c1f6-43b1-8170-8a8870f0b164
+Content-Security-Policy: frame-ancestors *; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=69ef3f9d-c1f6-43b1-8170-8a8870f0b164
+Cf-Ray: 50297074c8e6361b-MAN
+Date: Wed, 07 Aug 2019 13:01:27 GMT

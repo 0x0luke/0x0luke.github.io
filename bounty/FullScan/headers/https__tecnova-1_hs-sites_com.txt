@@ -1,0 +1,18 @@
+200 OK
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Hs-Content-Id: 4864303550
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/337004/hub_generated/template_assets/1555943684143/combined-css-f8b689d851764e0b60e3d6521758ca4d.css>; rel=preload; as=style
+X-Hs-Hub-Id: 337004
+Server: cloudflare
+Date: Wed, 07 Aug 2019 06:22:18 GMT
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 502727c23b5fbfc0-MAN
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-4864303550,P-337004,L-3803621206,L-3824433778,L-4864284400,E-3620940880,E-3825323097,MENU-3823990728,PGS-ALL,SW-0,SD-4
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Powered-By: HubSpot
+X-Trace: 2B592920E566C15FC770458F8831DEB0EC172AF9A3000000000000000000
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=db506a195e0606f14f183fed14b8394451565158937; expires=Thu, 06-Aug-20 06:22:17 GMT; path=/; domain=.www.tecnova.com; HttpOnly __cfruid=7f2643852a7b5514335b9402a00e6e1fd1170b9a-1565158938; path=/; domain=.www.tecnova.com; HttpOnly
+Cf-Cache-Status: EXPIRED

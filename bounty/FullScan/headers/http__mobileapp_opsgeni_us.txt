@@ -1,0 +1,15 @@
+404 Not Found
+Content-Security-Policy: frame-ancestors 'self'
+Content-Type: application/json;charset=UTF-8
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Cache: Error from cloudfront
+Via: 1.1 c4813da7dbee67e890e9271e5ca72739.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: dDmuunRzwiqz3XFLfpx8dqRKYutwMKfP1zedEQSNsGisHz7yG7pjlg==
+Retry-Count: 0
+Set-Cookie: AWSALB=04eSfemW/kO6hcbIwAauHdGOpDMQ975A90c0LRxMoHCo26n9x5dstDgiWizzTRxyO+bkYbvmWl4BMJL5ws7a6IwDJaVQjH/0MQkLVnsNBbqL+5ioSC574ScBaBrz; Expires=Thu, 15 Aug 2019 07:40:09 GMT; Path=/
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Amz-Cf-Pop: LHR50-C1
+Date: Thu, 08 Aug 2019 07:40:09 GMT
+Expires: 0

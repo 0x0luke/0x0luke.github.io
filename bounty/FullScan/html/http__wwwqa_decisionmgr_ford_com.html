@@ -1,0 +1,178 @@
+
+
+
+
+
+
+
+<HTML>   
+ <HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Secure User Login</title>
+	<link rel="shortcut icon" href="/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/styles-fsn.css">
+	<script type="text/javascript" src="/jscript/shared.js"></script>
+	<script>
+		<!--to hide script contents from old browsers 
+		
+	       function checkIdPwd() {
+	         if (document.forms[0].userid.value.length == 0 || document.forms[0].userid.value.length < 3) {
+	       		alert("You must enter a valid Userid"); 
+	       		return false;
+	      	 }
+	      	 if (document.forms[0].b64Pwd.value.length == 0) { 
+	       		alert("You must enter a password.");
+	       		return false;
+	      	 }
+	      	 else
+	       	{
+	       		var formPassword = document.forms[0].b64Pwd.value;
+	       		var base64Password = base64Encode(formPassword);
+	       		
+	       		if(base64Password.length > 0)
+	       		{
+	       			document.forms[0].b64Pwd.value = base64Password;
+	       		}
+	       	} 
+	      	 return true;
+		}
+		
+		function checkCookieId () {
+		
+			//Temporary alert message used when accessing old Web Servers
+			if(false) {
+				alert("null");
+			}
+			
+		   // This section is temporary and will be removed after version 3 WSLX Migration
+		 	if(false){
+		 		var url = "null";
+		 		location.href = url;
+		 		return;
+		 	} //Again remove when Migration is completed
+		 	
+		   if (navigator.userAgent && navigator.userAgent.substring(0, 7) == "Mozilla") {
+			if (getCookie("CDSID") != "")  {
+				if (document.forms[0].userid.value == "") {
+	                	document.forms[0].userid.value = getCookie("CDSID");
+		        }
+				document.forms[0].b64Pwd.focus();
+		    } else if (false){ 
+		    	document.forms[0].b64Pwd.focus();	        
+			} else {
+				document.forms[0].userid.focus();
+		    }
+		   }	
+		}
+	
+		function getCookie (Name) {
+			var search = Name + "=";
+			if (document.cookie.length > 0) {
+				offset = document.cookie.indexOf(search);
+				if (offset != -1) {
+					offset += search.length;
+					end = document.cookie.indexOf(";", offset)
+					if (end == -1)
+						{ end = document.cookie.length;}
+					return unescape(document.cookie.substring(offset, end));
+				}
+			}
+			return "";
+		}
+	
+		function checkUserId() {
+			if( document.forms[0].userid.value.length < 3 || document.forms[0].userid.value.length > 8 ) {
+				alert( "You must enter a valid Userid" );
+				document.forms[0].userid.focus();
+				return false;
+			}
+			try {
+			    //koleszk2 - 4/12/2018 - Encodes the userid value if it has special characters.
+			    document.forms[0].userid.value = encodeURI(document.forms[0].userid.value);
+		   		}catch (UnsupportedEncodingException) {
+					
+				}
+          		//koleszk2 - 4/12/2018 - Only return first 8 characters of string even if encoded
+                var tempId = document.forms[0].userid.value.substring(0, 8);
+                document.forms[0].userid.value = tempId;
+			 //alert(tempId);
+			 
+			 return true;
+		}
+		
+		function mypopup(URL)
+        {
+          //set the name of the Window
+          window.name="base";
+          
+          //open a new window to display URL
+          window.open(URL,"myhelp","toolbar=no,location=no,directories=no,status=no, scrollbars=yes,resizable=yes,copyhistory=no");
+        }
+      // end hiding contents from old browsers -->
+    </script>		
+    </HEAD>
+
+    <BODY onload="checkCookieId()" id="DEALER-WSLXloginBody" MARGINHEIGHT=0 MARGINWIDTH=0 TOPMARGIN=0 LEFTMARGIN=0>
+		<TABLE BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0"><TR BGCOLOR="#cccccc"><TD COLSPAN=2></TD></TR><TR BGCOLOR="#3399ff"><TD COLSPAN=2></TD></TR><TR BGCOLOR="#000066"><TD>&nbsp;</TD><TD ALIGN="center"><IMG SRC="/img/fmchdr.gif" HEIGHT=20 WIDTH=130 BORDER=0></TD></TR><TR BGCOLOR="#0000AF"><TD COLSPAN=2>&nbsp;</TD></TR><TR BGCOLOR="#0066FF" VALIGN="top"><TD COLSPAN=2><TABLE BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0"><TR><TD COLSPAN=2><A HREF="/"><IMG SRC="/img/homeoff.gif" HEIGHT=16 WIDTH=40 BORDER=0 HSPACE=4 NAME="home"></A></TD><TD ALIGN="right" VALIGN="center"><A HREF="Javascript:mypopup('/wslx_help.jsp')"><IMG SRC="/img/helpoff.gif" HEIGHT=22 WIDTH=29 BORDER=0 HSPACE=4 NAME="help"></A></TD><TD></TD></TR></TABLE></TD></TR><TR BGCOLOR="#cccccc"><TD COLSPAN=2><TABLE BORDER="0" WIDTH="100%" CELLSPACING="0"CELLPADDING="0"><TR VALIGN="center"><TD></TD><TD><IMG SRC="/img/login.hdr.gif" HEIGHT=26 WIDTH=302 BORDER=0></TD></TR></TABLE></TD></TR></TABLE>
+		<BR>
+      <CENTER>
+        
+		<div>
+		<span id="FSNloginHeaderText1a"><B>Hourly Employees/Affliates:</B></span>
+		<span id="FSNloginHeaderText1">If you do not have a Userid or have forgotten your Userid/CDS ID and/or Password, please click  <a href="https://www.dsps.dealerconnection.com/EUSR/EnterEligibilityInfo.do?referer=http://wwwqa.decisionmgr.ford.com/"><font color="blue">here</font></a>.</span>
+		<br/><br/>
+		<span id="FSNloginHeaderText1a"><B>Retirees (Hourly & Salaried):</B></span>
+		<span id="FSNloginHeaderText1">If you do not have a Userid or have forgotten your Userid/CDS ID and/or Password, please click  <a href="https://www.dsps.dealerconnection.com/EUSR/EnterEligibilityInfo.do?referer=http://wwwqa.decisionmgr.ford.com/"><font color="blue">here</font></a>.</span>
+		<br/><br/>
+		<span id="FSNloginHeaderText1a"><B>Other (Non-Salaried)Employees:</B></span>
+		<span id="FSNloginHeaderText1">If you have forgotten your Password, please click <a href="https://www.dsps.ford.com/Sps/jsp/UserSearchPwdReset.jsp"><font color="blue">here</font></a>.</span>
+		<br/><br/>
+		<span id="FSNloginHeaderText2"><B>Suppliers:</B></span>
+		<span id="FSNloginHeaderText4">If you are a Covisint migrated user please click  <a href="https://fim.covisint.com/ap/ford?ip=WslIP%3D10.22.112.17&TARGET=http%3A%2F%2Fwwwqa.decisionmgr.ford.com%2F"><font color="blue">here</font></a> to login.</span>
+		<hr/>
+		</div>
+		
+  		
+  		
+				
+		<form action="auth.cgi" method="post" onsubmit="return checkIdPwd();"> 
+		<TABLE BORDER="0" WIDTH="35%">
+			<TR>
+				<TH id="FSNloginUserIdLabel" ALIGN="RIGHT">Userid:</TH>
+				<TD>
+				<input id="FSNloginUserIdInput" name="userid" size="10" maxlength="8" value="" onchange="checkUserId()">
+					
+				</TD>
+			</TR>
+
+			<TR>
+				<TH id="FSNloginPasswordLabel" ALIGN="right">Password:</TH>
+				<TD>
+					<input id="FSNloginPasswordInput" autocomplete="off" name="b64Pwd" size="15" type="password">
+				</TD>
+			</TR>
+		</TABLE>
+		<!--Extra hidden parameters-->
+		<input type="hidden" name="WslIP" value="10.22.112.17">
+		
+		<input type="hidden" name="back64" value="aHR0cDovL3d3d3FhLmRlY2lzaW9ubWdyLmZvcmQuY29tLw==">
+		
+		 <!-- Migration Feature. For Q1 Redirects, allows AUTH page to know came from Q1 -->
+			<input type="hidden" name="q1url" value="yes">
+		
+                	
+
+		<P>
+			<INPUT TYPE="SUBMIT" VALUE="Login ">
+		</P>
+		
+		<H3 id="FSNloginFooterText1" ALIGN="center">NOTE: PLEASE DO NOT SHARE YOUR USER ID OR PASSWORD WITH ANYONE</H3>
+							
+		</FORM>
+		
+
+	</CENTER>
+
+</BODY>
+</HTML>
+

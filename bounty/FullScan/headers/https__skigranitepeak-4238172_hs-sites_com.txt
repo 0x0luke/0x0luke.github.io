@@ -1,0 +1,23 @@
+200 OK
+Cf-Ray: 50271e28485d365d-MAN
+Age: 2886
+Strict-Transport-Security: max-age=0
+X-Hs-Content-Id: 5816434697
+X-Hs-Combine-Css: Retry
+X-Powered-By: HubSpot
+Date: Wed, 07 Aug 2019 06:15:44 GMT
+Cf-Cache-Status: HIT
+Cache-Control: s-maxage=7200,max-age=5
+Vary: Accept-Encoding
+Edge-Cache-Tag: CT-5816434697,P-4238172,L-11325039198,L-5732502285,L-5732502292,CW-10525214147,CW-10525214441,CW-10525258043,CW-10811204190,CW-5640126205,CW-5640570107,CW-5732502321,CW-5732502447,CW-5732685507,CW-5732685524,CW-5732685525,CW-5732685543,CW-5732685572,CW-5873095404,E-10533354199,E-5732846806,MENU-10525259264,PGS-ALL,SW-2,SD-22
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Content-Type: text/html;charset=utf-8
+Retry-Count: 0
+Set-Cookie: __cfduid=d40741c354d6d6bbfe9e8735a713dfcd21565158544; expires=Thu, 06-Aug-20 06:15:44 GMT; path=/; domain=.www.skigranitepeak.com; HttpOnly __cfruid=53171fa29a9c68fb9310e22796d8e94ca900f43d-1565158544; path=/; domain=.www.skigranitepeak.com; HttpOnly
+Access-Control-Allow-Credentials: false
+Content-Security-Policy: upgrade-insecure-requests
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Hs-Hub-Id: 4238172
+X-Trace: 2BF5FD7DC2E70E20DFB551BBF18728A3ECF93457FD000000000000000000
+Server: cloudflare

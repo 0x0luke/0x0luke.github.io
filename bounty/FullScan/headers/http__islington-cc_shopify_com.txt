@@ -1,0 +1,18 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Set-Cookie: __cfduid=ddbce8f19afb90ca7020558979981ab251565151414; expires=Thu, 06-Aug-20 04:16:54 GMT; path=/; domain=.islington-cc.shopify.com; HttpOnly
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b6874592-3541-4dd8-8ad9-57e101196b12
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b6874592-3541-4dd8-8ad9-57e101196b12
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Download-Options: noopen
+Cf-Ray: 50267015fc603663-MAN
+Date: Wed, 07 Aug 2019 04:16:54 GMT
+X-Shopify-Stage: production
+X-Frame-Options: DENY
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: b6874592-3541-4dd8-8ad9-57e101196b12
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1

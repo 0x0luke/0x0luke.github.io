@@ -1,0 +1,18 @@
+200 OK
+Set-Cookie: JSESSIONID=363CA5F2616D2405A672FFAAC069D5C8; Path=/; Secure; HttpOnly NEW_VISITOR=new; Expires=Thu, 08-Aug-2019 12:14:09 GMT; HttpOnly VISITOR=returning; Path=/; HttpOnly ajs_anonymous_id=%22736725a0-440f-d85a-128e-71aa36a40d4a%22; Max-Age=315360000; Domain=.statuspage.io; Path=/; Expires=Sat, 04 Aug 2029 12:14:09 GMT bxp_gateway_request_id=35d018a7-b019-7c52-0abc-47ec09db4dd0; Max-Age=300; Domain=.statuspage.io; Path=/; Expires=Wed, 07 Aug 2019 12:19:09 GMT atlCohort={"bucketAll":{"bucketedAtUTC":"2019-08-07T12:14:09.622Z","version":"2","index":13,"bucketId":0}}; Max-Age=315360000; Domain=.atlassian.com; Path=/; Expires=Sat, 04 Aug 2029 12:14:09 GMT
+Server: nginx
+Date: Wed, 07 Aug 2019 12:14:09 GMT
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0
+Content-Type: text/html;charset=UTF-8
+Strict-Transport-Security: max-age=31536000
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Last-Modified: Wed, 07 Aug 2019 12:00:24 GMT
+X-Powered-By: Express
+X-Envoy-Upstream-Service-Time: 0
+X-Magnolia-Registration: Registered
+Etag: W/"25b3-yVjA76+4YN8bqGxEeaiRncQ0+h8"

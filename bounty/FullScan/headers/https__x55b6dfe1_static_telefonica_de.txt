@@ -1,0 +1,16 @@
+200 OK
+X-Content-Type-Options: nosniff
+Set-Cookie: _german-shepherd_session=BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiJTdlNWM0MWFiNTk3NmY4MzU5OTg3ZDY3MDUzZjUzMzQzBjsAVEkiE3VzZXJfcmV0dXJuX3RvBjsARiIGL0kiCmZsYXNoBjsAVHsHSSIMZGlzY2FyZAY7AFRbBkkiCmFsZXJ0BjsARkkiDGZsYXNoZXMGOwBUewZADkkiAAY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFKQnl6QXdFVVJJZ056Njh6K0U5aklUNkFOQUFPdm1zMWZ1eE01bHlQcUVZPQY7AEY%3D--fecea9a9aa94f3da95ccdbff4bf9c8b4170746bd; path=/; HttpOnly
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+Etag: "57ec9c772a812c64959ca6ea20493859"
+Cache-Control: max-age=0, private, must-revalidate
+X-Xss-Protection: 1; mode=block
+X-Request-Id: 723014d0-54f1-483f-aa03-42b487a80952
+X-Powered-By: Phusion Passenger 5.0.16
+Status: 200 OK
+Date: Wed, 07 Aug 2019 12:28:29 GMT
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=31536000
+Retry-Count: 0
+X-Runtime: 0.019988

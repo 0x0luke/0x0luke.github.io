@@ -1,0 +1,520 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<title>TomTom Traffic Stats</title>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<!-- OpenLayers -->
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/ext/openlayers/2.1.1/OpenLayers.js"></script>
+
+<!-- jQuery -->
+
+
+<script type="text/javascript" charset="UTF-8"
+            src="/static/js/jquery-1.10.2.min.js"></script><!--  update to latest? -->
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery-ui.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.dragToSelect.js"></script>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/jquery.dragToSelect.css"/>
+
+
+
+
+<script type="text/javascript">
+    jQuery.noConflict();
+    var $j = jQuery;
+</script>
+
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.json-2.2.min.js"></script>
+
+<!-- logging -->
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/log4javascript.js"></script>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/960fluid/reset.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/960fluid/grid.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/tomtom-2011.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/js/ext/openlayers/2.1.1/theme/default/style.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/traffic-stats-2011.css"/>
+
+
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/smoothness/jquery-ui.css  "/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/smoothness/calendarWidget.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/timespan.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+      href="/static/css/grouping.css"/>      
+      
+      
+<link rel="stylesheet" type="text/css" media="screen" 
+	href="/static/css/leaflet.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/static/css/Leaflet.Coordinates-0.1.4.css"/>
+<link rel="stylesheet" type="text/css" media="screen"
+	href="/static/css/leaflet.draw.css"/>
+
+
+<script type="text/javascript" charset="UTF-8"
+		src="/static/js/leaflet.js"></script>
+<script type="text/javascript" charset="UTF-8"
+		src="/static/js/tomtom.map.js"></script><!-- LBS maptoolkit API -->
+<script type="text/javascript" charset="UTF-8"
+		src="/static/js/Leaflet.Coordinates-0.1.4.min.js"></script> <!-- leaflet plugin -->
+<script type="text/javascript" charset="UTF-8"
+		src="/static/js/leaflet.draw.js"></script> <!-- leaflet plugin -->
+<script type="text/javascript" charset="UTF-8"
+		src="/static/js/tomtom.trafficstats.js"></script>
+
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/variables.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.popupWindow.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.cookies.2.2.0.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.notifications.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.jqEasyCharCounter.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.liveready-1.0-min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.loadFragment.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.validate.min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.metadata.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/jquery.form.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/button-dropdown.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/button.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/library.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/productsDropDown.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/timespan.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/grouping.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/prevent-form-flood.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/raphael-min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/g.raphael.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/g.bar.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/g.line.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/log4javascript.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/tableFunctions.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/modernizr.custom.31360.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="/static/js/moment.min.js"></script>
+
+
+
+
+<script id="ab" type="text/javascript" charset="UTF-8">
+
+    $j(document).ready(function() {
+
+        $j('input,textarea').on('focus', function() {
+            $j(this).addClass('focus');
+        });
+
+        $j('input,textarea').on('focusout', function() {
+            $j(this).removeClass('focus');
+        });
+
+        /* Function to run if browser doesn't support border-radius (IE7-8)*/
+        var runPIE = function() {
+            if (window.PIE) {
+                $j.liveReady("div#map.olMap, div.modal-canvas,div.modal-canvas div.overlay, div.message ,div.charts-content, ul.locationlist, div.element.last, div.box, div.box h3, div.popup, div.rounded, div.rounded .close", function() { // LiveReady necessary for objects loaded via AJAX
+                    PIE.attach(this[0]);
+                });
+            }
+        };
+
+        /* if browser doesn't support them, it draws CSS3 feature via PIE's fallback */
+        Modernizr.load([
+            {
+                test: Modernizr.borderradius,
+                
+                nope: ['/static/js/PIE.js','/static/js/selectivizr-min.js'],
+                complete: function () {
+                    runPIE();
+                }
+            }
+        ]);
+
+    });
+
+    var Global = {};
+
+
+    com.tomtom.statcity.sydney = {};
+    var onMapInit = function() {
+    };
+
+    function init() {
+//        var appender = new log4javascript.BrowserConsoleAppender(); // i.e. currenly only works in Firefox / Safari
+        // i.e. for IE use: new log4javascript.PopUpAppender();
+//        var layout = new log4javascript.PatternLayout("%d{HH:mm:ss} %-5p - %m%n");
+//        appender.setLayout(layout);
+//        com.tomtom.statcity.log.addAppender(appender);
+
+        var bbox = 
+                
+    
+        null;
+    
+    
+
+        $j('#help_link').popupWindow({
+            centerBrowser:1,
+            height:$j(window).height(),
+            width:$j(document).width()
+
+        });
+
+        // Needed for focus handling for Explorer 7
+
+    }
+</script>
+
+<script id="content_footer_buttons" type="text/javascript" charset="UTF-8">
+
+    function enableCancelButton(handler) {
+        enableButton('cancel_button', handler)
+    }
+    function enableContinueButton(handler) {
+        enableButton('continue_button', handler)
+    }
+    function enableButton(id, handler) {
+        $j('#' + id).unbind('click'); // remove all existing handlers
+        $j('#' + id).click(handler);
+        $j('#' + id).show();
+    }
+    function hideCancelButton() {
+        hideButton('cancel_button');
+    }
+    function hideContinueButton() {
+        hideButton('continue_button');
+    }
+    function hideButton(id) {
+        $j('#' + id).hide();
+    }
+    function redirect(url) {
+        window.location.replace(url);
+    }
+
+    function colorToHex(color) {
+        if (color.substr(0, 1) === '#') {
+            return color;
+        }
+        var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
+
+        var red = parseInt(digits[2]);
+        var green = parseInt(digits[3]);
+        var blue = parseInt(digits[4]);
+
+        var rgb = blue | (green << 8) | (red << 16);
+        return digits[1] + rgb.toString(16);
+    }
+    ;
+
+    var pad = function(num, totalChars) {
+        var pad = '0';
+        num = num + '';
+        while (num.length < totalChars) {
+            num = pad + num;
+        }
+        return num;
+    };
+
+    var DarkOverlay = function(addClass) {
+        this.maskHTML = "<div id='mask' class='" + addClass + "'></div>";
+        this.mask = $j(this.maskHTML).prependTo($j('body')).addClass('show');
+
+        this.show = function() {
+            $j(this.mask).fadeIn('slow');
+        };
+
+        this.hide = function() {
+            $j(this.mask).fadeOut('fast', function() {
+                $j(this).remove();
+            });
+        };
+    };
+
+    // Ratio is between 0 and 1
+    var changeColor = function(color, ratio, darker) {
+        var difference = Math.round(ratio * 255) * (darker ? -1 : 1),
+                minmax = darker ? Math.max : Math.min,
+                decimal = color.replace(
+                        /^#?([a-z0-9][a-z0-9])([a-z0-9][a-z0-9])([a-z0-9][a-z0-9])/i,
+                        function() {
+                            return parseInt(arguments[1], 16) + ',' +
+                                    parseInt(arguments[2], 16) + ',' +
+                                    parseInt(arguments[3], 16);
+                        }
+                        ).split(/,/);
+        return [
+            '#',
+            pad(minmax(parseInt(decimal[0], 10) + difference, 0).toString(16), 2),
+            pad(minmax(parseInt(decimal[1], 10) + difference, 0).toString(16), 2),
+            pad(minmax(parseInt(decimal[2], 10) + difference, 0).toString(16), 2)
+        ].join('');
+    };
+    var lighterColor = function(color, ratio) {
+        return changeColor(color, ratio, false);
+    };
+    var darkerColor = function(color, ratio) {
+        return changeColor(color, ratio, true);
+    };
+
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+    
+    com.tomtom.statcity.sydney.apikey = "8kn5wdqkhse2wrx9xvwg7spr"
+    
+    
+    com.tomtom.statcity.sydney.url = []
+    
+    com.tomtom.statcity.sydney.url.push("https://a.api.tomtom.com")
+    
+    com.tomtom.statcity.sydney.url.push("https://b.api.tomtom.com")
+    
+    com.tomtom.statcity.sydney.url.push("https://c.api.tomtom.com")
+    
+    com.tomtom.statcity.sydney.url.push("https://d.api.tomtom.com")
+    
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="init();"
+      class="login  ">
+<div id="not-footer">
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+<div id="header" class="container_16">
+    <div id="logo" class="grid_7"></div>
+
+    
+
+    <div id="navigation" class="grid_16">
+        <!-- menubar -->
+        <ul class="main-menu">
+
+            
+                
+                
+                    <li class="home selected">
+                        <a href="/resources/">Traffic Stats</a>
+                    </li>
+                
+            
+
+            
+            
+            
+            
+            <li class="last">
+                <a></a>
+            </li>
+
+            <li class="login">
+                
+            </li>
+        </ul>
+
+    </div>
+    <!-- breadcrumbs -->
+    
+    <!-- end of breadcrumbs -->
+    <div class="clear"></div>
+</div>
+
+
+
+
+    
+
+
+<div id="content" class="container_16">
+    
+        <div class="background">
+            <div class="corner top right"></div>
+            <div class="corner top left"></div>
+            <div class="corner bottom right"></div>
+            <div class="corner bottom left"></div>
+
+            <div class="rounded login-window">
+                <h1>Traffic Stats</h1>
+
+                <div class="content clearfix">
+                    <div class="form">
+                        <h2 class="accent">Sign in</h2>
+                        
+                        <form id='login' action="/resources/session" method="post">
+                            <ul>
+                                <li>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username"/>
+                                </li>
+                                <li>
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password"/>
+                                </li>
+                                <li>
+                                    <a id="forgotpassword_link" class="forgotpassword"
+                                       href="mailto:support.trafficstats@tomtom.com?Subject=Password%20request">forgot
+                                        your password?</a>
+                                    <a id="signin_button" class="button primary right-arrow"
+                                       href="javascript: submitform()">Sign
+                                        in</a>
+                                </li>
+                            </ul>
+                        </form>
+                        
+                    </div>
+                    <div class="info">
+                        <h2 class="accent">Warning</h2>
+
+                        <p>This portal now has restricted functionality and for a limited period only.<br />
+                         Please use our brand new Traffic Stats portal at: <a href='https://move.tomtom.com'>https://move.tomtom.com</a></p>
+
+                        <div style="clear: right"></div>
+                        <br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    <div class="clear clearfix"></div>
+</div>
+
+<script type="text/javascript">
+
+    // Submits the login form
+
+    function submitform() {
+        com.tomtom.statcity.submitForm('login');
+    }
+
+    $j(document).ready(function() {
+
+        $j('input').keyup(function(e) {
+            // If enter pressed and fields are both not empty
+            if (e.keyCode == 13 && $j('#username').val() && $j('#password').val()) {
+                submitform();
+            }
+        });
+    });
+</script>
+
+
+
+
+</div>
+
+<div id="footer" class="container_16">
+
+    <hr class="clear grid_16">
+    <div class="copyright">
+        Copyright &#169; 2019 TomTom International BV. All rights reserved.
+    </div>
+    <div class="links">
+        <a href="http://www.tomtom.com">TomTom</a>
+    </div>
+    <div class="clear clearfix"></div>
+</div>
+
+</body>
+</html>

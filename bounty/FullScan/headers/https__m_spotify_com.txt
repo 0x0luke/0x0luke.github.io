@@ -1,0 +1,14 @@
+200 OK
+Date: Thu, 08 Aug 2019 14:27:51 GMT
+Set-Cookie: spsess=pXbw2wSvU%2CnFGGD2-dh0ZLUb7kMLy-YiQAPnY55fkhRaW1%2C9; path=/; secure; HttpOnly sp_30d=1; expires=Sat, 07-Sep-2019 14:27:51 GMT; Max-Age=2592000; path=/; httponly sp_usid=ce0156b8-ed76-41c4-aa30-c0a9f40c8a09; expires=Thu, 08-Aug-2019 14:57:51 GMT; Max-Age=1800; path=/; domain=.spotify.com; secure
+X-Cache: HIT from 30cc4803fe33
+Cache-Control: max-age=0, must-revalidate, private
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Server: nginx
+X-Join-The-Band: https://www.spotify.com/jobs/
+Content-Security-Policy: frame-ancestors 'self' https://*.spotify.com https://*.spotify.net
+Retry-Count: 0
+Vary: X-Forwarded-Proto,Accept-Encoding
+X-Content-Security-Policy: frame-ancestors 'self' https://*.spotify.com https://*.spotify.net
+Content-Type: text/html; charset=UTF-8

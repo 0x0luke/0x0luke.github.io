@@ -1,0 +1,22 @@
+200 OK
+Content-Security-Policy: frame-ancestors *.paribus.co
+Last-Modified: Wed, 07 Aug 2019 19:19:23 GMT
+Server: AmazonS3
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Age: 58517
+X-Amz-Cf-Pop: LHR4
+X-Amz-Id-2: pH076kT1AzKS/PYhekT6U0rUF0I7pZw+/cM314iw+VRgh5N8VvvDSkEqCnnp0ij6UgSVlk8US3M=
+X-Amz-Replication-Status: REPLICA
+Retry-Count: 0
+X-Amz-Version-Id: wqN9AGUKwYw8BfJJ14KbMWP7OJoLOxvZ
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Xss-Protection: 1; mode=block
+X-Amz-Cf-Id: hsbA_nPVD4endvcjqNMix30T_8pY0Knnazhor6YazONq5Rca5WjFpA==
+X-Amz-Request-Id: AC73398FDCEF0FE9
+Date: Wed, 07 Aug 2019 19:21:54 GMT
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 8cc9957dff77c27e9931ab0aaf344ec9.cloudfront.net (CloudFront)
+Content-Type: text/html
+X-Amz-Server-Side-Encryption: AES256

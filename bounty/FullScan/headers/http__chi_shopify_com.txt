@@ -1,0 +1,18 @@
+404 Not Found
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=2f7676b9-66d4-4f1c-b413-8d7b76cc927d
+Server: cloudflare
+Date: Wed, 07 Aug 2019 04:16:47 GMT
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: 2f7676b9-66d4-4f1c-b413-8d7b76cc927d
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=2f7676b9-66d4-4f1c-b413-8d7b76cc927d
+Retry-Count: 0
+Set-Cookie: __cfduid=d61e4c6638bb5eff3133b1b618518cb021565151406; expires=Thu, 06-Aug-20 04:16:46 GMT; path=/; domain=.chi.shopify.com; HttpOnly
+X-Shopify-Stage: production
+Cf-Ray: 50266fe5498f361b-MAN

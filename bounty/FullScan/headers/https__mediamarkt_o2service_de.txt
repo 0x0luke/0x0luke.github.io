@@ -1,0 +1,11 @@
+200 200
+Content-Security-Policy: frame-ancestors 'self' http://mediamarkt.de https://mediamarkt.de http://*.mediamarkt.de https://*.mediamarkt.de
+Vary: Accept-Encoding
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 08 Aug 2019 11:15:10 GMT
+Content-Language: de-DE
+Set-Cookie: sessionBridge=ba2e06db-4676-47e3-b0c1-39bed882b00f; Max-Age=604800; Expires=Thu, 15-Aug-2019 11:15:10 GMT; Domain=o2service.de; Path=/; Secure; HttpOnly JSESSIONID=102A52E19798A9F7D0BD2AF974FE1A5F.medprdpo2; Path=/kundencenter; Secure; HttpOnly
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, public, max-age=1
+Strict-Transport-Security: max-age=31536000
+Server: Apache

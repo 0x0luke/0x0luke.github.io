@@ -1,0 +1,17 @@
+200 OK
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Akamai-Transformed: 9 4498 0 pmb=mRUM,1
+Expires: Wed, 07 Aug 2019 08:42:39 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Content-Security-Policy: default-src https: blob:; frame-ancestors 'self'  https://www.ford.com.au https://www.ford.co.th https://www.india.ford.com; connect-src https: wss:; font-src  https: data:; img-src https: data: blob:; media-src https: blob:; object-src 'self'; script-src  https:  'unsafe-inline' 'unsafe-eval' blob:; style-src 'unsafe-inline' https:; base-uri 'self';
+Last-Modified: Mon, 05 Aug 2019 14:39:59 GMT
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+Cache-Control: max-age=3600
+Date: Wed, 07 Aug 2019 07:42:39 GMT
+Vary: Accept-Encoding Host,Accept-Encoding
+Set-Cookie: userInfo=country_code=US,region_code=IN,city=INDIANAPOLIS,county=MARION+HAMILTON,zip=46201-46209+46211+46214+46216-46231+46234-46237+46239-46242+46244+46247+46249-46251+46253-46256+46259-46260+46262+46266+46268+46274-46275+46277-46278+46280+46282-46283+46285+46290-46291+46295-46296+46298; path=/; domain=.lincoln.com
+Retry-Count: 0
+Referrer-Policy: no-referrer-when-downgrade

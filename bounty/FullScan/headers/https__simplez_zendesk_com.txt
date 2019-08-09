@@ -1,0 +1,26 @@
+200 OK
+Etag: W/"19ff5dffe45554bad892f4b13c491528"
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5032bb612ecdbfed-MAN
+X-Zendesk-Origin-Server: help-center-unicorn-5b775c5dfd-xprq6
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=31536000;
+P3p: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+X-Zendesk-User-Id: 
+X-Ua-Compatible: IE=edge
+Set-Cookie: _zendesk_shared_session=-UEVsdXpZNEJaRk5Kcy9VdkF4UHRoeTFqVEZMbm9RYk9hbWc0NEl3Qk1ZVHF6S3VKM1lWTDdaRmFFbkc1WGxxaUIzY0NsNHdUSWlTVHY4aU5ZNzkyRlZhVER1WUVxUkg1TVFHcFl1aWZ5dGZIWGJCUkt1Q0pnQ2pMNW9wL2NQQ3Vzdzl1blFmSGNXVWlnUTh5a2hnUytSNVZBcW5RMmRRNmhEOUlqL2Jtcks2bXBFU3FXa3doU0VXRnkxR0EzWmNpaitSMCtlejBTbFJMdmp1R01GWkYwdz09LS02TzZXNEFlWkp0TEJJVkdrcW5QU0hnPT0%3D--de6796deffc80e80f827ad7657882bfc3654ced8; path=/; HttpOnly _zendesk_authenticated=; path=/; expires=Thu, 01 Jan 1970 00:00:00 -0000; HttpOnly _help_center_session=QTRBbVBGS0lZRDNYQ3dvWnkvZ0lOaXZVV1pUUEg0WU5SQk54dFh4UFppaFdXM1YzNVRGcHhCSG1wUFRjb2xzd1B6YUNwWVR5ZlVPaFdxZ25RNEEyZVBzQWhqUTk0ZjZSVU1XUXFVa2h2L0pqS2Q2cGlPbC94ZkgvUDJEcHJMMThPODhHaE5oSzJiSWU2TmlRWU13anh1Vm9mTFo4ZlRoYXJWVG1NcG5VRnZsSU9wdDJRelhmKzhqK3pGTyt6enhKbGdaemVXNHhPblU5NE9BdzRCbi9Rc1laNnNzNFQrY1R3S2srUjFvT0tZQT0tLUI4QkVZc0JVQ016bnFwUWs0cXN5cHc9PQ%3D%3D--4a1a448138aee7579459026642e39b609acdfa0b; path=/; HttpOnly
+X-Frame-Options: SAMEORIGIN
+Protocol: HTTP/1.0
+Date: Thu, 08 Aug 2019 16:05:28 GMT
+Content-Language: pt-br
+Status: 200 OK
+Cache-Tags: resource:restricted#show, pod:pod14
+Cf-Cache-Status: BYPASS
+X-Request-Id: 5032bb612ecdbfed-IAD
+Retry-Count: 0
+Server: cloudflare
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0, private, must-revalidate
+X-Runtime: 0.154446
+Vary: Accept-Encoding

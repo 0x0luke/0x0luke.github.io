@@ -1,0 +1,18 @@
+200 OK
+Vary: Accept-Encoding, Accept-Encoding, Accept-Encoding
+Pragma: no-cache
+Server: nginx
+X-Served-By: cache-jfk8125-JFK, cache-lcy19245-LCY
+X-Cache: HIT: 4, HIT, HIT
+X-Timer: S1565262831.709079,VS0,VE0
+Cache-Control: no-cache, no-store, private, must-revalidate, max-age=0, max-stale=0, post-check=0, pre-check=0
+X-Cache-Group: bot
+Date: Thu, 08 Aug 2019 11:13:50 GMT
+X-Cache-Hits: 1, 1
+Expires: 0
+Age: 101756
+Accept-Ranges: bytes
+Content-Type: text/html; charset=UTF-8
+X-Pass-Why: 
+Retry-Count: 0
+Via: 1.1 varnish

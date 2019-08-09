@@ -1,0 +1,14 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Server: nginx
+Set-Cookie: JSESSIONID=E37961C3C62F498059BA11096790CDE1.node-s3261; Path=/; Secure; HttpOnly node=0c586d0fdf030fbeec055b1bffdf6879;Path=/;secure; auth_ukafokfuabbuzdckyiwlunsh=MDE4fF98X3xPD1RlIQMLAXwQMhZzSAZhK2JCdUlAYG5LPXMOcWUZa1pUBD4dRw1SAwFPV2VFdXFRWRd2VXNfBUFOLnk3aXMBSl1AbnYLDR9oRjVKIgNWZitvXi9XQ2F1TWt1W3ZiSw==;Domain=.qiwi.com;Path=/;Max-Age=86400;HttpOnly
+Vary: Accept-Encoding
+Cache-Control: no-store, no-cache, must-revalidate post-check=0, pre-check=0
+Date: Thu, 08 Aug 2019 11:42:03 GMT
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Expires: Sat, 6 May 1995 12:00:00 GMT

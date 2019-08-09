@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>Strava Support</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:bysrcvFNHLitMatgBNdJqtE8Ytx+nxEhpTIH/ZSv3wjeRT/G1cLLvoCH2miBq3JSrUvf8MCprNJPG1I6E2Jvkg==" />
+  <link rel="canonical" href="https://support.strava.com/hc/en-us" />
+<link rel="alternate" hreflang="de" href="https://support.strava.com/hc/de" />
+<link rel="alternate" hreflang="en" href="https://support.strava.com/hc/en-us" />
+<link rel="alternate" hreflang="es-mx" href="https://support.strava.com/hc/es-mx" />
+<link rel="alternate" hreflang="es" href="https://support.strava.com/hc/es-es" />
+<link rel="alternate" hreflang="fr" href="https://support.strava.com/hc/fr" />
+<link rel="alternate" hreflang="it" href="https://support.strava.com/hc/it" />
+<link rel="alternate" hreflang="ja" href="https://support.strava.com/hc/ja" />
+<link rel="alternate" hreflang="ko" href="https://support.strava.com/hc/ko" />
+<link rel="alternate" hreflang="nl" href="https://support.strava.com/hc/nl" />
+<link rel="alternate" hreflang="pt" href="https://support.strava.com/hc/pt" />
+<link rel="alternate" hreflang="pt-br" href="https://support.strava.com/hc/pt-br" />
+<link rel="alternate" hreflang="ru" href="https://support.strava.com/hc/ru" />
+<link rel="alternate" hreflang="zh-cn" href="https://support.strava.com/hc/zh-cn" />
+<link rel="alternate" hreflang="zh" href="https://support.strava.com/hc/zh-tw" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p13.zdassets.com/hc/theming_assets/92900/104814/style.css?digest=360313096451" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/92900/901c0eeaebb06a7e412796a99da045497af6100b.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72981048-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PH526GP');</script>
+<!-- End Google Tag Manager -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/0.4.2/mobile-detect.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/store.js/1.3.14/store.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+<script type="text/template" id="sidebar-nav-template">
+  <div class="side-nav">
+    <% _.each(categories, function(category) { %>
+      <div class="side-nav-category-item <% if (category.isCurrent) { %> is-active<% } %>" data-category-item>
+        <a class="side-nav-category-item__title" href="/hc/categories/<%= category.id %>" data-category-item-title>
+          <%= category.name %>
+        </a>
+        <div class="side-nav-section-items" data-section-items>
+          <% _.each(category.sections, function(section) { %>
+            <div class="side-nav-section-item <% if (section.isCurrent) { %> is-active<% } %>" data-section-item>
+              <div class="side-nav-section-item__title <% if (currentSectionId && !currentArticleId) { %>side-nav-section-item__title--with-arrow <% } %>">
+                <a class="side-nav-section-item__link" href="/hc/<%= locale %>/sections/<%= section.id %>" <% if (currentArticleId || currentSectionId) { %> data-section-item-link<% } %> ><%= section.name %></a>
+              </div>
+              <ul class="side-nav-section-item__articles">
+                <% _.each(section.articles, function(article) { %>
+                  <li class="side-nav-section-item-articles__item <% if (article.isCurrent) { %> is-active<% } %>">
+                    <a href="/hc/<%= locale %>/articles/<%= article.id %>"><%= article.title %></a>
+                  </li>
+                <% }); %>
+              </ul>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</script>
+
+<script type="text/template" id="posts-featured-template">
+  <% _.each(posts, function(post) { %>
+    <li class="column column--sm-4 featured-post">
+      <a href="<%= post.topic_html_url %>" class="featured-post__topic"><%= post.topic_name %></a>
+      <a href="<%= post.html_url %>" class="featured-post__title"><%= post.title %></a>
+      <div class="featured-post__meta">
+        <div class="featured-post__time">Post created <%= moment(post.created_at).fromNow() %></div>
+        <div class="featured-post__votes"><span class="fa fa-thumbs-up"></span> <%= post.vote_sum %></div>
+      </div>
+    </li>
+  <% }); %>
+</script>
+
+<script type="text/template" id="posts-recent-template">
+  <% _.each(posts, function(post) { %>
+    <li class="column column--sm-4 featured-post">
+      <a href="<%= post.topic_html_url %>" class="featured-post__topic"><%= post.topic_name %></a>
+      <a href="<%= post.html_url %>" class="featured-post__title"><%= post.title %></a>
+      <div class="featured-post__meta">
+        <div class="featured-post__time">Post created <%= moment(post.created_at).fromNow() %></div>
+        <div class="featured-post__votes"><span class="fa fa-comment-o"></span> <%= post.comment_count %></div>
+      </div>
+    </li>
+  <% }); %>
+</script>
+<script src="https://zendesk.tv/conditional_fields/helpcenter.js"></script>
+<script src="https://zendesk.tv/conditional_fields/helpcenter.js"></script>
+<script>var cfaRules = [{"fieldType":"tagger","field":22826744,"value":"compatible_device_data_discrepancy","select":[22826764,22826784],"formId":62030,"requireds":[22826764,22826784]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_grouping","select":[22826624],"formId":62030,"requireds":[22826624]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_incorrect_linking","select":[22826624],"formId":62030,"requireds":[22826624]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_linking","select":[22826764],"formId":62030,"requireds":[22826764]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_live_segments","select":[22826764,22990330],"formId":62030,"requireds":[22826764,22990330]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_manual_upload","select":[22993250,22826804],"formId":62030,"requireds":[22826804,22993250]},{"fieldType":"tagger","field":22826744,"value":"compatible_device_syncing","select":[22826764],"formId":62030,"requireds":[22826764]},{"fieldType":"tagger","field":22826824,"value":"account_access_other","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"close_account","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"duplicate_account_mystery","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"email_verification","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"facebook","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"i_have_multiple_accounts_and_i_want_to_m","select":[21109549,22837264,22989650],"formId":67304,"requireds":[22989650]},{"fieldType":"tagger","field":22826824,"value":"old_email_account","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"password_lost","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826824,"value":"password_reset","select":[21109549,22837264],"formId":67304,"requireds":[]},{"fieldType":"tagger","field":22826904,"value":"gear_help","select":[22826964],"formId":62050,"requireds":[22826964]},{"fieldType":"tagger","field":22826904,"value":"notification_setting_help","select":[22826924],"formId":62050,"requireds":[22826924]},{"fieldType":"tagger","field":22826904,"value":"privacy_setting_help","select":[22826944,22826924],"formId":62050,"requireds":[22826924,22826944]},{"fieldType":"tagger","field":22826904,"value":"profile_setting_help","select":[22989710,22826924],"formId":62050,"requireds":[22826924,22989710]},{"fieldType":"tagger","field":22826904,"value":"profile_stats_help","select":[22989730],"formId":62050,"requireds":[22989730]},{"fieldType":"tagger","field":22827344,"value":"challenges","select":[22990770],"formId":62310,"requireds":[22990770]},{"fieldType":"tagger","field":22827344,"value":"fitness_and_freshness","select":[22990410],"formId":62310,"requireds":[22990410]},{"fieldType":"tagger","field":22827344,"value":"global_heatmap","select":[22990730],"formId":62310,"requireds":[22990730]},{"fieldType":"tagger","field":22827344,"value":"goals","select":[22827364],"formId":62310,"requireds":[22827364]},{"fieldType":"tagger","field":22827344,"value":"personal_heatmap","select":[22990710],"formId":62310,"requireds":[22990710]},{"fieldType":"tagger","field":22827344,"value":"power_curve","select":[22990430],"formId":62310,"requireds":[22990430]},{"fieldType":"tagger","field":22827344,"value":"routes","select":[22827624],"formId":62310,"requireds":[22827624]},{"fieldType":"tagger","field":22827344,"value":"segment_explore","select":[22990750],"formId":62310,"requireds":[22990750]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_android_wear_problems","select":[22826704,22826724],"formId":62010,"requireds":[22826704,22826724]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_apple_watch_problems","select":[22826684],"formId":62010,"requireds":[22826684]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_data_issues","select":[22826604,22826544],"formId":62010,"requireds":[22826544,22826604]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_editing_question","select":[22989610],"formId":62010,"requireds":[22989610]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_features_question","select":[22989590,22826544],"formId":62010,"requireds":[22826544,22989590]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_grouping","select":[22826624],"formId":62010,"requireds":[22826624]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_healthkit_problems","select":[22826664],"formId":62010,"requireds":[22826664]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_install_issue","select":[22826544,22826644,22989630],"formId":62010,"requireds":[22826544,22826644,22989630]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_recording_problems","select":[22826544,22989510],"formId":62010,"requireds":[22826544,22989510]},{"fieldType":"tagger","field":22989490,"value":"mobile_app_syncing_problems","select":[22826544,22989530,22826564,22826584],"formId":62010,"requireds":[22826544,22826564,22826584,22989530]},{"fieldType":"tagger","field":22989670,"value":"inaccurate_segment_achievements","select":[22826624,22826884],"formId":67324,"requireds":[22826624,22826884]},{"fieldType":"tagger","field":22989670,"value":"inaccurate_segment_time","select":[22826864],"formId":67324,"requireds":[22826864]},{"fieldType":"tagger","field":22989670,"value":"incorrect_run_best_efforts","select":[22826624,22989690],"formId":67324,"requireds":[22826624,22989690]},{"fieldType":"tagger","field":22989670,"value":"missing_run_best_efforts","select":[22826624,22989690],"formId":67324,"requireds":[22826624]},{"fieldType":"tagger","field":22989670,"value":"missing_segment","select":[22826844],"formId":67324,"requireds":[22826844]},{"fieldType":"tagger","field":22989750,"value":"activity_share","select":[22826984,22827004],"formId":62070,"requireds":[22826984,22827004]},{"fieldType":"tagger","field":22989750,"value":"clubs","select":[22827024],"formId":62070,"requireds":[22827024]},{"fieldType":"tagger","field":22989750,"value":"social_network_connections","select":[22826984],"formId":62070,"requireds":[22826984]},{"fieldType":"tagger","field":22990370,"value":"flagged_activity_review","select":[22826624],"formId":62210,"requireds":[22826624]},{"fieldType":"tagger","field":22990370,"value":"report_athlete","select":[22990390],"formId":62210,"requireds":[22990390]},{"fieldType":"tagger","field":22990370,"value":"report_hazard_segment","select":[22827324],"formId":62210,"requireds":[22827324]},{"fieldType":"tagger","field":22990370,"value":"report_segment_name","select":[22827324],"formId":62210,"requireds":[22827324]},{"fieldType":"tagger","field":22990370,"value":"review_activity","select":[22826624],"formId":62210,"requireds":[22826624]},{"fieldType":"tagger","field":22990370,"value":"review_hazardous_segment","select":[22827324],"formId":62210,"requireds":[22827324]},{"fieldType":"tagger","field":33552308,"value":"premium_cancellation","select":[35561207,33550928],"formId":218727,"requireds":[33550928,35561207]},{"fieldType":"tagger","field":33552308,"value":"premium_not_registered","select":[33550928],"formId":218727,"requireds":[33550928]},{"fieldType":"tagger","field":33552308,"value":"premium_payment_issue","select":[22825864,33550928],"formId":218727,"requireds":[22825864,33550928]},{"fieldType":"tagger","field":33552308,"value":"premium_subscription","select":[35561207,33550928],"formId":218727,"requireds":[33550928,35561207]}];</script>
+
+
+  <script type="text/javascript" src="//p13.zdassets.com/hc/theming_assets/92900/104814/script.js?digest=360313096451"></script>
+</head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <!-- Start of strava Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=772397ab-3003-4b0a-8960-c495daadc884"> </script>
+<script>
+  zE(function() {
+    zE.hide();
+  });
+</script>
+<!-- End of strava Zendesk Widget script -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH526GP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="layout">
+  <header class="header" style="background-image: url(//theme.zdassets.com/theme_assets/92900/5f36dc36b57d4fe4f6bf82566f2d01870deae641.jpg)">
+    <div class="topbar container" data-topbar>
+      <div class="container-inner">
+        <div class="topbar__inner">
+          <div class="topbar__col topbar__head clearfix">
+            <div class="logo">
+              <a title="Home" href="/hc/en-us">
+               <img src="//theme.zdassets.com/theme_assets/92900/0c59e381d9ddda78b09c2316c0c4cf1a24e2daaa.png" width="200" height="40" />
+              </a>
+            </div>
+            <div class="topbar__button">
+              <button type="button" aria-label="Toggle Navigation" class="menu-button menu-button--x" data-toggle-menu>
+                <span class="menu-button__lines"></span>
+              </button>
+            </div>
+          </div>
+          <div class="topbar__col topbar__menu clearfix" role="navigation" aria-label="Topbar Navigation" data-menu>
+            <nav class="topbar__controls">
+              
+                <div class="dropdown language-selector" aria-haspopup="true">
+                  <a class="dropdown-toggle">
+                    English (US)
+                  </a>
+                  <span class="dropdown-menu dropdown-menu-end" role="menu">
+                    
+                      <a href="/hc/change_language/de?return_to=%2Fhc%2Fde" dir="ltr" rel="nofollow" role="menuitem">
+                        Deutsch
+                      </a>
+                    
+                      <a href="/hc/change_language/es-es?return_to=%2Fhc%2Fes-es" dir="ltr" rel="nofollow" role="menuitem">
+                        Español (España)
+                      </a>
+                    
+                      <a href="/hc/change_language/es-mx?return_to=%2Fhc%2Fes-mx" dir="ltr" rel="nofollow" role="menuitem">
+                        Español (México)
+                      </a>
+                    
+                      <a href="/hc/change_language/fr?return_to=%2Fhc%2Ffr" dir="ltr" rel="nofollow" role="menuitem">
+                        Français
+                      </a>
+                    
+                      <a href="/hc/change_language/it?return_to=%2Fhc%2Fit" dir="ltr" rel="nofollow" role="menuitem">
+                        Italiano
+                      </a>
+                    
+                      <a href="/hc/change_language/ja?return_to=%2Fhc%2Fja" dir="ltr" rel="nofollow" role="menuitem">
+                        日本語
+                      </a>
+                    
+                      <a href="/hc/change_language/ko?return_to=%2Fhc%2Fko" dir="ltr" rel="nofollow" role="menuitem">
+                        한국어
+                      </a>
+                    
+                      <a href="/hc/change_language/nl?return_to=%2Fhc%2Fnl" dir="ltr" rel="nofollow" role="menuitem">
+                        Nederlands
+                      </a>
+                    
+                      <a href="/hc/change_language/pt?return_to=%2Fhc%2Fpt" dir="ltr" rel="nofollow" role="menuitem">
+                        Português
+                      </a>
+                    
+                      <a href="/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br" dir="ltr" rel="nofollow" role="menuitem">
+                        Português do Brasil
+                      </a>
+                    
+                      <a href="/hc/change_language/ru?return_to=%2Fhc%2Fru" dir="ltr" rel="nofollow" role="menuitem">
+                        Русский
+                      </a>
+                    
+                      <a href="/hc/change_language/zh-cn?return_to=%2Fhc%2Fzh-cn" dir="ltr" rel="nofollow" role="menuitem">
+                        简体中文
+                      </a>
+                    
+                      <a href="/hc/change_language/zh-tw?return_to=%2Fhc%2Fzh-tw" dir="ltr" rel="nofollow" role="menuitem">
+                        繁體中文
+                      </a>
+                    
+                  </span>
+                </div>
+              
+              
+                <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.strava.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-unit container hidden" data-hero-unit>
+      <div class="container-inner">
+        <div class="search-box search-box--without-button">
+          <div class="intro-title text-center"><span class="intro-title__brand">Strava</span> Support Center</div>
+          <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
+
+  <main role="main">
+    <script>
+  $('[data-hero-unit]').removeClass('hidden');
+</script>
+
+<div class="knowledge-base clearfix">
+  
+  <div class="row clearfix custom-blocks text-center" id="custom-blocks">
+    <div class="column column--sm-3 custom-block">
+      <a class="custom-block__link" href="/hc/en-us/categories/202558427">
+        <div class="custom-block__image">
+                    <img src="//theme.zdassets.com/theme_assets/92900/740a832ee49e09f4da7aeaae7f40f3dc821b0810.png">
+        </div>
+        <h4 class="custom-block__title">Help &amp; Support</h4>
+      </a>
+    </div>
+    
+      <div class="row clearfix custom-blocks text-center" id="custom-blocks">
+    <div class="column column--sm-3 custom-block">
+      <a class="custom-block__link" href="hc/articles/207343930-Privacy-Controls">
+        <div class="custom-block__image">
+                    <img src="//theme.zdassets.com/theme_assets/92900/cb3e5c7e63ce5ea72dd8d27129a5207b701eaf65.png">
+        </div>
+        <h4 class="custom-block__title">Privacy Center</h4>
+      </a>
+    </div>
+
+    <div class="column column--sm-3 custom-block">
+      <a class="custom-block__link" href="/hc/en-us/community/topics?mobile_site=false">
+        <div class="custom-block__image">
+          <img src="//theme.zdassets.com/theme_assets/92900/679bda61e16464de63e5f8207494c23742c514f9.png">
+        </div>
+        <h4 class="custom-block__title">Community Discussion</h4>
+      </a>
+    </div>
+
+    <div class="column column--sm-3 custom-block custom-block--guides">
+      <div class="custom-block__image">
+        <img src="//theme.zdassets.com/theme_assets/92900/8ab1056c6a79a10f8edf8963864375613022f628.png">
+      </div>
+      <h4 class="custom-block__title">Get Started</h4>
+      
+        
+      
+        
+          
+            
+          
+            
+              <div class="custom-block__guides-links">
+                
+                  <a href="/hc/en-us/articles/206818170-Getting-Started-on-the-Web?mobile_site=false" class="custom-block__guides-link"></a>
+                
+                  <a href="/hc/en-us/articles/206334564-Getting-Started-on-Mobile?mobile_site=false" class="custom-block__guides-link"></a>
+                
+                  <a href="/hc/en-us/articles/206334584-Get-More-out-of-Strava?mobile_site=false" class="custom-block__guides-link"></a>
+                
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+      
+    </div>
+  </div>
+
+
+
+ 
+    <section class="promoted-articles">
+      <h2 class="promoted-articles__title">Featured Help Articles</h2>
+      <ul class="promoted-articles__items slick-initialized slick-slider slick-dotted">
+        <div aria-live="polite" class="slick-list draggable">
+          <div class="slick-track" role="listbox" style="opacity: 1; width: 7080px; transform: translate3d(-885px, 0px, 0px);">
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/360030704872-Missing-uploads-and-other-site-issues-on-August-4th?mobile_site=false">Missing uploads and other site issues on August 4th</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Strava is experiencing higher than normal site traffic and this is causing a significant backlog ...</p>
+              <a href="/hc/en-us/articles/360030704872-Missing-uploads-and-other-site-issues-on-August-4th?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/360026660091-Activity-Syncing-Issues-and-Incorrect-Start-Times-beginning-on-April-6th-?mobile_site=false">Activity Syncing Issues and Incorrect Start Times beginning on April 6th </a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Many athletes are experiencing syncing issues as a result of a significant worldwide GPS change t...</p>
+              <a href="/hc/en-us/articles/360026660091-Activity-Syncing-Issues-and-Incorrect-Start-Times-beginning-on-April-6th-?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/360015282091-Android-Update-Required?mobile_site=false">Android Update Required</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">We are upgrading Strava&#39;s network security systems on November 30th, 2018 to make sure your data ...</p>
+              <a href="/hc/en-us/articles/360015282091-Android-Update-Required?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/115000321350-Supported-iOS-versions-and-iPhones?mobile_site=false">Supported iOS versions and iPhones</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Using Strava on an older iPhone: We recently made a necessary update to the Strava platform that ...</p>
+              <a href="/hc/en-us/articles/115000321350-Supported-iOS-versions-and-iPhones?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/360001487844-Data-and-Privacy?mobile_site=false">Data and Privacy</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Your privacy is important to us, and we’re committed to providing meaningful choices about how th...</p>
+              <a href="/hc/en-us/articles/360001487844-Data-and-Privacy?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava?mobile_site=false">How to get your Activities to Strava</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">You can upload your activities to Strava using any of the following methods:
+
+Instantly upload fr...</p>
+              <a href="/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/216934427-Troubleshooting-Garmin-sync-issues?mobile_site=false">Troubleshooting Garmin sync issues</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">What to do if Garmin data is not Syncing to Strava:
+
+If you recently connected your Garmin accoun...</p>
+              <a href="/hc/en-us/articles/216934427-Troubleshooting-Garmin-sync-issues?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/115000024864-Strava-s-Elevation-Basemap?mobile_site=false">Strava&#39;s Elevation Basemap</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">For devices without recognized barometric altimeters, Strava calculates your activity&#39;s elevation...</p>
+              <a href="/hc/en-us/articles/115000024864-Strava-s-Elevation-Basemap?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/216919487-How-Distance-is-Calculated?mobile_site=false">How Distance is Calculated</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Distance is the most basic training statistic - therefore, being confident in your distance data ...</p>
+              <a href="/hc/en-us/articles/216919487-How-Distance-is-Calculated?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/360012184432-Why-doesn-t-my-segment-effort-appear-on-the-leaderboard-?mobile_site=false">Why doesn&#39;t my segment effort appear on the leaderboard?</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">If your fastest segment effort is not appearing on the segment leaderboard, there are several thi...</p>
+              <a href="/hc/en-us/articles/360012184432-Why-doesn-t-my-segment-effort-appear-on-the-leaderboard-?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/216918187-Segment-Matching-Issues?mobile_site=false">Segment Matching Issues</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">Understand why a segment may not have matched to your activity and what you can do about it, why ...</p>
+              <a href="/hc/en-us/articles/216918187-Segment-Matching-Issues?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/216917247-Troubleshooting-GPS-Issues?mobile_site=false">Troubleshooting GPS Issues</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">GPS is a system to estimate location on Earth by using signals from a set of orbiting satellites....</p>
+              <a href="/hc/en-us/articles/216917247-Troubleshooting-GPS-Issues?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+          <li class="promoted-articles-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 295px;">
+            <div class="promoted-articles-item__inner">
+              <h3 class="promoted-articles-item__title">
+                <a href="/hc/en-us/articles/206501784-Spam-bots-solicitations-and-fraudulent-activity-on-Strava?mobile_site=false">Spam, bots, solicitations and fraudulent activity on Strava</a>
+              </h3>
+              <p class="promoted-articles-item__excerpt">We take any fraudulent activity seriously at Strava and we work constantly to prevent such activi...</p>
+              <a href="/hc/en-us/articles/206501784-Spam-bots-solicitations-and-fraudulent-activity-on-Strava?mobile_site=false" class="btn btn--read-more">Read</a>
+            </div>
+          </li>
+        
+      </ul>
+    </section>
+   
+
+  <div class="community-activity">
+    <h2 class="community-activity__title">What's happening in our Community</h2>
+    <div class="community-activity__content">
+      <div class="tabs">
+        <div class="tabs-menu">
+          <a class="tabs-link is-active" href="#product-updates" data-tabs-link>Announcements</a><!--
+          --><a class="tabs-link" href="#posts_recent" data-tabs-link>Recent Activity</a><!--
+          --><a class="tabs-link" href="#posts_featured" data-tabs-link>Featured</a>
+        </div>
+        <div class="tab" id="product-updates" data-tab>
+          
+            
+              
+                <div class="row clearfix product-updates">
+                  
+                    <section class="column column--sm-6 section">
+                      <h3 class="h4">
+                        <a class="product-updates__title-link" href="/hc/en-us/sections/203774437-Known-Issues?mobile_site=false">Known Issues</a>
+                      </h3>
+                      
+                        <ul class="article-list">
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360030704872-Missing-uploads-and-other-site-issues-on-August-4th?mobile_site=false">Missing uploads and other site issues on August 4th</a>
+                            </li>
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360026660091-Activity-Syncing-Issues-and-Incorrect-Start-Times-beginning-on-April-6th-?mobile_site=false">Activity Syncing Issues and Incorrect Start Times beginning on April 6th </a>
+                            </li>
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360030429332-An-update-on-our-integration-with-Relive?mobile_site=false">An update on our integration with Relive</a>
+                            </li>
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360010471192-Activity-Search-Producing-Incomplete-Results?mobile_site=false">Activity Search Producing Incomplete Results</a>
+                            </li>
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360000027224-RESOLVED-Zwift-activities-not-grouped-or-appearing-in-Flybys?mobile_site=false">RESOLVED: Zwift activities not grouped or appearing in Flybys</a>
+                            </li>
+                          
+                        </ul>
+                        
+                      
+                    </section>
+                  
+                    <section class="column column--sm-6 section">
+                      <h3 class="h4">
+                        <a class="product-updates__title-link" href="/hc/en-us/sections/203774447-Release-Notes?mobile_site=false">Release Notes</a>
+                      </h3>
+                      
+                        <ul class="article-list">
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/360015282091-Android-Update-Required?mobile_site=false">Android Update Required</a>
+                            </li>
+                          
+                            <li class="article-list-item">
+                              <a class="article-list-item__link" href="/hc/en-us/articles/115000321350-Supported-iOS-versions-and-iPhones?mobile_site=false">Supported iOS versions and iPhones</a>
+                            </li>
+                          
+                        </ul>
+                        
+                      
+                    </section>
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+        <div class="tab is-hidden" id="posts_recent" data-tab>
+          <ul class="list-unstyled row clearfix recent-posts" data-posts-recent>
+          </ul>
+          <a class="btn btn--default hidden" href="#" data-more-posts="posts_recent">See more</a>
+          <div data-loader class="loader text-center"><span class="fa fa-circle-o-notch fa-spin"></span></div>
+        </div>
+        <div class="tab is-hidden" id="posts_featured" data-tab>
+          <ul class="list-unstyled row clearfix featured-posts" data-posts-featured>
+          </ul>
+          <a class="btn btn--default hidden" href="#" data-more-posts="posts_featured">See more</a>
+          <div data-loader class="loader text-center"><span class="fa fa-circle-o-notch fa-spin"></span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </main>
+
+  </div>
+</div><!-- /.layout -->
+<footer class="footer container">
+  <div class="container-inner">
+    <div class="row clearfix">
+      <div class="column column--sm-4">
+        <a href="https://www.strava.com" class="footer__link">Return to Strava.com</a>
+      </div>
+      <div class="column column--sm-4 footer__submit-ticket">
+        <a class="footer__link" href="/hc/en-us/requests/new">Submit a request</a>
+      </div>
+      <div class="column column--sm-4 footer__social">
+        Follow <a class="footer__link" href="https://twitter.com/stravasupport">@stravasupport</a> on Twitter
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/solvvy-ui/zd-deflection/v2/strava/prod/solvvy.plugin.js" async></script>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://strava.zendesk.com/auth/v2/host.js" data-brand-id="104814" data-return-to="https://support.strava.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="104814,true,true"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"strava","environment":"production","name":"Help Center"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:RqhX2REgKZjo3MU+tJ1Mw+AYcE8qHT5dMosdW/twDBX3xkNtNa/+nsVqtDYx4Xc7nG/NY5Qrg67YokicfL28jw==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://strava.zendesk.com","current_host_mapping":"support.strava.com","current_path":null,"authentication_domain":"https://strava.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.strava.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.strava.com/hc/en-us","arrange_content_url":"https://support.strava.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.strava.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://strava.zendesk.com/knowledge/user_segments?brand_id=104814","has_community_enabled":true,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://strava.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.strava.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.strava.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://strava.zendesk.com/knowledge/arrange?brand_id=104814","article_verification_url":"https://strava.zendesk.com/knowledge/verification?brand_id=104814","has_article_verification":false,"guide_language_settings_url":"https://support.strava.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://strava.zendesk.com/knowledge/import_articles?brand_id=104814","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.strava.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkD5GoBOhNoZWxwX2NlbnRlcl9pZGkE4tDrCzoNYnJhbmRfaWRpA26ZAToMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--ca490bcb89b1f2421540962f3a4dceb2c3605ecf");
+})();
+
+  </script>
+</body>
+</html>

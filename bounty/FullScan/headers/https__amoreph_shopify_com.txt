@@ -1,0 +1,19 @@
+404 Not Found
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=d0656f891ea85c6117496a7519631a6781565274314; expires=Fri, 07-Aug-20 14:25:14 GMT; path=/; domain=.amoreph.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+X-Shopify-Stage: production
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=f9311ed0-2763-4cdb-a1ac-1e6b5daf7d47
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=f9311ed0-2763-4cdb-a1ac-1e6b5daf7d47
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-central1,gcp-us-central1
+Cf-Ray: 50322891fbbdbfe8-MAN
+Date: Thu, 08 Aug 2019 14:25:14 GMT
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+X-Request-Id: f9311ed0-2763-4cdb-a1ac-1e6b5daf7d47
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Server: cloudflare

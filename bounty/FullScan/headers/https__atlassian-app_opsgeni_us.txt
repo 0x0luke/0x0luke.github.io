@@ -1,0 +1,20 @@
+200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Via: 1.1 42a90eee92b9e5976aea125e8f9d2f9a.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: rHKKZnTnhEKsFqlxGaDjNFJ9PFilwb4iFqcgWOeW8I2ecOcf8DL_VQ==
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 08:09:11 GMT
+Set-Cookie: AWSALB=dF+3xiWMqYFmubODU/A8z2aNvuhAzzoYIYBXtN07S/EXF00qhXkYuPN0Nxy7UfdMH/HEDnZF/2Cavi5gse7P9NHlV6UwyjoI2F6k10g9Owtcs8g1jlDcZLvbbQFr; Expires=Wed, 14 Aug 2019 08:09:11 GMT; Path=/
+X-Content-Type-Options: nosniff
+Content-Language: en-US
+X-Cache: Miss from cloudfront
+Server: nginx
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Response-From: opsgenie-tomcat
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=2592000 ; includeSubDomains
+Content-Security-Policy: frame-ancestors 'self'
+X-Amz-Cf-Pop: LHR50-C1
+Content-Type: text/html;charset=UTF-8

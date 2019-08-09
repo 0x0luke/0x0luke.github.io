@@ -1,0 +1,22 @@
+200 OK
+X-Hs-Content-Id: 4996145695
+X-Hs-Hub-Id: 138300
+Server: cloudflare
+Date: Wed, 07 Aug 2019 06:38:21 GMT
+Set-Cookie: __cfduid=d9efdd7b9b8c7e241c542432db8622fdc1565159901; expires=Thu, 06-Aug-20 06:38:21 GMT; path=/; domain=.www.humangood.org; HttpOnly __cfruid=d168d9ad8e22161f76e7b3afa71f6bd0705d2315-1565159901; path=/; domain=.www.humangood.org; HttpOnly
+Access-Control-Allow-Credentials: false
+Strict-Transport-Security: max-age=0
+X-Trace: 2BF354F3DE20E42CE06697C63EE50DE5044C2AEDE9000000000000000000
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+X-Hs-Combine-Css: Bot
+X-Powered-By: HubSpot
+Content-Security-Policy: upgrade-insecure-requests
+Edge-Cache-Tag: CT-4996145695,CG-138300,P-138300,L-4975271820,L-4975297807,L-4975310856,CW-4978335258,DB-658152,E-4975200541,E-5026667679,MENU-4975538994,PGS-ALL,SW-0,SD-0
+Retry-Count: 0
+Cf-Cache-Status: HIT
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Content-Type: text/html;charset=utf-8
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 50273f48ecead214-MAN
+Vary: Accept-Encoding

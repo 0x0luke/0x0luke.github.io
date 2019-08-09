@@ -1,0 +1,19 @@
+404 Not Found
+X-Request-Id: 66b3894e-eec8-47fc-8490-2fb97d9fea07
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:25:02 GMT
+Set-Cookie: __cfduid=d91bc14c179126aca5429c00c5a9748fe1565274302; expires=Fri, 07-Aug-20 14:25:02 GMT; path=/; domain=.aap.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Type: text/html; charset=utf-8
+X-Shopify-Stage: production
+Cf-Ray: 5032284829363651-MAN
+X-Frame-Options: DENY
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=66b3894e-eec8-47fc-8490-2fb97d9fea07
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=66b3894e-eec8-47fc-8490-2fb97d9fea07
+X-Dc: gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

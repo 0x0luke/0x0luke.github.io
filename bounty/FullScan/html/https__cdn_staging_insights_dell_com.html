@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Insights UI</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outline" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <style>
+        .ks-blockquote {
+            border-left: 10px solid #eee;
+            padding-left: 10px;
+            margin-left: 0;
+        }
+    </style>
+    <script>
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.Metrics.sc.tenantID = " ";
+        Dell.Metrics.sc.country = "us";         /***dynamic value based on site***/
+        Dell.Metrics.sc.language = "en";      /***dynamic value based on site***/
+        Dell.Metrics.sc.segment = "corp";      /***always set as corp***/
+        Dell.Metrics.sc.customerset = "";  /***dynamic value based on site or empty string***/
+        Dell.Metrics.sc.cms = "Insights";
+        Dell.Metrics.sc.pagename = "us|en|corp|Insights|insightsdashboard";  /***relevant unique page name or empty string***/
+        Dell.Metrics.sc.applicationname = "Insights"; /***relevant application name***/
+    </script>
+<link rel="stylesheet" href="styles.e75234d5aef9a67c366a.css"></head>
+    <body>
+        <my-app>
+            <div style="position:absolute; top:50%; left:50%; -ms-transform: translateX(-50%) translateY(-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);">
+                <div style="text-align: center">
+                    <span class="spinner">
+                    </span>
+                </div>
+                <div>
+                    <H1><b style="color: #0f83ba">Loading Insights Dashboard</b></H1>
+                </div>
+            </div>
+        </my-app>
+    <script type="text/javascript" src="runtime.e3a8e6645ed15188df35.js"></script><script type="text/javascript" src="scripts.73667dcc86e05aebb365.js"></script><script type="text/javascript" src="main.eb797102f782209a3bcc.js"></script></body>
+</html>

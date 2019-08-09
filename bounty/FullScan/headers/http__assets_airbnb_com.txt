@@ -1,0 +1,15 @@
+403 Forbidden
+Content-Type: application/xml
+Server: AmazonS3
+X-Edgeconnect-Midmile-Rtt: 60
+Vary: Origin, Access-Control-Request-Headers, Access-Control-Request-Method
+Access-Control-Allow-Methods: GET
+Content-Length: 243
+Date: Thu, 08 Aug 2019 06:56:16 GMT
+X-Amz-Bucket-Region: us-east-1
+X-Edgeconnect-Origin-Mex-Latency: 20
+Retry-Count: 0
+X-Amz-Request-Id: 9B30FBA8D0AF8557
+X-Amz-Id-2: oRJj/e6R+t5vFR0chgEGZzJZe8sYy8RYDnSTHQs/hgy0KIt6dSXAjskK7QX++UNOU+/rpJJCTLI=
+Access-Control-Allow-Origin: *
+Set-Cookie: bm_sz=0BAAB6ECDDD1EF3E366B96F55B5B3336~YAAQNGzUF6EZI2ZsAQAABo4DcAS0TkEYz/74Xxae5UD69zEzhtmYXMAplAxwFGgGnwB/eRX+0GJLpyM3S/Soi5kWD0uAoFENTQS9y3r3K4IPPM3MWONrV19rPx7y4h7QJb3N/T9TH9l8Uf8C9uyAtgPsGhTZlFCedYtZQ94XUaNzQiYxMfFHfg6WksZvZY/5; Domain=.airbnb.com; Path=/; Expires=Thu, 08 Aug 2019 10:56:16 GMT; Max-Age=14400; HttpOnly _abck=ECA76E8AC1E955EA0E328ED916B6D76B~-1~YAAQNGzUF6IZI2ZsAQAABo4DcAJS9IjAOX79i/lbqYLtTvczGN5q4cww5m8RMR1yiT9dk8QBIIatxT7drARZaI8iVS9MZJOqztYoxysUrEnYXJo6fiJ9vvH+d8Kfq9lsgtkfICWMbkHhe4arxdhV3kokSy6nKbxRnq1SOQCJL19cPVJp/OFzwbDSpXwuDj7zf7FiBmsH//im774KkGUGgbfJX5P8RP9ztvItqpcbRcAs2GSMCtxVHfSi2UXyojeTaLMkzWjQPMPCuikiFRLG+NTU9mLFY6J2VIZPTQ==~-1~-1~-1; Domain=.airbnb.com; Path=/; Expires=Fri, 07 Aug 2020 06:56:16 GMT; Max-Age=31536000

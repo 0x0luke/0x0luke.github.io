@@ -1,0 +1,22 @@
+403 Forbidden
+X-Client-Expire-Interval: 120
+Access-Control-Expose-Headers: X-Poll-Interval,X-Date,X-Live-Expire-Timeout,X-Max-Polling-Attempts,X-Polling-Backoff-Multiplier,X-Client-Expire-Interval
+X-Amz-Bucket-Region: us-west-2
+X-Amz-Id-2: UO6JHF6BlNUHUGmshGS0csUGKuofrp440p/7y6hvUlfXa2FxnjV2UTxULui/gL1TO+YSMitYRuA=
+Accept-Ranges: bytes bytes
+X-Cache-Hits: 0
+X-Date: Thu, 08 Aug 2019 07:42:11 GMT
+X-Served-By: cache-lhr6351-LHR
+X-Max-Polling-Attempts: 6
+Retry-Count: 0
+X-Amz-Request-Id: 0DC38756782647C6
+Server: AmazonS3
+Via: 1.1 varnish
+X-Cache: MISS
+Content-Type: application/json
+X-Poll-Interval: 15
+Date: Thu, 08 Aug 2019 07:42:11 GMT
+X-Timer: S1565250131.334299,VS0,VE563
+X-Polling-Backoff-Multiplier: 1.5
+Access-Control-Allow-Origin: *
+X-Live-Expire-Timeout: 45

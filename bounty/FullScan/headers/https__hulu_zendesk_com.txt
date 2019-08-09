@@ -1,0 +1,14 @@
+200 OK
+Server: 
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Content-Security-Policy-Report-Only: script-src 'report-sample' 'strict-dynamic' 'unsafe-inline' https: 'nonce-I122y9WFdLCdDrbb'; object-src 'none'; base-uri 'none'; report-uri https://csp-reporter.hulu.com/report
+Referrer-Policy: no-referrer
+Content-Security-Policy: frame-ancestors self https://*.hulu.com http://*.hulu.com
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy-Report-Only: script-src 'report-sample' 'strict-dynamic' 'unsafe-inline' https: 'nonce-I122y9WFdLCdDrbb'; object-src 'none'; base-uri 'none'; report-uri https://csp-reporter.hulu.com/report
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 15:44:26 GMT
+Connection: keep-alive

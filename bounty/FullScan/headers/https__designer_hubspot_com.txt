@@ -1,0 +1,16 @@
+404 Not Found
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+X-Trace: 2BB4BC6FBDFA4661A51203D9FA0CD1C2010715F6BD000000000000000000
+Cf-Ray: 5030bdbd4862d210-MAN
+Cf-Cache-Status: MISS
+Cache-Control: s-maxage=5,max-age=5
+Access-Control-Allow-Credentials: false
+Server: cloudflare
+Set-Cookie: __cfduid=dc2e4d1cea6c029184e76c02c7a0f259d1565259453; expires=Fri, 07-Aug-20 10:17:33 GMT; path=/; domain=.designer.hubspot.com; HttpOnly __cfruid=a56b903295dd560c557bac74d1504740aa396cec-1565259453; path=/; domain=.designer.hubspot.com; HttpOnly
+Content-Type: text/html;charset=utf-8
+Strict-Transport-Security: max-age=0
+X-Hs-Reason: No view mapper found to handle request
+X-Hubspot-Notfound: true
+Date: Thu, 08 Aug 2019 10:17:33 GMT
+Retry-Count: 0

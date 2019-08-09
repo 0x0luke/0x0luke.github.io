@@ -1,0 +1,13 @@
+200 OK
+Date: Thu, 08 Aug 2019 14:42:07 GMT
+Content-Security-Policy: script-src 'report-sample' 'nonce-zucFZfwBk2P1C8ugdcHogg' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /o/cspreport
+Server: ESF
+X-Xss-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: text/html; charset=utf-8
+Content-Language: en-US
+Retry-Count: 0
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+Pragma: no-cache

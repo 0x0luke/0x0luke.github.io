@@ -1,0 +1,28 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0
+X-Sorting-Hat-Podid: 21
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Wed, 07 Aug 2019 04:16:45 GMT
+X-Dc: gcp-us-central1,gcp-us-central1
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+X-Shopid: 20980167
+X-Robots-Tag: nofollow
+Strict-Transport-Security: max-age=7889238
+Content-Security-Policy: frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=760c2a34-2c40-41ec-9b2a-97bf3d525bbd
+X-Download-Options: noopen
+X-Shardid: 21
+X-Cache: hit, server
+Set-Cookie: secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 04:16:45 -0000; secure; HttpOnly _landing_page=%2Fpassword; Expires=Wed, 21-Aug-19 04:16:45 GMT; Path=/; HttpOnly _orig_referrer=https%3A%2F%2Fbeastmodeabusiness.shopify.com%2F; Expires=Wed, 21-Aug-19 04:16:45 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 04:16:45 -0000; HttpOnly
+Cf-Ray: 50266fd958d6d20c-MAN
+X-Sorting-Hat-Shopid: 20980167
+Content-Language: en
+Etag: cacheable:65f04e26a433d62c1eaa9bf93dca7bb9
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Server: cloudflare
+X-Alternate-Cache-Key: cacheable:8dea10c0237283bf8d43a2836661de61
+X-Request-Id: 760c2a34-2c40-41ec-9b2a-97bf3d525bbd
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=760c2a34-2c40-41ec-9b2a-97bf3d525bbd
+X-Content-Type-Options: nosniff

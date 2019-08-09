@@ -1,0 +1,19 @@
+404 Not Found
+Vary: Accept-Encoding
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=132eebbd-6b64-42f7-8794-7d3d4f51cd6a
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Content-Type: text/html; charset=utf-8
+X-Shopify-Stage: production
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Retry-Count: 0
+X-Request-Id: 132eebbd-6b64-42f7-8794-7d3d4f51cd6a
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 503228849bded21c-MAN
+X-Sorting-Hat-Podid: -1
+Set-Cookie: __cfduid=d1ac239876122a1320f989965f32f44f91565274312; expires=Fri, 07-Aug-20 14:25:12 GMT; path=/; domain=.techmi.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=132eebbd-6b64-42f7-8794-7d3d4f51cd6a
+Server: cloudflare
+Date: Thu, 08 Aug 2019 14:25:12 GMT

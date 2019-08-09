@@ -1,0 +1,10 @@
+401 Unauthorized
+Content-Length: 12
+Retry-Count: 0
+Server: CloudFront
+X-Cache: LambdaGeneratedResponse from cloudfront
+Via: 1.1 fff10bd55076b11530aa8b26ee2c0b65.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR4
+Date: Thu, 08 Aug 2019 14:50:31 GMT
+Www-Authenticate: Basic
+X-Amz-Cf-Id: BUBqRxHtKg7l2WadoatkyICgqfW_hpmhhfeo1Kzk7E5duxRsNONiAg==

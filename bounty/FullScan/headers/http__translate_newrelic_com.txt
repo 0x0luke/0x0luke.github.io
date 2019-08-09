@@ -1,0 +1,24 @@
+200 OK
+Etag: "64a028b9812638a4871efa4662ca9832"
+Date: Thu, 08 Aug 2019 07:37:30 GMT
+Cache-Control: max-age=0, private, must-revalidate
+Status: 200 OK
+X-Request-Id: c8d8aa3afd337abd5e5aeafe6fca6bd6
+Age: 0 0
+X-Rack-Cache: miss
+X-Ua-Compatible: IE=Edge,chrome=1
+Via: 1.1 varnish
+X-Served-By: cache-lhr6336-LHR
+X-Timer: S1565249851.563253,VS0,VE145
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/html; charset=utf-8
+Set-Cookie: _storefront_z8f3h2_2016_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTViN2ZhODMyNDZmZjA1YmVlM2IwYTRkMmZlMDFhMDdmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUJ1QVY5dHA0alNOZ3d1MDg5bHpuZUNUcWtsWEdnVllwOVVrY24vOUtwaWc9BjsARg%3D%3D--b95e6c84df091cd8e1fb671a0ca603a876c7bb90; path=/; expires=Thu, 05-Sep-2019 07:37:30 GMT; secure; HttpOnly
+X-Runtime: 0.020507
+Accept-Ranges: bytes bytes
+X-Cache: MISS
+Vary: Accept-Encoding
+Proxied-By: Service Gateway
+Content-Security-Policy: frame-ancestors *.newrelic.com
+Server: nginx
+X-Cache-Hits: 0
+Retry-Count: 0

@@ -1,0 +1,16 @@
+401 Unauthorized
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Content-Type: text/html; charset=iso-8859-1
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Gs-Server: qlbdr31
+Content-Length: 381
+X-Frame-Options: SAMEORIGIN
+Expires: 0
+Content-Security-Policy: default-src https: data: 'unsafe-inline' 'unsafe-eval'
+Date: Wed, 07 Aug 2019 05:42:28 GMT
+Retry-Count: 0
+Server: Apache
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+X-Permitted-Cross-Domain-Policies: none

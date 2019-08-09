@@ -1,0 +1,16 @@
+200 OK
+Cache-Control: max-age=0, private, must-revalidate
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 07:39:20 GMT
+Set-Cookie: _session_id=8d73050a6264f5969930847bedfa0f94; path=/; HttpOnly
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Runtime: 0.027250
+X-Request-Id: 06ba4939-ed28-45d8-815d-203e5bda7e4f
+Etag: W/"da88ec0e9d7a1e6feceb7071316f64d6-gzip"
+Vary: Accept-Encoding
+Server: Apache
+Status: 200 OK
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000

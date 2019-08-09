@@ -1,0 +1,20 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Pinterest-Generated-By: coreapp-webapp-prod-0a018cd5, coreapp-webapp-prod-0a018cd5 coreapp-webapp-prod-0a018cd5 coreapp-webapp-prod-0a018cd5
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-frOLDAJPhh' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+Date: Thu, 08 Aug 2019 11:40:18 GMT
+Set-Cookie: _auth=0; expires=Sun, 02-Aug-2020 11:40:18 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=vHFZfpnU9rvxe3KLiCOhUDiurpvWqQXv; expires=Thu, 06-Aug-2020 11:40:18 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSYwVUh6cUFFSDEzWkJHQWdKcHpzMnEySTBzVFpXbDBScHhhVU5LelhzOVpQUExraDkyNEFmZ3o0RmZkb1AwZlB1VEVNM2hOcUpLOFVLT3YzUmNla210RHMrOEZIY0Q2VHdEcytXbjdEK3pwVkRuQzE2T1JncDdYMXBvcDhlcUFicnhQc0VWSGpWU1doWFdIY3dYZnFHU2c9PSZIL0FZVDhLb3BsZngzcHpQS3NFZk1rSlIwRlU9; expires=Sun, 02-Aug-2020 11:40:18 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="32782258-977b-4c99-bb64-54c13be0d4f7"; Max-Age=86400; Path=/; HttpOnly
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+X-Ua-Compatible: IE=edge
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+X-Content-Type-Options: nosniff
+Pinterest-Version: d28c701
+X-Xss-Protection: 1; mode=block
+X-Cdn: akamai
+X-Upstream-Proxy: pythonvianode
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+Vary: User-Agent, Cookie, Accept-Encoding
+X-Upstream-Env: python node
+X-Envoy-Upstream-Service-Time: 199
+X-Pinterest-Rid: 1152088720948163

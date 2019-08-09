@@ -1,0 +1,19 @@
+200 OK
+Set-Cookie: __cfduid=d91c9854f2c1eb15c0259614952b2f9811565257684; expires=Fri, 07-Aug-20 09:48:04 GMT; path=/; domain=.www.ssanalysis.co.uk; HttpOnly __cfruid=8f621f681b65c439acc01663d3bc91ae1bc735aa-1565257684; path=/; domain=.www.ssanalysis.co.uk; HttpOnly
+Cf-Ray: 5030928e4bbcbff2-MAN
+X-Powered-By: HubSpot
+X-Trace: 2BC3E2DB943348598400960B462A64E41B64571F1D000000000000000000
+Server: cloudflare
+Date: Thu, 08 Aug 2019 09:48:04 GMT
+Cf-Cache-Status: HIT
+Cache-Control: s-maxage=7200,max-age=5
+Vary: Accept-Encoding
+Content-Type: text/html;charset=utf-8
+X-Hs-Content-Id: 3110776777
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-3110776777,P-419567,L-1407464589,L-1409703178,L-2070332992,E-1206076134,E-1371295413,MENU-2564928028,MENU-2568280622,PGS-ALL,SW-1,SD-17
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/post_listing_asset.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Combine-Css: Retry
+X-Hs-Hub-Id: 419567
+Retry-Count: 0

@@ -1,0 +1,15 @@
+200 OK
+Cache-Control: no-cache, must-revalidate, max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Litespeed-Cache-Control: no-cache
+Date: Thu, 08 Aug 2019 16:03:58 GMT
+Server: LiteSpeed
+Alt-Svc: quic=":443"; ma=2592000; v="35,39,43,44"
+X-Powered-By: PHP/7.1.30
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: strict-origin-when-cross-origin
+Retry-Count: 0
+Pragma: no-cache
+Vary: Accept-Encoding
+Set-Cookie: wordpress_test_cookie=WP+Cookie+check; path=/; secure
+Expires: Wed, 11 Jan 1984 05:00:00 GMT

@@ -1,0 +1,18 @@
+200 OK
+Server: tsa_f
+X-Frame-Options: SAMEORIGIN
+X-Runtime: 0.079158
+Etag: W/"f2702db5d3feaedca1988674dae5957d"
+X-Response-Time: 423
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Request-Id: bc917d8d-73ad-4efa-a4f5-9307843df9e2
+Date: Wed, 07 Aug 2019 04:42:56 GMT
+Status: 200 OK
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: cd5eddd4f343c0338656d60a43d88fe8
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; connect-src 'self'; font-src https://s-static.ak.fbcdn.net https://fbcdn-sphotos-a.akamaihd.net https://*.googleapis.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com https://localhost:* https://localhost.twitter.com:* https://twitter.com 'self'; frame-src https://s-static.ak.fbcdn.net https://fbcdn-sphotos-a.akamaihd.net https://*.googleapis.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com https://localhost:* https://localhost.twitter.com:* https://twitter.com 'self'; img-src https://s-static.ak.fbcdn.net https://fbcdn-sphotos-a.akamaihd.net https://*.googleapis.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com https://localhost:* https://localhost.twitter.com:* https://twitter.com https://twimg0-a.akamaihd.net http://birdhouse.prod.birdhouse-service.service.smf1.twitter.com 'self' data:; media-src 'self'; object-src 'self'; script-src https://s-static.ak.fbcdn.net https://fbcdn-sphotos-a.akamaihd.net https://*.googleapis.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com https://localhost:* https://localhost.twitter.com:* https://twitter.com 'self' about:; style-src 'unsafe-inline' https://s-static.ak.fbcdn.net https://fbcdn-sphotos-a.akamaihd.net https://*.googleapis.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com https://localhost:* https://localhost.twitter.com:* https://twitter.com 'self'; report-uri https://twitter.com/i/csp_report?enforce=true&app_name=ORZGC3TTNRQXI2LPNYWXGZLSOZUWGZI%3D;
+Set-Cookie: _mkra_ctxt=38cb631731f67d359ff99b77b3c40734--200; Max-Age=5; Expires=Wed, 7 Aug 2019 04:43:01 GMT; Path=/; HTTPOnly _ttc_session=d916cb55d5b2ddce9a2cade8bdbb1d7b; Path=/; HTTPOnly
+X-Xss-Protection: 1; mode=block

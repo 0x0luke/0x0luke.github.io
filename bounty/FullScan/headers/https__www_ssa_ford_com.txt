@@ -1,0 +1,15 @@
+200 OK
+Content-Security-Policy: default-src https: blob:; frame-ancestors 'self'  https://www.ford.com.au https://www.ford.co.th https://www.india.ford.com; connect-src https: wss:; font-src  https: data:; img-src https: data: blob:; media-src https: blob:; object-src 'self'; script-src  https:  'unsafe-inline' 'unsafe-eval' blob:; style-src 'unsafe-inline' https:; base-uri 'self';
+Cache-Control: max-age=3600
+Expires: Wed, 07 Aug 2019 06:40:23 GMT
+Vary: Accept-Encoding Host,Accept-Encoding
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+Date: Wed, 07 Aug 2019 05:40:23 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+Last-Modified: Tue, 30 Jul 2019 06:50:52 GMT

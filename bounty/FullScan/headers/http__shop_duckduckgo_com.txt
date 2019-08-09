@@ -1,0 +1,27 @@
+200 OK
+Content-Security-Policy: frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=73e5574a-1077-4490-843c-dbec1f6140ed
+Content-Language: en
+Strict-Transport-Security: max-age=7889238
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Content-Type: text/html; charset=utf-8
+X-Shopid: 2626023
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Sorting-Hat-Podid: 96
+X-Alternate-Cache-Key: cacheable:1d17958dc5af280f1337579257ab65e5
+X-Request-Id: 73e5574a-1077-4490-843c-dbec1f6140ed
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-central1,gcp-us-central1
+Date: Thu, 08 Aug 2019 07:13:11 GMT
+Set-Cookie: __cfduid=d6c5ac20ad1c47a155b3c8396b3e947821565248391; expires=Fri, 07-Aug-20 07:13:11 GMT; path=/; domain=.duckduckgo.merchmadeeasy.com; HttpOnly _shopify_y=e8828f29-e7fd-43ff-8b6e-98618c55a9c0; path=/; expires=Sat, 07 Aug 2021 18:51:35 -0000 _orig_referrer=http%3A%2F%2Fshop.duckduckgo.com%2F; Expires=Thu, 22-Aug-19 07:13:11 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 07:13:11 -0000; secure; HttpOnly _landing_page=%2F; Expires=Thu, 22-Aug-19 07:13:11 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 07:13:11 -0000; HttpOnly
+X-Cache: hit, server
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Retry-Count: 0
+X-Sorting-Hat-Shopid: 2626023
+Etag: cacheable:6d2c3f3b44c23d1ecce6a37dd744622a
+Cf-Ray: 502fafafabd9d21c-MAN
+X-Shardid: 96
+X-Shopify-Stage: production
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=73e5574a-1077-4490-843c-dbec1f6140ed
+X-Download-Options: noopen

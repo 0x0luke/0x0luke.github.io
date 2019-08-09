@@ -1,0 +1,19 @@
+200 OK
+X-Upstream-Proxy: pythonvianode
+Vary: User-Agent, Cookie, Accept-Encoding
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Upstream-Env: python node
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-lFvVfQkMeo' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+Date: Thu, 08 Aug 2019 07:42:03 GMT
+X-Cdn: akamai
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Retry-Count: 0
+Pinterest-Version: d28c701
+Set-Cookie: _auth=0; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:03 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=EEIAnyGkHAafjW2R0MHyGONRW1cjci4j; expires=Thu, 06-Aug-2020 07:42:03 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSYyZUJyRnc1Z3FVNmtvVXpYK3R0THZIT3I4WmJiMWR6VFNyMTZFTlhUOTJUdlBkK2ZwUDF1cVJMenZqbG9COXJEY1pKb1RLSTQyMUdVdVZpUC9XUjJQTHlWcUx1aUlPT1NacDlLTGxFT1pyaGtuL3JZbWpmTUVEdnI2MEJ6U3dMMTYwNHRNenlFUy9ZZ0JDa25kUkZJaXc9PSZJREhudlNoVXV4VXdhTGkya3FUMmx6OFB4TUE9; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:03 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="dcc4876d-cf0c-4300-a051-7e1192aea3fb"; Max-Age=86400; Path=/; HttpOnly
+Pinterest-Generated-By: coreapp-webapp-prod-0a018a73, coreapp-webapp-prod-0a018a73 coreapp-webapp-prod-0a018a73 coreapp-webapp-prod-0a018a73
+X-Envoy-Upstream-Service-Time: 130
+X-Pinterest-Rid: 4313577336657497

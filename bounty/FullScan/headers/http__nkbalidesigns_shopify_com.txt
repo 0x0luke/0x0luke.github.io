@@ -1,0 +1,18 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=6b0e96b9-1865-4e35-9fa5-ced4aa157e11
+Date: Wed, 07 Aug 2019 04:16:59 GMT
+X-Request-Id: 6b0e96b9-1865-4e35-9fa5-ced4aa157e11
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=6b0e96b9-1865-4e35-9fa5-ced4aa157e11
+X-Download-Options: noopen
+Retry-Count: 0
+Set-Cookie: __cfduid=dd7366228a4f1a221091782a742144a931565151419; expires=Thu, 06-Aug-20 04:16:59 GMT; path=/; domain=.nkbalidesigns.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-central1,gcp-us-central1
+Cf-Ray: 502670337f4dd214-MAN
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+Server: cloudflare

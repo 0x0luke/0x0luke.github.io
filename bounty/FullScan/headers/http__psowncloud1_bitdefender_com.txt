@@ -1,0 +1,17 @@
+200 OK
+Cache-Control: no-cache, must-revalidate
+Content-Security-Policy: default-src 'none';script-src 'self' 'unsafe-eval';style-src 'self' 'unsafe-inline';img-src 'self' data: blob:;font-src 'self';connect-src 'self';media-src 'self'
+Content-Length: 9843
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server: Apache
+X-Xss-Protection: 1; mode=block
+X-Permitted-Cross-Domain-Policies: none
+Date: Thu, 08 Aug 2019 07:04:05 GMT
+Content-Type: text/html; charset=UTF-8
+Pragma: no-cache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+X-Robots-Tag: none
+X-Download-Options: noopen
+Retry-Count: 0
+X-Powered-By: PHP/5.4.16

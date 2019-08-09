@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css" href="jswiz/dist/css/bootstrap.css?v=9"><script src="jswiz/dist/lib/jquery.min.js?v=9"></script><script src="jswiz/dist/lib/bootstrap.min.js?v=9"></script><script src="jswiz/dist/lib/bootbox.min.js?v=9"></script><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <title>TomTom International B.V.</title>
+    <style type="text/css">
+          @import "templates/progression.css?v=9";
+          @import "templates/buttonlinkbase.css?v=9";
+          @import "templates/buttonlinkicons.css?v=9";
+          @import "templates/buttonlink_standard.css?v=9";
+          @import "templates/stylesheet_MOVEit_Gray.css";
+          </style>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link ref="address bar icon" href="images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script>
+            var defaultBind = Function.prototype.bind;
+          </script><script language="JavaScript" type="text/javascript" src="templates/en/prototype17.js?v=9"></script><script>
+            Function.prototype.bind = defaultBind;
+          </script><script language="JavaScript" type="text/javascript">
+              //<!--
+        function toggleTableBody(event) {
+	          var target = (event.target) ? event.target : event.srcElement;
+            if (!target.closest) {
+              target.closest = 
+              function(s) {
+                  var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                  i,
+                  el = this;
+                  do {
+                      i = matches.length;
+                      while (i >= 0 && matches.item(i) !== el) {i = i - 1;};
+                  } while ((i < 0) && (el = el.parentElement)); 
+                  return el;
+              };
+            }
+	          var tableBody = target.closest("table").select("tbody").first();
+            if(tableBody) {
+              tableBody.toggle();
+            }
+
+            var iconElement = target.tagName == "I" ? target : target.select("i").first();
+            if(iconElement) {
+              iconElement.toggleClassName("fa-chevron-down");
+              iconElement.toggleClassName("fa-chevron-right");
+            }
+        }
+        
+        document.cookie = "JavascriptTest=1;path=/";
+        if (document.designMode) document.cookie = "DesignModeTest=1;path=/";
+        function openNewWin(f,w,x,y) {
+          return window.open(f,w,'toolbar=no,width='+x+',height='+y+',directories=no,status=no,location=no,scrollbars=yes,resizable=yes,menubar=no');
+        }
+        function PopUp(x) {
+          openNewWin(x, 'MOVEitPopUp', 600, 400);
+        }
+        function PopUpAndReturn(x) {
+          return openNewWin(x, 'MOVEitPopup', 600, 400);
+        }
+        function FirstFieldFocus() {
+          for (i=0;i<document.forms.length;i++) {
+            if ((document.forms[i].name != 'findfileform') && (document.forms[i].name != 'gotofolderform') && (document.forms[i].name != 'finduserform')) {
+              document.forms[i].elements[FindNextTextField(document.forms[i],-1)].focus();
+              break;
+            }
+          }
+        }
+        function FindNextTextField(FormRef,StartField) {
+          var ThisField = StartField + 1;
+          var MyResult = -1;
+          var cntr = 0;
+          while ((ThisField != StartField) && (MyResult == -1) && (cntr < 500)) {
+            if (ThisField == FormRef.elements.length) {
+              ThisField = 0;
+            }
+
+            if ((FormRef.elements[ThisField].type == 'text') || (FormRef.elements[ThisField].type == 'password')) {
+              MyResult = ThisField;
+            }
+            ThisField++;
+            cntr++;
+          }
+          if (MyResult == -1)
+            return StartField;
+          else
+            return MyResult;
+        }
+
+        Event.observe(window,'load',function() {
+          var seltab = "";
+          if (seltab.length > 0) {
+            var seltabele = $(seltab);
+            if (seltabele) seltabele.addClassName("selectedtab");
+          }
+        
+        });
+
+
+      
+              //--></script><script src="jswiz/dist/lib/q.js?v=9"></script><script src="jswiz/dist/lib/utf8.js?v=9"></script><script src="jswiz/dist/lib/util.js?v=9"></script><script src="jswiz/dist/lib/sprint.js?v=9"></script><script src="jswiz/dist/lib/lodash.js?v=9"></script><script src="jswiz/dist/lib/flow.js?v=9"></script><script src="jswiz/dist/lib/angular.min.js?v=9"></script><script src="jswiz/dist/lib/ui-bootstrap-tpls.js?v=9"></script><script src="jswiz/dist/lib/ng-flow.js?v=9"></script><script src="jswiz/dist/lib/angular-ui-tree.js?v=9"></script><script src="jswiz/dist/lib/forge-sha1.js?v=9"></script><script src="jswiz/dist/ips-ui-upload.js?v=9"></script><script src="jswiz/dist/app.js?v=9"></script><link rel="stylesheet" type="text/css" href="jswiz/dist/css/angular-ui-tree.min.css?v=9">
+    <link rel="stylesheet" type="text/css" href="jswiz/dist/css/style.css?v=9">
+  </head>
+  <body onLoad="if(top!=self)top.location.href=location.href;try{ pageLoaded=true; } catch(e) {};FirstFieldFocus();InitKeyboard()">
+    <table id="maintable" border="0" cellspacing="0" cellpadding="0" style="width:100%;"><tr id="logobar">
+  <td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr style="background-image:url(images/InstLogos/headerbg_1236.gif);background-repeat:repeat-x;">
+        <td align="left"><a href=""><img src="images/InstLogos/logoBig_1236.gif" alt="TomTom International B.V." border="0" style="vertical-align:bottom;"></a></td>
+        <td align="right"><img src="images/InstLogos/logoRight_1236.gif" alt="" style="vertical-align:bottom;"></td>
+      </tr>
+    </table>
+  </td>
+</tr><tr>
+        <td>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td valign="top">
+                <div id="overlay">
+                  <div class="overlayText">Drop files to upload</div>
+                </div>
+                <table width="100%" cellpadding="2" cellspacing="0" border="0" id="content" class="content signoncontent">
+                  <tr>
+                    <td colspan="2" style="padding:0;font-size:0"><a name="skipnav" style="font-size:0"><img src="images/null.gif" width="0" height="0" alt="" border="0"></a></td>
+                  </tr><script type="text/javascript" src="templates/en/keyboard.js?v=9"></script><script type="text/javascript"><!--
+			function ShowKeyboardButton(inputid,tabindex) {
+				if ($(inputid)) {
+          var ele = new Element("img", {
+            "src": "images/keyboard.png",
+            "class": "inputkeyboardicon",
+            "align": "absmiddle",
+            "title": "Displays a clickable keyboard that provides protection against most key loggers."
+            });
+          $(inputid).insert({after:ele});
+
+          var myinputid = inputid;
+          ele.observe("click",function() {
+            ShowKeyboard(myinputid);
+          });
+				}
+			}
+			function ShowKeyboard(inputid) {
+				var kb = null;
+				kb = new Keyboard(inputid);
+				kb.show();
+			}
+		//--></script><style type="text/css">
+		@import "templates/keyboard.css";
+	</style><script type="text/javascript"><!--
+        function InitKeyboard() {
+          ShowKeyboardButton('form_username',5);
+          ShowKeyboardButton('form_password',6);
+        }
+
+        function DisableSubmitButton() {
+          document.getElementById('submit_button').disabled = true;
+        }
+        //--></script><tr>
+  <form name="form_signon" action="/human.aspx?r=558347405" method="Post" AUTOCOMPLETE="off" onsubmit="DisableSubmitButton();"><input type="hidden" name="transaction" value="signon"><input type="hidden" name="fromsignon" value="1"><input type="hidden" name="prevuser" value=""><input type="hidden" name="arg01" value=""><input type="hidden" name="arg02" value=""><input type="hidden" name="arg03" value=""><input type="hidden" name="arg04" value=""><input type="hidden" name="arg05" value=""><input type="hidden" name="arg06" value=""><input type="hidden" name="arg07" value=""><input type="hidden" name="arg08" value=""><input type="hidden" name="arg09" value=""><input type="hidden" name="arg10" value=""><input type="hidden" name="arg11" value=""><input type="hidden" name="arg12"><input type="hidden" name="Opt01" value=""><input type="hidden" name="Opt02" value=""><input type="hidden" name="Opt03" value=""><input type="hidden" name="Opt04" value=""><input type="hidden" name="Opt05" value=""><input type="hidden" name="Opt06" value=""><input type="hidden" name="Opt07" value=""><input type="hidden" name="Opt08" value=""><input type="hidden" name="Opt09" value=""><input type="hidden" name="Opt10" value=""><input type="hidden" name="Opt11" value=""><input type="hidden" name="Opt12" value=""><input type="hidden" name="Opt13" value=""><input type="hidden" name="Opt14" value=""><input type="hidden" name="Opt15" value=""><input type="hidden" name="Opt16" value=""><input type="hidden" name="Opt17" value=""><input type="hidden" name="Opt18" value=""><input type="hidden" name="Opt19" value=""><input type="hidden" name="Opt20" value=""><input type="hidden" name="Opt21" value=""><input type="hidden" name="Opt22" value=""><input type="hidden" name="Opt23" value=""><input type="hidden" name="Opt24" value=""><input type="hidden" name="InstID" value="1236"><td colspan="2">
+      <div id="signoncontrolsarea">
+        <div id="signonauthcontainer" class="signoncontainer textsmall">
+          <div id="signonformcontainer">
+            <div id="signonusernamecontainer"><label for="form_username">Username</label><input type="text" class="userinput signon" maxlength="128" name="Username" id="form_username" tabindex="1" placeholder="Username" AUTOCOMPLETE="off" value=""></div>
+            <div id="signonpasswordcontainer"><label for="form_password">Password</label><input type="password" class="userinput signon" maxlength="32" name="Password" id="form_password" tabindex="2" placeholder="Password" AUTOCOMPLETE="off"></div>
+            <div id="signonpasschangerequestcontainer"><a href="/human.aspx?r=558347405&amp;arg12=passchangerequest"><span>Request a password change</span></a></div>
+            <div id="signonsecbannercontainer">
+              <div class="signonsecbanner">#####################################################<br/>
+####  TomTom Data Secure File Transfer Facility  ####<br/>
+#####################################################</div>
+              <div class="signonsecnotice">This Secure file transfer facility is available to authorised persons only. Use of this facility is governed by TomTom International BV's Acceptable Use Policy. TomTom International BV reserves the right to limit, remove or monitor access to this facility at any time.</div>
+            </div>
+            <div id="signonsubmitcontainer"><button id="submit_button" type="submit" class="button signonbutton" tabindex="3"><span>Sign On</span></button></div>
+          </div>
+        </div>
+      </div>
+      <div id="signonextrasarea">
+        <div id="signonhelpcontainer" class="signoncontainer signonlinkcontainer textsmall"><a href="/human.aspx?r=558347405&amp;arg12=infotech"><img src="images/icontechsupport1.png" alt="" class="icontxtimg"><span>Help</span></a></div>
+        <div id="signonlangscontainer" class="signoncontainer signonlinkcontainer textsmall"><a href="/human.aspx?r=558347405&amp;language=fr&amp;OrgID=1236"><span>Français</span></a><a href="/human.aspx?r=558347405&amp;language=de&amp;OrgID=1236"><span>Deutsch</span></a><a href="/human.aspx?r=558347405&amp;language=es&amp;OrgID=1236"><span>Español</span></a><a href="/human.aspx?r=558347405&amp;language=ja&amp;OrgID=1236"><span>日本語</span></a><a href="/human.aspx?r=558347405&amp;language=zh_cn&amp;OrgID=1236"><span>简体中文</span></a><a href="/human.aspx?r=558347405&amp;language=zh_tw&amp;OrgID=1236"><span>繁體中文</span></a></div>
+      </div>
+    </td>
+  </form>
+</tr><tr>
+                    <td style="height:120px;"></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table><input type="file" id="$jswiz_file_verifier" style="display:none" onclick="this.value='';" fileId="0" logId="0" doRefresh="false" onchange="verifyIntegrity( this);"><script language="JavaScript">
+      var j$ = jQuery.noConflict();
+      function verifyIntegrity(fileInput){
+        var doesAppInitialized = angular.element(document.getElementById('IPS_VERIFIER')).scope();
+        if (angular.isUndefined(doesAppInitialized)) {//if it is not bootstrapped
+          angular.bootstrap(document.getElementById('IPS_VERIFIER'), ['IPS_VERIFIER']);
+        }
+        angular.element(document.getElementById('IPS_VERIFIER')).scope().verify(fileInput.attributes.logId.value,
+        fileInput.attributes.fileId.value, fileInput.files[0], fileInput.attributes.doRefresh.value);
+      }
+
+      function doCheck(element, doRefresh){
+        document.getElementById('$jswiz_file_verifier').value='';
+        document.getElementById('$jswiz_file_verifier').attributes.logId.value = element.attributes.logId.value;
+        document.getElementById('$jswiz_file_verifier').attributes.fileId.value = element.attributes.fileId.value;
+        document.getElementById('$jswiz_file_verifier').attributes.doRefresh.value = doRefresh;
+        document.getElementById('$jswiz_file_verifier').click();
+      }
+
+
+      //angular.element(document.getElementById('IPS_VERIFIER')).scope().addDownload('test');
+      //angular.element(document.getElementById('IPS_VERIFIER')).scope().setCurrentDownloadId('123');
+    </script><div id="IPS_VERIFIER" ng-controller="IpsVerifierAppController"><ips-verifier app-ctrl="appCtrl" chunk-size="1048576" agent-brand="Tomtom International FTP Download" send-package-caption="Send package immediately after upload" download-widget-title="Downloads" process-dialog-title="Checking File" cancel-button-caption="Cancel" check-button-caption="Check" downloading-status-text="Downloading" verification-success-msg="Integrity checking succeeded." result-dialog-title="Verification Result" ok-button-caption="OK" hashing-file-msg-template="Hashing file %s  %i%%" checking-file-msg="Checking with server..."></ips-verifier></div>
+  </body>
+</html>

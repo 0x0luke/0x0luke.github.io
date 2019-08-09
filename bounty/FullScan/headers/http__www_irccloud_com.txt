@@ -1,0 +1,20 @@
+200 OK
+X-Ua-Compatible: chrome=1
+Access-Control-Allow-Origin: https://www.irccloud.com
+Vary: Accept-Encoding
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Etag: W/"4404-OYWBCx0fiObbRxD5LxbqUvKEyA0"
+Server: cloudflare
+Cf-Ray: 502fcd992cafbfc0-MAN
+Retry-Count: 0
+Pragma: no-cache
+Expires: 0
+Date: Thu, 08 Aug 2019 07:33:36 GMT
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+Origin-Trial: Ap4C3Xkq2Ua0L0IXOW9Dg5YlN8smsUhzAttgUFkJQZwUuLBLAMTBnR5vy3A+FhbNIKGxhOKVxMIambM0NRLd6wsAAABgeyJvcmlnaW4iOiJodHRwczovL2lyY2Nsb3VkLmNvbTo0NDMiLCJmZWF0dXJlIjoiQmFkZ2luZyIsImV4cGlyeSI6MTU2MjMyNjQ3MCwiaXNTdWJkb21haW4iOnRydWV9
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store

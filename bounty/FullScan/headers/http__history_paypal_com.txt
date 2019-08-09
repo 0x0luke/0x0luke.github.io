@@ -1,0 +1,19 @@
+200 OK
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-ofEXyjxRlSGGQ3N4hXV0hIz/Icd/uOL8HV3S2zTsKCuzFpdW' 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline' 'unsafe-eval'; img-src 'self' https://*.googleusercontent.com/ https://*.paypalobjects.com https://ak1s.abmr.net https://ak1s.mathtag.com https://akamai.mathtag.com https://ak1.abmr.net https://*.paypal.com; object-src 'none'; media-src 'self' https://*.paypal.com https://*.paypalobjects.com; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; connect-src 'self' https://*.paypal.com https://*.paypalobjects.com https://192.55.233.1 'unsafe-inline'; frame-src 'self' https://*.paypal.com https://smartlock.google.com https://*.paypalobjects.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content; report-uri https://www.paypal.com/csplog/api/log/csp
+Http_x_pp_az_locator: ccg23.lvs
+X-Xss-Protection: 1; mode=block
+Paypal-Debug-Id: f6f4ce9cda732 f6f4ce9cda732
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache max-age=0, no-cache, no-store, must-revalidate
+Dc: ccg11-origin-www-1.paypal.com
+Strict-Transport-Security: max-age=63072000
+Etag: W/"216dc-Kei87KLVUCb3XfW6hG64Yipz/lc"
+Set-Cookie: enforce_policy=gdpr_eu; Domain=.paypal.com; Path=/; Expires=Thu, 06 Aug 2020 04:04:26 GMT; Secure LANG=en_GB%3BGB; Domain=.paypal.com; Path=/; Expires=Wed, 07 Aug 2019 12:50:20 GMT; HttpOnly; Secure tsrce=unifiedloginnodeweb; Domain=.paypal.com; Path=/; Expires=Sat, 10 Aug 2019 04:04:24 GMT; HttpOnly; Secure HaC80bwXscjqZ7KM6VOxULOB534=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT x-pp-s=eyJ0IjoiMTU2NTE1MDY2NjAyMCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dunifiedloginnodeweb%26TIME%3D3377285725%26HTTP_X_PP_AZ_LOCATOR%3Dccg23.lvs; Expires=Wed, 07 Aug 2019 04:34:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT akavpau_ppsd=1565151266~id=61fe9d126a29d6b263df40e53ab7b6c3; Domain=www.paypal.com; Path=/; Secure; HttpOnly
+Date: Wed, 07 Aug 2019 04:04:26 GMT
+Vary: Accept-Encoding
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+X-Recruiting: If you are reading this, maybe you should be working at PayPal instead! Check out https://www.paypal.com/us/webapps/mpp/paypal-jobs
+Pragma: no-cache

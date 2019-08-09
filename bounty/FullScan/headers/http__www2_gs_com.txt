@@ -1,0 +1,25 @@
+200 OK
+Server: Apache
+Etag: "c780-58f8e252af855"
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT
+Device_os_version: 6.1
+Mobile_browser: Firefox
+Physical_screen_width: 280
+Vary: Accept-Encoding
+Is_mobile: false
+Device_os: Windows NT
+Viewport_initial_scale: 
+Ajax_preferred_geoloc_api: none
+Resolution_width: 1280
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+X-Akamai-Transformed: 9 45367 0 pmb=mRUM,3
+Date: Thu, 08 Aug 2019 07:20:35 GMT
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Windows NT;device_os_version=6.1;is_tablet=false;is_wireless_device=false2;mobile_browser=Firefox;mobile_browser_version=60;physical_screen_height=175;physical_screen_width=280;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false
+Is_tablet: false
+Viewport_width: width_equals_max_image_width
+Mobile_browser_version: 60
+Resolution_height: 800
+Content-Type: text/html
+Is_wireless_device: false
+Physical_screen_height: 175

@@ -1,0 +1,23 @@
+200 OK
+Cf-Cache-Status: HIT
+Content-Security-Policy: upgrade-insecure-requests
+Edge-Cache-Tag: CT-2632873595,P-448936,L-2541173886,L-2551212332,L-2565121112,L-8013142775,CW-1883004172,CW-2564394754,CW-2633709162,CW-5631917741,CW-5632080902,CW-5645036995,E-1883004317,E-1883004392,E-2546202638,E-2552988197,E-2555170909,E-2555195914,E-2778765130,E-4703493632,MENU-2572599244,MENU-2572599284,MENU-2572599309,PGS-ALL,SW-3,SD-36
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Hub-Id: 448936
+Content-Type: text/html;charset=utf-8
+Age: 5254
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Strict-Transport-Security: max-age=0
+Vary: Accept-Encoding
+X-Hs-Content-Id: 2632873595
+Server: cloudflare
+Cache-Control: s-maxage=7200,max-age=5
+Set-Cookie: __cfduid=dc84a9fb40b74f5be0553bb0771fd60c11565258574; expires=Fri, 07-Aug-20 10:02:54 GMT; path=/; domain=.www.teamsupport.com; HttpOnly __cfruid=d46dd9b0fc9987c35e86081587152b3ba4b952cc-1565258574; path=/; domain=.www.teamsupport.com; HttpOnly
+Access-Control-Allow-Credentials: false
+X-Hs-Combine-Css: Retry
+X-Trace: 2B3557A1D35A056FDFD55C0EA1B3D2045B119CF390000000000000000000
+Date: Thu, 08 Aug 2019 10:02:54 GMT
+Cf-Ray: 5030a8488ee1bfde-MAN
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Powered-By: HubSpot
+Retry-Count: 0

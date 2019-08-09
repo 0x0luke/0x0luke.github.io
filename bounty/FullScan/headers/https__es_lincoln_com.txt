@@ -1,0 +1,14 @@
+200 OK
+Etag: "8e8637-49aa7-58f77f57c5680"
+Server: Microsoft-IIS/8.5
+Vary: Accept-Encoding
+Set-Cookie: userInfo=country_code=US,region_code=CA,city=PALOALTO,county=SANTACLARA+SANMATEO,zip=94301-94304+94306+94309; path=/; domain=.lincoln.com
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 07 Aug 2019 07:42:34 GMT
+Environment: 6.1
+Last-Modified: Tue, 06 Aug 2019 19:37:46 GMT
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=edge,chrome=1
+Cache-Control: max-age=56104
+Expires: Wed, 07 Aug 2019 23:17:38 GMT

@@ -1,0 +1,11 @@
+400 Bad Request
+Cache-Control: public, max-age=0, must-revalidate
+X-Now-Cache: MISS
+X-Now-Id: lhr1:sfo1:9llcl-1565182912459-3da89db737ff
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 13:01:52 GMT
+Content-Length: 98
+Strict-Transport-Security: max-age=63072000
+Content-Type: application/json; charset=utf-8
+X-Now-Trace: lhr1
+Server: now

@@ -1,0 +1,13 @@
+200 OK
+Vary: Accept-Encoding
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Powered-By: Express
+Server: cloudflare
+Etag: W/"53b-16c6b6215f0"
+Cf-Ray: 50296ed99f84bfb6-MAN
+Date: Wed, 07 Aug 2019 13:00:21 GMT
+Retry-Count: 0
+Last-Modified: Wed, 07 Aug 2019 09:21:26 GMT
+Content-Type: text/html; charset=UTF-8
+Cache-Control: public, max-age=0

@@ -1,0 +1,13 @@
+403 Forbidden
+Cf-Ray: 5030d2928f09361b-MAN
+Retry-Count: 0
+X-Amzn-Requestid: b8fd501b-b9c7-11e9-853c-dd50a2e4cfa8
+X-Amzn-Errortype: ForbiddenException
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+X-Amz-Apigw-Id: eGQC4HJBIAMFeJw=
+Date: Thu, 08 Aug 2019 10:31:46 GMT
+Content-Type: application/json
+Content-Length: 23
+Set-Cookie: __cfduid=dd1c1b6e2dff9cf7dfcab5dfb2afae7c11565260306; expires=Fri, 07-Aug-20 10:31:46 GMT; path=/; domain=.hubspot.com; HttpOnly

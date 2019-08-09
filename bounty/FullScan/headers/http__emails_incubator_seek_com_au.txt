@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Type: application/json
+Date: Wed, 07 Aug 2019 04:16:31 GMT
+Via: 1.1 f5d0d7ef1ae798041bd732fc0f8e6dae.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: UHHHLWayuLtUqkGP9FUi_e0U1eN7MWfEQCOjhda7ag2ZIJ0-ZsRhHg==
+Content-Length: 23
+X-Amzn-Requestid: 2268aab2-b8ca-11e9-ae1a-9fa502cf4fc2
+X-Amzn-Errortype: ForbiddenException
+X-Amz-Apigw-Id: eCGI3FskywMF4Gg=
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: LHR3-C2
+Retry-Count: 0

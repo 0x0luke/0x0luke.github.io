@@ -1,0 +1,20 @@
+200 OK
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Expires: Wed Aug 07 2019 12:32:25 GMT+0000 (Coordinated Universal Time)
+Strict-Transport-Security: max-age=604800
+Server: cloudflare
+Content-Security-Policy: 
+Cache-Control: max-age=120
+Cache-Tag: deviceType:desktop,resourceType:dynamic,responseStatus:200
+Vanilla-Ops-Worker-Version: 1.5.1
+Vary: Accept-Encoding, Cookie
+X-App: 3589db56cb915ce9285a670f6289d567c4d6baf2/cl50065
+X-Garden-Version: Vanilla 3.1-2019.010
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+X-Lookup-Mode: normal
+Vanilla-Ops-Nosy-Parker64: TWF5YmUgeW91IHNob3VsZCBiZSByZWFkaW5nIHRoaXMgaW5zdGVhZDogaHR0cHM6Ly93d3cudmFuaWxsYWZvcnVtcy5jb20vZW4vY2FyZWVycw==
+Content-Type: text/html; charset=utf-8
+Cf-Ray: 502942ffedaed210-MAN
+P3p: CP="CAO PSA OUR"
+Date: Wed, 07 Aug 2019 12:30:25 GMT

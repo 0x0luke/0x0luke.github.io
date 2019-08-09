@@ -1,0 +1,15 @@
+200 OK
+Retry-Count: 0
+Expires: 0
+Server: Echoworx
+Date: Thu, 08 Aug 2019 14:25:38 GMT
+Set-Cookie: AWSALB=92akFvezqtP0QNv/XCnNDE9O3gO+5F1dZPWnBw1oPi5w9EHxiNY0pkAB4IQrljtGtp1PtuhnndwjusQx+v2bZvO2w0kW+EOzvSluKzV7H5RWYPIVwvTr/6nZCAhc; Expires=Thu, 15 Aug 2019 14:25:38 GMT; Path=/ enterprise=sophos_euw; Expires=Fri, 07-Aug-2020 14:25:38 GMT; Path=/; Secure
+Content-Security-Policy: frame-ancestors 'none'
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html;charset=UTF-8
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+Content-Language: en-US

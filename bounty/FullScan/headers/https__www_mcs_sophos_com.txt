@@ -1,0 +1,13 @@
+200 OK
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block
+Access-Control-Allow-Origin: https://www.mcs.sophos.com, https://my.mcs.sophos.com/
+Access-Control-Allow-Credentials: false
+X-Powered-By: PHP/7.3.7
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=172800, public
+Server: Apache
+Expires: Fri, 09 Aug 2019 11:53:35 GMT
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 11:53:35 GMT

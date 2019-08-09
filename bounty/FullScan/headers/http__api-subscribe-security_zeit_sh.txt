@@ -1,0 +1,13 @@
+405 Not Allowed
+X-Now-Id: lhr1:bru1:9llcl-1565253463477-93970b5e66cc
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Methods: POST,DELETE
+Date: Thu, 08 Aug 2019 08:37:43 GMT
+Content-Length: 32
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Cache-Control: public, max-age=0, must-revalidate
+X-Now-Cache: MISS
+X-Now-Trace: lhr1
+Server: now

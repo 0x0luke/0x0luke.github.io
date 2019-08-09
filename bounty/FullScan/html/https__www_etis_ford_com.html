@@ -1,0 +1,948 @@
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+	
+	
+
+    
+    
+
+	
+	
+
+	
+	
+
+	
+	
+	
+
+    
+
+	
+
+    
+
+    
+
+    
+	
+  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+<html><head>
+        <title>
+            FordEtis home page
+    </title>
+         <!-- Viewport Meta
+        ************************************************** -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Cross-Frame Scripting -->
+        <!-- The following code is used to prevent ETIS from being used in an iframe on other sites -->
+        <!-- Implementation found at: https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet -->
+        <style id="click_jack_prevention">
+            body {
+                display: none !important;
+            }
+        </style>
+        <script type="text/javascript">
+            if(self === top)
+            {
+                var click_jack_prevention = document.getElementById("click_jack_prevention");
+                click_jack_prevention.parentNode.removeChild(click_jack_prevention);
+            }
+            else
+            {
+                top.location = self.location;
+            }
+        </script>
+        <script type="text/javascript">
+            function addCSRFTokenToURL(url)
+            {
+                addCSRFTokenToURL(url, false);
+            }
+
+            function addCSRFTokenToURL(url, atStart)
+            {
+                if(url != undefined && url.trim().length > 0 && url.indexOf("org.apache.struts.taglib.html.TOKEN") == -1)
+                {
+                    var token = getCSRFToken();
+                    if(atStart)
+                    {
+                        url = "org.apache.struts.taglib.html.TOKEN=" + token + "&" + url;
+                    }
+                    else
+                    {
+                        url += (url.match(/\?/) ? "&" : "?") + "org.apache.struts.taglib.html.TOKEN=" + token;
+                    }
+                }
+                return url;
+            }
+
+            function getCSRFToken()
+            {
+                var token = "9a3100e3753f056391e1d1f970480bd1";
+                return token;
+            }
+        </script>
+
+        <!-- Stylesheets
+        ************************************************** -->
+        <link rel="stylesheet" href="/css/a96500821d2235c1e24c6b81bbe82b6386a0d4bf_common.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css" />
+        <link rel="stylesheet" href="/css/62c6796cb2b453a1309ff116d1a998a45c91b593_layout.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css" />
+        <link rel="stylesheet" href="/tabs/style/6eb6461d1da5e4f0413d284790f7171254584986_nav.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css" />
+        <!-- jQuery css. -->
+        <link rel="stylesheet" href="/css/b4d09da733cf9d0cbf1abeba92df10cad3895eec_jquery-ui-1.7.3.custom.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css"/>
+        <link rel="stylesheet" href="/css/d465dac24aa01716e327b52e448fd137a2505353_jquery-pagination.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css"/>
+         <link rel="stylesheet" href="/layout/fallback/css/919ae58bc6eb5c8e0f4e9a384f3f7f525615505a_style.min.css;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" type="text/css"/><script type="text/javascript" src="/js/a0f0ca73c296f7cb161104ce50dfdc0ba3b9e04f_jquery-1.3.2.js"></script>
+        <script type="text/javascript" src="/js/0af7abb3891229ace2b118a76f80f848845783c0_jquery-ui-1.7.3.custom.min.js"></script>
+        <script type="text/javascript" src="/js/9a5f293e3b659e06715f1bbef6fff1c6e8f46412_jquery-ui-1.7.3.custom.dialog.min.js"></script>
+        <script type="text/javascript" src="/js/i18n/b90622b48b4390503178e34c14edd24b9c20592a_jquery.ui.datepicker-i18n.js"></script>
+        <script type="text/javascript" src="/js/ddd643d964b66b230afef77c01fd324315b689eb_jquery-pagination.js"></script>
+        <script type="text/javascript" src="/layout/global/js/a236fe836b6667a6d7586a6ea06306836245e019_common.js;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h"></script>
+     <!-- Favicons, Apple Icons & Microsoft Icons
+        ************************************************** -->
+        <link rel="shortcut icon" href="/layout/global/img/favicons/favicon.ico;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="57x57" href="/layout/global/img/favicons/apple-touch-icon-57x57.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="114x114" href="/layout/global/img/favicons/apple-touch-icon-114x114.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="72x72" href="/layout/global/img/favicons/apple-touch-icon-72x72.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="144x144" href="/layout/global/img/favicons/apple-touch-icon-144x144.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="60x60" href="/layout/global/img/favicons/apple-touch-icon-60x60.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="120x120" href="/layout/global/img/favicons/apple-touch-icon-120x120.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="76x76" href="/layout/global/img/favicons/apple-touch-icon-76x76.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="apple-touch-icon" sizes="152x152" href="/layout/global/img/favicons/apple-touch-icon-152x152.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <link rel="icon" type="image/png" href="/layout/global/img/favicons/favicon-196x196.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" sizes="196x196">
+        <link rel="icon" type="image/png" href="/layout/global/img/favicons/favicon-160x160.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" sizes="160x160">
+        <link rel="icon" type="image/png" href="/layout/global/img/favicons/favicon-96x96.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" sizes="96x96">
+        <link rel="icon" type="image/png" href="/layout/global/img/favicons/favicon-32x32.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" sizes="32x32">
+        <link rel="icon" type="image/png" href="/layout/global/img/favicons/favicon-16x16.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" sizes="16x16">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-square70x70logo" content="/layout/global/img/favicons/mstile-70x70.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <meta name="msapplication-square150x150logo" content="/layout/global/img/favicons/mstile-150x150.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <meta name="msapplication-square310x310logo" content="/layout/global/img/favicons/mstile-310x310.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+        <meta name="msapplication-wide310x150logo" content="/layout/global/img/favicons/mstile-310x150.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h">
+
+        </head>
+    <body onload=""  >
+
+
+    <!-- Triggers Mobile Navigation (Hamburger Icon) -->
+    <!-- Triggers Mobile Navigation (Hamburger Icon) -->
+<div th:fragment="mobile-navigation-trigger" class="mobile-navigation-trigger">
+
+    <a href="#" class="mobile__toggle"></a>
+    <div class="mobile__trigger">
+        <a href="#">
+            <i class="fa fa-bars">
+              <p>Navigation</p>
+            </i>
+        </a>
+    </div>
+
+</div>
+<div class="site-wrapper site">
+
+    <noscript>
+        </noscript>
+
+        <!-- header modals -->
+        <div class="modal system-status" id="system-status-modal">
+          <div>
+
+            <div class="title__modal">
+              <div class="content__title">
+                <p>Ford System Status</p>
+              </div>
+              <div class="actions__title"><i class="fa fa-close"></i></div>
+            </div>
+
+            <div class="content__modal">
+               <p>FordEtis performance metrics for system availability measured as system uptime can be accessed from the link below. The metric which will be published weekly shows the previous weeks performance in detail and a 12 week view. Additional metrics will be available soon.                                              <br xmlns:stringUtil="xalan://com.ford.etis.homepagemessage.beans.XSLStringUtil"/><br xmlns:stringUtil="xalan://com.ford.etis.homepagemessage.beans.XSLStringUtil"/><a xmlns:stringUtil="xalan://com.ford.etis.homepagemessage.beans.XSLStringUtil" href="http://www.etis.dealerconnection.com/etis-static/FordEtisMetric.PDF">"FordEtis Metrics"</a></p></br><h2>Service Status</h2><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Authentication Service</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Digital Service Record</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>FordEtis IDS Activation Service</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Parts Kit & Prior Approval</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Search</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Service Information</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Technical Hotline</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Type Approval Number Service</strong></span></p></div></br><div class='serviceStatus'><p><span class='serviceStatusIcon serviceStatusIconGREEN'></span><span class='serviceStatusName'><strong>Vehicle Information</strong></span></p></div></br></div>
+
+            <div class="actions__modal">
+              <div class="content__actions">
+                <button class="button__alternative">Close</button>
+              </div>
+            </div>
+
+          </div>
+        <!-- End Modal -->
+        </div>
+
+        <div id="modal-view-information" class="modal view-information">
+            <div>
+                <div id="machineDiagnosticWaitSpinner" style="display: none;" class="popup-overlay">
+                    <img id="loadSpinnerImg" src="/img/ajax-loader.gif" width="60" height="60" class="imgNoBorder" style="position:relative;top:50%"/>
+                </div>
+                <div class="title__modal">
+                    <div class="content__title">
+                        <p>Dealer System Status</p>
+                    </div>
+                    <div class="actions__title"><i class="fa fa-close"></i></div>
+                </div>
+                <div class="content__modal">
+                    <div class="table-wrapper">
+                        <div class="table">
+                            <table>
+                                <thead>
+                                        <h4>Device Information</h4>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                            <th>
+                                                User Agent</th>
+                                            <td id="ua"/>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Operation System</th>
+                                            <td id="os"/>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                CPU</th>
+                                            <td id="cpu"/>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Browser</th>
+                                            <td id="browser"/>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Browser Engine</th>
+                                            <td id="engine"/>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Device</th>
+                                            <td id="device"/>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    </div>
+
+                <div class="actions__modal">
+                    <div class="content__actions">
+                        <button class="button__alternative">Close</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Modal -->
+        </div>
+
+        <div id="responsive-wrapper">
+        <!-- Mobile Navigation -->
+    <!-- Primary Navigation (Dark bar) -->
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    
+    
+    
+<!-- Mobile Primary Navigation (Side bar) -->
+<div th:fragment="mobile-navigation" class="navigation__mobile closed" id="mobile-navigation" role="navigation">
+  <ul class="mobile__buttons">
+    <li class="mobile__button active">
+        <a href="#">Home<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button active">
+            <a href="/home/welcome.do">Welcome</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/home/about.do">About FordEtis</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/home/conditions.do">Conditions</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/home/charging.do">Charging</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/options.do">Preferences</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/home/contactUs.do">Contact Us</a>
+        </li>
+        </ul></li>
+      <li class="mobile__button ">
+        <a href="#">Vehicle<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button ">
+            <a href="/vehicleRegSelector.do">Vehicle Lookup</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/selectedVehicleDetails.do">Vehicle Summary</a>
+        </li>
+        </ul></li>
+      <li class="mobile__button ">
+        <a href="#">Information<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button ">
+            <a href="/bemm/bemmSelectionForm.do">Vehicle Conversions</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/information/partsCatalog.do">Parts Catalog</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/information/accessoriesCatalog.do">Accessories Catalog</a>
+        </li>
+        </ul></li>
+      <li class="mobile__button ">
+        <a href="#">Services<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button ">
+            <a href="/services/specialToolForm.do">Special Tools</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/services/generalWorkshopEquipment.do">Workshop Equipment</a>
+        </li>
+        </ul></li>
+      <li class="mobile__button ">
+        <a href="#">FordService<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button ">
+            <a href="/fordservice/home.do">FordService Home</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/fordservice/serviceScheduleForm.do">Service Schedules</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/bemm/bemmSelectionForm.do">Vehicle Conversions</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/fordservice/rescuecards.do">Rescue Cards</a>
+        </li>
+        </ul></li>
+      <li class="mobile__button ">
+        <a href="#">Help<i class="fa fa-chevron-down"></i></a>
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<ul class="mobile__secondary-buttons">
+    <li class="mobile__secondary-button ">
+            <a href="/help/copyright.do">Copyright</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/help/privacy.do">Privacy</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/help/accessibility.do">Accessibility</a>
+        </li>
+        <li class="mobile__secondary-button ">
+            <a href="/help/irfaq.do">FAQ</a>
+        </li>
+        </ul></li>
+      </ul>
+</div>
+
+<!-- Header (Logo + Title, Account Information) -->
+    <!-- Header -->
+<div class="header ">
+  <div class="container">
+    <div class="grid">
+
+      <div class="grid__item one-half palm-one-whole palm-ac header__logo-wrapper">
+        <a href="#" class="header__logo">
+          <img src="/layout/responsive/img/logo/ford-logo@2x.png;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="logo" alt="FordEtis" title="Return to the Home page">
+          <h1>Ford<span>Etis</span></h1>
+        </a>
+      </div><!--
+
+    --><div class="grid__item one-half palm-one-whole palm-ac header__account-wrapper">
+        <div class="grid">
+        <div class="grid__item one-half header__account">
+            <a href="/home/loginForm.do" class="account__logout">
+               <p>Login or Register</p>
+               <i class="fa fa-sign-in login--tablet"></i>
+             </a>
+           </div>
+            <i class="fa fullscreen fa-compress"></i>
+            </div>
+       </div>
+
+     </div>
+  </div>
+</div>
+<script>
+    var etisGlobalParameters = {
+                locale:"en"+"_"+"US",
+                
+                    vin:"",
+                
+                userType:"INDEPENDENT",
+                userName:"",
+            };
+
+    function redirectToPts(ptsLinkSource) {
+        $.get("/ptsPage.do?ptsLinkSource=" + ptsLinkSource, function (url) {
+            console.log("saving PTS exit event");
+            window.location = url;
+        });
+    }
+</script><div class="global-wrapper active">
+
+      <!-- Desktop Navigation -->
+      <!-- Primary Navigation (Dark bar) -->
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+    
+    
+    
+<!-- Primary Navigation -->
+<div th:fragment="primary-navigation" class="navigation__primary">
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid__item one-whole">
+                <ul class="navigation__buttons">
+                    <li class="navigation__button">
+                            <a href="/home.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="button__first active">Home</a><img src="/layout/responsive/img/active-point/active-nav-point.svg" alt="Active Page" class="button--active-point" onerror="this.onerror=null; this.src='/layout/responsive/img/active-point/active-nav-point.png'">
+                            </li>
+                    <li class="navigation__button">
+                            <a href="/vehicleRegSelector.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Vehicle</a></li>
+                    <li class="navigation__button">
+                            <a href="/information.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Information</a></li>
+                    <li class="navigation__button">
+                            <a href="/services.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Services</a></li>
+                    <li class="navigation__button">
+                            <a href="/fordservice/home.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">FordService</a></li>
+                    <li class="navigation__button">
+                            <a href="/help.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="button__last">Help</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Secondary Navigation (Branded blue bar) -->
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+<!-- Secondary Navigation (Branded blue bar) -->
+<div th:fragment="secondary-navigation" class="navigation__secondary">
+    <div class="container">
+        <div class="grid">
+            <div class="grid__item one-whole">
+                <ul class="navigation__buttons">
+                    <li class="navigation__button active">
+                                    <a href="/home/welcome.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="button__first">Welcome</a></li><!--
+                        --><li class="navigation__button">
+                            <a href="/home/about.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">About FordEtis</a></li><!--
+                        --><li class="navigation__button">
+                            <a href="/home/conditions.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Conditions</a></li><!--
+                        --><li class="navigation__button">
+                            <a href="/home/charging.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Charging</a></li><!--
+                        --><li class="navigation__button">
+                            <a href="/options.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Preferences</a></li><!--
+                        --><li class="navigation__button">
+                            <a href="/home/contactUs.do;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h" class="">Contact Us</a></li><!--
+                        --></ul>
+            </div>
+        </div>
+    </div>
+</div><!-- Hero Unit (Displays background image and page title) -->
+      <div th:fragment="hero-unit" class="hero hero__home">
+    <div class="container">
+        <div class="grid">
+            <div class="grid__item one-whole">
+                <div class="hero__contents">
+                    <h2>
+            FordEtis home page
+    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Information Bar (Displays last selected vehicle and 'need help?' link depending on page) -->
+      <div th:fragment="information-bar" class="information-bar">
+  <div class="container">
+    <div class="grid">
+      <div class="grid__item one-whole palm-one-whole information-bar__left">
+        <a href="/selectedVehicleDetails.do"><p>
+          <span class="last-selected">
+            <i class="fa fa-bookmark"></i><strong>Last selected vehicle -</strong>
+          </span>
+          No detailed vehicle information available.</p></a>
+      </div></div>
+  </div>
+</div>
+</div>
+
+    </div>
+    <div class="content-wrapper">
+        
+
+	<table class="mainTable" border="0" width="95%" cellspacing="0" cellpadding="3">
+		<tr>
+			<td colspan="2"><h2>Welcome to FordEtis</h2></td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top;" width="50%">
+				
+				<div class="whiteBoxGreyBorder" style="padding:5px;">
+				
+	
+	<div class="sect">
+<p class="para">Welcome to Ford<b>Etis</b> &ndash; the Online Technical Information and Services website from Ford.</p>
+<p class="para">Ford<b>Etis</b> provides fast, online access to everything you need to know about servicing and repairing Ford vehicles.</p>
+<p class="para">If you are new to Ford<b>Etis</b>, please choose <a class="static" href="/home/about.do">About Ford<b>Etis</b></a> to find more detailed information.</p>
+</div>
+
+				</div>
+			</td>
+			<td rowspan="4" style="vertical-align:top;">
+				
+				<div class="whiteBoxGreyBorder" style="padding:5px;">
+					<p style="font-weight:bold;">
+					<span><img style="float:left;margin-right:5px;" src="/img/Euro5-141x92.jpg" width="141" height="92" border="0" alt="EU (European Union)" title="EU (European Union)" /></span>
+						FordEtis Diagnosis and Repair system has been updated to provide the enhanced functionality legislated for by Euro 5/6 (Regulation (EC) 715/2007).
+					</p>
+					<p>The Independent Operator Repair System provides the Ford Motor Company response to this legislation in the form of on-line software update and repair.</p>
+					<p class="prompt">Diagnostic Tool Vendors</p>
+					<p>If you are a Diagnostic Tool Vendor you can purchase information, <a href="mailto:IORS@ford.com?subject=TOOL VENDOR - Please provide details of your request below">click here to find out more</a>.</p>
+				</div>
+			</td>
+		</tr>
+			
+		
+				
+		
+		
+		<tr>
+			<td colspan="2">	
+				<br />
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>In order to use Ford<b>Etis</b> you will require the following plug-ins:<br /><br /></td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="3">
+								
+								<tr>
+									<td style="vertical-align:middle">
+										<a href="/externalURL.do?url=http://www.macromedia.com/go/getflashplayer"><img class="imgNoBorder" src="/img/get_flash_player.png" width="88" height="31" alt='Get Macromedia Flash Player' title='Get Macromedia Flash Player' /></a>
+									</td>
+									<td style="vertical-align:middle">
+										&nbsp;<a href="/externalURL.do?url=http://www.macromedia.com/go/getflashplayer" style="font-size: 0.8em;" title='Get Macromedia Flash Player'>Get Macromedia Flash Player</a>&nbsp;&nbsp;
+									</td>
+								</tr>
+								
+								<tr>
+									<td style="vertical-align:middle">
+										<a href="/home/plugin.do"><img class="imgNoBorder" src="/img/getacro.png" width="88" height="31" alt='Get Adobe Reader' title='Get Adobe Reader' /></a>
+									</td>
+									<td style="vertical-align:middle">
+										&nbsp;<a href="/home/plugin.do" style="font-size: 0.8em;" title='Get Adobe Reader'>Get Adobe Reader</a>&nbsp;&nbsp;
+									</td>
+								</tr>
+								
+								<tr>
+									<td style="vertical-align:middle">
+										<a href="/home/plugin.do"><img class="imgNoBorder" src="/img/svgdownload.png" width="88" height="31" alt='Download SVG Viewer' title='Download SVG Viewer' /></a>
+									</td>
+									<td style="vertical-align:middle">
+										&nbsp;<a href="/home/plugin.do" style="font-size: 0.8em;">Download SVG Viewer</a>
+									</td>
+								</tr>
+								
+								<tr>
+									<td style="vertical-align:middle">
+										<a href="/externalURL.do?url=https://java.com/download/"><img class="imgNoBorder" src="/img/javadownload.gif" width="88" height="31" alt="Download Java" title="Download Java" /></a>
+									</td>
+									<td style="vertical-align:middle">
+										&nbsp;<a href="/externalURL.do?url=https://java.com/download/" style="font-size: 0.8em;" title="Download Java">Download Java</a>&nbsp;&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+	</table>
+
+	<script type="text/javascript" src="/js/a47a64614cd55be2d5100393d2db09a7ced85327_modalLayer.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		(function() {
+		
+			var nAgt = navigator.userAgent;
+		
+			var uaXPstring = /(Windows NT 5.1|Windows NT 5.2|Windows XP)/;
+		
+			if (uaXPstring.test(nAgt)) {
+				var dialog = new modal.alertDialog( "unsupported.os.xp.warning", "Warning!", 
+								"Close",
+									"Your ETIS IDS unit uses Windows XP which is not supported by Microsoft and Ford. Contact your local IT support to immediately upgrade. ");
+				dialog.show();
+			}
+		})();
+	</script>
+</div>
+
+    
+
+ 
+
+
+
+
+
+
+
+
+	
+		<div class="footer">
+	    
+	    	<a href="/help/copyright.do" title='Copyright, Ford Motor Company 1994 - 2019'>&copy;Copyright, Ford Motor Company 1994 - 2019</a>
+	    
+	    	|&nbsp;<a href="/help/privacy.do" title='Privacy Policy'>Privacy Policy</a>
+            |&nbsp;<a href="/home/conditions.do" title='Terms and Conditions'>Terms and Conditions</a>
+		</div>
+		<div class="actionTime" id="actionTime" pageid="iowelcome">
+	    
+	   &nbsp;&nbsp;Action took 0 ms. on eccvas1900h-eccvas1900h
+		</div>
+	</div>
+
+
+        <script>
+            $globalTranslations = {
+               "more" : "More",
+               "less" : "Less",
+               "results" : "Results"};
+            $translations = {};
+        </script>
+
+        <script type="text/javascript">
+        <!--  to hide script contents from old browsers
+
+        function myNewWindow(pageContextId)
+        {
+            openHelpWindow('default', pageContextId);
+        }
+
+        function openHelpWindow(contextualHelpId, pageContextId)
+        {
+            some_new_window=open("/contextualHelp.do?contextualHelpId="+contextualHelpId+"&pageContextId=" + pageContextId,"help","top=150,left=450,menubar=no,toolbar=no,scrollbar=yes,scrollbars=yes,resizable=yes,width=450,height=500,status=yes");
+        }
+        // end hiding contents from old browsers  -->
+        </script>
+
+        <script type"text/javascript">
+          $('<div></div>', {class: 'loading'}).prependTo('body');
+        </script>
+        <script type="text/javascript" src="/layout/fallback/js/5a5faf07752c7b86a39bcec3f5e9deed9344fa8d_scripts.js"></script>
+        <script type="text/javascript" src="/js/user/client/9db45e9094af5c5f24c455957fadb0f43d7d9e84_client_info.js;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h"></script>
+
+    <script>
+        function runTest()
+        {
+            var xhr = new XMLHttpRequest();
+            //set the request type to Get and the destination url to '/machineDiagnostic.do'
+            xhr.open('GET', '/machineDiagnostic.do');
+            //set the reponse type to blob since that's what we're expecting back
+            xhr.responseType = 'blob';
+            xhr.send();
+            xhr.onload = function(e) {
+                if (this.status == 200) {
+                    // Create a new Blob object using the response data of the onload object
+                    var blob = new Blob([this.response], {type: 'application/x-java-jnlp-file'});
+                    var filename = this.getResponseHeader("Content-Disposition").split("=")[1];
+
+                    if (navigator.appVersion.toString().indexOf('.NET') > 0)
+                    {
+                        //IE file download
+                        window.navigator.msSaveBlob(blob, filename);
+                    }
+                    else
+                    {
+                        //Create a DOMString representing the blob and point the link element towards it for download on other browsers.
+                        let a = document.createElement("a");
+                        a.style = "display: none";
+                        document.body.appendChild(a);
+                        let url = window.URL.createObjectURL(blob);
+                        a.href = url;
+                        a.download = filename;
+                        //programatically click the link to trigger the download
+                        a.click();
+                        //release the reference to the file by revoking the Object URL
+                        window.URL.revokeObjectURL(url);
+                    }
+                     $("#machineDiagnosticWaitSpinner").show();
+                    var resultsTimer = setInterval(
+                        function()
+                        {
+                            $.ajax({
+                                type: 'GET',
+                                url: '/machineDiagnosticData.do',
+                                cache: false,
+                                statusCode: {
+                                    304: function() {
+                                      //the client is performing the analysis
+                                      $("#machineDiagnosticWaitSpinner").show();
+                                    },
+
+                                    200: function() {
+                                        $("#machineDiagnosticWaitSpinner").hide();
+                                       if (window.location.href.indexOf('?showDiagnosticData=true') !== -1)
+                                       {
+                                           window.location.href = window.location.href;
+                                       }
+                                       else
+                                       {
+                                           window.location.href = window.location.href + '?showDiagnosticData=true';
+                                       }
+                                    }
+                                }
+                            });
+                        }
+                    ,5000);
+                }else{
+                    //deal with your error state here
+                }
+            };
+        }
+
+        if ('' === 'true')
+        {
+            $('#modal-view-information').fadeIn(400);
+        }
+    </script>
+
+    <!-- Pre-Cen IO modal -->
+    <div class="modal system-status" id="old-io-modal">
+      <div>
+
+        <!-- Modal Title -->
+        <div class="title__modal">
+          <div class="content__title">&nbsp;</div>
+          <div class="actions__title"><i class="fa fa-close" id='fa-close-button'></i></div>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="content__modal" id="old-io-modal-content"></div>
+
+        <div class="actions__modal">
+          <div class="content__actions">
+            <button class="button__alternative" id="button-alternative">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <script language="JavaScript" type="text/javascript" src="/js/user/225333c61572a771d582f20ac8ee7e5730f0ff57_preCenIOModal.js"></script>
+    <script>
+    $(document).ready(function(){
+        statusBarIsShown();
+    });
+
+    function statusBarIsShown() {
+        $statusBar = $('div.status-bar');
+
+        if ( $statusBar.length ) {
+            $statusBar.show();
+            $('div.header').addClass('status-bar--shown');
+            $('.navigation--open-mobile-wrapper').addClass('status-bar--shown');
+            $('.navigation__mobile').addClass('status-bar--shown');
+        }
+    }
+    </script>
+
+
+    <script type="text/javascript" src="/js/logging/0752e83554568b9ba2e9b9fe25be9dd74cc0b868_log4javascript_stub.js;jsessionid=OB8ornEe7KMYK2v6yOagKWe_of4QPTF5tmzt_hgQ.eccvas1900h"></script>
+    <script type="text/javascript">
+        var log = log4javascript.getLogger();
+    </script>
+    </script>
+
+    <script type="text/javascript">
+        $(document).ajaxSend(function(event, jqxhr, settings)
+        {
+            settings.url = addCSRFTokenToURL(settings.url);
+            if ((settings.contentType === undefined ||
+                    ((typeof settings.contentType === 'string' || settings.contentType instanceof String) && settings.contentType.indexOf("application/json") < 0)) &&
+                 typeof settings.data === 'string' || settings.data instanceof String)
+            {
+                settings.data = addCSRFTokenToURL(settings.data, true);
+            }
+        });
+    </script>
+    </body>
+    </html>

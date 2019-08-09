@@ -1,0 +1,15 @@
+200 OK
+X-Xss-Protection: 1
+Strict-Transport-Security: max-age=31536000
+Content-Length: 852
+Server: nginx
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Set-Cookie: portalDefaultDomain=sophos-prod-test.apigee.io; Path=/
+Date: Thu, 08 Aug 2019 14:25:30 GMT
+Content-Type: text/html
+Etag: "5d40dd56-354"
+X-Frame-Options: deny
+Last-Modified: Wed, 31 Jul 2019 00:14:14 GMT
+Vary: Accept-Encoding

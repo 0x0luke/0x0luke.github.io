@@ -1,0 +1,26 @@
+200 OK
+Content-Language: en
+Content-Security-Policy: default-src 'self' https://api.segment.io https//*.doubleclick.net https://*.fls.doubleclick.net https://*.g.doubleclick.net https://*.facebook.com https://*.google.com https://*.google-analytics.com https://*.inbenta.io https://*.pinimg.com https://*.pinterest.com https://*.youtube.com https://api.company-target.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.ads-twitter.com https://googleads.g.doubleclick.net https://connect.facebook.net https://*.google.com https://*.googleadservices.com https://www.googletagmanager.com https://*.google-analytics.com https://www.gstatic.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://*.twitter.com https://cdn.segment.com https://sdk.inbenta.io https://tag.demandbase.com https://scripts.demandbase.com https://api.demandbase.com https://autocomplete.demandbase.com https://id.rlcdn.com https://d.company-target.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://*.pinimg.com https://*.pinterest.com; img-src 'self' data: https://secure.adnxs.com https://static.ads-twitter.com https://www.bizographics.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://connect.facebook.net https://www.facebook.com https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://www.googletagmanager.com https://www.gstatic.com https://*.linkedin.com https://*.ads.linkedin.com https://*.dc.ads.linkedin.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://t.co https://*.twitter.com https://*.youtube.com
+X-Cache-Hits: 55, 1
+X-Timer: S1565250128.570600,VS0,VE8
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 07:42:07 GMT
+X-Frame-Options: DENY
+Etag: "1565223440"
+X-Served-By: cache-lhr6348-LHR
+Vary: Cookie,Accept-Encoding
+Link: <https://policy.pinterest.com/en>; rel="canonical", <https://policy.pinterest.com/en>; rel="shortlink" <https://policy.pinterest.com/en/policies-and-guidelines>; rel="revision"
+X-Cache: HIT, HIT
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Fastly-Soc-X-Request-Id: b477949b27c4049dc5e223d5cb5a017c0a4e08f20413732374a341852bb9809d
+Last-Modified: Thu, 08 Aug 2019 00:17:20 GMT
+X-Content-Type-Options: nosniff
+X-Request-Id: 52e5bf9ba65bf7ed8c085e1475f12a850cc98ba9f27c6c86674f64be6681a2b9
+Accept-Ranges: bytes
+Age: 26686
+X-Ua-Compatible: IE=edge
+Set-Cookie: _ss_country_code=GB; Secure; Path=/

@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>Zendesk help</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:MAjtXHqEcXTJ3hPZDZ2r0LQRqFUrvbspd2IH/t+eOkbd4sCg+AjOd1NocfyG9hAOUfCWh9G+VrJxFq3BVumgDQ==" />
+  <link rel="canonical" href="https://support.zendesk.com/hc/en-us" />
+<link rel="alternate" hreflang="de" href="https://support.zendesk.com/hc/de" />
+<link rel="alternate" hreflang="en" href="https://support.zendesk.com/hc/en-us" />
+<link rel="alternate" hreflang="es" href="https://support.zendesk.com/hc/es" />
+<link rel="alternate" hreflang="fr" href="https://support.zendesk.com/hc/fr" />
+<link rel="alternate" hreflang="ja" href="https://support.zendesk.com/hc/ja" />
+<link rel="alternate" hreflang="ko" href="https://support.zendesk.com/hc/ko" />
+<link rel="alternate" hreflang="pt" href="https://support.zendesk.com/hc/pt-br" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p23.zdassets.com/hc/theming_assets/1/1157956/style.css?digest=360335798834" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/1/4b4b2fe0860351e0e1e6bcf9060550f5c7f163ea.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <!-- Do Not Allow Robots to Index Staging Resources -->
+
+
+
+<meta name="google-site-verification" content="lwxitnGGtHn5C7DJNmUH7GB635HPfnp8PGJOOwvzjUA" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZZH27K');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Product Detection -->
+<script>
+  // GLOBAL CONSTANTS
+  const DEFAULT_PRODUCT = 'general'
+  const PRODUCT_STORAGE_KEY = 'LAST_PRODUCT'
+  const IS_SEARCH_PAGE = window.location.pathname.split('/')[3] === 'search'
+  const PRODUCT_FAVICONS = {
+    support: "//theme.zdassets.com/theme_assets/1/8a980f388345d9396ab2295b9bae42864bed8876.ico",
+    chat: "//theme.zdassets.com/theme_assets/1/eee4f9ab685b05c70b3e54b723515a4d4e97d487.ico",
+    explore: "//theme.zdassets.com/theme_assets/1/c43e45ba0c5b9ff24915fe19dcacbb6ea94ea694.ico",
+    connect: "//theme.zdassets.com/theme_assets/1/21f87c9fba022c07725ccdadb18fe22b91d084c1.ico",
+    guide: "//theme.zdassets.com/theme_assets/1/f05d78abadde55dd6aa934d72873d998459be143.ico",
+    sell: "//theme.zdassets.com/theme_assets/1/f927e121d45ead6b51113ebede9a83cdb835b9c3.ico",
+    talk: "//theme.zdassets.com/theme_assets/1/81ab467df0f062f2d32d2948c7d954896bc5c2e3.ico"
+  }
+  const PRODUCT_MAP = (function(){
+    let productMap = { products: [] }
+    try {
+      const productMapDC = '{"products": [{"key": "support","categoryId": "360001735874","topicIds": ["200132056","200132086","360000033227","200320247","115000506348","360000029867","360000031848","360000000748","360000028648","115000227928","360000025667","360000033547","360000017128","360000015588","360000019068","115000552387","360000030928","200255477"]},{"key": "chat","categoryId": "360001735934","topicIds": ["360001201053","360001141174","360001140934","360000015688"]},{"key": "connect","categoryId": "360001751873","topicIds": ["360000032947","360000031208","360000031228"]},{"key": "explore","categoryId": "360001735914","topicIds": ["360001200893","360001200913"]},{"key": "talk","categoryId": "360001751913","topicIds": ["360000030428","360000033207","360000029887","115000534807","115000517888"]},{"key": "guide","categoryId": "360001751893","topicIds": ["360000032687","360000031188","360000030448","360000029847","360000033647","360000031888","360000029308","360000033507","360000010907","360000031708","360000031748","200976108"]},{"key": "crossProduct","categoryId": "360001735894","topicIds": []},{"key": "updates","categoryId": "200201796","topicIds": []}]}'
+      const parsedMap = JSON.parse(productMapDC)
+      productMap = parsedMap
+    } catch(err) {
+      dynamicContentJsonError('Help Center Product ID Mapping')
+    }
+    return productMap
+  })()
+
+  // GLOBAL METHODS
+  const dynamicContentJsonError = function(item){
+    console.error('DynamicContentJsonError: '.concat(item).concat(' JSON object is missing or malformed'))
+  }
+
+  const getLastProduct = function(){
+    return sessionStorage.getItem(PRODUCT_STORAGE_KEY) || DEFAULT_PRODUCT
+  }
+
+  const setLastProduct = function(product){
+    sessionStorage.setItem(PRODUCT_STORAGE_KEY, product)
+  }
+
+  const getProductId = function() {
+    const splitIdFromUrl = function(url, splitter){
+      return url.indexOf(splitter) > -1 ? url.split(splitter)[1].split('-')[0] : false
+    }
+    const breadcrumbs = $('#hidden-breadcrumbs .breadcrumbs').html()
+    const url = window.location.href
+    const productMarkers = ['/categories/', '/topics/']
+    let productFound = false
+
+    productMarkers.forEach(function(marker) {
+      if(breadcrumbs) {
+        productFound = productFound || splitIdFromUrl(breadcrumbs, marker)
+      }
+      productFound = productFound || splitIdFromUrl(url, marker)
+    })
+
+    return productFound
+  }
+
+  const getSearchParams = function(){
+    const params = {}
+    window.location.search.slice(1).split('&').forEach(function(param){
+      const [key, value] = param.split('=')
+      if(key){
+        params[key] = value
+      }
+    })
+    return params
+  }
+
+  const getCurrentProduct = function(id = null){
+    const productId = id ? id.toString() : getProductId()
+    let productName = DEFAULT_PRODUCT
+    try {
+      PRODUCT_MAP.products.forEach(function(product) {
+        if (product.categoryId === productId || product.topicIds.includes(productId)){
+          productName = product.key
+        }
+      })
+    } catch(err) {
+      dynamicContentJsonError('Help Center Product ID Mapping')
+    }
+    if(IS_SEARCH_PAGE && productName === DEFAULT_PRODUCT){
+      productName = getLastProduct()
+    }
+    setLastProduct(productName)
+    return productName
+  }
+
+  $(document).ready(function() {
+    $('link[rel="shortcut icon"]').attr('href', PRODUCT_FAVICONS[getCurrentProduct()])
+  })
+</script>
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.0.0/polyfill.min.js" integrity="sha256-KLt4XkpH4F3e5FHHsQMk9iPOhen2S4g/Lpu4nanttL0=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="//theme.zdassets.com/theme_assets/1/dcd61c51287eb6f9228f315d88aa84707c45823b.css">
+<link rel="stylesheet" href="//theme.zdassets.com/theme_assets/1/d5360a3fb1604c2364771c26e7960b3f784825db.css">
+<link rel="stylesheet" href="//theme.zdassets.com/theme_assets/1/1298445de511f540584166e2f900cff870c607a9.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<!-- Bootstrap Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Federated Search -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.24.9/algoliasearch.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://assets.zendesk.com/assets/apps/conditional_fields/latest/helpcenter.js" async></script> <script>
+
+// Conditional fields start here
+var cfaRules = [{"fieldType":"tagger","field":32228637,"value":"manage_orgs","select":[32299767],"formId":175327,"requireds":[]},{"fieldType":"tagger","field":32228637,"value":"manage_users","select":[32281298],"formId":175327,"requireds":[]},{"fieldType":"tagger","field":32282348,"value":"billing_pmt","select":[32300607],"formId":175367,"requireds":[]},{"fieldType":"tagger","field":32282368,"value":"ticket_slas","select":[32282378],"formId":253548,"requireds":[]},{"fieldType":"tagger","field":32282368,"value":"ticket_triggers","select":[32300647],"formId":253548,"requireds":[]},{"fieldType":"tagger","field":32282398,"value":"perf_down_browser","select":[32282408,32282418],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32282398,"value":"perf_down_green","select":[32282408,32282418],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_api","select":[32301847,32283148,32301867],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_crms","select":[32301247],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_framework","select":[32301847,32283148],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_jira","select":[34321048],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_voice","select":[32301487],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32282738,"value":"apps_zendesk","select":[32282828],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32299997,"value":"hc_custom","select":[32300127],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32299997,"value":"hc_knowledge","select":[32300007],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32299997,"value":"hc_mobile","select":[32300287],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32299997,"value":"hc_search","select":[32300307,32282228],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32300007,"value":"hc_know_content","select":[32281898],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32300007,"value":"hc_know_local","select":[32281898],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32300007,"value":"hc_know_restriction","select":[32282028],"formId":253528,"requireds":[]},{"fieldType":"tagger","field":32300737,"value":"perf_404","select":[32282538],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32300737,"value":"perf_downtime","select":[32282398],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32300737,"value":"perf_no_login","select":[32282438],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32300737,"value":"perf_slowness","select":[32282618,32302987,32302997],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32300737,"value":"perf_subdomain","select":[32300897,32282458],"formId":175357,"requireds":[]},{"fieldType":"tagger","field":32301247,"value":"apps_salesforce","select":[34321008,39899088],"formId":253538,"requireds":[]},{"fieldType":"tagger","field":32301917,"value":"analytics_export","select":[34347167],"formId":175347,"requireds":[]},{"fieldType":"tagger","field":32301917,"value":"analytics_insights","select":[34320408],"formId":175347,"requireds":[]},{"fieldType":"tagger","field":32301917,"value":"analytics_native","select":[34346367],"formId":175347,"requireds":[]},{"fieldType":"tagger","field":34321048,"value":"jira_onprem","select":[34347947,34347887],"formId":253538,"requireds":[]}];
+
+</script>
+
+<!-- SEGMENT code (Pendo) -->
+<script>
+   !function(){var analytics=window.analytics=window.analytics||[];var deferredAnalytics=window.deferredAnalytics=window.deferredAnalytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);deferredAnalytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,tt,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+(tt?"static.zdassets.com":"static-staging.zdassets.com")+"/customer_analytics_integration/"+t+"/cai.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+   analytics.load("help_center", true);
+   analytics.page();
+   analytics.identify();
+   analytics.group();
+   }}();
+ </script>
+<!-- SEGMENT code (Pendo) -->
+
+<!-- Load handlebars -->
+<script src=//theme.zdassets.com/theme_assets/1/eca4f0bf03adba9515bcea47d6399fd03fb00399.js></script>
+<script type='text/javascript'>
+  Handlebars.registerHelper('compileTemplate', function(options) {
+    var html = options.element.html();
+    var template = Handlebars.compile(options.partial, {noEscape: true});
+    html += template(options.context);
+    options.element.html(html);
+  });
+</script>
+<!-- End handlebars loading -->
+
+<script>
+
+// Pre-populate values
+(function($) {
+  $.QueryString = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i) {
+      var p=a[i].split('=');
+      if (p.length != 2) continue;
+      b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+  })(window.location.search.substr(1).replace(/&amp;/g, '&').split('&'));
+})(jQuery);
+
+// attempted Z1 fix 2016/08/02 ZD#1727991
+var isRequestPage = window.location.href.indexOf('requests') >= 0;
+
+
+var customFieldPrefix = 'request_custom_fields';
+
+var fieldsToPopulate = {
+  "email" : 'input[id*="requester_email"]',
+  "subdomain" : "#request_custom_fields_22694523"
+};
+
+var loopKeys = function(obj, fn) {
+  for (var prop in obj) {
+    // skip loop if the property is from prototype
+      if (!obj.hasOwnProperty(prop)) continue;
+
+    fn(prop);
+  }
+};
+
+var each = function(list, fn) {
+  for (var i = 0; i < list.length; ++i) {
+    fn(list[i], i);
+  };
+};
+
+var populateFields = function() {
+
+  loopKeys(fieldsToPopulate, function(field) {
+    var selector = fieldsToPopulate[field];
+    var fieldInput = $(selector);
+    var value = $.QueryString[field];
+
+    if(fieldInput && value) {
+      fieldInput.val(value);
+    }
+  });
+};
+
+var ensureQueryParams = function() {
+  var $ticketFormOptions = $('#request_issue_type_select option');
+  var addedParams = '';
+
+  loopKeys(fieldsToPopulate, function(field) {
+    var value = $.QueryString[field];
+    if(value) {
+      addedParams = addedParams + "&" + field + "=" + value;
+    }
+
+  });
+
+  $ticketFormOptions.each(function() {
+    var $option = $(this);
+
+    var redirectUrl = $option.attr('data-url');
+    $option.attr('data-url', redirectUrl + addedParams);
+  });
+};
+
+var moveBasicFields = function() {
+  var descEl = $('.request_description');
+  var subjectEl = $('.request_subject');
+  var suggestionsEl = $('.suggestion-list');
+  var ccEl = $('.request_cc_emails');
+  var emailEl = $('div[class*="requester_email"]');
+
+  var allBasicEl = emailEl.add(subjectEl)
+                          .add(suggestionsEl)
+                          .add(descEl);
+
+  allBasicEl.remove().insertBefore('.request-form .form-field:last');
+  ccEl.remove().insertBefore('.request-form .form-field:last');
+};
+
+
+var showBasicFieldsOnly = function() {
+
+  var customFieldExceptions = [
+    '22694523'
+  ];
+
+  var exceptionsSelector = function() {
+    var selector = '';
+
+    each(customFieldExceptions, function(field, i) {
+      selector = selector + '.form-field.' + customFieldPrefix + '_' + field;
+      if(i < customFieldExceptions.length - 1) {
+        selector = selector + ',';
+      }
+    });
+
+    return selector;
+  };
+
+  var $customFields = $('.form-field[class*="' + customFieldPrefix + '"]');
+
+  $customFields = $customFields.not(exceptionsSelector());
+  $customFields.hide();
+
+};
+
+var hidePassthroughFields = function() {
+  var passthroughFields = [31965207];
+
+  each(passthroughFields, function(field) {
+    $('.form-field.' + customFieldPrefix + '_' + field).hide();
+  });
+
+};
+
+var changeBusinessImpactOptions = function() {
+  var optionField = $('#request_custom_fields_32142077');
+  var field = $('.request_custom_fields_32142077');
+  var nesty = field.find('.nesty-input');
+
+  var stripPrefix = function(text) {
+    var index = text.indexOf('- ');
+    var newLabel = text;
+
+    if(index >=0) {
+      newLabel = text.substring(index + 2);
+    }
+
+    return newLabel;
+  };
+
+  field.change(function() {
+    var text = $(this).text();
+    nesty.text(stripPrefix(nesty.text()));
+
+  });
+
+  nesty.click(function() {
+    var optionData = optionField.attr('data-tagger');
+
+    if(optionData) {
+      optionData = JSON.parse(optionData);
+
+      for(var i=0; i < optionData.length; i++) {
+        var item = optionData[i];
+        var label = item.label;
+        var value = item.value;
+
+        $('#' + value).text(stripPrefix(label));
+      }
+    }
+  });
+};
+
+
+
+// populate the fields when the page is ready
+$(document).ready(function() {
+  if(isRequestPage) {
+
+    hidePassthroughFields();
+    ensureQueryParams();
+    populateFields();
+    moveBasicFields();
+    changeBusinessImpactOptions();
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+
+  const PRODUCT = getCurrentProduct()
+
+  // Configure Web Widget
+  window.zESettings = {
+    webWidget: {
+      answerBot: {
+        avatar: {
+          url: "//theme.zdassets.com/theme_assets/1/f91e1d1333e4c57f049ab465908d7708f0ca1701.png"
+        },
+        search: {
+          labels:  PRODUCT === 'general' ? [] : [ PRODUCT ]
+        }
+      },
+      contactForm: {
+        attachments: true,
+        ticketForms: [{id: "360000151987" || '360000151987'}]
+      },
+      launcher:{
+        label : {
+          'en-US': "Get help"
+        }
+      },
+      position: { horizontal: 'right', vertical: 'bottom' }
+    }
+  };
+
+  if(typeof zE !== 'undefined') {
+    zE(function() {
+      const locale = getLocale();
+
+      if(locale) {
+        zE.setLocale(locale);
+      }
+      if(HelpCenter.user.name && HelpCenter.user.email){
+        zE.identify({
+          name: HelpCenter.user.name,
+          email: HelpCenter.user.email
+        });
+      }
+    });
+  }
+
+});
+
+function getLocale() {
+  let locale = window.location.href.split('/hc/')[1];
+
+  // only continue parsing if we find a match
+  if(locale) {
+    locale = locale.split('/')[0];
+  }
+
+  return locale;
+}
+
+</script>
+
+<!-- Guide Modules -->
+
+  <link rel="stylesheet" href="//theme.zdassets.com/theme_assets/1/5cf3b2eec7202c348754bddeeabc1868ee61fcf4.css">
+  <script src="//theme.zdassets.com/theme_assets/1/8f341972800b5f4dc72844306b31ac5e59f184a2.js"></script>
+
+
+  <script type="text/javascript" src="//p23.zdassets.com/hc/theming_assets/1/1157956/script.js?digest=360335798834"></script>
+</head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZZH27K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header-wrapper" id="main-header">
+  <div class="header">
+    <div class="logo">
+      <a title="Home" href="/hc/en-us">
+        <img src="//theme.zdassets.com/theme_assets/1/3cc7e6328cd4f823ed1332d774490412f0531606.svg" alt="Logo">
+        <div class="zendesk-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+            <path fill="#03363D" d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div class="nav-wrapper">
+      <span id="help-centers"></span>
+      <nav class="user-nav" id="user-nav">
+        <span class="community-link">
+          <a href="/hc/en-us/community/topics">Community</a>
+        </span>
+      </nav>
+      
+        <span id="lang-menu-root">
+          <span id="lang-menu-icon-root">
+            <span class="name">English (US)</span>
+            <i class="fas fa-caret-down"></i>
+          </span>
+          <span id="lang-menu-popup-root">
+            <div style="display: none;" class="lang-menu-popup-wrapper">
+              <div class="lang-menu-close-target"></div>
+              <div class="lang-menu-popup">
+                <div class="header">languages</div>
+                <div class="body">
+
+                  <div class="lang-menu">
+                    
+                      <a href="/hc/change_language/de?return_to=%2Fhc%2Fde" dir="ltr" rel="nofollow" role="menuitem">
+                        Deutsch
+                      </a>
+                    
+                      <a href="/hc/change_language/es?return_to=%2Fhc%2Fes" dir="ltr" rel="nofollow" role="menuitem">
+                        Español
+                      </a>
+                    
+                      <a href="/hc/change_language/fr?return_to=%2Fhc%2Ffr" dir="ltr" rel="nofollow" role="menuitem">
+                        Français
+                      </a>
+                    
+                      <a href="/hc/change_language/ja?return_to=%2Fhc%2Fja" dir="ltr" rel="nofollow" role="menuitem">
+                        日本語
+                      </a>
+                    
+                      <a href="/hc/change_language/ko?return_to=%2Fhc%2Fko" dir="ltr" rel="nofollow" role="menuitem">
+                        한국어
+                      </a>
+                    
+                      <a href="/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br" dir="ltr" rel="nofollow" role="menuitem">
+                        Português do Brasil
+                      </a>
+                    
+                  </div>
+
+                </div>
+                <div class="footer">
+                  <span>Current: English (US)</span>
+                </div>
+                <div class="caret"></div>
+              </div>
+            </div>
+          </span>
+        </span>
+      
+
+      
+
+        <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.zendesk.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+    </div>
+  </div>
+</header>
+
+
+  <main role="main">
+    <div id="hero-banner" data-page="home"></div>
+<div id="non-banner-content">
+  <div id="products-list"></div>
+  <div id="explore-zendesk"></div>
+  <div id="homepage-common-questions"></div>
+  <!-- <div id="product-knowledge"></div> -->
+</div>
+<div id="community-banner" data-page="home"></div>
+<div id="demo-banner" data-page="home"></div>
+
+  </main>
+
+  <!--
+  WARNING: The this footer file is auto generated, by the `npm run build` command.
+  If you wish to edit the footer directly, please edit the file in:
+  `./_src/help/lib/footer.hbs`
+-->
+
+<footer class="main-footer">
+  <div class="footer-inner">
+    <strong>Zendesk</strong> <span> 1019 Market St., San Francisco, CA 94103 </span> <span><a href="https://www.zendesk.com/company/privacy" target="_blank">Privacy Policy</a> | <a href="https://www.zendesk.com/company/terms" target="_blank">Terms &amp; Conditions</a> | <a href="https://status.zendesk.com " target="_blank">System Status</a>
+
+</span>
+  </div>
+</footer>
+
+<!-- about-community.hbs -->
+<script>
+  $(document).ready(function() {
+    const root = $('#about-community')
+
+    if(root.length > 0){
+      Handlebars.helpers.compileTemplate({
+        element: root,
+        context: {
+          title: "About our community",
+          membersText: "Active members",
+          commentsText: "Comments",
+          postsText: "Posts",
+          votesText: "Votes",
+          membersCount: "4,932",
+          commentsCount: "64,041",
+          postsCount: "21,392",
+          votesCount: "35,271",
+        },
+        partial: Handlebars.partials.aboutCommunity
+      })
+    }
+  });
+</script>
+
+<!-- common-questions.hbs -->
+<script>
+  $(document).ready(function() {
+    const ICONS = window.Modules.GardenIcons
+    const PRODUCT = getCurrentProduct()
+
+    let tabIcons = [
+      ICONS['speech-bubble-conversation-stroke'],
+      ICONS['clipboard-list-stroke'],
+      ICONS['shield-stroke'],
+      ICONS['line-graph-stroke'],
+      ICONS['user-solo-stroke'],
+      ICONS['arrow-reverse-stroke'],
+      ICONS['puzzle-piece-stroke'],
+      ICONS['user-solo-stroke']
+    ]
+
+    try {
+      const tabIconsDC = '{"chat":["speech-bubble-conversation-stroke","adjust-stroke","credit-card-stroke","line-graph-stroke","puzzle-piece-stroke"],"guide":["user-solo-stroke","lifesaver-stroke","duplicate-stroke","speech-bubble-lightning-bolt-stroke","globe-stroke","credit-card-stroke","line-graph-stroke"],"talk":["book-closed-stroke","adjust-stroke","arrow-reverse-stroke","line-graph-stroke","mobile-phone-stroke","credit-card-stroke"],"support":["speech-bubble-conversation-stroke","clipboard-list-stroke","shield-stroke","line-graph-stroke","credit-card-stroke","panels-stroke","puzzle-piece-stroke","user-group-stroke"],"general":["arrow-reverse-stroke","credit-card-stroke","shield-stroke"],"crossProduct":["arrow-reverse-stroke","credit-card-stroke","shield-stroke"]}'
+      const tabIconsMap = JSON.parse(tabIconsDC)
+
+      if (tabIconsMap[PRODUCT]) {
+        tabIcons = []
+        tabIconsMap[PRODUCT].forEach(function(iconName) {
+          tabIcons.push(ICONS[iconName])
+        })
+      }
+    } catch(err) {
+      dynamicContentJsonError('common questions tab icons')
+    }
+
+    const configMap = {
+      'chat': '[{"topic":"Account configuration","icon":false,"links":[{"title":"How do I add Chat to my website?","url":"https://chat.zendesk.com/hc/en-us/articles/212679527-Adding-Zendesk-Chat-to-your-website"},{"title":"What are some of my options for customizing the chat widget?","url":"https://chat.zendesk.com/hc/en-us/articles/212679577-Customizing-the-chat-widget"},{"title":"How do I integrate my Support account with my Chat account?","url":"https://chat.zendesk.com/hc/en-us/articles/223414387-Setting-up-Zendesk-Support-in-Chat"},{"title":"Where can I find a collection of Chat triggers resources?","url":"https://chat.zendesk.com/hc/en-us/articles/212679617-Zendesk-Chat-triggers-resources"}],"parent":"Top questions","target":"top-questions"},{"topic":"Account questions","icon":false,"links":[{"title":"Where can I find answers to common Chat billing questions?","url":"https://chat.zendesk.com/hc/en-us/articles/229360988-Zendesk-Chat-billing-FAQs"},{"title":"How do I change my Chat login email?","url":"https://chat.zendesk.com/hc/en-us/articles/360000991108-Changing-your-Zendesk-Chat-Login-Email"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"}],"parent":"Top questions","target":"top-questions"},{"topic":"Analytics & data","icon":false,"links":[{"title":"How do I analyze chat activity?","url":"https://chat.zendesk.com/hc/en-us/articles/360001328727-Analyzing-your-Chat-activity"},{"title":"How do I browse past chats?","url":"https://chat.zendesk.com/hc/en-us/articles/212016688-Browsing-past-chats-in-History"},{"title":"What details are included in the Chat History CSV?","url":"https://chat.zendesk.com/hc/en-us/articles/115015684587"}],"parent":"Top questions","target":"top-questions"},{"topic":"Integrations","icon":false,"links":[{"title":"How do I install Zendesk Chat for Wordpress?","url":"https://chat.zendesk.com/hc/en-us/articles/212020688-Installing-Zendesk-Chat-for-WordPress"},{"title":"How do I set up Chat for Shopify?","url":"https://chat.zendesk.com/hc/en-us/articles/212681617-Setting-up-Chat-for-Shopify"},{"title":"How do I manage my installed apps?","url":"https://chat.zendesk.com/hc/en-us/articles/115010754368-Managing-your-installed-apps-in-Zendesk-Chat"}],"parent":"Top questions","target":"top-questions"},{"topic":"Setting up Chat","icon":false,"links":[{"title":"How do I get started with Chat?","url":"https://chat.zendesk.com/hc/en-us/articles/218425317-Introduction"},{"title":"How do I add Chat to my website?","url":"https://chat.zendesk.com/hc/en-us/articles/212679527-Adding-Zendesk-Chat-to-your-website"},{"title":"How do I integrate my Support account with my Chat account?","url":"https://chat.zendesk.com/hc/en-us/articles/223414387-Setting-up-Zendesk-Support-in-Chat"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Setting up Message","icon":false,"links":[{"title":"How do I get started with Message?","url":"https://chat.zendesk.com/hc/en-us/articles/115005959708-Getting-started-with-Message"},{"title":"How can I set up bot handover?","url":"https://chat.zendesk.com/hc/en-us/articles/115003978247-Setting-up-bot-handover"},{"title":"How do I set up auto responders?","url":"https://chat.zendesk.com/hc/en-us/articles/115004917587-Setting-up-Auto-Responders"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Widget & dashboard","icon":false,"links":[{"title":"What are some of my options for customizing the chat widget?","url":"https://chat.zendesk.com/hc/en-us/articles/212679577-Customizing-the-chat-widget"},{"title":"How do I manage Offline Form settings?","url":"https://chat.zendesk.com/hc/en-us/articles/218262477-Managing-Offline-Form-settings"},{"title":"How do I set up the Pre-Chat form?","url":"https://chat.zendesk.com/hc/en-us/articles/212015988-Setting-up-the-Pre-Chat-form"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Rules & routing","icon":false,"links":[{"title":"Where can I find a collection of Chat triggers resources?","url":"https://chat.zendesk.com/hc/en-us/articles/212679617-Zendesk-Chat-triggers-resources"},{"title":"How do I create agents and departments?","url":"https://chat.zendesk.com/hc/en-us/articles/212015708-Creating-agents-and-departments"},{"title":"How can I target key visitors with a proactive chat?","url":"https://chat.zendesk.com/hc/en-us/articles/212679647-Targeting-key-visitors-with-proactive-chat"},{"title":"How do I automatically route chats to departments?","url":"https://chat.zendesk.com/hc/en-us/articles/212679657-Automatically-route-chats-to-departments"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Users & visitors","icon":false,"links":[{"title":"How can I ban visitors?","url":"https://chat.zendesk.com/hc/en-us/articles/212016638-Banning-visitors"},{"title":"How do I create and assign custom roles?","url":"https://chat.zendesk.com/hc/en-us/articles/115010398048-Creating-custom-roles-and-assigning-users"},{"title":"How do I measure visitor satisfaction with chat ratings?","url":"https://chat.zendesk.com/hc/en-us/articles/212016608-Measuring-visitor-satisfaction-with-chat-rating"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Chat workflow","icon":false,"links":[{"title":"How do I insert common phrases with shortcuts?","url":"https://chat.zendesk.com/hc/en-us/articles/212016488-Inserting-common-phrases-with-shortcuts"},{"title":"How do I automatically send chat transcripts?","url":"https://chat.zendesk.com/hc/en-us/articles/212679667-Automatically-send-chat-transcripts-with-email-piping"},{"title":"How do I send files in a chat?","url":"https://chat.zendesk.com/hc/en-us/articles/212016538-Sending-files-in-a-chat"}],"parent":"Account configuration","target":"account-configuration"},{"topic":"Billing","icon":false,"links":[{"title":"Where can I find answers to common Chat billing questions?","url":"https://chat.zendesk.com/hc/en-us/articles/229360988-Zendesk-Chat-billing-FAQs"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"},{"title":"Where can I learn more about Chat plan types?","url":"https://chat.zendesk.com/hc/en-us/articles/115010355747-About-Zendesk-Chat-plan-types"}],"parent":"Account questions","target":"account-questions"},{"topic":"Account settings","icon":false,"links":[{"title":"How do I change my Chat login email?","url":"https://chat.zendesk.com/hc/en-us/articles/360000991108-Changing-your-Zendesk-Chat-Login-Email"},{"title":"What are the Chat system requirements?","url":"https://chat.zendesk.com/hc/en-us/articles/217777948-Zendesk-Chat-system-requirements"},{"title":"What are the default roles in Zendesk Chat?","url":"https://chat.zendesk.com/hc/en-us/articles/212679597-Understanding-and-managing-roles-in-Zopim"}],"parent":"Account questions","target":"account-questions"},{"topic":"Personal settings","icon":false,"links":[{"title":"How do I edit my personal settings in Chat?","url":"https://chat.zendesk.com/hc/en-us/articles/212016478-Editing-your-personal-settings-in-Zendesk-Chat"},{"title":"How do I edit my chat notification settings?","url":"https://chat.zendesk.com/hc/en-us/articles/360000637788-Editing-your-chat-notification-settings"},{"title":"How do I set my availability status?","url":"https://chat.zendesk.com/hc/en-us/articles/212016418-Setting-your-availability-status"}],"parent":"Account questions","target":"account-questions"},{"topic":"History","icon":false,"links":[{"title":"How do I browse past chats?","url":"https://chat.zendesk.com/hc/en-us/articles/212016688-Browsing-past-chats-in-History"},{"title":"What details are included in the Chat History CSV?","url":"https://chat.zendesk.com/hc/en-us/articles/212016688-Browsing-past-chats-in-History"},{"title":"How can I permanently delete chats and attachments?","url":"https://chat.zendesk.com/hc/en-us/articles/360001169888-Permanently-deleting-chats-and-attachments"}],"parent":"Analytics & data","target":"analytics-data"},{"topic":"Analytics","icon":false,"links":[{"title":"How do I monitor chat activity?","url":"https://chat.zendesk.com/hc/en-us/articles/212016698-Monitoring-chat-activity-with-Analytics"},{"title":"How do I analyze chat activity?","url":"https://chat.zendesk.com/hc/en-us/articles/212016748-Analytics-CSV-glossary-Professional-and-Enterprise-"},{"title":"What details are included in the Chat Analytics CSV?","url":"https://chat.zendesk.com/hc/en-us/articles/212016748-Analytics-CSV-glossary-Professional-and-Enterprise-"}],"parent":"Analytics & data","target":"analytics-data"},{"topic":"Advanced reporting","icon":false,"links":[{"title":"How do I use conversion tracking to measure business goals?","url":"https://chat.zendesk.com/hc/en-us/articles/115007241487-Measuring-business-goals-with-conversion-tracking"},{"title":"How do I use Google Analytics to track goals and conversions?","url":"https://chat.zendesk.com/hc/en-us/articles/218988657-Tracking-goals-and-conversions-with-Google-Analytics"},{"title":"How do I report on Chat in Insights?","url":"https://chat.zendesk.com/hc/en-us/articles/360001440768-Chat-reporting-in-Insights-Measure-success-with-advanced-analytics"}],"parent":"Analytics & data","target":"analytics-data"},{"topic":"Apps","icon":false,"links":[{"title":"How do I install Zendesk Chat for Wordpress?","url":"https://chat.zendesk.com/hc/en-us/articles/212020688-Installing-Zendesk-Chat-for-WordPress"},{"title":"How do I set up Chat for Shopify?","url":"https://chat.zendesk.com/hc/en-us/articles/212681617-Setting-up-Chat-for-Shopify"},{"title":"How do I manage my installed apps?","url":"https://chat.zendesk.com/hc/en-us/articles/115010754368-Managing-your-installed-apps-in-Zendesk-Chat"}],"parent":"Integrations","target":"integrations"},{"topic":"Developer resources","icon":false,"links":[{"title":"How do I generate a REST API token for my integrated Chat account?","url":"https://support.zendesk.com/hc/en-us/articles/115010760808-Generating-a-REST-API-token-for-integrated-Chat-accounts"},{"title":"Where can I learn more about the JavaScript Chat API?","url":"https://chat.zendesk.com/hc/en-us/articles/234585908-JavaScript-Chat-API-Overview"},{"title":"How can I use the API to hide the chat widget?","url":"https://chat.zendesk.com/hc/en-us/articles/212680477-Hiding-the-chat-widget-via-API"}],"parent":"Integrations","target":"integrations"},{"topic":"SDK & mobile","icon":false,"links":[{"title":"What are some ways to use the Web SDK for widget customization?","url":"https://develop.zendesk.com/hc/en-us/articles/360002017888-JavaScript-Chat-API-Overview"},{"title":"How do I enable push notifications for the Chat Mobile SDK?","url":"https://chat.zendesk.com/hc/en-us/articles/360000456648-Enabling-push-notifications-for-Chat-Mobile-SDK"}],"parent":"Integrations","target":"integrations"}]',
+      'connect': '[{"topic":"Getting started","icon":false,"links":[{"title":"How do I get started with Connect?","url":"https://connect.zendesk.com/hc/en-us/articles/115010762987-Introduction-Getting-started-with-Connect"},{"title":"How do I use the CSV import file?","url":"https://connect.zendesk.com/hc/en-us/articles/360000990647-Lesson-1-The-CSV-import-path"},{"title":"How do I use the API integration path?","url":"https://connect.zendesk.com/hc/en-us/articles/360001022608-Lesson-2-The-API-integration-path"},{"title":"What are some common use cases for Connect?","url":"https://connect.zendesk.com/hc/en-us/articles/360001022847-Lesson-3-Common-use-cases-for-Connect"}],"parent":"Top questions","target":"top-questions"},{"topic":"Channels","icon":false,"links":[{"title":"How do I use the email channel?","url":"https://connect.zendesk.com/hc/en-us/articles/115010314308-Using-the-email-channel"},{"title":"How do I use the web push channel?","url":"https://connect.zendesk.com/hc/en-us/articles/115010786327-Using-the-web-push-channel"},{"title":"How do I use the mobile push channel?","url":"https://connect.zendesk.com/hc/en-us/articles/115010147047-Using-the-mobile-push-channel"},{"title":"How do I use the SMS channel?","url":"https://connect.zendesk.com/hc/en-us/articles/115010951148-Using-the-SMS-channel"}],"parent":"Top questions","target":"top-questions"},{"topic":"Campaigns","icon":false,"links":[{"title":"How do I create a broadcast campaign?","url":"https://connect.zendesk.com/hc/en-us/articles/115010146767-Creating-a-broadcast-campaign"},{"title":"How do I create a trigger-based campaign?","url":"https://connect.zendesk.com/hc/en-us/articles/115010146807-Creating-a-trigger-based-campaign"},{"title":"How do I use event filters?","url":"https://connect.zendesk.com/hc/en-us/articles/115010568227-Using-event-filters-to-refine-your-campaign"}],"parent":"Top questions","target":"top-questions"}]',
+      'explore': '[{"topic":"Getting started","icon":false,"links":[{"title":"How do I get started with Explore?","url":"https://explore.zendesk.com/hc/en-us/articles/115002591127"},{"title":"How do I get started with the Explore interface?","url":"https://explore.zendesk.com/hc/en-us/articles/115007358348-Getting-started-with-the-Explore-interface"},{"title":"Where can I find a walkthrough of Explore?","url":"https://explore.zendesk.com/hc/en-us/articles/360001832588"}],"parent":"Top questions","target":"top-questions"},{"topic":"Editors","icon":false,"links":[{"title":"Where can I find a collection of formula writing resources?","url":"https://explore.zendesk.com/hc/en-us/articles/115000162447-Formula-writing-resources"},{"title":"Where can I find a collection of calculation types?","url":"https://explore.zendesk.com/hc/en-us/articles/236355787"},{"title":"How do I create standard calculated metrics and attributes?","url":"https://explore.zendesk.com/hc/en-us/articles/235948948"}],"parent":"Top questions","target":"top-questions"},{"topic":"Viewers","icon":false,"links":[{"title":"How do I get started with pre-built dashboards?","url":"https://explore.zendesk.com/hc/en-us/articles/115009447768-Getting-started-with-pre-built-dashboards"},{"title":"How can I interact with dashboards?","url":"https://explore.zendesk.com/hc/en-us/articles/115001814927-Interacting-with-dashboards"},{"title":"How do I share dashboards?","url":"https://explore.zendesk.com/hc/en-us/articles/115000998408-Sharing-dashboards"}],"parent":"Top questions","target":"top-questions"}]',
+      'support': '[{"topic":"Business rules","icon":false,"links":[{"title":"How do I use Views to manage ticket workflow?","url":"https://support.zendesk.com/hc/en-us/articles/203690806-Using-views-to-manage-ticket-workflow"},{"title":"What are triggers and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203662246-About-triggers-and-how-they-work"},{"title":"What are the Support default triggers?","url":"https://support.zendesk.com/hc/en-us/articles/203662176-About-the-Support-default-triggers"},{"title":"What are automations and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203662236-About-automations-and-how-they-work"}],"parent":"Top questions","target":"top-questions"},{"topic":"Security","icon":false,"links":[{"title":"How do tickets become suspended or flagged as spam?","url":"https://support.zendesk.com/hc/en-us/articles/203663246-Understanding-and-managing-suspended-tickets-and-spam"},{"title":"How do I use the whitelist and blacklist to control access?","url":"https://support.zendesk.com/hc/en-us/articles/203663286-Using-the-whitelist-and-blacklist-to-control-access-to-Zendesk-Support"},{"title":"What are some causes for ticket suspension?","url":"https://support.zendesk.com/hc/en-us/articles/115009659807-Causes-for-ticket-suspension"}],"parent":"Top questions","target":"top-questions"},{"topic":"Reporting","icon":false,"links":[{"title":"Where can I find a collection of Insights resources?","url":"https://support.zendesk.com/hc/en-us/articles/203662376-Zendesk-Insights-resources-Professional-and-Enterprise-"},{"title":"How do I export data to a JSON, CSV, or XML file?","url":"https://support.zendesk.com/hc/en-us/articles/203662346-Exporting-data-to-a-JSON-CSV-or-XML-file-Professional-and-Enterprise-"},{"title":"How do I build custom reports in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/231249907-Building-custom-reports-in-Insights-Professional-and-Enterprise-"},{"title":"How do I use CSAT?","url":"https://support.zendesk.com/hc/en-us/articles/203662256-Using-CSAT-Professional-and-Enterprise-"}],"parent":"Top questions","target":"top-questions"},{"topic":"Accounts","icon":false,"links":[{"title":"Where can I find answers to common billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/218995728/"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"},{"title":"How can I grant Zendesk temporary access to my account?","url":"https://support.zendesk.com/hc/en-us/articles/115001753608-Granting-Zendesk-temporary-access-to-your-account"},{"title":"How can I change the owner of my Support account?","url":"https://support.zendesk.com/hc/en-us/articles/226885727-Changing-Support-Account-Ownership"}],"parent":"Top questions","target":"top-questions"},{"topic":"Channels","icon":false,"links":[{"title":"What are some options for advanced customization of the Web Widget?","url":"https://support.zendesk.com/hc/en-us/articles/229167008-Advanced-customization-of-your-Web-Widget"},{"title":"How do I set up my Facebook channel?","url":"https://support.zendesk.com/hc/en-us/articles/203661556-Setting-up-your-Facebook-channel"},{"title":"How do I add support addresses for users to submit tickets to?","url":"https://support.zendesk.com/hc/en-us/articles/203663336-Adding-support-addresses-for-users-to-submit-tickets"}],"parent":"Top questions","target":"top-questions"},{"topic":"Integrations","icon":false,"links":[{"title":"How do I configure user and organization syncing in Salesforce?","url":"https://support.zendesk.com/hc/en-us/articles/203659996-Salesforce-Configuring-user-and-organization-syncing-in-Salesforce"},{"title":"How do I set up the Zendesk Support for JIRA integration?","url":"https://support.zendesk.com/hc/en-us/articles/203660196"},{"title":"How do I use the Conditional Fields app?","url":"https://support.zendesk.com/hc/en-us/articles/203662476-Using-the-Conditional-Fields-app-Professional-Add-on-and-Enterprise-"}],"parent":"Top questions","target":"top-questions"},{"topic":"Tickets & users","icon":false,"links":[{"title":"How do I create and use custom ticket fields?","url":"https://support.zendesk.com/hc/en-us/articles/203661496-Adding-custom-fields-to-your-tickets-and-support-request-forms"},{"title":"How can I bulk import users?","url":"https://support.zendesk.com/hc/en-us/articles/203661996-Bulk-importing-users-"},{"title":"How do I create and assign custom roles for agents?","url":"https://support.zendesk.com/hc/en-us/articles/203662026-Creating-custom-roles-and-assigning-agents-Enterprise-"}],"parent":"Top questions","target":"top-questions"},{"topic":"Triggers","icon":false,"links":[{"title":"What are triggers and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203662246-About-triggers-and-how-they-work"},{"title":"What are the default triggers?","url":"https://support.zendesk.com/hc/en-us/articles/203662176-About-the-Support-default-triggers"},{"title":"How do I set up triggers?","url":"https://support.zendesk.com/hc/en-us/articles/203662106-Setting-up-automatic-ticket-updates-and-notifications-with-triggers"}],"parent":"Business rules","target":"business-rules"},{"topic":"Automations","icon":false,"links":[{"title":"What are automations and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203662236-About-automations-and-how-they-work"},{"title":"How do I create and manage automations?","url":"https://support.zendesk.com/hc/en-us/articles/203662126-Creating-and-managing-automations-for-time-based-events"},{"title":"When should I use an Automation vs. a Trigger?","url":"https://support.zendesk.com/hc/en-us/articles/203660246-Automations-vs-Triggers-When-To-Use-What"}],"parent":"Business rules","target":"business-rules"},{"topic":"SLAs","icon":false,"links":[{"title":"How do I define and use SLA policies?","url":"https://support.zendesk.com/hc/en-us/articles/204770038-Defining-and-using-SLA-policies-Professional-and-Enterprise-"},{"title":"How do I view and understand SLA targets?","url":"https://support.zendesk.com/hc/en-us/articles/205405237-Viewing-and-understanding-SLA-targets-Professional-and-Enterprise-"},{"title":"What are some common issues with SLAs and how can I troubleshoot them?","url":"https://support.zendesk.com/hc/en-us/articles/218161007-Troubleshooting-common-issues-with-SLAs"}],"parent":"Business rules","target":"business-rules"},{"topic":"Views","icon":false,"links":[{"title":"How do I use Views?","url":"https://support.zendesk.com/hc/en-us/articles/203690806-Using-views-to-manage-ticket-workflow"},{"title":"How are tickets archived?","url":"https://support.zendesk.com/hc/en-us/articles/203657756-About-ticket-archiving"},{"title":"Can I increase the number of displayed views?","url":"https://support.zendesk.com/hc/en-us/articles/231732128-Can-I-increase-the-number-of-displayed-views-"}],"parent":"Business rules","target":"business-rules"},{"topic":"Schedules","icon":false,"links":[{"title":"How do I set a schedule with business hours and holidays?","url":"https://support.zendesk.com/hc/en-us/articles/203662206-Setting-your-schedule-with-business-hours-and-holidays-Professional-and-Enterprise-"},{"title":"How do I report on business hours in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/204402153-Reporting-on-business-hours-in-Insights-Professional-and-Enterprise-"},{"title":"How do I modify a trigger based on business hours?","url":"https://support.zendesk.com/hc/en-us/articles/115015757868-Modifying-a-notification-trigger-to-return-a-response-based-on-business-hours"}],"parent":"Business rules","target":"business-rules"},{"topic":"Macros","icon":false,"links":[{"title":"How do I create macros for tickets?","url":"https://support.zendesk.com/hc/en-us/articles/115001236988-Creating-macros-for-tickets"},{"title":"How do I use macros to update tickets?","url":"https://support.zendesk.com/hc/en-us/articles/203690796-Using-macros-to-update-tickets"},{"title":"How do I organize and manage macros?","url":"https://support.zendesk.com/hc/en-us/articles/203690816-Organizing-and-managing-your-macros"}],"parent":"Business rules","target":"business-rules"},{"topic":"Authentication & SSO","icon":false,"links":[{"title":"How do I reset my password?","url":"https://support.zendesk.com/hc/en-us/articles/223081047-How-do-I-reset-my-password-"},{"title":"What are the SSO (single sign-on) options in Zendesk?","url":"https://support.zendesk.com/hc/en-us/articles/203663826-SSO-single-sign-on-options-in-Zendesk"},{"title":"How do I use 2-factor authentication?","url":"https://support.zendesk.com/hc/en-us/articles/206373587-Using-2-factor-authentication"}],"parent":"Security","target":"security"},{"topic":"Domains & SSL","icon":false,"links":[{"title":"How do I change (host map) the address of my Help Center subdomain?","url":"https://support.zendesk.com/hc/en-us/articles/203664356-Changing-the-address-of-your-Help-Center-subdomain-host-mapping-"},{"title":"How do I prepare a SSL certificate for upload to Zendesk?","url":"https://support.zendesk.com/hc/en-us/articles/204112776-Preparing-a-SSL-certificate-for-upload-to-Zendesk"},{"title":"What are the side effects of renaming my subdomain?","url":"https://support.zendesk.com/hc/en-us/articles/203660756-Renaming-your-subdomain-the-side-effects"},{"title":"How do I manage end user settings?","url":"https://support.zendesk.com/hc/en-us/articles/203663806"},{"title":"Why is my CNAME record not propagating with CloudFlare?","url":"https://support.zendesk.com/hc/en-us/articles/115005719447"}],"parent":"Security","target":"security"},{"topic":"Data privacy & spam","icon":false,"links":[{"title":"How can I bulk delete spam tickets in Zendesk?","url":"https://support.zendesk.com/hc/en-us/articles/360001481448-How-can-I-bulk-delete-spam-tickets-in-Zendesk-"},{"title":"How do I use the whitelist and blacklist to control access?","url":"https://support.zendesk.com/hc/en-us/articles/203663286-Using-the-whitelist-and-blacklist-to-control-access-to-Zendesk-Support"},{"title":"How can I stop a spam attack coming from my contact form?","url":"https://support.zendesk.com/hc/en-us/articles/360001560728-How-can-I-stop-a-spam-attack-coming-from-my-contact-form-"},{"title":"Where can I find a collection of spam resources?","url":"https://support.zendesk.com/hc/en-us/articles/360002046548"}],"parent":"Security","target":"security"},{"topic":"Native reporting","icon":false,"links":[{"title":"How do I use the Reporting Overview?","url":"https://support.zendesk.com/hc/en-us/articles/203662296-Using-the-Reporting-Overview"},{"title":"Why do I see discrepancies between Insights and the Reporting Overview?","url":"https://support.zendesk.com/hc/en-us/articles/230623107-Discrepancies-between-Insights-and-Reporting-Overview-"},{"title":"How do I monitor ticket activity and agent performance with reports?","url":"https://support.zendesk.com/hc/en-us/articles/203662266-Monitoring-ticket-activity-and-agent-performance-with-reports"}],"parent":"Reporting","target":"reporting"},{"topic":"Insights","icon":false,"links":[{"title":"Where can I find a collection of recipes for Insights reports?","url":"https://support.zendesk.com/hc/en-us/articles/208225158-Zendesk-Insights-recipes-reference-Professional-and-Enterprise-"},{"title":"How do I build custom reports in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/231249907-Building-custom-reports-in-Insights-Professional-and-Enterprise-"},{"title":"How do I create dashboards in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/203662436-Creating-dashboards-in-Insights-Professional-and-Enterprise-"}],"parent":"Reporting","target":"reporting"},{"topic":"Metrics & data sets","icon":false,"links":[{"title":"What are the default Insights metrics and metric filters?","url":"https://support.zendesk.com/hc/en-us/articles/206544348-Insights-metrics-reference-Professional-and-Enterprise-"},{"title":"How do I create custom metrics in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/222794107-Creating-custom-metrics-in-Insights"},{"title":"How frequently does Support data sync to my Insights project?","url":"https://support.zendesk.com/hc/en-us/articles/224903347-How-frequently-does-my-Support-data-sync-to-my-Insights-project-"}],"parent":"Reporting","target":"reporting"},{"topic":"Exports","icon":false,"links":[{"title":"How do I export data to a JSON, CSV, or XML file?","url":"https://support.zendesk.com/hc/en-us/articles/203662346-Exporting-data-to-a-JSON-CSV-or-XML-file-Professional-and-Enterprise-"},{"title":"What are my options for exporting tickets?","url":"https://support.zendesk.com/hc/en-us/articles/115003627608-Ticket-export-options-"},{"title":"How can I export a list of users?","url":"https://support.zendesk.com/hc/en-us/articles/224736828-How-can-I-export-a-list-of-users-"}],"parent":"Reporting","target":"reporting"},{"topic":"CSAT","icon":false,"links":[{"title":"How do I use CSAT?","url":"https://support.zendesk.com/hc/en-us/articles/203662256-Using-CSAT-Professional-and-Enterprise-"},{"title":"How do I customize my customer satisfaction survey?","url":"https://support.zendesk.com/hc/en-us/articles/203660816-Customizing-your-customer-satisfaction-survey"},{"title":"How do I view my customer satisfaction score and ratings?","url":"https://support.zendesk.com/hc/en-us/articles/204113956-Viewing-customer-satisfaction-score-and-ratings-Professional-and-Enterprise-"}],"parent":"Reporting","target":"reporting"},{"topic":"NPS","icon":false,"links":[{"title":"How do I create and send a Net Promoter Score℠ survey?","url":"https://support.zendesk.com/hc/en-us/articles/203755166-Creating-and-sending-a-Net-Promoter-Score-survey-to-measure-customer-loyalty"},{"title":"Where can I learn about Net Promoter Scores℠?","url":"https://support.zendesk.com/hc/en-us/articles/217101828-About-Net-Promoter-Scores-"},{"title":"How do I analyze my Net Promoter Score℠ survey results?","url":"https://support.zendesk.com/hc/en-us/articles/203981113-Analyzing-your-Net-Promoter-Score-survey-results-Professional-Add-on-and-Enterprise-Add-on-"}],"parent":"Reporting","target":"reporting"},{"topic":"Billing","icon":false,"links":[{"title":"Where can I find answers to common billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/218995728/"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"},{"title":"How can I change the credit card on file for my account?","url":"https://support.zendesk.com/hc/en-us/articles/228091967-How-can-I-change-the-credit-card-on-file-for-my-account-"},{"title":"How is text usage priced?","url":"https://support.zendesk.com/hc/en-us/articles/234803407-Text-usage-pricing-Talk-Team-Professional-and-Enterprise-"},{"title":"Where can I find answers to common Talk billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/360000604888-Zendesk-Talk-billing-FAQ"}],"parent":"Accounts","target":"accounts"},{"topic":"Plans & pricing","icon":false,"links":[{"title":"How can I update my Support subscription?","url":"https://support.zendesk.com/hc/en-us/articles/225095107-How-can-I-update-my-Support-subscription-"},{"title":"Where can I learn about Zendesk Support plan types?","url":"https://support.zendesk.com/hc/en-us/articles/212374637-About-Zendesk-Support-plan-types"},{"title":"How can I add agent seats to my subscription?","url":"https://support.zendesk.com/hc/en-us/articles/223326068-Adding-agent-seats-to-your-subscription"},{"title":"Where can I learn more about add-ons for my plan?","url":"https://support.zendesk.com/hc/en-us/articles/217547487"}],"parent":"Accounts","target":"accounts"},{"topic":"Account changes","icon":false,"links":[{"title":"How can I grant Zendesk temporary access to my account?","url":"https://support.zendesk.com/hc/en-us/articles/115001753608-Granting-Zendesk-temporary-access-to-your-account"},{"title":"How can I change the owner of my Support account?","url":"https://support.zendesk.com/hc/en-us/articles/226885727-Changing-Support-Account-Ownership"},{"title":"What are best practices for removing agents?","url":"https://support.zendesk.com/hc/en-us/articles/203661156-Best-practices-for-removing-agents"}],"parent":"Accounts","target":"accounts"},{"topic":"Web Widget","icon":false,"links":[{"title":"What are some options for advanced customization of the Web Widget?","url":"https://support.zendesk.com/hc/en-us/articles/229167008-Advanced-customization-of-your-Web-Widget"},{"title":"How do I use the web widget?","url":"https://support.zendesk.com/hc/en-us/articles/203908456-Using-Web-Widget-to-embed-customer-service-in-your-website"},{"title":"How do I add the Web Widget to my website or Help Center?","url":"https://support.zendesk.com/hc/en-us/articles/115009522787-Adding-the-Web-Widget-to-your-website-or-Help-Center"}],"parent":"Channels","target":"channels"},{"topic":"Email","icon":false,"links":[{"title":"How do I add support addresses for users to submit tickets to?","url":"https://support.zendesk.com/hc/en-us/articles/203663336-Adding-support-addresses-for-users-to-submit-tickets"},{"title":"How do I forward incoming email to create tickets?","url":"https://support.zendesk.com/hc/en-us/articles/203663266-Forwarding-incoming-email-to-Zendesk-Support"},{"title":"How can I allow Zendesk to send email on behalf of my email domain?","url":"https://support.zendesk.com/hc/en-us/articles/203683886-Allowing-Zendesk-to-send-email-on-behalf-of-your-email-domain"},{"title":"Where can I find a collection of email resources?","url":"https://support.zendesk.com/hc/en-us/articles/203663306"},{"title":"How do I get started with the email channel?","url":"https://support.zendesk.com/hc/en-us/articles/203663256"}],"parent":"Channels","target":"channels"},{"topic":"Social media","icon":false,"links":[{"title":"How do I set up my Facebook channel?","url":"https://support.zendesk.com/hc/en-us/articles/203661556-Setting-up-your-Facebook-channel"},{"title":"How do I set up my Twitter channel?","url":"https://support.zendesk.com/hc/en-us/articles/203661546-Setting-up-your-Twitter-channel"},{"title":"Why do I get an error when I attempt to add my Facebook page?","url":"https://support.zendesk.com/hc/en-us/articles/115000535427-When-trying-to-add-my-Facebook-page-it-says-I-am-not-an-Administrator"}],"parent":"Channels","target":"channels"},{"topic":"Answer Bot","icon":false,"links":[{"title":"Where can I find a collection of Answer Bot resources?","url":"https://support.zendesk.com/hc/en-us/articles/230808087-Answer-Bot-resources"},{"title":"How do I enable, disable, and set up Answer Bot?","url":"https://support.zendesk.com/hc/en-us/articles/115004477627"},{"title":"How do I analyze my Answer Bot activity?","url":"https://support.zendesk.com/hc/en-us/articles/115011598407"}],"parent":"Channels","target":"channels"},{"topic":"SDK","icon":false,"links":[{"title":"How do I use the Support SDK?","url":"https://support.zendesk.com/hc/en-us/articles/204256073-Embedding-customer-service-in-mobile-apps-with-the-Support-SDK"},{"title":"What are my options for embedding Zendesk Support in my mobile app(s)?","url":"https://support.zendesk.com/hc/en-us/articles/115012700587-Embed-Zendesk-Support"},{"title":"Why do all requests from the Mobile Support SDK fail?","url":"https://support.zendesk.com/hc/en-us/articles/360000040167-Why-do-all-requests-from-the-Mobile-Support-SDK-suddenly-fail-with-a-403-Forbidden-error-code-"}],"parent":"Channels","target":"channels"},{"topic":"API","icon":false,"links":[{"title":"How do I generate a new API token?","url":"https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-"},{"title":"How do I use OAuth authentication with my application?","url":"https://support.zendesk.com/hc/en-us/articles/203663836-Using-OAuth-authentication-with-your-application"},{"title":"Where can a beginner find a guide to the Zendesk API?","url":"https://support.zendesk.com/hc/en-us/articles/231426867-Beginner-s-Guide-to-the-Zendesk-API"},{"title":"How can I create webhooks with the HTTP target?","url":"https://support.zendesk.com/hc/en-us/articles/204890268-Creating-webhooks-with-the-HTTP-target"}],"parent":"Channels","target":"channels"},{"topic":"Salesforce","icon":false,"links":[{"title":"How do I get started with Zendesk for Salesforce v5?","url":"https://support.zendesk.com/hc/en-us/articles/203660026-Zendesk-for-Salesforce-v5-Getting-Started"},{"title":"How do I install the Zendesk for Salesforce app in Salesforce?","url":"https://support.zendesk.com/hc/en-us/articles/203660036-Salesforce-Installing-the-Zendesk-for-Salesforce-app-in-Salesforce"},{"title":"How do I send Zendesk tickets into Salesforce?","url":"https://support.zendesk.com/hc/en-us/articles/203660006-Salesforce-Setting-up-sending-Zendesk-tickets-into-Salesforce"},{"title":"How do I configure user and organization syncing in Salesforce?","url":"https://support.zendesk.com/hc/en-us/articles/203659996-Salesforce-Configuring-user-and-organization-syncing-in-Salesforce"}],"parent":"Integrations","target":"integrations"},{"topic":"JIRA","icon":false,"links":[{"title":"How do I set up the Zendesk Support for JIRA integration?","url":"https://support.zendesk.com/hc/en-us/articles/203660196"},{"title":"How do I use the JIRA field syncing feature?","url":"https://support.zendesk.com/hc/en-us/articles/115004257108"},{"title":"How do I use the Zendesk Support for JIRA integration?","url":"https://support.zendesk.com/hc/en-us/articles/203660196"}],"parent":"Integrations","target":"integrations"},{"topic":"Magento","icon":false,"links":[{"title":"How do I install the Zendesk extension for Magento?","url":"https://support.zendesk.com/hc/en-us/articles/203660046-Magento-Integration-Installing-the-Zendesk-extension-for-Magento"},{"title":"How do I install the Magento App for Zendesk?","url":"https://support.zendesk.com/hc/en-us/articles/203660066-Magento-Integration-Installing-the-Magento-App-for-Zendesk"}],"parent":"Integrations","target":"integrations"},{"topic":"Shopify","icon":false,"links":[{"title":"How do I set up the Zendesk Support for Shopify integration?","url":"https://support.zendesk.com/hc/en-us/articles/203660116-Setting-up-Zendesk-Support-for-Shopify-integration"},{"title":"How do I upgrade from Shopify Integration V1 to V2?","url":"https://support.zendesk.com/hc/en-us/articles/115007599588-Upgrading-from-Shopify-Integration-V1-to-V2"}],"parent":"Integrations","target":"integrations"},{"topic":"Wordpress","icon":false,"links":[{"title":"How do I set up and use the Zendesk Support for Wordpress plugin?","url":"https://support.zendesk.com/hc/en-us/articles/203659896-Setting-up-and-using-the-Zendesk-Support-for-Wordpress-plugin"},{"title":"How do I set up single sign-on (SSO) for WordPress?","url":"https://support.zendesk.com/hc/en-us/articles/203659866-Setting-up-single-sign-on-SSO-for-WordPress"}],"parent":"Integrations","target":"integrations"},{"topic":"Support workflow","icon":false,"links":[{"title":"How do I use the Conditional Fields app?","url":"https://support.zendesk.com/hc/en-us/articles/203662476-Using-the-Conditional-Fields-app-Professional-Add-on-and-Enterprise-"},{"title":"How do I set up the Time Tracking app?","url":"https://support.zendesk.com/hc/en-us/articles/203662506-Setting-up-the-Time-Tracking-app-Professional-and-Enterprise-"},{"title":"How do I use the Slack for Zendesk integration?","url":"https://support.zendesk.com/hc/en-us/articles/360001353047-Using-the-Slack-for-Zendesk-integration"}],"parent":"Integrations","target":"integrations"},{"topic":"Users & roles","icon":false,"links":[{"title":"How can I bulk import users?","url":"https://support.zendesk.com/hc/en-us/articles/203661996-Bulk-importing-users-"},{"title":"How do I create and assign custom roles for agents?","url":"https://support.zendesk.com/hc/en-us/articles/203662026-Creating-custom-roles-and-assigning-agents-Enterprise-"},{"title":"How do I create, manage, and use groups?","url":"https://support.zendesk.com/hc/en-us/articles/203661966-Creating-managing-and-using-groups"},{"title":"How do I create custom fields for users?","url":"https://support.zendesk.com/hc/en-us/articles/203662066-Adding-custom-fields-to-users"}],"parent":"Tickets & users","target":"tickets-users"},{"topic":"Organizations","icon":false,"links":[{"title":"How do I create, manage, and use organizations?","url":"https://support.zendesk.com/hc/en-us/articles/203661976-Creating-managing-and-using-organizations"},{"title":"How can I bulk import organizations?","url":"https://support.zendesk.com/hc/en-us/articles/115007490787-Bulk-importing-organizations"},{"title":"What&apos;s the difference between organizations and groups?","url":"https://support.zendesk.com/hc/en-us/articles/203661766-About-organizations-and-groups"},{"title":"How do I create custom fields for organizations?","url":"https://support.zendesk.com/hc/en-us/articles/203662076-Adding-custom-fields-to-organizations"}],"parent":"Tickets & users","target":"tickets-users"},{"topic":"Fields & forms","icon":false,"links":[{"title":"How do I create and use custom ticket fields?","url":"https://support.zendesk.com/hc/en-us/articles/203661496-Adding-custom-fields-to-your-tickets-and-support-request-forms"},{"title":"What are ticket fields and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203661506-About-ticket-fields"},{"title":"How do I create ticket forms to support multiple request types?","url":"https://support.zendesk.com/hc/en-us/articles/203661616-Creating-ticket-forms-to-support-multiple-request-types-Professional-add-on-and-Enterprise-"},{"title":"How do I manage my ticket forms?","url":"https://support.zendesk.com/hc/en-us/articles/203661636-Managing-your-ticket-forms-"}],"parent":"Tickets & users","target":"tickets-users"},{"topic":"Multibrand","icon":false,"links":[{"title":"Where can I find a collection of Multibrand resources?","url":"https://support.zendesk.com/hc/en-us/articles/204579233-Multibrand-resources-Enterprise-"},{"title":"How do I set up multiple brands?","url":"https://support.zendesk.com/hc/en-us/articles/204108983-Setting-up-multiple-brands-Enterprise-"},{"title":"How do I manage multiple brands?","url":"https://support.zendesk.com/hc/en-us/articles/204577973-Managing-multiple-brands-Enterprise-"}],"parent":"Tickets & users","target":"tickets-users"},{"topic":"Multi-language","icon":false,"links":[{"title":"How do I add multiple language support for my end users?","url":"https://support.zendesk.com/hc/en-us/articles/203663376-Adding-multiple-languages-to-Zendesk-Support-Professional-and-Enterprise-"},{"title":"How can I leverage dynamic content to provide Multi-language support?","url":"https://support.zendesk.com/hc/en-us/articles/203663356-Providing-multiple-language-support-with-dynamic-content-Professional-and-Enterprise-"},{"title":"How are users&apos; languages set in Support?","url":"https://support.zendesk.com/hc/en-us/articles/115007231608-How-are-users-languages-set-in-Support-"}],"parent":"Tickets & users","target":"tickets-users"},{"topic":"Working with tickets","icon":false,"links":[{"title":"What are tags and how do they work?","url":"https://support.zendesk.com/hc/en-us/articles/203662096-About-tags"},{"title":"Where can I view a list of Support placeholders?","url":"https://support.zendesk.com/hc/en-us/articles/203662156-Zendesk-Support-placeholders-reference"},{"title":"How can I view all the events and actions taken on a ticket?","url":"https://support.zendesk.com/hc/en-us/articles/203691176-Viewing-all-events-of-a-ticket"}],"parent":"Tickets & users","target":"tickets-users"}]',
+      'guide': '[{"topic":"User roles","icon":false,"links":[{"title":"What Guide permissions can I grant to users?","url":"https://support.zendesk.com/hc/en-us/articles/218113638"},{"title":"How do users submit and track requests in the Help Center?","url":"https://support.zendesk.com/hc/en-us/articles/115002997048"},{"title":"How do I manage editing and publishing rights?","url":"https://support.zendesk.com/hc/en-us/articles/360001211527"}],"parent":"User roles","target":"user-roles"},{"topic":"Restricting content","icon":false,"links":[{"title":"How do I set view permissions on an article?","url":"https://support.zendesk.com/hc/en-us/articles/225031208"},{"title":"How do I create user segments for Guide user permissions?","url":"https://support.zendesk.com/hc/en-us/articles/115007686307"},{"title":"What are the Guide user permissions?","url":"https://support.zendesk.com/hc/en-us/articles/360001555967"},{"title":"How do I moderate end user content?","url":"https://support.zendesk.com/hc/en-us/articles/203664466"}],"parent":"Help Center","target":"help-center"},{"topic":"Customization","icon":false,"links":[{"title":"How do I use my own theme assets?","url":"https://support.zendesk.com/hc/en-us/articles/115012399428"},{"title":"What are some options for customizing my Help Center theme?","url":"https://support.zendesk.com/hc/en-us/articles/203664326"},{"title":"What are some options for customizing my Help Center CSS?","url":"https://support.zendesk.com/hc/en-us/articles/203664426"},{"title":"What are some options for customizing my Help Center JavaScript?","url":"https://support.zendesk.com/hc/en-us/articles/218035948"}],"parent":"Help Center","target":"help-center"},{"topic":"Community","icon":false,"links":[{"title":"How do I manage community posts?","url":"https://support.zendesk.com/hc/en-us/articles/203664406"},{"title":"How do I manage community discussion topics?","url":"https://support.zendesk.com/hc/en-us/articles/205586568"},{"title":"How can I restrict access to community content?","url":"https://support.zendesk.com/hc/en-us/articles/225031168"}],"parent":"Help Center","target":"help-center"},{"topic":"Knowledge management","icon":false,"links":[{"title":"How do I update articles in bulk?","url":"https://support.zendesk.com/hc/en-us/articles/360001912187"},{"title":"Can I restrict access to articles?","url":"https://support.zendesk.com/hc/en-us/articles/360000109987"},{"title":"How do I restore archived articles?","url":"https://support.zendesk.com/hc/en-us/articles/235721587"},{"title":"Can I import Google docs into my Knowledge base?","url":"https://support.zendesk.com/hc/en-us/articles/360001228548"},{"title":"How do I use labels on my articles?","url":"https://support.zendesk.com/hc/en-us/articles/115010596788"},{"title":"How should I organize my Knowledge Base?","url":"https://support.zendesk.com/hc/en-us/articles/218222877"},{"title":"How do I get started with Guide?","url":"https://support.zendesk.com/hc/en-us/articles/203664346"}],"parent":"Content","target":"content"},{"topic":"Working with articles","icon":false,"links":[{"title":"What is Guide Team Publishing?","url":"https://support.zendesk.com/hc/en-us/articles/360000716047"},{"title":"How do I create and edit articles?","url":"https://support.zendesk.com/hc/en-us/articles/203664366"},{"title":"How do I insert video in articles?","url":"https://support.zendesk.com/hc/en-us/articles/115005220167"},{"title":"How do I set viewing and editing permissions on articles?","url":"https://support.zendesk.com/hc/en-us/articles/224892667"}],"parent":"Content","target":"content"},{"topic":"Answer Bot","icon":false,"links":[{"title":"How do I use Answer Bot with web forms?","url":"https://support.zendesk.com/hc/en-us/articles/115013876508"},{"title":"How do I analyze Answer Bot activity?","url":"https://support.zendesk.com/hc/en-us/articles/115011598407"},{"title":"How do I use labels with Answer Bot?","url":"https://support.zendesk.com/hc/en-us/articles/115012444447"},{"title":"What are some Answer Bot best practices?","url":"https://support.zendesk.com/hc/en-us/articles/115011210367"},{"title":"How do agents work with Answer Bot?","url":"https://support.zendesk.com/hc/en-us/articles/115010243928"}],"parent":"Answer Bot","target":"answer-bot"},{"topic":"Localization","icon":false,"links":[{"title":"How can I configure my Help Center to support multiple languages?","url":"https://support.zendesk.com/hc/en-us/articles/224857687"},{"title":"How do I localize Help Center content to my end users&apos; languages?","url":"https://support.zendesk.com/hc/en-us/articles/203664336"},{"title":"How are user languages detected?","url":"https://support.zendesk.com/hc/en-us/articles/115007994127"}],"parent":"Localization","target":"localization"},{"topic":"Billing & accounts","icon":false,"links":[{"title":"What are the Zendesk Guide plan types?","url":"https://support.zendesk.com/hc/en-us/articles/115005153727"},{"title":"What browsers are Help Center supported in?","url":"https://support.zendesk.com/hc/en-us/articles/115001505447"},{"title":"Are there limits for the Knowledge Base or theme size?","url":"https://support.zendesk.com/hc/en-us/articles/115014408008"}],"parent":"Billing & accounts","target":"billing-accounts"},{"topic":"Knowledge Capture app","icon":false,"links":[{"title":"How do I create Knowledge Capture templates?","url":"https://support.zendesk.com/hc/en-us/articles/115002374987"},{"title":"How do I install the Knowledge Capture app?","url":"https://support.zendesk.com/hc/en-us/articles/115003628547"},{"title":"Where can I find a collection of Knowledge Capture app resources?","url":"https://support.zendesk.com/hc/en-us/articles/360001975088"},{"title":"How do I search for and link articles using the Knowledge Capture app?","url":"https://support.zendesk.com/hc/en-us/articles/115003373367"},{"title":"How do I analyze my Knowledge Capture activity?","url":"https://support.zendesk.com/hc/en-us/articles/115004881807"}],"parent":"Content","target":"content"},{"topic":"Reporting","icon":false,"links":[{"title":"How do I analyze my Help Center data?","url":"https://support.zendesk.com/hc/en-us/articles/203664486"},{"title":"How do I analyze Help Center search data?","url":"https://support.zendesk.com/hc/en-us/articles/203664476"},{"title":"What metrics exist for Zendesk Guide?","url":"https://explore.zendesk.com/hc/en-us/articles/360001946948"}],"parent":"Reporting","target":"reporting"}]',
+      'talk': '[{"topic":"Managing numbers","icon":false,"links":[{"title":"How do I add Zendesk Talk numbers?","url":"https://support.zendesk.com/hc/en-us/articles/218004987"},{"title":"How do I manage Zendesk Talk numbers?","url":"https://support.zendesk.com/hc/en-us/articles/203906366"},{"title":"Can I select a Talk number from my country?","url":"https://support.zendesk.com/hc/en-us/articles/360002069468"},{"title":"How do I add and manage Text numbers?","url":"https://support.zendesk.com/hc/en-us/articles/235638868-Adding-and-managing-Text-numbers-Talk-Team-Professional-and-Enterprise-"},{"title":"How do I add Text to my Talk number?","url":"https://support.zendesk.com/hc/en-us/articles/115000448108-How-do-I-add-Text-to-my-Talk-number-"}],"parent":"Managing numbers","target":"managing-numbers"},{"topic":"Talk configuration","icon":false,"links":[{"title":"How do I get started with Zendesk Talk?","url":"https://support.zendesk.com/hc/en-us/articles/217520088"},{"title":"How do I enable customer callback?","url":"https://support.zendesk.com/hc/en-us/articles/115004049908"},{"title":"How do Talk calls become tickets?","url":"https://support.zendesk.com/hc/en-us/articles/230553307"},{"title":"How do I enable overflow call routing?","url":"https://support.zendesk.com/hc/en-us/articles/360001900507"},{"title":"What are the recording options in Zendesk Talk?","url":"https://support.zendesk.com/hc/en-us/articles/213857708"},{"title":"What are the network requirements for using Talk?","url":"https://support.zendesk.com/hc/en-us/articles/115005468288-Talk-network-requirements"},{"title":"How do I manage my outgoing greetings?","url":"https://support.zendesk.com/hc/en-us/articles/214631347-Managing-outgoing-greetings"}],"parent":"Configuration","target":"configuration"},{"topic":"Text configuration","icon":false,"links":[{"title":"How do I use Text notifications with triggers?","url":"https://support.zendesk.com/hc/en-us/articles/235638348"},{"title":"How do I create Text notifications?","url":"https://support.zendesk.com/hc/en-us/articles/235638348-Using-Text-notifications-with-triggers-Recipes-and-tips"},{"title":"How can I automate Text support with triggers?","url":"https://support.zendesk.com/hc/en-us/articles/235709947-Automating-SMS-support-with-Text-triggers-Talk-Team-Professional-and-Enterprise-"},{"title":"How can I prevent duplicate notifications on Text tickets?","url":"https://support.zendesk.com/hc/en-us/articles/115010144347-Texting-users-also-sends-email-notifications-to-them"},{"title":"How do I get started with Text?","url":"https://support.zendesk.com/hc/en-us/articles/235709587-Getting-started-with-Text-Team-Professional-and-Enterprise-"}],"parent":"Configuration","target":"configuration"},{"topic":"Routing","icon":false,"links":[{"title":"How are calls routed to my agents in Zendesk Talk?","url":"https://support.zendesk.com/hc/en-us/articles/229415607"},{"title":"How can I route incoming calls with an IVR menu?","url":"https://support.zendesk.com/hc/en-us/articles/214630317-Route-incoming-calls-with-IVR-Talk-Professional-and-Enterprise-"},{"title":"How do I forward calls from Talk to a personal phone?","url":"https://support.zendesk.com/hc/en-us/articles/235674008-How-do-I-forward-calls-from-Talk-to-a-personal-phone-"},{"title":"How can I route incoming calls to groups of agents?","url":"https://support.zendesk.com/hc/en-us/articles/216040137-Routing-incoming-calls-to-groups-of-agents-Talk-Team-Professional-and-Enterprise-"}],"parent":"Routing","target":"routing"},{"topic":"Reporting","icon":false,"links":[{"title":"How do I analyze call data in the Talk dashboard?","url":"https://support.zendesk.com/hc/en-us/articles/214629687"},{"title":"How do I analyze call data in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/213857548-Analyzing-call-data-with-Insights-Talk-Professional-and-Enterprise-"},{"title":"What are the default metrics and metric filters on the Talk dashboard?","url":"https://support.zendesk.com/hc/en-us/articles/217377628-Zendesk-Talk-dashboard-metrics-reference-Talk-Team-Professional-and-Enterprise-"},{"title":"What makes up the calls dataset in Insights?","url":"https://support.zendesk.com/hc/en-us/articles/115000716748-Understanding-the-calls-dataset-in-Insights"}],"parent":"Reporting","target":"reporting"},{"topic":"Using Talk and Text","icon":false,"links":[{"title":"Where can I find a collection of Talk resources?","url":"https://support.zendesk.com/hc/en-us/articles/204238816-Zendesk-Talk-resources"},{"title":"How do I receive and place calls in Talk?","url":"https://support.zendesk.com/hc/en-us/articles/203690836-Receiving-and-placing-calls-in-Zendesk-Talk"},{"title":"What are the steps for setting up my browser or phone for calls?","url":"https://support.zendesk.com/hc/en-us/articles/230895328-Setting-up-your-browser-or-phone-for-calls"}],"parent":"Using Talk and Text","target":"using-talk-and-text"},{"topic":"Accounts and billing","icon":false,"links":[{"title":"How am I billed for Text usage?","url":"https://support.zendesk.com/hc/en-us/articles/234803407"},{"title":"What are some tips for troubleshooting Talk issues?","url":"https://support.zendesk.com/hc/en-us/articles/203661086-Zendesk-Talk-Troubleshooting-Tips"}],"parent":"Accounts and billing","target":"accounts-and-billing"}]',
+      'crossProduct': '[{"topic": "Cross product", "target": "cross-product", "parent": "Cross product", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/360022177594", "title": "How do I manage security settings in Admin Center?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/360022178014", "title": "How do I use the Zendesk Marketplace?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/360022366953-Complying-with-GDPR", "title": "How can I be GDPR-compliant using Zendesk products?"}], "icon": false}, {"topic": "Accounts", "target": "accounts", "parent": "Accounts", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/218995728/", "title": "Where can I find answers to common billing questions?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-", "title": "How can I resolve issues when my credit card has failed?"}, {"url": "https://support.zendesk.com/hc/en-us/sections/360004108413", "title": "Where can I see summaries of past Service Incidents?"}, {"url": "https://status.zendesk.com/", "title": "Is Zendesk currently experiencing a Service Incident?"}], "icon": false}, {"topic": "Data privacy & spam", "target": "data-privacy-spam", "parent": "Data privacy & spam", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/360001481448-How-can-I-bulk-delete-spam-tickets-in-Zendesk-", "title": "How can I bulk delete spam tickets in Zendesk?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/203663286-Using-the-whitelist-and-blacklist-to-control-access-to-Zendesk-Support", "title": "How do I use the whitelist and blacklist to control access?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/360001560728-How-can-I-stop-a-spam-attack-coming-from-my-contact-form-", "title": "How can I stop a spam attack coming from my contact form?"}], "icon": false}, {"topic": "Billing", "target": "accounts", "parent": "Accounts", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/218995728/", "title": "Where can I find answers to common billing questions?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-", "title": "How can I resolve issues when my credit card has failed?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/228091967-How-can-I-change-the-credit-card-on-file-for-my-account-", "title": "How can I change the credit card on file for my account?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/234803407-Text-usage-pricing-Talk-Team-Professional-and-Enterprise-", "title": "How is text usage priced?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/360000604888-Zendesk-Talk-billing-FAQ", "title": "Where can I find answers to common Talk billing questions?"}], "icon": false}, {"topic": "Plans & pricing", "target": "accounts", "parent": "Accounts", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/225095107-How-can-I-update-my-Support-subscription-", "title": "How can I update my Support subscription?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/212374637-About-Zendesk-Support-plan-types", "title": "Where can I learn about Zendesk Support plan types?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/223326068-Adding-agent-seats-to-your-subscription", "title": "How can I add agent seats to my subscription?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/217547487", "title": "Where can I learn more about add-ons for my plan?"}], "icon": false}, {"topic": "Account changes", "target": "accounts", "parent": "Accounts", "links": [{"url": "https://support.zendesk.com/hc/en-us/articles/115001753608-Granting-Zendesk-temporary-access-to-your-account", "title": "How can I grant Zendesk temporary access to my account?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/226885727-Changing-Support-Account-Ownership", "title": "How can I change the owner of my Support account?"}, {"url": "https://support.zendesk.com/hc/en-us/articles/203661156-Best-practices-for-removing-agents", "title": "What are best practices for removing agents?"}], "icon": false}]',
+      'updates': []
+    }
+
+    let config = configMap[PRODUCT] || '[{"topic":"Accounts","icon":false,"links":[{"title":"Where can I find answers to common billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/218995728/"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"},{"title":"Where can I see summaries of past Service Incidents?","url":"https://help.zendesk.com/hc/en-us/sections/206226927-Service-notifications"},{"title":"Is Zendesk currently experiencing a Service Incident?","url":"https://status.zendesk.com/"}],"parent":"Accounts","target":"accounts"},{"topic":"Cross product","icon":false,"links":[{"title":"How do I manage security settings in Admin Center?","url":"https://help.zendesk.com/hc/en-us/articles/360002018167"},{"title":"How do I use the Zendesk Marketplace?","url":"https://help.zendesk.com/hc/en-us/articles/115010826128"},{"title":"How can I be GDPR-compliant using Zendesk products?","url":"https://help.zendesk.com/hc/en-us/articles/360000586767-Complying-with-GDPR"}],"parent":"Cross product","target":"cross-product"},{"topic":"Data privacy & spam","icon":false,"links":[{"title":"How can I bulk delete spam tickets in Zendesk?","url":"https://support.zendesk.com/hc/en-us/articles/360001481448-How-can-I-bulk-delete-spam-tickets-in-Zendesk-"},{"title":"How do I use the whitelist and blacklist to control access?","url":"https://support.zendesk.com/hc/en-us/articles/203663286-Using-the-whitelist-and-blacklist-to-control-access-to-Zendesk-Support"},{"title":"How can I stop a spam attack coming from my contact form?","url":"https://support.zendesk.com/hc/en-us/articles/360001560728-How-can-I-stop-a-spam-attack-coming-from-my-contact-form-"}],"parent":"Data privacy & spam","target":"data-privacy-spam"},{"topic":"Billing","icon":false,"links":[{"title":"Where can I find answers to common billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/218995728/"},{"title":"How can I resolve issues when my credit card has failed?","url":"https://support.zendesk.com/hc/en-us/articles/203661736-Resolving-issues-when-your-credit-card-fails-"},{"title":"How can I change the credit card on file for my account?","url":"https://support.zendesk.com/hc/en-us/articles/228091967-How-can-I-change-the-credit-card-on-file-for-my-account-"},{"title":"How is text usage priced?","url":"https://support.zendesk.com/hc/en-us/articles/234803407-Text-usage-pricing-Talk-Team-Professional-and-Enterprise-"},{"title":"Where can I find answers to common Talk billing questions?","url":"https://support.zendesk.com/hc/en-us/articles/360000604888-Zendesk-Talk-billing-FAQ"}],"parent":"Accounts","target":"accounts"},{"topic":"Plans & pricing","icon":false,"links":[{"title":"How can I update my Support subscription?","url":"https://support.zendesk.com/hc/en-us/articles/225095107-How-can-I-update-my-Support-subscription-"},{"title":"Where can I learn about Zendesk Support plan types?","url":"https://support.zendesk.com/hc/en-us/articles/212374637-About-Zendesk-Support-plan-types"},{"title":"How can I add agent seats to my subscription?","url":"https://support.zendesk.com/hc/en-us/articles/223326068-Adding-agent-seats-to-your-subscription"},{"title":"Where can I learn more about add-ons for my plan?","url":"https://support.zendesk.com/hc/en-us/articles/217547487"}],"parent":"Accounts","target":"accounts"},{"topic":"Account changes","icon":false,"links":[{"title":"How can I grant Zendesk temporary access to my account?","url":"https://support.zendesk.com/hc/en-us/articles/115001753608-Granting-Zendesk-temporary-access-to-your-account"},{"title":"How can I change the owner of my Support account?","url":"https://support.zendesk.com/hc/en-us/articles/226885727-Changing-Support-Account-Ownership"},{"title":"What are best practices for removing agents?","url":"https://support.zendesk.com/hc/en-us/articles/203661156-Best-practices-for-removing-agents"}],"parent":"Accounts","target":"accounts"}]'
+
+    const $element = $('#homepage-common-questions')
+
+    if(config && config.length > 0 && $element.length === 1){
+      try {
+        config = JSON.parse(config)
+      } catch(err) {
+        dynamicContentJsonError('Common Questions ' + PRODUCT + ' Config')
+      }
+
+      /* Hard Coded All Questions Tab */
+      const processedTabs = ['all-questions']
+      const filterTabs = []
+
+      /* Detect All Other Tabs */
+      config.forEach(function(tab) {
+        if(!processedTabs.includes(tab.target)){
+          const filterTab = Object.assign({}, tab)
+          filterTab.icon = tabIcons[filterTabs.length]
+          filterTabs.push(filterTab)
+          processedTabs.push(filterTab.target)
+        }
+      })
+
+      const tmplFilterTabsContent = Handlebars.compile(Handlebars.partials.shadowBlocksLayout, {noEscape: true})
+      const context = {
+        content: tmplFilterTabsContent({cards: config}),
+        title: "Browse common questions",
+        tabs: filterTabs
+      }
+
+      Handlebars.helpers.compileTemplate({
+        element: $element,
+        context: context,
+        partial: Handlebars.partials.filterTabs
+      })
+
+      // Refresh Filtertabs listeners
+      function refreshFiltertabListeners() {
+        $('.tabs-filter-btns > .filter-btn').off('click')
+        $('.tabs-filter-btns > .filter-btn').on('click', function (evt) {
+          evt.stopPropagation()
+          evt.stopImmediatePropagation()
+
+          const $this = $(evt.currentTarget)
+          const target = $this.attr('for')
+          const $wrapper = $this.closest('.tabs-filter-wrapper')
+
+          $wrapper.find('.tabs-filter-btns > .active').toggleClass('active')
+          $this.toggleClass('active')
+
+          $wrapper.trigger('filtertabs.clicked', {
+            contentWrapper: $wrapper.find('.filtered-tabs').first(),
+            showAll: !!($this.data()).showAll,
+            target: target
+          })
+        })
+
+        $element.find('.tabs-filter-btns > .filter-btn').first().click()
+      }
+
+      $element.on('filtertabs.clicked', function (evt, data) {
+        if (data.showAll) {
+          var $hidden = data.contentWrapper.find('.shadow-blocks__card-wrapper:not(.visible)')
+          $hidden.addClass('visible')
+        } else {
+          var $visible = data.contentWrapper.find('.shadow-blocks__card-wrapper.visible')
+          $visible.toggleClass('visible')
+          var $hasAccount = data.contentWrapper.find('.shadow-blocks__card-wrapper[has="' + data.target + '"]')
+          $hasAccount.toggleClass('visible')
+        }
+      })
+
+      refreshFiltertabListeners()
+    }
+  })
+</script>
+
+<!-- community-banner.hbs -->
+<script>
+  $(document).ready(function() {
+    const root = $('#community-banner')
+    let url = ''
+    let communityLink = '<a href="/hc/en-us/community/topics">Community</a>'
+
+    if(communityLink.length > 0) {
+      url = root.data('page') === 'home' ? $(communityLink).attr('href') : $(communityLink).attr('href').replace('topics', 'posts/new')
+    }
+
+    const PRODUCT = getCurrentProduct()
+    const defaultBanner = "//theme.zdassets.com/theme_assets/1/15ef4d1fe5ac8a2d382aa2dc9bb1fcc136fa0ab3.jpg"
+    const bannerMap = {
+      help: defaultBanner,
+      chat: "//theme.zdassets.com/theme_assets/1/a303b6b12fc19bb2ca678591f0a8fe1b734e48cb.jpg",
+      connect: "//theme.zdassets.com/theme_assets/1/759f7bf79a0cd554afce3a634a5bab02d7c1bd16.jpg",
+      explore: "//theme.zdassets.com/theme_assets/1/97b469e4b66207d0e94b7ad6a454307a2dc7ecfb.jpg",
+      guide: "//theme.zdassets.com/theme_assets/1/35714d5002542dda2a9a2f78b8f255b49edeb9a0.jpg",
+      sell: "//theme.zdassets.com/theme_assets/1/4ff9e0a920547e97de244604b23e2bf5e0cd25a5.jpg",
+      support: "//theme.zdassets.com/theme_assets/1/915aa401ac4034f43819165e5cae4449f12f12b8.jpg",
+      talk: "//theme.zdassets.com/theme_assets/1/580c9093c6ff23f9baae9f726e7ee3aa83c51522.jpg"
+    }
+
+    const banner = bannerMap[PRODUCT] || defaultBanner
+    let titleClass = ''
+
+    if (['de', 'fr', 'pt-br', 'es'].indexOf(window.Modules.Utils.parseLocale(window.location.href)) > -1)  {
+      titleClass = 'long-title'
+    }
+
+    if(root.length > 0){
+      Handlebars.helpers.compileTemplate({
+        element: root,
+        context: {
+          page: "home",
+          title: "Take a hand, lend a hand",
+          titleClass: titleClass,
+          body: "Join our worldwide community to ask expert users for advice or share your own.",
+          url: url,
+          button: "Ask the community",
+          image: banner
+        },
+        partial: Handlebars.partials.communityBanner
+      })
+    }
+  });
+</script>
+
+<!-- community-posts.hbs -->
+<script>
+  (function() {
+    "use strict";
+
+    const ICONS = window.Modules.GardenIcons
+    const PRODUCT = getCurrentProduct();
+    const tabs = [
+      {
+        panel: 'posts',
+        icon: ICONS['duplicate-stroke'],
+        label: "Posts"
+      }
+    ]
+
+    const FEATURED_POSTS = {
+      support: "115009326108, 115008086807, 115007960327, 360004385087, 360001354567, 360028787334, 115008015387, 360004390707, 360004383387",
+      chat: "360019372553, 360019372553",
+      explore: "360019372553, 360019372553",
+      connect: "360019372553, 360019372553"
+    }
+
+    const filters = [
+      {
+        id: "recent",
+        icon: false,
+        name: "Recent Activity",
+        url: '/api/v2/community/posts.json?per_page=100&sort_by=updated_at&include=users,topics'
+      },
+      {
+        id: "trending",
+        icon: false,
+        name: "Trending",
+        url: '/api/v2/community/posts.json?per_page=100&sort_by=updated_at&include=users,topics'
+      },
+      {
+        id: "featured",
+        icon: false,
+        name: "Featured",
+        url: '/api/v2/community/posts/ID_PLACEHOLDER.json?include=users,topics',
+        ids: FEATURED_POSTS[PRODUCT] || FEATURED_POSTS['support']
+      },
+      {
+        id: "unanswered",
+        icon: false,
+        name: "Unanswered",
+        url: '/api/v2/community/posts.json?per_page=100&sort_by=created_at&include=users,topics'
+      }
+    ]
+
+    /* Parse JSON Configs */
+    const jsonConfigs = {
+      topics: '[{"topic": "General Discussion", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001144613", "title": "New Members: Start Here"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/115000545248", "title": "Community Announcements & Info"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200132066-General-Product-Feedback-", "title": "General Product Feedback"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000006347-Completed-Product-Feedback-Requests", "title": "Completed Feedback Requests - all products"}], "icon": false}, {"topic": "Support", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/200132056", "title": "Support Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001227833", "title": "Support User Tips & Tricks"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200132086", "title": "Zendesk-led Discussions About Support"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000033227-Business-Rules-Triggers-Macros-Automations", "title": "Business Rules - Triggers, Macros, & Automations"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200320247-Insights-Q-A-and-Reporting", "title": "Insights & Reporting Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/115000506348-Zendesk-Integrations", "title": "Integrations & Third-Party Apps"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000029867-Product-Feedback-Support", "title": "Support Product Feedback & Discussion"}], "icon": "support"}, {"topic": "Guide", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360000032687", "title": "Guide Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001217514", "title": "Guide User Tips & Tricks"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000031188-Guide-Themes-and-Customization", "title": "Guide Themes and Customization"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000030448-Guide-Best-Practices-Workflows-Tips", "title": "Zendesk-led Discussions About Guide"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000029847", "title": "Guide Product Feedback & Discussion"}], "icon": "guide"}, {"topic": "Chat", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001201053-Questions-Answers", "title": "Chat Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001279473-Chat-user-tips-tricks", "title": "Chat User Tips & Tricks"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001141174-Product-Feedback", "title": "Chat Product Feedback & Discussion"}], "icon": "chat"}, {"topic": "Explore", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001200893-Questions-Answers", "title": "Explore Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001140894-Best-Practices-Workflows-Tips", "title": "Explore Best Practices, Workflows, & Tips"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001200913-Product-Feedback", "title": "Explore Product Feedback & Discussion"}], "icon": "explore"}, {"topic": "Talk", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360000030428-Talk-Q-A", "title": "Talk Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000033207-Talk-Best-Practices-Workflows-and-Tips", "title": "Talk Best Practices, Workflows, & Tips"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000029887--Internal-Product-Feedback-Talk-", "title": "Talk Product Feedback & Discussion"}], "icon": "talk"}, {"topic": "Connect", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360000032947-Connect-Troubleshooting-and-Q-A", "title": "Connect Troubleshooting and Q&A"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000031208-Connect-Best-Practices-Workflows-Tips", "title": "Connect Best Practices, Workflows, & Tips"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000031228-Connect-Product-Feedback", "title": "Connect Product Feedback & Discussion"}], "icon": "connect"}, {"topic": "User Communities", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/200132346--%E6%97%A5%E6%9C%AC%E8%AA%9E-%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3", "title": "[\u65e5\u672c\u8a9e] \u30b3\u30df\u30e5\u30cb\u30c6\u30a3"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200128763--Deutsch-Community", "title": "Deutsch Community"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200128753--Fran%C3%A7ais-Communaut%C3%A9", "title": "Fran\u00e7ais Communaut\u00e9"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200132336--Espa%C3%B1ol-Comunidad", "title": "Espa\u00f1ol Comunidad"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200128743--Portugu%C3%AAs-do-Brasil-Comunidade", "title": "Portugu\u00eas do Brasil Comunidade"}], "icon": false}, {"topic": "Developer Community", "parent": null, "links": [{"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000000768-General-Discussion", "title": "Developer General Discussion"}, {"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000000788-Feature-Requests", "title": "Feature Requests"}, {"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000019807-REST-APIs", "title": "REST APIs"}, {"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000018808-Apps-framework", "title": "Apps Framework"}, {"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000018828-Mobile-SDKs", "title": "Mobile SDKs"}, {"url": "https://develop.zendesk.com/hc/en-us/community/topics/360000027708-Chat-Conversations-API", "title": "Chat Conversations API"}], "icon": false}]',
+      eaps: '[{"topic": "Support EAPs", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001230093-Zendesk-Support-EAP-Side-Conversations-Rich-Text-Editor", "title": "Side Conversations Rich Text Editor EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001230473-Zendesk-Support-EAP-Side-Conversations-API", "title": "Side Conversations API EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000028648-Zendesk-Support-EAP-Discord-Integration", "title": "Discord Integration EAP"}], "icon": "support"}, {"topic": "Guide EAPs", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001364113-Zendesk-Guide-EAP-User-Segment-OR-tags", "title": "NEW User Segment OR Tags"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000033647-Zendesk-Guide-EAP-Community-mentions", "title": "Community @mentions"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001261193-Zendesk-Guide-EAP-Scheduled-Publishing-Guide-Enterprise-only", "title": "Scheduled Publishing (Guide Enterprise)"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001242514-Zendesk-Guide-EAP-Search-across-multiple-Help-Centers", "title": "Search across multiple Help Centers"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001270453-Zendesk-Guide-EAP-Theming-API", "title": "Theming API EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000031888-Zendesk-Guide-EAP-Community-Alias-", "title": "Community Alias EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000029308-Zendesk-Guide-EAP-Answer-Bot-APIs", "title": "Answer Bot APIs EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200976108-Zendesk-Guide-EAP-New-Help-Center-Unified-Search-Results-Page", "title": "Help Center Unified Search Results Page EAP"}], "icon": "guide"}, {"topic": "Web Widget EAPs", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360000013028-Zendesk-EAP-Answer-Bot-for-Web-Widget", "title": "Answer Bot for Web Widget EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/200993567-Zendesk-Web-Widget-Beta-Web-Widget-Customizations", "title": "Web Widget Customizations EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/115000544227-Zendesk-Beta-Web-Widget-Performance", "title": "Web Widget Performance EAP"}], "icon": false}, {"topic": "Talk EAPs", "parent": null, "links": [{"url": "https://docs.google.com/forms/d/e/1FAIpQLSc_8tuSCGEHYrWFq3gaNPl-px7udOkXCszj2QDECknKw7bstA/viewform", "title": "Global Number EAP"}], "icon": "talk"}, {"topic": "Other EAPs", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001305853-Zendesk-Integration-EAP-Events-Connector-for-Amazon-EventBridge-", "title": "NEW Events Connector for Amazon EventBridge"}, {"url": "https://develop.zendesk.com/hc/en-us/community/posts/360033245834-New-Zendesk-Chat-SDKs-Early-Access-Program", "title": "NEW Zendesk Chat SDKs EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360001183394-Zendesk-Integration-EAP-Statuspage-for-Support-and-Chat", "title": "Status page for Support and Chat EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000029588-Zendesk-Developer-EAP-Answer-Bot-SDKs", "title": "Answer Bot SDKs EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000030748-Answer-Bot-for-Slack-EAP-", "title": "Answer Bot for Slack EAP"}, {"url": "https://support.zendesk.com/hc/en-us/community/topics/360000033087-Zendesk-Integrations-EAP-Slack-for-Side-Conversations", "title": "Slack for Side Conversations EAP"}], "icon": false}, {"topic": "Chat EAPs", "parent": null, "links": [{"url": "https://support.zendesk.com/hc/en-us/community/topics/360001140934-Zendesk-Chat-EAP-Redesigned-Agent-Experience", "title": "Redesigned Agent Interface EAP"}], "icon": "chat"}]'
+    }
+
+    Object.keys(jsonConfigs).forEach(function(key) {
+      try {
+        const parsedConfigs = JSON.parse(jsonConfigs[key])
+        jsonConfigs[key] = parsedConfigs
+      } catch(e) {
+        dynamicContentJsonError('Topics or EAPs')
+        jsonConfigs[key] = []
+      }
+      if(jsonConfigs[key]){
+        jsonConfigs[key] = jsonConfigs[key].map(function(item) {
+          if(item && item.icon && (typeof item.icon === 'string')){
+            item.icon = window.Modules.ProductIcons[item.icon]
+          }
+          return item
+        })
+      }
+    })
+
+    if(jsonConfigs.topics.length > 0){
+      tabs.push({
+        panel: 'topics',
+        icon: ICONS['speech-bubble-conversation-stroke'],
+        label: "Topics"
+      })
+    }
+
+    if(jsonConfigs.eaps.length > 0){
+      tabs.push({
+        panel: 'eaps',
+        icon: ICONS['clipboard-list-stroke'],
+        label: 'EAPs'
+      })
+    }
+
+    window.Modules = Object.assign({}, window.Modules || {}, {
+      communityPosts: {
+        title: "Browse community posts",
+        none: "No posts found.",
+        comment: "comment",
+        comments: "comments",
+        vote: "vote",
+        votes: "votes",
+        statusMap: {
+          planned: "Planned",
+          not_planned: "Not planned",
+          answered: "Answered",
+          completed: "Completed"
+        },
+        tabs: tabs,
+        filters: filters,
+        topics: jsonConfigs.topics,
+        eaps: jsonConfigs.eaps,
+        loadingGif: "//theme.zdassets.com/theme_assets/1/7eb075fb3220e4a248a73351fc5ad59e3be64586.gif"
+      }
+    })
+  })()
+</script>
+
+<!-- config.hbs -->
+<script>
+  let catID = false;
+  if (window.location.href.indexOf('categories/') >= 0) {
+    catID = window.location.href.split('categories/')[1].split('-')[0];
+  } else {
+    const categoryHref = $('ol.breadcrumbs :nth-child(2) a').attr('href');
+    if (categoryHref && categoryHref.indexOf('categories/') >= 0) {
+      catID = categoryHref.split('categories/')[1].split('-')[0];
+    }
+  }
+
+  window.Modules = Object.assign({}, window.Modules || {}, {
+    config: {
+      currentCategoryID: catID,
+      production: "true" === "true"
+    }
+  })
+</script>
+
+<!-- connect.hbs -->
+<script>
+  $(function () {
+    const PRODUCTION_ID = "pub-586ccf8c82a64bc133a551c64878e0b8"
+    const DEVELOPMENT_ID = "pub-69fca7978b4540cc04427c8856541ca2"
+
+    /* Initialize Connect */
+    !function (e, t) {
+      if (!window.outbound) {
+        for (var n = window.outbound = [], o = ["identify", "track", "handlePush", "registerApnsToken", "registerGcmToken", "disableApnsToken", "disableGcmToken"], r = 0; r < o.length; r++) {
+          var i = o[r]
+          n[i] = function (e) {
+            return function () {
+              var t = Array.prototype.slice.call(arguments)
+              return t.unshift(e), n.push(t), n
+            }
+          }(i)
+        }
+
+        if (!e.getElementById("outbound-js")) {
+          var s = e.createElement("script")
+          s.type = "text/javascript", s.id = "outbound-js", s.async = !0, s.src = "https://cdn.outbound.io/" + t + ".js"
+          var u = e.getElementsByTagName("script")[0]
+          u.parentNode.insertBefore(s, u)
+        }
+      }
+    }(document, window.Modules.config.production ? PRODUCTION_ID : DEVELOPMENT_ID)
+  })
+
+  /* Track Connect Event */
+  $(function () {
+    const EVENT = "New Visitor"
+    const HelpCenter = window.HelpCenter
+
+    /* Determine Current User */
+    const loadedId = localStorage.getItem('help_center_connect_user_identifier')
+    let user_id = loadedId || Math.random()
+    const attributes = {}
+    if (HelpCenter && 'user' in HelpCenter && 'email' in HelpCenter.user && HelpCenter.user.email) {
+      const user = HelpCenter.user
+      const names = ( typeof user.name === 'string' ) && ( user.name.indexOf(' ') > -1 ) ? user.name.split(' ') : [null, null]
+
+      user_id = user.identifier
+      attributes.email = user.email
+      attributes.firstName = names[0]
+      attributes.lastName = names[1]
+      attributes.attributes = user
+    }
+    localStorage.setItem('help_center_connect_user_identifier', user_id)
+
+    /* Identify User */
+    outbound.identify(user_id, attributes)
+
+    /* Track User */
+    outbound.track(EVENT, {
+      user_id: user_id
+    })
+  })
+</script>
+<!-- demo-banner.hbs -->
+<script>
+  $(document).ready(function() {
+    const root = $('#demo-banner')
+
+    if(root.length > 0){
+      Handlebars.helpers.compileTemplate({
+        element: root,
+        context: {
+          title: "The best customer experiences are built with Zendesk",
+          url: "https://www.zendesk.com/register/",
+          button: "Free trial"
+        },
+        partial: Handlebars.partials.demoBanner
+      })
+    }
+  });
+</script>
+
+<!-- explore-zendesk.hbs -->
+<script>
+  $(document).ready(function() {
+    const root = $('#explore-zendesk')
+    const EXPLORE_ICONS = window.Modules.ExploreZendeskIcons
+
+    const linksMap = {
+      'chat': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/360004062734">Getting started</a><a data-image="chat" href="https://support.zendesk.com/hc/en-us/sections/360004109093">Using Chat</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004062654">Advice & troubleshooting</a>',
+      'connect': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/360004108953">Getting started</a><a data-image="connect" href="https://support.zendesk.com/hc/en-us/sections/360004062554">Using Connect</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004108813">Advice & troubleshooting</a>',
+      'explore': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/360004062174">Getting started</a><a data-image="explore" href="https://support.zendesk.com/hc/en-us/sections/360004108613">Using Explore</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004062214">Advice & troubleshooting</a>',
+      'support': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/200608513">Getting started</a><a data-image="support" href="https://support.zendesk.com/hc/en-us/sections/360004108393">Using Support</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004061974">Advice & troubleshooting</a>',
+      'guide': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/360000373707">Getting started</a><a data-image="guide" href="https://support.zendesk.com/hc/en-us/sections/360004109213">Using Guide</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004062914">Advice & troubleshooting</a>',
+      'talk': '<a data-image="getting_started" href="https://support.zendesk.com/hc/en-us/sections/360000372167">Getting started</a><a data-image="talk" href="https://support.zendesk.com/hc/en-us/sections/360004109253">Using Talk</a><a data-image="advice_troubleshooting" href="https://support.zendesk.com/hc/en-us/sections/360004109233">Advice & troubleshooting</a>',
+      'crossProduct': '<a data-image="zendesk" href="https://support.zendesk.com/hc/en-us/sections/360004062094">Using The Suite</a><a data-image="cross_product" href="https://support.zendesk.com/hc/en-us/sections/360004062054">Cross-product features</a><a data-image="training" href="https://support.zendesk.com/hc/en-us/sections/360004062034">Training</a><a data-image="policies" href="https://support.zendesk.com/hc/en-us/sections/360004062134">Policies</a>',
+      'updates': '<a data-image="updates" href="https://support.zendesk.com/hc/en-us/sections/200623776">Announcements</a><a data-image="release_notes" href="https://support.zendesk.com/hc/en-us/sections/360004061994">Release notes</a><a data-image="service_incidents" href="https://support.zendesk.com/hc/en-us/sections/360004108413">Service notifications</a>'
+    }
+
+    const mapping = linksMap[getCurrentProduct()] || '<a data-image="updates" href="https://support.zendesk.com/hc/en-us/categories/200201796">Zendesk updates</a><a data-image="community" href="https://support.zendesk.com/hc/en-us/community/topics">Community</a><a data-image="cross_product" href="https://support.zendesk.com/hc/en-us/categories/360001735894">Cross-product help</a><a data-image="develop" href="https://develop.zendesk.com/hc">Develop</a>'
+
+    const sections = []
+    const $links = $('<div>' + mapping + '</div>')
+    let sectionClass = "section "
+    sectionClass += $links.find('a').length === 3 ? "three-wide" : "four-wide"
+
+    $links.find('a').each(function(){
+      const $link = $(this)
+      const image = $link.data('image')
+      const icon = EXPLORE_ICONS[image]
+      sections.push({
+        link: $link.prop('outerHTML'),
+        icon: icon,
+        class: sectionClass
+      })
+    })
+
+    Handlebars.helpers.compileTemplate({
+      element: root,
+      context: {
+        title: "Explore Zendesk",
+        sections: sections
+      },
+      partial: Handlebars.partials.exploreZendesk
+    })
+  });
+</script>
+
+<!-- help-centers.hbs -->
+<script type="text/javascript">
+  window.Modules = Object.assign({}, window.Modules || {}, {
+    helpCenters: {
+      title: "Products"
+    }
+  })
+</script>
+
+<!-- hero-banner.hbs -->
+<script id="search-template" type="text/template">
+  <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+</script>
+<script>
+  (function() {
+    const $root = $('#hero-banner')
+    if($root.length > 0){
+      const PRODUCT = getCurrentProduct()
+      const defaultBanner = "//theme.zdassets.com/theme_assets/1/aae515f9779fac48b5de00d1543e15ebfb7bfb3f.jpg"
+      const defaultTitle = "Zendesk help"
+      const bannerMap = {
+        'help': defaultBanner,
+        'chat': "//theme.zdassets.com/theme_assets/1/a414f750879ea185b324de48fb813f19be422f45.jpg",
+        'connect': "//theme.zdassets.com/theme_assets/1/2f657b0b41207c8c26ae0446959275215b64de4f.jpg",
+        'explore': "//theme.zdassets.com/theme_assets/1/ee715eb2a3d346bb86ca74c169035443451a17ce.jpg",
+        'support': "//theme.zdassets.com/theme_assets/1/6509931c34af8735a96e26e7d73820d6fb2876ab.jpg",
+        'guide': "//theme.zdassets.com/theme_assets/1/48faa0abb5fa45a21fe0f215b67ac709f46e1726.jpg",
+        'talk': "//theme.zdassets.com/theme_assets/1/fa6977cadd8d36402fe346d9b5ea9ba6085348d0.jpg",
+        'sell': "//theme.zdassets.com/theme_assets/1/23ee058bdd9e8b31c228b88390c84ac6e683ba94.jpg",
+        'develop': "//theme.zdassets.com/theme_assets/1/e5ebd8a2607d75169fabbf5c78d1a7f46820f5c9.jpg",
+        'crossProduct': "//theme.zdassets.com/theme_assets/1/def0b296d6453af90dd07aca5eaca0b8fb0d5722.jpg",
+        'updates': "//theme.zdassets.com/theme_assets/1/9d4f0e2456bf6db7ea0ed254436208e5d5c6404f.jpg"
+      }
+
+      const titleMap = {
+        'help': "Zendesk help",
+        'chat': "Chat help",
+        'connect': "Connect help",
+        'explore': "Explore help",
+        'support': "Support help",
+        'guide': "Guide help",
+        'talk': "Talk help",
+        'sell': "",
+        'develop': "Develop",
+        'crossProduct': "Cross-product help",
+        'updates': "Zendesk updates"
+      }
+
+      let title = titleMap[PRODUCT] || defaultTitle
+      let banner = bannerMap[PRODUCT] || defaultBanner
+      let alignment = 'left'
+      let font = 'dark'
+
+      const searchForm = $("#search-template")
+      const isCommunity = /hc\/[a-z-]+\/community/.test(window.location.pathname)
+
+      if(isCommunity){
+        title = "Community"
+        banner = "//theme.zdassets.com/theme_assets/1/56bb8d35f06d956ddd69cf249f28e841c9631779.jpg"
+      }
+
+      Handlebars.helpers.compileTemplate({
+        element: $root,
+        context: {
+          alignment: alignment,
+          font: font,
+          image_url: banner,
+          title: title,
+          subtitle: "Hi, how can we help?",
+          searchBox: searchForm.html()
+        },
+        partial: Handlebars.partials.heroBannerSearch
+      });
+
+      const searchElement = $root.find('#query')
+      const searchBox = searchElement.first().get(0)
+      if( searchBox ){
+        const correctedTitle = PRODUCT === 'crossProduct' ? title.toLowerCase() : title
+        let placeholder = PRODUCT === DEFAULT_PRODUCT ? "Search Zendesk help" : searchBox.placeholder + ' ' + correctedTitle
+        
+        if(isCommunity) {
+          // Scope search to community
+          searchElement.after('<input type="hidden" name="filter_by" value="community">')
+          placeholder = searchBox.placeholder + ' ' + title
+        }
+
+        searchBox.placeholder = placeholder
+      }
+    }
+  })();
+</script>
+
+<!-- main-header.hbs -->
+<script>
+  const delocalizedNames = {
+    "en-us": {
+      "long": "English",
+      "short": "en"
+    },
+    "pt-br": {
+      "long": "Português",
+      "short": "pt"
+    }
+  }
+
+  const getDelocalizedName = function(locale, type, itm){
+    const delocalized = delocalizedNames[locale]
+    if (delocalized) {
+      return delocalized[type]
+    } else {
+      return type === 'long' ? $(itm).text().trim() : locale
+    }
+  }
+
+  $('.lang-menu > a').each(function (idx, itm){
+    /* Scrape the locale from the href value using a regex. */
+    const locale = window.Modules.Utils.parseLocale($(this).attr('href'))
+    $(itm).text(getDelocalizedName(locale, "long", itm))
+  });
+
+  const locale = window.Modules.Utils.parseLocale(window.location.href)
+  if (locale) {
+    const itm = '#lang-menu-root .name'
+    const longName = getDelocalizedName(locale, "long", itm)
+    const footerText = "Current: " + longName
+    $('.lang-menu-popup .footer').text(footerText)
+    if ($(window).width() < 768){
+      $(itm).text(getDelocalizedName(locale, "short", itm))
+    } else {
+      $(itm).text(longName)
+    }
+  }
+</script>
+
+<!-- notifications.hbs -->
+<script>
+  (function() {
+    const contributionsLink = ''
+
+    window.Modules = Object.assign({}, window.Modules || {}, {
+      notifications: {
+        header: "notifications",
+        createdArticle: "created article",
+        createdPost: "created post",
+        commentedOnArticle: "commented on article",
+        commentedOnPost: "commented on post",
+        contributionsLink: contributionsLink,
+        dismissAll: "Dismiss all",
+        none: "No notifications."
+      }
+    })
+  })()
+</script>
+
+<!-- product-knowledge.hbs -->
+<script>
+  $(document).ready(function() {
+    const root = $('#product-knowledge')
+
+    if(root.length > 0){
+      const ICONS = window.Modules.ProductIcons
+      const sections = [
+        {
+          image: ICONS.support,
+          name: 'support',
+          link: 'https://support.zendesk.com/hc'
+        },
+        {
+          image: ICONS.guide,
+          name: 'guide',
+          link: 'https://support.zendesk.com/hc/en-us/categories/204155808'
+        },
+        {
+          image: ICONS.chat,
+          name: 'chat',
+          link: 'https://chat.zendesk.com/hc'
+        },
+        {
+          image: ICONS.talk,
+          name: 'talk',
+          link: 'https://support.zendesk.com/hc/en-us/categories/204155828'
+        },
+        {
+          image: ICONS.connect,
+          name: 'connect',
+          link: 'https://connect.zendesk.com/hc/en-us'
+        },
+        {
+          image: ICONS.explore,
+          name: 'explore',
+          link: 'https://explore.zendesk.com/hc/en-us/articles/360001298128'
+        }
+      ]
+      Handlebars.helpers.compileTemplate({
+        element: root,
+        context: {
+          title: "Browse product knowledge base",
+          sections: sections
+        },
+        partial: Handlebars.partials.productKnowledge
+      })
+    }
+  });
+</script>
+
+<!-- products-list.hbs -->
+<script type="text/javascript">
+  window.Modules = Object.assign(window.Modules || {}, {
+    productsList: {
+      title: "Browse by product",
+      theSuiteUrl: "https://support.zendesk.com/hc/en-us/sections/360004062094"
+    }
+  })
+</script>
+
+<!-- recent-posts.hbs -->
+<script type="text/javascript">
+  window.Modules = Object.assign({}, window.Modules || {}, {
+    recentPosts: {
+      title: "Recent posts in topics you're following",
+    }
+  })
+</script>
+
+<!-- search-filters.hbs -->
+<script>
+  (function() {
+    const params = getSearchParams()
+    window.Modules = Object.assign(window.Modules || {}, {
+      searchFilters: {
+        params,
+        community: "Community",
+        knowledgeBase: "Knowledge base",
+        productsTitle: "" || "Products",
+        typesTitle: "Type",
+        topicsTitle: "Topics",
+        allProducts: "" || "All Products"
+      }
+    })
+  })()
+</script>
+
+<!-- search-header.hbs -->
+<script>
+  (function() {
+    const productArticleHeaderMap = {
+      support: "Support help",
+      chat: "Chat help",
+      talk: "Talk help",
+      connect: "Connect help",
+      explore: "Explore help",
+      guide: "Guide help",
+      crossProduct: "Cross-product help",
+      updates: "Zendesk updates"
+    }
+
+    const defaultBanner = "//theme.zdassets.com/theme_assets/1/8a449cb1cea900ceb661724dee15b98ae3e4515a.jpg"
+    const bannerMap = {
+      help: defaultBanner,
+      chat: "//theme.zdassets.com/theme_assets/1/34171cea557ee6328e1a325b6dade40db346b410.jpg",
+      connect: "//theme.zdassets.com/theme_assets/1/f8b82f37da44ec5495fa90a368901314d1a4e81f.jpg",
+      explore: "//theme.zdassets.com/theme_assets/1/b4ab9da6a7d144935a094be87b80398dd14e1f96.jpg",
+      guide: "//theme.zdassets.com/theme_assets/1/32b9323fd7f83abd1efe755ba6d47e88d0f0bf68.jpg",
+      support: "//theme.zdassets.com/theme_assets/1/22b675b4f11315aae81fea6160e94588e9f2b4bd.jpg",
+      talk: "//theme.zdassets.com/theme_assets/1/1f23a84709e71c0fb3a93f75b140c589d1ce3419.jpg",
+      sell: "asset 'search_header_sell.jpg'}}",
+      develop: "//theme.zdassets.com/theme_assets/1/96b013d1829839145caed19aa381710609412d93.jpg",
+      crossProduct: "//theme.zdassets.com/theme_assets/1/9a98ed30631338baf0ecd5ef83e7cbece4015ab3.jpg",
+      updates: "//theme.zdassets.com/theme_assets/1/07adbebb8b5b2b59ba0f428c06febd2cd64fea10.jpg"
+    }
+
+
+    const $root = $('#search-header')
+    if($root.length > 0){
+      const PRODUCT = getCurrentProduct()
+      const typeToTitleMap = {
+        "search-header-articles": productArticleHeaderMap[PRODUCT] || "Zendesk Help",
+        "search-header-posts": "Community",
+        "search-header-results": "Search"
+      }
+
+      let pageType = $root.data('type')
+      pageType = pageType && pageType in typeToTitleMap ? pageType : "search-header-results"
+
+      let banner = bannerMap[PRODUCT] || defaultBanner
+      let title = typeToTitleMap[pageType]
+      const isCommunity = /hc\/[a-z-]+\/community/.test(window.location.pathname)
+
+      if(isCommunity){
+        banner = "//theme.zdassets.com/theme_assets/1/50f446551f6f22be97d7305931d3036374c094ba.jpg"
+      }
+
+      Handlebars.helpers.compileTemplate({
+        element: $root,
+        context: {
+          typeClass: $root.data('type'),
+          searchBox: '<form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>',
+          title: title,
+          image_url: banner
+        },
+        partial: Handlebars.partials.searchHeader
+      })
+
+      const searchBox = $root.find('#query').first().get(0)
+      if( searchBox ){
+        const correctedTitle = PRODUCT === 'crossProduct' ? title.toLowerCase() : title
+        let placeholder = PRODUCT === DEFAULT_PRODUCT ? "Search Zendesk help" : searchBox.placeholder + ' ' + correctedTitle
+
+        if (isCommunity) {
+          placeholder = searchBox.placeholder + ' ' + title
+        }
+
+        searchBox.placeholder = placeholder
+      }
+
+      const query = window.Modules.Utils.getParameterByName('query')
+      if(query){
+        $root.find('input[name="query"]').first().val(query)
+      }
+    }
+  })()
+</script>
+
+<script>
+  (function() {
+    const userBadgesDC = '{"types":[{"key":"moderator","label":"Community Moderator","names":["AndrewJ","Andrew Mills","Andrew J","Maggie Ungerboeck","Graeme Carmichael","Carsten Falborg","Vladan Jovic","Dan Cooper","Jonathan March","Jacob J Christensen","Heather R","Trapta","Dan Ross","McCabe Tonna","Sebastiaan Wijchers","Socorro Fernandez","Sushant Awalekar","Simon Blouner","Louise Dissing","Thomas de Silva"]},{"key":"product_manager","label":"Product Manager","names":["Aaron Cottrell","David Williams","Erica Wass","Jason Maynard","Jeremy Seow","Joe McCarron","Luke Behnke","Mayra Pacheco","Mike Mortimer","Neil Weldon","Nishanth Babu","Phil Grove","Rajat Garg","Ramin Shokrizadeh","Steven Yan","Yunen Yeo","Yuri Mylis","Ryan McGrew","Prakruti Hindia","Caroline Kello","Jenny Gillett","Meg Howe","Vincent Dollet","Lucy Field","Kristen Mirenda","Shiyu Zhu","Tung Nguyen","Kiran Max Weber","Daniel Aron","Chris Coughlan","Chris Sos","James Hanley","Ronald Fung","Toby Sterrett","Ryan Nichols","Shannon Anahata","Monique Gaskins","Mangesh Kalbhor","Jenn Vargas","Farheen Noorie","Dhruv Mehta","Caitlin Henehen","Benjamin Keyser","Andrew Reback","Bogdan Sturzoiu","Gorka Cardona-Lauridsen","Oscar Junker","Bogdan Andrei Sturzoiu","Max Brunner","Brian Beck","Volkan Akdugan","Anika Rani","David Marple","David Gillespie","Amy Lee"]},{"key":"dev_relations","label":"Dev Relations","names":["Daniel Pawluk","Eric Shen"]},{"key":"dev_support","label":"Dev Support","names":["Bryan Flynn","Joseph May"]},{"key":"community_team","label":"Community Team","names":["Nicole - Community Manager","Brett - Community Manager","Devan La Spisa - Community Manager","Brett - Community Associate","Nicole Saunders","Brett Bowser","Brett","Devan La Spisa","Devan"]}]}'
+
+    const modulesData = {
+      classToLabel: {},
+      classToGroup: {}
+    }
+
+    try {
+      const userBadges = JSON.parse(userBadgesDC)
+      userBadges.types.forEach(function(badge){
+        modulesData.classToLabel[badge.key] = '<span title="' + badge.label + '" class="user-badge-label">' + badge.label + '</span>'
+        modulesData.classToGroup[badge.key] = badge.names
+      })
+    } catch (err) {
+      dynamicContentJsonError('HC User Badges')
+    }
+
+    window.Modules = Object.assign({}, window.Modules || {}, {
+      userBadges: modulesData
+    })
+
+  })();
+</script>
+
+
+    <div class="powered-by-zendesk">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+    <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+  </svg>
+
+  <a href="https://www.zendesk.com/help-center/?utm_source=helpcenter&utm_medium=poweredbyzendesk&utm_campaign=text&utm_content=Zendesk%20Support" target="_blank" >Powered by Zendesk</a>
+</div>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://support.zendesk.com/auth/v2/host.js" data-brand-id="1157956" data-return-to="https://support.zendesk.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="1157956,false,true"></script>
+  <script type="text/javascript" src="https://p23.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"support","environment":"production","name":"Zendesk Support"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:Ma7jK/sDuzTurOqu2zbcy/QkGTpGtwE41aBGietDPCTcRM7XeY8EN3QaiItQXWcVEcUn6Ly07KPT1Oy2YjSmbw==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://support.zendesk.com","current_host_mapping":null,"current_path":null,"authentication_domain":"https://support.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":true,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.zendesk.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.zendesk.com/hc/en-us","arrange_content_url":"https://support.zendesk.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.zendesk.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.zendesk.com/knowledge/user_segments?brand_id=1157956","has_community_enabled":true,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://support.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.zendesk.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.zendesk.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":true,"arrange_articles_url":"https://support.zendesk.com/knowledge/arrange?brand_id=1157956","article_verification_url":"https://support.zendesk.com/knowledge/verification?brand_id=1157956","has_article_verification":true,"guide_language_settings_url":"https://support.zendesk.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://support.zendesk.com/knowledge/import_articles?brand_id=1157956","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.zendesk.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkGOhNoZWxwX2NlbnRlcl9pZGkED8TrCzoNYnJhbmRfaWRpA0SrEToMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--786c3d12628e86a74e0f57d6fdbd8a39d7e532fb");
+})();
+
+  </script>
+</body>
+</html>

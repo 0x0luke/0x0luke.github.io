@@ -1,0 +1,18 @@
+200 OK
+Server: Microsoft-IIS/8.5
+Access-Control-Allow-Origin: w-support.com
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=86400; includeSubDomains;
+Retry-Count: 0
+Cache-Control: private
+X-Aspnetmvc-Version: 5.2
+Set-Cookie: X-RP2-Token=; expires=Wed, 07-Aug-2019 11:31:31 GMT; path=/; secure X-RP2-Language=%22de-DE%22; expires=Fri, 07-Aug-2020 11:31:31 GMT; path=/; secure __RequestVerificationToken=JPKitlKWAYcAT8Gkpw63OIbk_9FJ-1m6POXwLbmlHfe8ETGwv-liaYQSxup4x1Iv_DYOwMyUChtN6y6kX1Bx3YZNq3cw3EIzIWTvkmL5Gz01; path=/; HttpOnly
+Access-Control-Allow-Methods: GET,POST,PUT,DELETE,OPTIONS
+Access-Control-Allow-Headers: X-RP2-Token,X-RP2-Language,Content-Type,source_url,url_identifier
+Date: Thu, 08 Aug 2019 11:31:30 GMT
+X-Rp2-Language: de-DE
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Content-Length: 6652
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.gstatic.com *.google.com *.googletagmanager.com *.mobile-order.de data:; connect-src 'self' *.google-analytics.com ws:; img-src 'self' *.google-analytics.com *.mobile-order.de *.gstatic.com data:; style-src 'self' 'unsafe-inline' *.google.com; font-src 'self' *.gstatic.com; frame-src 'self' *.google.com; object-src 'self' data:; worker-src 'self' blob:;

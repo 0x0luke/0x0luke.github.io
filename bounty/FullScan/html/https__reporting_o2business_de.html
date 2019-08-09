@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Die Business Reporting Plattform - O2 Reporting Plattform</title>
+    <script language="javascript">
+        var logErrorUrl = '/Error/LogJavaScriptError'
+    </script>
+    
+    <link href="/Content/css/reporting_css?v=x0O30v5YGBXnpBCKNZQE4dqZK5sj_kN2j1NtpI1-IOw1" rel="stylesheet"/>
+
+    <script src="/bundles/jquery?v=dyg7DVuOq1yISeWoiISaQ4BCxbY-C6VnPzSsVbG0dos1"></script>
+
+   
+    
+    <script src="/bundles/jqueryval?v=nsOwUc2j3GMqgidS30eLgZVJeHn83Wqmm2vMD4cUlKA1"></script>
+
+
+
+    
+    
+</head>
+<body class="reporting-tool">
+    
+    <div class="content-height">
+        <div class="center">
+            <div class="reporting-tool-header">
+                <a href=/><div class="o2-logo"></div></a>
+                <div class="platform-logo"></div>
+
+            </div>
+        </div>
+
+
+        <div class="center">
+            <div class="reporting-tool-content login">
+            
+                
+
+
+
+<h1>Die Business Reporting Plattform.</h1>
+<div class="login-panel">
+
+    <h2>Login</h2>
+
+<form action="/Account/Login?ReturnUrl=%2F" class="form-horizontal" id="loginForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="SEL5k9QWLry7HOpO97LfyRBcYLMYZHQsrlpmDZt3CSvVSf2j-TqnrggJseioNCM-RtZnYqlxAu90XzFgaCb1Q1WOfe8WQajh0PRIiqXeS7g1" /><div class="validation-summary-valid text-danger" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div><label class="input-label" for="Email">VO-Nummer</label><input class="form-control" data-val="true" data-val-required="Das Feld VO-Nummer wird benötigt" id="Email" name="Email" type="text" value="" /><label class="input-label" for="Password">Passwort</label><input class="form-control" data-val="true" data-val-required="Das Feld Passwort wird benötigt" id="Password" name="Password" type="password" />        <div class="action-elements">
+            
+            <div class="button primary arr-right-left right-float" onclick="document.getElementById('loginForm').submit()">Anmelden</div>
+        </div>
+</form>
+
+</div>
+<p class="password-info">Bitte melden Sie sich mit Ihrer Flux Kennung an. Passwort ändern nur über Flux möglich.</p>
+<p class="system-info">Systemanforderungen
+    <span>
+        Um die Funktionalität der Reporting Plattform vollständig nutzen zu können benötigen Sie einen aktuellen Browser (Microsoft Internet Explorer 10, Chrome 44, Firefox 38, Safari 8 oder jeweils neuer).
+        <br /><br />
+        Sollten Sie einen dieser Browser verwenden und trotzdem Probleme auftreten, so ist u.U. JavaScript ausgeschaltet. Bitte schalten Sie diese Browserfunktion ein.
+    </span>
+</p>
+<img src="/Content/images/laptop.png" class="login-image" />
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        $("#Password").on("keyup", function (e) {
+            if (e.which == 13) {
+                $('#loginForm').submit()
+            }
+        })
+    });
+</script>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+    <div class="center">
+        <div class="reporting-tool-footer">
+            <div class="footer-links">
+                
+                <a href="/Home/Impressum">Impressum</a>
+                &bull;
+                
+                <a href="/Home/AGB">AGB</a>
+                &bull;
+                <a href="https://www.telefonica.de/" target="_blank">Über Telefónica</a>
+            </div>
+            <a href="http://www.telefonica.com/en/home/jsp/home.jsp" target="_blank"><img src="/Content/images/telefonica.png" class="telefonica-logo" /></a>
+            <a href="https://www.telefonica.de/" target="_blank">
+                <div class="telefonica-copyright">
+                    &copy; Telefónica Germany GmbH &amp; Co. OHG
+                </div>
+            </a>
+</div>
+    </div>
+</div>
+
+    
+</body>
+</html>
+
+
+
+<script>
+    function setBg() {
+        var innerH = $(window).innerHeight();
+        var minH = (innerH - 160) + "px";
+        if (innerH > 692) { //Bild Verlauf (532px) + Footer (160px)
+            $(".content-height").css("min-height", minH);
+        } else {
+            $(".content-height").css("min-height", 532);
+        }
+        if (innerH > 532) { //Bild Verlauf (532px)
+            $(".reporting-tool").addClass("resize-bg");
+        } else {
+            $(".reporting-tool").removeClass("resize-bg");
+        }
+    }
+
+    $(document).ready(function() {
+        setBg();
+        $("#Email").focus();
+    });
+    $(window).resize(function() {
+        setBg();
+    });
+    
+</script>

@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | DELL EMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/html5/images/favicon.ico" type="image/icon">
+    <link rel="icon" href="/html5/images/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="/html5/CSS/jquery.mobile-1.4.0.css" />
+    <link rel="stylesheet" type="text/css" href="/html5/CSS/jquery-ui.css" />
+    <link rel="stylesheet" href="/html5/CSS/home.css">
+    <link rel="stylesheet" href="/html5/CSS/jquery.multiselect.css" />
+    <link rel="stylesheet" href="/html5/CSS/common.css">
+    <link rel="Stylesheet" type="text/css" href="/html5/CSS/videos.css" />
+    <link rel="Stylesheet" href="/html5/CSS/carousel.css" />
+    <link rel="Stylesheet" href="/html5/CSS/gridstack.css" />
+       
+    <script src="/html5/Scripts/jquery.min.js"></script>
+    <script src="/html5/Scripts/jquery-ui.min.js"></script>
+    <script src="/html5/Scripts/lodash.min.js"></script>
+    <script src="/html5/Scripts/rating.js"></script>
+    <script src="/html5/Scripts/edutubebridge.js"></script>
+    <script src="/html5/Scripts/common.js"></script>
+    <script src="/html5/Scripts/home.js"></script>
+    <script src="/html5/Scripts/jquery.multiselect.js"></script>
+    <script src="/html5/Scripts/jquery.carouFredSel-6.2.1.js"></script>
+    <script src="/html5/Scripts/jquery.mobile-1.4.0.min.js"></script>
+    <script src="/html5/Scripts/jquery.touchSwipe.min.js"></script>   
+    <script src="/html5/Scripts/gridstack.js"></script>
+</head>
+<body>
+    <header id="headerWrap" class="bg_color1">
+        <div id="mainHeader">
+            <div id="headerTop">
+            </div>
+        </div>    
+        <div id="menuHeader">
+            <section id="edutubesearch"></section>
+        </div>
+    </header>
+    <div id="contentdiv" style="width:100%">
+        <div id="GroupandSearchdiv">
+            <section id="eduGroups"></section>
+            <section id="uploadPlaceholder" class="uploadcontent"></section>
+        </div>
+        <div id="custommessage">
+        </div>       
+        <div id="dvMain" class="main">
+            <article id="rightCol">
+                <div class="closewhatsnew">Close  <div class="closewhatsnewicon">[X]</div></div>
+                <div class="showwhatsnew">Show What's New &#x25BC</div>
+                <div id="whatsnewsection" class="whatsnewsection">
+                    <div id="whatsnewcontainer" class="whatsnewcontainer">
+                        <div class="grid-stack" data-gs-width="14" data-gs-animate="yes">
+                        </div>
+                    </div>
+                </div>                
+                <div id="HomePage">
+                    <div id="videosection">
+                        <div id="recentsection" class="recentsection" data-role="collapsible" data-collapsed="false">
+                            <h3 class="heading1">
+                                Recent Additions
+                            </h3>
+                            <div>
+                                <span class="heading2">VIDEO AND AUDIO</span>
+                                <div class="image_carousel">
+                                    <div id="recentVideos">
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                    <a id="recentVideos_prev" class="prev disabled" href="#" style="display: block;">‹</a>
+                                    <a id="recentVideos_next" class="next" href="#" style="display: block;">›</a>
+                                </div>
+                                <div id="seriessection" class="seriessection">
+                                    <span class="heading2">PLAYLIST</span>
+                                    <div class="image_carousel">
+                                        <div id="series">
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                        <a id="series_prev" class="prev disabled" href="#" style="display: block;">‹</a>
+                                        <a id="series_next" class="next" href="#" style="display: block;">›</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popularsection" class="popularsection" data-role="collapsible" data-collapsed="false"
+                             style="position: relative">
+                            <h3 id="mostpopularh3" class="heading1">
+                                Most Popular
+                            </h3>
+                            <div>
+                                <div style="float: right; top: -3px; position: absolute; right: 5px">
+                                    <select id="viewby">
+                                        <option value="1">Last 10 days</option>
+                                        <option value="2">Last 30 days</option>
+                                        <option value="3">Last 90 days</option>
+                                        <option value="0" selected>Last 120 days</option>
+                                        <option value="4">User Published</option>
+                                    </select>
+                                </div>
+                                <div id="image_carousel" class="image_carousel">
+                                    <div id="mostPopular">
+                                    </div>
+                                </div>
+                                <div id="dvViewByLoading" class="ViewByLoading">
+                                    <img id="viewbyprocessing" src="/html5/Images/Wait.gif" alt="" />
+                                </div>
+                                <div id="loadMore" class="ui-btn ui-corner-all ui-shadow loadMore">
+                                    <span tabindex='1' id="moretext">Load more</span>
+                                    <img id="processing" class="processing" src="/html5/Images/Wait.gif" alt="" />
+                                    <div id="dvfix" class="fix">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="highestratingsection" class="highestratingsection" data-role="collapsible" data-collapsed="false"
+                             style="position: relative">
+                            <h3 id="highestratingh3" class="heading1">
+                                Highest Rated
+                            </h3>
+                            <div id="highestratedpanel">
+                                <div style="float: right; top: -3px; position: absolute; right: 5px">
+                                    <select id="ratingviewby">
+                                        <option value="1">Last 10 days</option>
+                                        <option value="2">Last 30 days</option>
+                                        <option value="3">Last 90 days</option>
+                                        <option value="0" selected>Last 120 days</option>
+                                        <!-- Start : 4.1.1. release - Remove UPC -->
+                                        <!--<option value="4">User Published</option>-->
+                                    </select>
+                                </div>
+                                <div id="ratingcarousel" class="image_carousel">
+                                    <div id="highestrating">
+                                    </div>
+                                </div>
+                                <div id="dvHighestRatingViewByLoading" class="ViewByLoading">
+                                    <img id="ratingviewbyprocessing" src="/html5/Images/Wait.gif" alt="" />
+                                </div>
+                                <div id="highestratingloadmore" class="ui-btn ui-corner-all ui-shadow loadMore">
+                                    <span tabindex='1' id="ratingmoretext">Load more</span>
+                                    <img id="ratingprocessing" class="processing" src="/html5/Images/Wait.gif" alt="" />
+                                    <div id="dvratingfix" class="fix">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div> 
+                    </div>
+                    <div id="novideossection" class="novideossection">
+                        <span class="heading1">No videos available</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <input type="hidden" id="HomeMostPopularStartIndex" />
+        <input type="hidden" id="HighestRatingStartIndex" />
+        <input type="hidden" id="ratingID" />
+        <input type="hidden" id="mostPopularHeight" />
+        <input type="hidden" id="highestratingHeight" />
+        <input type="hidden" id="upanddownfix" />
+
+    </div>
+    <div id="globalnav-footer"></div>
+    <div id="highestratedheight"></div>    
+    <a id="firsttimeuser" href="#firsttimeuserdialog" data-rel="popup" data-position-to="window"
+       data-transition="pop" data-inline="true" style="line-height: 30px; display: none">
+    </a>
+    <div id="firsttimeuserdialog" data-role="popup" data-overlay-theme="a" data-dismissible="false"
+         style="background-color: #FFFFFF" class="ui-corner-all">
+        <!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+             Close</a>-->
+        <div class="popupheader">
+            Set Preferences
+        </div>
+        <div data-role="content" data-theme="d" style="padding: 15px 15px 5px;" class="ui-corner-bottom">
+            <div id="messageContent">Welcome to eduTube. Please take a moment to set your preferences for this site.</div>
+            <hr />
+            <a id="okBtnMessage" href="#" class="prefredirect ui-btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-link">
+                OK
+            </a>
+        </div>
+        <div class="fixheight">
+            &nbsp;
+        </div>
+    </div>
+</body>
+</html>

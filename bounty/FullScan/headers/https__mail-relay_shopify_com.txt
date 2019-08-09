@@ -1,0 +1,19 @@
+404 Not Found
+X-Sorting-Hat-Podid: -1
+X-Dc: gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Set-Cookie: __cfduid=d3786ba73e3b4872e22472491093e100a1565274310; expires=Fri, 07-Aug-20 14:25:10 GMT; path=/; domain=.mail-relay.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=58d17120-2ce2-4691-823d-f8db9d7a4c8d
+Server: cloudflare
+Date: Thu, 08 Aug 2019 14:25:10 GMT
+Content-Type: text/html; charset=utf-8
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Request-Id: 58d17120-2ce2-4691-823d-f8db9d7a4c8d
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=58d17120-2ce2-4691-823d-f8db9d7a4c8d
+X-Content-Type-Options: nosniff
+Cf-Ray: 50322877f8153621-MAN

@@ -1,0 +1,18 @@
+404 Not Found
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Retry-Count: 0
+Set-Cookie: __cfduid=d09133c38a080375a9982086b3f1d593d1565151403; expires=Thu, 06-Aug-20 04:16:43 GMT; path=/; domain=.authme.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: 0e36e525-cb2b-4ae4-a72b-c014ffd555bf
+Server: cloudflare
+X-Sorting-Hat-Podid: -1
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=0e36e525-cb2b-4ae4-a72b-c014ffd555bf
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=0e36e525-cb2b-4ae4-a72b-c014ffd555bf
+Cf-Ray: 50266fd13fe1bfc5-MAN
+Date: Wed, 07 Aug 2019 04:16:43 GMT
+Content-Type: text/html; charset=utf-8

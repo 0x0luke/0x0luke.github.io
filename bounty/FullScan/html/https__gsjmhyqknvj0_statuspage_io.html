@@ -1,0 +1,3357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
+
+    <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bc12d0ca7c","applicationID":"1887052,5587075","transactionName":"IlgMRUFXWFhWEE5CQwBDF0IcS0BVRxcSHl4PUwdJ","queueTime":0,"applicationTime":339,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <title>Ellucian Cloud Status</title>
+    <meta name="description" content="Welcome to Ellucian Cloud&#39;s home for real-time and historical data on system performance.">
+
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Time this page was rendered - http://purl.org/dc/terms/issued -->
+    <meta name="issued" content="1565274687">
+
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Le fonts -->
+<style>
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-f0b2f7c12b6b87c65c02d3c1738047ea67a7607fd767056d8a2964cc6a2393f7.eot?host=gsjmhyqknvj0.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-f0b2f7c12b6b87c65c02d3c1738047ea67a7607fd767056d8a2964cc6a2393f7.eot?host=gsjmhyqknvj0.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-e642ffe82005c6208632538a557e7f5dccb835c0303b06f17f55ccf567907241.woff?host=gsjmhyqknvj0.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-0f094da9b301d03292f97db5544142a16f9f2ddf50af91d44753d9310c194c5f.ttf?host=gsjmhyqknvj0.statuspage.io') format('truetype');
+    font-weight:300;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-366d17769d864aa72f27defaddf591e460a1de4984bb24dacea57a9fc1d14878.eot?host=gsjmhyqknvj0.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-366d17769d864aa72f27defaddf591e460a1de4984bb24dacea57a9fc1d14878.eot?host=gsjmhyqknvj0.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-2ee4c449a9ed716f1d88207bd1094e21b69e2818b5cd36b28ad809dc1924ec54.woff?host=gsjmhyqknvj0.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-a40a469edbd27b65b845b8000d47445a17def8ba677f4eb836ad1808f7495173.ttf?host=gsjmhyqknvj0.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0bf83a850b45e4ccda15bd04691e3c47ae84fec3588363b53618bd275a98cbb7.eot?host=gsjmhyqknvj0.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0bf83a850b45e4ccda15bd04691e3c47ae84fec3588363b53618bd275a98cbb7.eot?host=gsjmhyqknvj0.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0c394ec7a111aa7928ea470ec0a67c44ebdaa0f93d1c3341abb69656cc26cbdd.woff?host=gsjmhyqknvj0.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-9e43859f8015a4d47d9eaf7bafe8d1e26e3298795ce1f4cdb0be0479b8a4605e.ttf?host=gsjmhyqknvj0.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:italic;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-09566917307251d22021a3f91fc646f3e45f8d095209bcd2cded8a1979f06e54.eot?host=gsjmhyqknvj0.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-09566917307251d22021a3f91fc646f3e45f8d095209bcd2cded8a1979f06e54.eot?host=gsjmhyqknvj0.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-86724fb2152613d735ba47c3f47a9ad2424b898bea4bece213dacee40344f966.woff?host=gsjmhyqknvj0.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-cf3e4eb7fbdf6fb83e526cc2a0141e55b01097e6e1abfd4cbdc3eda75d183f74.ttf?host=gsjmhyqknvj0.statuspage.io') format('truetype');
+    font-weight:500;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-622ea489d20e12e691663f83217105e957e2d3d09703707d40155a29c06cc9d9.eot?host=gsjmhyqknvj0.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-622ea489d20e12e691663f83217105e957e2d3d09703707d40155a29c06cc9d9.eot?host=gsjmhyqknvj0.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-c8dc577ff7f76d2fc199843e38c04bb2e9fd15889421358d966a9f846c2ed1cd.woff?host=gsjmhyqknvj0.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-27177fe9242acbe089276ee587feef781446667ffe9b6fdc5b7fe21ad73e12f3.ttf?host=gsjmhyqknvj0.statuspage.io') format('truetype');
+    font-weight:700;
+    font-style:normal;
+  }
+</style>
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="//dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/4619/SZ0SKIfzS66ohGonfFEa" />
+
+    <link rel="shortcut icon" href='//dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/4619/SZ0SKIfzS66ohGonfFEa'>
+
+    <link rel="alternate" type="application/atom+xml" href="https://gsjmhyqknvj0.statuspage.io/history.atom" title="Ellucian Cloud Status History - Atom Feed">
+    <link rel="alternate" type="application/rss+xml" href="https://gsjmhyqknvj0.statuspage.io/history.rss" title="Ellucian Cloud Status History - RSS Feed">
+
+      <!-- Canonical Link to ensure that only the custom domain is indexed when present -->
+      <link rel="canonical" href="https://status.elluciancloud.com">
+
+    <meta name="_globalsign-domain-verification" content="y_VzfckMy4iePo5oDJNivyYIjh8LffYa4jzUndm_bZ"/>
+
+
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="https://gsjmhyqknvj0.statuspage.io/history.atom" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" media="screen" href="https://dka575ofm4ao0.cloudfront.net/packs/0.0a436de8bdec7099f854.css" />
+    <link rel="stylesheet" media="all" href="https://dka575ofm4ao0.cloudfront.net/assets/stevestrap/status_manifest-91f5d5bd2be1a2d0650e8b888829216e4c938817617c0a04e699abd85a8ff075.css" />
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script>
+      window.pageColorData = {"blue":"#3498DB","border":"#E0E0E0","body_background":"#ffffff","font":"#333333","graph":"#3498db","green":"#2fcc66","light_font":"#898989","link":"#3498db","orange":"#e67e22","red":"#e74c3c","yellow":"#f1c40f"};
+    </script>
+    <style>
+
+
+
+
+  /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */
+  body,
+  .layout-content.status.status-api .section .example-container .example-opener .color-secondary,
+  .grouped-items-selector,
+  .layout-content.status.status-full-history .history-nav a.current {
+    background-color:#ffffff;
+  }
+
+
+
+
+
+  /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */
+  body.status,
+  .color-primary,
+  .color-primary:hover,
+  .layout-content.status-index .status-day .update-title.impact-none a,
+  .layout-content.status-index .status-day .update-title.impact-none a:hover,
+  .layout-content.status-index .timeframes-container .timeframe.active,
+  .layout-content.status-full-history .month .incident-container .impact-none,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-none a,
+  .incident-history .impact-none,
+  .layout-content.status .grouped-items-selector.inline .grouped-item.active,
+  .layout-content.status.status-full-history .history-nav a.current,
+  .layout-content.status.status-full-history .history-nav a:not(.current):hover {
+    color:#333333;
+  }
+
+  .layout-content.status.status-index .components-statuses .component-container .name {
+    color:#333333;
+    color:rgba(51,51,51,.8);
+  }
+
+
+
+
+
+
+  /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */
+  small,
+  .layout-content.status .table-row .date,
+  .color-secondary,
+  .layout-content.status .grouped-items-selector.inline .grouped-item,
+  .layout-content.status.status-full-history .history-footer .pagination a.disabled,
+  .layout-content.status.status-full-history .history-nav a {
+    color:#898989;
+  }
+
+
+
+
+
+
+
+
+
+  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */
+  body.status .layout-content.status .border-color, hr, .tooltip-base, .markdown-display table {
+    border-color:#E0E0E0;
+  }
+
+  .markdown-display table td {
+    border-top-color:#E0E0E0;
+  }
+
+  .markdown-display table td + td, .markdown-display table th + th {
+    border-left-color:#E0E0E0;
+  }
+
+
+
+
+
+
+  /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */
+  .layout-content.status.status-index .status-day .update-title.impact-critical a,
+  .layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
+  .layout-content.status.status-index .page-status.status-critical,
+  .layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
+  .flat-button.background-red {
+    background-color:#e74c3c;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-red:after,
+  .layout-content.status-full-history .month .incident-container .impact-critical,
+  .layout-content.status-incident .incident-name.impact-critical,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
+  .status-red .icon-indicator,
+  .incident-history .impact-critical,
+  .components-container .component-inner-container.status-red .component-status,
+  .components-container .component-inner-container.status-red .icon-indicator {
+    color:#e74c3c;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-critical .updates {
+    border-color:#e74c3c;
+  }
+
+
+
+
+
+
+  /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */
+  .layout-content.status.status-index .status-day .update-title.impact-major a,
+  .layout-content.status.status-index .status-day .update-title.impact-major a:hover,
+  .layout-content.status.status-index .page-status.status-major,
+  .layout-content.status.status-index .unresolved-incident.impact-major .incident-title {
+    background-color:#e67e22;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-orange:after,
+  .layout-content.status-full-history .month .incident-container .impact-major,
+  .layout-content.status-incident .incident-name.impact-major,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-major a,
+  .status-orange .icon-indicator,
+  .incident-history .impact-major,
+  .components-container .component-inner-container.status-orange .component-status,
+  .components-container .component-inner-container.status-orange .icon-indicator {
+    color:#e67e22;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-major .updates {
+    border-color:#e67e22;
+  }
+
+
+
+
+
+
+
+/* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */
+  .layout-content.status.status-index .status-day .update-title.impact-minor a,
+  .layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
+  .layout-content.status.status-index .page-status.status-minor,
+  .layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
+  .layout-content.status.status-index .scheduled-incidents-container .tab {
+    background-color:#f1c40f;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-yellow:after,
+  .layout-content.status-full-history .month .incident-container .impact-minor,
+  .layout-content.status-incident .incident-name.impact-minor,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
+  .status-yellow .icon-indicator,
+  .incident-history .impact-minor,
+  .components-container .component-inner-container.status-yellow .component-status,
+  .components-container .component-inner-container.status-yellow .icon-indicator,
+  .layout-content.status.manage-subscriptions .confirmation-infobox .fa {
+    color:#f1c40f;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-minor .updates,
+  .layout-content.status.status-index .scheduled-incidents-container {
+    border-color:#f1c40f;
+  }
+
+
+
+
+
+
+/* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */
+  .layout-content.status.status-index .status-day .update-title.impact-maintenance a,
+  .layout-content.status.status-index .status-day .update-title.impact-maintenance a:hover,
+  .layout-content.status.status-index .page-status.status-maintenance,
+  .layout-content.status.status-index .unresolved-incident.impact-maintenance .incident-title,
+  .layout-content.status.status-index .scheduled-incidents-container .tab {
+    background-color:#3498DB;
+  }
+
+  .layout-content.status-index .components-statuses .component-container.status-blue:after,
+  .layout-content.status-full-history .month .incident-container .impact-maintenance,
+  .layout-content.status-incident .incident-name.impact-maintenance,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-maintenance a,
+  .status-blue .icon-indicator,
+  .incident-history .impact-maintenance,
+  .components-container .component-inner-container.status-blue .component-status,
+  .components-container .component-inner-container.status-blue .icon-indicator {
+    color:#3498DB;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-maintenance .updates,
+  .layout-content.status.status-index .scheduled-incidents-container {
+    border-color:#3498DB;
+  }
+
+
+
+
+
+  /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */
+  .layout-content.status.status-index .page-status.status-none {
+    background-color:#2fcc66;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-green:after,
+  .status-green .icon-indicator,
+  .components-container .component-inner-container.status-green .component-status,
+  .components-container .component-inner-container.status-green .icon-indicator {
+    color:#2fcc66;
+  }
+
+
+
+
+  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */
+  a,
+  a:hover,
+  .layout-content.status-index .page-footer span a:hover,
+  .layout-content.status-index .timeframes-container .timeframe:not(.active):hover,
+  .layout-content.status-incident .subheader a:hover {
+    color:#3498db;
+  }
+  .flat-button,
+  .masthead .updates-dropdown-container .show-updates-dropdown,
+  .layout-content.status-full-history .show-filter.open  {
+    background-color:#3498db;
+  }
+
+  /* CUSTOM COLOR OVERRIDES FOR UPTIME SHOWCASE */
+  .components-section .components-uptime-link {
+    color: #898989;
+  }
+
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item {
+    color: #898989;
+    opacity: 0.8;
+  }
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item.light {
+    color: #898989;
+    opacity: 0.5;
+  }
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .spacer {
+    background: #898989;
+    opacity: 0.3;
+  }
+</style>
+
+
+    <!-- custom css -->
+
+
+    <!-- Le HTML5 shim -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- injection for static -->
+
+
+    
+  </head>
+
+
+  <body class="status index status-none">
+
+    
+
+
+  <div class="layout-content status status-index premium">
+      <div class="masthead-container premium">
+    <div class="masthead">
+      <div class="images-container" id="cover-image-container" data-js-hook="images-container"></div>
+      <style>
+          #cover-image-container {
+            background-image:url("//dka575ofm4ao0.cloudfront.net/pages-hero_covers/normal/4619/open-uri20140502-12544-6bxruw");
+          }
+
+          @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                 only screen and (min-resolution: 192dpi) {
+            #cover-image-container {
+              background-image:url("//dka575ofm4ao0.cloudfront.net/pages-hero_covers/retina/4619/open-uri20140502-12544-6bxruw") !important;
+            }
+          }
+      </style>
+
+      <div class="text-container">
+        <span class="page-name font-largest">
+            <a target="_blank" href="http://ellucian.com">Ellucian Cloud Status</a>
+        </span>
+          
+
+
+  <div class="updates-dropdown-container" data-js-hook="updates-dropdown-container">
+    <a href="#" data-js-hook="show-updates-dropdown" id="show-updates-dropdown" class="show-updates-dropdown">
+
+    </a>
+    <div class="updates-dropdown" data-js-hook="updates-dropdown" style="display:none">
+      <div class="updates-dropdown-nav nav-items-5">
+          <a href="#updates-dropdown-email" id="updates-dropdown-email-btn">
+            <span class="icon-container email">
+          </a>
+          <a href="#updates-dropdown-sms" id="updates-dropdown-sms-btn">
+            <span class="icon-container sms">
+          </a>
+          <a href="#updates-dropdown-support" id="updates-dropdown-support-btn">
+            <span class="icon-container support">
+          </a>
+          <a href="#updates-dropdown-atom" id="updates-dropdown-atom-btn">
+            <span class="icon-container rss">
+          </a>
+        <a href="#" data-js-hook="updates-dropdown-close" id="updates-dropdown-close-btn">
+          x
+        </a>
+      </div>
+      <div class="updates-dropdown-sections-container">
+          <div class="updates-dropdown-section email" id="updates-dropdown-email" style="display:none">
+            <div class="directions">
+              Get email notifications whenever Ellucian Cloud <strong>creates</strong>,  <strong>updates</strong> or <strong>resolves</strong> an incident.
+            </div>
+            <form id="subscribe-form-email" action="/subscriptions/new-email" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                <!-- make sure not to put cookie values in here since this gets cached -->
+                <input name="email" id="email" type="text" placeholder="Email Address" class="full-width" data-js-hook="email-notification-field">
+                <input type="submit" value="Subscribe" class="flat-button full-width" id="subscribe-btn-email" data-disabled-text="Subscribing..." data-revert-on-success="true">
+                
+</form>          </div>
+
+          <div class="updates-dropdown-section phone" id="updates-dropdown-sms" style="display:none">
+            <div class="directions">
+                Get text message notifications whenever Ellucian Cloud <strong>creates</strong> or <strong>resolves</strong> an incident.
+            </div>
+            <form id="subscribe-form-sms" action="/subscriptions/new-sms" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+              <div class="control-group">
+                <div class="controls externalities-sms-container">
+                  <!-- make sure not to put cookie values in here since this gets cached -->
+                  <select name="phone_country" id="phone-country" data-js-hook="phone-country" class="phone-country"><option value="af">Afghanistan (+93)</option>
+<option value="al">Albania (+355)</option>
+<option value="dz">Algeria (+213)</option>
+<option value="as">American Samoa (+1)</option>
+<option value="ad">Andorra (+376)</option>
+<option value="ao">Angola (+244)</option>
+<option value="ai">Anguilla (+1)</option>
+<option value="ag">Antigua and Barbuda (+1)</option>
+<option value="ar">Argentina (+54)</option>
+<option value="am">Armenia (+374)</option>
+<option value="aw">Aruba (+297)</option>
+<option value="au">Australia/Cocos/Christmas Island (+61)</option>
+<option value="at">Austria (+43)</option>
+<option value="az">Azerbaijan (+994)</option>
+<option value="bs">Bahamas (+1)</option>
+<option value="bh">Bahrain (+973)</option>
+<option value="bd">Bangladesh (+880)</option>
+<option value="bb">Barbados (+1)</option>
+<option value="by">Belarus (+375)</option>
+<option value="be">Belgium (+32)</option>
+<option value="bz">Belize (+501)</option>
+<option value="bj">Benin (+229)</option>
+<option value="bm">Bermuda (+1)</option>
+<option value="bo">Bolivia (+591)</option>
+<option value="ba">Bosnia and Herzegovina (+387)</option>
+<option value="bw">Botswana (+267)</option>
+<option value="br">Brazil (+55)</option>
+<option value="bn">Brunei (+673)</option>
+<option value="bg">Bulgaria (+359)</option>
+<option value="bf">Burkina Faso (+226)</option>
+<option value="bi">Burundi (+257)</option>
+<option value="kh">Cambodia (+855)</option>
+<option value="cm">Cameroon (+237)</option>
+<option value="ca">Canada (+1)</option>
+<option value="cv">Cape Verde (+238)</option>
+<option value="ky">Cayman Islands (+1)</option>
+<option value="cf">Central Africa (+236)</option>
+<option value="td">Chad (+235)</option>
+<option value="cl">Chile (+56)</option>
+<option value="cn">China (+86)</option>
+<option value="co">Colombia (+57)</option>
+<option value="km">Comoros (+269)</option>
+<option value="cg">Congo (+242)</option>
+<option value="cd">Congo, Dem Rep (+243)</option>
+<option value="cr">Costa Rica (+506)</option>
+<option value="hr">Croatia (+385)</option>
+<option value="cy">Cyprus (+357)</option>
+<option value="cz">Czech Republic (+420)</option>
+<option value="dk">Denmark (+45)</option>
+<option value="dj">Djibouti (+253)</option>
+<option value="dm">Dominica (+1)</option>
+<option value="do">Dominican Republic (+1)</option>
+<option value="eg">Egypt (+20)</option>
+<option value="sv">El Salvador (+503)</option>
+<option value="gq">Equatorial Guinea (+240)</option>
+<option value="ee">Estonia (+372)</option>
+<option value="et">Ethiopia (+251)</option>
+<option value="fo">Faroe Islands (+298)</option>
+<option value="fj">Fiji (+679)</option>
+<option value="fi">Finland/Aland Islands (+358)</option>
+<option value="fr">France (+33)</option>
+<option value="gf">French Guiana (+594)</option>
+<option value="pf">French Polynesia (+689)</option>
+<option value="ga">Gabon (+241)</option>
+<option value="gm">Gambia (+220)</option>
+<option value="ge">Georgia (+995)</option>
+<option value="de">Germany (+49)</option>
+<option value="gh">Ghana (+233)</option>
+<option value="gi">Gibraltar (+350)</option>
+<option value="gr">Greece (+30)</option>
+<option value="gl">Greenland (+299)</option>
+<option value="gd">Grenada (+1)</option>
+<option value="gp">Guadeloupe (+590)</option>
+<option value="gu">Guam (+1)</option>
+<option value="gt">Guatemala (+502)</option>
+<option value="gn">Guinea (+224)</option>
+<option value="gy">Guyana (+592)</option>
+<option value="ht">Haiti (+509)</option>
+<option value="hn">Honduras (+504)</option>
+<option value="hk">Hong Kong (+852)</option>
+<option value="hu">Hungary (+36)</option>
+<option value="is">Iceland (+354)</option>
+<option value="in">India (+91)</option>
+<option value="id">Indonesia (+62)</option>
+<option value="iq">Iraq (+964)</option>
+<option value="ie">Ireland (+353)</option>
+<option value="il">Israel (+972)</option>
+<option value="it">Italy (+39)</option>
+<option value="jm">Jamaica (+1)</option>
+<option value="jp">Japan (+81)</option>
+<option value="jo">Jordan (+962)</option>
+<option value="ke">Kenya (+254)</option>
+<option value="kr">Korea, Republic of (+82)</option>
+<option value="kw">Kuwait (+965)</option>
+<option value="kg">Kyrgyzstan (+996)</option>
+<option value="la">Laos (+856)</option>
+<option value="lv">Latvia (+371)</option>
+<option value="lb">Lebanon (+961)</option>
+<option value="ls">Lesotho (+266)</option>
+<option value="lr">Liberia (+231)</option>
+<option value="ly">Libya (+218)</option>
+<option value="li">Liechtenstein (+423)</option>
+<option value="lt">Lithuania (+370)</option>
+<option value="lu">Luxembourg (+352)</option>
+<option value="mo">Macao (+853)</option>
+<option value="mk">Macedonia (+389)</option>
+<option value="mg">Madagascar (+261)</option>
+<option value="mw">Malawi (+265)</option>
+<option value="my">Malaysia (+60)</option>
+<option value="mv">Maldives (+960)</option>
+<option value="ml">Mali (+223)</option>
+<option value="mt">Malta (+356)</option>
+<option value="mq">Martinique (+596)</option>
+<option value="mr">Mauritania (+222)</option>
+<option value="mu">Mauritius (+230)</option>
+<option value="mx">Mexico (+52)</option>
+<option value="mc">Monaco (+377)</option>
+<option value="mn">Mongolia (+976)</option>
+<option value="me">Montenegro (+382)</option>
+<option value="ms">Montserrat (+1)</option>
+<option value="ma">Morocco/Western Sahara (+212)</option>
+<option value="mz">Mozambique (+258)</option>
+<option value="na">Namibia (+264)</option>
+<option value="np">Nepal (+977)</option>
+<option value="nl">Netherlands (+31)</option>
+<option value="nz">New Zealand (+64)</option>
+<option value="ni">Nicaragua (+505)</option>
+<option value="ne">Niger (+227)</option>
+<option value="ng">Nigeria (+234)</option>
+<option value="no">Norway (+47)</option>
+<option value="om">Oman (+968)</option>
+<option value="pk">Pakistan (+92)</option>
+<option value="ps">Palestinian Territory (+970)</option>
+<option value="pa">Panama (+507)</option>
+<option value="py">Paraguay (+595)</option>
+<option value="pe">Peru (+51)</option>
+<option value="ph">Philippines (+63)</option>
+<option value="pl">Poland (+48)</option>
+<option value="pt">Portugal (+351)</option>
+<option value="pr">Puerto Rico (+1)</option>
+<option value="qa">Qatar (+974)</option>
+<option value="re">Reunion/Mayotte (+262)</option>
+<option value="ro">Romania (+40)</option>
+<option value="ru">Russia/Kazakhstan (+7)</option>
+<option value="rw">Rwanda (+250)</option>
+<option value="ws">Samoa (+685)</option>
+<option value="sm">San Marino (+378)</option>
+<option value="sa">Saudi Arabia (+966)</option>
+<option value="sn">Senegal (+221)</option>
+<option value="rs">Serbia (+381)</option>
+<option value="sc">Seychelles (+248)</option>
+<option value="sl">Sierra Leone (+232)</option>
+<option value="sg">Singapore (+65)</option>
+<option value="sk">Slovakia (+421)</option>
+<option value="si">Slovenia (+386)</option>
+<option value="za">South Africa (+27)</option>
+<option value="es">Spain (+34)</option>
+<option value="lk">Sri Lanka (+94)</option>
+<option value="kn">St Kitts and Nevis (+1)</option>
+<option value="lc">St Lucia (+1)</option>
+<option value="vc">St Vincent Grenadines (+1)</option>
+<option value="sd">Sudan (+249)</option>
+<option value="sr">Suriname (+597)</option>
+<option value="sz">Swaziland (+268)</option>
+<option value="se">Sweden (+46)</option>
+<option value="ch">Switzerland (+41)</option>
+<option value="tw">Taiwan (+886)</option>
+<option value="tj">Tajikistan (+992)</option>
+<option value="tz">Tanzania (+255)</option>
+<option value="th">Thailand (+66)</option>
+<option value="tg">Togo (+228)</option>
+<option value="to">Tonga (+676)</option>
+<option value="tt">Trinidad and Tobago (+1)</option>
+<option value="tn">Tunisia (+216)</option>
+<option value="tr">Turkey (+90)</option>
+<option value="tc">Turks and Caicos Islands (+1)</option>
+<option value="ug">Uganda (+256)</option>
+<option value="ua">Ukraine (+380)</option>
+<option value="ae">United Arab Emirates (+971)</option>
+<option value="gb">United Kingdom (+44)</option>
+<option selected="selected" value="us">United States (+1)</option>
+<option value="uy">Uruguay (+598)</option>
+<option value="uz">Uzbekistan (+998)</option>
+<option value="ve">Venezuela (+58)</option>
+<option value="vn">Vietnam (+84)</option>
+<option value="vg">Virgin Islands, British (+1)</option>
+<option value="vi">Virgin Islands, U.S. (+1)</option>
+<option value="ye">Yemen (+967)</option>
+<option value="zm">Zambia (+260)</option>
+<option value="zw">Zimbabwe (+263)</option></select>
+                  <input name="phone_number" id="phone-number" type="text" placeholder="ex. 6505551234" class="prepend full-width" data-js-hook="sms-notification-field">
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+
+              <input type="submit" value="Subscribe" class="flat-button full-width" id="subscribe-btn-sms" data-disabled-text="Subscribing..." data-revert-on-success="true">
+              <div class="terms_and_privacy_information small">Message and data rates may apply. By subscribing you agree to the Atlassian <a target="_blank" rel="noopener" href="https://www.atlassian.com/legal/cloud-terms-of-service">Cloud Terms of Service</a>.</div>
+</form>          </div>
+
+
+
+          <div class="updates-dropdown-section support" id="updates-dropdown-support" style="display:none">
+            Visit our <a target="_blank" href="https://ellucian.okta.com">support site</a>.
+          </div>
+
+          <div class="updates-dropdown-section atom" id="updates-dropdown-atom">
+            Get the <a href="https://gsjmhyqknvj0.statuspage.io/history.atom" target="_blank">Atom Feed</a> or <a href="https://gsjmhyqknvj0.statuspage.io/history.rss" target="_blank">RSS Feed</a>.
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+    </div>
+
+</div>
+ <!-- this is outside of the .container so that the cover photo can go full width on mobile -->
+
+
+    <div class="container">
+        <div class="page-status status-none">
+          <span class="status font-large">
+            All Systems Operational
+          </span>
+          <span class="last-updated-stamp  font-small"></span>
+        </div>
+
+
+        <div class="text-section">
+          <h4 class="font-largest">
+            <a id="about-this-site" href="#about-this-site" class="no-link">About This Site</a>
+          </h4>
+          <p class="color-secondary font-regular">
+            Ellucian Cloud planned maintenance or unplanned service impacting events affecting multiple client production systems are announced and logged on this page. <br><br>To report production system outages or request immediate attention of the Ellucian Enterprise Operations Center (EOC) please call: <br>+1 (844) 358-7222 (US/Canada Toll Free) or +1 (407) 215-3970 (International Toll), Use Prompt 3
+          </p>
+        </div>
+
+        <div class="components-section font-regular">
+    <div class="components-container one-column">
+            <div class="component-container border-color">
+              
+<div data-component-id="6bd8m0ktlb5f"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Application Hosting Services (AHS)
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+            </div>
+            <div class="component-container border-color is-group ">
+  
+<div data-component-id="myd3ypl7xc8v"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="component-group-opener">
+
+   <span class="name">
+       <span class="fa group-parent-indicator color-secondary font-small fa-plus-square-o"></span>
+       <span>
+         Ellucian SaaS
+       </span>
+   </span>
+
+
+  <span
+    class="component-status tool"
+    title="Groups take on the status of their most degraded child component or service. Click to see the status of the individual children."
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+
+  <!-- children components -->
+  <div class="child-components-container ">
+      
+<div data-component-id="gnr0dpdwn61n"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Banner SaaS
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="m3wbg9j6hcp3"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Colleague SaaS
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="5351qscwvfkq"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Advance
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="l7hvws4vkq43"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Elevate
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="g5zhlr8mvdc0"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian eTranscripts
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="n0s0hdxgbkht"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Mobile Cloud
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="cfz7t2cxqpy7"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Advise
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="gvmy7d2r0gxm"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Recruit
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="xd2tgnqhzdq9"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Quercus (EMEA)
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="kg7x2kp5ms7j"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Quercus (APAC)
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="qh367whr98dr"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Workflow
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="hxb8ymdqn33x"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Intelligent Learning Platform 4.X
+   </span>
+
+    <span class="tooltip-base tool" title="Original deployments of Ellucian ILP version 4.X">?</span>
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="s32scxqbf37l"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Intelligent Learning Platform 5.X
+   </span>
+
+    <span class="tooltip-base tool" title="Newest deployment of Ellucian ILP that supports the Ellucian Ethos Platform.">?</span>
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="w0g570brnjwz"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Theme Editor
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="p2t5qs9hhdzf"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Experience
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+  </div>
+</div>
+
+            <div class="component-container border-color is-group ">
+  
+<div data-component-id="vl5zj3pg0k5n"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="component-group-opener">
+
+   <span class="name">
+       <span class="fa group-parent-indicator color-secondary font-small fa-plus-square-o"></span>
+       <span>
+         Ellucian Ethos Platform
+       </span>
+   </span>
+
+
+  <span
+    class="component-status tool"
+    title="Groups take on the status of their most degraded child component or service. Click to see the status of the individual children."
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+
+  <!-- children components -->
+  <div class="child-components-container ">
+      
+<div data-component-id="lphn6075wwf9"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ellucian Analytics
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="46glmlp6t2wl"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ethos Data Access
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="04chycrxgmpj"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ethos Extend
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="q2vr2gymv953"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ethos Integration - Canada
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="8slbvt5bvn8l"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ethos Integration - Europe
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="hd7qryr3v3mz"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Ethos Integration - U.S.
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+  </div>
+</div>
+
+            <div class="component-container border-color">
+              
+<div data-component-id="0v77jgnn683n"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Monitoring
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+            </div>
+            <div class="component-container border-color is-group ">
+  
+<div data-component-id="p6s96002bkc9"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="component-group-opener">
+
+   <span class="name">
+       <span class="fa group-parent-indicator color-secondary font-small fa-plus-square-o"></span>
+       <span>
+         AWS Health Status
+       </span>
+   </span>
+
+    <span class="tooltip-base tool" title="For more information, please see http://status.aws.amazon.com/">?</span>
+
+  <span
+    class="component-status tool"
+    title="Groups take on the status of their most degraded child component or service. Click to see the status of the individual children."
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+
+  <!-- children components -->
+  <div class="child-components-container ">
+      
+<div data-component-id="n05pn3shw6kx"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS ec2-us-east-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="b3dpdph5fy67"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS ec2-us-west-2
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="y14dzz8640nv"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS ec2-eu-west-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="rrfdl10xrhmy"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS ec2-ca-central-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="hjc8z2jps1sn"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS rds-us-east-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="6npdmwmbv3hd"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS rds-us-west-2
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="yn3kw5cbtk1l"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS rds-eu-west-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="zddkp6dk8t55"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS rds-ca-central-1
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="qr68mc9fl5wc"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS s3-us-standard
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="7l5fk0f1b6nv"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      AWS route53
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="component-statuses-legend font-small">
+  <div class="legend-item status-green">
+    <span class="icon-indicator fa fa-check"></span>
+    Operational
+  </div>
+  <div class="legend-item status-yellow">
+    <span class="icon-indicator fa fa-minus-square"></span>
+    Degraded Performance
+  </div>
+  <div class="legend-item status-orange">
+    <span class="icon-indicator fa fa-exclamation-triangle"></span>
+    Partial Outage
+  </div>
+  <div class="breaker"></div>
+  <div class="legend-item status-red">
+    <span class="icon-indicator fa fa-times"></span>
+    Major Outage
+  </div>
+  <div class="legend-item status-blue">
+    <span class="icon-indicator fa fa-wrench"></span>
+    Maintenance
+  </div>
+</div>
+
+  </div>
+
+
+
+        <div class="scheduled-maintenances-container">
+          <div class="font-largest">Scheduled Maintenance</div>
+            <div class="scheduled-maintenance">
+              <div class="incident-title font-large border-color">
+                <a href="https://gsjmhyqknvj0.statuspage.io/incidents/5dvnhwxcs8vd" class="color-primary" title="Ellucian Workflow Maintenance Release - Test Environment">
+                  Ellucian Workflow Maintenance Release - Test Environment
+                </a>
+                <small class="pull-right" data-unix-time="1565830800">
+                  Aug <var data-var="date">14</var>, <var data-var="time">21:00</var> - Aug <var data-var="date">15</var>, <var data-var="time">01:00</var> EDT
+                </small>
+              </div>
+              <div class="updates-container font-regular">
+                  <div class="update">
+
+                    ELLUCIAN CLOUD SERVICES <br /> <br />Please be advised that a maintenance update for Ellucian Workflow will be deployed in the Test environment. This notification details the maintenance timeline and planned work. <br /> <br />Note: A maintenance update for Ellucian Workflow will be deployed to Production environment for AU region customers on 08/28/2019 @ 10:00 a.m. Eastern and for US & UK & CA region customers on 08/28/2019 @ 9 p.m. Eastern <br /> <br />Window: <br />** AU region only **<br />08/14/2019 @ 10:00 a.m. Eastern to 08/14/2019 @ 02:00 p.m.  Eastern<br /> <br />** UK, US & Canada regions **<br />08/14/2019 @ 09:00 p.m. Eastern to 08/15/2019 @ 01:00 a.m. Eastern<br /> <br />Activity: Deploy release in the Test environment.<br /> <br />Impact: Ellucian Workflow Test environment will be unavailable during the maintenance window.<br /> <br />Documentation: Release documentation can be found on the Ellucian Customer Center : <br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaIj0">https://ellucian.force.com/clients/a111M00000OaIj0</a><br /> <br />Dependencies: None <br /> <br />Customer Action: As part of this release, PHP will be upgraded from 5.6 to 7.1. It is possible that some of your Ellucian Workflow trigger code may contain deprecated PHP features that could be incompatible with the new PHP version. Please consult <a target="_blank" href="https://www.php.net/manual/en/migration70.incompatible.php">https://www.php.net/manual/en/migration70.incompatible.php</a> for a full list of backwards incompatible changes and modify your triggers as necessary.<br /> <br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /> <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+                    <br>
+                    <small>
+                        Posted on
+
+                      Aug <var data-var='date'> 7</var>, <var data-var='time'>20:11</var> EDT
+                    </small>
+                  </div>
+              </div>
+            </div>
+            <div class="scheduled-maintenance">
+              <div class="incident-title font-large border-color">
+                <a href="https://gsjmhyqknvj0.statuspage.io/incidents/y9vfhp4d478x" class="color-primary" title="eCRM SaaS Update: Ellucian CRM Recruit 2019 Imports Update Prod">
+                  eCRM SaaS Update: Ellucian CRM Recruit 2019 Imports Update Prod
+                </a>
+                <small class="pull-right" data-unix-time="1565838000">
+                  Aug <var data-var="date">14</var>, <var data-var="time">23:00</var> - Aug <var data-var="date">20</var>, <var data-var="time">08:00</var> EDT
+                </small>
+              </div>
+              <div class="updates-container font-regular">
+                  <div class="update">
+                      <!-- if we only have a single incident update, don't put the 'Scheduled' in front. looks bad -->
+                      <strong>Update</strong> -
+
+                    We will be undergoing scheduled maintenance during this time.
+
+                    <br>
+                    <small>
+
+                      Aug <var data-var='date'> 6</var>, <var data-var='time'>10:13</var> EDT
+                    </small>
+                  </div>
+                  <div class="update">
+                      <!-- if we only have a single incident update, don't put the 'Scheduled' in front. looks bad -->
+                      <strong>Scheduled</strong> -
+
+                    ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Recruit in the cloud, this notice is to inform you of plans to deploy the 2019 Imports Update to your Ellucian CRM deployment(s) within the Ellucian Cloud.  <br /> <br />TARGETED PROD UPDATE WINDOW:<br />Ellucian CRM Recruit Prod, August 13, 2019 - August 19, 2019<br /> <br />Specific timing (upgrade date and its duration) for your institution will be shared directly with you via your eCRM distribution email.<br /><br />IMPACT: <br />The CRM Recruit 2019 Imports Update is a lightweight update that only affects the delivered import functionality within Ellucian CRM Recruit. There will be no clones as a part of this update and no clone requests will be accommodated during this time until after the last Prod upgrade window has completed.<br /> <br />RELEASE INFORMATION:<br />Details about what's included in this update can be found at: <a target="_blank" href="https://ellucian.force.com/clients/s/releases/a111M00000NmU6MQAV/ellucian-crm-recruit-2019-summer-imports">https://ellucian.force.com/clients/s/releases/a111M00000NmU6MQAV/ellucian-crm-recruit-2019-summer-imports</a><br /> <br />Should you encounter issues after this update, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /> <br />Thank you, <br />Ellucian Cloud Team
+
+                    <br>
+                    <small>
+
+                      Aug <var data-var='date'> 6</var>, <var data-var='time'>10:12</var> EDT
+                    </small>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      <div class="incidents-list format-expanded">
+        <a class="font-largest no-link" id="past-incidents" href="#past-incidents">Past Incidents</a>
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 8</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported today.</p>
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 7</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/8644ydxvs2b4">Ellucian Ethos Integration Maintenance Release</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>23:30</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>21:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a Maintenance Update for Ellucian Ethos Integration will be deployed in the Test and Production environments. This notification details the maintenance timeline and planned work. <br /> <br />Window: <br />** Asia Pacific region only **<br />08/07/2019 @ 11:00 a.m to 08/07/2019 @ 12:00 pm Eastern<br /><br />** EU, US & Canada regions **<br />08/07/2019 @ 9:00 p.m to 08/07/2019 @ 11:30 p.m Eastern<br /><br />Activity: Deploy release in the Test and Production environments.<br /><br />Impact: There is no downtime expected while the update is being deployed. Since work is being performed on the environments there is a chance of intermittent slowness or occasional disconnects. <br /> <br />Documentation: Release documentation can be found on The Ellucian Customer Center. <br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000NdzR7">https://ellucian.force.com/clients/a111M00000NdzR7</a><br /><br />Dependencies: None. <br /> <br />Client Action: There is no action required by customers. This announcement is for informational purposes only.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /> <br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>20:19</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/szk58w5v6j27">Colleague SaaS T2 Updates - Production</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>23:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>21:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES<br /> <br />Please be advised that the Ellucian Colleague SaaS T2 Updates will be deployed on the Production environments. This notification details the maintenance timeline and planned work.<br /><br />The Ellucian Colleague SaaS T2 Update Release will be deployed in Production on 08/07/2019.<br /> <br />Window: 08/07/2019, 9:00 PM to 08/07/2019, 11:00 PM Eastern<br /> <br />Impact: The Production environments will be unavailable during the maintenance window.<br /> <br />Documentation: Please refer to the following article for the details in this release:<br /><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000Oaa0S">https://ellucian.force.com/clients/a111M00000Oaa0S</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaX1x">https://ellucian.force.com/clients/a111M00000OaX1x</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OZUxd">https://ellucian.force.com/clients/a111M00000OZUxd</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OZDK5">https://ellucian.force.com/clients/a111M00000OZDK5</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000Oa1Dj">https://ellucian.force.com/clients/a111M00000Oa1Dj</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OavLH">https://ellucian.force.com/clients/a111M00000OavLH</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000NdYV2">https://ellucian.force.com/clients/a111M00000NdYV2</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000NdYNm">https://ellucian.force.com/clients/a111M00000NdYNm</a><br /><br />Dependencies: None<br /> <br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment. Test major business processes, integrations, and bug fixes.<br /> <br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly.<br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success<br />Manager who can arrange a meeting with the appropriate technical personnel.<br /> <br />Thank You,<br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>31</var>, <var data-var='time'>16:44</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/rbp5lrkf787b">eCRM SaaS Maintenance Update: Ellucian CRM Advance Prod (United States, Canada, Latin America, Europe, and Middle East only)</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>22:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Advance in the cloud, we are continuing to deliver Maintenance Updates (MUs) to resolve critical Change Requests (CRs) on a monthly basis. <br /><br />This MU does not require your institution to engage, configure, or test as there are no new features being released. All corrections occur outside of the solution management process. <br /><br />Details about the CRs included in this update can be found here: <br /><a target="_blank" href="https://ecommunities.ellucian.com/message/262473#262473">https://ecommunities.ellucian.com/message/262473#262473</a><br /><br />WINDOW:<br />*** United States, Canada, and Latin America customers ***<br />Starting Wednesday, August 7, 2019 at 8:00 PM EDT and concluding by Wednesday, August 7, 2019 at 10:00 PM EDT<br /><br />*** Europe customers ***<br />Starting Thursday, 8 August 2019 at 01:00 GMT+1 and concluding by Thursday, 8 August 2019 at 03:00 GMT+1<br /><br />*** Middle East customers ***<br />Starting Thursday, 8 August 2019 at 04:00 GMT+4 and concluding by Thursday, 8 August 2019 at 06:00 GMT+4<br /><br />IMPACT:<br />This MU impacts all Ellucian CRM Advance Prod environments in the United States, Canada, Latin America, Europe, and Middle East regions. There is no expected downtime during the MU however you may experience intermittent slowness or an occasional disconnect to your environment.<br /><br />ACTION REQUIRED:<br />There is no action required at this time, this announcement is informational.<br /><br />Should you encounter issues after the MU, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /><br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 6</var>, <var data-var='time'>17:07</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/gs52ybvg5p9q">Maintenance Update for Ellucian Quercus Prod infrastructure (EMEA)</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>15:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>13:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a Maintenance Update for the Ellucian Quercus web platform (Prod) will be deployed after production hours. This notification details the maintenance timeline and planned work. <br /><br />Window: <br />*** This notification is for our customers in Europe and the Middle East only ***<br />Wednesday August 7th - starting at 6:00 p.m. BST (GMT+1) and concluding on Wednesday August 7th at 8:00 p.m BST (GMT+1).<br /><br />Activity: Deploy updates to the server components on the Web platform.<br /><br />Impact: This maintenance update impacts all Prod (Production) environments in the Europe and Middle East regions only. There is no expected downtime during the maintenance update however you may experience intermittent slowness or an occasional disconnect to your environment.<br /><br />Dependencies: None.<br /><br />Customer Action: The CSM team will be reaching out to any customers who are impacted.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>12:01</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/kjdgx3ss4ft1">Ellucian Intelligent Learning Platform 5.X Maintenance Release - Preview Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>12:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>10:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a maintenance update for Ellucian Intelligent Learning Platform 5.X application will be deployed in the Preview environment. This notification details the maintenance timeline and planned work. <br /><br />Note: A maintenance update for Ellucian Intelligent Learning Platform 5.X application will be deployed to Production environment on 08/28/2019<br /><br />Window: 08/07/2019 @ 10 a.m. Eastern to 08/07/2019 @ 11:59 a.m. Eastern<br /><br />Activity: Deploy release in the Preview environment <br /><br />Impact: ILP SaaS 5.X Preview environment will be unavailable during the maintenance window<br /><br />Documentation: Release documentation can be found on the Ellucian Customer Center: <br /><br /><a target="_blank" href="https://ellucian.force.com/clients/s/releases/a111M00000Oad40/ilp-501">https://ellucian.force.com/clients/s/releases/a111M00000Oad40/ilp-501</a><br /><br />Dependencies: None<br /><br />Customer Action: There is no action required by Customers.This announcement is for informational purposes only<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>20:07</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/wss2ssfjc3cn">Maintenance Update for Ellucian Quercus Prod infrastructure (APAC)</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>11:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>09:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a Maintenance Update for the Ellucian Quercus web platform (Prod) will be deployed after production hours. This notification details the maintenance timeline and planned work. <br /><br />Window: <br />*** This notification is for our customers in the Asia Pacific region only ***<br />Wednesday August 7th - starting at 2:00 p.m. BST (GMT+1) and concluding on Wednesday August 7th at 4:00 p.m BST (GMT+1).<br /><br />Activity: Deploy updates to the server components on the Web platform.<br /><br />Impact: This maintenance update impacts all Prod (Production) environments in the Asia Pacific region only. There is no expected downtime during the maintenance update however you may experience intermittent slowness or an occasional disconnect to your environment.<br /><br />Dependencies: None.<br /><br />Customer Action: The CSM team will be reaching out to any customers who are impacted.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>12:01</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/wn4hgvx5xy47">eCRM SaaS update: Ellucian CRM Recruit 2019 Imports Update Non-Prod</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 7</var>, <var data-var='time'>08:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>09:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Recruit in the cloud, this notice is to inform you of plans to deploy the 2019 Imports update to your Ellucian CRM deployment(s) within the Ellucian Cloud.  <br /> <br />TARGETED NON-PROD UPGRADE WINDOW:<br />Ellucian CRM Recruit Non-Prod, August 1, 2019 - August 6, 2019<br /> <br />Specific timing (upgrade date and its duration) for your institution will be shared directly with you via your eCRM distribution email prior to the upgrade window.<br /> <br />TARGETED PROD UPGRADE WINDOW:<br />Ellucian CRM Recruit Prod, August 14, 2019 - August 19, 2019<br /> <br />Specific timing (upgrade date and its duration) for your institution will be shared directly with you via your eCRM distribution email after the Non-Prod upgrades have been completed.<br /><br />IMPACT: <br />The CRM Recruit 2019 Imports Update is a lightweight update that only affects the delivered import functionality within Ellucian CRM Recruit. There will be no clones as a part of this update and no clone requests will be accommodated during this time until after the last Prod upgrade window has completed.<br /> <br />RELEASE INFORMATION:<br />Once available, details about what's included in this update can be found at:<br /><a target="_blank" href="https://ecommunities.ellucian.com/community/ellucian-recruiter">https://ecommunities.ellucian.com/community/ellucian-recruiter</a><br /> <br />Should you encounter issues after this upgrade, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /> <br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>16</var>, <var data-var='time'>18:13</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 6</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/dz010xxfxrqg">eCRM SaaS Maintenance Update: Ellucian CRM Advance Non-Prod</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 6</var>, <var data-var='time'>16:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 6</var>, <var data-var='time'>14:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Advance in the cloud, we are continuing to deliver Maintenance Updates (MUs) to resolve critical Change Requests (CRs) on a monthly basis. <br /><br />This MU does not require your institution to engage, configure, or test as there are no new features being released. All corrections occur outside of the solution management process. <br /><br />Details about the CRs included in this update can be found here: <br /><a target="_blank" href="https://ecommunities.ellucian.com/message/262473#262473">https://ecommunities.ellucian.com/message/262473#262473</a><br /><br />WINDOW: <br />*** United States, Canada, and Latin America customers ***<br />Starting Tuesday, August 6, 2019 at 2:00 PM EDT and concluding by Tuesday, August 6, 2019 at 4:00 PM EDT<br /><br />*** Europe customers ***<br />Starting Tuesday, 6 August 2019 at 19:00 GMT+1 and concluding by Tuesday, 6 August 2019 at 21:00 GMT+1<br /><br />*** Middle East customers ***<br />Starting Tuesday, 6 August 2019 at 22:00 GMT+4 and concluding by Wednesday, 7 August 2019 at 00:00 GMT+4<br /><br />*** Australia customers ***<br />Starting Wednesday, 7 August 2019 at 04:00 GMT+10 and concluding by Wednesday, 7 August 2019 at 06:00 GMT+10<br /><br />*** New Zealand customers ***<br />Starting Wednesday, 7 August 2019 at 06:00 GMT+12 and concluding by Wednesday, 7 August 2019 at 08:00 GMT+12<br /><br />IMPACT:<br />This MU only impacts Ellucian CRM Advance Non-Prod environments. There is no expected downtime during the MU however you may experience intermittent slowness or an occasional disconnect to your environment. <br /><br />ACTION REQUIRED:<br />There is no action required at this time, this announcement is informational.<br /><br />Should you encounter issues after the MU, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /><br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>14:09</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/4v5j0tdz00bv">Ethos Data Access Maintenance Release</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 6</var>, <var data-var='time'>00:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular update">
+        <strong>Update</strong> -
+      	We will be undergoing scheduled maintenance during this time.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>16:16</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a Maintenance Update for Ethos Data Access will be deployed in the Production environment. This notification details the maintenance timeline and planned work.<br /><br />Window: <br />** US and CA Regions  **<br />08/05/2019  8 PM to 08/05/2019 11:59 PM Eastern<br /><br />** UK Region  **<br />08/05/2019 3 PM to 08/05/2019 5 PM Eastern<br /><br />Activity: Deploy release in the Production environment.<br /><br />Impact: The environment will be unavailable during the maintenance window. Please make sure no data loads are in progress at the start of the maintenance window. Any bulk loads in progress will be interrupted and will have to be re-triggered once the deployment is done.<br /><br />Dependencies: None<br /><br />Customer Action: There is no action required by customers. This announcement is for informational purposes only.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>29</var>, <var data-var='time'>16:57</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 5</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/d4c4v6rfwpps">Ellucian eTranscripts Send Configuration update TLS version 1.2</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>04:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 5</var>, <var data-var='time'>01:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES<br /> <br />Please be advised that the Ellucian eTranscripts Send Configuration update regarding TLS version 1.2 support will be deployed in the Production environment. After this, institutions can enable TLSv1.2 to establish connectivity from their end to the cloud application and vice-versa. This notification details the maintenance timeline and planned work.<br /> <br />Note: This release addresses CR-000143773 and CR-000156682.<br /> <br />Window: 08/05/2019 @ 1:00 AM to 08/05/2019 @ 4:00 AM Eastern.<br />Activity: Enable TLSv1.2 support for eTranscripts Send 1.3 application in Production environment.<br /> <br />Impact: The Production environment will not be available during the update.<br /> <br />Dependencies: None<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly.<br /> <br />Client Action:  Enable TLSv1.2 on your eTranscripts API server (cloud to ERP connectivity) and TLSv1.2 on ERP side (ERP to Cloud connectivity for Order Status update) in order to support TLSv1.2 connectivity. Finally verify your connectivity by placing a test Order from your vendor site to cloud application <a target="_blank" href="https://etranscripts.elluciancloud.com/">https://etranscripts.elluciancloud.com/</a><br /><br />The steps to configure TLS 1.2 on your environment can be found in one of the below articles on Customer Centre:<br /> <br />For Banner - <br />Article #000043697: <a target="_blank" href="https://ellucian.force.com/clients/s/article/Banner-eTranscripts-support-for-TLS-v1-2">https://ellucian.force.com/clients/s/article/Banner-eTranscripts-support-for-TLS-v1-2</a><br /> <br />For Colleague - <br />Article #000045392: <a target="_blank" href="https://ellucian.force.com/clients/s/article/Colleague-eTranscripts-Setup-Steps-for-TLS1-2">https://ellucian.force.com/clients/s/article/Colleague-eTranscripts-Setup-Steps-for-TLS1-2</a><br /><br />Vendor Action: Verify the connectivity works from your site and cloud application <a target="_blank" href="https://etranscripts.elluciancloud.com/">https://etranscripts.elluciancloud.com/</a> by placing order request.<br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /> <br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>24</var>, <var data-var='time'>14:06</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 4</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 3</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 2</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/7s5j5np9gs5p">Ellucian Analytics Major Release - Production Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 2</var>, <var data-var='time'>15:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular update">
+        <strong>Update</strong> -
+      	This notice is to inform you about the Ellucian Analytics   maintenance for Production Environment will be extended by 3 hours.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 2</var>, <var data-var='time'>07:57</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular update">
+        <strong>Update</strong> -
+      	This notice is to inform you about the Ellucian Analytics maintenance for Production Environment will be extended by 3 hours.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 2</var>, <var data-var='time'>04:03</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a major release for Ellucian Analytics will be deployed in the Production environment. This notification details the maintenance timeline and planned work.<br /><br />Window: 08/01/2019 @ 8 p.m. Eastern to 08/02/2019 @ 5 a.m. Eastern<br /><br />Impact: Although the content updates are for Prod tenants only, infrastructure changes required by this update will potentially affect running jobs in both Test and Prod tenants.<br /><br />Documentation: Release documentation can be found on the Ellucian Customer Center :<br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaBZF">https://ellucian.force.com/clients/a111M00000OaBZF</a><br /><br />Customer Action: Please make sure no loads are in progress at the start of the maintenance window. Following action needed by customers to enable new features and implement enhancements following a release.<br /><br />** Human Resources Content **<br />An Analytics Load Pipeline* job is required to enable performance enhancements throughout the existing Workforce Management content.<br /><br />** Student Content **<br />Perform a Data Access load of the resources listed within Release Notes and configure the new Continuous Enrollment and Student Retention parameters within Ellucian Analytics Administration. Once complete, execute the Analytics Load Pipeline* job.<br /><br />**To expedite the Analytics Load Pipeline process, select the Analytic Domain specific to each content area when scheduling the job<br /><br />**2019.1 Updates**<br />With the 2019.2.0.0 release customers do not need to run a version upgrade job as required with the past feature version. This means that if your institution did not upgrade to 2019.1.0.0 using the Ellucian Analytics Update (2019.1) job, you no longer need to run it as these features have already been enabled. However, there are API version requirements and new resources that must be loaded into Data Access. Review the Ellucian Analytics API Dependencies and 'New analytic tiles' section of the 2019.1.0.0 Release Notes for additional information.<br /><br />**API Dependencies - <a target="_blank" href="https://resources.elluciancloud.com/bundle/ellucian_analytics_acn_configure/page/r_versions.html">https://resources.elluciancloud.com/bundle/ellucian_analytics_acn_configure/page/r_versions.html</a><br /><br />**2019.1.0.0 New Analytic Tiles - <a target="_blank" href="https://resources.elluciancloud.com/bundle/ellucian_analytics_rel_release_notes/page/c_new_features_2019_1_content.html">https://resources.elluciancloud.com/bundle/ellucian_analytics_rel_release_notes/page/c_new_features_2019_1_content.html</a><br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly.<br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel.<br /><br />Thank You,<br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>31</var>, <var data-var='time'>15:11</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 1</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/9gdrcs47c0qp">eCRM SaaS Maintenance Update: Ellucian CRM Recruit Prod (Australia only)</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>11:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>09:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Recruit in the cloud, we are continuing to deliver Maintenance Updates (MUs) to resolve critical Change Requests (CRs) on a monthly basis. <br /><br />This MU does not require your institution to engage, configure, or test as there are no new features being released. All corrections occur outside of the solution management process. <br /><br />Details about the CRs included in this update can be found here: <br /><a target="_blank" href="https://ecommunities.ellucian.com/message/261670#261670">https://ecommunities.ellucian.com/message/261670#261670</a><br /><br />WINDOW: <br />*** This notification is for our customers in the Australia region ***<br />Starting Thursday, 1 August 2019 at 23:00 GMT+10 and concluding by Friday, 2 August 2019 at 01:00 GMT+10<br /><br />IMPACT:<br />This MU impacts all Ellucian CRM Recruit Prod environments in the Australia region. There is no expected downtime during the MU however you may experience intermittent slowness or an occasional disconnect to your environment. <br /><br />ACTION REQUIRED:<br />There is no action required at this time, this announcement is informational.<br /><br />Should you encounter issues after the MU, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /><br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>17:02</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/typ89xt3vrzm">Ellucian Elevate Upgrade 8.18.03 on the PRODUCTION  Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>08:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 1</var>, <var data-var='time'>00:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that Ellucian Elevate 8.18.03 will be deployed to the Production environment. This notification details the maintenance time line and planned work. <br /><br />Window: <br />*** This notification is for our customers in the US only ***<br />Thursday August 1st  - starting at 4:00 a.m. Eastern and concluding on Thursday August 1st at 8:00 a.m. Eastern.<br />*** This notification is for our customers in the Canada region only ***<br />Thursday August 1st - starting at 12:00 a.m. Eastern and concluding on Thursday August 1st at 4:00 a.m Eastern.<br /><br />Activity: Deploy Elevate release 8.18.03 to the Production environment.<br /><br />Impact: The Production environment will be unavailable during the maintenance window. <br /><br />Dependencies: None.<br /><br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment, Test major business processes, integration to the ERP, 3rd Party integration and bug fixes. <br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>16:59</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Jul <var data-var="date">31</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/0x583gbxl14q">eCRM SaaS Maintenance Update: Ellucian CRM Recruit Prod (United States, Canada, Latin America, Europe, and Middle East only)</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>31</var>, <var data-var='time'>22:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>31</var>, <var data-var='time'>20:02</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Recruit in the cloud, we are continuing to deliver Maintenance Updates (MUs) to resolve critical Change Requests (CRs) on a monthly basis. <br /><br />This MU does not require your institution to engage, configure, or test as there are no new features being released. All corrections occur outside of the solution management process. <br /><br />Details about the CRs included in this update can be found here: <br /><a target="_blank" href="https://ecommunities.ellucian.com/message/261670#261670">https://ecommunities.ellucian.com/message/261670#261670</a><br /><br />WINDOW:<br />*** United States, Canada, and Latin America customers ***<br />Starting Wednesday, July 31, 2019 at 8:00 PM EDT and concluding by Wednesday, July 31, 2019 at 10:00 PM EDT<br /><br />*** Europe customers ***<br />Starting Thursday, 1 August 2019 at 01:00 GMT+1 and concluding by Thursday, 1 August 2019 at 03:00 GMT+1<br /><br />*** Middle East customers ***<br />Starting Thursday, 1 August 2019 at 04:00 GMT+4 and concluding by Thursday, 1 August 2019 at 00:00 GMT+4<br /><br />IMPACT:<br />This MU impacts all Ellucian CRM Recruit Prod environments in the United States, Canada, Latin America, Europe, and Middle East regions. There is no expected downtime during the MU however you may experience intermittent slowness or an occasional disconnect to your environment.<br /><br />ACTION REQUIRED:<br />There is no action required at this time, this announcement is informational.<br /><br />Should you encounter issues after the MU, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /><br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>17:03</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Jul <var data-var="date">30</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/wgdn0tckdt0l">Ellucian Quercus (EMEA) Upgrade 8.18.03 to the PRODUCTION  Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>17:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>13:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that Ellucian Quercus 8.18.03 will be deployed to the Production environment. This notification details the maintenance time line and planned work. <br /><br />Window: <br />*** This notification is for our customers in Europe and the Middle East only ***<br />Tuesday July 30th  - starting at 6:00 p.m. BST (GMT+1) and concluding on Tuesday July 30th at 10 p.m. BST (GMT+1).<br /><br />Activity: Deploy Quercus release 8.18.03 to the Production environment.<br /><br />Impact: The Production environment will be unavailable during the maintenance window. <br /><br />Documentation: Release documentation can be found on: <a target="_blank" href="https://ellucian.force.com/clients/s/contentdocument/0691M000005IajjQAC">https://ellucian.force.com/clients/s/contentdocument/0691M000005IajjQAC</a><br /><br />Dependencies: None.<br /><br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment. Test major business processes, integration to the ERP, 3rd Party integration and bug fixes. <br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>29</var>, <var data-var='time'>13:23</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/b5ncxlvfgcj9">eCRM SaaS Maintenance Update: Ellucian CRM Recruit Non-Prod</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>16:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>14:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing SaaS delivery improvements for customers using Ellucian CRM Recruit in the cloud, we are continuing to deliver Maintenance Updates (MUs) to resolve critical Change Requests (CRs) on a monthly basis. <br /><br />This MU does not require your institution to engage, configure, or test as there are no new features being released. All corrections occur outside of the solution management process. <br /><br />Details about the CRs included in this update can be found here: <br /><a target="_blank" href="https://ecommunities.ellucian.com/message/261670#261670">https://ecommunities.ellucian.com/message/261670#261670</a><br /><br />WINDOW: <br />*** United States, Canada, and Latin America customers ***<br />Starting Tuesday, July 30, 2019 at 2:00 PM EDT and concluding by Tuesday, July 30, 2019 at 4:00 PM EDT<br /><br />*** Europe customers ***<br />Starting Tuesday, 30 July 2019 at 19:00 GMT+1 and concluding by Tuesday, 30 July 2019 at 21:00 GMT+1<br /><br />*** Middle East customers ***<br />Starting Tuesday, 30 July 2019 at 22:00 GMT+4 and concluding by Wednesday, 31 July 2019 at 00:00 GMT+4<br /><br />*** Australia customers ***<br />Starting Wednesday, 31 July 2019 at 04:00 GMT+10 and concluding by Wednesday, 31 July 2019 at 06:00 GMT+10<br /><br />IMPACT:<br />This MU only impacts Ellucian CRM Recruit Non-Prod environments. There is no expected downtime during the MU however you may experience intermittent slowness or an occasional disconnect to your environment. <br /><br />ACTION REQUIRED:<br />There is no action required at this time, this announcement is informational.<br /><br />Should you encounter issues after the MU, please contact Action Line. If you have any questions or concerns, please contact your Customer Success Manager. If you are currently implementing your Ellucian CRM solution, please contact your Project Manager.<br /><br />Thank you, <br />Ellucian Cloud Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>29</var>, <var data-var='time'>18:06</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/sdxzp44c91cm">Ellucian Quercus (APAC) Upgrade 8.18.03 to the PRODUCTION  Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>13:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>30</var>, <var data-var='time'>09:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that Ellucian Quercus 8.18.03 will be deployed to the Production environment. This notification details the maintenance time line and planned work. <br /><br />Window: <br />*** This notification is for our customers in the Asia Pacific region only ***<br />Tuesday July 30th - starting at 2:00 p.m. BST (GMT+1) and concluding on Tuesday July 30th at 6:00 p.m BST (GMT+1).<br /><br />Activity: Deploy Quercus release 8.18.03 to the Production environment.<br /><br />Impact: The Production environment will be unavailable during the maintenance window. <br /><br />Documentation: Release documentation can be found on : <a target="_blank" href="https://ellucian.force.com/clients/s/contentdocument/0691M000005IajjQAC">https://ellucian.force.com/clients/s/contentdocument/0691M000005IajjQAC</a><br /><br />Dependencies: None.<br /><br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment. Test major business processes, integration to the ERP, 3rd Party integration and bug fixes. <br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>29</var>, <var data-var='time'>13:08</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">29</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">28</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">27</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Jul <var data-var="date">26</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/17g8rzxld2hv">Ellucian Analytics Infrastructure Maintenance</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>23:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular update">
+        <strong>Update</strong> -
+      	This notice is to inform you about the Ellucian Analytics Infrastructure Maintenance will be extended by 1 hour.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>22:13</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular update">
+        <strong>Update</strong> -
+      	Scheduled maintenance is still in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>21:59</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing efforts to optimize service, Ellucian needs to perform infrastructure maintenance on an underlying system in the Ellucian Analytics Production and Test environments.<br /><br />Window:<br /><br />07/26/2019 @ 8 p.m. Eastern to 07/26/2019 @ 10 p.m. Eastern<br /><br />Impact: Ellucian Analytics Production and Test environments will be unavailable during the specified window.<br /><br />Dependencies: None<br /><br />Customer Action: There is no action required by customers. This announcement is for informational purposes only.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly<br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel<br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>15:31</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-none font-large">
+    <a href="/incidents/wtnd8b7yhg9p">Ellucian Analytics Issue</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular resolved">
+        <strong>Resolved</strong> -
+      	The Ellucian Analytics environment experienced intermittent issues between 1:39 AM EDT and 4:33 AM EDT this morning, July 26th. All services are fully restored at this time. Customers should verify and re-run any data loads or jobs that were running during this period.<br /><br />Contact: If you have any questions or concerns about this notification, please contact your Customer Success Manager.<br /><br />Thank You,<br />Your Ellucian Cloud Operations Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>07:37</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/yg7bszl1vv64">Ellucian Workflow Maintenance Release - Production Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>26</var>, <var data-var='time'>00:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that a maintenance update for Ellucian Workflow will be deployed in the Production environment. This notification details the maintenance timeline and planned work. <br /><br />Window: <br />** Asia Pacific region only **<br />07/25/2019 @ 10:00 a.m. EDT to 07/25/2019 @ 01:59 p.m. EDT<br /><br />** Canada, EU & US regions **<br />07/25/2019 @ 8:00 p.m. EDT to 07/25/2019 @ 11:59 p.m. EDT<br /><br />Activity: Deploy release in the Production environment.<br /><br />Impact: Ellucian Workflow Production environment will be unavailable during the maintenance window.<br /><br />Documentation: Release documentation can be found on the Ellucian Customer Center : <br /><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaIiq">https://ellucian.force.com/clients/a111M00000OaIiq</a><br /><br />Dependencies: None <br /><br />Customer Action: There is no action required by customers. This announcement is for informational purposes only.<br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Thank You,<br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>17</var>, <var data-var='time'>19:56</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Jul <var data-var="date">25</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/0qh5ylsy13zn">Colleague SaaS T2 updates - Non-PROD</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>23:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>21:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES<br /> <br />Please be advised that the Ellucian Colleague SaaS T2 Updates will be deployed on the Non-PROD environments. This notification details the maintenance timeline and planned work.<br /><br />The Ellucian Colleague SaaS T2 Updates  will be deployed in Non-PROD on 07/25/2019 and the same update will be deployed in Production on 08/07/2019 at 9:00 pm EST. <br /> <br />Window: 07/25/2019, 9:00 PM to 07/25/2019, 11:00 PM Eastern<br /> <br />Impact: The Non-PROD environments will be unavailable during the maintenance window.<br /> <br />Documentation: Please refer to the following article for the details in this release:<br /><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000Oaa0S">https://ellucian.force.com/clients/a111M00000Oaa0S</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaX1x">https://ellucian.force.com/clients/a111M00000OaX1x</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OZUxd">https://ellucian.force.com/clients/a111M00000OZUxd</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OZDK5">https://ellucian.force.com/clients/a111M00000OZDK5</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000Oa1Dj">https://ellucian.force.com/clients/a111M00000Oa1Dj</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OavLH">https://ellucian.force.com/clients/a111M00000OavLH</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000NdYV2">https://ellucian.force.com/clients/a111M00000NdYV2</a><br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000NdYNm">https://ellucian.force.com/clients/a111M00000NdYNm</a><br /><br />Dependencies: None<br /> <br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment. Test major business processes, integrations, and bug fixes.<br /> <br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly.<br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success<br />Manager who can arrange a meeting with the appropriate technical personnel.<br /> <br />Thank You,<br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>23</var>, <var data-var='time'>16:31</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/n509qnswjbyq">Ellucian Intelligent Learning Platform Hot-Fix Release - Production Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>23:01</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>20:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />As part of our ongoing support for customers using Ellucian Intelligent Learning Platform 4.X application, we are continuing to deliver fixes for critical issues as needed. This notification details the maintenance timeline and planned work.<br /><br />Window: <br />** Asia Pacific region only **<br />07/25/2019 @ 10:00 a.m. EDT to 07/25/2019 @ 11 a.m. EDT<br /><br />** Canada, EU & US regions **<br />07/25/2019 @ 8:00 p.m. EDT to 07/25/2019 @ 11 p.m. EDT<br /><br />Activity: Deploy Hot-Fix into Production environment<br /><br />Impact: Production environment will be unavailable during the maintenance window.<br /> <br />Documentation: Release documentation can be found on the Ellucian Customer Center :<br /> <br /><a target="_blank" href="https://ellucian.force.com/clients/a111M00000OaL5A">https://ellucian.force.com/clients/a111M00000OaL5A</a><br /> <br />Dependencies: None<br /> <br />Customer Action: There is no action required by customers. This announcement is for informational purposes only<br /> <br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly<br /> <br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel<br /> <br />Thank You,<br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>22</var>, <var data-var='time'>17:02</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+          <div class="incident-container">
+  <div class="incident-title impact-maintenance font-large">
+    <a href="/incidents/d7999f5cftj9">Ellucian Elevate Upgrade 8.18.03 on the Test Environment</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular completed">
+        <strong>Completed</strong> -
+      	The scheduled maintenance has been completed.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>08:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular in progress">
+        <strong>In progress</strong> -
+      	Scheduled maintenance is currently in progress. We will provide updates as necessary.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>25</var>, <var data-var='time'>00:00</var> EDT
+        </small>
+      </div>
+      <div class="update font-regular scheduled">
+        <strong>Scheduled</strong> -
+      	ELLUCIAN CLOUD SERVICES <br /><br />Please be advised that Ellucian Elevate 8.18.03 will be deployed to the Test environment. This notification details the maintenance time line and planned work. <br /><br />Window: <br />*** This notification is for our customers in the US only ***<br />Thursday July 25th  - starting at 4:00 a.m. Eastern and concluding on Thursday July 25th at 8:00 a.m. Eastern.<br />*** This notification is for our customers in the Canada region only ***<br />Thursday July 25th - starting at 12:00 a.m. Eastern and concluding on Thursday July 25th at 4:00 a.m Eastern.<br /><br />Activity: Deploy Elevate release 8.18.03 to the Test environment.<br /><br />Impact: The Test environment will be unavailable during the maintenance window. <br /><br />Dependencies: None.<br /><br />Client Action: The Client will be responsible for validating the environment following the completion of the deployment in the Client's environment, Test major business processes, integration to the ERP, 3rd Party integration and bug fixes. <br /><br />Verify: The Cloud Services team and Enterprise Operations Center (EOC) will be carefully monitoring all activity during and after maintenance is completed to confirm all services are operating correctly. <br /><br />Contact: If you have any questions or concerns about this notification or would like to discuss any aspect of the upcoming maintenance, please contact your Customer Success Manager who can arrange a meeting with the appropriate technical personnel. <br /><br />Please note: Planned roll-out to production August 1st<br /><br />Thank You, <br />Your Ellucian Cloud Services Team
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>23</var>, <var data-var='time'>16:55</var> EDT
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+      </div>
+
+
+      <div class="page-footer border-color font-small">
+          <a href="/history" class="history-footer-link"><span style="font-family:arial">&larr;</span> Incident History</a>
+
+        <span class="color-secondary powered-by"><a class="color-secondary" target="_blank" rel="noopener noreferrer nofollow" href="https://www.statuspage.io/powered-by?utm_campaign=status.elluciancloud.com&amp;utm_content=status-pages&amp;utm_medium=powered-by&amp;utm_source=inapp">Powered by Statuspage</a></span>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+
+
+
+
+
+    
+  <div class="modal hide fade modal-open-incident-subscribe" id="subscribe-modal-5dvnhwxcs8vd" style="display: none">
+    <form class="modal-content" id="subscribe-form-5dvnhwxcs8vd" action="/subscriptions/incident.json" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input type="hidden" name="incident_code" id="incident_code" value="5dvnhwxcs8vd" />
+      <div class="modal-header">
+        <a href="#" data-dismiss="modal" class="close">×</a>
+        <h4>Subscribe to Incident</h4>
+      </div>
+
+      <div class="modal-body">
+        <p style="margin-bottom:25px">
+          Subscribe to updates for <strong><var>Ellucian Workflow Maintenance Release - Test Environment</var></strong> via email and/or text message.
+          Whenever an update is posted, you&#39;ll receive a notification.
+        </p>
+
+          <div class="control-group">
+            <label>Get Updates Via Email</label>
+            <div class="controls">
+              <input type="text" name="email" id="email-5dvnhwxcs8vd" placeholder="Email Address" data-js-hook="email" class="full-width" />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label>Get Updates Via Text Message</label>
+            <div class="controls phone-number" data-js-hook="modal-open-incident-subscribe-phone-number">
+              <div class="row">
+                <select name="phone_country" id="phone-country-5dvnhwxcs8vd" data-js-hook="phone-country" class="span6"><option value="af">Afghanistan (+93)</option>
+<option value="al">Albania (+355)</option>
+<option value="dz">Algeria (+213)</option>
+<option value="as">American Samoa (+1)</option>
+<option value="ad">Andorra (+376)</option>
+<option value="ao">Angola (+244)</option>
+<option value="ai">Anguilla (+1)</option>
+<option value="ag">Antigua and Barbuda (+1)</option>
+<option value="ar">Argentina (+54)</option>
+<option value="am">Armenia (+374)</option>
+<option value="aw">Aruba (+297)</option>
+<option value="au">Australia/Cocos/Christmas Island (+61)</option>
+<option value="at">Austria (+43)</option>
+<option value="az">Azerbaijan (+994)</option>
+<option value="bs">Bahamas (+1)</option>
+<option value="bh">Bahrain (+973)</option>
+<option value="bd">Bangladesh (+880)</option>
+<option value="bb">Barbados (+1)</option>
+<option value="by">Belarus (+375)</option>
+<option value="be">Belgium (+32)</option>
+<option value="bz">Belize (+501)</option>
+<option value="bj">Benin (+229)</option>
+<option value="bm">Bermuda (+1)</option>
+<option value="bo">Bolivia (+591)</option>
+<option value="ba">Bosnia and Herzegovina (+387)</option>
+<option value="bw">Botswana (+267)</option>
+<option value="br">Brazil (+55)</option>
+<option value="bn">Brunei (+673)</option>
+<option value="bg">Bulgaria (+359)</option>
+<option value="bf">Burkina Faso (+226)</option>
+<option value="bi">Burundi (+257)</option>
+<option value="kh">Cambodia (+855)</option>
+<option value="cm">Cameroon (+237)</option>
+<option value="ca">Canada (+1)</option>
+<option value="cv">Cape Verde (+238)</option>
+<option value="ky">Cayman Islands (+1)</option>
+<option value="cf">Central Africa (+236)</option>
+<option value="td">Chad (+235)</option>
+<option value="cl">Chile (+56)</option>
+<option value="cn">China (+86)</option>
+<option value="co">Colombia (+57)</option>
+<option value="km">Comoros (+269)</option>
+<option value="cg">Congo (+242)</option>
+<option value="cd">Congo, Dem Rep (+243)</option>
+<option value="cr">Costa Rica (+506)</option>
+<option value="hr">Croatia (+385)</option>
+<option value="cy">Cyprus (+357)</option>
+<option value="cz">Czech Republic (+420)</option>
+<option value="dk">Denmark (+45)</option>
+<option value="dj">Djibouti (+253)</option>
+<option value="dm">Dominica (+1)</option>
+<option value="do">Dominican Republic (+1)</option>
+<option value="eg">Egypt (+20)</option>
+<option value="sv">El Salvador (+503)</option>
+<option value="gq">Equatorial Guinea (+240)</option>
+<option value="ee">Estonia (+372)</option>
+<option value="et">Ethiopia (+251)</option>
+<option value="fo">Faroe Islands (+298)</option>
+<option value="fj">Fiji (+679)</option>
+<option value="fi">Finland/Aland Islands (+358)</option>
+<option value="fr">France (+33)</option>
+<option value="gf">French Guiana (+594)</option>
+<option value="pf">French Polynesia (+689)</option>
+<option value="ga">Gabon (+241)</option>
+<option value="gm">Gambia (+220)</option>
+<option value="ge">Georgia (+995)</option>
+<option value="de">Germany (+49)</option>
+<option value="gh">Ghana (+233)</option>
+<option value="gi">Gibraltar (+350)</option>
+<option value="gr">Greece (+30)</option>
+<option value="gl">Greenland (+299)</option>
+<option value="gd">Grenada (+1)</option>
+<option value="gp">Guadeloupe (+590)</option>
+<option value="gu">Guam (+1)</option>
+<option value="gt">Guatemala (+502)</option>
+<option value="gn">Guinea (+224)</option>
+<option value="gy">Guyana (+592)</option>
+<option value="ht">Haiti (+509)</option>
+<option value="hn">Honduras (+504)</option>
+<option value="hk">Hong Kong (+852)</option>
+<option value="hu">Hungary (+36)</option>
+<option value="is">Iceland (+354)</option>
+<option value="in">India (+91)</option>
+<option value="id">Indonesia (+62)</option>
+<option value="iq">Iraq (+964)</option>
+<option value="ie">Ireland (+353)</option>
+<option value="il">Israel (+972)</option>
+<option value="it">Italy (+39)</option>
+<option value="jm">Jamaica (+1)</option>
+<option value="jp">Japan (+81)</option>
+<option value="jo">Jordan (+962)</option>
+<option value="ke">Kenya (+254)</option>
+<option value="kr">Korea, Republic of (+82)</option>
+<option value="kw">Kuwait (+965)</option>
+<option value="kg">Kyrgyzstan (+996)</option>
+<option value="la">Laos (+856)</option>
+<option value="lv">Latvia (+371)</option>
+<option value="lb">Lebanon (+961)</option>
+<option value="ls">Lesotho (+266)</option>
+<option value="lr">Liberia (+231)</option>
+<option value="ly">Libya (+218)</option>
+<option value="li">Liechtenstein (+423)</option>
+<option value="lt">Lithuania (+370)</option>
+<option value="lu">Luxembourg (+352)</option>
+<option value="mo">Macao (+853)</option>
+<option value="mk">Macedonia (+389)</option>
+<option value="mg">Madagascar (+261)</option>
+<option value="mw">Malawi (+265)</option>
+<option value="my">Malaysia (+60)</option>
+<option value="mv">Maldives (+960)</option>
+<option value="ml">Mali (+223)</option>
+<option value="mt">Malta (+356)</option>
+<option value="mq">Martinique (+596)</option>
+<option value="mr">Mauritania (+222)</option>
+<option value="mu">Mauritius (+230)</option>
+<option value="mx">Mexico (+52)</option>
+<option value="mc">Monaco (+377)</option>
+<option value="mn">Mongolia (+976)</option>
+<option value="me">Montenegro (+382)</option>
+<option value="ms">Montserrat (+1)</option>
+<option value="ma">Morocco/Western Sahara (+212)</option>
+<option value="mz">Mozambique (+258)</option>
+<option value="na">Namibia (+264)</option>
+<option value="np">Nepal (+977)</option>
+<option value="nl">Netherlands (+31)</option>
+<option value="nz">New Zealand (+64)</option>
+<option value="ni">Nicaragua (+505)</option>
+<option value="ne">Niger (+227)</option>
+<option value="ng">Nigeria (+234)</option>
+<option value="no">Norway (+47)</option>
+<option value="om">Oman (+968)</option>
+<option value="pk">Pakistan (+92)</option>
+<option value="ps">Palestinian Territory (+970)</option>
+<option value="pa">Panama (+507)</option>
+<option value="py">Paraguay (+595)</option>
+<option value="pe">Peru (+51)</option>
+<option value="ph">Philippines (+63)</option>
+<option value="pl">Poland (+48)</option>
+<option value="pt">Portugal (+351)</option>
+<option value="pr">Puerto Rico (+1)</option>
+<option value="qa">Qatar (+974)</option>
+<option value="re">Reunion/Mayotte (+262)</option>
+<option value="ro">Romania (+40)</option>
+<option value="ru">Russia/Kazakhstan (+7)</option>
+<option value="rw">Rwanda (+250)</option>
+<option value="ws">Samoa (+685)</option>
+<option value="sm">San Marino (+378)</option>
+<option value="sa">Saudi Arabia (+966)</option>
+<option value="sn">Senegal (+221)</option>
+<option value="rs">Serbia (+381)</option>
+<option value="sc">Seychelles (+248)</option>
+<option value="sl">Sierra Leone (+232)</option>
+<option value="sg">Singapore (+65)</option>
+<option value="sk">Slovakia (+421)</option>
+<option value="si">Slovenia (+386)</option>
+<option value="za">South Africa (+27)</option>
+<option value="es">Spain (+34)</option>
+<option value="lk">Sri Lanka (+94)</option>
+<option value="kn">St Kitts and Nevis (+1)</option>
+<option value="lc">St Lucia (+1)</option>
+<option value="vc">St Vincent Grenadines (+1)</option>
+<option value="sd">Sudan (+249)</option>
+<option value="sr">Suriname (+597)</option>
+<option value="sz">Swaziland (+268)</option>
+<option value="se">Sweden (+46)</option>
+<option value="ch">Switzerland (+41)</option>
+<option value="tw">Taiwan (+886)</option>
+<option value="tj">Tajikistan (+992)</option>
+<option value="tz">Tanzania (+255)</option>
+<option value="th">Thailand (+66)</option>
+<option value="tg">Togo (+228)</option>
+<option value="to">Tonga (+676)</option>
+<option value="tt">Trinidad and Tobago (+1)</option>
+<option value="tn">Tunisia (+216)</option>
+<option value="tr">Turkey (+90)</option>
+<option value="tc">Turks and Caicos Islands (+1)</option>
+<option value="ug">Uganda (+256)</option>
+<option value="ua">Ukraine (+380)</option>
+<option value="ae">United Arab Emirates (+971)</option>
+<option value="gb">United Kingdom (+44)</option>
+<option selected="selected" value="us">United States (+1)</option>
+<option value="uy">Uruguay (+598)</option>
+<option value="uz">Uzbekistan (+998)</option>
+<option value="ve">Venezuela (+58)</option>
+<option value="vn">Vietnam (+84)</option>
+<option value="vg">Virgin Islands, British (+1)</option>
+<option value="vi">Virgin Islands, U.S. (+1)</option>
+<option value="ye">Yemen (+967)</option>
+<option value="zm">Zambia (+260)</option>
+<option value="zw">Zimbabwe (+263)</option></select>
+                <input type="text" name="phone_number" id="phone-number-5dvnhwxcs8vd" placeholder="ex. 6505551234" data-js-hook="phone-number" class="span12" />
+              </div>
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="modal-footer">
+        <!-- tests fail if static width isn't present  ¯\_(ツ)_/¯ -->
+        <button name="button" type="submit" class="flat-button cpt-button" style="width:225px" id="subscribe-btn-5dvnhwxcs8vd">Subscribe to Incident</button>
+      </div>
+</form>  </div>
+
+    
+  <div class="modal hide fade modal-open-incident-subscribe" id="subscribe-modal-y9vfhp4d478x" style="display: none">
+    <form class="modal-content" id="subscribe-form-y9vfhp4d478x" action="/subscriptions/incident.json" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input type="hidden" name="incident_code" id="incident_code" value="y9vfhp4d478x" />
+      <div class="modal-header">
+        <a href="#" data-dismiss="modal" class="close">×</a>
+        <h4>Subscribe to Incident</h4>
+      </div>
+
+      <div class="modal-body">
+        <p style="margin-bottom:25px">
+          Subscribe to updates for <strong><var>eCRM SaaS Update: Ellucian CRM Recruit 2019 Imports Update Prod</var></strong> via email and/or text message.
+          Whenever an update is posted, you&#39;ll receive a notification.
+        </p>
+
+          <div class="control-group">
+            <label>Get Updates Via Email</label>
+            <div class="controls">
+              <input type="text" name="email" id="email-y9vfhp4d478x" placeholder="Email Address" data-js-hook="email" class="full-width" />
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label>Get Updates Via Text Message</label>
+            <div class="controls phone-number" data-js-hook="modal-open-incident-subscribe-phone-number">
+              <div class="row">
+                <select name="phone_country" id="phone-country-y9vfhp4d478x" data-js-hook="phone-country" class="span6"><option value="af">Afghanistan (+93)</option>
+<option value="al">Albania (+355)</option>
+<option value="dz">Algeria (+213)</option>
+<option value="as">American Samoa (+1)</option>
+<option value="ad">Andorra (+376)</option>
+<option value="ao">Angola (+244)</option>
+<option value="ai">Anguilla (+1)</option>
+<option value="ag">Antigua and Barbuda (+1)</option>
+<option value="ar">Argentina (+54)</option>
+<option value="am">Armenia (+374)</option>
+<option value="aw">Aruba (+297)</option>
+<option value="au">Australia/Cocos/Christmas Island (+61)</option>
+<option value="at">Austria (+43)</option>
+<option value="az">Azerbaijan (+994)</option>
+<option value="bs">Bahamas (+1)</option>
+<option value="bh">Bahrain (+973)</option>
+<option value="bd">Bangladesh (+880)</option>
+<option value="bb">Barbados (+1)</option>
+<option value="by">Belarus (+375)</option>
+<option value="be">Belgium (+32)</option>
+<option value="bz">Belize (+501)</option>
+<option value="bj">Benin (+229)</option>
+<option value="bm">Bermuda (+1)</option>
+<option value="bo">Bolivia (+591)</option>
+<option value="ba">Bosnia and Herzegovina (+387)</option>
+<option value="bw">Botswana (+267)</option>
+<option value="br">Brazil (+55)</option>
+<option value="bn">Brunei (+673)</option>
+<option value="bg">Bulgaria (+359)</option>
+<option value="bf">Burkina Faso (+226)</option>
+<option value="bi">Burundi (+257)</option>
+<option value="kh">Cambodia (+855)</option>
+<option value="cm">Cameroon (+237)</option>
+<option value="ca">Canada (+1)</option>
+<option value="cv">Cape Verde (+238)</option>
+<option value="ky">Cayman Islands (+1)</option>
+<option value="cf">Central Africa (+236)</option>
+<option value="td">Chad (+235)</option>
+<option value="cl">Chile (+56)</option>
+<option value="cn">China (+86)</option>
+<option value="co">Colombia (+57)</option>
+<option value="km">Comoros (+269)</option>
+<option value="cg">Congo (+242)</option>
+<option value="cd">Congo, Dem Rep (+243)</option>
+<option value="cr">Costa Rica (+506)</option>
+<option value="hr">Croatia (+385)</option>
+<option value="cy">Cyprus (+357)</option>
+<option value="cz">Czech Republic (+420)</option>
+<option value="dk">Denmark (+45)</option>
+<option value="dj">Djibouti (+253)</option>
+<option value="dm">Dominica (+1)</option>
+<option value="do">Dominican Republic (+1)</option>
+<option value="eg">Egypt (+20)</option>
+<option value="sv">El Salvador (+503)</option>
+<option value="gq">Equatorial Guinea (+240)</option>
+<option value="ee">Estonia (+372)</option>
+<option value="et">Ethiopia (+251)</option>
+<option value="fo">Faroe Islands (+298)</option>
+<option value="fj">Fiji (+679)</option>
+<option value="fi">Finland/Aland Islands (+358)</option>
+<option value="fr">France (+33)</option>
+<option value="gf">French Guiana (+594)</option>
+<option value="pf">French Polynesia (+689)</option>
+<option value="ga">Gabon (+241)</option>
+<option value="gm">Gambia (+220)</option>
+<option value="ge">Georgia (+995)</option>
+<option value="de">Germany (+49)</option>
+<option value="gh">Ghana (+233)</option>
+<option value="gi">Gibraltar (+350)</option>
+<option value="gr">Greece (+30)</option>
+<option value="gl">Greenland (+299)</option>
+<option value="gd">Grenada (+1)</option>
+<option value="gp">Guadeloupe (+590)</option>
+<option value="gu">Guam (+1)</option>
+<option value="gt">Guatemala (+502)</option>
+<option value="gn">Guinea (+224)</option>
+<option value="gy">Guyana (+592)</option>
+<option value="ht">Haiti (+509)</option>
+<option value="hn">Honduras (+504)</option>
+<option value="hk">Hong Kong (+852)</option>
+<option value="hu">Hungary (+36)</option>
+<option value="is">Iceland (+354)</option>
+<option value="in">India (+91)</option>
+<option value="id">Indonesia (+62)</option>
+<option value="iq">Iraq (+964)</option>
+<option value="ie">Ireland (+353)</option>
+<option value="il">Israel (+972)</option>
+<option value="it">Italy (+39)</option>
+<option value="jm">Jamaica (+1)</option>
+<option value="jp">Japan (+81)</option>
+<option value="jo">Jordan (+962)</option>
+<option value="ke">Kenya (+254)</option>
+<option value="kr">Korea, Republic of (+82)</option>
+<option value="kw">Kuwait (+965)</option>
+<option value="kg">Kyrgyzstan (+996)</option>
+<option value="la">Laos (+856)</option>
+<option value="lv">Latvia (+371)</option>
+<option value="lb">Lebanon (+961)</option>
+<option value="ls">Lesotho (+266)</option>
+<option value="lr">Liberia (+231)</option>
+<option value="ly">Libya (+218)</option>
+<option value="li">Liechtenstein (+423)</option>
+<option value="lt">Lithuania (+370)</option>
+<option value="lu">Luxembourg (+352)</option>
+<option value="mo">Macao (+853)</option>
+<option value="mk">Macedonia (+389)</option>
+<option value="mg">Madagascar (+261)</option>
+<option value="mw">Malawi (+265)</option>
+<option value="my">Malaysia (+60)</option>
+<option value="mv">Maldives (+960)</option>
+<option value="ml">Mali (+223)</option>
+<option value="mt">Malta (+356)</option>
+<option value="mq">Martinique (+596)</option>
+<option value="mr">Mauritania (+222)</option>
+<option value="mu">Mauritius (+230)</option>
+<option value="mx">Mexico (+52)</option>
+<option value="mc">Monaco (+377)</option>
+<option value="mn">Mongolia (+976)</option>
+<option value="me">Montenegro (+382)</option>
+<option value="ms">Montserrat (+1)</option>
+<option value="ma">Morocco/Western Sahara (+212)</option>
+<option value="mz">Mozambique (+258)</option>
+<option value="na">Namibia (+264)</option>
+<option value="np">Nepal (+977)</option>
+<option value="nl">Netherlands (+31)</option>
+<option value="nz">New Zealand (+64)</option>
+<option value="ni">Nicaragua (+505)</option>
+<option value="ne">Niger (+227)</option>
+<option value="ng">Nigeria (+234)</option>
+<option value="no">Norway (+47)</option>
+<option value="om">Oman (+968)</option>
+<option value="pk">Pakistan (+92)</option>
+<option value="ps">Palestinian Territory (+970)</option>
+<option value="pa">Panama (+507)</option>
+<option value="py">Paraguay (+595)</option>
+<option value="pe">Peru (+51)</option>
+<option value="ph">Philippines (+63)</option>
+<option value="pl">Poland (+48)</option>
+<option value="pt">Portugal (+351)</option>
+<option value="pr">Puerto Rico (+1)</option>
+<option value="qa">Qatar (+974)</option>
+<option value="re">Reunion/Mayotte (+262)</option>
+<option value="ro">Romania (+40)</option>
+<option value="ru">Russia/Kazakhstan (+7)</option>
+<option value="rw">Rwanda (+250)</option>
+<option value="ws">Samoa (+685)</option>
+<option value="sm">San Marino (+378)</option>
+<option value="sa">Saudi Arabia (+966)</option>
+<option value="sn">Senegal (+221)</option>
+<option value="rs">Serbia (+381)</option>
+<option value="sc">Seychelles (+248)</option>
+<option value="sl">Sierra Leone (+232)</option>
+<option value="sg">Singapore (+65)</option>
+<option value="sk">Slovakia (+421)</option>
+<option value="si">Slovenia (+386)</option>
+<option value="za">South Africa (+27)</option>
+<option value="es">Spain (+34)</option>
+<option value="lk">Sri Lanka (+94)</option>
+<option value="kn">St Kitts and Nevis (+1)</option>
+<option value="lc">St Lucia (+1)</option>
+<option value="vc">St Vincent Grenadines (+1)</option>
+<option value="sd">Sudan (+249)</option>
+<option value="sr">Suriname (+597)</option>
+<option value="sz">Swaziland (+268)</option>
+<option value="se">Sweden (+46)</option>
+<option value="ch">Switzerland (+41)</option>
+<option value="tw">Taiwan (+886)</option>
+<option value="tj">Tajikistan (+992)</option>
+<option value="tz">Tanzania (+255)</option>
+<option value="th">Thailand (+66)</option>
+<option value="tg">Togo (+228)</option>
+<option value="to">Tonga (+676)</option>
+<option value="tt">Trinidad and Tobago (+1)</option>
+<option value="tn">Tunisia (+216)</option>
+<option value="tr">Turkey (+90)</option>
+<option value="tc">Turks and Caicos Islands (+1)</option>
+<option value="ug">Uganda (+256)</option>
+<option value="ua">Ukraine (+380)</option>
+<option value="ae">United Arab Emirates (+971)</option>
+<option value="gb">United Kingdom (+44)</option>
+<option selected="selected" value="us">United States (+1)</option>
+<option value="uy">Uruguay (+598)</option>
+<option value="uz">Uzbekistan (+998)</option>
+<option value="ve">Venezuela (+58)</option>
+<option value="vn">Vietnam (+84)</option>
+<option value="vg">Virgin Islands, British (+1)</option>
+<option value="vi">Virgin Islands, U.S. (+1)</option>
+<option value="ye">Yemen (+967)</option>
+<option value="zm">Zambia (+260)</option>
+<option value="zw">Zimbabwe (+263)</option></select>
+                <input type="text" name="phone_number" id="phone-number-y9vfhp4d478x" placeholder="ex. 6505551234" data-js-hook="phone-number" class="span12" />
+              </div>
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="modal-footer">
+        <!-- tests fail if static width isn't present  ¯\_(ツ)_/¯ -->
+        <button name="button" type="submit" class="flat-button cpt-button" style="width:225px" id="subscribe-btn-y9vfhp4d478x">Subscribe to Incident</button>
+      </div>
+</form>  </div>
+
+
+
+
+    <script src="https://dka575ofm4ao0.cloudfront.net/assets/status_manifest-7d475e2ffaf82f815f303398609f2b65110d8d61f3291ff8d12801b42eff70cd.js"></script>
+    <div id="cpt-notification-container"></div>
+    
+
+
+
+
+    <!-- analytics web client scripts -->
+    <script>
+      if (typeof window.awc === 'undefined' || window.awc === null) {
+        window.awc = new Promise(function(resolve, reject) {
+          window.awc_resolve = resolve;
+        });
+      }
+      if (typeof window.analyticsClient === 'undefined' || window.analyticsClient === null) {
+        window.analyticsClient = new Promise(function(resolve, reject) {
+          window.analyticsClient_resolve = resolve;
+        });
+      }
+      awc.then(function(awc) {
+        var analyticsClient = new awc.default({
+          env: awc.envType.PROD,
+          product: 'statuspage',
+          version: '926662ee64c0da3cfe2f803937587788a1e197a2',
+          origin: awc.originType.WEB,
+        });
+
+        var tenantOrgId = '43myd3xgfyy4:gsjmhyqknvj0';
+        analyticsClient.setTenantInfo(awc.tenantType.ORG_ID, tenantOrgId);
+
+        window.analyticsClient_resolve(analyticsClient);
+      });
+    </script>
+
+      <script>
+    var eventPayload = {"name":"statusPageScreen","attributes":{"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"gsjmhyqknvj0","pageType":"public","componentSubscriptionEnabled":true,"statusEmbedEnabled":true}}
+    var expectedParams = new Set(); // initializing with iterable not supported in IE11
+    expectedParams.add('utm_source').add('utm_campaign').add('utm_medium');
+
+    location.search.substring(1).split('&').forEach(function(param) {
+      var arr = param.split('=');
+      if (arr.length < 2) return;
+
+      var k = arr[0], v = arr[1]
+      if (expectedParams.has(k)) eventPayload.attributes[k] = v;
+    });
+
+    analyticsClient.then(function(analyticsClient) {
+      analyticsClient.sendScreenEvent(eventPayload)
+    })
+
+    if (location.search.indexOf('subscription_confirmed=true') !== -1) {
+      analyticsClient.then(function(analyticsClient) { analyticsClient.sendScreenEvent({"name":"emailConfirmedBanner","attributes":{"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"gsjmhyqknvj0","pageType":"public","componentSubscriptionEnabled":true,"statusEmbedEnabled":true}}); });
+    }
+  </script>
+    <script type="text/javascript">
+
+      $(function() {
+        $('#subscribe-btn-email').click(function() {
+          analyticsClient.then(function(analyticsClient) { analyticsClient.sendUIEvent({"actionSubject":"button","actionSubjectId":"subscribeStep1","action":"clicked","containerType":null,"containerId":null,"objectType":null,"objectId":null,"source":"statusPageScreen","attributes":{"type":"email","componentSubscriptionEnabled":true,"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"gsjmhyqknvj0","pageType":"public","statusEmbedEnabled":true},"tags":[]}); });
+        });
+
+        $('#subscribe-btn-sms').click(function() {
+          analyticsClient.then(function(analyticsClient) { analyticsClient.sendUIEvent({"actionSubject":"button","actionSubjectId":"subscribeStep1","action":"clicked","containerType":null,"containerId":null,"objectType":null,"objectId":null,"source":"statusPageScreen","attributes":{"type":"sms","componentSubscriptionEnabled":true,"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"gsjmhyqknvj0","pageType":"public","statusEmbedEnabled":true},"tags":[]}); });
+        });
+      })
+    </script>
+
+
+
+    <!-- all of the content_for stuff -->
+      <script src="https://dka575ofm4ao0.cloudfront.net/assets/register_subscription_form-3fd70416ac567c9e80fb4e1c0bfde0de779db90e80bbf28fabcaba62c004984b.js"></script>
+
+  <script type="text/javascript">
+      $(function() {
+          SP.currentPage.registerSubscriptionForm('email');
+
+          SP.currentPage.registerSubscriptionForm('sms');
+
+      });
+
+
+
+
+
+  </script>
+  <script src="https://dka575ofm4ao0.cloudfront.net/assets/status_common-f8b35586d7e6820c2761e822c9860a9ad5f3706467a0f2ea792990ed76958f20.js"></script>
+    <script>
+      SP.pollForChanges('/api/v2/status.json');
+    </script>
+
+  <script>
+    $(function() {
+      $('.tool').tooltipster({
+        animationDuration: 100,
+        contentAsHTML: true,
+        delay: 100,
+        theme: 'tooltipster-borderless',
+        functionInit: function (instance, helper) {
+          var $origin = $(helper.origin),
+              dataOptions = $origin.attr('data-tooltip-config');
+          if (dataOptions){
+            dataOptions = JSON.parse(dataOptions);
+            $.each(dataOptions, function(name, option){
+                instance.option(name, option);
+            });
+          }
+        }
+      });
+      // clicks on first tab in subscribe popout since we won't know which is first
+      // upon construction in the ruby code
+      $('.updates-dropdown-nav > a').eq(0).click();
+
+      // twitter follow button needs some margin
+      $('.twitter-follow-button').css('margin-right', '6px');
+    });
+
+    $(function() {
+      // open/close component groups
+      HRB.utils.djshook('component-group-opener').on('click', function() {
+        $(this).find('.group-parent-indicator').toggleClass('fa-plus-square-o').toggleClass('fa-minus-square-o').end().parent().toggleClass('open');
+      });
+    });
+
+    $(function() {
+      $(document).on('ajax:complete', '.modal.in', function(e) {
+        // Close the active modal.
+        $('.modal.in').modal('hide');
+      });
+    });
+
+  </script>
+    <script>
+      $(function() {
+        // toggle scheduled incidents
+        HRB.utils.djshook('scheduled-incidents-toggle').on('click', function() {
+          $('.scheduled-incidents-container').toggleClass('active');
+        });
+      });
+    </script>
+
+
+    
+  <script src="https://dka575ofm4ao0.cloudfront.net/packs/common-bdc19f5e53811341ade8.chunk.js"></script>
+  <script src="https://dka575ofm4ao0.cloudfront.net/packs/globals-5e1dcf2132f671804b44.chunk.js"></script>
+
+    <script src="https://dka575ofm4ao0.cloudfront.net/packs/runtime-78432868d12898b6ca4e.js"></script>
+    
+    
+
+
+    
+
+
+<!-- FOR FLASH NOTICES -->
+
+
+
+<!-- FOR ERROR -->
+
+
+
+    <script>
+  $(function() {
+    var $link = $('<span class="color-secondary powered-by"><a class="color-secondary" target="_blank" rel="noopener noreferrer nofollow" href="https://www.statuspage.io/powered-by?utm_campaign=status.elluciancloud.com&amp;utm_content=status-pages&amp;utm_medium=powered-by&amp;utm_source=inapp">Powered by Statuspage</a></span>');
+
+  	var setPoweredByStyles = function() {
+  		if (!$('.powered-by').length) {
+  			$link.appendTo($('.page-footer'))
+  		}
+  		$('.powered-by').attr('style', 'display: inline !important; visibility:visible !important; opacity: 1 !important; position:static !important; text-indent:0px !important; transform:scale(1) !important');
+  	}
+
+  	setInterval(setPoweredByStyles, 1000);
+  });
+</script>
+
+
+
+
+
+  </body>
+</html>

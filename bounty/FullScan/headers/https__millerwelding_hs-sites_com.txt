@@ -1,0 +1,16 @@
+200 OK
+Wpe-Backend: apache
+X-Cache: HIT: 1
+X-Cache-Group: normal
+X-Cacheable: SHORT
+X-Pass-Why: 
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding Accept-Encoding Accept-Encoding,Cookie
+Link: <https://www.millerfabricationsolutions.com/wp-json/>; rel="https://api.w.org/" <https://www.millerfabricationsolutions.com/>; rel=shortlink
+X-Tec-Api-Root: https://www.millerfabricationsolutions.com/wp-json/tribe/events/v1/
+X-Tec-Api-Origin: https://www.millerfabricationsolutions.com
+Server: nginx
+X-Tec-Api-Version: v1
+Cache-Control: max-age=600, must-revalidate
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 09:42:02 GMT

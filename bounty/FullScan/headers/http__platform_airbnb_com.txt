@@ -1,0 +1,18 @@
+500 Internal Server Error
+Date: Wed, 07 Aug 2019 03:14:51 GMT
+X-Xss-Protection: 1; mode=block
+X-Ua-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=1200, public
+X-Envoy-Upstream-Service-Time: 294
+Last-Modified: Tue, 06 Aug 2019 18:30:38 GMT
+Etag: W/"14de-16c683288b0"
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+Server: nginx
+Content-Security-Policy: child-src blob:; connect-src 'self' https: wss://ws.airbnb.com https://netverify.com https://*.netverify.com *.inspectlet.com wss: *.amap.com https://*.mapbox.com; default-src 'self' https: blob:; font-src 'self' data: https://*.muscache.com fonts.gstatic.com https://use.typekit.net; frame-ancestors *; frame-src *; img-src 'self' https: data: *.inspectlet.com https://*.mapbox.com; media-src 'self' https: blob:; script-src 'self' 'unsafe-eval' https://a0.muscache.com https://cdn.siftscience.com https://ss.musthird.com https://t1.musthird.com https://bat.bing.com https://connect.facebook.net https://www.google-analytics.com https://www.googleadservices.com https://tpc.googlesyndication.com https://www.googletagmanager.com https://a.cdn.intentmedia.net https://maps.googleapis.com https://ajax.googleapis.com https://*.g.doubleclick.net https://www.google.com https://www.gstatic.com https://smartlock.google.com https://accounts.google.com https://app.link https://cdn.branch.io https://api.branch.io https://bam.nr-data.net https://js-agent.newrelic.com https://sslwidget.criteo.com https://static.criteo.net https://dis.criteo.com https://widget.us.criteo.com https://*.gbc.criteo.net https://ethn.io https://s.yimg.jp https://api.geetest.com https://cdn.ampproject.org https://storage.googleapis.com/workbox-cdn/ https://tagmanager.google.com https://pay.google.com 'sha256-rAm9O8JPZLtQmd84zMDzhsG5q35JscESxxcaFL7+DDc=' 'sha256-ck0NYnSq6evDrSU3QAgDAso6GSMHXE8SDlqTKWnxpKI=' 'sha256-9ZdLPFhnEQLHZCKEYdkKXUj5at+zztFTTILAt3y65+0=' 'sha256-anj/wlPABxVCuYmPnySD3CBbxtX3l2p5OQbQvHP9FsA=' 'sha256-MnioL5BuRJUruaRXOEDN6ssuUoUDtjvvCVp2PicfIIM=' https://netverify.com https://*.netverify.com https://icm.aexp-static.com https://qicm.americanexpress.com https://qwww435.americanexpress.com https://checkout.americanexpress.com https://www.paypalobjects.com https://c.paypal.com https://www.paypal.com *.inspectlet.com blob: https://webapi.amap.com https://restapi.amap.com https://*.mapbox.com; style-src 'self' https: 'unsafe-inline' https://*.mapbox.com; worker-src 'self'; report-uri /tracking/csp?controller=core-guest-loop&action=%2F&req_uuid=7ce8e4aa-e788-4166-9fdc-206ef9b5fb65&version=sha%3D8faa0e2fba54&report_only=false; report-to /tracking/csp?controller=core-guest-loop&action=%2F&req_uuid=7ce8e4aa-e788-4166-9fdc-206ef9b5fb65&version=sha%3D8faa0e2fba54&report_only=false
+Accept-Ranges: bytes
+Set-Cookie: bev=1565147692_rLPlBQ%2F7kDUoW89O; Domain=.airbnb.com; Path=/; Expires=Fri, 06 Aug 2021 03:14:51 GMT; Secure
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Content-Length: 5342
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff

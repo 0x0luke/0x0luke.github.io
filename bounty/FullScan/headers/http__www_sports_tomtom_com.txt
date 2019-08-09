@@ -1,0 +1,13 @@
+200 OK
+Retry-Count: 0
+X-Frame-Options: DENY
+Referrer-Policy: no-referrer
+Last-Modified: Thu, 25 Jul 2019 07:43:33 GMT
+Accept-Ranges: bytes
+Content-Security-Policy: default-src https:; img-src 'self' https: data:; worker-src 'self' https: blob:; child-src 'self' https: blob:; frame-src 'self' https: blob:; font-src 'self' https://sports.tomtom-static.com https://sports-preprod.tomtom-static.com  data: https://fonts.gstatic.com; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline';
+Date: Thu, 08 Aug 2019 08:08:31 GMT
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Expires: Thu, 08 Aug 2019 08:08:31 GMT

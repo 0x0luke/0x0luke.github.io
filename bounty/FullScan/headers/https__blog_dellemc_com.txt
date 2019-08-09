@@ -1,0 +1,15 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Server: cloudflare
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+Link: <https://blog.dellemc.com/wp-json/>; rel="https://api.w.org/"
+Cf-Cache-Status: EXPIRED
+Cf-Ray: 50305ba43bd43669-MAN
+Date: Thu, 08 Aug 2019 09:10:36 GMT
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: same-origin
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN

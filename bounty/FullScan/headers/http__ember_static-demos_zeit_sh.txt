@@ -1,0 +1,16 @@
+200 OK
+Content-Disposition: inline; filename="index.html"
+Cache-Control: s-maxage=86400
+Access-Control-Allow-Origin: *
+Etag: W/"e86acacaf11aee5bc161ad55d4a7b7525a394e52"
+X-Now-Trace: lhr1,bru1
+X-Now-Cache: HIT
+Accept-Ranges: bytes
+Retry-Count: 0
+Content-Length: 969
+Last-Modified: Wed, 13 Jun 2018 13:56:00 GMT
+X-Now-Id: lhr1:9llcl-1565253472482-ed0a11ba572f
+Strict-Transport-Security: max-age=63072000
+Date: Thu, 08 Aug 2019 08:37:52 GMT
+Content-Type: text/html; charset=utf-8
+Server: now

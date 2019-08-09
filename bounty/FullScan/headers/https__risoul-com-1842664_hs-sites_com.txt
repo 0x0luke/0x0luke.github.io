@@ -1,0 +1,23 @@
+200 OK
+Vary: Accept-Encoding
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/legacy-module-support/static-1.1/bundles/legacyImageModule.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+Strict-Transport-Security: max-age=0
+X-Hs-Combine-Css: Retry
+X-Hs-Content-Id: 3953818677
+X-Hs-Hub-Id: 1842664
+X-Trace: 2B6B04DB0864718780A3A95E5D16E2509CBDA6F3AD000000000000000000
+Age: 696
+Set-Cookie: __cfduid=d6d4b0e8b6d5ddf34808492d54a8fed081565158407; expires=Thu, 06-Aug-20 06:13:27 GMT; path=/; domain=.www.risoul.com.mx; HttpOnly __cfruid=dc47c8949d4c73d701113cde034d43f8cba6ef9c-1565158407; path=/; domain=.www.risoul.com.mx; HttpOnly
+Cf-Cache-Status: HIT
+Edge-Cache-Tag: CT-3953818677,P-1842664,L-3648051127,L-4047790719,L-4155773642,L-8919301117,E-3822714591,E-5303190549,E-5470253925,PGS-ALL,SW-1,SD-14
+X-Hs-Cache-Config: BrowserCache-0s-EdgeCache-7200s
+Content-Type: text/html;charset=utf-8
+Retry-Count: 0
+Cache-Control: s-maxage=7200,max-age=0
+Cf-Ray: 50271ace6930d218-MAN
+Access-Control-Allow-Credentials: false
+Content-Security-Policy: upgrade-insecure-requests
+X-Powered-By: HubSpot
+Date: Wed, 07 Aug 2019 06:13:27 GMT
+Server: cloudflare

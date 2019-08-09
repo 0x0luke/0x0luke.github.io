@@ -1,0 +1,14 @@
+403 Forbidden
+Via: 1.1 varnish
+Retry-Count: 0
+Content-Type: text/html
+Accept-Ranges: bytes bytes
+X-Cache-Hits: 0
+Server: nginx
+Date: Thu, 08 Aug 2019 13:36:14 GMT
+Content-Length: 2820
+X-Cache: MISS
+X-Served-By: cache-lhr6350-LHR
+X-Timer: S1565271375.573170,VS0,VE79
+Etag: "5d489f5c-b04"
+X-Q-Stat: 81,247802327fd65919242e454e02a26b74,10.0.0.163,13308,89.238.135.143,,2343940474,1,1565271374.611,0.000,,.,0,0,,,,,,,213,106,10,26847,,,,,,,

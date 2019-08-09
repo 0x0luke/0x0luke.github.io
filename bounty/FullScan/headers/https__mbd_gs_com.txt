@@ -1,0 +1,25 @@
+200 OK
+Is_wireless_device: false
+Resolution_height: 800
+Vary: Accept-Encoding
+Content-Type: text/html
+Device_os: Windows NT
+Mobile_browser_version: 70
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Physical_screen_height: 175
+X-Akamai-Transformed: 9 52465 0 pmb=mRUM,3
+Date: Wed, 07 Aug 2019 05:42:29 GMT
+Etag: "e1f5-58b3ea86a6498"
+Physical_screen_width: 280
+Resolution_width: 1280
+Server-Timing: origin; dur=90 edge; dur=-64 cdn-cache; desc=REVALIDATE
+Ajax_preferred_geoloc_api: none
+Viewport_initial_scale: 
+Viewport_width: width_equals_max_image_width
+Server: Apache
+Is_mobile: false
+Device_os_version: 6.1
+Is_tablet: false
+Mobile_browser: Chrome
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Windows NT;device_os_version=6.1;is_tablet=false;is_wireless_device=false2;mobile_browser=Chrome;mobile_browser_version=70;physical_screen_height=175;physical_screen_width=280;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false

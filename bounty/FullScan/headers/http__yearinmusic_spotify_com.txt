@@ -1,0 +1,11 @@
+200 OK
+Strict-Transport-Security: max-age=31536000
+Vary: Accept-Encoding
+Set-Cookie: sp_ab=%7B%7D; expires=Fri, 06-Sep-2019 04:19:51 GMT; Max-Age=2592000; path=/; domain=.spotify.com; secure wp_access_token=BQCKydxBWtFHpaLggj49xMQ_J76puDpdaf6yVfKIYICA0ZrhzUC_0Fx4KrvoccioOMuwCIA5iOtN-a-CaI4; expires=Wed, 07-Aug-2019 05:14:52 GMT; Max-Age=3300; path=/; domain=.spotify.com; secure wp_expires_in=3300; expires=Wed, 07-Aug-2019 05:14:52 GMT; Max-Age=3300; path=/; domain=.spotify.com; secure wp_expiration=1565154892000; expires=Wed, 07-Aug-2019 05:14:52 GMT; Max-Age=3300; path=/; domain=.spotify.com; secure
+Content-Security-Policy: script-src 'self' 'unsafe-eval' open.scdn.co www.google-analytics.com www.google.com cdn.ravenjs.com vt.myvisualiq.net www.gstatic.com sb.scorecardresearch.com pixel-static.spotify.com 'sha256-ULD8swJHlBFLCIbAFovM3Xinb443OobwJ73kvN9NZLY=' https://www.fastly-insights.com s3.amazonaws.com/ki.js/51746/b0R.js turbo.qualaroo.com;frame-ancestors 'none'
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Server: nginx
+Date: Wed, 07 Aug 2019 04:19:52 GMT
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-cache, private

@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
+
+    <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bc12d0ca7c","applicationID":"1887052,5587075","transactionName":"IlgMRUFXWFhWEE5CQwBDF0IcS0BVRxcSHl4PUwdJ","queueTime":0,"applicationTime":178,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <title>Bisnode Status</title>
+    <meta name="description" content="Welcome to Bisnode&#39;s home for real-time and historical data on system performance.">
+
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Time this page was rendered - http://purl.org/dc/terms/issued -->
+    <meta name="issued" content="1565250895">
+
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Le fonts -->
+<style>
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-f0b2f7c12b6b87c65c02d3c1738047ea67a7607fd767056d8a2964cc6a2393f7.eot?host=q8g3f18hx6wm.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-f0b2f7c12b6b87c65c02d3c1738047ea67a7607fd767056d8a2964cc6a2393f7.eot?host=q8g3f18hx6wm.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-e642ffe82005c6208632538a557e7f5dccb835c0303b06f17f55ccf567907241.woff?host=q8g3f18hx6wm.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight-0f094da9b301d03292f97db5544142a16f9f2ddf50af91d44753d9310c194c5f.ttf?host=q8g3f18hx6wm.statuspage.io') format('truetype');
+    font-weight:300;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-366d17769d864aa72f27defaddf591e460a1de4984bb24dacea57a9fc1d14878.eot?host=q8g3f18hx6wm.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-366d17769d864aa72f27defaddf591e460a1de4984bb24dacea57a9fc1d14878.eot?host=q8g3f18hx6wm.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-2ee4c449a9ed716f1d88207bd1094e21b69e2818b5cd36b28ad809dc1924ec54.woff?host=q8g3f18hx6wm.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular-a40a469edbd27b65b845b8000d47445a17def8ba677f4eb836ad1808f7495173.ttf?host=q8g3f18hx6wm.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0bf83a850b45e4ccda15bd04691e3c47ae84fec3588363b53618bd275a98cbb7.eot?host=q8g3f18hx6wm.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0bf83a850b45e4ccda15bd04691e3c47ae84fec3588363b53618bd275a98cbb7.eot?host=q8g3f18hx6wm.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-0c394ec7a111aa7928ea470ec0a67c44ebdaa0f93d1c3341abb69656cc26cbdd.woff?host=q8g3f18hx6wm.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt-9e43859f8015a4d47d9eaf7bafe8d1e26e3298795ce1f4cdb0be0479b8a4605e.ttf?host=q8g3f18hx6wm.statuspage.io') format('truetype');
+    font-weight:400;
+    font-style:italic;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-09566917307251d22021a3f91fc646f3e45f8d095209bcd2cded8a1979f06e54.eot?host=q8g3f18hx6wm.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-09566917307251d22021a3f91fc646f3e45f8d095209bcd2cded8a1979f06e54.eot?host=q8g3f18hx6wm.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-86724fb2152613d735ba47c3f47a9ad2424b898bea4bece213dacee40344f966.woff?host=q8g3f18hx6wm.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold-cf3e4eb7fbdf6fb83e526cc2a0141e55b01097e6e1abfd4cbdc3eda75d183f74.ttf?host=q8g3f18hx6wm.statuspage.io') format('truetype');
+    font-weight:500;
+    font-style:normal;
+  }
+   
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-622ea489d20e12e691663f83217105e957e2d3d09703707d40155a29c06cc9d9.eot?host=q8g3f18hx6wm.statuspage.io');
+    src: url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-622ea489d20e12e691663f83217105e957e2d3d09703707d40155a29c06cc9d9.eot?host=q8g3f18hx6wm.statuspage.io#iefix') format('embedded-opentype'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-c8dc577ff7f76d2fc199843e38c04bb2e9fd15889421358d966a9f846c2ed1cd.woff?host=q8g3f18hx6wm.statuspage.io') format('woff'),
+         url('https://dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold-27177fe9242acbe089276ee587feef781446667ffe9b6fdc5b7fe21ad73e12f3.ttf?host=q8g3f18hx6wm.statuspage.io') format('truetype');
+    font-weight:700;
+    font-style:normal;
+  }
+</style>
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="//dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/10323/Avatar_pos_Dark.png" />
+
+    <link rel="shortcut icon" href='//dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/10323/Avatar_pos_Dark.png'>
+
+    <link rel="alternate" type="application/atom+xml" href="https://q8g3f18hx6wm.statuspage.io/history.atom" title="Bisnode Status History - Atom Feed">
+    <link rel="alternate" type="application/rss+xml" href="https://q8g3f18hx6wm.statuspage.io/history.rss" title="Bisnode Status History - RSS Feed">
+
+
+    <meta name="_globalsign-domain-verification" content="y_VzfckMy4iePo5oDJNivyYIjh8LffYa4jzUndm_bZ"/>
+
+      <meta name="robots" content="noindex,nofollow">
+
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="https://q8g3f18hx6wm.statuspage.io/history.atom" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" media="screen" href="https://dka575ofm4ao0.cloudfront.net/packs/0.0a436de8bdec7099f854.css" />
+    <link rel="stylesheet" media="all" href="https://dka575ofm4ao0.cloudfront.net/assets/stevestrap/status_manifest-91f5d5bd2be1a2d0650e8b888829216e4c938817617c0a04e699abd85a8ff075.css" />
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script>
+      window.pageColorData = {"blue":"#3498DB","border":"#E0E0E0","body_background":"#ffffff","font":"#333333","graph":"#39BBEC","green":"#329E98","light_font":"#333333","link":"#D53868","orange":"#e67e22","red":"#e74c3c","yellow":"#f1c40f"};
+    </script>
+    <style>
+
+
+
+
+  /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */
+  body,
+  .layout-content.status.status-api .section .example-container .example-opener .color-secondary,
+  .grouped-items-selector,
+  .layout-content.status.status-full-history .history-nav a.current {
+    background-color:#ffffff;
+  }
+
+
+
+
+
+  /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */
+  body.status,
+  .color-primary,
+  .color-primary:hover,
+  .layout-content.status-index .status-day .update-title.impact-none a,
+  .layout-content.status-index .status-day .update-title.impact-none a:hover,
+  .layout-content.status-index .timeframes-container .timeframe.active,
+  .layout-content.status-full-history .month .incident-container .impact-none,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-none a,
+  .incident-history .impact-none,
+  .layout-content.status .grouped-items-selector.inline .grouped-item.active,
+  .layout-content.status.status-full-history .history-nav a.current,
+  .layout-content.status.status-full-history .history-nav a:not(.current):hover {
+    color:#333333;
+  }
+
+  .layout-content.status.status-index .components-statuses .component-container .name {
+    color:#333333;
+    color:rgba(51,51,51,.8);
+  }
+
+
+
+
+
+
+  /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */
+  small,
+  .layout-content.status .table-row .date,
+  .color-secondary,
+  .layout-content.status .grouped-items-selector.inline .grouped-item,
+  .layout-content.status.status-full-history .history-footer .pagination a.disabled,
+  .layout-content.status.status-full-history .history-nav a {
+    color:#333333;
+  }
+
+
+
+
+
+
+
+
+
+  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */
+  body.status .layout-content.status .border-color, hr, .tooltip-base, .markdown-display table {
+    border-color:#E0E0E0;
+  }
+
+  .markdown-display table td {
+    border-top-color:#E0E0E0;
+  }
+
+  .markdown-display table td + td, .markdown-display table th + th {
+    border-left-color:#E0E0E0;
+  }
+
+
+
+
+
+
+  /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */
+  .layout-content.status.status-index .status-day .update-title.impact-critical a,
+  .layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
+  .layout-content.status.status-index .page-status.status-critical,
+  .layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
+  .flat-button.background-red {
+    background-color:#e74c3c;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-red:after,
+  .layout-content.status-full-history .month .incident-container .impact-critical,
+  .layout-content.status-incident .incident-name.impact-critical,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
+  .status-red .icon-indicator,
+  .incident-history .impact-critical,
+  .components-container .component-inner-container.status-red .component-status,
+  .components-container .component-inner-container.status-red .icon-indicator {
+    color:#e74c3c;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-critical .updates {
+    border-color:#e74c3c;
+  }
+
+
+
+
+
+
+  /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */
+  .layout-content.status.status-index .status-day .update-title.impact-major a,
+  .layout-content.status.status-index .status-day .update-title.impact-major a:hover,
+  .layout-content.status.status-index .page-status.status-major,
+  .layout-content.status.status-index .unresolved-incident.impact-major .incident-title {
+    background-color:#e67e22;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-orange:after,
+  .layout-content.status-full-history .month .incident-container .impact-major,
+  .layout-content.status-incident .incident-name.impact-major,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-major a,
+  .status-orange .icon-indicator,
+  .incident-history .impact-major,
+  .components-container .component-inner-container.status-orange .component-status,
+  .components-container .component-inner-container.status-orange .icon-indicator {
+    color:#e67e22;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-major .updates {
+    border-color:#e67e22;
+  }
+
+
+
+
+
+
+
+/* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */
+  .layout-content.status.status-index .status-day .update-title.impact-minor a,
+  .layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
+  .layout-content.status.status-index .page-status.status-minor,
+  .layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
+  .layout-content.status.status-index .scheduled-incidents-container .tab {
+    background-color:#f1c40f;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-yellow:after,
+  .layout-content.status-full-history .month .incident-container .impact-minor,
+  .layout-content.status-incident .incident-name.impact-minor,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
+  .status-yellow .icon-indicator,
+  .incident-history .impact-minor,
+  .components-container .component-inner-container.status-yellow .component-status,
+  .components-container .component-inner-container.status-yellow .icon-indicator,
+  .layout-content.status.manage-subscriptions .confirmation-infobox .fa {
+    color:#f1c40f;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-minor .updates,
+  .layout-content.status.status-index .scheduled-incidents-container {
+    border-color:#f1c40f;
+  }
+
+
+
+
+
+
+/* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */ /* CSS BLUES */
+  .layout-content.status.status-index .status-day .update-title.impact-maintenance a,
+  .layout-content.status.status-index .status-day .update-title.impact-maintenance a:hover,
+  .layout-content.status.status-index .page-status.status-maintenance,
+  .layout-content.status.status-index .unresolved-incident.impact-maintenance .incident-title,
+  .layout-content.status.status-index .scheduled-incidents-container .tab {
+    background-color:#3498DB;
+  }
+
+  .layout-content.status-index .components-statuses .component-container.status-blue:after,
+  .layout-content.status-full-history .month .incident-container .impact-maintenance,
+  .layout-content.status-incident .incident-name.impact-maintenance,
+  .layout-content.status.status-index .incidents-list .incident-title.impact-maintenance a,
+  .status-blue .icon-indicator,
+  .incident-history .impact-maintenance,
+  .components-container .component-inner-container.status-blue .component-status,
+  .components-container .component-inner-container.status-blue .icon-indicator {
+    color:#3498DB;
+  }
+
+  .layout-content.status.status-index .unresolved-incident.impact-maintenance .updates,
+  .layout-content.status.status-index .scheduled-incidents-container {
+    border-color:#3498DB;
+  }
+
+
+
+
+
+  /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */
+  .layout-content.status.status-index .page-status.status-none {
+    background-color:#329E98;
+  }
+  .layout-content.status-index .components-statuses .component-container.status-green:after,
+  .status-green .icon-indicator,
+  .components-container .component-inner-container.status-green .component-status,
+  .components-container .component-inner-container.status-green .icon-indicator {
+    color:#329E98;
+  }
+
+
+
+
+  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */
+  a,
+  a:hover,
+  .layout-content.status-index .page-footer span a:hover,
+  .layout-content.status-index .timeframes-container .timeframe:not(.active):hover,
+  .layout-content.status-incident .subheader a:hover {
+    color:#D53868;
+  }
+  .flat-button,
+  .masthead .updates-dropdown-container .show-updates-dropdown,
+  .layout-content.status-full-history .show-filter.open  {
+    background-color:#D53868;
+  }
+
+  /* CUSTOM COLOR OVERRIDES FOR UPTIME SHOWCASE */
+  .components-section .components-uptime-link {
+    color: #333333;
+  }
+
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item {
+    color: #333333;
+    opacity: 0.8;
+  }
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item.light {
+    color: #333333;
+    opacity: 0.5;
+  }
+  .layout-content.status .shared-partial.uptime-90-days-wrapper .legend .spacer {
+    background: #333333;
+    opacity: 0.3;
+  }
+</style>
+
+
+    <!-- custom css -->
+        <link rel="stylesheet" type="text/css" href="//dka575ofm4ao0.cloudfront.net/page_display_customizations-custom_css_externals/10273/external20150219-24248-192knu9.css">
+
+
+    <!-- Le HTML5 shim -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- injection for static -->
+
+
+    
+  </head>
+
+
+  <body class="status index status-none">
+
+    
+
+
+  <div class="layout-content status status-index starter">
+      <div class="masthead-container basic">
+
+    <div class="masthead no-logo">
+        <h3>
+          <a class="color-primary" href="http://www.bisnode.com/suomi/">Bisnoden palveluiden tila - Bisnode’s Services Status</a>
+        </h3>
+
+        
+
+
+  <div class="updates-dropdown-container" data-js-hook="updates-dropdown-container">
+    <a href="#" data-js-hook="show-updates-dropdown" id="show-updates-dropdown" class="show-updates-dropdown">
+
+    </a>
+    <div class="updates-dropdown" data-js-hook="updates-dropdown" style="display:none">
+      <div class="updates-dropdown-nav nav-items-4">
+          <a href="#updates-dropdown-email" id="updates-dropdown-email-btn">
+            <span class="icon-container email">
+          </a>
+          <a href="#updates-dropdown-support" id="updates-dropdown-support-btn">
+            <span class="icon-container support">
+          </a>
+          <a href="#updates-dropdown-atom" id="updates-dropdown-atom-btn">
+            <span class="icon-container rss">
+          </a>
+        <a href="#" data-js-hook="updates-dropdown-close" id="updates-dropdown-close-btn">
+          x
+        </a>
+      </div>
+      <div class="updates-dropdown-sections-container">
+          <div class="updates-dropdown-section email" id="updates-dropdown-email" style="display:none">
+            <div class="directions">
+              Get email notifications whenever Bisnode <strong>creates</strong>,  <strong>updates</strong> or <strong>resolves</strong> an incident.
+            </div>
+            <form id="subscribe-form-email" action="/subscriptions/new-email" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                <!-- make sure not to put cookie values in here since this gets cached -->
+                <input name="email" id="email" type="text" placeholder="Email Address" class="full-width" data-js-hook="email-notification-field">
+                <input type="submit" value="Subscribe" class="flat-button full-width" id="subscribe-btn-email" data-disabled-text="Subscribing..." data-revert-on-success="true">
+                
+</form>          </div>
+
+
+
+
+          <div class="updates-dropdown-section support" id="updates-dropdown-support" style="display:none">
+            Visit our <a target="_blank" href="http://www.bisnode.com/suomi/yhteystiedot/">support site</a>.
+          </div>
+
+          <div class="updates-dropdown-section atom" id="updates-dropdown-atom">
+            Get the <a href="https://q8g3f18hx6wm.statuspage.io/history.atom" target="_blank">Atom Feed</a> or <a href="https://q8g3f18hx6wm.statuspage.io/history.rss" target="_blank">RSS Feed</a>.
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="clearfix"></div>
+    </div>
+
+</div>
+ <!-- this is outside of the .container so that the cover photo can go full width on mobile -->
+
+
+    <div class="container">
+        <div class="page-status status-none">
+          <span class="status font-large">
+            All Systems Operational
+          </span>
+          <span class="last-updated-stamp  font-small"></span>
+        </div>
+
+
+        <div class="text-section">
+          <h4 class="font-largest">
+            <a id="about-this-site" href="#about-this-site" class="no-link">About This Site</a>
+          </h4>
+          <p class="color-secondary font-regular">
+            Tällä sivulla näet Bisnoden palveluiden ajantasaisen tilan. Jos haluat häiriötiedotteet sähköpostiisi, rekisteröidy Subscribe to updates -painikkeen kautta ja valitse haluamasi palvelut. Vahvistuspyynnön saat sähköpostiisi. Viimeistele rekisteröintisi klikkaamalla linkkiä.<br><br>This page is about the real time status of Bisnode's services. If you want notifications to your email, sign up via the Subscribe to updates -button and select services needed. A confirmation request will be sent to your email.
+          </p>
+        </div>
+
+        <div class="components-section font-regular">
+    <div class="components-container one-column">
+            <div class="component-container border-color is-group ">
+  
+<div data-component-id="1cm574kztnrm"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="component-group-opener">
+
+   <span class="name">
+       <span class="fa group-parent-indicator color-secondary font-small fa-plus-square-o"></span>
+       <span>
+         Rajapinnat / Application programming interfaces (API)
+       </span>
+   </span>
+
+
+  <span
+    class="component-status tool"
+    title="Groups take on the status of their most degraded child component or service. Click to see the status of the individual children."
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+
+  <!-- children components -->
+  <div class="child-components-container ">
+      
+<div data-component-id="jwdcy5dfx84g"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Henkilöluottotiedot - Consumer Credit information SOAP API
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="86ssrzv8nvvm"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Henkilötiedot - BCI / People Additional Information REST API
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="20qz3ln17qtr"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      VRK-kyselyt - Population Register Center, Population Information System API
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="3lw9pqhfywpk"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Yritystiedot - Company Information SOAP API
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+  </div>
+</div>
+
+            <div class="component-container border-color is-group ">
+  
+<div data-component-id="c8j33pbl6r2h"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="component-group-opener">
+
+   <span class="name">
+       <span class="fa group-parent-indicator color-secondary font-small fa-plus-square-o"></span>
+       <span>
+         Verkkopalvelut / Reporting services
+       </span>
+   </span>
+
+
+  <span
+    class="component-status tool"
+    title="Groups take on the status of their most degraded child component or service. Click to see the status of the individual children."
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+
+  <!-- children components -->
+  <div class="child-components-container ">
+      
+<div data-component-id="qvh66vy5xpxb"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Bisnode-luottotietopalvelu - Bisnode Credit Information Service
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="yvhszsy6k9s5"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Bisnode RiskGuardian -luottotietopalvelu - Bisnode RiskGuardian Credit Service
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="401prcqkcpt7"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Bisnode-ihmiset - Bisnode People
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="cfjy7mbfyylg"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Bisnode-autot - Bisnode Cars
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="s7lcb4jjcc84"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Bisnode-kiinteistöt - Bisnode Real Estate
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+      
+<div data-component-id="lshq001drvqs"
+     class="component-inner-container status-green "
+     data-component-status="operational"
+     data-js-hook="">
+
+   <span class="name">
+      Voice of the Customer - online reports
+   </span>
+
+
+  <span
+    class="component-status "
+    title=""
+  >
+    Operational
+  </span>
+
+  <span class="tool icon-indicator fa fa-check" title="Operational"></span>
+
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="component-statuses-legend font-small">
+  <div class="legend-item status-green">
+    <span class="icon-indicator fa fa-check"></span>
+    Operational
+  </div>
+  <div class="legend-item status-yellow">
+    <span class="icon-indicator fa fa-minus-square"></span>
+    Degraded Performance
+  </div>
+  <div class="legend-item status-orange">
+    <span class="icon-indicator fa fa-exclamation-triangle"></span>
+    Partial Outage
+  </div>
+  <div class="breaker"></div>
+  <div class="legend-item status-red">
+    <span class="icon-indicator fa fa-times"></span>
+    Major Outage
+  </div>
+  <div class="legend-item status-blue">
+    <span class="icon-indicator fa fa-wrench"></span>
+    Maintenance
+  </div>
+</div>
+
+  </div>
+
+
+
+
+
+
+      <div class="incidents-list format-expanded">
+        <a class="font-largest no-link" id="past-incidents" href="#past-incidents">Past Incidents</a>
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 8</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported today.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 7</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 6</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 5</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Aug <var data-var="date"> 4</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-critical font-large">
+    <a href="/incidents/72yry5lsprls">Major problems on Voice of the Customer - online reports</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular resolved">
+        <strong>Resolved</strong> -
+      	Issues has been resolved. Voice of the Customer - online reports service is currently running normally.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 4</var>, <var data-var='time'>19:01</var> EEST
+        </small>
+      </div>
+      <div class="update font-regular investigating">
+        <strong>Investigating</strong> -
+      	Bisnode service is currently facing major problems. We are investigating the issue and trying to fix it as soon as possible.
+
+        <br>
+
+        <small>
+            Aug <var data-var='date'> 2</var>, <var data-var='time'>17:17</var> EEST
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 3</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Aug <var data-var="date"> 1</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">31</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">30</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">29</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">28</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular ">
+    <div class="date border-color font-large">Jul <var data-var="date">27</var>, <var data-var="year">2019</var></div>
+          <div class="incident-container">
+  <div class="incident-title impact-critical font-large">
+    <a href="/incidents/pc9chdpx7s7d">Major problems on Henkilöluottotiedot - Consumer Credit information SOAP API</a>
+  </div>
+
+  <div class="updates-container">
+    <!-- postmortem -->
+
+    <!-- incident updates -->
+      <div class="update font-regular resolved">
+        <strong>Resolved</strong> -
+      	Issues has been resolved. Henkilöluottotiedot - Consumer Credit information SOAP API service is currently running normally.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>27</var>, <var data-var='time'>08:12</var> EEST
+        </small>
+      </div>
+      <div class="update font-regular investigating">
+        <strong>Investigating</strong> -
+      	Bisnode service is currently facing major problems. We are investigating the issue and trying to fix it as soon as possible.
+
+        <br>
+
+        <small>
+            Jul <var data-var='date'>27</var>, <var data-var='time'>08:09</var> EEST
+        </small>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">26</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+          
+  <div class="status-day font-regular no-incidents">
+    <div class="date border-color font-large">Jul <var data-var="date">25</var>, <var data-var="year">2019</var></div>
+        <p class="color-secondary">No incidents reported.</p>
+  </div>
+
+      </div>
+
+
+      <div class="page-footer border-color font-small">
+          <a href="/history" class="history-footer-link"><span style="font-family:arial">&larr;</span> Incident History</a>
+
+        <span class="color-secondary powered-by"><a class="color-secondary" target="_blank" rel="noopener noreferrer nofollow" href="https://www.statuspage.io/powered-by?utm_campaign=bisnode.statuspage.io&amp;utm_content=status-pages&amp;utm_medium=powered-by&amp;utm_source=inapp">Powered by Statuspage</a></span>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+
+
+
+
+
+
+
+    <script src="https://dka575ofm4ao0.cloudfront.net/assets/status_manifest-7d475e2ffaf82f815f303398609f2b65110d8d61f3291ff8d12801b42eff70cd.js"></script>
+    <div id="cpt-notification-container"></div>
+    
+
+
+
+
+    <!-- analytics web client scripts -->
+    <script>
+      if (typeof window.awc === 'undefined' || window.awc === null) {
+        window.awc = new Promise(function(resolve, reject) {
+          window.awc_resolve = resolve;
+        });
+      }
+      if (typeof window.analyticsClient === 'undefined' || window.analyticsClient === null) {
+        window.analyticsClient = new Promise(function(resolve, reject) {
+          window.analyticsClient_resolve = resolve;
+        });
+      }
+      awc.then(function(awc) {
+        var analyticsClient = new awc.default({
+          env: awc.envType.PROD,
+          product: 'statuspage',
+          version: '926662ee64c0da3cfe2f803937587788a1e197a2',
+          origin: awc.originType.WEB,
+        });
+
+        var tenantOrgId = '4y89q6vwm6dd:q8g3f18hx6wm';
+        analyticsClient.setTenantInfo(awc.tenantType.ORG_ID, tenantOrgId);
+
+        window.analyticsClient_resolve(analyticsClient);
+      });
+    </script>
+
+      <script>
+    var eventPayload = {"name":"statusPageScreen","attributes":{"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"q8g3f18hx6wm","pageType":"public","componentSubscriptionEnabled":true,"statusEmbedEnabled":true}}
+    var expectedParams = new Set(); // initializing with iterable not supported in IE11
+    expectedParams.add('utm_source').add('utm_campaign').add('utm_medium');
+
+    location.search.substring(1).split('&').forEach(function(param) {
+      var arr = param.split('=');
+      if (arr.length < 2) return;
+
+      var k = arr[0], v = arr[1]
+      if (expectedParams.has(k)) eventPayload.attributes[k] = v;
+    });
+
+    analyticsClient.then(function(analyticsClient) {
+      analyticsClient.sendScreenEvent(eventPayload)
+    })
+
+    if (location.search.indexOf('subscription_confirmed=true') !== -1) {
+      analyticsClient.then(function(analyticsClient) { analyticsClient.sendScreenEvent({"name":"emailConfirmedBanner","attributes":{"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"q8g3f18hx6wm","pageType":"public","componentSubscriptionEnabled":true,"statusEmbedEnabled":true}}); });
+    }
+  </script>
+    <script type="text/javascript">
+
+      $(function() {
+        $('#subscribe-btn-email').click(function() {
+          analyticsClient.then(function(analyticsClient) { analyticsClient.sendUIEvent({"actionSubject":"button","actionSubjectId":"subscribeStep1","action":"clicked","containerType":null,"containerId":null,"objectType":null,"objectId":null,"source":"statusPageScreen","attributes":{"type":"email","componentSubscriptionEnabled":true,"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"q8g3f18hx6wm","pageType":"public","statusEmbedEnabled":true},"tags":[]}); });
+        });
+
+        $('#subscribe-btn-sms').click(function() {
+          analyticsClient.then(function(analyticsClient) { analyticsClient.sendUIEvent({"actionSubject":"button","actionSubjectId":"subscribeStep1","action":"clicked","containerType":null,"containerId":null,"objectType":null,"objectId":null,"source":"statusPageScreen","attributes":{"type":"sms","componentSubscriptionEnabled":true,"featureFlagEnabled":true,"pageIsPrivate":false,"overAllocationsCohort":null,"pageId":"q8g3f18hx6wm","pageType":"public","statusEmbedEnabled":true},"tags":[]}); });
+        });
+      })
+    </script>
+
+
+
+    <!-- all of the content_for stuff -->
+      <script src="https://dka575ofm4ao0.cloudfront.net/assets/register_subscription_form-3fd70416ac567c9e80fb4e1c0bfde0de779db90e80bbf28fabcaba62c004984b.js"></script>
+
+  <script type="text/javascript">
+      $(function() {
+          SP.currentPage.registerSubscriptionForm('email');
+
+
+      });
+
+
+
+  </script>
+  <script src="https://dka575ofm4ao0.cloudfront.net/assets/status_common-f8b35586d7e6820c2761e822c9860a9ad5f3706467a0f2ea792990ed76958f20.js"></script>
+    <script>
+      SP.pollForChanges('/api/v2/status.json');
+    </script>
+
+  <script>
+    $(function() {
+      $('.tool').tooltipster({
+        animationDuration: 100,
+        contentAsHTML: true,
+        delay: 100,
+        theme: 'tooltipster-borderless',
+        functionInit: function (instance, helper) {
+          var $origin = $(helper.origin),
+              dataOptions = $origin.attr('data-tooltip-config');
+          if (dataOptions){
+            dataOptions = JSON.parse(dataOptions);
+            $.each(dataOptions, function(name, option){
+                instance.option(name, option);
+            });
+          }
+        }
+      });
+      // clicks on first tab in subscribe popout since we won't know which is first
+      // upon construction in the ruby code
+      $('.updates-dropdown-nav > a').eq(0).click();
+
+      // twitter follow button needs some margin
+      $('.twitter-follow-button').css('margin-right', '6px');
+    });
+
+    $(function() {
+      // open/close component groups
+      HRB.utils.djshook('component-group-opener').on('click', function() {
+        $(this).find('.group-parent-indicator').toggleClass('fa-plus-square-o').toggleClass('fa-minus-square-o').end().parent().toggleClass('open');
+      });
+    });
+
+    $(function() {
+      $(document).on('ajax:complete', '.modal.in', function(e) {
+        // Close the active modal.
+        $('.modal.in').modal('hide');
+      });
+    });
+
+  </script>
+
+
+    
+  <script src="https://dka575ofm4ao0.cloudfront.net/packs/common-bdc19f5e53811341ade8.chunk.js"></script>
+  <script src="https://dka575ofm4ao0.cloudfront.net/packs/globals-5e1dcf2132f671804b44.chunk.js"></script>
+
+    <script src="https://dka575ofm4ao0.cloudfront.net/packs/runtime-78432868d12898b6ca4e.js"></script>
+    
+    
+
+
+    
+
+
+<!-- FOR FLASH NOTICES -->
+
+
+
+<!-- FOR ERROR -->
+
+
+
+    <script>
+  $(function() {
+    var $link = $('<span class="color-secondary powered-by"><a class="color-secondary" target="_blank" rel="noopener noreferrer nofollow" href="https://www.statuspage.io/powered-by?utm_campaign=bisnode.statuspage.io&amp;utm_content=status-pages&amp;utm_medium=powered-by&amp;utm_source=inapp">Powered by Statuspage</a></span>');
+
+  	var setPoweredByStyles = function() {
+  		if (!$('.powered-by').length) {
+  			$link.appendTo($('.page-footer'))
+  		}
+  		$('.powered-by').attr('style', 'display: inline !important; visibility:visible !important; opacity: 1 !important; position:static !important; text-indent:0px !important; transform:scale(1) !important');
+  	}
+
+  	setInterval(setPoweredByStyles, 1000);
+  });
+</script>
+
+
+
+
+
+  </body>
+</html>

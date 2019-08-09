@@ -1,0 +1,16 @@
+200 OK
+X-Cache: HIT TCP_MEM_HIT dirn:-2:-2
+X-Swift-Savetime: Thu, 08 Aug 2019 08:57:09 GMT
+Timing-Allow-Origin: *
+Ali-Swift-Global-Savetime: 1565254629
+Expires: Thu, 08 Aug 2019 09:57:09 GMT
+Cache-Control: max-age=3600
+Eagleid: 2ff62f9d15652551548471628e
+Server: Tengine
+Vary: Accept-Encoding
+Retry-Count: 0
+Via: cache12.l2de1[1103,200-0,C], cache44.l2de1[963,0], cache8.gb1[0,200-0,H], cache9.gb1[1,0]
+X-Swift-Cachetime: 3600
+Content-Type: text/html
+Date: Thu, 08 Aug 2019 08:57:09 GMT
+Age: 525

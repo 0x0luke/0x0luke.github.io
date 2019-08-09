@@ -1,0 +1,18 @@
+200 OK
+X-Trace: 2BC25AD684F1D197E32707736EEA2E12D5242C78F7000000000000000000
+Retry-Count: 0
+Set-Cookie: __cfduid=d1cbd8f65b8af3cc5d8c22224cda1c5a81565258316; expires=Fri, 07-Aug-20 09:58:36 GMT; path=/; domain=.www.vietechnologies.com; HttpOnly __cfruid=4de81e306140b6de4c42f792213c2d30f30e823b-1565258316; path=/; domain=.www.vietechnologies.com; HttpOnly
+Cache-Control: s-maxage=7200,max-age=5
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-5396138498,P-3941410,L-5359913919,L-5359913924,L-5359914011,L-5407332831,E-5359913874,E-5359913914,MENU-5359914761,PGS-ALL,SW-1,SD-10
+Vary: Accept-Encoding
+X-Hs-Content-Id: 5396138498
+Content-Type: text/html;charset=utf-8
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/3941410/hub_generated/template_assets/1556268557598/combined-css-2c8ab6017aa28f48a3e9eb81b736e7b2.css>; rel=preload; as=style </hs/hsstatic/legacy-module-support/static-1.1/bundles/legacyImageModule.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Cf-Ray: 5030a1fecb60bfe3-MAN
+X-Hs-Hub-Id: 3941410
+Date: Thu, 08 Aug 2019 09:58:36 GMT
+Cf-Cache-Status: EXPIRED
+X-Powered-By: HubSpot
+Server: cloudflare

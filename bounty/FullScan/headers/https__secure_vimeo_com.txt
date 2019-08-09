@@ -1,0 +1,26 @@
+200 OK
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy-Report-Only: default-src https: data: blob: wss: 'unsafe-inline' 'unsafe-eval'; report-uri /_csp
+Accept-Ranges: bytes
+Retry-Count: 0
+Set-Cookie: vuid=847625733.1893094240; expires=Sun, 05-Aug-2029 15:01:33 GMT; Max-Age=315360000; path=/; domain=.vimeo.com; secure
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+X-Content-Type-Options: nosniff
+Vary: User-Agent,Accept-Encoding
+Date: Thu, 08 Aug 2019 15:01:33 GMT
+Age: 0
+X-Frame-Options: sameorigin
+Via: 1.1 varnish 1.1 varnish 1.1 varnish
+X-Served-By: cache-bwi5139-BWI, cache-lcy19241-LCY
+Server: nginx
+X-Cache-Hits: 0, 0
+X-Timer: S1565276493.003907,VS0,VE201
+X-Cache: MISS, MISS
+P3p: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+X-Varnish-Cache: 0
+X-Vserver: infra-webproxy-a-3
+Content-Type: text/html; charset=UTF-8
+X-Vimeo-Dc: ge
+Expires: Thu, 08 Aug 2019 03:01:33 GMT

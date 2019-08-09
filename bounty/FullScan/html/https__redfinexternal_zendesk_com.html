@@ -1,0 +1,1025 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<!DOCTYPE html>
+<html lang="en" class="">
+	
+	
+
+
+<head>
+    
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMDUFFaGwAAXFhQDwg="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);</script><script type="text/javascript">__pageTimingStart=new Date</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="CLASSIFICATION" content="Business: Real Estate">
+	<meta name="HOME_URL" content="https://www.redfin.com/">
+	<meta name="COPYRIGHT" content="Redfin">
+	<meta name="CATEGORY" content="Business: Real Estate">
+	<meta name="AUTHOR" content="Redfin">
+	<meta name="verify-v1" content="vbagp07VenQsa10E9wu53BlevOrQJwZgHkSUPFAKDGE=">
+
+	
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
+
+
+<link rel="apple-touch-icon" href="https://ssl.cdn-redfin.com/v274.2.0/images/logos/Touch-icon-60.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://ssl.cdn-redfin.com/v274.2.0/images/logos/Touch-icon-76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://ssl.cdn-redfin.com/v274.2.0/images/logos/Touch-icon-120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://ssl.cdn-redfin.com/v274.2.0/images/logos/Touch-icon-152.png" />
+
+
+	
+	<meta property="og:image" content="https://ssl.cdn-redfin.com/v274.2.0/images/logos/redfin-icon-standard-red-100.png">
+	
+
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+
+	
+	
+	
+		<link rel="stylesheet" href="https://ssl.cdn-redfin.com/v274.2.0/images/text/csso/printability/print.css" type="text/css" media="print">
+	
+	
+		
+				<style>				
+					div#content div.main div.content { margin: 10px 20px; }
+					div#content div.main div.content.breathing-room { margin-top: 40px; }
+				</style>
+				
+					
+
+<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+		document.createElement('hgroup');
+	</script>
+<![endif]-->
+
+		<link rel="stylesheet" href="https://ssl.cdn-redfin.com/v274.2.0/images/text/csso/common/responsive-profile.css" type="text/css" media="all">
+		
+				
+	
+
+	
+
+	
+
+	
+	
+		<base target="_top"></base>
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+<script type="text/javascript">
+		var g_gisxmlVersion = 287;
+		var g_helpPath = '';
+		var g_imageServerUrl = 'https://ssl.cdn-redfin.com/v274.2.0';
+		var g_webServerUrl = 'https://www.redfin.com';
+		var g_unsecureWebServerUrl = "http://www.redfin.com";
+		var g_facebookAppId = "161006757273279";
+		var g_secureWebServerUrl = "https://www.redfin.com";
+		var g_contentImageServerUrl = "https://ssl.cdn-redfin.com/static-images";
+		var g_cdnServerUrl = "https://www.redfin.com";
+		var g_systemFileServerUrl = "https://ssl.cdn-redfin.com/system_files";
+		var g_commerceServer = "https://shop.redfin.com";
+		var g_photoBaseUrl = 'https://ssl.cdn-redfin.com/photo';
+		var g_osxNotificationWebsiteId = 'web.com.redfin';
+		var g_cssServer = 'https://ssl.cdn-redfin.com/v274.2.0/images/text/csso';
+		var g_branchApiKey = 'key_live_nfaF2ooh4JRzqa6jDCv6vgfiDBe3O6Wv';
+		var g_isProdEnv = ("true" === "true");
+		var g_domainAwareServerPaths = {"US":{"PHOTO_SERVER":"https://ssl.cdn-redfin.com/photo","IMAGE_SERVER_UNVERSIONED":"https://ssl.cdn-redfin.com/vLATEST","WEB_SERVER_VERSIONED":"https://www.redfin.com/v274.2.0","API_SERVER":"https://www.redfin.com","ALERTS_IMAGE_SERVER":"https://ssl.cdn-redfin.com","IMAGE_SERVER":"https://ssl.cdn-redfin.com/v274.2.0","SECURE_WEB_SERVER":"https://www.redfin.com","CDN_SERVER":"https://www.redfin.com","WEB_SERVER":"https://www.redfin.com","SYSTEM_FILE_SERVER":"https://ssl.cdn-redfin.com/system_files","CONTENT_IMAGE_SERVER":"https://ssl.cdn-redfin.com/static-images","STANDARD_WEB_SERVER":"http://www.redfin.com","COMMERCE_SERVER":"https://shop.redfin.com"},"CA":{"PHOTO_SERVER":"https://ssl.cdn-redfin.com/photo","IMAGE_SERVER_UNVERSIONED":"https://ssl.cdn-redfin.com/vLATEST","WEB_SERVER_VERSIONED":"https://www.redfin.ca/v274.2.0","API_SERVER":"https://www.redfin.ca","ALERTS_IMAGE_SERVER":"https://ssl.cdn-redfin.com","IMAGE_SERVER":"https://ssl.cdn-redfin.com/v274.2.0","SECURE_WEB_SERVER":"https://www.redfin.ca","CDN_SERVER":"https://www.redfin.ca","WEB_SERVER":"https://www.redfin.ca","SYSTEM_FILE_SERVER":"https://ssl.cdn-redfin.com/system_files","CONTENT_IMAGE_SERVER":"https://ssl.cdn-redfin.com/static-images","STANDARD_WEB_SERVER":"http://www.redfin.ca","COMMERCE_SERVER":"https://shop.redfin.ca"}};
+		var g_redfinOwnedEmailDomains = ["@redfin.com", "@redfin.ca", "@redfinmortgage.com", "@titleforward.com"];
+		var g_redfinOwnedTopAndSecondLevelDomains = ["redfin.com", "redfintest.com", "redfin.ca", "redfintest.ca", "redfinmortgage.com", "redfinmortgagetest.com", "titleforward.com"];
+
+		
+			
+				
+					var g_jsonLogin = null;
+				
+				
+			
+		
+		var cookieDomain = '.redfin.com';
+		
+		
+		
+		var g_bouncerData = {"8365687":"1","1370031486":"1","7418282":"1","2274510":"1","3810822":"1","3898641":"1","9788903":"1","2046665030":"UPDATED","4252294":"1","5071792":"1","1861972208":"1","6202496":"1","8967734":"1","8333762":"1","5802513":"1","1393515034":"1","3259156":"1","610683559":"1","906713769":"1","8923573":"1","8316681":"1","5636026":"1","3902610":"1","575914":"1","1658344":"1","1482826":"1","4369913":"1","7028009":"Control","1873721500":"1","1234663":"1","392657015":"1","281544202":"1","8051396":"1","43353073":"1","2710954":"1","4715140":"Variant","7760229":"1","1463942":"1","356823653":"1","6068828":"1","20120828":"1","8697077":"1","2831572":"1","1103504":"1","1523185":"1","1610446775":"1","7227217":"1","3949999":"Variant","1145226239":"1","1770504":"1","8388739":"Variant","2123907":"1","5567082":"1","973565022":"1","3123608":"1","9372799":"1","5090773":"1","2649480":"1","198747673":"1","2639940":"1","8565820":"1","626646":"1","7890115":"1","2842326":"1","261403169":"1","7559226":"Control","8623001":"1","3440297":"1","2779895":"1","1338615737":"1","3529992":"1","1393515036":"1","3133312":"1","1913163":"1","742055":"1","5893399":"1","1589300":"Variant","3376011":"1","3423339":"Control","2578724":"1","339997":"Anon_Users","8537661":"1","4758940":"1","3697370":"1","7435126":"1","61243125":"1","6480638":"1","7714820":"1","9215032":"1","7924741":"1","492172386":"1","2121388741":"1","2543242":"1","3168458":"1","2608008":"1","2779896":"1","9041370":"1","6280228":"1","3874561":"1","710394":"1","8564511":"Variant","1948931":"COMMUTE","2636153":"1","8340798":"1","9680909":"1","1314853":"1","8438674":"1","6950746":"1","2376275":"1","1642515213":"1","4258772":"1","8305372":"1","1240546149":"Control","1633123":"1","2041001":"1","1456085707":"ONE_TAP_CENTERED","2157961":"1","2579591":"1","944627529":"1","89740256":"1","5870072":"1","1222661":"1","6131885":"1","916783461":"Control","9321471":"1","6142997":"1","7892839":"1","456334499":"1","4506153":"OWNER","1400338120":"1","6195392":"1","365571":"Google_one_tap","8212833":"1","1033337":"1","3975872":"1","6214789":"1","8103381":"1","9982629":"1","4100573":"1","8395624":"1","318937030":"Control","1109737":"1","2129182466":"1","4100572":"No_Icon","598054":"1","5857357":"1","28929832":"1","3626879":"1","6385565":"1","1007517":"1","5476778":"LEFT_SIDE_OWNER_BUTTON","7334181":"1","4010252":"1","261403168":"1","4079786":"1","2129896":"1","9321461":"1","464822":"1","2254912":"NEW_HOME","3132633":"1","3941295":"1","1614123":"1","17690277":"Variant","4079800":"1","95479615":"1","6856318":"Control","7462615":"1","8583353":"1","7549029":"1","7746355":"1","34410663":"1","6214788":"1","8305356":"1","4343536":"BackendPerfAndAnimation","4709921":"Redesign","26":"1","1568480":"1","489870":"1","1333067":"1","20120825":"1","1177281902":"1","9278826":"1","1468883":"1","6148509":"REDIRECT_TO_LDP","1100305":"1","1626655":"1","1541344":"1","5927204":"1","1842841":"1","9810319":"1","4862829":"Variant","3835580":"1","1090863":"1","7612741":"1","4429189":"1","123126":"1","20120821":"1","20120827":"1","5762094":"See_all_new","3408177":"1","5103963":"1","7":"1","1837827260":"1","700858":"1","9289230":"1","6212779":"1","1058201":"Stacked","75873237":"1","8093825":"1","1013531":"1","4723841":"1","2405376":"1","7706475":"1","1259089":"1","2484495":"1","88812588":"1","707208245":"PotentialBuyers","4358604":"1","8319874":"1","1700094":"1","1448745":"1","5311678":"Control","20120823":"1","7890113":"1","1634736249":"Agent_remarks","5559232":"1","5313249":"1","4205414":"COMMUTE","2905908":"1","5240321":"1","909634":"1","8503952":"1","123633":"1","42":"1","105405418":"1","4632036":"New_Saved_Searches_Page","2372312":"Control","1413083":"1","8872392":"1","2117050":"1","4947544":"1","7675841":"CONTROL","3897803":"1","8375209":"1","2062607254":"1","9565569":"1","4503581":"1","904922":"1","6773401":"1","98293823":"1","6649600":"1","1688540836":"1","7890114":"1","1507808567":"1","2710934":"New_Improved_And_Mobile","1059070":"1","7571293":"1","8944841":"1","3106703":"1","559230552":"1","4202452":"1","3898340":"1","4079778":"1","7230131":"1","1665309":"Variant","48272024":"1","7774167":"Control","64660905":"Variant","5188495":"1","397516":"1","6946411":"1","2182339":"1","7890104":"1","3810826":"1","4605677":"1","8675310":"1","9481474":"1","4950267":"1","4900593":"1","5575021":"1","5619155":"1","1450354458":"1","33665897":"1","3838249":"1","3662308":"1","2262270":"1","6212780":"1","2209995":"Calculator","9524351":"Variant","1617736":"1","9217425":"1","7890109":"1","546487":"1","2186946":"1","8337057":"Variant","9792001":"1","3828532":"1","8456801":"1","4079782":"1","837255":"1","94363474":"1","1107015678":"1","9129884":"1","3803434":"1","1542313":"1","883941594":"1","8305362":"1","1241475865":"Variant","8403118":"1","720781":"CONTROL","5476227":"1","2629360":"1","2762049":"1","6856322":"HasTimeTiles","5717274":"1","642010856":"1","9891905":"1","31645138":"1","5327384":"1","85540":"1","486421":"1","1594964":"Variant","4503578":"1","5401249":"1","1953787":"1","1578991747":"1","6632854":"1","1435215924":"1","5475645":"1","9292527":"1","1543492":"1","7559812":"1","827637":"1","7982568":"1","2010356649":"1","4685802":"Clustering","4894129":"B","5802510":"1","15941146":"1","22":"1","862677":"1","8623134":"1","737247":"Variant","2532804":"1","501071549":"Variant","8380523":"1","9492062":"1","4726829":"1","8505607":"1","4845607":"1","2066256346":"1","3797238":"1","7954779":"1","7770085":"1","2101120":"1","18720659":"1","4800573":"1","8507318":"1","789426732":"1","415049957":"1","1708427":"Control","761213":"1","118506":"1","5304589":"1","61329021":"1","9997874":"1","7392244":"1","1527455":"VariantA","7092497":"1","3739371":"1","8837850":"1","6892719":"1","6422382":"1","12":"1","6692007":"1","736917836":"1","3933377":"1","7334118":"1","8003435":"1","5059767":"1","840648":"1","4100571":"Red","8023693":"1","1939262":"1","71105175":"1","573894789":"1","29843299":"1","132978665":"NHFY_variant","8910662":"1","28749348":"PROMINENT_SALE_PRICE","8414454":"1","1169547":"1","809308":"1","7405339":"1","247697721":"1","1358911041":"Control","17":"1","8143525":"1","34579678":"1","9147719":"1","8154759":"1","1120127":"1","2901131":"1","3475449":"1","2198814":"1","353422799":"1","4279789":"1","6875180":"1","4800583":"1","7536015":"1","4891870":"1","8037818":"1","2691232":"1","6621417":"Takeover","752886":"1","1148901":"1","1326251":"1","6890124":"1","5414530":"THIRTY_TWO","8188604":"1","7326253":"1","2438911":"1","20120824":"1","1558816":"1","7432007":"App_store_button","9122094":"1","581422":"SIXTY_FOUR","361445895":"Control","20120826":"1","7018143":"Notifications","168753":"1","9596920":"VARIANT","5337084":"Variant","1805367":"Control","9429419":"1","8677727":"1","8170640":"1","7618486":"1","2691228":"1","3124786":"BOTH_BUTTONS_AND_COPY_CHANGE","1435215923":"1","1961697451":"Control","8131707":"Video_Popup","2689429":"1","7192428":"1","6214782":"1","43735":"1","3":"1","3987210":"1","9987899":"1","5203097":"On_Off_Toggle","9774469":"1","1696326":"1","9753012":"1","29753012":"1","42771":"1","1620962":"1","9698169":"1","4709923":"1","123455":"Home_Worth","102881":"Control","8932135":"1","8322101":"1","513041":"1","8458060":"1","1827232":"1","1291848":"variant_image_background","3224441":"1","92852271":"1","3836023":"Variant1","8992517":"1","6863319":"1","2691233":"1","4848698":"1","1552579600":"1","2204996":"1","7515977":"1","680384268":"1","2633942":"1","394896":"1","8976384":"Variant","5309051":"1","7383561":"1","6231188":"1","8780538":"1","1517126":"1","3374833":"1","2785825":"1","9396172":"1","4723840":"Control","236964":"1","1877651":"VariantA","8115925":"1","10":"1","20120820":"1","1705158":"1","611637417":"Variant","9527087":"1","5691029":"1","7497294":"1","1327360318":"1","3828872":"1","5652256":"1","318937029":"Control","5326614":"1","6481960":"1","6273165":"1","904562842":"1","3728969":"1","8744074":"1","1056273":"1","14":"1","7600870":"1","2495604":"1","235234789":"1","5403129":"1","7736594":"1","8295612":"Variant","7198794":"Control","805141340":"Photo","4373454":"Variant_1","6290977":"1","1085809":"1","7639338":"1","1619492":"1","2502042":"1","8663988":"1","4426378":"1","9987874":"1","8295610":"1","4406035":"1","4510626":"1","1771659418":"Control","1266475865":"Control","5327385":"1","2513992":"1","4413346":"1","580199190":"1","368741170":"Control","3385760":"1","292482277":"1","9324409":"1","1920566":"1","1051614731":"1","658031479":"1","7191272":"1","3283176":"1","4219897":"1","1454002":"1","8217020":"1","1942500580":"Variant","3539965":"1","8528536":"1","8837851":"1","6888621":"1","397505":"1","2273621":"1","6571363":"1","3123329":"1","54532231":"1","7890110":"1","6277081":"1","1723627286":"1","4939905":"1","283833339":"1","1837828":"1","4959344":"Variant","1388579952":"1","9952379":"1","8692016":"1","242730":"1","1526845527":"Control","1854994205":"UniqueSpots","8229809":"1","3359259":"1","6170714":"1","6167532":"1","94134":"1","1218864":"1","7890107":"1","3481020":"1","3061909":"1","6142996":"1","7000114":"1","3810823":"1","4260093":"Variant_1","6096267":"1","7292129":"SoldHomesMap","797147":"1","4955452":"1","4378875":"1","6751618":"1","8043202":"1","4079780":"1","8725748":"1","6816052":"Variant_1","1199300":"1","7510444":"1","1127570":"1","5456392":"1","690353":"1","517865158":"1","4327522":"1","4800593":"1","2779102":"1","6359044":"1","1941897":"1","5482893":"1","1752893632":"1","3204641":"1","3916952":"1","2160825":"1","3978561":"1","4472750":"1","6402750":"1","8631759":"1","258381":"1","54508924":"1","3997253":"1","2398123":"Variant","9916027":"1","7362699":"1","8095767":"1","1169548":"1","929461":"1","9998364":"1","7398379":"1","2109981":"1","5119814":"Variant","8495944":"1","7796405":"1","48377437":"1","1928393":"1","7832278":"1","9283261":"1","4632039":"1","7506637":"1","3251465":"1","496135932":"1","6980364":"1","5793823":"1","8143871":"1","3043336":"Activity","6299081":"1","365576":"Google_one_tap","3017702":"1","9379302":"1","4341274":"1","4739824":"1","6085511":"1","4079784":"1","1589301":"1","8505612":"Variant","157703":"1","3210042":"1","1565397":"1","309022":"1","4079801":"1","4981488":"1","11":"1","5345011":"1","605714":"Variant","15":"1","9138944":"1","7890105":"1","4756965":"1","6190071":"1","7692139":"1","7775773":"1","20":"1","6723234":"1","4496425":"1","1942799200":"1","1794278":"1","3416175":"1","7766442":"1","7906609":"1","8713086":"Variant_1","8763451":"1","6520863":"1","6259530":"1","8570983":"1","762180754":"1","9389938":"1","4380604":"1","7735943":"1","6196468":"1","9822386":"1","3485058":"1","7226761":"1","365565":"Google_one_tap","9129436":"1","1884691364":"1","1528315031":"1","6114815":"HotHomes","3465472":"1","4079777":"1","802032":"Update","1674667689":"Variant","4133203":"1","5849367":"1","7482705":"1","619418009":"Variant","7505730":"1","6482560":"1","5879063":"1","9894124":"1","2066250712":"1","9207838":"CURRENT_WIDTH","7345336":"1","4101392":"1","30251836":"1","1476167":"UpdatedOHCTA","9566823":"1","8994198":"REDFIN_NOW_FLYOUT_DISCLAIMER","7799270":"1","7361393":"1","9866710":"1","5161718":"1","678948132":"1","3620462":"1","4079785":"1","9923481":"1","913490":"1","8371080":"1","3532636":"1","5364671":"1","3683630":"1","9466368":"1","167905329":"Variant","626644":"1","5":"1","8309156":"1","3652036":"1","8535328":"1","7691380":"1","6156805":"1","1562318356":"1","299543852":"1","7832412":"1","6457139":"1","791875":"1","2224924":"1","9134386":"REDESIGN","4210559":"1","6167305":"1","5368671":"1","2752339":"1","1544478":"1","5460974":"1","8667327":"control","3974271":"1","48277455":"VARIANT","4663970":"1","8447930":"1","7432008":"1","7028008":"Control","1749278353":"CONTROL","324900599":"1","5301999":"1","23494942":"Control","4873737":"Variant","8290124":"1","2888905":"1","7890101":"1","1783344":"1","4503580":"1","167905349":"1","2492719":"1","8348578":"Control","3916828":"1","3927408":"1","5283613":"1","19753012":"PHOTO_ONLINE_VAL","2670124":"1","7129658":"Variant_1","3043309":"1","5244669":"1","713":"1","9717238":"1","169014583":"Control","1984272137":"1","7002937":"1","4503579":"1","140156":"1","1119750505":"1","4268107":"1","2224925":"1","2307228":"1","4808586":"1","1346406":"1","6856320":"Control","9800761":"GetStarted","1549251":"1","2146734":"1","1808403":"1","6300307":"1","9796182":"1","361545895":"Variant","7436356":"1","2190616":"1","2146383229":"1","6254844":"1","72082450":"Control","1363450":"1","2803585":"1","1992623":"1","560804523":"1","8146784":"1","1697508749":"Variant","5860286":"1","3299717":"1","4488953":"1","2098892":"1","4235662":"ShowRedfinMortgageRates","1186739":"1","9600175":"1","8391647":"1","8132840":"1","7333021":"1","5434335":"1","5367104":"1","3785289":"1","8918251":"1","1364913678":"1","8923575":"Autofill","397507":"1","9646659":"1","9997848":"1","5714768":"1","524326":"1","15117404":"1","1378316115":"1","9201525":"1","4911640":"1","3285923":"1","4984040":"1","8295620":"Variant","2155976":"Form","8424835":"Control","9546410":"1","562746800":"1","1926153":"1","5101355":"1","365577":"Google_one_tap","1190054":"LINK_AND_FILTER","5559234":"1","1598445":"1","478307962":"UpdatedOHCTA","4706144":"1","7502767":"1","4848699":"1","1607694988":"ABOVE_ACTIVE_SIMILARS","4494083":"1","6838858":"1","48277454":"1","7218380":"1","3182476":"1","6958153":"1","2123450":"1","365566":"Google_one_tap","2093066":"CONTROL","94363473":"1","330427":"1","9876385":"Variant","933787":"1","5858517":"1","1970611":"1","2691235":"1","2100143":"1","4702390":"Control","25":"1","6224800":"1","9210355":"1","8443832":"1","2339638":"SellSideVariant","5487887":"1","904658":"1","1093624368":"1","6704665":"1","6675079":"1","907185375":"1","2311451":"1","4616886":"1","1243688116":"CONTROL","4157089":"1","4905899":"1","9030157":"1","5903835":"No_name","1101510":"New_Estimate","455438878":"1","4097541":"1","7814345":"1","2687282":"1","1661706974":"1","4926423":"1","3930782":"1","2046270":"1","904897":"1","5802506":"1","5487888":"1","5369790":"1","9660184":"1","1554600":"1","8290125":"1","9829512":"Variant","47194":"1","9967487":"1","2061290958":"1","8255349":"1","8295611":"Variant","562395394":"Variant","3783808":"1","883202826":"1","6682041":"1","2105694":"1","1790756":"1","4602072":"1","4231340":"1","4642138":"TOGGLE_NEAR_FILTERS","3889211":"1","3387556":"Variant","8963083":"1","4259587":"1","3881804":"login_popup","8220429":"1","736683":"1","6451360":"1","5111081":"1","8293714":"Variant","361445795":"Variant","3216399":"1","8319876":"1","3198543":"Variant","1393515072":"1","4971573":"1","261360532":"1","2831573":"1","339991":"White_Chrome_Red_Button","9792002":"1","7890111":"1","7801098":"1","9278827":"1","7890106":"1","578510595":"1","1716994":"1","7213280":"1","1945018":"1","2638135":"1","583511857":"Variant","4079779":"1","388420922":"1","9536074":"1","2252282":"1","1745240738":"1","6780225":"Control","1291849":"variant_grey_background","4":"1","48928932":"1","9154194":"1","5462910":"1","7230054":"1","5802514":"1","900380":"1","2405950":"1","4996092":"1","534643":"CONTROL","461358":"1","1153918":"1","132649":"1","598761":"1","3558026":"1","8443833":"1","224707":"1","5903840":"Control","2584948":"1","3416875":"1","1412692234":"1","4987461":"1","940957609":"1","4062298":"1","264610312":"ListingFeeMerch","4823578":"1","6889187":"1","3519827":"1","3099860":"1","1732848479":"1","9301461":"1","7502775":"Variant","3844938":"1","5290969":"1","3823664":"1","494674230":"1","1899231":"1","43987495":"1","8295621":"Variant","3810824":"1","7285454":"1","545252":"Variant","6704664":"1","9879609":"1","361525896":"Control","621042":"1","9944181":"1","2099679":"Variant","3973375":"1","4293419":"CONTROL","64807657":"Standardized","3816532":"1","8593407":"Variant","1431036474":"1","5885551":"1","1130721180":"Control","7009541":"1","8729306":"Control","4352323":"SoldHomesMap","9982625":"1","9146663":"REDFIN_NOW_FLYOUT_DISCLAIMER","3314935":"1","7740428":"1","3844824":"1","9397341":"1","8538306":"1","8897250":"Control","8873936":"1","5473374":"1","9382062":"1","365578":"Google_one_tap","1566475865":"Variant","3508038":"VARIANT","2622764":"1","8324726":"BigPicture","9943651":"1","749862516":"1","5981925":"1","5330337":"1","1265493":"Control","2222220":"Control","870946":"1","8598005":"1","4881746":"1","5042219":"1","8923574":"Autofill","7240180":"CONTROL","1240546123":"Control","3845088":"1","85167":"SIGN_UP_LINK","67569202":"1"};
+		var g_runningExperiments = {"1771659418":"1","8131707":"1","1566475865":"1","1527455":"1","1877651":"1","1708427":"1","707208245":"1","3949999":"1","1243688116":"1","2339638":"1","2093066":"1","6856318":"1","7240180":"1","1697508749":"1","805141340":"1","169014583":"1","1266475865":"1","6780225":"1","7198794":"1","1805367":"1","85167":"1","7675841":"1","7432007":"1","1240546123":"1","916783461":"1","7028009":"1","4873737":"1","7028008":"1","1265493":"1","1961697451":"1","368741170":"1","1749278353":"1","1526845527":"1","72082450":"1","6816052":"1","611637417":"1","1607694988":"1","6856320":"1","9524351":"1","619418009":"1","3508038":"1","583511857":"1","23494942":"1","1130721180":"1","8713086":"1","2372312":"1"};
+		
+		
+		var g_dbBackedConfigData = {"OFFER_WORKSPACE_PHILADELPHIA_TEMPLATE_ID":"e3e73181-bfb7-4d3f-bad9-a12ab8acb764","TITLE_FORWARD_AVAILABLE_QUESTIONNAIRE_TYPE_IDS":[1,2],"AGENT_INTRO_TOOL_FROM_CDP":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"OFFER_INSIGHTS_ON_SCROLLABLE_MAP":[],"LIVE_CHAT_NEW_MARKETS":[16,78,79],"DATA_OPS_BUSINESS_MARKETS":[2,3,17,18,19],"REDFIN_CHICAGO_SELLER_SAVINGS":1900,"REFRESH_HAB_DATA_POLLING_INTERVAL_IN_SEC":60,"EVENTBRITE_EVENT_IDS_TO_UPDATE":[],"CDP_RESTRICTED_PAGE_MARKETS_ASSOCIATE_AGENTS":[22,23,38,79],"REACT_TOUR_CLOSEOUT_CANCELLATION_EXPERIENCE":[],"OWNER_UPLOAD_PHOTOS_DISABLED_DATA_SOURCES":[],"LISTING_STATS_EMAIL_BUSINESS_MARKETS":[2,9],"MORTGAGE_STATE_LICENSES":{"map":{"MN":"40339904","IL":"478013085","TX":"605104","FL":"CQ1035635","VA":"0226019213","CO":"EC.100031501","PA":"RB067531","MA":"ML1452446","NC":"C22041","MD":"634741","OH":"REC.2014004904","GA":"62379","TN":"162194","DC":"REO98366899"}},"MY_TEST_MARKETLIST":[],"AGENT_ONLY_VISIBLE_RESWARE_DOCS_MARKETS":[10,11,12,13,14,16,19,22,24,26,27,32,44,47,48,50,51,58,78,79,84,86,87],"AUTO_GO_AND_SHOW_FROM_DATA_OPS":[2,3,17,18,21],"SUPPORT_QUEUE_INQUIRY_DETAILS_UPDATES_REMINDERS_SA":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"FAST_OFFERS_DOCUMENT_GROUPS_UI_BUSINESS_MARKETS":[11,13,14,19,22,26,33,43,44,50,64,84],"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_MIAMI_DOWNTOWN":1700,"DATE_TIME_PICKER_SKIP_FIRST_DAY_BMS":[17,48,55,60,72,97,98],"PROPERTY_RECOMMENDATIONS_CACHE_TTL_SECONDS_DESKTOP_MAP":86400,"AGENT_NEW_LISTING_ANNOUNCEMENT_DBBC":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,112],"GIS_NUMBER_OF_HOMES_PARAM_IPAD":400,"TOUR_AUTOMATION_TEST_MARKETS":[3,18,19,20,21,22,44],"RECOMMENDATIONS_JOB_TOP_PERCENTILE":70,"REDFIN_NOW_AVM_OFFER_HIGH_PERCENTAGE":1.03,"CSL_PROP_EMAIL_ACTIVATED_LISTING_DAYS":28,"COORDINATOR_CANCEL_HOMES_ON_TOUR":[1,2,3,4,5,6,7,9,10,11,14,17,18,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,86,87,89],"AUTO_LAST_CALL_OFFER_DEADLINE_MARKETS":[],"SELL_DEAL_REACT_LISTING_PROGRAM_APPOINTMENT_TYPES_BUSINESS_MARKETS":[2,13,16,26,41,42],"OPENDOOR_BUSINESS_MARKET_ELIGIBILITY_MAP":{"map":{"14":{"map":{"minYearBuilt":1960,"maxLotSize":65340,"minPrice":100000,"maxPrice":500000}},"9":{"map":{"minYearBuilt":1960,"maxLotSize":21780,"minPrice":100000,"maxPrice":500000}}}},"OFFER_WORKSPACE_MARYLAND_MAR_TEMPLATE_ID":"dd4b7ea5-4023-4179-862e-6b02505d4ff5","CSS_HTTP_APPT_REQUEST_TIMEOUT_IN_MS":20000,"SHOW_TOUR_CHECKOUT_GUIDANCE_VS_ACCESS_STAGE":[],"SELLSIDE_AUTOWAIVE_BUSINESS_MARKETS":[],"COMING_SOON_LISTING_EARLY_TOURS_MARKETS":[9,12,16,78,79],"SELL_DEAL_REACT_ASSIGN_AGENT_EXPERIENCE_BUSINESS_MARKETS":[12],"FIRST_LOOK_NEW_API_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96],"AGENT_TOOLS_CLICK_TO_CALL_BUSINESS_MARKETS":[],"COMING_SOON_LISTING_INPUT_FORM":[2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,30,31,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,112],"OFFER_WORKSPACE_WALK_ME_ENABLED_BUSINESS_MARKETS":[11,13,22,26,50,84],"SERVICE_REGION_DEFAULT_MIN_COMMISSION_WARNING_THRESHOLD":1.0,"REQUIRE_NO_PLANS_TO_BUY_SUBSTATUS":[3,18,19,20,21,22,44],"AMP_PROPERTY_IDS_LAST_TWO_DIGITS_VARIANT":[2,5,6,9,11,12,14,17,19,23,24,26,27,31,34,38,39,40,42,44,45,46,47,48,52,53,54,56,61,62,64,66,69,70,71,73,75,76,79,82,84,85,86,90,93,95,96,97,98,99,41,15,89,78,43,8,32,57,18,87,63,81,92,20,51,91,25,72,68,67,29,3,36,35,59],"RENDER_LISTING_REMARKS_PHOTO_REGION_LAST_DIGIT_VARIANT":[3,4,5,7,8],"HAB_SLA_IN_MINUTES":60,"RENTLY_HAMMER_ACTIVE_TEST_END":13,"MORTGAGE_STATES":[8,11,12,13,17,24,25,27,37,39,42,47,48,51],"REGION_LISTINGS_ALGORITHM":1,"MAX_VIEWPORT_SIZE":1.7976931348623157E308,"REACT_DEAL_LIST_LISTING_COORDINATOR_MARKETS":[],"ABANDONED_CART_EMAIL_EVENTNAME_SUFFIX":"tour_checkout_event","NEW_TI_SCHEDULEDSTATUS_WORKFLOW":[],"ALLOW_CSS_BOOKING":[10,11,12,16,17,22,23,26,36,46,51,53,54,60,61,62,73,75,78,79],"MINUTES_IN_PAST_TO_CHECK_FOR_TIMED_OUT_CSS_ESAS":5,"CUSTOMER_INTAKE_MARKETS":[],"COMING_SOON_LISTING_EXTERNAL_ADDRESS_REGION_BM":[2,9],"TOUR_CHECKOUT_BROKERAGE_ONBOARDING":[],"GIS_HOMES_CACHE_TIME":300,"SHOWING_TIME_HTTP_REQUEST_TIMEOUT_IN_MS":2000,"REDFIN_NOW_OFFER_EXPIRING_SOON_NOTIFICATION_MARKETS":[],"DATA_SOURCES_MISSING_SHOWING_INSTRUCTIONS":[110,122,123,151,152,164,176,204,205,216,228,229,247,248,252],"MILEAGE_PADDING_RATIO":15,"REDFIN_DIRECT_BUSINESS_MARKETS":[18,79],"MLS_DATA_SOURCES_WITH_EMAIL_FOOTER_ATTRIBUTION":[78,79,86,94,115,174,175,187,204,211],"TOUR_CHECKOUT_AGENCY_AGREEMENT_QUESTION":[11,13,16,22,26,44,50,53,54,58,60,84],"STRATEGY_SESSIONS_TOUR_CHECKOUT_DURATION":60,"PREVIOUS_DEAL_PROPERTY_DISCLOSURE_BUSINESS_MARKETS":[2,3,4,5,6,23,112],"RN_MILEAGE_DISTANCE_FILTER":300,"SUPPORT_QUEUE_BACKGROUND_POLLING_PERIOD":120000,"CMA_TRAFFIC_ADVANTAGE_FLYER":[1,2,5,11,12,14,17,18,19,33,45,47,65,78,86,87],"AVM_VALUE_CACHE_EXPIRATION_SECONDS":14400,"SHORTER_SHOWING_SERVICE_APPOINTMENTS_FOR_ATTENDED_SHOWING":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111],"FAST_OFFERS_TEXAS_DOCUMENT_IDS":"1161450570,1216209228,579987088,620470217,33687983,231055355,297867664,84349908,2047533347,1514979355,1844700345,502337142,1055518967,638730974,1377238412,945894720,974054329,1118633443,998519774,157750916,945636675,1916650190,1978435747,471164111,1523145103,1934031036,361545763,2075927879,457139919,1602969479,1053025735,505214183,1787994367,831923892,837616534,320860425,337901387,1459001756,1881770588,621039196,1100418522,2126271865","PHOTO_UPLOAD_REMINDER_EMAIL_HOUR_THRESHOLD":72,"PUSH_NOTIFICATIONS_MAX_SEND_ATTEMPTS":1,"CORVAIR_STATSD_SAMPLING_RATE_BY_PAGE":{"map":{"SearchPage":{"map":{"server":0.1,"browser":0.55}},"Homepage":{"map":{"server":0.2,"browser":0.2}},"HomeDetails":{"map":{"server":0.01,"browser":0.2}}}},"FLEX_TIME_FOR_STRATEGY_SESSIONS":[18],"MAX_PROPERTY_RECOMMENDATIONS_TO_FETCH_FOR_GIS_SERVICE":3000,"OFFER_WORKSPACE_NASHVILLE_TEMPLATE_ID":"a1bc4b83-c478-4a95-a882-70af99c3363c","FAST_OFFERS_WISCONSIN_DOCUMENT_IDS":"1161450570,872555157,408413608,297606992,252848051,2018671123,1149045049,271918072,830595151,1239861383,685686626,1236683682,243086016,95543693,2113054530,1957310960,1874559007,881090673,1482109799,90408561,762946613,609053697,725027950,1484331452,1145941832,1635874651,1047300233,489652525,378840012,1286126481,151172525,730003879,776366770","SCF_INTRO_STAGE_MAP_ZOOM":15,"AMP_SERVER_RESPONSE_STATUS":310,"REDFIN_NOW_LDP_MERCHANDISING_MIN_VIEWS":4,"EMAIL_ADDRESS_CHANGE_LIMIT_ATTEMPTS":3,"BM_ONE_PERCENT_LISTING_FEE_4500_MIN_MARKETS":[1,18],"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_CHICAGO":400,"DATA_OPS_STANDARD_SEEN_BY":1,"GIS_CLUSTER_CACHE_TIME":900,"ZILLOW_CONTACT_FROM_REGEX":"(?i)(reply@premieragent\\.zillow\\.com|no-reply@confirmation\\.zillow\\.com)","AA_HAB_FIRST_TOUR_PRE_TOUR_CALL":[2],"OFFER_WORKSPACE_NORTH_CAROLINA_TEMPLATE_ID":"dbff17bb-173a-4c49-9e38-56c73dca95be","CORVAIR_CACHE_KEEP_ALIVE_MSECS":300000,"AUTO_LAST_CALL_EXPIRATION_HOUR":12,"NATIONAL_STANDARD_DEAL_TEMPLATE_MARKETS":[2,3,5,7],"LIVE_CHAT_IP_BLACKLIST":"(204\\.108\\.(119|124)|168\\.99\\.161|68\\.106\\.65)\\.\\d+|108\\.243\\.101\\.1|23\\.243\\.204\\.212|70\\.171\\.2\\.27|216\\.100\\.93\\.206|24\\.43\\.106\\.66|168\\.212\\.224\\.94|169\\.204\\.208\\.118|75\\.172\\.30\\.155|108\\.185\\.52\\.138|165\\.24\\.249\\.190|216\\.186\\.97\\.\\d+|207\\.242\\.4\\.194|204\\.108\\.111\\.35|69\\.75\\.87\\.42|156\\.3\\.174\\.233|92\\.233\\.243\\.194|98\\.225\\.3\\.3|75\\.83\\.219\\.94","SUPRA_CREDENTIAL_UNKNOWN_LISTING_THRESHOLD":0.8,"TRY_ALL_IDS_FOR_ST_DATASOURCES":[105,106,107,118,142,143,144,181,207,213,230],"IOS_AVM_ZOOM_LEVEL_TRIGGER_THRESHOLD":16.4,"FAVORITES_PAGE_SIZE":30,"CDP_RESTRICTED_PAGE_MARKETS_TRANSACTION_COORDINATORS":[22,23,38,79],"RESWARE_DOCUMENT_DOWNLOAD_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,89],"TOUR_HOTLINE_ALTERNATE_VOICEMAIL_URL":"","CURRENT_BIN_VERSION":7,"REDFIN_NOW_PURCHASE_REQUEST_INQUIRY_SUPPORT_MARKETS":[3,4,5,10,11,13,23],"USE_BRIGHT_OVER_THIS_MLS_FOR_SHOWING_TIME":[],"CMA_DIGITAL_MARKETING_FLYER":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90],"SERVICE_REGION_SETTINGS_EDITOR_REACT_MARKETS":[],"HANDOFF_TO_COORDINATORS_BUTTON":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"SHARED_SEARCH_WITH_AGENTS":[],"GIS_NUMBER_OF_HOMES_PARAM_IPHONE":400,"CLIENT_RESCHEDULE_SCHEDULED_TOURS_TEST_MIN_HOURS_NOTICE":2,"LIVE_CHAT_PROMPT_NUM_VIEWS_NEEDED":3,"CMA_COMPSV2_ANALYTICS_TIMEOUT_MS":4500,"NUM_INSTANCES_PER_DOC_TYPES_ANALYTICS_SYNC":150,"BUILDING_PHOTOS_API_TIMEOUT":250,"AGENT_FINDER_RADIUS_IN_MILES":10,"DAYS_TO_SYNC_TO_TITLE_PAST_DEAL":150,"UNREPRESENTED_SHOWINGS":[18],"DATA_OPS_ENABLE_TA_CONSUMPTION":[],"HOME_AUTO_BOOKING_WORK_FLOW_FOR_AA_TOURS":[2,3,6,7,9,10,11,14,17,18,20,21,22,23,26,29,30,33,36,38,41,45,46,50,53,54,60,61,62,63,65,72,73,75,77,89],"NEVER_TOUR_WITH_AGENT_ASSIGNMENT_UPDATES":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"SUPPORT_QUEUE_INQUIRY_DETAILS_UPDATES_REMINDERS_TR":[],"DATA_SOURCE_DISABLED_FOR_SHOWING_TIME":[109,140,141,171,175,176,178,179,196,209],"SUPPORT_QUEUE_SIMILAR_ACCOUNT_WARNING_THRESHOLD":0.99,"UPCOMING_LISTINGS_DIGEST_EMAIL_EXCLUDE_PREPARING_TO_LAUNCH_MARKETS":[],"SUPRA_PROCESSOR_WINDOW_SIZE_SECONDS":345600,"LISTING_FLYER_REACT_BUSINESS_MARKETS":[],"CONTROLLER_STATSD_SCALE_SAMPLE_RATE":100,"OFFER_WORKSPACE_HAWAII_TEMPLATE_ID":"75b2b0d1-85d0-4f3c-be6c-1e13cea5a6d1","SUPPORT_QUEUE_TOUR_STATUS_NEEDS_ATTENTION_CACHE_DURATION":15,"HAVENT_TOURED_YET_CUSTOMER_LIST_MARKETS":[],"REDFIN_BUY_SELL_AVG_SAVINGS":8400,"ANALYTICS_MATCH_FORWARDER_PERCENTAGE":0,"CONTACT_BOX_RAISED_PHOTO_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,35,36,37,42,43,44,47,52,53,55,56,59,60,63,64],"REDFIN_NOW_SERVICE_REGION_AVM_RANGE_MAP":{"map":{"772":{"map":{"high":700000,"low":250000}},"722":{"map":{"high":600000,"low":250000}}}},"AMP_REDIRECT_MARKETS":[],"TITLE_TAG_LAST_DIGIT_VARIANT":[],"MORTGAGE_ADVISOR_LOGIN_IDS":[15097602,11758008,11214284,11313751,11165214,9651460,21656701,21428774,22095785,23668649,28851639,28812173,24592961,31316447,31975189,31813096,32987607],"ANDROID_NOTIFICATION_PREFETCH_TTL_MINUTES":240,"LISTINGS_LIMIT":40000,"BUSINESS_HRS_WEEKEND":[9,20],"SHARED_SEARCH_INVITE_RESEND_LIMIT_INTERVAL":24,"TOUR_PRIORITY_SORT_IMPROVEMENT_MARKETS":[],"ASC_CLIENT_THROTTLE_MAP":{"map":{}},"TOUR_HOTLINE_CUSTOM_SMS_RESPONSE":"","AGENT_SCORECARD_IMPROVEMENT_BUSINESS_MARKETS":[],"FIRST_AND_SUBSEQUENT_TOUR_BUFFER_CHANGES":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89],"SHARED_SEARCH_INVITE_RESEND_MIN_TIME":72,"GIS_SEARCH_SAMPLING_RATE":0.4,"REDFIN_NOW_PDP_MERCHANDISING_SERVICE_REGIONS":[67,434,722,723,724,725,726,772,941,942,943,944,946,947,1034,1035,1036,1037,1038,1039,1040,1041,1042,1046,1047,1048,1049,1050,1052,1053,1054,1055,1056,1057,1783,2229,2230,3488,3489,3490,3494,3495,3499,112,320,952,955,956,957,958,959,961,963,964,966,967,978,979,1063,1064,1449,1450,2693,2694,2695,2346,2354,2355,2356,2358,2359,2367,2360,2338,2345,2344,2347,2353,2339,2159],"CONSOLIDATED_REMOTE_STRATEGY_SESSION_MARKETS":[18],"CUSTOMER_DOC_UPLOAD_TYPING_MARKETS":[10,11,12,13,14,16,19,22,24,26,27,29,32,33,41,42,44,47,48,50,51,52,58,63,78,79,84,86,87],"WEEKLY_CUSTOMER_REPORT_EMAIL_MARKETS":[10],"SMART_LOCKS_DASHBOARD":[1,4,9,14,24,36,86],"TOUR_REMINDER_TEXT_TIMING_IN_HOURS":4,"REQUEST_CSS_INFO":[10,11,12,16,17,22,23,26,36,44,46,51,53,54,60,61,62,73,75,78,79],"GIS_CLUSTER_MAX_MARKERS_THRESHOLD":300,"REDFIN_NOW_REMOTE_OFFERS_PHOTOS_NEEDED":15,"REDFINNOW_OFFER_CALCULATOR_CONFIGURATIONS":{"map":{"11":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.00","hoaDocumentFee":"300","propertyTaxesPct":"2.00","titleCharges":"400","buyersAgentCommissionPct":"3.0","escrowFee":"400","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"0","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"1860","inspectionFee":"375","estimatedImprovementsPerDay":"1000","homeWarranty":"450","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"0","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"23":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.17","hoaDocumentFee":"500","propertyTaxesPct":"1.01","titleCharges":"250","buyersAgentCommissionPct":"2.5","escrowFee":"500","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"175","inspectionFee":"300","estimatedImprovementsPerDay":"1000","homeWarranty":"400","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"500","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"13":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.00","hoaDocumentFee":"500","propertyTaxesPct":"2.50","titleCharges":"400","buyersAgentCommissionPct":"3.0","escrowFee":"500","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"2000","inspectionFee":"375","estimatedImprovementsPerDay":"1000","homeWarranty":"450","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"0","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"3":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.17","hoaDocumentFee":"500","propertyTaxesPct":"1.10","titleCharges":"250","buyersAgentCommissionPct":"2.5","escrowFee":"500","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"175","inspectionFee":"400","estimatedImprovementsPerDay":"1000","homeWarranty":"400","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"500","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"4":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.17","hoaDocumentFee":"700","propertyTaxesPct":"1.01","titleCharges":"250","buyersAgentCommissionPct":"2.5","escrowFee":"500","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"175","inspectionFee":"300","estimatedImprovementsPerDay":"1000","homeWarranty":"400","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"500","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"5":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.17","hoaDocumentFee":"700","propertyTaxesPct":"1.01","titleCharges":"250","buyersAgentCommissionPct":"2.5","escrowFee":"500","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"175","inspectionFee":"300","estimatedImprovementsPerDay":"1000","homeWarranty":"400","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"500","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}},"10":{"map":{"daysToCloseSale":"30","exciseTaxesPct":"0.00","hoaDocumentFee":"300","propertyTaxesPct":"1.01","titleCharges":"250","buyersAgentCommissionPct":"2.80","escrowFee":"400","laborCostProxy":"5000","convenienceFeePct":"7","debtCostProxyPurchasePct":"70","deedRecordingFee":"20","monthlyLandscapeMaintenanceCost":"100","repairCreditPct":"0.5","monthlyUtilitiesCost":"75","titleInsurance":"175","inspectionFee":"400","estimatedImprovementsPerDay":"1000","homeWarranty":"450","targetAnnualizedTransactionallyLoadedMarginPct":"19.5","listingActivationCost":"406","homeInsurancePct":"0.04","estimatedClosingCostPct":"1","escrowCharges":"500","daysToPrepListing":"10","debtCostProxyHoldingPct":"9"}}}},"SELLSIDE_REACT_ONE_CLICK_TITLE_FORWARD_ORDERING_BUSINESS_MARKETS":[12,14,16,19,24,27,29,33,41,42,44,47,48,51,52,58,63,78,79,86,87],"REDFIN_NOW_UNIFIED_SELLER_FLOW_MARKETS":[10,11],"SOLR_CONNECTION_TIMEOUT_MILLISECONDS":1000,"COMING_SOON_NON_REDFIN_AGENTS_MLS_IDS":[8,9,10,27,86],"AGENT_SCORECARD_POST_BETA_BUSINESS_MARKETS":[],"SUPPORT_QUEUE_TOUR_STATUS_NEEDS_ATTENTION_MINIMUM_CACHE_DURATION":0,"DEAL_STATUSES_SYNCABLE_TO_MORTGAGE":[1,12,13,27,82],"BM_ONE_PERCENT_LISTING_FEE_3500_MIN_SELL_TO_BUY_INCENTIVE_MARKETS":[6,7,10],"SHOW_FACEBOOK_PUSH_STATS_OWNER_DASHBOARD_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112],"SCF_INTRO_STAGE_SOLD_DEALS_THRESHOLD":15,"REQUEST_SHORTER_APPOINTMENTS":[7],"RENTAL_ESTIMATE_MARKET_WHITELIST":[1,2,3,4,6,20],"COMING_SOON_LISTING_TARGET_LIST_DATE_LIMIT_DAYS":21,"TOUR_PACKET_REFRESH":[1,7,12,80,81],"GIS_NUMBER_OF_HOMES_PARAM_FOR_NYC_IPHONE":175,"AUTO_INITIATE_HOME_AUTO_BOOKING_AA":[20,21],"SELL_DEAL_REACT_REDFIN_NOW_APPOINTMENT_TYPES_BUSINESS_MARKETS":[],"CLIENT_ONLY_VISIBLE_RESWARE_DOCS_MARKETS":[10,11,12,13,14,16,19,22,24,26,27,32,44,47,48,50,51,58,78,79,84,86,87],"DELETE_COMING_SOON_LISTING_IN_POST_MUTUAL":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91],"AVM_PIPELINE_REQUEST_MAX_BATCH_SIZE":512,"NON_SAME_DAY_SLA_IN_MINUTES":180,"UPCOMING_LISTINGS_DIGEST_EMAIL_MARKETS":[2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,112],"REDFIN_NOW_YEAR_BUILT_MIN_YEAR":1960,"MERCH_DYNAMO_RULE_MARKETS":0,"AGENT_REVERSE_MATCHMAKER_V2_MARKETS":[],"ANALYTICS_MATCH_FORWARDER_WHITELIST":[],"REGISTRATIONS_BY_IPADDR_LIMIT_ATTEMPTS":10,"PROACTIVE_FOLLOWUPS_ACTIVE_TYPES":[1,2,4,5,6,7,8,9,10,11,13,15,16,17,20,21,22,23,24,25,26,27,28,41,42,44,45,46,47,48,49,50,51,52],"CUSTOMER_CONFIRM_SHORT_3RDASK_TIMING_HOURS":5,"PARTNER_ONLY_LAND_SERVICE_MARKETS":[1,7,11,29,30,31,36,38,41,44,45,46,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,77,84,86,87],"NEWEST_LISTING_DATE_LIMIT_KEY":5000,"NONREDFIN_TOURABLE_COMING_SOON_SOURCES":[114,223],"TOUR_DURATION_ROUNDING_BUFFER":9,"GIS_CLUSTER_LONG_QUARTILE_THRESHOLD":0.15,"SELL_DEAL_REACT_UPDATED_3D_SCAN_APPOINTMENT_TYPES_BUSINESS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,112],"CMA_MAP_PAGE_AVERAGES_AND_MORE_COLUMNS":[1,3,6,14,23,33,41,79],"HOME_AUTO_BOOKING_WORK_FLOW_FOR_ORIGINALLY_SCHEDULED_AA_TOURS":[1,4,5,12,16,19,24,47,51,52,78,79,86,87],"BM_ONE_PERCENT_LISTING_FEE_5500_MIN_MARKETS":[2,3,4,5,78,97,98],"ENABLED_BUSINESS_MARKETS_FOR_STANDARD_TASK_ACTIONS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,112],"LISTING_RECOMMENDATIONS_CACHE_TTL_SECONDS":86400,"CLIENT_CANCEL_SCHEDULED_TOURS_MIN_HRS_REQUIRED":2,"FAST_OFFERS_OFFER_SUMMARY_ENABLED_BUSINESS_MARKETS":[3,4,5,7,11,12,13,16,18,19,20,21,22,23,26,33,41,42,43,44,50,64,78,79,84],"OFFER_WORKSPACE_ATLANTA_TEMPLATE_ID":"fe38dcae-e1ec-48c2-a4e8-638bfba67649","SELF_EDIT_IOS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"LISTING_CONCIERGE_ROLE":[1,2,5,23,78,112],"ESTIMATED_PROCEEDS_BUSINESS_MARKETS":[],"OFFER_WORKSPACE_BOSTON_GBREB_TEMPLATE_ID":"dc36b711-1a4f-4a09-8375-b6ea47d88b28","CMA_MARKETING_FLYER":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90],"FAST_OFFERS_HAWAII_DOCUMENT_IDS":"1161450570,1388620734,305398968,850658466,2007746219,942781012,365788896,1342894319,736422509,326226481,7572610,1190239136,1784845906,2069558352,882226223,619513013,447186627,1932769316,1360119506,2056532309,1754257838,225419748,1537353429,1340073173,462468732,222880803,1042914993,1292817529,807805550,1767418120,221308052,1926160630","CALL_ROUTING_RATE_LIMITING_MAX_CALLS":10,"MLS_COMPLIANCE_DEAL_COORDINATORS":[1,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,26,27,29,30,31,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,104],"CSP_GLOBAL_ADDITIONS":{"map":{"child-src":"\u0027self\u0027 blob:","connect-src":"http://bam.nr-data.net https://bam.nr-data.net","style-src":"tagmanager.google.com","script-src":"connect.facebook.net static.criteo.net/js/ld/ld.js sslwidget.criteo.com","frame-src":"https://www.eventbrite.com https://gum.criteo.com https://dis.us.criteo.com","img-src":"http://media.cdn-redfin.com https://cx.atdmt.com https://ssl.cdn-redfin.com http://ssl.cdn-redfin.com bam.nr-data.net"}},"PERSISTENT_CALL_BUTTON_ON_MW_LDP_FOOTER_ELIGIBLE_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90],"TITLE_FORWARD_WET_SIGNATURE_BLACKLIST_BANKS":["Access National Bank","Atlantic Union","aimloan.com","Amalgamated Bank","Andigo Credit Union","Associated Bank","Bank of America","BMO Harris Bank","BOK Financial","Caliber Home Loans","Cardinal Financial","Cenlar","Chase","CNB Bank","Columbia Bank","Ditech","Eagle Bank","Eastern Savings Bank","Embrace Home Loans","First National Bank","Freedom Mortgage","Fulton Bank of NJ","Guild Mortgage","Gregory Funding","Home Point Financial","HSBC","Iberia Bank","MB Financial Bank","Midland Mortgage","Navy Federal Credit Union","New American Funding","Northwest FCU","Novak Financial","Old Line Bank","Pentagon Federal Credit Union","Planet Home Lending","PNC","Premier Member Credit Union","Provident Funding","Quicken Loans","Regions Mortgage","Rushmore Loan Management Services","Select Portfolio","Signal Financial Federal CU","Sona Bank","State Financial Network","Tower Federal Credit Union","United Bank","UWM","US Bank","USAA","Vystar Credit Union"],"CONTEXTUAL_REGION_INTERLINKS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,42,43,44,46,47,48,49,50,51,52,53,55,56,57,58,59,60,62,63,64,65,66,67],"RECOMMENDED_PRICE_FIELDS_HOME_VALUE_LOW_MINIMUM":10000,"FAST_OFFERS_SOUTHERN_CALIFORNIA_DOCUMENT_IDS":"1161450570,1740537563,1608850259,1984534564,591303930,601696536,918162179,1470052422,639975380,80955180,816185067,1269793842,358502418,30692550,555341692,2144136949,1876995783,221041868,334360979,453055558,106102031,840739083,1133561722,1224917854,2136813873,1620730274,946342486,1966736532,1387724113,1532301426,1490547263,1172847260,350124967,974140504,1051626298,990566359,221596887,809331057,1512738091,798137264,1288902299,989956744,1469637068,1425702474,1605228866,698426850,141627699,565988652,411430288,652525732,303791488,1670297074,1213819815,777197159,51189288,1687351752,1226757949,1079898850,663371231,1699204044,1076331740,671955037,2019325325,295542102,699016534,388644058,537332849,585407304","OFFER_DEADLINE_SEMI_HOT_HOME_THRESHOLD_DELTA":0.025,"LA_TR_BOOKING_HOMES_REMINDER_DIALOG":[],"LDA_TEAM_MANAGED_DASHBOARDS_DATA_SOURCE_ALERTING_WINDOW_OVERRIDES":"{\"211\":[\"mon-fri: 08:00-16:30\"], \"179\":[\"mon-thu: 08:00-18:00\", \"fri: 08:00-16:30\"]}","MLS_DATA_SOURCES_SUPPORT_NUMBER_IN_EMAIL_FOOTER":[],"RESWARE_CLIENT_ONLY_DOCUMENT_IDS":[1309,1483,1482,1402,1401,1373,1368,1367,1366,1359,1347,1343,1342,1341,1335,1334,1313,1312,1311,1310,1305,1304,1303,1302,1301,1300,1297,1296,1295,1294,1293,1292,1287,1286,1285,1284,1283,1282,1281,1280,1279,1278,1275,1274,1209,1200,1177,1176,1150,1116,1113,1106,1105,1077,1076,1058,1057,1056,1055,1053,1052,1047,1046,1043,1042,1041,1034,1024,1021,1020,1010,1009,980,1458,1459],"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_MIAMI":800,"AUTO_MARK_ATTENDED_SHOWING":[9,17,18,24,30,47,60],"HOT_HOME_V3_ANALYTICS_DATA_KINESIS_STREAM_BATCH_SIZE":200,"AGENT_TOOLS_AUTO_AUTHORIZATION_BUSINESS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96],"CMA_DISAMBIG_DIALOG_MAX_DISTANCE":50.0,"SHOW_MARKETING_STATS_OWNER_DASHBOARD_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,112],"DATA_SOURCES_WHERE_ST_REQS_CHECK_FOR_AGENT_MEMBERSHIP":[],"INQUIRY_LIST_POLLING_PERIOD":2000,"LDP_POPULARITY_MESSAGING_BLACKLISTED_LISTINGS":[102557490,103261288,103347421],"FAST_OFFERS_ATLANTA_DOCUMENT_IDS":"490407060,1161450570,490407060,2000513197,2074942822,1389559055,1825967852,1198379172,1352883585,1846055369,17398334,1545778794,723043356,472285580,1229679244,855758640,1882403645,2113330111,1300896663,452307258,1947839278,1309338000,525858612,1905819381,727036612,575186560,204736874,155777082,267590778,1815053487,363369264,168026345,1769890901,2126125202,1277876224,2103333908,1383654002,4563564528","NUM_DOC_TYPES_ANALYTICS_SYNC":20,"TWILIO_ACCESS_TOKEN_VALID_DURATION_HOURS":12,"AVM_DATASOURCE_BLACKLIST":[211],"FAST_OFFERS_NORTH_CAROLINA_DOCUMENT_IDS":"1161450570,2031523668,1716896585,1991607404,1084716700,1768919349,1449535826,247003506,2036597455,441538886,348950713,1569758940,1343370492,1771753414,257976178,751861229,579852579,2108257760,2114856454,1877124291,931725651,1059447161,1731319370,1451700947,299593624,51559766,882308124,1298481381,481087060,1309884199","ENABLED_DEAL_UPDATE_TYPES":[1,2,3,4,5,6,7,8,9],"REDBIRD_SELF_TOUR_CTAS":[],"CMA_STATIC_MARKETING_FLYERS":[],"LIVE_CHAT_SHOW_CONTACT_FORM_WAIT_PERIOD":45000,"MIN_TOURS_BEFORE_PAUSE_ELIGIBLE":3,"MLS_COMPLIANCE_ASSOCIATE_AGENTS":[1,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,26,27,29,30,31,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,104],"QA_SAMPLING_RULE_IDS":[1,2,3,4,5,6,7],"NOTIFICATIONS_EMAIL_CLIENT_PRODUCER_AWS_START_EPOCH_MS":-1,"REMOVE_HOME_BUFFER_HRS":2,"FUZZY_SEARCH_SENSITIVITY_DWEB":0.5,"FAST_OFFERS_NASHVILLE_DOCUMENT_IDS":"1161450570,875561447,663939264,1582909405,1915213335,356038928,1447088871,805084321,1928592911,1738371810,2048310569,2353520967,1221229740,699934481,314569221,1066349607,980197121,984890453,1726704729,1899259158,953449250,1453404442,1501583791","CUST_CONFIRM_TEXT":[],"MAX_DRIVETIME_BUFFER":120,"AMPED_DATA_SOURCES":[171,197],"STINGRAY_DYNAMO_STATSD_SAMPLE_PERCENTAGE":25,"LISTING_ALERTS_NEW_PIPELINE_ALLOWED_JOB_TYPES":[2],"CSP_VIOLATION_BLACKLIST":{"map":{"ALL":"ad.lkqd.net v.lkqd.net log2-sh.vertamedia.com vpaid.springserve.net ssp.lkqd.net *.vertamedia.com ssp.streamrail.net vid-io.springserve.net ads.adaptv.advertising.com cdn.pmqzads.com ads11.vertamedia.com ads40.vertamedia.com aux-log1-sh.vertamedia.com aux-log2-sh.vertamedia.com z.moatads.com cdn-ssl.vidible.tv sdk.streamrail.com cdn.pmgmads.com player.aniview.com t.lkqd.net vid.springserve.com s.vertamedia.com advideopublisher.b-cdn.net techsuperb.com cardinaldata.net promlinkdev.com gjtrack.ucweb.com api.pmqzads.com videogamejunkyard.com api.pmmapads.com img.shop.com countmake.cool techsuperb.biz","connect-src":"ampcid.google.co.in","font-src":"cdn.joinhoney.com"}},"DAILY_24_MAX_EMAIL_FORMATTING_THREADS":1,"LISTING_CONSULT_CLOSEOUT_MAT_BUSINESS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91],"MORE_QUESTIONS_SCF":[],"DATA_OPS_ENABLE_AMENITY_EXTRACTION":[],"SHOW_LISTING_FEE_RECOMMENDATION_ON_SQ":[1,2,5,78],"BM_ONE_PERCENT_LISTING_FEE_4K_MIN_MARKETS":[16],"SOLR_QUERY_TIME_ALLOWED_MILLISECONDS":1000,"HIDING_MLS_PHOTO_DISABLED_DATA_SOURCES":[],"REC_FOR_YOU_MAX_EMAIL_FORMATTING_THREADS":1,"FIRST_LOOK_RECOMMENDED_PRICE_LOWER_BOUND":50000,"OFFER_WORKSPACE_MARYLAND_GCAAR_TEMPLATE_ID":"c074f899-bb44-40f6-b7f5-8933f2081417","FAST_OFFERS_MINNESOTA_DOCUMENT_IDS":"","LOAD_MANAGEMENT_SCHEDULED_APPOINTMENT_CONTACT_WEIGHT":1.0,"AGENT_TOOLS_VOICE_MARKETS":[],"CUSTOMER_DOCUMENT_UPLOAD_BUSINESS_MARKETS":[2,10,11,12,13,14,16,19,22,24,26,27,29,32,33,41,42,44,47,48,50,51,52,58,63,78,79,84,86,87],"CMA_DISAMBIG_DIALOG_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111],"CMA_MARYLAND_LEGAL_DISCLAIMER":"Homes represented may not have been sold by Redfin. COMPETITIVE MARKET ANALYSIS DISCLOSURE: This analysis is not an appraisal. It is intended only for the purpose of assisting buyers or sellers or prospective buyers or sellers in deciding the listing, offering, or sale price of  the real property.","OFFER_WORKSPACE_BUSINESS_MARKETS":[2,3,4,5,6,7,11,12,13,16,18,19,20,21,22,23,26,33,41,42,43,50,64,78,79,84,112],"NEARBY_PROPERTIES_NUM_RESULTS":31,"RN_TOUR_CLOSEOUT_SURVEY":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"REDFIN_DIRECT_SEARCH_MARKETS":[4,5],"TOUR_CLOSEOUT_SURVEY":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"REDFIN_DIRECT_OFFER_WIZARD_BUSINESS_MARKETS":[],"COMING_SOON_LISTING_PLACEHOLDER_PHOTO_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"RN_AVAILABILITY_CALENDAR":[],"GIS_NUMBER_OF_HOMES_PARAM_FOR_NYC_ANDROID":175,"CSS_HTTP_REQUEST_TIMEOUT_IN_MS":2000,"MLS_COMPLIANCE_SUPPORT_AGENTS":[],"LA_HAB_FIRST_TOUR_PRE_TOUR_CALL":[2,12],"COMING_SOON_PROPOSITION_EMAIL_DATA_SOURCES":[8,9,27,86],"EMAIL_ADDRESS_CHANGE_LIMIT_MINUTES":1440,"LISTING_ALERTS_NHFY_PIPELINE_ON_AWS_END_EPOCH_MS":-1,"RECENT_POINT_OF_CONTACT_LOOKBACK_PERIOD":3,"BM_ONE_PERCENT_LISTING_FEE_5K_MIN_MARKETS":[17,43,79],"RENTLY_HAMMER_TEST_CYCLES":10,"GENERAL_CONTRACTOR_ROLE_MARKETS":[],"NEW_CONSTRUCTION_PRICING_MARKETS":[1,2,3],"RENTAL_ESTIMATE_SUPPORTED_PROPERTY_TYPE":[3,6,13],"WISCONSIN_CB_PHONE_NUMBER":"(608) 561-8282","CMA_EDIT_LOCK_TIMEOUT_MS":1800000,"MAP_OVERLAID_IN_HEROSHOT_DISABLED_DATA_SOURCES":[],"AUTOMATED_LOAD_MANAGEMENT":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,112],"SHOWING_SERVICE_SLA_IN_MINUTES":60,"AUTO_LAST_CALL_EXPIRATION_LEAD_DAYS":3,"RENTLY_HAMMER_ACTIVE_TEST_START":11,"OFFER_WORKSPACE_DC_TEMPLATE_ID":"78c2c173-4853-48fe-9655-713ee975488e","TRAFFIC_MULTIPLIER_UPDATE_ZONEDDATETIME":{"dateTime":{"date":{"year":2019,"month":7,"day":26},"time":{"hour":12,"minute":21,"second":40,"nano":108000000}},"offset":{"totalSeconds":-25200},"zone":{"id":"US/Pacific"}},"PAUSE_CUSTOMERS_FROM_TOURING":[],"REDFIN_DIRECT_POST_TOUR_EMAIL_SEND_DELAY_HOUR":12,"PERCENT_OF_CALLS_TO_ROUTE_THROUGH_NEIGHBOR_SPAM_CHECK":0,"REC_FOR_YOU_EMAIL_SLAVE_DELAY_WAIT_MINUTES":360,"FSBO_SERVICE_MARKETS":[13,14,24,29,30,36,38,39,44,45,46,47,51,52,53,54,56,58,60,61,71,72,73,75],"QUICK_SCHEDULER_ADD_SHADOWING_AGENT":[3,19,20,21,44],"CUSTOMER_CONFIRM_DAYAHEAD_TIMING_IN_HOURS":12,"TITLE_FORWARD_API_ORDERING_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87],"TAKING_LIVE_CHATS_TOGGLE_POLLING_PERIOD":60000,"CHICAGO_REDFIN_LISTINGS_PCT_SOLD_90DAYS":73.8,"CMA_MAP_PAGE_DYOS_BUSINESS_MARKETS":[1,14],"FAST_OFFERS_SALT_LAKE_CITY_DOCUMENT_IDS":"1161450570,836736693,15608531,1703835125,1230779125,878487537,1136804310,1431369732,885993612,1261492569,1592500385,1352593744,1865837699,2130369053,481031806,1081399008,1725864274,1307347424,2118124472,1440201169,173843532,1218797654,500617867,120329158,466585328,359343180,203855341,360152167,940684161,952128519,46522620","HAB_WHITELIST_MARKETS":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"AGENT_RECOMMENDATION_CACHE_SECONDS":14400,"FAST_OFFERS_NEW_JERSEY_DOCUMENT_IDS":"1161450570,271609893,1534101353,998940027,522617832,1334986921,1822118001,1622575879,2027992313,1562993627,1462759399,1044726809,1098467387,1439483403,1874600238,541052027,359274730,1305454631,1469219433,615615204,256524694,430272552","LIVE_CHAT_INQUIRY_NOTIFICATION_BATCH_SIZE":45,"CDP_RESTRICTED_PAGE_MARKETS_LEAD_AGENTS":[23],"FACT_JOB_UPDATE_SOURCES":["properties","listings"],"GIS_CLUSTER_LAT_QUARTILE_THRESHOLD":0.15,"LOAD_MANAGEMENT_DEFAULT_NEW_CUSTOMERS":{"map":{"44":13,"88":10,"45":12,"89":15,"46":15,"47":11,"48":11,"90":15,"50":10,"51":11,"52":11,"53":11,"10":16,"54":10,"11":17,"55":10,"12":16,"56":11,"13":17,"14":16,"58":14,"16":15,"17":11,"18":15,"19":14,"1":14,"2":12,"3":17,"4":17,"5":14,"6":15,"7":15,"8":11,"9":15,"60":11,"61":12,"62":12,"63":15,"20":16,"64":15,"21":15,"65":12,"22":13,"23":16,"24":16,"68":11,"25":11,"26":17,"27":10,"29":12,"71":11,"72":10,"73":11,"30":11,"31":10,"75":12,"33":12,"77":11,"78":13,"79":17,"36":11,"38":11,"39":10,"84":10,"41":15,"42":12,"86":12,"43":11,"87":13}},"USER_HOMEOWNER_SCORE_PHONE_THROTTLE_THRESHOLD":0.1,"QUICK_TOUR_SCHEDULER":[3,19,20,21,44],"OPENDOOR_WHITELISTED_ZIPCODES":[85001,85002,85003,85004,85005,85006,85007,85008,85009,85010,85011,85012,85013,85014,85015,85016,85017,85018,85019,85020,85021,85022,85023,85024,85025,85026,85027,85028,85029,85030,85031,85032,85033,85034,85035,85036,85037,85038,85039,85040,85041,85042,85043,85044,85045,85046,85048,85050,85051,85053,85054,85060,85061,85062,85063,85064,85065,85066,85067,85068,85069,85070,85071,85072,85073,85074,85075,85076,85078,85079,85080,85082,85083,85085,85086,85087,85098,85099,85118,85119,85120,85121,85122,85132,85138,85139,85140,85142,85143,85147,85201,85202,85203,85204,85205,85206,85207,85208,85209,85210,85212,85213,85215,85224,85225,85226,85233,85234,85248,85249,85250,85251,85253,85254,85255,85256,85257,85258,85259,85260,85262,85264,85266,85268,85281,85282,85283,85284,85286,85295,85296,85297,85298,85301,85302,85303,85304,85305,85306,85307,85308,85309,85310,85323,85324,85326,85331,85335,85338,85339,85340,85345,85351,85353,85355,85363,85373,85374,85375,85377,85378,85379,85381,85382,85383,85387,85388,85392,85395,85396,30002,30004,30005,30008,30009,30011,30013,30016,30017,30019,30021,30022,30024,30030,30032,30033,30038,30039,30040,30041,30043,30044,30045,30046,30047,30052,30060,30062,30064,30066,30067,30068,30071,30075,30076,30078,30079,30080,30082,30083,30084,30087,30088,30092,30093,30094,30096,30097,30101,30102,30106,30114,30115,30122,30126,30127,30132,30134,30135,30141,30144,30152,30157,30168,30188,30189,30205,30213,30214,30215,30228,30236,30238,30248,30252,30253,30260,30265,30268,30269,30273,30281,30290,30291,30294,30296,30301,30305,30306,30307,30308,30309,30313,30314,30317,30318,30319,30324,30326,30327,30328,30329,30331,30336,30338,30339,30340,30341,30342,30345,30346,30349,30350,30360,30363,30517,30518,30519,30542,30548,30620,30680],"INQUIRY_LIST_DISABLED_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87],"FUZZY_SEARCH_SENSITIVITY_ANDROID":0.5,"OFFER_REVIEW_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91],"REDFIN_DIRECT_POST_TOUR_TEXT_SEND_DELAY_HOUR":2,"AUTO_PUBLISH_CFDR_START_CUTOFF":{"dateTime":{"date":{"year":2015,"month":12,"day":4},"time":{"hour":0,"minute":0,"second":0,"nano":0}},"offset":{"totalSeconds":-28800},"zone":{"id":"US/Pacific"}},"BUSINESS_MARKET_BOOST_FACTOR":10,"LISTING_UPDATES_PUSH_SLAVE_DELAY_WAIT_MINUTES":70,"CMA_TEXAS_LEGAL_DISCLAIMER":"This is a broker price opinion or comparative market analysis and should not be considered an appraisal or opinion of value. In making any decision that relies upon mywork, you should know that I have not followed the guidelines for development of an appraisal or analysis contained in the Uniform Standards of Professional Appraisal Practice of the Appraisal Foundation.","UNOWN_NEEDS_ATTENTION_TOUR":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"REDUCED_PARTNER_SMS_FALLBACK_MINUTES":15,"AGENT_PROFILE_VIDEO_LINK":"XDPx16kqZfM","KEEP_RESWARE_DUPLICATES_IN_AGENT_TOOLS_BUSINESS_MARKETS":[],"HOME_AUTO_BOOKING_AA_TOUR_OWNERSHIP_BUFFER":48,"SUPPORT_QUEUE_UPGRADE_MESSAGE":"A fix for the disabled status dropdown has been deployed. Please click refresh to get it!","SEND_AGENT_ID_2_TO_SHOWING_TIME":[122,125,135,143,154],"SHOW_MLS_MEMBERSHIP_INFO":[5,16,78,79],"REDFIN_NOW_PHOTO_UPLOAD_FOR_PHONE_OFFER_BUSINESS_MARKETS":[3,4,5,10,11,13,23],"HAB_WORK_FLOW_FOR_GOLD_PRICE_THRESHOLD_TOURS":[2,6,7,9,14,17,18,19,20,21,22,23,29,30,33,36,38,41,43,45,46,50,53,54,60,61,62,63,65,72,73,75,77,89],"DATA_OPS_SEEN_BY_FOR_SPECIAL_CASE":2,"CSL_PROP_EMAIL_OFFER_DEADLINE_DAYS":60,"SELL_DEAL_REACT_DIRECT_OFFERS_WIDGET_MARKETS":[],"RESWARE_AGENT_ONLY_DOCUMENT_IDS":[1585,1414,1415,1377,1376,1336,1337,1322,1321,1143],"FUZZY_SEARCH_SENSITIVITY_IOS":0.5,"PARCEL_STREAM_SERVICE_KEY_EXPIRATION_HOURS":23,"SHARE_EMAIL_LIMIT_MINUTES":1440,"CMA_MARYLAND_LEGAL_DISCLAIMER_MARKET":[16],"POTENTIAL_BUYERS_LIST":[],"REDFIN_NOW_LDP_MERCHANDISING_MARKETS":[3,14,15],"COMING_SOON_LISTING_EARLY_TOURS_EXTRA_INFO_MARKETS":[],"PHOTO_UPLOAD_REMINDER_EMAIL_PHOTO_THRESHOLD":12,"MLS_COMPLIANCE_TOUR_COORDINATORS":[],"FAST_OFFERS_REDUCE_HARDCODED_DATA_BUSINESS_MARKETS":[12],"LDP_PAGETAGS_CACHE_TIME":43200,"DATA_OPS_PERCENTAGE_WITH_DIFFERENT_SEEN_BY":5,"GIS_NUMBER_OF_HOMES_PARAM_FOR_NYC_ANDROID_TABLET":175,"LDA_TEAM_MANAGED_DASHBOARDS_DEFAULT_ALERTING_WINDOWS":"[ \"mon-fri: 08:00-18:00\" ]","SELLSIDE_DEAL_PAGE_REACT_BUSINESS_MARKETS":[3,4,5,10,11,12,16,18,23,78,79,97,98],"REDFIN_AVERAGE_BUYER_SAVINGS":1700,"LISTING_NOTES":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"SUPPORT_SPHERE_BONUS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"TOUR_CHECKOUT_HEADER_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91],"MARKETING_STATS_SHOW_AFTER_LISTING_LAUNCH_DAY":{"dateTime":{"date":{"year":2018,"month":3,"day":1},"time":{"hour":0,"minute":0,"second":0,"nano":0}},"offset":{"totalSeconds":-28800},"zone":{"id":"US/Pacific"}},"DEFAULT_CMA_COMP_PHOTO_LAYOUT_TYPE":1,"ENABLE_CSS_USER_AUTH_TOKENS":[],"LISTING_FLYER_REACT_V2_BUSINESS_MARKETS":[1,12,79],"TITLE_FORWARD_STATES":[8,11,12,13,17,24,27,34,42,47,48,51,55],"TR_BOOKING_HOMES_REMINDER_DIALOG":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"DOCUMENT_SPLITTER_BUSINESS_MARKETS":[],"GEOCODER_FLAKINESS_MITIGATION_MAX_ATTEMPTS":5,"LISTING_START_FORM_V1_BUSINESS_MARKETS":[],"FAST_OFFERS_BOSTON_GBREB_DOCUMENT_IDS":"1161450570,466151539,350059675,881609075,1886308320,1515649348,927500822,152676291,158357386,627280516,145886253,5867861910,680871482,2054878339,1365626550,757553955,814906874,566310198,1653535143,619886484,2010258883","OFFER_WORKSPACE_VIRGINIA_TEMPLATE_ID":"3759264d-2358-4ced-8764-2bcd22d456af","PROPERTY_RECOMMENDATIONS_CACHE_TTL_SECONDS_MATCHMAKER":86400,"MARKETS_FOR_ANALYTICS_DOC_SYNC":[],"OMDP_SALE_PRICE_RANGE_SIDE_BAR_HIGH_PERCENTAGE":1.05,"CMA_MAX_ACTIVE_SIMILARS_COMPS":3,"COMING_SOON_LISTING_EXTERNAL_ADDRESS_REGION_SM":[2,11],"LEAD_AGENT_FINDER_TEXT_SLA":15,"BM_ONE_PERCENT_LISTING_FEE_5500_MIN_SELL_TO_BUY_INCENTIVE_MARKETS":[3,4],"FEEDBACK_FORM_LINK":"https://docs.google.com/a/redfin.com/forms/d/e/1FAIpQLSfwmT1p3EHVy3yz7oUoXg3PCHYBfJ-a_m1yp5p0EHCFkllBtw/viewform?usp\u003dpp_url\u0026entry.1448760693\u0026entry.1228964939\u003dhttps://www.redfin.com/tools/tours?tourId%3D","SELL_DEAL_REACT_HOME_DASHBOARD_SETTINGS_BUSINESS_MARKETS":[12],"SERVICE_PROVIDER_EXTERNAL_AGENT_PHONE_TREE":[],"BUFFER_TO_ALLOW_RESCHEDULE_WITH_BOOKED_HOMES":15,"SHARE_EMAIL_LIMIT_ATTEMPTS":75,"EMAILS_TO_BLOCK_FROM_SUPPORT_QUEUE":"newsletter@news.bisnow.com","FAST_OFFERS_PORTLAND_DOCUMENT_IDS":"1161450570,459649906,1635492847,1897164320,42199315,652233904,1892244185,1735219697,1247118865,553856637,1028370229,1330164935,650474721,967345491,1063328524,244184725,542659019,1773557817,829823295,637303517,2041516033,1940151144,709325854,112799911,791805109,809561612,1890076017,1901348273,2066851237,1177832587,1668122719,46410822","LDP_PAGETAGS_CACHE_MARKET":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35,36,37,42,43,44,46,47,48,49,50,51,52,53,55,56,57,58,59,60,62,63,64,65],"LISTING_IMPORTER_NUM_LISTINGS_PER_OPEN_HOUSE_BATCH_TRANSACTION":4,"TOUR_ITEM_DELETED_REASON":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"SUPPORT_QUEUE_MAX_RESULTS":400,"CMA_COMPSV2_FALLBACK_SETTINGS":"1,180,0.5;1,365,1.0","EOH_IBEACON_MONITORING_POWER_HIGH_END":0,"COMING_SOON_PARTNER_AGENTS":[2,3,4,5,6,8,9,10,11,13,14,16,18,20,23,24,25,26,30,31,38,41,42,43,45,46,47,51,52,54,55,56,58,61,64,65,68,73,75,78,79,84,86,87,88,89,90,112],"MIN_TIME_SINCE_LAST_HOME_REPORT_MS":1209600000,"SA_PAY_EXCEPTIONS_MARKETS":[24,47,51,52,86,87,94],"PRICE_WHISPERER_MARKETS":[2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,23,28,31,33,36,64],"OPENDOOR_SUPPORTED_PROPERTY_TYPE":[3,6,13],"SOLR_SOCKET_TIMEOUT_MILLISECONDS":2000,"AUTO_LAST_CALL_DEADLINE_NOTIFICATION_RANGE_MINS":1440,"COMING_SOON_LISTING_PARTNER_ADDRESS_REGION_SM":[],"ONSITE_EMAIL_BLOCKED_AGENTS":[1078,5293,7365,1261,5794,4302,2771,407,2283,4285,4368,1276,6980,5218,4354,5457,5794],"UPCOMING_LISTINGS_DIGEST_EMAIL_TARGET_LIST_DATE_WINDOW":14,"SERVICE_REGION_DEFAULT_MAX_COMMISSION_WARNING_THRESHOLD":3.0,"NON_REDFIN_LISTINGS_PCT_SOLD_90DAYS":79.8,"REDFIN_NOW_BUSINESS_MARKET_AVM_RANGE_MAP":{"map":{"11":{"map":{"high":450000,"low":150000}},"23":{"map":{"high":550000,"low":200000}},"13":{"map":{"high":450000,"low":170000}},"3":{"map":{"high":900000,"low":200000}},"4":{"map":{"high":1100000,"low":300000}},"5":{"map":{"high":900000,"low":350000}},"10":{"map":{"high":600000,"low":200000}}}},"SIMILARS_ADDRESS_VARIANTS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64],"CALL_RECORDING_WARNING_WITH_INTRO_PERCENTAGE":100,"HANDOFF_DIALOGS_FOR_AAS":[],"BLIND_SUPPORT_QUEUE_TOUR_COORDINATOR_MARKETS":[],"MLSES_REQUIRING_MOBILE_COMPLIANCE":[84,128,129,160],"RETARGETING_ALLOWED_DATASOURCES_AND_PRICES":[48,400000,84,300000,52,300000],"INSTANT_15_MAX_EMAIL_FORMATTING_THREADS":8,"OFFER_WORKSPACE_TEXAS_TEMPLATE_ID":"e2356ef7-d694-4530-9ad7-7ae4920d3361","GIS_NUMBER_OF_HOMES_PARAM_ANDROID":400,"BIN_FORCE_ADD_TO_HOME_FOR_OVERLAPPING_APPTS_BUFFER_MINS":60,"SIMILARS_DB_REQUEST_MAX_COUNT":12,"RECOMMENDED_PRICE_FIELDS_UPDATE":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91],"SHARED_SEARCH_INVITE_WITH_AGENTS_V2_MARKETS":[],"FIRST_LOOK_NUMBER_OF_HOURS_PRIOR_TO_CONSULT":12,"REDFIN_NOW_UNIFIED_CONSULT_OFFER_DUE_TIME":"6:00PM","GOOGLE_ONE_TAP_PAGES":"","AUTO_LAST_CALL_DEADLINE_LEAD_DAYS":3,"REDFIN_AVERAGE_LISTING_ADVANTAGE":2800,"AUTO_OWN_INCOMING_INQUIRIES_SUPPORT_AGENT_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"FIRST_LOOK_MARKETS":[1,2,3,4,5,6,7,9,10,11,12,13,14,16,17,18,19,22,23,43,78,79,80,81,86,87],"MY_TEST_STRING":"","AUTO_LAST_CALL_EXPIRATION_MARKETS":[],"USE_WALKSCORE_AND_TRAFFIC_FOR_TOURS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"AUTO_MARK_ATTENDED_SHOWING_SERVICE_REGION":[2979,2980,3041,3042,2982,3040,3045,3044,3039,3038,3043,2667,2046,2977,2973,985,2971,2978,2972,2974,2975,2968,2976,2970,2969,2985,2986,1454,3750,2994,855,2983,2984,408],"DEAL_DOCUMENT_PUBLIC_LINK_EXPIRATION_DAYS":30,"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_CHICAGO_ANDROID":200,"MY_TEST_BUSINESS_MARKET_LIST":[1],"SELL_DEAL_REACT_PHOTO_MANAGER_BUSINESS_MARKETS":[12],"DEAL_DOCUMENT_MIN_FILE_SIZE_KB":5,"SHOW_LISTING_CONSULT_AGENT_REC_IN_TOOLS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,104],"SELL_DEAL_REACT_CONCIERGE_APPOINTMENT_TYPES_BUSINESS_MARKETS":[1,2,5,78],"BM_ONE_PERCENT_LISTING_FEE_3K_MIN_SELL_TO_BUY_INCENTIVE_MARKETS":[12,19,24,33,47],"AGENT_BOOST_FACTOR":10,"KEY_MOMENTS_TOUR_CLOSEOUT_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87],"BM_ONE_PERCENT_LISTING_FEE_3K_MIN_MARKETS":[11,12,13,19,22,24,25,31,33,44,47,64,77,89],"FAST_OFFERS_MARYLAND_GCAAR_DOCUMENT_IDS":"1161450570,488956465,1525077600,284280212,1502661599,215457668,972264283,2125306280,1065641523,1444764199,489299747,1427472717,948954039,1448345581,1509435934,313722579,1343801416,1533040913,845561002,609406861,703154557,1709865256,2033943876,1905403903,1080950542,1149709834,1908877583,1073753819,694895607,1393899029,1432224600,1924714946,1820435163,2034656267,730958238,367689705","MORTGAGE_MARKETS":[10,11,12,13,14,16,18,19,20,21,22,24,26,27,29,36,44,47,48,50,51,52,54,58,63,68,73,75,78,79,84,86,87,93,96],"NEW_STANDARD_PRICING_BUSINESS_MARKETS":[],"RENTAL_ESTIMATE_STATE_WHITELIST":[9,19,29,44,45],"REDFIN_NOW_HOME_REPORT_MERCHANDISING_MARKETS":[3,4,5,10,11,13,23],"MAX_EXCESS_CUSTOMERS":3,"TOUR_CHECKOUT_CUSTOMER_NOTICE_TEXT":"","HUB_FEEDBACK":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90],"OFFER_WORKSPACE_CHICAGO_TEMPLATE_ID":"1b8701cc-07b7-42cf-920e-7c04f87d1a94","CSL_PROP_EMAIL_SKIP_RESEND_DAYS":13,"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_MIAMI_DOWNTOWN_ANDROID":800,"COMING_SOON_LISTING_CAN_UPDATE_DATES_MARKETS":[9,12,16,78,79],"SHOW_PRIME_TIME_HOURS_ON_AGENT_CAL":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98],"TITLE_FORWARD_BUSINESS_MARKETS":[10,11,12,13,14,16,19,22,24,26,27,29,32,33,41,42,44,47,48,50,51,52,58,63,78,79,84,86,87],"REDFIN_NOW_OFFER_EXPIRING_SOON_ADVANCE_NOTICE_TIME":{"map":{}},"BIN_FOR_LISTING_CONSULTS":[2,3,4,5,6,8,9,16,23,25,30,53,55,65,71,78,79,112],"REGISTRATIONS_BY_IPADDR_LIMIT_MINUTES":2160,"HAB_PER_BATCH_SLA_IN_MINUTES":10,"FAST_OFFERS_SEATTLE_DOCUMENT_IDS":"","AGENT_AVAILABILITY_CALENDAR":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,112],"SUPPORT_QUEUE_REWRITE_EXPERIMENT_LOGGING_PERCENTAGE":25,"REQUEST_SHOWING_TIME_INFO":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91],"REDUCED_PARTNER_SMS_FALLBACK_MARKETS":[],"HAB_ROBO_TEXT_SKIP_ENTRY_INFO":[1,4,5,7,11,19,53,60,62,65,88],"FUZZY_SEARCH_SENSITIVITY_MWEB":0.5,"DYNAMIC_RENDERING_REGION_LAST_DIGIT_VARIANT":[],"SA_IM_DONE_BUTTON":[],"DISABLED_TAXABLE_VALUE_MARKETS":[],"PROPERTY_RECOMMENDATIONS_UPDATE_INTERVAL_MS":300000,"OFFER_WORKSPACE_WISCONSIN_TEMPLATE_ID":"8cd02fc7-b294-47ce-935a-df79947fc1cb","SUPRA_PROCESSOR_POLL_TIMEOUT_SECONDS":600,"OFFER_DEADLINE_NON_REDFIN_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,42,43,44,46,47,48,49,50,51,52,53,55,56,57,58,59,60,62,63,64,65],"NEWEST_LISTINGS_CUTOFF":24,"MAX_LISTING_RECOMMENDATIONS_TO_FETCH":3000,"RECOMMENDED_PRICE_FIELDS_HOME_VALUE_HIGH_MAXIMUM":50000000,"FAST_OFFERS_VIRGINIA_DOCUMENT_IDS":"1161450570,1602820922,981744797,434055008,1672802886,22203594,478264458,1170428274,1867709277,1113608033,682622935,1359513420,1574400172,95735932,806934115,1574166477,614659604,1602232714,443433734,1640535160,1699181658,661992453,371321142,558421436,1400803834,927200481,1643157761,1772370621,1919600824,1017984004,1258405164,2007423025,274725156,770642412,1484128813,13743846,349420814,1099796891","MLS_COMPLIANCE_LEADISH_AGENTS":[1,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,24,26,27,29,30,31,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,104],"INSTANT_24_MAX_EMAIL_FORMATTING_THREADS":1,"DATA_OPS_PRIORITIZATION_THROUGHPUT":200,"PROPERTY_RECOMMENDATIONS_CACHE_TTL_SECONDS_NHFY":86400,"STINGRAY_STATUS_CPU_THRESHOLD":1.01,"SUPPORT_QUEUE_VERSION":2,"ZILLOW_CONTACT_SUBJECT_REGEX":"(?i).*((about.*home)|(sent.*message)|(Lead for)).*","INDEXED_HOME_PRICE_CITIES":[16163,17151,1826,29470,12839,11203,5155,16904,30772,30794],"LEAD_AGENT_CONNECTION_SURVEY_MARKETS":[],"LOW_QUALITY_DEAL_PHOTO_THRESHOLD":1440,"COMMERCEWEB_DYNAMO_STATSD_SAMPLE_PERCENTAGE":25,"REDFIN_NOW_UNIFIED_CONSULT_SERVICE_REGIONS":[575,576,579,593,784,2131,2143,2153,2154,2155,2159,2160,2161,2162,2163,2164,2165,2168,2169,2172,2239,2245,2706,2707,3012,3013,3014,3196,3283,3284,3546,3547],"RENTLY_HAMMER_LOCK_ID":["4070db3f-b52a-404e-82f8-d1e9b7410d15"],"AUTO_INITIATE_HOME_AUTO_BOOKING":[19,20,21],"REDBIRD_COMING_SOON_CONTACT_CTA":[],"CUSTOMER_CONFIRM_LONG_NOTICE_TIMING_IN_HOURS":24,"BUSINESS_HRS_WEEKDAY":[8,22],"HOME_AUTO_BOOKING_AA_TOUR_VIEWING_BUFFER":2,"SHOW_ESTIMATE_TAB_ON_HOMEPAGE":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,78,79,86,87],"GIS_CLUSTER_MIN_MARKERS_FOR_DENSITY_THRESHOLD":30,"MARKETING_STATS_VISUALS_BREAKOUTS_V2_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,112],"PROPERTY_RECOMMENDATIONS_CACHE_TTL_SECONDS_MOBILE_MAP":86400,"AGENT_PROFILE_LICENSE_CLASS_MARKETS":[17,72],"ANDROID_AVM_ZOOM_LEVEL_TRIGGER_THRESHOLD":17.4,"SEND_CHANGE_AGENT_REQUEST_TO_VIP_BUSINESS_MARKETS":[],"AMP_CACHE_VERSIONING":0,"REDFIN_NOW_DEDUPE_PURCHASE_REQUESTS_WINDOW":24,"SELL_DEAL_REACT_HEADER_AND_STAGE_CHANGES_BUSINESS_MARKETS":[12],"GIS_ADDITIONAL_NUMBER_OF_HOMES_PARAM_FOR_MIAMI_ANDROID":600,"UNIFIED_SEARCH_REGION_TYPES":[],"FIRST_TOUR_SMS_CONFIRM_TEXT_CHANGE":[20,21],"MORTGAGE_DEALINFOUPDATE_PRODUCER_AWS_START_EPOCH_MS":-1,"SHOWING_TIME_LISTING_INFO":[1,2,3,4,5,9,10,11,12,14,16,17,18,19,20,21,23,24,26,29,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,65,72,73,75,77,78,79,86,87,89],"HIBERNATE_STACKTRACE_DEPTH":20,"REC_FOR_YOU_PUSH_SLAVE_DELAY_WAIT_MINUTES":360,"AVM_VALUE_CACHE_EXPIRATION_SECONDS_VOLATILE":300,"DASHBOARD_SHOWING_APPT_OVERLAP_WINDOW":30,"MAX_PHOTOS_FOR_CMA_COMP":48,"FAST_OFFERS_POST_MUTUAL_WORKSPACE_MARKETS":[7,11,12,13,16,18,19,20,21,22,26,33,41,42,43,50,64,78,79,84],"LISTING_REMARKS_ON_HOMECARD":[1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64],"TOUR_CHECKOUT_PERF_IMPROVEMENTS_EXPERIMENT_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112],"REDFIN_NOW_OFFER_TURNAROUND_TIME":{"map":{}},"FIRST_LOOK_MARKETS_EXCLUDED_FROM_PREP_NOTIFICATION":[],"EOH_IBEACON_MONITORING_POWER_LOW_END":-90,"NEW_SURVEY_FRAMEWORK_SURVEY_TYPES":[13,2,18,19,9,20,17,22,23],"SIMILARS_API_TIMEOUT":300,"LOGIN_GROUP_FAVORITES_PAGE_SIZE":200,"MAX_THREADS_FOR_PROPERTY_RECOMMENDATION_FETCH":1,"FAST_OFFERS_PHILADELPHIA_DOCUMENT_IDS":"1161450570,1924541800,1136464569,1508999998,2059868337,1213419224,681055483,1127825317,994823253,575820576,1107175632,1776134022,720960139,697184661,1441734125,2115550637,67351806,1218524469,323022589,1585213922,1030618435,1340155520,435212445,1054855499,162725902,686621797,1591068018","OFFER_DEADLINE_NON_REDFIN_MARKETS_DAYS_WINDOW":10,"CMA_FLYERS_ADMIN_TOOL_BUSINESS_MARKETS":[],"LISTING_PREPARATION_STAGE_STATUSES_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,97,98],"FAST_OFFERS_CHICAGO_DOCUMENT_IDS":"1161450570,603502016,760947209,547860690","OPENDOOR_AVM_OFFER_LOW_PERCENTAGE":0.86,"NEW_CONSTRUCTION_CALCULATOR_BUSINESS_MARKETS":[1,2,3,4,5,23,80,81],"BULK_TASK_ACTION_BUSINESS_MARKETS":[],"REDFIN_NOW_UNSERVICEABLE_CITIES":{"map":{"TX":{"myArrayList":["Aubrey","Krugerville","Celina","Melissa"]},"CA":{"myArrayList":["Idyllwild-Pine Cove","Alpine","Spring Valley","Ramona","Bonita"]}}},"OFFER_WORKSPACE_NEW_JERSEY_TEMPLATE_ID":"67c42e39-c7a9-4b81-adc2-8b39c9a986df","SHOW_ERROR_FOR_OUT_OF_WINDOW":[3,18,20,21,22,44],"SUPPORT_QUEUE_INQUIRY_DETAILS_UPDATES_SA":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"INCOMING_CALLS_POLLING_PERIOD":2000,"MAX_ABOVE_OPTIMAL_DRIVETIME_THRESHOLD":1.25,"CUSTOMER_CONFIRMATION_TEXT_V3":[],"SUPPORT_QUEUE_REWRITE_EXPERIMENT_PERCENTAGE":0,"COMING_SOON_INPUT_FORM_V2_DESIGN":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"SKIP_QUAL_QUESTION_FOR_RECENT_ASSIGNMENT_DAYS":14,"AVM_MARKET_WHITELIST":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35,36,37,42,43,44,46,48,49,50,51,52,53,55,56,58,59,60,63,64],"BLIND_SUPPORT_QUEUE_SUPPORT_AGENT_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"REDFIN_NOW_YEAR_BUILT_MAX_OFFSET":2,"RECOMMENDED_PRICE_FIELDS_HOME_VALUE_LOW_PERCENTAGE_THRESHOLD":0.8,"REDFIN_NOW_SERVICE_REGIONS":[67,434,722,723,724,725,726,772,941,942,943,944,946,947,1034,1035,1036,1037,1038,1039,1040,1041,1042,1046,1047,1048,1049,1050,1052,1053,1054,1055,1056,1057,1783,2229,2230,3488,3489,3490,3494,3495,3499,112,320,952,955,956,957,958,959,961,963,964,966,967,978,979,1063,1064,1449,1450,2693,2694,2695,2346,2354,2355,2356,2358,2359,2367,2360,2338,2345,2344,2347,2353,2339,2160,2154,2153,2155,2161,2163,2165,2159,2162,3500,3497,3492,3486,3491,2199,2553,2563,2943,2564,2547,2591,2588,2581,2592,2560,2513,2555,2540,2550,2552,2580,2512,2584,2573,2579,2577,2554,2590,2572,2568,2586,2595,2559,2542,2374,2382,2369,2379,2341,2387,2343,2371,2393,2388,2390,2384,2372,2340,2377,2381,2385,2378,2342,2594,2375,2368,2593,2380,2389,2376,2373,2383,2511,2366,2520,2524,2534,2522,2523,2527,2508,2585,2587,2365,2589,2519,2533,2541,2363,2518,2517,2362,2521,2530,2528,2516,2510,2514,2509,2532,2526,2543,2576,2557,2357,2565,2361,56,2364,2348,2597,2386,2350,2351,2558,2556,2549,2569,2571,2531,2551,2574,2575,2598,2349,2515,2548,2525,2529,2583,2168,2169,2164,2143,968,459,25,2131,2245,2706,3014,3196,3284,3283,579,593,2707,2536,2352,2566,2535,2394,2161,2172,575,3547,3546,784,576,3013,3012,2239,8215,3461,3205,2152,2167,2156,2182,2145,2142,2171,2151,3455,2166,3456,3453,3206,3454,4184,4183,4187,3056,4185,4186,3060,3050,4202,4197,4192,3051,4200,3070,4199,4189,578,594,2240,3009,2241,592,571,3193,585,2242,2244,3057,4194,4195,4190,3048,4193,4196,4181,4198],"GEN_INQUIRY_FORM_ON_RADP_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,35,36,37,42,43,44,47,52,53,55,56,59,60,63,64],"SCF_INTRO_STAGE_AGENTS_THRESHOLD":15,"MY_TEST_LONG":0,"TRULIA_CONTACT_SUBJECT_REGEX":"(?i).*((new.*lead)|(inquiry)).*","MARKETS_TRANSITIONING_TO_HAB_FLOW":[],"BIN_REORDER_FOR_AGENT_LOOKUP_BUFFER_MINS":120,"OFFER_DEADLINE_DATE_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,112],"GIS_NUMBER_OF_HOMES_PARAM_ANDROID_TABLET":400,"LDA_TEAM_NEW_INFRASTRUCTURE_PIPELINE_DATA_SOURCES":[],"BM_ONE_PERCENT_LISTING_FEE_5K_MIN_SELL_TO_BUY_INCENTIVE_MARKETS":[17],"FAST_OFFERS_MARYLAND_MAR_DOCUMENT_IDS":"1161450570,1361646713,1005982728,1450329422,1530747111,1843695174,1340579999,1936691684,1264166204,1997787311,1631904646,1849383739,480599433,122417854,844614468,415098750,948374887,1223086725,2090349683,1281485617,1062799792,1026739971,647423880,1465066016,847736092,1246418019,1448769877,1334203588,1539150669,862072144,1386090218,653277697,719929050,983311863,776749148,676111036,424854185,759229434,703884885,2060675065,2098389924,1004736726,1349571611,1384420467,1236546443,679434806,1127268540","MARKET_TEMPLATE_VIEW_BUSINESS_MARKETS":[],"REDFIN_NOW_PDP_MERCHANDISING_MARKETS_JSON":{"map":{"San Diego":100,"Orange County":100,"Los Angeles":100,"Denver":100,"Dallas":100,"Inland Empire":100}},"OPENDOOR_AVM_OFFER_HIGH_PERCENTAGE":1.05,"MLSES_REQUIRING_VENDOR_ACCESS":[1,8,9,10,27,40,41,43,45,48,52,53,57,58,68,76,77,78,79,81,82,84,85,86,87,90,91,92,93,94,95,97,102,103,104,105,106,107,108,109,110,111,114,115,116,118,120,121,122,123,124,125,127,128,129,130,131,132,135,136,137,138,139,140,141,142,143,144,145,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,189,190,191,192,194,195,196,197,199,200,201,203,204,205,207,208,209,210,211,213,214,215,220,225,226,227,228,229,230,233,234,235,241],"INSTANT_15_SLAVE_DELAY_WAIT_MINUTES":70,"NEARBY_PROPERTIES_API_TIMEOUT":300,"REDFIN_SERVICED_REO_MARKETS":[],"REPLICATION_DELAY_MITIGATION_TEST_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"SELL_DEAL_REACT_REO_APPOINTMENT_TYPES_BUSINESS_MARKETS":[],"CHICAGO_NON_REDFIN_LISTINGS_PCT_SOLD_90DAYS":68.0,"TOUR_HOTLINE_EMAILS_REPLY_IN_SQ_MARKETS":[],"SELL_DEAL_REACT_LAST_CALL_BUSINESS_MARKETS":[12],"ALWAYS_OFFER_BIN_TIMES":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,93,94,96,97,98,103,112],"REDFIN_NOW_OFFER_AUTO_EXPIRY_MARKETS":[],"OFFER_WORKSPACE_SEATTLE_TEMPLATE_ID":"ebe0eb28-bd71-4911-9ec5-550cb91fdf69","LISTING_ALERTS_NHFY_PIPELINE_ON_AWS_START_EPOCH_MS":-1,"HIDE_HAB_FROM_AGENTS_WORKFLOW":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"CANCEL_SHOWING_APPOINTMENT_REMINDERS":[1,2,3,4,5,6,7,9,10,11,14,17,18,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,86,87,89],"OFFER_WORKSPACE_MINNESOTA_TEMPLATE_ID":"2b903ccb-c8f2-4bbc-89ed-3f167d85c769","MAX_PROPERTY_RECOMMENDATION_AGE_MS":2592000000,"SUPPORT_QUEUE_INQUIRY_DETAILS_UPDATES_TR":[],"FAST_OFFERS_DC_DOCUMENT_IDS":"1161450570,1844345168,1026290849,788457732,47321614,1161763499,1600290794,522601682,1515125999,561271259,164987793,1737637876,635910505,1858967107,1150141128,2033560824,981117301,918426242,94173376,1535813916,1287261705,1096746776,1149709834,1533040913,609406861,1709865256,1924714946,1905403903,1222765490,2095475828,1566399952,2117931626","OMDP_SALE_PRICE_RANGE_SIDE_BAR_LOW_PERCENTAGE":0.95,"REDFIN_LISTINGS_PCT_SOLD_90DAYS":82.8,"REDFIN_NOW_AVM_OFFER_LOW_PERCENTAGE":0.88,"NATIONAL_BUYSIDE_MIN_THRESHOLD":74999,"AE_AGENT_RECOMMENDATIONS_BUSINESS_MARKETS":[12],"CUSTOMER_CONFIRM_2NDASK_LONG_TIMING_HOURS":12,"BM_TWO_PERCENT_LISTING_FEE":[1,2,5,78,112],"MAT_OPEN_HOUSE_IBEACON_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87],"PHOTO_MANAGER_REACT_MARKETS":[1,79],"OFFER_WORKSPACE_SALT_LAKE_CITY_TEMPLATE_ID":"0ae505c4-10b4-4e03-8cc5-c8d46d7e4e4b","STRATEGY_SESSIONS_IN_TOUR_CHECKOUT_MARKETS":[9,18],"AVM_SUPPORTED_PROPERTY_TYPE":[3,6,13],"LDP_POPULARITY_MESSAGING_ELIGIBILITY_MINIMUM_VIEW_COUNT":100,"BM_ONE_PERCENT_LISTING_FEE_3500_MIN_MARKETS":[6,7,10,23,41,42,112],"ASSIGNED_AGENT_NOT_MET_CUSTOMER_TEXT_SLA":15,"HAB_USE_LAG_INSTEAD_OF_LICENSE":[12,22],"TOUR_CLOSEOUT_SURVEY_CANCELLATION_FLOW":[1,2,3,4,5,6,7,9,10,11,12,14,16,17,18,19,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,78,79,86,87,89],"CDP_RESTRICTED_PAGE_MARKETS_EVERYONE_ELSE":[],"LOAD_MANAGEMENT_MAXIMUM_NEW_MONTHLY_CUSTOMERS":24,"ENABLED_STANDARD_TASK_ACTIONS":[2],"GIS_NUMBER_OF_HOMES_PARAM_FOR_NYC_IPAD":175,"SELL_DEAL_REACT_NUMBER_UNREPRESENTED_OFFERS_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,33,36,38,39,41,42,43,44,45,46,47,48,50,51,52,53,54,55,56,58,60,61,62,63,64,65,68,70,71,72,73,75,77,78,79,84,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113],"OFFER_WORKSPACE_PORTLAND_TEMPLATE_ID":"02eb839d-6b1b-4a92-8fe1-fa566b06c20c","USE_GOOGLE_FOR_DRIVETIME":[20,21,29,33,36,38,45,46,53,54,60,62,65,73,75],"CROSS_TRAINED_AGENT_SETTING_MARKETS":[],"IOS_STREET_VIEW_FALLBACK_MESSAGE":"Google street view is currently unavailable.","CUSTOMER_FEED_MAX_INQUIRIES":500,"CORVAIR_CLUSTER_RESTART_INTERVAL_HOURS":0,"SHARED_SEARCH_INVITE_RATE_LIMIT":7,"REQUIRE_BUYING_STATUS_UPDATE_ON_TOUR_CLOSEOUT":[3,18,19,20,21,22,44],"SCF_INTRO_STAGE_CLOSED_DEALS_THRESHOLD":15,"CALL_ROUTING_RATE_LIMITING_LIMIT_PERIOD_SECONDS":60,"GOOGLE_ONE_TAP_REGISTRATION_REASONS":"","PRICE_WHISPERER_NEW_API_MARKETS":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,112],"KEY_DATE_CHANGE_LOOK_BACK_MINS":5,"SEND_OFFICE_ID_2_TO_SHOWING_TIME":[122,125,135,143,154],"HAB_DISABLED_SERVICE_REGIONS":[1289,1290,1291,1292,1293,1294,1295,1296,1297,1298,1299,1300,1301,1302,1303,1304,1305,1306,1307,1308,1309,1310,1311,3237,3241,3244,3245,3239,3242,3247,3243,3238,3246,3240,3293,3323,3318,3310,3320,3325,3316,3312,3291,3292,3294,3295,3296,3299,3298,3302,3306,3303,3311,3313,3314,3322,3324],"CMA_TEXAS_LEGAL_DISCLAIMER_MARKETS":[11,13,22,26,50],"NEW_LISTINGS_AND_PUSH_SLAVE_DELAY_WAIT_MINUTES":70,"CUSTOMER_CONFIRM_2NDASK_DAYAHEAD_TIMING_HOURS":5,"LIVE_CHAT_ESTABLISHED_MARKETS":[1,2,3,4,5,6,7,8,9,23,25,30],"HAB_BLACKLIST_MARKETS":[8,13,25,27,31,39,42,44,48,55,56,58,64,68,70,71,84,88,90,91,93,94,96,97,98,103,112],"MARKETING_STATS_FACEBOOK_ADS_MIN_SHOW":50,"SELL_DEAL_REACT_UNREPRESENTED_BUYER_ONE_PERCENT_FEE_BUSINESS_MARKETS":[18,79],"GO_AND_SHOW_FOR_ST_AND_CSS_ELIGIBLE_HOMES":[1,2,3,4,5,6,7,9,10,11,14,17,18,20,21,22,23,24,26,29,30,33,36,38,41,43,45,46,47,50,51,52,53,54,60,61,62,63,65,72,73,75,77,86,87,89]};
+		
+
+		var g_riftPageType = "AUTO:redfin.stingray.accountManager.LoginModel:executeSpringLoginForZendesk";
+</script>
+
+
+	
+
+	
+	
+	
+
+
+
+<script type="text/javascript" src="https://www.redfin.com/stingray/do/js/v274.2.0/EnumDefinitions.js" ></script>
+
+
+
+
+	
+	
+		
+
+
+	
+	
+	
+		
+	
+	
+	
+		
+	
+	
+	
+	
+		
+	
+	
+		
+		
+			
+		
+	
+	
+	
+		
+	
+
+	
+	<script type="text/javascript">
+		dojoConfig = {
+			async: false,
+			locale: "en-us",
+			parseOnLoad: true,
+			usePlainJson: true,
+			xdWaitSeconds: 60000,
+
+			
+			requestProvider: "redfin" + String.fromCharCode(47) + "request" + String.fromCharCode(47) + "xhr",
+
+			blankGif: "https://ssl.cdn-redfin.com/v274.2.0/images/clear.gif",
+			
+			timezoneFileBasePath: "/v274.2.0/includes/js/dojo-release-1.8.0-src/dojox/date/zoneinfo",
+			
+			defaultZoneFile: [],
+			timezoneLoadingScheme: "lazyLoad",
+			
+			useCommentedJson: true,
+
+			
+			
+			require: ['redfin.profile.standard','redfin.google.googleLogin','redfin.common.util','redfin.common.login_ctrls'],
+			
+
+			
+			dojoIframeHistoryUrl: "/v274.2.0/includes/js/dojo-release-1.8.0-src/dojo/resources/iframe_history.html",
+			dojoBlankHtmlUrl: "/v274.2.0/includes/js/dojo-release-1.8.0-src/dojo/resources/blank.html",
+
+			
+			has: {
+	            "dojo-debug-messages": false,
+	            
+	            "dijit-legacy-requires": false
+			},
+			paths: {
+
+				
+				
+					
+						"redfin": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/redfin",
+						"react": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/react",
+						"reflux": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/reflux",
+						"q": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/q",
+						"classnames": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/classnames",
+						"@redfin": "https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/@redfin"
+					
+					
+				
+			}
+		};
+	</script>
+
+
+	
+		
+		
+			
+
+	
+	
+	
+
+
+
+<script type="text/javascript" src="https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/dojo/dojo.js" ></script>
+
+			
+		
+	
+
+	
+
+		
+	
+
+	<script type="text/javascript">
+		document.write("<style type=\"text/css\"> .no_script {display:none ! important;} .script_inline {display:inline ! important;} .script_block {display:block ! important;} </style>\n");
+	</script>
+
+	
+	
+
+
+
+
+	<!-- Server: websrv-6.colo.redfin.com -->
+	<!-- Time Generated: Thu Aug 08 09:04:37 PDT 2019 -->
+
+	
+
+    
+        
+        
+            <title>My Redfin - Login</title>
+		<meta name="title" content="Redfin - Login" />
+		<meta name="keywords" content="real estate, redfin" />
+		<meta name="description" content="Redfin is the industry's first online real estate brokerage. Unlike any other real estate site, Redfin find, price, and buy a home online." />
+		<meta name="Abstract" content="Redfin makes it easy for people to find, price and buy a home." />
+		<link rel="stylesheet" href="https://ssl.cdn-redfin.com/v274.2.0/includes/js/dojo-release-1.8.0-src/dijit/themes/nihilo/nihilo.css" type="text/css"/>
+		<link rel="stylesheet" href="https://ssl.cdn-redfin.com/v274.2.0/images/text/csso/BaseChrome.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="https://ssl.cdn-redfin.com/v274.2.0/images/text/csso/login.css" type="text/css" media="all" />
+        
+    
+
+
+</head>
+
+<body class="customer-facing safari 
+	osx mobile-enabled login-or-register login_mode apply-typography nihilo     " onunload="" >
+	
+
+
+
+<script type="text/javascript">
+var dataLayer = {
+	'user': {
+		
+		
+		'loginStatus': 'Logged out'},
+	'session': {},
+	'page': {
+		'riftPageType': 'AUTO:redfin.stingray.accountManager.LoginModel:executeSpringLoginForZendesk'},
+	'nojs': 'false'
+	};
+
+var searchMarket = '';
+if (searchMarket && searchMarket !== 'undefined') {
+	dataLayer.session.searchMarket = searchMarket;
+}
+
+var businessMarketId = '';
+if (businessMarketId && businessMarketId !== 'undefined') {
+	dataLayer.session.businessMarketId = businessMarketId;
+}
+
+dataLayer = [dataLayer];
+</script>
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-TZTT5H&user.rfBrowserId=&user.loginId=&user.loginStatus=Logged out&session.searchMarket=&page.riftPageType=AUTO:redfin.stingray.accountManager.LoginModel:executeSpringLoginForZendesk&nojs=true" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TZTT5H');
+</script>
+
+
+
+	
+	<div id='body_wrapper'>
+		
+
+
+		
+
+
+
+
+		<div id='ve_comments_container'>
+			<div id='ve_comments_show' class="status_box_link" style="color:#000000" onclick="dojo.byId('ve_comments_container2').style.display='block';dojo.byId('ve_comments_show').style.display='none'">SHOW DEBUG INFO</div>
+			<div id='ve_comments_container2'>
+				<div class="status_box_link" style="color:#000000" onclick="dojo.byId('ve_comments_container2').style.display='none';dojo.byId('ve_comments_show').style.display='block'">HIDE DEBUG INFO</div>
+				<div id='ve_comments'></div>
+			</div>
+			<div id='debugging_output'></div>
+		</div>
+
+		<div id="container">
+
+
+
+
+
+
+
+
+<div id="content">
+	<div id="basicLayoutTopAdDiv" style="overflow: hidden; height: 0px; visibility: hidden;"></div>
+	
+				<div class="main column clear-fix">
+					
+			
+					
+					
+		
+		
+	
+		
+		
+		 
+		<a id="backToHomepageLink" class="hidden" href="/">Go to Homepage</a>
+		<div id="login-or-register-wrapper" class="content-wrapper ">
+		<div id="backToHomepageLogoWrapper" class="hidden">
+			<a href="/">
+				
+				<img class="redfinLogoRed" src="https://ssl.cdn-redfin.com/v274.2.0/images/login/redfinlogo.png" alt="Redfin" />
+			</a>
+		</div>
+		
+			<div id="login_or_register" >
+				<div id="register_selector" class="form_switcher hidden">
+					<h2>Join Redfin</h2>
+					<div class="formSwitcherText">
+						Already have an account?
+						<span id="switch_to_login_link" class="link">Sign In</span>
+					</div>
+				</div>
+				<div id="login_selector" class="form_switcher hidden">
+					<h2>Sign In</h2>
+					
+					<div class="formSwitcherText">
+						Need an account?
+						<span id="switch_to_register_link" class="link">Join Redfin</span>
+					</div>
+					
+				</div>
+
+				
+				<div class="facebook_pane">
+					
+					
+						<script>
+							dojo.addOnLoad(function() {
+								g_facebookLoader().load(161006757273279);
+								dojo.when(g_facebookLoader().loaded, function() {
+									//MES- Tell our control that Facebook has loaded
+									dijit.byId('facebook_login').facebookLoaded();
+
+									//MES- If we logged out of Redfin, then log out of Facebook as appropriate.
+									//	See bug 109560.
+									
+								});
+							});
+						</script>
+
+						<span
+							id='facebook_login'
+							dojoType='redfin.facebook.login'
+							action='/stingray/do/login_facebook'
+							permsRequested='email'
+							facebookAppId='161006757273279'
+							facepileEnabled='false'
+							redirectPath='https://redfinexternal.zendesk.com'
+							requestMethod=''
+							registrationMode='login'
+							useFacebookButton=true
+							useFacebookButtonSmall=true
+						></span>
+					
+					
+					
+					
+						 
+						<span id="googleLoginContainer">	
+							<div id="googleLoginButton" class="googleLoginButton standardWidth"></div>
+						</span>
+						<script>
+							dojo.addOnLoad(function() {
+								var googleLogin = new redfin.google.googleLogin({
+									buttonWidth: "standard",
+									redirectPath: "https://redfinexternal.zendesk.com",
+									requestMethod: "",
+									registrationMode: 'login',
+									googleAppId: "597760556696.apps.googleusercontent.com",
+									loggedOut: ""
+								}, "googleLoginButton");
+								if (false) {
+									dojo.addClass("googleLoginContainer", "secureGoogleButton");
+								}
+							});
+						</script>
+						<div id="social_login_join_text" class="socialLoginJoinText hidden" style="position:relative; top: -15px; left: 14px;">
+							Easy sign-up, no extra password. 
+						</div>
+					
+				</div>
+				<div id="register_login_panes_div" class="register_login_panes">
+					<div id="register_pane">
+						<div class="form_pane">
+							<div class="use_Redfin_text">
+								
+									
+										<div class="division_line"></div>
+										<span class="or_icon"></span>
+									
+									
+								
+							</div>
+							<div id="register_error" class="error_message_register">
+								
+							</div>
+							<div id="register_form"></div>
+							<input type="hidden" name="redirect-path" value="https://redfinexternal.zendesk.com" >
+						</div>
+					</div>
+	
+					<div id="login_pane">
+						<div class="form_pane">
+							<div class="use_Redfin_text">
+								
+									
+									
+									
+										<div class="division_line"></div>
+										<span class="or_icon"></span>
+									
+								
+							</div>
+							<div id="login_error" class="error_message_login">
+							    
+								
+							</div>
+							
+							<div id="login_form"></div>
+							<input type="hidden" name="redirect-path" value="https://redfinexternal.zendesk.com" >
+							<div class="forgot_password_form" id="forgotPasswordPane">
+								<div class="forgot_password_text">
+									<p>
+										Enter your email address and we'll send you an email containing a link to reset your password.
+									</p>
+								</div>
+								<form method="post" name="forgotPasswordForm" id="forgotPasswordForm" action="https://www.redfin.com/stingray/do/password-reset">
+									<div>
+										
+										
+										
+											<input type="email" autocorrect="off" autocapitalize="off" id="email3" name="email" class="email_input hint" value="email" />
+										
+										
+										<input type="hidden" name="redirect-path" value="https://redfinexternal.zendesk.com" >
+										<input type="hidden" name="secure" value="false" >
+									</div>
+									<div>
+									<div class="have_password_link"><span id="havePasswordLink" class="link">Have a password?</span></div>
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+	
+
+
+
+<div
+		
+		id="forgot-button"
+		class="Button primary small inline-block basic-border-radius clickable "
+		style="min-width:60px; float:right; margin-top:7px; margin-right: 17px;"
+		
+		
+		>
+	<span>Submit</span>
+	<div dojoAttachPoint="iconNode" class="inline-block icon hidden"></div>
+</div>
+
+										<img src="https://ssl.cdn-redfin.com/v274.2.0/images/4_0/spinner_ask.gif" style="display:none; margin:5px auto 0px auto;" id="forgot-spinner" />
+									</div>
+									
+									<input type="submit" value="Submit" style="position: relative; left: -10000px;" /> 
+								</form>
+							</div>
+	
+	
+	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="spacer" id="spacer"></div>
+	  </div>
+
+		<script>
+			require(["dojo/require"], function() {
+				dojo.require("redfin.profile.login");
+				dojo.addOnLoad(function(){
+					if(!redfin.util.areCookiesSupported()) {
+						document.location = "https://www.redfin.com/stingray/do/cookies-required";
+					}
+
+					var showingFacebookLogin = false;
+					
+						showingFacebookLogin = true;
+					
+
+					dojo.global.g_login = new redfin.search.login({
+						signupFirst: false
+						,email: ""
+						,isMarketingRegistration: false
+						
+						
+						,redirectPath: "https://redfinexternal.zendesk.com"
+						,loginRedirectPath: "https://redfinexternal.zendesk.com"
+						
+					});
+					g_login.init();
+				});
+			});
+
+			
+		</script>
+	 
+	
+	
+	
+					
+			       <div class="clear"></div>
+				</div>
+		    
+	<div class="clear">&nbsp;</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html> in nav_top.tag -->
+	<!-- <body> in nav_top.tag -->
+		<!-- <div id='body_wrapper'> in nav_top.tag -->
+			<!-- <div id="container" in nav_top.tag -->
+			</div>
+			
+				<div id="footer">
+					<div id="footer_spacer">
+						<div id="page_end"></div>
+						<div id="footer_bar">
+							<table class="footer-blogs footer_links">
+								<tr>
+									<td class="label">
+										Redfin:
+									</td>
+									<td class="content">
+										
+
+
+
+<a href="http://press.redfin.com/phoenix.zhtml?c=252734&p=irol-about" class="white_link">About</a> |<a href="http://press.redfin.com/" class="white_link">Press</a> |<a href="/research/" class="white_link">Research</a> |<a href="http://blog.redfin.com/" class="white_link">Blog</a> |<a href="/about/jobs" class="white_link">Jobs</a> |<a href="/about/redfin-partner-agents-application/?src=partner-application-footer" class="white_link">Referrals</a> |<a href="https://www.redfin.com/about/terms-of-use" class="white_link">Terms of Use</a> |<a href="/about/privacy-policy" class="white_link">Privacy Policy</a> |<a href="/about/contact-us" class="white_link">Contact Us</a> |                <a href="http://support.redfin.com/" class="white_link">Help</a>
+
+
+									</td>
+								</tr>
+							</table>
+
+							<div class="footer_fade">
+								<div class="footer_section">
+									<div class="footer_text">
+										If you are using a screen reader, or having trouble reading this website, please call Redfin Customer Support for help at 1-844-759-7732.
+									</div>
+									<div class="footer_text">
+    
+</div>
+									
+
+
+
+<div class="footer_text" style="padding-bottom:10px;">&#169; 2016 Redfin. All rights reserved. Patent pending. </div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	var g_gaReady = false;
+	
+	function trackUserSpecificEvents(loginStatus) {
+		
+
+		
+		
+		
+		g_gaReady = true;
+		
+	}
+
+	
+		
+		
+			var loginStatus;
+			
+			
+			
+			if (typeof(g_jsonLogin) != 'undefined' && g_jsonLogin != null && g_jsonLogin != "" && !g_jsonLogin.isAnonymous) {
+			
+			
+			
+				loginStatus = "Logged in";
+				dojo.addOnLoad(function() {
+					setTimeout(function() {
+						if (dojo.byId('fetchbackContent'))
+						{
+							var iframeURL = "https://pixel.fetchback.com/serve/fb/pdj?cat=&name=landing&sid=4230&fb_key=loyalty";
+							var iframeHTML = '<iframe src="' + iframeURL + '" scrolling="no" width="1" height="1" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+							dojo.byId('fetchbackContent').innerHTML = iframeHTML;
+						}
+					}, 500);});
+			}
+			else {
+				loginStatus = "Logged out";
+				dojo.addOnLoad(function() {
+					setTimeout(function() {
+						if (dojo.byId('fetchbackContent'))
+						{
+							var iframeURL = "https://pixel.fetchback.com/serve/fb/pdj?cat=&name=landing&sid=4230";
+							var iframeHTML = '<iframe src="' + iframeURL + '" scrolling="no" width="1" height="1" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+							dojo.byId('fetchbackContent').innerHTML = iframeHTML;
+						}
+					}, 500);});
+			}
+			trackUserSpecificEvents(loginStatus);
+		
+	
+</script>
+
+<script src="//www.google-analytics.com/cx/api.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+    require(["redfin/profile/Rift",
+             "dojo/domReady!"],
+             function(rollup) {
+
+    	require(["redfin/common/analytics/Rift",
+                "redfin/common/RequestEnvironment",
+                 "dojo/domReady!"], function(Rift, RequestEnvironment) {
+
+            
+    		
+    	        Rift.trackImpression();
+	    	
+    	});
+    });
+    </script>
+
+
+			<script type="text/javascript"></script><script type="text/javascript">
+			dojo.addOnLoad(function(){
+				dojo.subscribe("onLogin", dojo.global, function(newLogin) { g_jsonLogin = newLogin; if (newLogin) {g_customerStatus = newLogin.agentStatus; g_customerAgent = newLogin.agent;}});
+			});
+		</script>
+		</div> 
+		
+
+		
+
+		
+	
+		
+	
+	
+
+<script type="text/javascript">(function(){if(typeof newrelic !== "undefined"){newrelic.setPageViewName("redfin.stingray.accountManager.LoginModel/executeSpringLoginForZendesk");}})();</script>
+
+	
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"ebce9ba868","agent":"","beacon":"bam.nr-data.net","applicationTime":26,"applicationID":"3089289,959312","transactionName":"blYDNUAHDENQWkYNWFccEhVbCAVCUEBlAVUWQQQFVA8MHkJNWwpQS1IYT1MFAV9EV0YpVldSBgRASC5fVlBcKVhdVg1OVx4HU0RNVzdHS1oPBn4JBVlff10WbVxdBQRBDQ==","queueTime":0}</script></body> 
+</html>
+
+
+	
+
+
+
+

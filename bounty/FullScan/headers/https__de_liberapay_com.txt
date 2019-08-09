@@ -1,0 +1,15 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Cache-Control: no-cache
+Server: cloudflare
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0
+Content-Security-Policy: default-src 'self' liberapay.com;connect-src 'self' *.liberapay.org;form-action 'self';img-src * blob: data:;object-src 'none';report-uri https://liberapay.report-uri.com/r/d/csp/enforce;upgrade-insecure-requests;
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=d7cfb161e964cb2b3d49ebdc2137454fd1565262661; expires=Fri, 07-Aug-20 11:11:01 GMT; path=/; domain=.liberapay.com; HttpOnly csrf_token=GvbgA+5y0Ktw8xXqq9WCNt5aBQDODTUO; Domain=.liberapay.com; expires=Thu, 15 Aug 2019 11:11:02 GMT; Path=/; SameSite=lax; Secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Cf-Ray: 50310c148ed1d218-MAN
+Date: Thu, 08 Aug 2019 11:11:02 GMT
+X-Xss-Protection: 1; mode=block

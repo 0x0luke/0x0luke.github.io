@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="headTag"><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta id="ViewportMetaTag" name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="keywords" content="발전한 사이버 보안, 사이버, 보안, 엔드포인트, IT 채널, 소프트웨어, 암호화, 가정, 네트워크, 데이터, 보호, 엔드포인트 보호, 지능형 위협, 데이터 손실, OEM, 간편해진 사이버 보안, sophos.com/en-us.aspx" /><meta name="description" content="EDR 및 인공 지능을 사용한 지능형 엔드포인트 보호 기능, Synchronized Security 및 비즈니스급 보안 기능을 갖춘 차세대 방화벽을 가정 사용자에게 제공." /><link href="/fairfax/sophosfavicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-556N8KS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global Script Tags -->
+<script src="/scripts/bundles/global.js" type="text/javascript"></script>
+<!-- End Global Script Tags -->
+
+<!--  Global Styles Box -->
+<link href="/Styles/Bundles/Global.css" type="text/css" rel="stylesheet"></link>
+<!-- End Global Styles -->
+
+<!-- START of Eloqua tracking script -->
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1777052651']);
+    _elqQ.push(['elqTrackPageView']);
+       
+   (function async_load() {
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+    s.src = '//img03.en25.com/i/elqCfg.min.js';
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+
+</script>
+<!-- END of Eloqua tracking script -->
+
+<!-- Start Visual Website Optimizer Synchronous Code -->
+<script type='text/javascript'>
+var _vis_opt_account_id = 25349;
+var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+document.write('<s' + 'cript src="' + _vis_opt_protocol +
+'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
++encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+</script>
+
+<script type='text/javascript'>
+if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +
+'d5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+/* if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above */
+</script>
+
+<script type='text/javascript'>
+if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+}
+</script>
+<!-- End Visual Website Optimizer Synchronous Code --><script type="text/javascript">if (typeof readCampaignAndWriteToCookie== 'function') {   readCampaignAndWriteToCookie(); }function GetCookie(k){return(document.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2]}var campaignId = GetCookie('CampaignID');var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-737537-45'],['_setDomainName', '.sophos.com'],['_setAllowLinker', true],['_setAllowHash', false],['_setCustomVar', 4, 'CampaignID', campaignId, 3],['_trackPageview'],['o._setAccount', 'UA-737537-18'],['o._setDomainName', '.sophos.com'],['o._setAllowLinker', true],['o._setAllowHash', false],['o._setCustomVar', 4, 'CampaignID', campaignId, 3],['o._trackPageview']);(function() {var ga = document.createElement('script');ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><script type="text/javascript" src="/en-us/medialibrary/scripts/tracking/nonhtmltracking.js"></script>
+
+<style>
+.evolvedFont{ font-family: 'evolved_sansmedium'; font-size: 60px; letter-spacing: 6px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);}
+@media print, screen and (max-width: 64em){.evolvedFont{font-size: 40px;}}
+@media print, screen and (max-width: 40em){.evolvedFont{ font-size: 28px; letter-spacing: 4px;}}
+
+body#Body { overflow-x: hidden; padding: 0; background: #000000; background: -moz-linear-gradient(top,  transparent 0%, #000000 27%, #00193b 64%, #00193b 71%, #174575 100%); background: -webkit-linear-gradient(top,  transparent 0%,#000000 27%,#00193b 64%,#00193b 71%,#174575 100%); background: linear-gradient(to bottom,  transparent 0%,#000000 27%,#00193b 64%,#00193b 71%,#174575 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' transparent', endColorstr='#174575',GradientType=0 );}
+h3.panelTitleSmall {    font-size: 20px;}
+.whiteFont .largeFont {    font-size: 20px!important;}
+.newsPanel:before { content: ""; position: absolute; top: 0px; left: 0; width: 100%; height: 131%; background-image: linear-gradient(to top, #02102e, #0a2645); z-index: -1; transform: skew(0deg,4deg); -webkit-transform: skew(0deg,4deg); -moz-transform: skew(0deg,4deg); -o-transform: skew(0deg,4deg); -ms-transform: skew(0deg,4deg);}
+.awardsLogo > a > img, .cloudLogo > img { margin: 35px;}
+.responsive-navigation-header.navOpen{ background-color: rgba(0, 25, 59, 0.9)!important;}
+@media print, screen and (max-width: 64em){ .responsive-navigation-header.navOpenMain { background-color: rgba(0, 25, 59, 0.9)!important;}}
+@media print, screen and (max-width: 63.9375em){
+.awardsLogo > a > img { margin: 15px;}
+.cloudLogo > img { margin: 20px; max-height: 40px;}
+.pageNotScrolled .responsive-navigation-header .header-navigation-list-row, .responsive-navigation-header .header-navigation-list-row, .header-navigation-list-container .header-search{ background-color: rgba(0, 25, 59, 0.9)!important;}
+.header-navigation-tab{ border-bottom-color: transparent; color: #fff;}
+.header-navigation-tab-link{color: #fff;}
+.header-navigation-list-container .CoveoSearchInterface .CoveoSearchButton, .header-navigation-list-container .CoveoSearchbox .magic-box {    background-color: #333333;    border: 1px solid #4e4d4d;}
+.header-navigation-list-container .CoveoSearchInterface .magic-box-clear{background-color: #4e4d4d;}
+.header-navigation-list-container .CoveoSearchInterface .CoveoSearchButton .coveo-search-button-svg, .header-navigation-list-container .CoveoSearchInterface .magic-box .magic-box-clear-svg{color: #fff;}
+.header-navigation-tab .icon-responsive-navigation-header-arrow-active.desktop-header-arrow{display: inline-block;    float: right;    width: 12px;    margin: 5px 9px 5px 6px;}
+.header-navigation-tab.active .icon-responsive-navigation-header-arrow-active.desktop-header-arrow	{display: inline-block;    -webkit-transform: scaleY(-1);    transform: scaleY(-1);}
+.header-navigation-tab img.icon-responsive-navigation-header-arrow, .header-navigation-tab.active .icon-responsive-navigation-header-arrow{display: none;}
+}
+/*.responsive-navigation-header{background-color: rgba(0,0,0,0.8);}*/
+.header-navigation-tab{background-color: transparent;}
+.responsive-navigation-header { background: transparent;    border-bottom-color: transparent;}
+.header-navigation-menu-reveal-wrapper{border-left-color: transparent;}
+@media print, screen and (min-width: 64em){
+.pageNotScrolled .header-navigation-tab{    background-color: transparent;}
+.search-wrapper .header-search{    top: -145px;}
+.header-navigation-sign-in-link{background: rgba(255, 255, 255, 0.2);}
+body .header-navigation-tab .icon-responsive-navigation-header-arrow, body .header-navigation-tab.active .icon-responsive-navigation-header-arrow, body .header-navigation-tab.current .icon-responsive-navigation-header-arrow, body .header-navigation-search-link .header-navigation-search-icon {    opacity:0;}
+body .header-navigation-tab .icon-responsive-navigation-header-arrow-active, body .header-navigation-tab.current .icon-responsive-navigation-header-arrow-active, body .header-navigation-search-link .header-navigation-search-icon-hover {    opacity: 1;}
+body .header-navigation-tab.header-navigation-sign-in-tab.active .header-navigation-sign-in-link img.icon-responsive-navigation-header-arrow-active.desktop-header-arrow { opacity: 0;}
+.header-navigation-tab-link{color:#fff;}
+.desktopPadding0{ padding: 0;}
+}
+@media print, screen and (max-width: 40em){body#Body{background-image: linear-gradient(to bottom, rgba(0, 25, 59, 0), rgba(0, 24, 56, 0.05) 8%, rgba(0, 10, 24, 0.79) 11%, rgba(0, 4, 9, 0.63) 13%, #000000 18%, #00193b 80%, #174575);}}
+	
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 64em){.responsive.static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b {    background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/sophos-home-laptop@2x.png); background-size: 1629px auto; }}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 40em) and (max-width: 63.9375em){.responsive.static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b {    background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/sophos-home-laptop-tablet@2x.png); background-size: 1032px auto; }}
+.button-content-component.button-cobalt-blue {    background-color: #023d7a;    border: 1px solid #023d7a;    font-family: 'SophosSans-Regular';}
+.button-content-component.button-admiral-blue {    background-color: #334762;    border: 1px solid #334762;    font-family: 'SophosSans-Regular';}
+.button-content-component.white-arrow-btn {  background: url('/medialibrary/SophosNext/Images/Common-Icons/2018/white-arrow.svg') no-repeat scroll right center;  color: #fff; padding: 5px 18px 5px 0;}
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 64em) {  
+.responsive.static-content-row-10ecf339-815c-4f4d-bdcf-b77d85a67d3b{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/lava-woman@2x.png);    background-size: 1409px auto; }
+}*/
+/*--------Desktop banner-------*/
+.randomBanner.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC@2x.jpg);}
+.randomBanner.bannerOne.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/TORNADO@2x.jpg);}
+.randomBanner.bannerTwo.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/WAVES@2x.jpg);}
+.randomBanner.bannerThree.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC@2x.jpg);}
+.randomBanner.bannerFour.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/DESERT-1@2x.jpg);}
+/*.randomBanner.bannerFive.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/LAVA-1@2x.jpg);}*/
+.randomBanner.responsive{background-size: 1824px auto; background-color: #000307;}
+/*--------Table banner-------*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+.randomBanner.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC-1280px.jpg); }
+.randomBanner.bannerOne.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/TORNADO-1280px.jpg); }
+.randomBanner.bannerTwo.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/WAVES-1280px.jpg); }
+.randomBanner.bannerThree.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC-1280px.jpg); }
+.randomBanner.bannerFour.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/DESERT-1280px.jpg); }
+/*.randomBanner.bannerFive.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/LAVA-1280px.jpg); }		*/
+.randomBanner.responsive{ background-size: 1024px auto;}
+}
+/*--------Mobile banner-------*/
+@media screen and (max-width: 39.9375em) {
+.randomBanner.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC-960px.jpg); }
+.randomBanner.bannerOne.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/TORNADO-960px.jpg); }
+.randomBanner.bannerTwo.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/WAVES-960px.jpg); }
+.randomBanner.bannerThree.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/ARCTIC-960px.jpg); }
+.randomBanner.bannerFour.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/DESERT-960px.jpg); }
+/*.randomBanner.bannerFive.responsive{ background-image: url(/medialibrary/SophosNext/Images/SophosIndex/Evolve/LAVA-960px.jpg); }		*/
+.randomBanner.responsive{ background-size: 640px auto;}
+.panelSubtitle, .bannerSubtitle {    font-size: 26px;}
+.bgPositionCB.MobileBgPositionCT {    background-position: center top;}
+}
+.cloudOptixPanel.responsive { background-image: linear-gradient(to top, #000f23, #030e1e); margin: 35px 0 0;}
+.cloudOptixPanel .cloudSmallLogos {    margin-top: -15%;}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {.cloudOptixPanel .cloudSmallLogos img { margin: 2% !important; height: 23px; width: auto;}}
+@media screen and (max-width: 39.9375em) {.cloudOptixPanel .cloudSmallLogos img { margin: 2% !important; height: 30px; width: auto;}.cloudOptixPanel.responsive{margin:20px 0 10px;}}
+
+/*------------------*/
+@media print, screen and (max-width: 63.9375em){
+.moreToolMenuContainer .header-navigation-panel-row.freeToolsRow a { color: #fff;}
+body .header-navigation-list-container .header-search { background: transparent!important;}
+body .header-navigation-list-container .CoveoSearchbox .magic-box .magic-box-input>input, body .header-navigation-list-container .CoveoSearchbox .magic-box .magic-box-input>input, body .header-navigation-list-container .CoveoSearchbox .magic-box .magic-box-input>input::placeholder{background-color: #00193b; color: #d6e4f3;}
+.header-navigation-list-container .CoveoSearchInterface .CoveoSearchButton, .header-navigation-list-container .CoveoSearchbox .magic-box {    background-color: #00193b;    border: 1px solid #4c5e75;}
+.header-navigation-list-container .CoveoSearchInterface .CoveoSearchButton { border-left-color: transparent;}
+body .header-navigation-list-container .CoveoSearchbox .magic-box .magic-box-input > input{color: #fff;}
+.moreToolMenuContainer .header-navigation-panel-row.freeToolsRow { background: transparent;}
+.header-navigation-tab{ clear: both;   border-bottom: solid 1px #4c5e75!important;}
+body .responsive-navigation-header .header-navigation-list-row, .responsive-navigation-header .header-navigation-list-row { border-top: solid 1px #4c5e75;}
+}
+
+
+</style>
+<script>
+$(window).scroll(function(){ 
+var currScroll = $(window).scrollTop(); 
+var navopacity = $(window).scrollTop()/300;
+if(currScroll > 0){ $('body').removeClass('pageNotScrolled'); }else{ $('body').addClass('pageNotScrolled');	}
+if(currScroll < 270){
+$('.responsive-navigation-header').css('background-color','rgba(0,25,59,' + navopacity  + ')')
+}else{$('.responsive-navigation-header').css('background-color','rgba(0,25,59,0.9)')}
+});
+
+$(document).ready(function(){ var currScroll = $(window).scrollTop();	if(currScroll > 0){ $('body').removeClass('pageNotScrolled');	}else{ $('body').addClass('pageNotScrolled');	}
+    var randomClasses = ["bannerOne", "bannerTwo", "bannerThree", "bannerFour"];
+    $('.randomBanner').addClass(randomClasses[~~(Math.random()*randomClasses.length)]);
+$(window).on('click', function (e) {var checkNavStatus = $(".header-navigation-panel-container:visible").length; if(checkNavStatus > 0){ $('.responsive-navigation-header').addClass('navOpen'); }else{ $('.responsive-navigation-header').removeClass('navOpen');}});
+$('.header-navigation-menu-reveal').click(function(){$('.responsive-navigation-header').toggleClass('navOpenMain');})
+});
+</script><title>
+	
+Sophos | Cybersecurity Evolved
+
+</title><script type="text/javascript">function getSitecoreCurrentLocale() { var locale = 'ko-KR'; if (locale == '') { return 'en'; } return locale; }</script></head><body id="Body"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-556N8KS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><form name="form1" method="post" action="/ko-kr.aspx" id="form1">
+<div>
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ZxcLSzh8W61EPR3zqCjafkjn2QP0SinB9nfIt1z1oysxBiP4yBYxEJis5DxCGLzc9ucX6Z1JzIjN/1WNPwkkdR0IIGhZiJFTC4wVMf2EtLAEyvmjH05cJvAAZZ/rBV2osWoDz8yi4944wW1BlKGaX3DxbYRyoEMgE32QZn9T/zCeXK+HrNmydZlj7mL0KJWfnrhDkMfpC8mVOrHHeFammkmFdA/bsZGM3yQqaQ7ybBXCWU1uUyR/fVwABzTSpnGZKygoUApCkPFxWhvIdFbLkzMKRyS0mROlX+SR0b2uW/DuXk9CsCJs6/n2l2yyqiQKK7JSjSJ7WekhqBQX3ddAQaiSXuSYQ5WK9ZWDAOUJ7wXO6g36432z+8zk9IkJsJmem5/RdEz/UzNp4RnUxKduL50I5r+8FD4r5eFLwV1Lfw+zxsb+DnHWQH+qx2A+QjrW25xRE/KYR9WsFhAo82N2nm6ics7fR4ZwaIj6S1ogM7PX51KjucarKIC9RsCJCW9Erhw/r6mRGi0BgukF90ZpXIB3JOdb9VCeIRZmQW2CwhnoHLCIMhWcmNeNuTYuXcv7fVPGuLy/wIVQONXQSARzRS3c0ew5XBXWE8EYaNzixlHeAl8+nt/mJJgdAmPgWBSjsTTPZvUsclzeaomG17PG1r1PQGYg7dJbKTVNPXg5ioPbRHWhJqKFpgcsSCWb7enSLRuwLkbmd9DB9VCECrd8lBYq3POlDNm+G5PXs7RWf6MfR8gqpVs4ha7xAHjlBOvmObmeQnQVQPLKY5un628AuEGkfvLkYzKr5ELOxDDbQovi5t16A2vFAGfNWjq8GS5irtOktOdSnIDgE1dhxz6oGbwX6Ks5DhT6fAS3R+QqVY8FIl8Z" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZDAws9IRN2gR7AF64Cjfq8LDKHNlqj_VIjlMq0-0h8pfehDW3w2&amp;t=636765463264470882" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=3WTd45ClInYAUa1dBtg1D8xRhifDeL2nFti_2uQG5LOMEvNSoOatk53fEy_qWlBLQo47OUP9Yi3EApOWovEcfOS6fSPwotrAGxu3gIcyIdB-B-n1hLkacFCKbz9bsADPr2C-ABqfXiQSuxYH03JlGnq8hxWEDItgSbs3j1sUmWZpeRLM6y5gfkj7YfpkVfM27ps4yw2&amp;t=637007647680000000" type="text/javascript"></script>
+<script src="/ko-kr/medialibrary/Scripts/randomisation.js" type="text/javascript"></script>
+<script src="/ko-kr/medialibrary/Scripts/SophosNext/froogaloop.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yDXrSRMg40IweECFTLo08u4cIRYT5Kcxwcsfv2_OR5mkDMypSWAwVLXPFTp4mrHUt24eT2Xv9MFDmxIyb1r5MK_nqSJ_hWCksO_YsXKSn5xRdLdcoNiPf9pL8jDUFYfSPWYAZYQ1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadLgsjHJldOXLROzbu3RNn1U7TufT5ds_3aWHAMZQPVKeL4RDee_0efPfrc2gQWiIJzKrDEFU5BqfoTPFxTPu-pLEFlPFNdGN9NGkb4obcmm92hPcwB6OTlYmi8fbj3RCrmIs8Hw1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6959D167" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+<div id="header-container" class="cms-header-container"><div id="headersection"><link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.3679/css/CoveoFullSearch.css" /><script src="https://static.cloud.coveo.com/searchui/v2.3679/js/CoveoJsSearch.min.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded", function () {initialiseCoveoSearchEndpoint();initialiseCoveoSearch(".search-wrapper");initialiseCoveoSearch(".responsive-search");initialiseCoveoSearch(".support-search-widget-wrapper", "Support");});</script><div class="nav microsite-" id="navigation"><div class="nav-wrapper responsive"><script type='text/javascript'>window.__lc = window.__lc || {};
+window.__lc.license = 2462101;
+
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+
+var LC_API = LC_API || {};
+LC_API.on_chat_window_opened = function()
+{
+    $(".icon-panel-close").trigger("click");
+};
+
+var fairfax = fairfax || {};
+
+fairfax.openLiveChatFromFlyoutLink = function() {
+    LC_API.open_chat_window();
+};
+
+fairfax.minimizeLiveChatWindow = function() {
+    LC_API.minimize_chat_window();
+};
+
+$(document).ready(function() {
+    $('.flyout-live-chat-link').click(function(){
+        // assign ga tracking to the two links as on line below:
+        // _gaq.push(['_trackPageview', '/products/live-chat/start.aspx']);
+    });
+});
+</script><style>/*sitecore css for livechat in products nav*/
+.secondary-navigation-livechat-link {
+    display: inline-block;
+}
+
+.products-livechat-link i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.products-livechat-link i img{
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+}
+    
+.products-livechat-link .link-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #58A4D5;
+}
+
+.secondary-navigation .products-livechat-link {
+    border: 1px solid #6FB1DB;
+    border-radius: 5px;
+    padding: 1px 8px;
+    margin-top: 13px;
+    margin-left: 15px;
+    line-height: 24px;
+    display: block;
+}
+
+.secondary-navigation .products-livechat-link:hover {
+    border: 1px solid #6FB1DB;
+}
+</style><div class="responsive-navigation-header"><div class="row small-collapse responsive-navigation-header-row"><div class="header-navigation-logo small-10 large-2 column"><a href="https://www.sophos.com/ko-kr.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/sophos-logo.ashx?la=ko-KR&amp;hash=C0A1A506E0D4A2A6200DA90E6FF602435FEECED1" alt="" /></a></div><div class="header-navigation-menu-reveal-wrapper small-1 column"><div class="header-navigation-menu-reveal"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosHomePage/navigation-accordian-img2.ashx?la=ko-KR&amp;hash=BA2FC89F473D7FA2077FDC5E1F9C5075F47ECD7A" class="header-navigation-menu-toggle open-menu" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/SophosHomePage/nav-close-icon.ashx?la=ko-KR&amp;hash=0A66C9C6CD941D8C6A167245FF30C90A398CB0D8" class="header-navigation-menu-toggle close-menu" alt="" /></div></div><div class="column header-navigation-list-container"><ul class="row small-collapse header-navigation-list-row"><li class='header-navigation-tab column'data-index="0"><a href="#" class="header-navigation-tab-link">
+제품
+<img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="0"><div class="header-navigation-panel"><div class="row collapse header-navigation-panel-row"><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationPanelLinkContainer" class="header-navigation-panel-link-container column large-9">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinkContainerPanel" class="header-navigation-link-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationFeaturedLinks_HeaderNavigationFeaturedLinksPanel" class="header-navigation-featured-links row">
+			<div class="column large-6 header-navigation-featured-link-wrapper"><a class="header-navigation-featured-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/next-gen-firewall.aspx"><i class="header-navigation-featured-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Featured-Links/xg-white.ashx?la=ko-KR&amp;hash=9BF1281BEC7A19CC75157B073AD8392595C4739A" class="header-navigation-featured-link-image" alt="" /></i><div class="header-navigation-featured-link-name">
+XG Firewall
+</div><div class="header-navigation-featured-link-description">
+Next-Gen Firewall
+</div></a></div><div class="column large-6 header-navigation-featured-link-wrapper"><a class="header-navigation-featured-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/intercept-x.aspx"><i class="header-navigation-featured-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Featured-Links/intercept-x-white.ashx?la=ko-KR&amp;hash=5B3DDA297570DA4BF2C385F6FE0FBF7443299047" class="header-navigation-featured-link-image" alt="" /></i><div class="header-navigation-featured-link-name">
+Intercept X
+</div><div class="header-navigation-featured-link-description">
+Next-Gen Endpoint
+</div></a></div>
+		</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksPanel" class="header-navigation-links row">
+			<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl00_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/cloud-optix.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/sophos-cloud-optix-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=84B062ACFFC360F96312674F5E3376157D7FAB89" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Sophos Cloud Optix</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl01_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/sophos-central.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/icon-central-promo.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=BFF6D6BB9841088E4A2DEA83D854C721F109C09D" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Sophos Central</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl02_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/mobile-control.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-sophos-mobile.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=59F87C8D5B8198F33B665CDCF6220098B32B6BDD" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Sophos Mobile
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl03_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/server-security.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-server-protection.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=FEF392B5F80EEF1BBCE81E59912E167C3034E984" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Intercept X for Server
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl04_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/secure-wifi.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-secure-wifi.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=3633F325333720DCC2316D37CB42FA6125B4433C" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Sophos Wireless
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl05_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/phish-threat.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-phish-threat.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=F1E8AA54132B15A0C25BEA1317B000D231866719" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Phish Threat
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl06_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/safeguard-encryption.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-safeguard-encryption.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=51F3B614B910254A3B014F8566C9381B31958102" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+SafeGuard Encryption
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl07_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/sophos-email.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-secure-email-gateway.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=E2E6D1B2CE9DAAE4E790FF17AFE922179BEB6E8D" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Sophos Email
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl08_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/choose-firewall.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-sg-utm.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=3BAEEAE042B73F92E7FE5FB27230DC127A4A6944" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+UTM
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl09_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-4">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/secure-web-gateway.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Products/Icons/product-icon-secure-web-gateway.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=F98116684324ED966D73D3E2ED58B794ED529D55" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Secure Web Gateway
+</div></a>
+			</div>
+		</div>
+	</div>
+</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationPanelCTAContainer" class="header-navigation-panel-cta-container column large-3">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_CTAContainer_HeaderNavigationCTAContainerPanel" class="header-navigation-cta-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl00_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-12">
+			<a rel="external" href="https://home.sophos.com"><i class="header-navigation-cta-icon"></i></a><a rel="external" href="https://home.sophos.com"><div class="header-navigation-cta-title">
+개인 사용자용
+</div></a><a rel="external" href="https://home.sophos.com"><div class="header-navigation-cta-description">
+Sophos Home은 각 개인 가정의 모든 Mac과 PC를 보호합니다.
+</div></a><a class="header-navigation-cta-container-button" rel="external" href="https://home.sophos.com">
+자세히 알아보기
+</a>
+		</div>
+	</div>
+</div></div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationLinkBar_HeaderNavigationLinkBarPanel" class="header-navigation-link-bar row">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationLinkBar_HeaderNavigationLinkBarRepeater_ctl00_HeaderNavigationLinkBarLinkPanel" class="header-navigation-link-bar-link-wrapper column large-3">
+		<a class="header-navigation-link-bar-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/free-tools.aspx"><i class="header-navigation-link-bar-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Link-Bar/icon-free-security-tools.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=04D86045E1763CBED562C567D8805351CD7C813D" class="header-navigation-link-bar-link-image" alt="" /></i><div class="header-navigation-link-bar-link-name">
+무료 보안 툴
+</div></a>
+	</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationLinkBar_HeaderNavigationLinkBarRepeater_ctl01_HeaderNavigationLinkBarLinkPanel" class="header-navigation-link-bar-link-wrapper column large-3">
+		<a class="header-navigation-link-bar-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/products/free-trials.aspx"><i class="header-navigation-link-bar-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Link-Bar/icon-free-trials.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=F1185B86D51EB9FC432652F62777EA8BDF0DAC87" class="header-navigation-link-bar-link-image" alt="" /></i><div class="header-navigation-link-bar-link-name">
+무료 평가판
+</div></a>
+	</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl00_ctl02_HeaderNavigationLinkBar_HeaderNavigationLinkBarRepeater_ctl02_HeaderNavigationLinkBarLinkPanel" class="header-navigation-link-bar-link-wrapper column large-3">
+		<a class="header-navigation-link-bar-link" HideIfEmpty="true" href="https://secure2.sophos.com/ko-kr/products/demos.aspx"><i class="header-navigation-link-bar-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Link-Bar/icon-product-demos.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=95EE23194A5D0E1B2B537CAE11CC145E267F1765" class="header-navigation-link-bar-link-image" alt="" /></i><div class="header-navigation-link-bar-link-name">
+제품 데모
+</div></a>
+	</div>
+</div></div></div><li class='header-navigation-tab column'data-index="1"><a href="#" class="header-navigation-tab-link">
+솔루션
+<img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="1"><div class="header-navigation-panel"><div class="row collapse header-navigation-panel-row"><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_HeaderNavigationPanelLinkContainer" class="header-navigation-panel-link-container column large-9">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinkContainerPanel" class="header-navigation-link-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksPanel" class="header-navigation-links row">
+			<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl00_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/industries.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/industries-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=304F69D7B0AE7D41E5E3C7EA8329D9EEB2DEAAA6" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Industries
+</div><div class="header-navigation-link-description">
+고객의 산업군에, 소포스의 전문지식을
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl01_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/oem-solutions.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/oem-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=E905FAFA101E53416E42E1E9009A4BC87DA737B3" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+OEM 솔루션
+</div><div class="header-navigation-link-description">
+최고의 브랜드들이 소포스에 보내는 신뢰를 당신의 솔루션에도 적용하세요
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl02_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/initiatives.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/it-initiaties.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=EAE9F99ED55009FB527FE6B94386D58AEC2B2890" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+IT initiatives
+</div><div class="header-navigation-link-description">
+자신 있게 IT 이니셔티브를 수립하세요.
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl03_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/support/professional-services.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/professional-services-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=5C822167D98AC9EEDC9191B0EAB7EBCD5DC5B841" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Professional Services
+</div><div class="header-navigation-link-description">
+전문 서비스를 통한, 고객의 안심
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl04_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/compliance.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/compliance-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=2E07346AC51C02C1334E7B1BE14B8C420CD74991" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+규정 준수
+</div><div class="header-navigation-link-description">
+규정을 준수하고 유지하는 데 도움을 드립니다.
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl05_HeaderNavigationLinkPanel" class="header-navigation-link-with-description-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/public-cloud.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/public-cloud-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=61DED5E44C76796C17B6F6934F94127E61C81D46" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+퍼블릭 클라우드
+</div><div class="header-navigation-link-description">
+강력하고 단순한 클라우드 보안.
+</div></a>
+			</div>
+		</div>
+	</div>
+</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_HeaderNavigationPanelCTAContainer" class="header-navigation-panel-cta-container column large-3">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_CTAContainer_HeaderNavigationCTAContainerPanel" class="header-navigation-cta-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl01_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl00_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-12">
+			<a href="https://www.sophos.com/ko-kr/labs.aspx"><i class="header-navigation-cta-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/sophos-labs-logo.ashx?la=ko-KR&amp;hash=E8B4CD46F0D0B590D53FEECC47BB2A1703C4DD50" alt="" /></i></a><a href="https://www.sophos.com/ko-kr/labs.aspx"></a><a href="https://www.sophos.com/ko-kr/labs.aspx"><div class="header-navigation-cta-description">
+24/7 보안의 이면.
+</div></a><a class="header-navigation-cta-container-button" href="https://www.sophos.com/ko-kr/labs.aspx">
+연구 결과 보기
+</a>
+		</div>
+	</div>
+</div></div></div></div><li class='header-navigation-tab column'data-index="2"><a href="#" class="header-navigation-tab-link">
+파트너
+<img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="2"><div class="header-navigation-panel"><div class="row collapse header-navigation-panel-row"><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_HeaderNavigationPanelLinkContainer" class="header-navigation-panel-link-container column large-6">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinkContainerPanel" class="header-navigation-link-container header-navigation-link-container-alternate-colours">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksPanel" class="header-navigation-links row">
+			<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl00_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/partners.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/partner-program-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=7CDCF768F7BC2FFC6B3DD886372932B6E1B0C798" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+파트너 프로그램
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl01_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/partners/managed-service-providers.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/msp-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=D1419DC8B70B7F6385687944835007CDD94E1226" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+MSP
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl02_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/partners/resellers.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/resellers-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=6101946B5CF5F2FFF93E47B3318CDF763ECB9883" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+리셀러
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl03_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/partners/cloud-security-provider.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/cloud-security-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=C20612EDD3A8FDB6015248C6A565600FF2D37EA9" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+클라우드 보안
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl04_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/solutions/oem-solutions.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/oem-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=E905FAFA101E53416E42E1E9009A4BC87DA737B3" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+OEM
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl05_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/about-us/training/partner-certification.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/partner-training-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=E29C12F34BB23916D5CE8883191B84ED3AE4257C" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+파트너 교육
+</div></a>
+			</div>
+		</div>
+	</div>
+</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_HeaderNavigationPanelCTAContainer" class="header-navigation-panel-cta-container column large-6">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_CTAContainer_HeaderNavigationCTAContainerPanel" class="header-navigation-cta-container header-navigation-cta-container-alternate-colours">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl00_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-6">
+			<a href="https://www.sophos.com/ko-kr/partners/partner-portal.aspx"><i class="header-navigation-cta-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/partner-portal.ashx?la=ko-KR&amp;hash=691F54937D86193088EABE5D0D865792BB8FD5F9" alt="" /></i></a><a href="https://www.sophos.com/ko-kr/partners/partner-portal.aspx"><div class="header-navigation-cta-title">
+파트너 포털
+</div></a><a href="https://www.sophos.com/ko-kr/partners/partner-portal.aspx"><div class="header-navigation-cta-description">
+소포스 매출 극대화.
+</div></a>
+		</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl02_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl01_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-6">
+			<a href="https://www.sophos.com/ko-kr/partners/partner-locator.aspx"><i class="header-navigation-cta-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/partner-locator.ashx?la=ko-KR&amp;hash=5E6B8C0F9B910D5528114A27492BAB96BB0FDAE0" alt="" /></i></a><a href="https://www.sophos.com/ko-kr/partners/partner-locator.aspx"><div class="header-navigation-cta-title">
+파트너 찾기
+</div></a><a href="https://www.sophos.com/ko-kr/partners/partner-locator.aspx"><div class="header-navigation-cta-description">
+전세계 소포스 파트너 찾기.
+</div></a>
+		</div>
+	</div>
+</div></div></div></div><li class='header-navigation-tab column'data-index="3"><a href="#" class="header-navigation-tab-link">
+지원
+<img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="3"><div class="header-navigation-panel"><div class="row collapse header-navigation-panel-row"><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_HeaderNavigationPanelLinkContainer" class="header-navigation-panel-link-container column large-9">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinkContainerPanel" class="header-navigation-link-container header-navigation-link-container-alternate-colours">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksPanel" class="header-navigation-links row">
+			<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl00_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://secure2.sophos.com/ko-kr/support.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/support-overview.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=69935B1537F060E2357DD3701564E01E0087150D" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+지원 개요
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl01_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://secure2.sophos.com/ko-kr/support/documentation.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/documentation.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=BE51B4CC47AF5865115E212ED5CCC55169BD2482" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+문서
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl02_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" rel="external" href="https://community.sophos.com/"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/community-forums.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=2A3BB65B8B34B298FB9E0FA8F133AA1A14101054" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+커뮤니티 포럼
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl03_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/support/technical-support.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/support-plans.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=3F2DE187ACDDE9DD91DA302167F8D5E579DDE9D8" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+지원 패키지
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl04_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/about-us/training.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/training.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=1FCF336631504102E1004B633BDF91F37FD6B1EB" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+교육
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl05_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="/ko-kr/sophos/support/downloads.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/downloads-updates.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=F4D07CCF31F8436A47C178DF38C4AC0422D6B44F" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+다운로드 및 업데이트
+</div></a>
+			</div>
+		</div>
+	</div>
+</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_HeaderNavigationPanelCTAContainer" class="header-navigation-panel-cta-container column large-3">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_CTAContainer_HeaderNavigationCTAContainerPanel" class="header-navigation-cta-container header-navigation-cta-container-alternate-colours">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl03_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl00_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-12">
+			<a href="https://secure2.sophos.com/ko-kr/support/open-a-support-case.aspx"><i class="header-navigation-cta-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/icon-support.ashx?la=ko-KR&amp;hash=D9F00C9899A62043E0FC9E76831C0672FA994AE7" alt="" /></i></a><a href="https://secure2.sophos.com/ko-kr/support/open-a-support-case.aspx"><div class="header-navigation-cta-title">
+기술 지원
+</div></a><a href="https://secure2.sophos.com/ko-kr/support/open-a-support-case.aspx"></a><a class="header-navigation-cta-container-button" href="https://secure2.sophos.com/ko-kr/support/open-a-support-case.aspx">
+지원 사례 보기
+</a>
+		</div>
+	</div>
+</div></div></div></div><li class='header-navigation-tab column'data-index="4"><a href="#" class="header-navigation-tab-link">
+회사
+<img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="4"><div class="header-navigation-panel"><div class="row collapse header-navigation-panel-row"><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_HeaderNavigationPanelLinkContainer" class="header-navigation-panel-link-container column large-9">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinkContainerPanel" class="header-navigation-link-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksPanel" class="header-navigation-links row">
+			<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl00_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/about-sophos-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=38E6DD240614402C574109DB10FC24FBF604B874" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Sophos 정보
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl01_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company/social-media.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/social-media-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=04AAC7F92801110F577B9185E550F8751F69B94C" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+소셜 미디어
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl02_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://investors.sophos.com/ko-kr.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/investors-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=551457AD234CA25F451AAC1A4B475AB9C3F2DD4F" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+투자자
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl03_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company/careers.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/careers-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=B70CC10526E616184A9E2B5AA8127D1F49FE07A4" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+채용
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl04_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company/press.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/press-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=9656C2845B384256F842349B222E112E0372628F" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+보도자료
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl05_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company/contact.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/contact-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=82714BC361B59B6E78FF971BC8A06B31482A21A1" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+연락처
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl06_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://www.sophos.com/ko-kr/company/events.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/upcoming-events-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=853C17036A147370F373ADBB2D2147530CB56271" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+이벤트
+</div></a>
+			</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_LinkContainer_HeaderNavigationLinks_HeaderNavigationLinksRepeater_ctl07_HeaderNavigationLinkPanel" class="header-navigation-link-wrapper column large-6">
+				<a class="header-navigation-link" HideIfEmpty="true" href="https://blogs.sophos.com/"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/sophos-news-icon.ashx?&amp;mh=28&amp;mw=28&amp;la=ko-KR&amp;hash=E32C6A67F3C4B86C27F8F936658DC792EAEB18B4" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">
+Sophos 뉴스
+</div></a>
+			</div>
+		</div>
+	</div>
+</div><div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_HeaderNavigationPanelCTAContainer" class="header-navigation-panel-cta-container column large-3">
+	<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_CTAContainer_HeaderNavigationCTAContainerPanel" class="header-navigation-cta-container">
+		<div id="ctl04_HeaderNavigation_HeaderNavigationTabsRepeater_ctl04_ctl02_CTAContainer_HeaderNavigationCTARepeater_ctl00_HeaderNavigationCTAOuterPanelInner_HeaderNavigationCTAInnerPanel" class="header-navigation-cta-inner column large-12">
+			<a href="https://investors.sophos.com/ko-kr.aspx"><i class="header-navigation-cta-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Main/investors-icon-large.ashx?la=ko-KR&amp;hash=5A6345A2126C25258D638BCE2C73C3AF07D009C7" alt="" /></i></a><a href="https://investors.sophos.com/ko-kr.aspx"><div class="header-navigation-cta-title">
+투자 정보
+</div></a><a href="https://investors.sophos.com/ko-kr.aspx"></a><a class="header-navigation-cta-container-button" href="https://investors.sophos.com/ko-kr.aspx">
+재무 업데이트 읽기
+</a>
+		</div>
+	</div>
+</div></div></div></div><li id="ctl04_HeaderNavigation_searchListItem" class="header-navigation-search small-12 column"><a href="#search" class="header-navigation-search-link" id="searchLink"><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Search/header-search-icon.ashx?la=ko-KR&amp;hash=924EB8E069ECAB4166DF02149D271952D0DA7040" class="header-navigation-search-icon" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Header-Navigation/Search/header-search-icon-hover.ashx?la=ko-KR&amp;hash=334CC4DAAF0D73AA35A89EFC858018AC4628CFC1" class="header-navigation-search-icon-hover" alt="" /></a></li><li id="ctl04_HeaderNavigation_SignInListItemNav" class="header-navigation-tab header-navigation-sign-in-tab column" data-index="5"><a href="#" class="header-navigation-tab-link header-navigation-sign-in-link"><span id="ctl04_HeaderNavigation_SignInSpanNav">Sign in</span><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow.ashx?la=ko-KR&amp;hash=402D251DD576928944BEA24D5573E5DA8690DC71" class="icon-responsive-navigation-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-hover.ashx?la=ko-KR&amp;hash=7FA947BA1949D001940A6ECE05743BA5968EB7B5" class="icon-responsive-navigation-header-arrow-active desktop-header-arrow" alt="" /><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Menu-Arrows/header-arrow-current.ashx?la=ko-KR&amp;hash=7563FEE484CEFD1A5ACC1CC2F9DF75C26555F32F" class="icon-responsive-navigation-header-arrow-current desktop-header-arrow" alt="" /></a></li><div class="header-navigation-panel-container" data-index="5"><div class="header-navigation-panel header-navigation-sign-in-panel"><div class="large-offset-9 large-3 header-navigation-link-container header-navigation-sign-in-links-container"><div class="header-navigation-links row"><div class="header-navigation-link-wrapper column"><div id="ctl04_HeaderNavigation_HeaderNavigationSignInDropDown_LinksRepeater_ctl00_TextAboveContainer" class="show-for-large"><h3 class="header-navigation-sign-in-title">APPS</h3></div><a class="header-navigation-link" href="https://central.sophos.com"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Sign-In/icon-central-promo.svg?&amp;mh=28&amp;mw=28&amp;la=en&amp;hash=73AFA0557A48D71B376B3DCDAA1FD40681B08245" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Sophos Central</div></a></div><div class="header-navigation-link-wrapper column"><a class="header-navigation-link" href="https://home.sophos.com"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Sign-In/icon-sophos-home.svg?&amp;mh=28&amp;mw=28&amp;la=en&amp;hash=C07159D98896B3DE20DB6DD9CE9C578BCDC5A1A3" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Sophos Home</div></a></div><div class="header-navigation-link-wrapper column"><div id="ctl04_HeaderNavigation_HeaderNavigationSignInDropDown_LinksRepeater_ctl02_TextAboveContainer" class="show-for-large"><h3 class="header-navigation-sign-in-title">SERVICES</h3></div><a class="header-navigation-link" href="https://community.sophos.com"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Sign-In/icon-support.svg?&amp;mh=28&amp;mw=28&amp;la=en&amp;hash=AC828952DEC50FF3C8A96E3A18F1121775DE1B8E" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Support Community</div></a></div><div class="header-navigation-link-wrapper column"><a class="header-navigation-link" href="https://partnerportal.sophos.com"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Sign-In/icon-partner-portal.svg?&amp;mh=28&amp;mw=28&amp;la=en&amp;hash=3AF31345361D4EE0332F974C34E968943404D6D9" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Partner Portal</div></a></div><div class="header-navigation-link-wrapper column"><a class="header-navigation-link" href="https://secure2.sophos.com/ko-kr/login.aspx"><i class="header-navigation-link-icon"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Sign-In/icon-licensing-portal.svg?&amp;mh=28&amp;mw=28&amp;la=en&amp;hash=83A74173E1ACCB7B9ED55D5698A88840ABC28DF8" class="header-navigation-link-image" alt="" /></i><div class="header-navigation-link-name">Licensing Portal<br />(MySophos)</div></a></div></div><div class="header-navigation-sign-in-footer-links-container row"><div class="header-navigation-link-wrapper column"><a class="header-navigation-link" rel="external" href="https://id.sophos.com/web/profile/"><div class="header-navigation-link-name">Profile</div></a></div></div></div></div></div><li class="responsive-search header-navigation-drop-search small-12 column"><div class="header-search CoveoSearchInterface" id="dropSearch"><div class="CoveoAnalytics"></div><div class="wrapper"><div class="search-field-wrapper"><div id="searchbox"><div class="coveo-search-section"><div class="CoveoSearchbox" data-placeholder="
+검색 Sophos
+"></div></div></div></div></div></div></li></ul></div></div></div><div id="ctl04_headerDropSearchCoveoSearchWrapper" class="search-wrapper headerSearchWrapperCoveo"><div class="header-search CoveoSearchInterface" id="dropSearch"><div class="CoveoAnalytics"></div><div class="wrapper"><div class="search-field-wrapper"><div id="searchbox"><div class="coveo-search-section"><div class="CoveoSearchbox" data-placeholder="
+검색 Sophos
+"></div></div></div></div></div></div></div></div></div></div></div><style>.static-content-row-10ecf339-815c-4f4d-bdcf-b77d85a67d3b {background-image: none;}@media print, screen and (min-width: 40em) {.static-content-row-10ecf339-815c-4f4d-bdcf-b77d85a67d3b {background-image: none;}}@media print, screen and (min-width: 64em) {.static-content-row-10ecf339-815c-4f4d-bdcf-b77d85a67d3b {background-image: none;}}</style><div class="static-content-row static-content-row-10ecf339-815c-4f4d-bdcf-b77d85a67d3b responsive noBgRepeat bgPositionCT bgSizeCover randomBanner"><div class="row"><style>.content-block-eb125dbf-4276-4c99-a1e1-016c924c3f19 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-eb125dbf-4276-4c99-a1e1-016c924c3f19 {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-eb125dbf-4276-4c99-a1e1-016c924c3f19 {text-align: center;}}</style><div class="column content-block content-block-eb125dbf-4276-4c99-a1e1-016c924c3f19 "><div class="content-block-inner"><style>.spacer-content-component-b0c5d707-f38c-4017-81cd-cbddf96516cf {height: 140px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-b0c5d707-f38c-4017-81cd-cbddf96516cf {height: 220px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-b0c5d707-f38c-4017-81cd-cbddf96516cf {height: 204px;display: block;}}</style><span class="spacer-content-component spacer-content-component-b0c5d707-f38c-4017-81cd-cbddf96516cf "></span><span class="rich-text-content-component rich-text-content-component-1544117d-2b1b-4867-ac99-e58de4ddb59c whiteFont"><h1 class="bannerTitle margin-0 evolvedFont">CYBERSECURITY EVOLVED</h1></span><style>.spacer-content-component-1c0db317-cc0c-4587-96f7-39b2cfbe3cd8 {height: 5px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-1c0db317-cc0c-4587-96f7-39b2cfbe3cd8 {height: 40px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-1c0db317-cc0c-4587-96f7-39b2cfbe3cd8 {height: 95px;display: block;}}</style><span class="spacer-content-component spacer-content-component-1c0db317-cc0c-4587-96f7-39b2cfbe3cd8 "></span><span class="rich-text-content-component rich-text-content-component-e9fab347-41b3-41f3-82fa-be56de2fe41a ">
+
+<div class="awardsLogo"><a href="https://www.sophos.com/ko-kr/products/intercept-x.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/se-labs.ashx" /></a> <a href="https://www.sophos.com/ko-kr/products/intercept-x.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/sc-awards.ashx" /></a> <a href="https://www.sophos.com/ko-kr/products/intercept-x.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/nss-labs.ashx"  srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/nss-labs@2x.ashx 2x" /></a> <a href="https://secure2.sophos.com/ko-kr/security-news-trends/reports/gartner/magic-quadrant-endpoint-protection-platforms.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/gartner.ashx" /></a> <a href="https://home.sophos.com" target="_blank"><img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/macworld-editors-choice-2019.ashx" /></a></div>
+
+</span><style>.spacer-content-component-7c9f54d4-f150-4458-b5bf-37f0b73ea5f0 {height: 40px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-7c9f54d4-f150-4458-b5bf-37f0b73ea5f0 {height: 50px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-7c9f54d4-f150-4458-b5bf-37f0b73ea5f0 {height: 60px;display: block;}}</style><span class="spacer-content-component spacer-content-component-7c9f54d4-f150-4458-b5bf-37f0b73ea5f0 "></span></div></div><style>.content-block-c8d83d49-37fc-4337-ba0e-fd0ba4b5c8ca {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-c8d83d49-37fc-4337-ba0e-fd0ba4b5c8ca {text-align: right;}}@media print, screen and (min-width: 64em) {.content-block-c8d83d49-37fc-4337-ba0e-fd0ba4b5c8ca {text-align: right;}}</style><div class="column content-block content-block-c8d83d49-37fc-4337-ba0e-fd0ba4b5c8ca medium-6 float-right desktopPadding0"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-010693ed-a2f0-45c2-9b50-f189a1fa8470 ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/intercept-x-logo-3d.ashx" alt="Intercept X" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/intercept-x-logo-3d@2x.ashx 2x" />
+</span></div></div><style>.content-block-2abca2ca-5b4a-45e9-89c4-853ff56c7962 {text-align: left;}@media print, screen and (min-width: 40em) {.content-block-2abca2ca-5b4a-45e9-89c4-853ff56c7962 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-2abca2ca-5b4a-45e9-89c4-853ff56c7962 {text-align: left;}}</style><div class="column content-block content-block-2abca2ca-5b4a-45e9-89c4-853ff56c7962 medium-6"><div class="content-block-inner"><style>.heading-content-component-077bf1ae-e96c-4fbb-8ffd-98be678607a0 {color: #828a96;}</style><h3 class="heading-content-component heading-content-component-077bf1ae-e96c-4fbb-8ffd-98be678607a0 panelTitleSmall">
+엔드포인트 보호
+</h3><style>.main-heading-content-component-8bef55ac-db70-4c07-a494-015bd1a729f6 {color: #fff;}</style><h2 class="main-heading-content-component main-heading-content-component-8bef55ac-db70-4c07-a494-015bd1a729f6 bannerSubtitle margin-top-0">
+미래는 <br />발전하는 사람들의 것입니다.
+</h2><span class="rich-text-content-component rich-text-content-component-65cf4e4c-fd4f-481c-b510-a87bb29f618a whiteFont">
+
+<p class="largeFont">인공 지능과 EDR을 사용하며 수상 경력이 있는 엔드포인트 보호 기능으로 맬웨어, 익스플로잇 및 랜섬웨어로부터 독보적인 방어 체계를 구축할 수 있습니다.</p>
+
+</span><div class="button-group-content-component button-group-content-component-701f5177-8e03-4ae0-a93f-c25d1bd85e57 "><a class="button-content-component button-cobalt-blue smallBtn margin-left-0" href="https://www.sophos.com/ko-kr/products/intercept-x/free-trial.aspx">
+무료 평가판
+</a><a class="button-content-component button-admiral-blue smallBtn" href="https://www.sophos.com/ko-kr/products/intercept-x.aspx">
+자세히 알아보기
+</a></div></div></div><style>.content-block-716f11e2-72a6-4728-9cf8-e096e50bd03f {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-716f11e2-72a6-4728-9cf8-e096e50bd03f {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-716f11e2-72a6-4728-9cf8-e096e50bd03f {text-align: center;}}</style><div class="column content-block content-block-716f11e2-72a6-4728-9cf8-e096e50bd03f "><div class="content-block-inner"><style>.spacer-content-component-9a1579d5-b111-4eff-8427-07867b431787 {height: 80px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-9a1579d5-b111-4eff-8427-07867b431787 {height: 90px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-9a1579d5-b111-4eff-8427-07867b431787 {height: 100px;display: block;}}</style><span class="spacer-content-component spacer-content-component-9a1579d5-b111-4eff-8427-07867b431787 "></span></div></div></div></div><style>.static-content-row-7a84f6ff-9131-4a95-b529-7227b81d7077 {background-image: none;}@media print, screen and (min-width: 40em) {.static-content-row-7a84f6ff-9131-4a95-b529-7227b81d7077 {background-image: none;}}@media print, screen and (min-width: 64em) {.static-content-row-7a84f6ff-9131-4a95-b529-7227b81d7077 {background-image: none;}}</style><div class="static-content-row static-content-row-7a84f6ff-9131-4a95-b529-7227b81d7077 responsive "><div class="row"><style>.content-block-90e2a32f-dc61-470c-a8d0-aba207e86a51 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-90e2a32f-dc61-470c-a8d0-aba207e86a51 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-90e2a32f-dc61-470c-a8d0-aba207e86a51 {text-align: left;}}</style><div class="column content-block content-block-90e2a32f-dc61-470c-a8d0-aba207e86a51 medium-6 desktopPadding0"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-a07a2e27-ab1d-4942-b6c7-2d6c5b5c09c7 ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/xg-firewall-logo-3d.ashx" alt="XG Firewall" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/xg-firewall-logo-3d@2x.ashx 2x" />
+</span></div></div><style>.content-block-1d5b245c-fbbf-49b6-9de3-14bb48851764 {text-align: left;}@media print, screen and (min-width: 40em) {.content-block-1d5b245c-fbbf-49b6-9de3-14bb48851764 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-1d5b245c-fbbf-49b6-9de3-14bb48851764 {text-align: left;}}</style><div class="column content-block content-block-1d5b245c-fbbf-49b6-9de3-14bb48851764 medium-6"><div class="content-block-inner"><style>.heading-content-component-6571c200-ad30-409c-bfa0-ea6e1bbae645 {color: #828a96;}</style><h3 class="heading-content-component heading-content-component-6571c200-ad30-409c-bfa0-ea6e1bbae645 panelTitleSmall">
+방화벽
+</h3><style>.main-heading-content-component-4d51aee6-ec3c-4f2c-8628-eb2c987919f8 {color: #fff;}</style><h2 class="main-heading-content-component main-heading-content-component-4d51aee6-ec3c-4f2c-8628-eb2c987919f8 bannerSubtitle margin-top-0">
+차세대 방화벽이 진화했습니다.
+</h2><span class="rich-text-content-component rich-text-content-component-6a3da1f0-ba8c-4ffe-95da-e91ef2b0599a whiteFont">
+
+<p class="largeFont">딥 러닝 및 Synchronized Security를 기반으로 하는 세계 최고의 가시성, 보호 기능 및 대응 능력.</p>
+
+</span><div class="button-group-content-component button-group-content-component-6ddc5025-7093-481e-902b-898932c5da0d "><a class="button-content-component button-cobalt-blue smallBtn margin-left-0" href="https://secure2.sophos.com/ko-kr/products/next-gen-firewall/free-trial.aspx">
+무료 평가판
+</a><a class="button-content-component button-admiral-blue smallBtn" href="https://www.sophos.com/ko-kr/products/next-gen-firewall.aspx">
+자세히 알아보기
+</a></div></div></div></div></div><style>.static-content-row-e84fdb3b-8639-4f7c-bc5b-c96fb082d7e9 {background-color: #001534;background-image: none;}@media print, screen and (min-width: 40em) {.static-content-row-e84fdb3b-8639-4f7c-bc5b-c96fb082d7e9 {background-color: #001534;background-image: none;}}@media print, screen and (min-width: 64em) {.static-content-row-e84fdb3b-8639-4f7c-bc5b-c96fb082d7e9 {background-color: #001534;background-image: none;}}</style><div class="static-content-row static-content-row-e84fdb3b-8639-4f7c-bc5b-c96fb082d7e9 responsive crossbgRtl cloudOptixPanel"><div class="row"><style>.content-block-a959b4fd-8d33-4a07-930d-faaa2b313892 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-a959b4fd-8d33-4a07-930d-faaa2b313892 {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-a959b4fd-8d33-4a07-930d-faaa2b313892 {text-align: center;}}</style><div class="column content-block content-block-a959b4fd-8d33-4a07-930d-faaa2b313892 "><div class="content-block-inner"><style>.spacer-content-component-cf73bdeb-3878-4df9-9736-b6919b8ed949 {height: 60px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-cf73bdeb-3878-4df9-9736-b6919b8ed949 {height: 70px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-cf73bdeb-3878-4df9-9736-b6919b8ed949 {height: 80px;display: block;}}</style><span class="spacer-content-component spacer-content-component-cf73bdeb-3878-4df9-9736-b6919b8ed949 "></span></div></div><style>.content-block-f365e0a1-da1c-4aee-882f-7521461e75dd {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-f365e0a1-da1c-4aee-882f-7521461e75dd {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-f365e0a1-da1c-4aee-882f-7521461e75dd {text-align: center;}}</style><div class="column content-block content-block-f365e0a1-da1c-4aee-882f-7521461e75dd medium-6 desktopPadding0 float-right"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-eb6f9b67-6096-4463-acca-1a2d282bbfe6 ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/cloud-optix.ashx" alt="Sophos Cloud Optix" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/cloud-optix@2x.ashx 2x"/><div class="cloudSmallLogos row"><img class="margin-1" width="98" src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/azure-logo.ashx" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/azure-logo@2x.ashx 2x"/> <img class="margin-1" width="163" src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/google-cloud-logo.ashx" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/google-cloud-logo@2x.ashx 2x"/> <img class="margin-1" width="53" src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/aws-logo.ashx" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/aws-logo@2x.ashx 2x"/></div>  
+
+</span><style>.spacer-content-component-adbbe43b-5b62-4b13-a50e-9792452b213c {height: 40px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-adbbe43b-5b62-4b13-a50e-9792452b213c {height: 0px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-adbbe43b-5b62-4b13-a50e-9792452b213c {height: 0px;display: block;}}</style><span class="spacer-content-component spacer-content-component-adbbe43b-5b62-4b13-a50e-9792452b213c "></span></div></div><style>.content-block-a92f2f9d-b103-4b45-b80e-95deab5cb31e {text-align: left;}@media print, screen and (min-width: 40em) {.content-block-a92f2f9d-b103-4b45-b80e-95deab5cb31e {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-a92f2f9d-b103-4b45-b80e-95deab5cb31e {text-align: left;}}</style><div class="column content-block content-block-a92f2f9d-b103-4b45-b80e-95deab5cb31e medium-6"><div class="content-block-inner"><style>.heading-content-component-134c3b93-4b34-400a-85d8-9ba5e1537c5d {color: #828a96;}</style><h3 class="heading-content-component heading-content-component-134c3b93-4b34-400a-85d8-9ba5e1537c5d panelTitleSmall">
+퍼블릭 클라우드
+</h3><style>.main-heading-content-component-750f4854-763b-4ded-be44-c3f571646da2 {color: #fff;}</style><h2 class="main-heading-content-component main-heading-content-component-750f4854-763b-4ded-be44-c3f571646da2 bannerSubtitle margin-top-0">
+클라우드 보안에서 가장 어려운 문제 해결.
+</h2><span class="rich-text-content-component rich-text-content-component-15620352-0ba0-45ca-92a5-0057da593ab1 whiteFont">
+
+<p>AI의 힘과 자동화 기능을 결합하여 클라우드에서 규정 준수, 관리 및 보안 모니터링 작업을 단순화하십시오.</p>
+
+</span><div class="button-group-content-component button-group-content-component-d5a0b5fe-43fb-42e5-9efa-bca7b4f5c99a "><a class="button-content-component button-cobalt-blue smallBtn margin-left-0" href="https://www.sophos.com/ko-kr/products/cloud-optix/free-trial.aspx">
+무료 평가판
+</a><a class="button-content-component button-admiral-blue smallBtn" href="https://www.sophos.com/ko-kr/products/cloud-optix.aspx">
+자세히 알아보기
+</a></div></div></div><style>.content-block-0e2d47de-b34a-4be6-a3cf-aac7e078b56f {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-0e2d47de-b34a-4be6-a3cf-aac7e078b56f {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-0e2d47de-b34a-4be6-a3cf-aac7e078b56f {text-align: center;}}</style><div class="column content-block content-block-0e2d47de-b34a-4be6-a3cf-aac7e078b56f "><div class="content-block-inner"><style>.spacer-content-component-e9cb837a-1b30-4e65-94cc-f711686cbb18 {height: 60px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-e9cb837a-1b30-4e65-94cc-f711686cbb18 {height: 70px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-e9cb837a-1b30-4e65-94cc-f711686cbb18 {height: 80px;display: block;}}</style><span class="spacer-content-component spacer-content-component-e9cb837a-1b30-4e65-94cc-f711686cbb18 "></span></div></div></div></div><style>.static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b {background-image: url("/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/sophos-home-laptop-mobile.ashx");}@media print, screen and (min-width: 40em) {.static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b {background-image: url("/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/sophos-home-laptop-tablet.ashx");}}@media print, screen and (min-width: 64em) {.static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b {background-image: url("/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/sophos-home-laptop.ashx");}}</style><div class="static-content-row static-content-row-87ee575d-ed1d-4a60-a8ae-17c42ba8672b responsive noBgRepeat bgPositionCB MobileBgPositionCT crossbgRtl"><div class="row"><style>.content-block-bd104af7-1b41-4846-9983-dbf43d941d84 {text-align: left;}@media print, screen and (min-width: 40em) {.content-block-bd104af7-1b41-4846-9983-dbf43d941d84 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-bd104af7-1b41-4846-9983-dbf43d941d84 {text-align: left;}}</style><div class="column content-block content-block-bd104af7-1b41-4846-9983-dbf43d941d84 medium-6"><div class="content-block-inner"><style>.spacer-content-component-42f55e78-c06a-4d81-a929-fa8b0a158e6f {height: 240px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-42f55e78-c06a-4d81-a929-fa8b0a158e6f {height: 30px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-42f55e78-c06a-4d81-a929-fa8b0a158e6f {height: 40px;display: block;}}</style><span class="spacer-content-component spacer-content-component-42f55e78-c06a-4d81-a929-fa8b0a158e6f "></span><style>.heading-content-component-49e65883-1443-4bf8-a72f-aea157aefa06 {color: #828a96;}</style><h3 class="heading-content-component heading-content-component-49e65883-1443-4bf8-a72f-aea157aefa06 panelTitleSmall">
+가정용 Mac 및 PC 보호
+</h3><style>.main-heading-content-component-6dbb8c6c-2c1c-4455-9caf-ce2771b036ec {color: #fff;}</style><h2 class="main-heading-content-component main-heading-content-component-6dbb8c6c-2c1c-4455-9caf-ce2771b036ec bannerSubtitle margin-top-0">
+가정 사용자를 위한 비즈니스급 사이버 보안.
+</h2><span class="rich-text-content-component rich-text-content-component-97bc032a-36df-4bb5-803b-8f954958a53e whiteFont">
+
+<p class="largeFont">Sophos Home에는 지능형 바이러스, 맬웨어, 익스플로잇 및 랜섬웨어 공격을 차단하는 인공 지능이 포함되어 있습니다.</p>
+
+</span><div class="button-group-content-component button-group-content-component-8d762d8d-fcec-4f2f-b9fc-c67413d2156f "><a class="button-content-component button-cobalt-blue smallBtn margin-left-0" rel="external" href="https://home.sophos.com/ko-kr/download-antivirus-pc.aspx">
+무료 평가판
+</a><a class="button-content-component button-admiral-blue smallBtn" rel="external" href="https://home.sophos.com/">
+자세히 알아보기
+</a></div><style>.spacer-content-component-52d38847-09e8-4f05-bcfe-210dc7ebe942 {height: 0px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-52d38847-09e8-4f05-bcfe-210dc7ebe942 {height: 40px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-52d38847-09e8-4f05-bcfe-210dc7ebe942 {height: 50px;display: block;}}</style><span class="spacer-content-component spacer-content-component-52d38847-09e8-4f05-bcfe-210dc7ebe942 "></span></div></div></div></div><style>.static-content-row-a3d48d1f-c17b-40f5-bbd0-acc24a0e430d {background-image: none;}@media print, screen and (min-width: 40em) {.static-content-row-a3d48d1f-c17b-40f5-bbd0-acc24a0e430d {background-image: none;}}@media print, screen and (min-width: 64em) {.static-content-row-a3d48d1f-c17b-40f5-bbd0-acc24a0e430d {background-image: none;}}</style><div class="static-content-row static-content-row-a3d48d1f-c17b-40f5-bbd0-acc24a0e430d responsive "><div class="row"><style>.content-block-8339a37c-76c3-4a22-b62b-085eaa49f212 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-8339a37c-76c3-4a22-b62b-085eaa49f212 {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-8339a37c-76c3-4a22-b62b-085eaa49f212 {text-align: center;}}</style><div class="column content-block content-block-8339a37c-76c3-4a22-b62b-085eaa49f212 "><div class="content-block-inner"><style>.spacer-content-component-38663110-bdf0-46d9-b1e4-83817ffbd749 {height: 60px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-38663110-bdf0-46d9-b1e4-83817ffbd749 {height: 70px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-38663110-bdf0-46d9-b1e4-83817ffbd749 {height: 80px;display: block;}}</style><span class="spacer-content-component spacer-content-component-38663110-bdf0-46d9-b1e4-83817ffbd749 "></span></div></div><style>.content-block-25202f50-aea9-4f85-a74a-8ba68b8f2c54 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-25202f50-aea9-4f85-a74a-8ba68b8f2c54 {text-align: right;}}@media print, screen and (min-width: 64em) {.content-block-25202f50-aea9-4f85-a74a-8ba68b8f2c54 {text-align: right;}}</style><div class="column content-block content-block-25202f50-aea9-4f85-a74a-8ba68b8f2c54 medium-6 padding-0 float-right"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-7e026c99-634e-4fc7-b3a9-88967baa3fcf ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/synchronized-security-loop-3d.ashx" alt="bar" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/synchronized-security-loop-3d@2x.ashx 2x" />
+</span></div></div><style>.content-block-3f7ee52f-66f9-4782-9f57-5ce1b99fa6ab {text-align: left;}@media print, screen and (min-width: 40em) {.content-block-3f7ee52f-66f9-4782-9f57-5ce1b99fa6ab {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-3f7ee52f-66f9-4782-9f57-5ce1b99fa6ab {text-align: left;}}</style><div class="column content-block content-block-3f7ee52f-66f9-4782-9f57-5ce1b99fa6ab medium-6"><div class="content-block-inner"><style>.heading-content-component-52686992-fdbe-40fa-9433-67d41bf6e5da {color: #828a96;}</style><h3 class="heading-content-component heading-content-component-52686992-fdbe-40fa-9433-67d41bf6e5da panelTitleSmall">
+중앙 관리
+</h3><style>.main-heading-content-component-a969cc66-ea62-4508-8e98-faeb7bdabacf {color: #fff;}</style><h2 class="main-heading-content-component main-heading-content-component-a969cc66-ea62-4508-8e98-faeb7bdabacf bannerSubtitle margin-top-0">
+조직적인 공격에 대응하는 Synchronized Security.
+</h2><span class="rich-text-content-component rich-text-content-component-2ebe4501-fcdc-42e2-b7cf-61b1e3bf8abb whiteFont">
+
+<p class="largeFont">방화벽에서 엔드포인트까지의 모든 영역에서 단일 중앙식 인터페이스를 통해 위협 인텔리전스를 공유하고 서로 정보를 전달하는 솔루션.</p>
+
+</span><div class="button-group-content-component button-group-content-component-9df05a6a-4b46-4854-afdf-11f407d43fa5 "><a class="button-content-component button-cobalt-blue smallBtn margin-left-0" href="https://secure2.sophos.com/ko-kr/products/sophos-central/free-trial.aspx">
+무료 평가판
+</a><a class="button-content-component button-admiral-blue smallBtn" href="https://www.sophos.com/ko-kr/products/sophos-central.aspx">
+자세히 알아보기
+</a></div><style>.spacer-content-component-bf2a7cac-5e77-4c4c-b46b-f9593421a3de {height: 50px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-bf2a7cac-5e77-4c4c-b46b-f9593421a3de {height: 0px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-bf2a7cac-5e77-4c4c-b46b-f9593421a3de {height: 0px;display: block;}}</style><span class="spacer-content-component spacer-content-component-bf2a7cac-5e77-4c4c-b46b-f9593421a3de "></span></div></div></div></div><style>.static-content-row-9fd8fd77-326f-4d23-88bd-f6c393697655 {background-image: none;}@media print, screen and (min-width: 40em) {.static-content-row-9fd8fd77-326f-4d23-88bd-f6c393697655 {background-image: none;}}@media print, screen and (min-width: 64em) {.static-content-row-9fd8fd77-326f-4d23-88bd-f6c393697655 {background-image: none;}}</style><div class="static-content-row static-content-row-9fd8fd77-326f-4d23-88bd-f6c393697655 responsive newsPanel position-relative"><div class="row"><style>.content-block-904d2371-64e0-4e04-ae14-015c02db689a {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-904d2371-64e0-4e04-ae14-015c02db689a {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-904d2371-64e0-4e04-ae14-015c02db689a {text-align: center;}}</style><div class="column content-block content-block-904d2371-64e0-4e04-ae14-015c02db689a "><div class="content-block-inner"><style>.spacer-content-component-4f454190-a6dd-4b01-82de-1a6886231b03 {height: 80px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-4f454190-a6dd-4b01-82de-1a6886231b03 {height: 90px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-4f454190-a6dd-4b01-82de-1a6886231b03 {height: 100px;display: block;}}</style><span class="spacer-content-component spacer-content-component-4f454190-a6dd-4b01-82de-1a6886231b03 "></span></div></div><style>.content-block-b480b445-1563-48bf-ae1b-8bc8d6949532 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-b480b445-1563-48bf-ae1b-8bc8d6949532 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-b480b445-1563-48bf-ae1b-8bc8d6949532 {text-align: left;}}</style><div class="column content-block content-block-b480b445-1563-48bf-ae1b-8bc8d6949532 medium-4"><a class="content-block-link" href="https://www.sophos.com/ko-kr/lp/prove-it.aspx"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-93379e56-103b-4a44-ac54-50a1a5f706db ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/expert-review-thumbnail.ashx" alt="bar" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/expert-review-thumbnail@2x.ashx 2x" />
+</span><style>.heading-content-component-833a6d37-20bf-4318-aeaf-f172927fe71d {color: #fff;}</style><h3 class="heading-content-component heading-content-component-833a6d37-20bf-4318-aeaf-f172927fe71d panelTitleSmall margin-top-1">
+모든 고객은 각자의 요구사항이 다르며, 그 증거가 있습니다.
+</h3><style>.spacer-content-component-93d7c569-b9a3-40dd-bd4a-68ba4a59812b {height: 20px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-93d7c569-b9a3-40dd-bd4a-68ba4a59812b {height: 20px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-93d7c569-b9a3-40dd-bd4a-68ba4a59812b {height: 20px;display: block;}}</style><span class="spacer-content-component spacer-content-component-93d7c569-b9a3-40dd-bd4a-68ba4a59812b "></span></div></a></div><style>.content-block-fc4b6bd2-316d-4dda-b6e0-606d90ed5e27 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-fc4b6bd2-316d-4dda-b6e0-606d90ed5e27 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-fc4b6bd2-316d-4dda-b6e0-606d90ed5e27 {text-align: left;}}</style><div class="column content-block content-block-fc4b6bd2-316d-4dda-b6e0-606d90ed5e27 medium-4"><a class="content-block-link" href="https://www.sophos.com/ko-kr/press-office/press-releases/2019/01/sophos-acquires-avid-secure-to-expand-protection-for-public-cloud-environments.aspx"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-a8793fde-7769-4a6b-b35c-a5ec5cafe3b4 ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/newsroom-thumbnail.ashx" alt="bar" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/newsroom-thumbnail@2x.ashx 2x" />
+</span><style>.heading-content-component-6221d327-82ae-4993-b202-5b2d8b49b0a0 {color: #fff;}</style><h3 class="heading-content-component heading-content-component-6221d327-82ae-4993-b202-5b2d8b49b0a0 panelTitleSmall margin-top-1">
+Sophos는 Avid Secure 인수를 통해 퍼블릭 클라우드 환경으로 보호 범위를 확장합니다.
+</h3><style>.spacer-content-component-04e7656c-eadb-400c-b9a1-131e466696d9 {height: 20px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-04e7656c-eadb-400c-b9a1-131e466696d9 {height: 20px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-04e7656c-eadb-400c-b9a1-131e466696d9 {height: 20px;display: block;}}</style><span class="spacer-content-component spacer-content-component-04e7656c-eadb-400c-b9a1-131e466696d9 "></span></div></a></div><style>.content-block-3419b5e7-5680-4b5a-89c3-d1fed2db9802 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-3419b5e7-5680-4b5a-89c3-d1fed2db9802 {text-align: left;}}@media print, screen and (min-width: 64em) {.content-block-3419b5e7-5680-4b5a-89c3-d1fed2db9802 {text-align: left;}}</style><div class="column content-block content-block-3419b5e7-5680-4b5a-89c3-d1fed2db9802 medium-4"><a class="content-block-link" href="https://www.sophos.com/ko-kr/labs.aspx"><div class="content-block-inner"><span class="rich-text-content-component rich-text-content-component-74093c3d-d07c-419e-a14f-2ce35fa1c6c8 ">
+
+<img src="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/research-thumbnail.ashx" alt="bar" srcset="/ko-kr/medialibrary/SophosNext/Images/SophosIndex/Evolve/research-thumbnail@2x.ashx 2x" />
+</span><style>.heading-content-component-94eee69b-7156-49a9-ab8c-72db53df6213 {color: #fff;}</style><h3 class="heading-content-component heading-content-component-94eee69b-7156-49a9-ab8c-72db53df6213 panelTitleSmall margin-top-1">
+SophosLabs의 최신 뉴스를 참조하십시오.
+</h3><style>.spacer-content-component-7e0006e0-3cb0-4d90-8017-1965f96e2d31 {height: 20px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-7e0006e0-3cb0-4d90-8017-1965f96e2d31 {height: 20px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-7e0006e0-3cb0-4d90-8017-1965f96e2d31 {height: 20px;display: block;}}</style><span class="spacer-content-component spacer-content-component-7e0006e0-3cb0-4d90-8017-1965f96e2d31 "></span></div></a></div><style>.content-block-a616b1df-a673-4515-a325-f51a8355f368 {text-align: center;}@media print, screen and (min-width: 40em) {.content-block-a616b1df-a673-4515-a325-f51a8355f368 {text-align: center;}}@media print, screen and (min-width: 64em) {.content-block-a616b1df-a673-4515-a325-f51a8355f368 {text-align: center;}}</style><div class="column content-block content-block-a616b1df-a673-4515-a325-f51a8355f368 "><div class="content-block-inner"><style>.spacer-content-component-78165a95-cc05-4885-8157-7ceb75406781 {height: 20px;display: block;}@media print, screen and (min-width: 40em) {.spacer-content-component-78165a95-cc05-4885-8157-7ceb75406781 {height: 30px;display: block;}}@media print, screen and (min-width: 64em) {.spacer-content-component-78165a95-cc05-4885-8157-7ceb75406781 {height: 40px;display: block;}}</style><span class="spacer-content-component spacer-content-component-78165a95-cc05-4885-8157-7ceb75406781 "></span></div></div></div></div><div id="footer-container"><div class="responsive-footer-wrapper responsive microsite- footer-themed footer-dark" id="footersection" ><div class="footer-cta no-background-image" style=""><div class="row"><div class="column small-12 large-9"><p class="footer-cta-text">
+Intercept X는 이전에 볼 수 없었던 위협에 대해 탁월한 차세대 엔드 포인트 보호 기능을 제공합니다. 테스트를 위해 직접 사용하고 확인하시기 바랍니다.
+</p></div><div class="column small-12 large-3 footer-cta-button"><a class="footer-cta-link" href="https://www.sophos.com/ko-kr/products/intercept-x/free-trial.aspx">
+무료평가판 시작
+</a></div></div><hr/></div><div class="footer-social-section-links"><div class="row"><div class="footer-social-links column medium-4 large-3"><h3>
+연결 상태 유지
+</h3><ul><li><a rel="external" href="https://www.facebook.com/securitybysophos"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/facebook-icon.ashx?la=ko-KR&amp;hash=758A9D40A05FED95CCA6403ABDB633ECDFB8B1C9" alt="" /></a></li><li><a rel="external" href="https://www.instagram.com/sophossecurity/"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/instagram-icon.ashx?la=ko-KR&amp;hash=ABAD442EAC5829E4805C4AB0B5A2A16B1D283F73" alt="" /></a></li><li><a rel="external" href="https://www.linkedin.com/company/sophos"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/linkedin-icon.ashx?la=ko-KR&amp;hash=F92899A8BF12D403FF2555BF87C488714FE99673" alt="" /></a></li><li><a href="https://www.sophos.com/ko-kr/company/rss-feeds.aspx"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/rss-icon.ashx?la=ko-KR&amp;hash=D991FB2436F4E8F7E4FC6518B0C2E819906336A8" alt="" /></a></li><li><a rel="external" href="https://twitter.com/Sophos"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/twitter-icon.ashx?la=ko-KR&amp;hash=57E8AA5F5C1412D9336E6FD7AC6833714DF26964" alt="" /></a></li><li><a rel="external" href="https://www.youtube.com/user/SophosProducts"><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/youtube-icon.ashx?la=ko-KR&amp;hash=CE9E3E8B388D90A53B0F1CDF1184F9DEA2D7B85A" alt="" /></a></li></ul></div><div class="footer-section-links column medium-8 large-9"><ul><li><a href="https://www.sophos.com/ko-kr/company/careers.aspx">
+채용
+</a></li><li><a href="https://www.sophos.com/ko-kr/partners/partner-locator.aspx">
+파트너 찾기
+</a></li><li><a href="https://secure2.sophos.com/ko-kr/support.aspx">
+지원
+</a></li><li><a href="https://www.sophos.com/ko-kr/threat-center/technical-papers.aspx">
+기술 문서
+</a></li><li><a href="https://www.sophos.com/ko-kr/security-news-trends/whitepapers.aspx">
+백서
+</a></li></ul></div></div><hr/></div><div class="responsive-legal"><div class="row collapse"><div class="responsive-legal-copyright column small-12 large-4"><p>&copy;&nbsp;
+1997
+-&nbsp;2019&nbsp;
+Sophos Ltd. All rights reserved.
+</p></div><ul class="responsive-legal-links column small-12 large-8"><li id="ctl05_ResponsiveLegalLanguagePanel" class="responsive-legal-language"><a href="#globalsitesfooter">한국의</a><img src="/ko-kr/medialibrary/SophosNext/Images/Navigation/Footer/footer-down-arrow-grey.ashx" id="ctl05_FooterArrowImg" /><div class="responsive-legal-language-popup"><ul><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl0_LanguageHyperlink" href="/zh-cn.aspx">简体中文</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl1_LanguageHyperlink" href="/cs-cz.aspx">český</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl2_LanguageHyperlink" href="/en-us.aspx">English</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl3_LanguageHyperlink" href="/fr-fr.aspx">Français</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl4_LanguageHyperlink" href="/de-de.aspx">Deutsch</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl5_LanguageHyperlink" href="/hu-hu.aspx">Magyar</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl6_LanguageHyperlink" href="/it-it.aspx">Italiano </a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl7_LanguageHyperlink" href="/ja-jp.aspx">日本語</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl8_LanguageHyperlink" href="/ko-kr.aspx">한국의</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl9_LanguageHyperlink" href="/pl-pl.aspx">Polski</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl10_LanguageHyperlink" href="/pt-br.aspx">Portuguese</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl11_LanguageHyperlink" href="/es-es.aspx">Español</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl12_LanguageHyperlink" href="/zh-tw.aspx">繁體中文</a></li><li><a id="ctl05_lstvGlobalLanguageFooter_ctrl13_LanguageHyperlink" href="/tr-tr.aspx">Turkish</a></li></ul><span class="arrow"></span></div></li><li><a href="/ko-kr/legal.aspx">법무</a></li><li><a href="/ko-kr/legal/sophos-group-privacy-policy.aspx">개인정보 보호</a></li><li><a href="/ko-kr/legal/cookie-information.aspx">쿠키 정보</a></li><li><a href="/ko-kr/legal/modern-slavery-act-transparency-statement.aspx">Modern Slavery Statement</a></li></ul></div></div></div></div><script type="text/javascript">var sophosCookiePolicyCompliantCountries =["AT","BG","CZ","DK","FI","FR","GR","HU","IE","LV","LT","LU","SK","SE","GB","IN"];</script><div id="cookie-policy-wrapper" class="cookie-policy-container responsive"><div class="cookie-policy-short row"><div class="cookie-policy-short-left small-12 column">본 사이트는 쿠키를 사용합니다. 계속해서 사이트를 탐색하면 귀하는 당사의 쿠키 사용에 동의하는 것입니다. <a class="button-content-component blue-arrow-btn" href="https://www.sophos.com/ko-kr/legal/cookie-information.aspx"자세히 알아보기</a>
+<a href="#" class="cookie-policy-accept" id="cookie-accept">계속</a></div></div></div><div id="cboxOverlay" style="opacity: 1; cursor: auto; visibility: visible; display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none; visibility: visible;top: 378px; left: 248px; position: absolute; width: 842px; height: 670px; opacity: 1;cursor: auto;"><div id="cboxWrapper" style="height: 670px; width: 842px;"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left; width: 800px;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left; height: 628px;"></div><div id="cboxContent" style="float: left; width: 800px; height: 628px;"><div id="cboxTitle" style="float: left; display: block;"></div><div id="cboxCurrent" style="float: left; display: block;">1 of 5</div><button type="button" id="cboxPrevious" style="display: block;">previous</button><button type="button" id="cboxNext" style="display: block;">next</button><button id="cboxSlideshow" style="display: none;"></button><div id="cboxLoadingOverlay" style="float: left; display: none;"></div><div id="cboxLoadingGraphic" style="float: left; display: none;"></div><button type="button" id="cboxClose" style="display: inline-block;">close</button></div><div id="cboxMiddleRight" style="float: left; height: 628px;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left; width: 800px;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+
+<script type="text/javascript">
+//<![CDATA[
+externalLinks();//]]>
+</script>
+</form><style>
+div#cookie-policy-wrapper, div#cookie-information {    display: none;}
+</style></body></html>

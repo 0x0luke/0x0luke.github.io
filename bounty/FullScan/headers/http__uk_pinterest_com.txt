@@ -1,0 +1,19 @@
+200 OK
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-eDhbgSQLYS' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+Vary: User-Agent, Cookie, Accept-Encoding
+Set-Cookie: _auth=0; expires=Sat, 01-Aug-2020 04:05:09 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=BPKlQkFLKxxuKGOgC8SiRfNmoYbaSGr0; expires=Wed, 05-Aug-2020 04:05:09 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSZzVVp6V1piK01MdkpWb0lkVHE4dlN3SzdyRXpRekFJRUcya2RMK0lpb3RyZHh0VloydXpKVFZUdVpUUng5OWhObEg0bjRENzB5N1dIclRIMG44YmpBQUl4L0NBTWdtb2E2SHZyU2Q1emYrakx2UFBWSUxUZGNZVEwvN0QvZUY1L0k2Qys3dXJOZEhiTC9QSzVCRWxZK0E9PSYyN0JiMVMrcHVTNWJOUVI5VWlCa25pelJDcU09; expires=Sat, 01-Aug-2020 04:05:09 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="9787d674-2a0a-499a-97f8-97974c157019"; Max-Age=86400; Path=/; HttpOnly
+Content-Type: text/html; charset=utf-8
+Pinterest-Generated-By: coreapp-webapp-prod-0a018998, coreapp-webapp-prod-0a018998 coreapp-webapp-prod-0a018998 coreapp-webapp-prod-0a018998
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Retry-Count: 0
+X-Cdn: akamai
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Upstream-Env: python node
+Date: Wed, 07 Aug 2019 04:05:09 GMT
+Pinterest-Version: 3c5b704
+X-Upstream-Proxy: pythonvianode
+X-Content-Type-Options: nosniff
+X-Envoy-Upstream-Service-Time: 116
+X-Pinterest-Rid: 7989028815413349

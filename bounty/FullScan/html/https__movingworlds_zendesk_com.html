@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>MOVINGWORLDS</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:oDguY57bsSk+gmwlDj65WTLGmoRKU+eD/QhRkhe1pAz72RKCJcpFUzBVIicNGUGRuIVbYBnNLLoiWcbrdKelNg==" />
+  <link rel="canonical" href="https://support.movingworlds.org/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://support.movingworlds.org/hc/en-us" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p14.zdassets.com/hc/theming_assets/521425/29960/style.css?digest=360141273614" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/521425/4a64b9b7719fdc8219c9c7a4b79f4007766a117d.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("M7T0nnjCCCE2QW6y3SaXU1L4RFb7ZeYl");
+      }}();
+    </script>
+
+
+<!-- CTA clicks and JSError Segment events -->
+<script>
+(function ($) {
+var generic_click_handler = function (event) {
+    var clicked_element = event.target;
+    var record_click = false;
+    var a_selector = null;
+    if ($(clicked_element).attr('href')) {
+      a_selector = $(clicked_element);
+    } else {
+      a_selector = $(clicked_element).parents().filter('a');
+    }
+
+    if (clicked_element) {
+      if (clicked_element.className) {
+        if (clicked_element.className.indexOf('btn') >= 0) {
+          record_click = true;
+        }
+      }
+      if (clicked_element.tagName) {
+        if (clicked_element.tagName == 'A') {
+          record_click = true;
+        } else if (clicked_element.tagName == 'INPUT' && $(clicked_element).attr('type') == 'submit') {
+          record_click = true;
+        }
+      }
+      
+      if (a_selector.attr('href')) {
+        record_click = true;
+      }
+    }
+    if (record_click) {
+      var cta = a_selector.length ? a_selector.text() : $(clicked_element).text();
+      var href = a_selector.length ? a_selector.attr('href') : "";
+      var nodeName = clicked_element.nodeName;
+      analytics.track('CTA Clicked', {
+        // repeat for GA
+        category: 'CTA Clicked',
+        // GA only have 1 property - label, so aggregate all important info there
+        label: cta + ' / ' + href + ' / ' + nodeName,
+        
+        href: href,
+        sourceNodeName: nodeName,
+        CTA: cta,
+
+        type: event.type,
+        pageTitle: document.title,
+        pageX: event.pageX,
+        pageY: event.pageY,
+        clientX: event.clientX,
+        clientY: event.clientY,
+        timestamp: event.timestamp
+      });
+    }
+  }
+  $(document).on('click', generic_click_handler);
+  $(document).on('contextmenu', generic_click_handler);
+  $(document).on('auxclick', generic_click_handler);
+  window.onerror = function (msg, url, line, col, error) {
+    // Note that col & error are new to the HTML 5 spec and may not be 
+    // supported in every browser.  It worked for me in Chrome.
+
+    // exclude ugly BS Validator errors which are thrown into global event
+    if (typeof msg !== 'object') {
+
+
+
+      analytics.track('JSError', {
+        category: 'JSError',
+        label: msg + ' / ' + (url || '') + ' / ' + (line || '') + ':' + (col || '') + ' / ' + (error || ''), 
+        msg: msg,
+        url: url,
+        line: line,
+        col: col,
+        error: error
+      });
+    }
+    var suppressErrorAlert = false;
+    // If you return true, then error alerts (like in older versions of 
+    // Internet Explorer) will be suppressed.
+    return suppressErrorAlert;
+  };
+}(jQuery));
+</script>
+  <script type="text/javascript" src="//p14.zdassets.com/hc/theming_assets/521425/29960/script.js?digest=360141273614"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/521425/a3f7487443c25c021dcec4e84ce00d33f7632b29.png" alt="Logo">
+    </a>
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu"></span>
+    <nav class="user-nav" id="user-nav">
+      
+      <a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>
+    </nav>
+      <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.movingworlds.org%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+  </div>
+</header>
+
+
+  <main role="main">
+    <section class="section hero">
+  <div class="hero-inner">
+    <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+  </div>
+</section>
+
+<div class="container">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/360000319814-Go-Experteering' class="blocks-item-link">
+              <h4 class="blocks-item-title">Go Experteering</h4>
+              <p class="blocks-item-description">How do I start? What is “Experteering”? How can MovingWorlds help me? What are the costs? Can I really make an impact...</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/360000524793-Host-an-Experteer-' class="blocks-item-link">
+              <h4 class="blocks-item-title">Host an Experteer </h4>
+              <p class="blocks-item-description">What is the value of a skills-based volunteer? Why do you call it “Experteering”? How can I host an Experteer? Is it ...</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/203564548-Partner-with-MovingWorlds' class="blocks-item-link">
+              <h4 class="blocks-item-title">Partner with MovingWorlds</h4>
+              <p class="blocks-item-description">How can I sponsor my employees to go on Experteering trips? Does MovingWorlds support corporate programs? What are th...</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/203568027-Meet-MovingWorlds' class="blocks-item-link">
+              <h4 class="blocks-item-title">Meet MovingWorlds</h4>
+              <p class="blocks-item-description">Why did we start? Who is the team? What is our mission? How do we make an impact? What type of organization is Moving...</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/203568107-Website-feedback-help-and-issues' class="blocks-item-link">
+              <h4 class="blocks-item-title">Website feedback, help, and issues</h4>
+              <p class="blocks-item-description">Login, password, basic usage, or payment issues? Have feedback to make us better?</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/115001411988-MovingWorlds-Impact-Teams-FAQs' class="blocks-item-link">
+              <h4 class="blocks-item-title">MovingWorlds Impact Teams FAQs</h4>
+              <p class="blocks-item-description">Q&amp;A about the MovingWorlds Impact Teams</p>
+            </a>
+          </li>
+        
+          <li class="blocks-item">
+            <a href='/hc/en-us/categories/204284488-MovingWorlds-Institute-MWI-FAQs' class="blocks-item-link">
+              <h4 class="blocks-item-title">MovingWorlds Institute (MWI) FAQs</h4>
+              <p class="blocks-item-description">The MovingWorlds Institute helps high achieving professionals transition to social good careers.</p>
+            </a>
+          </li>
+        
+      </ul>
+      
+    </section>
+
+    
+  </section>
+
+  
+
+  <section class="section activity">
+    <div data-app="recent-activity" data-url="/hc/api/internal/recent_activities?locale=en-us"></div>
+  </section>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <a title="Home" href="/hc/en-us">MOVINGWORLDS</a>
+
+    <div class="footer-language-selector">
+      
+    </div>
+  </div>
+</footer>
+
+<script>analytics.page('support');</script>
+
+<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+{widgetcode:"d9eaa7e6b933e89bb43c1d858872575fe506239a6add0257a4039feefb26efe4376a2706e4d3ab0545049cd87c532af3", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+
+    <div class="powered-by-zendesk">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+    <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+  </svg>
+
+  <a href="https://www.zendesk.com/help-center/?utm_source=helpcenter&utm_medium=poweredbyzendesk&utm_campaign=text&utm_content=MovingWorlds" target="_blank" >Powered by Zendesk</a>
+</div>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://movingworlds.zendesk.com/auth/v2/host.js" data-brand-id="29960" data-return-to="https://support.movingworlds.org/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="29960,true,true"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"movingworlds","environment":"production","name":"MovingWorlds"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:b9bmvAj9iRvDmitdDElmAcq/5E0CLyogGbQ5lN13cm00N9pds+x9Yc1NZV8Pbp7JQPwlqVGx4RnG5a7tvmVzVw==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://movingworlds.zendesk.com","current_host_mapping":"support.movingworlds.org","current_path":null,"authentication_domain":"https://movingworlds.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":false,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.movingworlds.org/hc/admin/plan?locale=en-us","manage_content_url":"https://support.movingworlds.org/hc/en-us","arrange_content_url":"https://support.movingworlds.org/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.movingworlds.org/hc/admin/general_settings?locale=en-us","user_segments_url":"https://movingworlds.zendesk.com/knowledge/user_segments?brand_id=29960","has_community_enabled":false,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://movingworlds.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.movingworlds.org/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.movingworlds.org/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://movingworlds.zendesk.com/knowledge/arrange?brand_id=29960","article_verification_url":"https://movingworlds.zendesk.com/knowledge/verification?brand_id=29960","has_article_verification":false,"guide_language_settings_url":"https://support.movingworlds.org/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://movingworlds.zendesk.com/knowledge/import_articles?brand_id=29960","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.movingworlds.org/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkD0fQHOhNoZWxwX2NlbnRlcl9pZGkE8IrsCzoNYnJhbmRfaWRpAgh1Ogx1c2VyX2lkMDoOdXNlcl9yb2xlSSIOYW5vbnltb3VzBjoGRVQ6C2xvY2FsZUkiCmVuLXVzBjsLVA==--2b451c34baec6a1e20059606bc5d3cafcccca98c");
+})();
+
+  </script>
+</body>
+</html>

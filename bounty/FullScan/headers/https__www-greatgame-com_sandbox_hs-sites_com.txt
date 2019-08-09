@@ -1,0 +1,22 @@
+200 OK
+X-Hs-Hub-Id: 2628288
+Server: cloudflare
+Cf-Ray: 50273ed8cc2ebfc5-MAN
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-5978749275,P-2628288,L-5651017346,L-5823095840,L-5828273438,CW-6090767567,E-5642910172,E-5650476558,MENU-5650421888,PGS-ALL,SW-3,SD-38
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Combine-Css: UA
+X-Trace: 2BC3A149E6EEC7670819304F0D48AFFFE1CFDD4C71000000000000000000
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: HIT
+Date: Wed, 07 Aug 2019 06:38:03 GMT
+Content-Security-Policy: upgrade-insecure-requests
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script
+Strict-Transport-Security: max-age=0
+Vary: Accept-Encoding
+X-Hs-Content-Id: 5978749275
+X-Powered-By: HubSpot
+Set-Cookie: __cfduid=d8439959d71861895e4c2c0b99424dff51565159883; expires=Thu, 06-Aug-20 06:38:03 GMT; path=/; domain=.www.greatgame.com; HttpOnly __cfruid=be0e2932056bd74d281d236805f715c4653cef12-1565159883; path=/; domain=.www.greatgame.com; HttpOnly
+Retry-Count: 0
+Cache-Control: s-maxage=7200,max-age=5

@@ -1,0 +1,18 @@
+404 Not Found
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: __cfduid=dc7a19e38cf0a1a833f37816be6af49731565151423; expires=Thu, 06-Aug-20 04:17:03 GMT; path=/; domain=.skaap-in-wolf.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Request-Id: 724c228f-ffa4-4f95-b515-f927da2c3f82
+X-Dc: gcp-us-central1,gcp-us-central1
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=724c228f-ffa4-4f95-b515-f927da2c3f82
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 04:17:03 GMT
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=724c228f-ffa4-4f95-b515-f927da2c3f82
+Server: cloudflare
+Cf-Ray: 5026704c3841d214-MAN

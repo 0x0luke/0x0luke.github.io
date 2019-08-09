@@ -1,0 +1,17 @@
+200 OK
+Retry-Count: 0
+X-Cnection: close
+X-Varnish: 630261518
+Server: TEF-NG2
+Set-Cookie: cms_pixie_tag=true; path=/; domain=.o2online.de; expires=Sat, 07-Sep-2019 11:32:54 GMT; secure; HttpOnly JSESSIONID=A35FD54B4768A7A6F7C4A361087FE516; Path=/cae; Secure; HttpOnly touchPoints=P|20190808133254; Domain=.o2online.de; Expires=Fri, 07-Aug-2020 11:32:54 GMT; Path=/ o2-Cust=""; Domain=.o2online.de; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ cust=CUST%3A0%23FV%3A1565263974288%23; Domain=.o2online.de; Expires=Sat, 07-Aug-2021 11:32:54 GMT; Path=/ tde-routing=false;path=/;domain=www.o2online.de;
+Content-Type: text/html;charset=utf-8
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+X-Frame-Options: DENY SAMEORIGIN
+Content-Language: de-DE
+Via: 1.1 varnish (Varnish/5.2)
+X-Cache: MISS
+Age: 0
+Date: Thu, 08 Aug 2019 11:32:54 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block

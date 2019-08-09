@@ -1,0 +1,11 @@
+200 OK
+Strict-Transport-Security: max-age=31536000
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Nf-Request-Id: d111f263-d2bb-4998-b149-eeda322626c5-12534417
+Date: Wed, 07 Aug 2019 12:42:49 GMT
+Etag: "ae0462dc98daa4cb75d9d090ccba5cde-ssl-df"
+Age: 92731
+Server: Netlify
+Cache-Control: public, max-age=0, must-revalidate
+Content-Type: text/html; charset=UTF-8

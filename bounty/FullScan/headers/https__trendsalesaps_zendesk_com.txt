@@ -1,0 +1,25 @@
+200 OK
+Server: cloudflare
+Etag: W/"4b4bf1e5575de65b8c6fc14d889dee6d"
+Cache-Control: max-age=0, public, s-maxage=180, stale-while-revalidate=60, stale-if-error=10800
+Vary: Accept-Encoding
+X-Zendesk-Origin-Server: help-center-unicorn-7748485d8b-q8r8g
+X-Runtime: 0.155223
+Cf-Ray: 5032be999876d210-MAN
+Set-Cookie: __cfduid=d5d9ce13215af731809a2a9d0446c156e1565280459; expires=Fri, 07-Aug-20 16:07:39 GMT; path=/; domain=.tradono.zendesk.com; HttpOnly __cfruid=c145ab1e9ae69c05ab7f616fdb97163025b3b390-1565280460; path=/; domain=.tradono.zendesk.com; HttpOnly
+X-Ua-Compatible: IE=edge
+Cache-Tags: resource:help_center#index, pod:pod20
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000;
+Cf-Cache-Status: MISS
+X-Xss-Protection: 1; mode=block
+X-Zendesk-User-Id: 
+Protocol: HTTP/1.0
+X-Content-Type-Options: nosniff
+X-Request-Id: 5032be999876d210-SEA
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Status: 200 OK
+Content-Language: da
+Date: Thu, 08 Aug 2019 16:07:40 GMT
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

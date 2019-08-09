@@ -1,0 +1,11 @@
+200 OK
+Vary: Accept-Encoding
+Content-Security-Policy: script-src 'self'
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Etag: "42974c42745de35e021580c7d363afb02f3329a1"
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Date: Wed, 07 Aug 2019 03:30:29 GMT
+Retry-Count: 0
+Content-Type: text/html

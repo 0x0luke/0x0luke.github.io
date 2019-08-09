@@ -1,0 +1,19 @@
+404 Not Found
+Set-Cookie: __cfduid=d31a72cf5817a07ec7d36176d24bf6f1f1565274311; expires=Fri, 07-Aug-20 14:25:11 GMT; path=/; domain=.shopoca.shopify.com; HttpOnly
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=79c9dfe0-ae54-49ba-8b3e-e7f97e049d78
+X-Download-Options: noopen
+X-Sorting-Hat-Podid: -1
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Date: Thu, 08 Aug 2019 14:25:11 GMT
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=79c9dfe0-ae54-49ba-8b3e-e7f97e049d78
+X-Request-Id: 79c9dfe0-ae54-49ba-8b3e-e7f97e049d78
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5032287ea8973675-MAN

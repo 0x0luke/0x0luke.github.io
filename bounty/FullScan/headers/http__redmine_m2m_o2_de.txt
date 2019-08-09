@@ -1,0 +1,16 @@
+200 OK
+X-Request-Id: 43c56c86-263c-48b2-ab03-da0aaf68380b
+X-Runtime: 0.008943
+X-Frame-Options: DENY
+Status: 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Etag: W/"1f66f3e1890ed17182c2f33b6a319e6c"
+Set-Cookie: _redmine_session=T0lPbE1IUS90SVdPRmsxVTRveXZJQVp6MzZINjVtbW54a3pzaGNjcUg4S2JycHJFVm0yaDlOSUlCL2pFM212VXVXSjEyQVVBdVBGc2d4WG5ncWpORjF3cmVJNzEwQ2pqWWZpYXJnMDZtV1BZU0RtcXFxdGF4YTR4ZWg4YjgwQisvQ0w0KyszbTI5bWRDZDFzNFhmZExuZzRENTRZUDF2c09kaE9sR1U5alZZaXc1d1JYK1JjU1ljVWZzWERzR0YwLS1ublg1aGRUM1pCbVpSby9qc2NQVlpRPT0%3D--070ba4ce7184053377b3055c26cfa3362bd2b806; path=/; HttpOnly; Secure
+X-Powered-By: Phusion Passenger 5.1.11
+Server: nginx/1.12.1 + Phusion Passenger 5.1.11
+Retry-Count: 0
+Cache-Control: max-age=0, private, must-revalidate
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 07:39:20 GMT

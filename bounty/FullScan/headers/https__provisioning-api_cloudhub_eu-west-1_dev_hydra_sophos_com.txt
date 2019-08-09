@@ -1,0 +1,12 @@
+500 Server Error
+Expires: 0
+X-Frame-Options: DENY
+X-Application-Context: application:aws,AWS_DEV,dev:8080
+Content-Length: 92
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Thu, 08 Aug 2019 14:26:59 GMT
+Content-Type: application/json;charset=utf-8
+Retry-Count: 0

@@ -1,0 +1,19 @@
+404 Not Found
+Set-Cookie: __cfduid=d3875ccc7828a2c8a8a97876f4aa5c7f71565274304; expires=Fri, 07-Aug-20 14:25:04 GMT; path=/; domain=.daynext.shopify.com; HttpOnly
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: fcb542e2-93a8-4d48-bc53-d49acf6ba8f9
+Cf-Ray: 50322853e8f4363f-MAN
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Download-Options: noopen
+Server: cloudflare
+Date: Thu, 08 Aug 2019 14:25:04 GMT
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Sorting-Hat-Podid: -1
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=fcb542e2-93a8-4d48-bc53-d49acf6ba8f9
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=fcb542e2-93a8-4d48-bc53-d49acf6ba8f9
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0

@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Airbnb Newsroom</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Airbnb Newsroom is a home for news and announcements from Airbnb, a global community of hosts and travelers."/>
+<link rel="canonical" href="https://press.airbnb.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="fr_CA" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="zh_HK" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="ca_ES" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Airbnb Newsroom" />
+<meta property="og:description" content="Airbnb Newsroom is a home for news and announcements from Airbnb, a global community of hosts and travelers." />
+<meta property="og:url" content="https://press.airbnb.com/" />
+<meta property="og:site_name" content="Airbnb Newsroom" />
+<meta property="fb:app_id" content="832524843781774" />
+<meta property="og:image" content="https://press.airbnb.com/wp-content/uploads/sites/4/2017/07/airbnb-newsroom-twitter-card-default.png?resize=1024,538" />
+<meta property="og:image:secure_url" content="https://press.airbnb.com/wp-content/uploads/sites/4/2017/07/airbnb-newsroom-twitter-card-default.png?resize=1024,538" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="538" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Airbnb Newsroom is a home for news and announcements from Airbnb, a global community of hosts and travelers." />
+<meta name="twitter:title" content="Airbnb Newsroom" />
+<meta name="twitter:image" content="https://press.airbnb.com/wp-content/uploads/sites/4/2017/07/airbnb-newsroom-twitter-card-default.png?fit=2400%2C1260" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","@id":"https://press.airbnb.com/#website","url":"https://press.airbnb.com/","name":"Airbnb Newsroom","potentialAction":{"@type":"SearchAction","target":"https://press.airbnb.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"Organization","url":"https://press.airbnb.com/","sameAs":[],"@id":"https://press.airbnb.com/#organization","name":"Airbnb","logo":"https://press.airbnb.com/wp-content/uploads/sites/4/2017/01/airbnb_vertical_lockup_web.png"}</script>
+<meta name="google-site-verification" content="3Q-AUqDs0O9Nv1rRWe_UojKy7fV5J74HiuswH5oRlJM" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/press.airbnb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://press.airbnb.com/_static/??-eJyNy00KgCAQQOELZUNh1iY6S04i0viDo4S3z13blg/eB08SGEMxoUCial1gsLWnNtmCro4u0BTxFuR0PnMDLo3MiMwD/LAYfYqhH/zBw+/Toma1SbXKF5GfL+Y=' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-font-css'  href='https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://press.airbnb.com/_static/??-eJyVj00SgjAMRi9kyRQGxYXjUZxSYq30h2naUW5vBXHDQly1yXzvJYHHwKR3EV2EwSSlHYFKuWwxKGiTNh20xsueYaejD0BxNFhIoh1sQF16/klsGjMEJGJflE0bEnSa4rwtFbNgcq408YYWPxYMMzblCazQ7nLlvBENP/wC8+NTkLkjch1pkRhUQo4r2ia2HHDHOAjZQ44s/3f8bE+83tdlWTXH6gVLtpqR' type='text/css' media='all' />
+<script type='text/javascript' src='https://press.airbnb.com/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZdVrKOPT4FubmZ6UWJJql5uZh5QsX2uraGpmaGZgbGhkXEWACVOIKI='></script>
+<link rel='https://api.w.org/' href='https://press.airbnb.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://press.airbnb.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://press.airbnb.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.2" />
+<link rel='shortlink' href='https://wp.me/Pa0VAu-eAF' />
+<link rel="alternate" type="application/json+oembed" href="https://press.airbnb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpress.airbnb.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://press.airbnb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpress.airbnb.com%2F&#038;format=xml" />
+<link rel="alternate" href="https://press.airbnb.com/en-uk/" hreflang="en-US" />
+<link rel="alternate" href="https://press.airbnb.com/cs/" hreflang="cs" />
+<link rel="alternate" href="https://press.airbnb.com/fr/" hreflang="fr-FR" />
+<link rel="alternate" href="https://press.airbnb.com/de/" hreflang="de" />
+<link rel="alternate" href="https://press.airbnb.com/fr-ca/" hreflang="fr-CA" />
+<link rel="alternate" href="https://press.airbnb.com/en-ca/" hreflang="en-CA" />
+<link rel="alternate" href="https://press.airbnb.com/it/" hreflang="it" />
+<link rel="alternate" href="https://press.airbnb.com/ea/" hreflang="es" />
+<link rel="alternate" href="https://press.airbnb.com/da/" hreflang="da" />
+<link rel="alternate" href="https://press.airbnb.com/zh-tw/" hreflang="zh-TW" />
+<link rel="alternate" href="https://press.airbnb.com/zh/" hreflang="zh-CN" />
+<link rel="alternate" href="https://press.airbnb.com/ja/" hreflang="ja" />
+<link rel="alternate" href="https://press.airbnb.com/ko/" hreflang="ko" />
+<link rel="alternate" href="https://press.airbnb.com/pt/" hreflang="pt" />
+<link rel="alternate" href="https://press.airbnb.com/zh-hk/" hreflang="zh-HK" />
+<link rel="alternate" href="https://press.airbnb.com/th/" hreflang="th" />
+<link rel="alternate" href="https://press.airbnb.com/ms/" hreflang="ms" />
+<link rel="alternate" href="https://press.airbnb.com/ca/" hreflang="ca" />
+<link rel="alternate" href="https://press.airbnb.com/nl/" hreflang="nl" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><link rel="icon" href="https://press.airbnb.com/wp-content/uploads/sites/4/2018/07/logo.png?fit=28%2C29" sizes="32x32" />
+<link rel="icon" href="https://press.airbnb.com/wp-content/uploads/sites/4/2018/07/logo.png?fit=28%2C29" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://press.airbnb.com/wp-content/uploads/sites/4/2018/07/logo.png?fit=28%2C29" />
+<meta name="msapplication-TileImage" content="https://press.airbnb.com/wp-content/uploads/sites/4/2018/07/logo.png?fit=28%2C29" />
+  <script>
+    ( function ( i, s, o, g, r, a, m ) {
+      i[ 'GoogleAnalyticsObject' ] = r;
+      i[ r ] = i[ r ] || function () {
+        ( i[ r ].q = i[ r ].q || [] ).push( arguments );
+      };
+      i[ r ].l = 1 * new Date();
+      a = s.createElement( o );
+      m = s.getElementsByTagName( o )[ 0 ];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore( a, m );
+    } )( window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga' );
+    ga( 'create', 'UA-2725447-17', 'auto' );
+    ga('set', 'anonymizeIp', true);
+    ga( 'send', 'pageview' );
+  </script>
+
+  </head>
+  <body class="home page-template-default page page-id-56089 app-data index-data singular-data page-data page-56089-data page-home-data front-page-data">
+      <div class="offcanvas-wrap">
+      <div class="offcanvas-wrap-overlay"></div>
+
+            <header class="header">
+  <div class="header__backdrop">
+    <a class="header__logo" href="https://press.airbnb.com/"><span>Airbnb</span></a>
+    <a class="header__site" href="https://press.airbnb.com/">Airbnb Newsroom</a>
+    <button class="header__site header__toggle" data-toggle="offcanvasRight">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="header__nav">
+          <ul id="menu-primary-navigation" class="nav"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://press.airbnb.com/about-us/">About Us</a></li>
+<li id="menu-item-3545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3545"><a href="https://press.airbnb.com/fast-facts/">Fast Facts</a></li>
+<li id="menu-item-2310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a href="https://press.airbnb.com/media-assets/">Media Assets</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://press.airbnb.com/contact/">Contact</a></li>
+</ul>
+              <div class='languagePicker languagePicker--default'>
+      <button class='languagePicker__button' role='button' aria-label='Select a language, pop-up button'>
+      English
+    </button>
+  
+  <ul class='languagePicker__modal'>
+                <li class='lang-item lang-item-59 lang-item-en lang-item-first current-lang'>
+        <a href="https://press.airbnb.com/">
+          English
+        </a>
+      </li>
+                <li class='lang-item lang-item-19264 lang-item-en-us lang-item-indented'>
+        <a href="https://press.airbnb.com/en-us/">
+          United States
+        </a>
+      </li>
+                <li class='lang-item lang-item-18289 lang-item-en-ca lang-item-indented'>
+        <a href="https://press.airbnb.com/en-ca/">
+          Canada
+        </a>
+      </li>
+                <li class='lang-item lang-item-17859 lang-item-en-ap lang-item-indented'>
+        <a href="https://press.airbnb.com/en-ap/">
+          Asia-Pacific
+        </a>
+      </li>
+                <li class='lang-item lang-item-17863 lang-item-en-au lang-item-indented'>
+        <a href="https://press.airbnb.com/en-au/">
+          AU and NZ
+        </a>
+      </li>
+                <li class='lang-item lang-item-17867 lang-item-en-in lang-item-indented'>
+        <a href="https://press.airbnb.com/en-in/">
+          India
+        </a>
+      </li>
+                <li class='lang-item lang-item-17871 lang-item-en-uk lang-item-indented'>
+        <a href="https://press.airbnb.com/en-uk/">
+          United Kingdom
+        </a>
+      </li>
+                <li class='lang-item lang-item-20274 lang-item-cs'>
+        <a href="https://press.airbnb.com/cs/">
+          Čeština
+        </a>
+      </li>
+                <li class='lang-item lang-item-62 lang-item-fr'>
+        <a href="https://press.airbnb.com/fr/">
+          Français
+        </a>
+      </li>
+                <li class='lang-item lang-item-131 lang-item-de'>
+        <a href="https://press.airbnb.com/de/">
+          Deutsch
+        </a>
+      </li>
+                <li class='lang-item lang-item-18285 lang-item-fr-ca'>
+        <a href="https://press.airbnb.com/fr-ca/">
+          Français Canadien
+        </a>
+      </li>
+                <li class='lang-item lang-item-135 lang-item-it'>
+        <a href="https://press.airbnb.com/it/">
+          Italiano
+        </a>
+      </li>
+                <li class='lang-item lang-item-139 lang-item-es'>
+        <a href="https://press.airbnb.com/es/">
+          Español (España)
+        </a>
+      </li>
+                <li class='lang-item lang-item-20035 lang-item-da'>
+        <a href="https://press.airbnb.com/da/">
+          Dansk
+        </a>
+      </li>
+                <li class='lang-item lang-item-8043 lang-item-ea'>
+        <a href="https://press.airbnb.com/ea/">
+          Español (América Latina)
+        </a>
+      </li>
+                <li class='lang-item lang-item-19524 lang-item-zh-tw'>
+        <a href="https://press.airbnb.com/zh-tw/">
+          繁體中文 (台灣)
+        </a>
+      </li>
+                <li class='lang-item lang-item-590 lang-item-zh'>
+        <a href="https://press.airbnb.com/zh/">
+          简体中文
+        </a>
+      </li>
+                <li class='lang-item lang-item-1140 lang-item-ja'>
+        <a href="https://press.airbnb.com/ja/">
+          日本語
+        </a>
+      </li>
+                <li class='lang-item lang-item-1144 lang-item-ko'>
+        <a href="https://press.airbnb.com/ko/">
+          한국어
+        </a>
+      </li>
+                <li class='lang-item lang-item-1148 lang-item-br'>
+        <a href="https://press.airbnb.com/br/">
+          Português (Brasil)
+        </a>
+      </li>
+                <li class='lang-item lang-item-19528 lang-item-zh-hk'>
+        <a href="https://press.airbnb.com/zh-hk/">
+          繁體中文 (香港)
+        </a>
+      </li>
+                <li class='lang-item lang-item-8047 lang-item-pt'>
+        <a href="https://press.airbnb.com/pt/">
+          Português (Portugal)
+        </a>
+      </li>
+                <li class='lang-item lang-item-6738 lang-item-th'>
+        <a href="https://press.airbnb.com/th/">
+          ไทย
+        </a>
+      </li>
+                <li class='lang-item lang-item-19520 lang-item-ms'>
+        <a href="https://press.airbnb.com/ms/">
+          Bahasa Melayu
+        </a>
+      </li>
+                <li class='lang-item lang-item-20039 lang-item-ca'>
+        <a href="https://press.airbnb.com/ca/">
+          Català
+        </a>
+      </li>
+                <li class='lang-item lang-item-19516 lang-item-nl'>
+        <a href="https://press.airbnb.com/nl/">
+          Nederlands
+        </a>
+      </li>
+        <li class="languagePicker__touchShim"></li>
+  </ul>
+</div>
+        <form class="header__search" id="searchform" method="get" action="https://press.airbnb.com/">
+            <input class="header__searchInput" type="search" name="s" placeholder="What are you looking for?" />
+      <button type="submit" class="header__searchButton js-header__searchButton">
+                  <span class="header__searchButtonLabel">Search</span>
+      </button>
+      <button type="button" class="header__closeSearchButton js-header__closeSearchButton">
+        <span class="header__closeSearchButtonLabel">Close Search</span>
+      </button>
+    </form>
+  </nav>
+</header>      <div class="wrap" role="document">
+        <div class="content">
+          <main class="main">
+              <div class="container">
+    <div class='row postTeaser__row postTeaser__row--featured'>
+  <article class='postTeaser col-md-12 post-208644 post type-post status-publish format-standard has-post-thumbnail hentry category-community category-homes tag-community tag-homes' data-post-id="208644">
+    <div class='postTeaser__inner'>
+      <div class="row">
+        <div class="col-md-8 postTeaser__imageWrap-featured">
+          <div class="postTeaser__image postTeaser__image--featured">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/what-makes-superhosts-so-super/">
+          <img width="730" height="481" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/image1-2.jpg?resize=730%2C481" class="attachment-post-teaser-featured size-post-teaser-featured wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/image1-2.jpg?w=730 730w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/image1-2.jpg?zoom=2&amp;resize=730%2C481 1460w" sizes="(max-width: 730px) 100vw, 730px" />
+      </a>
+</div>
+        </div>
+        <div class="col-md-4 postTeaser__textWrap-featured">
+          <header>
+            <h2 class="postTeaser__title postTeaser__title--featured"><a class="postTeaser__titleLink" href="https://press.airbnb.com/what-makes-superhosts-so-super/">What Makes Superhosts So Super?</a></h2>
+          </header>
+          <div class="postTeaser__entrySummary">
+                          In celebration of the 5th anniversary of the Superhost program, we’re highlighting a few of the incredible hosts who have been Superhosts since the very beginning.
+                      </div>
+                      <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-16T09:00:16+00:00">July 16, 2019</time> &middot; <a href="https://press.airbnb.com/category/community/" rel="tag">Community</a>, <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+                  </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+    <div class='row postTeaser__row'>
+                        <div class="postTeaser__group col-12 postTeaser__group--two-column">
+        <h2 class='postTeaser__gridTitle'>Latest News</h2>
+      <div class="postTeaser__groupInner row">
+<article class='postTeaser col-md-6 post-210614 post type-post status-publish format-standard has-post-thumbnail hentry category-public-policy tag-south-africa location-south-africa'  data-post-id="210614" data-timestamp="1565062506">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/airbnb-africa-academy-training-in-the-western-cape/">
+          <img width="676" height="453" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?resize=676%2C453" class="attachment-post-teaser-half size-post-teaser-half wp-post-image" alt="Africa Academy Western Cape" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?w=300 300w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?zoom=2&amp;resize=676%2C453 1352w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/104A2698.jpg?zoom=3&amp;resize=676%2C453 2028w" sizes="(max-width: 676px) 100vw, 676px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/airbnb-africa-academy-training-in-the-western-cape/">Airbnb Africa Academy: training in the Western Cape</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      At the start of July, 38 Tourism Entrepreneurs (TEs) from across the Western Cape joined us for two days of immersive learning as part of Airbnb’s Africa Academy.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-08-06T03:35:06+00:00">August 6, 2019</time> &middot; <a href="https://press.airbnb.com/category/public-policy/" rel="tag">Policy</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-6 post-210557 post type-post status-publish format-standard has-post-thumbnail hentry category-business-travel category-company-information category-homes tag-business-travel tag-company tag-homes'  data-post-id="210557" data-timestamp="1564999254">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/airbnb-acquires-urbandoor/">
+          <img width="676" height="453" src="https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?resize=676%2C453" class="attachment-post-teaser-half size-post-teaser-half" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?w=300 300w, https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?zoom=2&amp;resize=676%2C453 1352w, https://press.airbnb.com/wp-content/uploads/sites/4/2017/08/Apartment-in-the-Heart-of-Fitzroy.jpg?zoom=3&amp;resize=676%2C453 2028w" sizes="(max-width: 676px) 100vw, 676px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/airbnb-acquires-urbandoor/">Airbnb Acquires Urbandoor</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      As we work to grow this community and advance our mission, we are acquiring Urbandoor -- a global online marketplace where professionals can easily find furnished and serviced apartments tailored to their needs for extended business trips, relocations, and other longer-term stays.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-08-05T10:00:54+00:00">August 5, 2019</time> &middot; <a href="https://press.airbnb.com/category/business-travel/" rel="tag">Business Travel</a>, <a href="https://press.airbnb.com/category/company-information/" rel="tag">Company</a>, <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+  </div>
+</article>
+  </div>
+</div>
+                </div>
+        <div class="postCats__wrap">
+      <ul class="postCats">
+        <li class="postCats__item active">
+          <a href="#" data-cat="all">All</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/company-information/" data-cat="company-information" data-cat-id="45">Company</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/homes/" data-cat="homes" data-cat-id="738">Homes</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/experiences/" data-cat="experiences" data-cat-id="802">Experiences</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/open-homes/" data-cat="open-homes" data-cat-id="19359">Open Homes</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/public-policy/" data-cat="public-policy" data-cat-id="18609">Policy</a>
+        </li>
+                <li class="postCats__item">
+          <a href="https://press.airbnb.com/category/community/" data-cat="community" data-cat-id="55">Community</a>
+        </li>
+              </ul>
+    </div>
+        <div class="postsGrid" id="post-grid">
+      <div class='row postTeaser__row'>
+                        <div class="postTeaser__group col-12 postTeaser__group--three-column">
+      <div class="postTeaser__groupInner row">
+<article class='postTeaser col-md-4 post-210530 post type-post status-publish format-standard has-post-thumbnail hentry category-experiences category-homes category-public-policy tag-experiences tag-homes tag-seattle location-seattle'  data-post-id="210530" data-timestamp="1564995649">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/visit-seattle-and-airbnb-partner-to-grow-economic-benefits-of-tourism/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=300 300w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=1024 1024w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=697 697w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=1000 1000w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/08/Seattle-Rowing-Experience.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/visit-seattle-and-airbnb-partner-to-grow-economic-benefits-of-tourism/">Visit Seattle and Airbnb Partner to Grow Economic Benefits of Tourism</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      Visit Seattle and Airbnb announced a new partnership to increase the economic benefits of tourism and travel throughout Seattle.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-08-05T09:00:49+00:00">August 5, 2019</time> &middot; <a href="https://press.airbnb.com/category/experiences/" rel="tag">Experiences</a>, <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>, <a href="https://press.airbnb.com/category/public-policy/" rel="tag">Policy</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-4 post-208965 post type-post status-publish format-standard has-post-thumbnail hentry category-homes tag-homes'  data-post-id="208965" data-timestamp="1563872402">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/moveable-stays/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=300 300w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=1024 1024w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=697 697w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=1000 1000w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Knoxville-Train-Car.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/moveable-stays/">Check-In to the Trend: It’s a Bus, it’s a Plane, it’s an Airbnb</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      This month, Airbnb Trend Expert, Ali Killam, heads to Tennessee to visit a WWII train car-turned-Airbnb to see why so many travelers are craving “moveable” getaways.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-23T09:00:02+00:00">July 23, 2019</time> &middot; <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-4 post-209519 post type-post status-publish format-standard has-post-thumbnail hentry category-experiences category-homes tag-community'  data-post-id="209519" data-timestamp="1563862012">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/the-italian-sabbatical-one-month-in/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=300 300w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=1024 1024w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=697 697w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=1000 1000w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Volunteers_Group-Photo-with-Mario.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/the-italian-sabbatical-one-month-in/">The Italian Sabbatical: One Month in</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      Anne, Helena, Darrel, Pablo and Remo have now been part of the local community for just over one month. Airbnb joined them in Grottole to learn more.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-23T06:06:52+00:00">July 23, 2019</time> &middot; <a href="https://press.airbnb.com/category/experiences/" rel="tag">Experiences</a>, <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-4 post-209364 post type-post status-publish format-standard has-post-thumbnail hentry category-business-travel category-company-information category-work tag-business-travel tag-company tag-work'  data-post-id="209364" data-timestamp="1563775258">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/airbnb-introduces-new-search-capabilities-for-business-trips/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2016/01/Business-Travel-Data-article-hero-crop_2x.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2016/01/Business-Travel-Data-article-hero-crop_2x.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2016/01/Business-Travel-Data-article-hero-crop_2x.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2016/01/Business-Travel-Data-article-hero-crop_2x.jpg?zoom=2&amp;resize=527%2C353 1054w, https://press.airbnb.com/wp-content/uploads/sites/4/2016/01/Business-Travel-Data-article-hero-crop_2x.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/airbnb-introduces-new-search-capabilities-for-business-trips/">Airbnb Introduces New Search Capabilities for Business Trips</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      Today, Airbnb is making it even easier to find work-friendly stays with a new work trip toggle and improved search results.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-22T06:00:58+00:00">July 22, 2019</time> &middot; <a href="https://press.airbnb.com/category/business-travel/" rel="tag">Business Travel</a>, <a href="https://press.airbnb.com/category/company-information/" rel="tag">Company</a>, <a href="https://press.airbnb.com/category/work/" rel="tag">Work</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-4 post-207722 post type-post status-publish format-standard has-post-thumbnail hentry category-homes tag-homes'  data-post-id="207722" data-timestamp="1563429658">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/out-of-this-world-listings/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Listing28723382PatrickDodson-08.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Listing28723382PatrickDodson-08.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Listing28723382PatrickDodson-08.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Listing28723382PatrickDodson-08.jpg?zoom=2&amp;resize=527%2C353 1054w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/07/Listing28723382PatrickDodson-08.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/out-of-this-world-listings/">Airbnb Hosts Invite Travelers to Book Out-Of-This-World Stays for $11</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      Shoot for the stars! Stay in these moon-like homes in celebration of the 50th Anniversary of the Apollo 11 Moon landing.
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-18T06:00:58+00:00">July 18, 2019</time> &middot; <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+  </div>
+</article>
+                      <article class='postTeaser col-md-4 post-209094 post type-post status-publish format-standard has-post-thumbnail hentry category-company-information category-homes tag-company tag-news'  data-post-id="209094" data-timestamp="1563426021">
+  <div class='postTeaser__inner'>
+    <div class="postTeaser__image postTeaser__image--standard">
+  <a class="postTeaser__imageLink" href="https://press.airbnb.com/an-update-on-instant-book/">
+          <img width="527" height="353" src="https://press.airbnb.com/wp-content/uploads/sites/4/2019/01/Keychain-1.jpg?resize=527%2C353" class="attachment-post-teaser-standout size-post-teaser-standout wp-post-image" alt="" srcset="https://press.airbnb.com/wp-content/uploads/sites/4/2019/01/Keychain-1.jpg?w=676 676w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/01/Keychain-1.jpg?w=527 527w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/01/Keychain-1.jpg?zoom=2&amp;resize=527%2C353 1054w, https://press.airbnb.com/wp-content/uploads/sites/4/2019/01/Keychain-1.jpg?zoom=3&amp;resize=527%2C353 1581w" sizes="(max-width: 527px) 100vw, 527px" />
+      </a>
+</div>
+    <header>
+      <h2 class="postTeaser__title postTeaser__title--standard"><a class="postTeaser__titleLink" href="https://press.airbnb.com/an-update-on-instant-book/">An Update on Instant Book</a></h2>
+    </header>
+    <div class="postTeaser__entrySummary">
+      Today, we are announcing that nearly 70 percent of all Airbnb listings can be booked using Airbnb’s Instant Book feature
+    </div>
+    <div class="postTeaser__meta">
+  <time class="postTeaser__updated" datetime="2019-07-18T05:00:21+00:00">July 18, 2019</time> &middot; <a href="https://press.airbnb.com/category/company-information/" rel="tag">Company</a>, <a href="https://press.airbnb.com/category/homes/" rel="tag">Homes</a>
+</div>
+  </div>
+</article>
+  </div>
+</div>
+                </div>
+    </div>
+    <button class="btn btn--centered btn--loadMore js-load-more-posts" data-current-cat="all">
+      More Stories
+    </button>
+    <div class="loading-more js-loading-more">
+      <div class="loader-1"></div>
+      <div class="loader-2"></div>
+      <div class="loader-3"></div>
+    </div>      
+  </div>
+          </main>
+                  </div>
+      </div>
+            <footer class='siteFooter'>
+  <div class='siteFooter__main container'>
+    <div class='row'>
+                      <div class='siteFooter__columnWrap col-md-3'>
+          <h4 class='siteFooter__columnTitle'>Airbnb</h4>
+          <ul id="menu-airbnb" class="siteFooter__navColumn"><li id="menu-item-518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-518"><a href="https://www.airbnb.com/about/about-us">About</a></li>
+<li id="menu-item-519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-519"><a href="https://www.airbnb.com/careers">Careers</a></li>
+<li id="menu-item-496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-496"><a href="https://www.airbnb.com/press/news">Press</a></li>
+<li id="menu-item-497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-497"><a href="https://www.airbnb.com/policies">Policies</a></li>
+<li id="menu-item-498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-498"><a href="https://www.airbnb.com/help?from=footer">Help</a></li>
+<li id="menu-item-499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-499"><a href="https://www.airbnb.com/diversity">Diversity &#038; Belonging</a></li>
+</ul>
+        </div>
+          
+                      <div class='siteFooter__columnWrap col-md-3'>
+          <h4 class='siteFooter__columnTitle'>Discover</h4>
+          <ul id="menu-discover" class="siteFooter__navColumn"><li id="menu-item-500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-500"><a href="https://www.airbnb.com/trust">Trust &#038; Safety</a></li>
+<li id="menu-item-501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-501"><a href="https://www.airbnb.com/invite?r=6">Travel Credit</a></li>
+<li id="menu-item-502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-502"><a href="https://www.airbnb.com/gift?s=footer">Gift Cards</a></li>
+<li id="menu-item-503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-503"><a href="https://www.airbnbcitizen.com/?utm_source=airbnb&#038;utm_medium=footer&#038;utm_campaign=product">Airbnb Citizen</a></li>
+<li id="menu-item-508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-508"><a href="https://www.airbnb.com/business-travel?s=footer">Business Travel</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-509"><a href="https://www.airbnb.com/things-to-do">Guidebooks</a></li>
+</ul>
+        </div>
+          
+                      <div class='siteFooter__columnWrap col-md-3'>
+          <h4 class='siteFooter__columnTitle'>Hosting</h4>
+          <ul id="menu-hosting" class="siteFooter__navColumn"><li id="menu-item-513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-513"><a href="https://www.airbnb.com/host">Why Host</a></li>
+<li id="menu-item-514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-514"><a href="https://www.airbnb.com/hospitality">Hospitality</a></li>
+<li id="menu-item-515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-515"><a href="https://www.airbnb.com/help/responsible-hosting">Responsible Hosting</a></li>
+</ul>
+        </div>
+          
+            <div class='siteFooter__columnWrap col-md-3'>
+                <h4 class='siteFooter__columnTitle'>Disclaimer</h4>
+                
+        <p class='siteFooter__disclaimerText'>
+          The Airbnb Newsroom is aimed at journalists. All Homes and Experiences referenced on the Airbnb Newsroom are intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience listings on the Airbnb platform.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='siteFooter__secondary container'>
+    <div class='row'>
+      <p class='col-12 siteFooter__disclaimerText siteFooter__disclaimerText--mobileOnly'>
+        The Airbnb Newsroom is aimed at journalists. All Homes and Experiences referenced on the Airbnb Newsroom are intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience listings on the Airbnb platform.
+      </p>
+      <div class='col-md-5'>
+        <svg width="21" height="21" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg"><title>icon-airbnb-alt</title><path d="M25.465 25.34c-.7 1.073-1.956 1.794-3.123 1.794-1.725 0-4.298-.57-7.04-3.18 2.25-2.622 3.826-5.916 3.826-8.097 0-2.806-2.252-5.003-5.127-5.003s-5.127 2.197-5.127 5.003c0 2.18 1.576 5.475 3.826 8.096-2.743 2.61-5.316 3.18-7.04 3.18-1.168 0-2.423-.72-3.124-1.794-.575-.882-1.047-2.376-.04-4.48l8.658-17.315c.637-1.13 1.568-1.68 2.846-1.68 1.28 0 2.21.55 2.847 1.68l8.652 17.3c1.012 2.12.54 3.613-.035 4.494zm-14.68-9.483c0-2.038 1.657-3.138 3.216-3.138 1.56 0 3.216 1.1 3.216 3.137 0 1.487-1.188 4.275-3.215 6.705-2.027-2.43-3.215-5.218-3.215-6.705zm7.75-13.187C17.563.924 15.952 0 14.002 0c-1.95 0-3.56.924-4.535 2.67L.77 20.057c-1.077 2.25-1.022 4.482.153 6.284C1.977 27.957 3.836 29 5.66 29c3.576 0 6.42-1.866 8.34-3.68 1.92 1.814 4.765 3.68 8.342 3.68 1.823 0 3.68-1.044 4.736-2.66 1.175-1.8 1.23-4.032.147-6.298L18.535 2.67z" fill="#767676" fill-rule="evenodd"/></svg>
+        <span class='siteFooter__secondary__text'>© Airbnb, Inc.</span>
+      </div>
+      <div class="col-md-7 siteFooter__secondary--right">
+                  <div class='siteFooter__secondaryNavWrap'>
+            <ul id="menu-secondary-footer-menu" class="siteFooter__secondaryNav"><li id="menu-item-96093" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96093"><a href="https://www.airbnb.com/terms">Terms &#038; Privacy</a></li>
+</ul>
+          </div>
+                <div class="siteFooter__secondarySocialLinks">
+          <a class="siteFooter__secondarySocialLink" href="https://www.facebook.com/airbnb">
+              <div class="icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+</svg></div>
+          </a>
+          <a class="siteFooter__secondarySocialLink" href="https://twitter.com/airbnb">
+            <div class="icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+</svg></div>
+          </a>
+          <a class="siteFooter__secondarySocialLink" href="https://instagram.com/airbnb">
+              <div class="icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg></div>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      <nav class="offcanvas-panel offcanvas-panel-right" role="navigation">
+        <div class="menu-offcanvas menu-offcanvas-primary">
+          <button class="mobileMenu__close js-mobile-menu-close">
+            <span class="sr-only">Close mobile menu</span>
+          </button>
+                    <form class="mobileMenu__searchFormWrap" method="get" action="https://press.airbnb.com/">
+            <input class="mobileMenu__searchForm" type="search" name="s" placeholder="What are you looking for?" />
+            <button type='submit' class='mobileMenu__searchButton'></button>
+          </form>
+                      <div class='languagePicker languagePicker--fullwidth'>
+      <button class='languagePicker__button' role='button' aria-label='Select a language, pop-up button'>
+      English
+    </button>
+  
+  <ul class='languagePicker__modal'>
+                <li class='lang-item lang-item-59 lang-item-en lang-item-first current-lang'>
+        <a href="https://press.airbnb.com/">
+          English
+        </a>
+      </li>
+                <li class='lang-item lang-item-19264 lang-item-en-us lang-item-indented'>
+        <a href="https://press.airbnb.com/en-us/">
+          United States
+        </a>
+      </li>
+                <li class='lang-item lang-item-18289 lang-item-en-ca lang-item-indented'>
+        <a href="https://press.airbnb.com/en-ca/">
+          Canada
+        </a>
+      </li>
+                <li class='lang-item lang-item-17859 lang-item-en-ap lang-item-indented'>
+        <a href="https://press.airbnb.com/en-ap/">
+          Asia-Pacific
+        </a>
+      </li>
+                <li class='lang-item lang-item-17863 lang-item-en-au lang-item-indented'>
+        <a href="https://press.airbnb.com/en-au/">
+          AU and NZ
+        </a>
+      </li>
+                <li class='lang-item lang-item-17867 lang-item-en-in lang-item-indented'>
+        <a href="https://press.airbnb.com/en-in/">
+          India
+        </a>
+      </li>
+                <li class='lang-item lang-item-17871 lang-item-en-uk lang-item-indented'>
+        <a href="https://press.airbnb.com/en-uk/">
+          United Kingdom
+        </a>
+      </li>
+                <li class='lang-item lang-item-20274 lang-item-cs'>
+        <a href="https://press.airbnb.com/cs/">
+          Čeština
+        </a>
+      </li>
+                <li class='lang-item lang-item-62 lang-item-fr'>
+        <a href="https://press.airbnb.com/fr/">
+          Français
+        </a>
+      </li>
+                <li class='lang-item lang-item-131 lang-item-de'>
+        <a href="https://press.airbnb.com/de/">
+          Deutsch
+        </a>
+      </li>
+                <li class='lang-item lang-item-18285 lang-item-fr-ca'>
+        <a href="https://press.airbnb.com/fr-ca/">
+          Français Canadien
+        </a>
+      </li>
+                <li class='lang-item lang-item-135 lang-item-it'>
+        <a href="https://press.airbnb.com/it/">
+          Italiano
+        </a>
+      </li>
+                <li class='lang-item lang-item-139 lang-item-es'>
+        <a href="https://press.airbnb.com/es/">
+          Español (España)
+        </a>
+      </li>
+                <li class='lang-item lang-item-20035 lang-item-da'>
+        <a href="https://press.airbnb.com/da/">
+          Dansk
+        </a>
+      </li>
+                <li class='lang-item lang-item-8043 lang-item-ea'>
+        <a href="https://press.airbnb.com/ea/">
+          Español (América Latina)
+        </a>
+      </li>
+                <li class='lang-item lang-item-19524 lang-item-zh-tw'>
+        <a href="https://press.airbnb.com/zh-tw/">
+          繁體中文 (台灣)
+        </a>
+      </li>
+                <li class='lang-item lang-item-590 lang-item-zh'>
+        <a href="https://press.airbnb.com/zh/">
+          简体中文
+        </a>
+      </li>
+                <li class='lang-item lang-item-1140 lang-item-ja'>
+        <a href="https://press.airbnb.com/ja/">
+          日本語
+        </a>
+      </li>
+                <li class='lang-item lang-item-1144 lang-item-ko'>
+        <a href="https://press.airbnb.com/ko/">
+          한국어
+        </a>
+      </li>
+                <li class='lang-item lang-item-1148 lang-item-br'>
+        <a href="https://press.airbnb.com/br/">
+          Português (Brasil)
+        </a>
+      </li>
+                <li class='lang-item lang-item-19528 lang-item-zh-hk'>
+        <a href="https://press.airbnb.com/zh-hk/">
+          繁體中文 (香港)
+        </a>
+      </li>
+                <li class='lang-item lang-item-8047 lang-item-pt'>
+        <a href="https://press.airbnb.com/pt/">
+          Português (Portugal)
+        </a>
+      </li>
+                <li class='lang-item lang-item-6738 lang-item-th'>
+        <a href="https://press.airbnb.com/th/">
+          ไทย
+        </a>
+      </li>
+                <li class='lang-item lang-item-19520 lang-item-ms'>
+        <a href="https://press.airbnb.com/ms/">
+          Bahasa Melayu
+        </a>
+      </li>
+                <li class='lang-item lang-item-20039 lang-item-ca'>
+        <a href="https://press.airbnb.com/ca/">
+          Català
+        </a>
+      </li>
+                <li class='lang-item lang-item-19516 lang-item-nl'>
+        <a href="https://press.airbnb.com/nl/">
+          Nederlands
+        </a>
+      </li>
+        <li class="languagePicker__touchShim"></li>
+  </ul>
+</div>
+                    <div class="mobileMenu__navWrap">
+                          <div class="menu-primary-navigation-container"><ul id="menu-primary-navigation-1" class="mobileMenu__nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://press.airbnb.com/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3545"><a href="https://press.airbnb.com/fast-facts/">Fast Facts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a href="https://press.airbnb.com/media-assets/">Media Assets</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="https://press.airbnb.com/contact/">Contact</a></li>
+</ul></div>                      </div>
+        </div>
+      </nav>
+    </div>
+    <script type='text/javascript' src='https://press.airbnb.com/wp-content/mu-plugins/jetpack/_inc/build/photon/photon.min.js?m=1561603059g'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201932'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajaxGlobals = {"ajaxurl":"https:\/\/press.airbnb.com\/wp-admin\/admin-ajax.php","restUrl":"https:\/\/press.airbnb.com\/wp-json\/","currentLang":"en","currentLocale":"en_US"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://press.airbnb.com/_static/??/wp-content/themes/presser/dist/scripts/main_f118a817.js,/wp-includes/js/wp-embed.min.js?m=1565223893j'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201932.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.5.3',blog:'147984730',post:'56089',tz:'-7',srv:'press.airbnb.com'} ]);
+	_stq.push([ 'clickTrackerInit', '147984730', '56089' ]);
+</script>
+    <div class="subscriptionForm">
+    <form id="email-sub-form" name="subscribe-form" class="subscriptionForm__form" action="https://press-backend-prod.atairbnb.com/subscriptions">
+        <input name="locale" id="sub-form-locale" type="hidden" value="en-US">
+        <h2 class="subscriptionForm__header">
+                        Get updates and announcements from Airbnb Newsroom in your inbox.
+        </h2>
+        <div class="subscriptionForm__inputGroup">
+                        <label class="subscriptionForm__label subscriptionForm__label--trunc">
+                Are you a member of the media?
+            </label>
+            <label class="subscriptionForm__label">
+                <input type="radio" name="mediaMember" value="yes">
+                Yes
+            </label>
+            <label class="subscriptionForm__label">
+                <input type="radio" name="mediaMember" value="no" checked />
+                No
+            </label>
+        </div>
+                <p class="subscriptionForm__copy">
+            You'll receive emails from the Airbnb Newsroom and acknowledge that your personal data will be processed in accordance with Airbnb's <a href='https://www.airbnb.com/terms/privacy_policy'>Privacy Policy</a>. You can opt out of these emails at any time via the unsubscribe link in each email.
+        </p>
+        <div class="subscriptionForm__inputGroup">
+            <input type="email" value="" name="email" class="subscriptionForm__emailInput" placeholder="Email" required="">
+            <button type="submit" class="btn btn-primary subscriptionForm__formSubmit">Subscribe</button>
+        </div>
+        <p class="subscriptionForm__copy">
+                        
+                To change your newsletter&#039;s language/region, use the language chooser before submitting this form.
+            
+        </p>
+    </form>
+        <p class="subscriptionForm__successMsg">
+        Thanks for subscribing!
+    </p>
+    <p class="subscriptionForm__errorMsg">
+        There was an error in confirming your subscription. Please try again.
+    </p>
+    <div class="subscriptionForm__closeBtn">
+        <svg x="0px" y="0px" viewBox="-4.999 -5 410.666 409.235">
+            <g>
+                <g>
+                    <path fill="#484848"
+                          d="M396.366,399.235c-0.957,0-2.869,0-3.824-0.957L2.39,8.128c-1.912-1.913-1.912-4.781,0-6.694c1.912-1.913,4.781-1.913,6.693,0l390.15,390.15c1.912,1.912,1.912,4.781,0,6.693C398.278,399.235,397.323,399.235,396.366,399.235z"/>
+                </g>
+                <g>
+                    <path fill="#484848"
+                          d="M5.259,399.235c-0.957,0-2.869,0-3.824-0.957c-1.912-1.912-1.912-4.781,0-6.693L391.586,1.435c1.912-1.913,4.781-1.913,6.693,0c1.91,1.913,1.91,4.781,0,6.694L8.127,398.278C8.129,399.235,7.171,399.235,5.259,399.235z"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"949ceaf672","applicationID":"75747295","transactionName":"MQZWYhAFXhdYAUBfWwhMYUQLS1kKXQdMGEQOEw==","queueTime":0,"applicationTime":483,"atts":"HUFBFFgfTUgbAxYMTxse","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,19 @@
+200 OK
+X-Upstream-Env: python node
+X-Envoy-Upstream-Service-Time: 748
+Set-Cookie: _auth=0; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:08 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=Ys6m2o3eJ70hzB4zsc7PdlyGowNiXdlb; expires=Thu, 06-Aug-2020 07:42:08 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSZoYUwvRFhSN2pzSFhDM2kwZk0vSDd0eW53YXNtU245aUtLcXVkenhkMi9mU0tzODZFVy9XT1JUZmE3R2dhNE5oVks4cklNOEtpUXpTT1RseG5MalV4SGQ0TWY5NDErQUkxTXByRmJRMHZtVVVkTXZyckJNME9EaXNqTEQ1UzRmaVhZTHVYMWdvdHdIVFBqWmljWWZwTGc9PSYyVnlqaVlsejh4VG9uazkrME15TjRtbjB1OW89; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:08 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="a69aac85-2b70-4e90-989c-2e380242e55c"; Max-Age=86400; Path=/; HttpOnly
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 07:42:08 GMT
+X-Cdn: akamai
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Pinterest-Generated-By: coreapp-webapp-prod-0a010b17, coreapp-webapp-prod-0a010b17 coreapp-webapp-prod-0a010b17 coreapp-webapp-prod-0a010b17
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Pinterest-Version: d28c701
+X-Upstream-Proxy: pythonvianode
+Vary: User-Agent, Cookie, Accept-Encoding
+X-Pinterest-Rid: 7981163634363363
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-ejMwQQnolj' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."

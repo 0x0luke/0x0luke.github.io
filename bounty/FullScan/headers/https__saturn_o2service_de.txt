@@ -1,0 +1,11 @@
+200 200
+Content-Type: text/html;charset=UTF-8
+Server: Apache
+Set-Cookie: sessionBridge=1082fae7-d06b-45d2-a351-a541c3c544dd; Max-Age=604800; Expires=Thu, 15-Aug-2019 11:35:23 GMT; Domain=o2service.de; Path=/; Secure; HttpOnly JSESSIONID=F1876290AD421FD9469CC40185DE6EC5.satprdpo2; Path=/kundencenter; Secure; HttpOnly
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, public, max-age=1
+Vary: Accept-Encoding
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000
+Date: Thu, 08 Aug 2019 11:35:23 GMT
+Content-Language: de-DE
+Content-Security-Policy: frame-ancestors 'self' http://saturn.de http://*.saturn.de https://saturn.de https://*.saturn.de

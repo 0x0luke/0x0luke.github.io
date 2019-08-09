@@ -1,0 +1,19 @@
+404 Not Found
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d4bcad7f-a5e0-4166-85c2-ca6b78820b56
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: d4bcad7f-a5e0-4166-85c2-ca6b78820b56
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5029040e998dd210-MAN
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d4bcad7f-a5e0-4166-85c2-ca6b78820b56
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Date: Wed, 07 Aug 2019 11:47:27 GMT
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+Set-Cookie: __cfduid=d8bfd1b2826df74a7faa26fb0526dd12f1565178447; expires=Thu, 06-Aug-20 11:47:27 GMT; path=/; domain=.heckout.shopify.com; HttpOnly
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare

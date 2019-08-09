@@ -1,0 +1,26 @@
+200 OK
+Accept-Ranges: bytes
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Fastly-Soc-X-Request-Id: 01f1be0811dc87ef9f87fb5ef86acc6a48da08ae3d92082e5d1a9b8c8b2eeba8
+X-Request-Id: 48a3dd5c7a87e6a2aedec6a8dd5a617d5c7ece0251a7191efb55d0b10aec271c
+X-Ua-Compatible: IE=edge
+X-Cache: HIT, HIT
+Content-Security-Policy: default-src 'self' https://api.segment.io https//*.doubleclick.net https://*.fls.doubleclick.net https://*.g.doubleclick.net https://*.facebook.com https://*.google.com https://*.google-analytics.com https://*.inbenta.io https://*.pinimg.com https://*.pinterest.com https://*.youtube.com https://api.company-target.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.ads-twitter.com https://googleads.g.doubleclick.net https://connect.facebook.net https://*.google.com https://*.googleadservices.com https://www.googletagmanager.com https://*.google-analytics.com https://www.gstatic.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://*.twitter.com https://cdn.segment.com https://sdk.inbenta.io https://tag.demandbase.com https://scripts.demandbase.com https://api.demandbase.com https://autocomplete.demandbase.com https://id.rlcdn.com https://d.company-target.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://*.pinimg.com https://*.pinterest.com; img-src 'self' data: https://secure.adnxs.com https://static.ads-twitter.com https://www.bizographics.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://connect.facebook.net https://www.facebook.com https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://www.googletagmanager.com https://www.gstatic.com https://*.linkedin.com https://*.ads.linkedin.com https://*.dc.ads.linkedin.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://t.co https://*.twitter.com https://*.youtube.com
+Last-Modified: Thu, 08 Aug 2019 11:36:30 GMT
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+X-Cache-Hits: 5, 1
+Etag: "1565264190"
+Link: <https://help.pinterest.com/en>; rel="canonical", <https://help.pinterest.com/en>; rel="shortlink" <https://help.pinterest.com/en/homepage/help-center>; rel="revision"
+Date: Thu, 08 Aug 2019 11:38:45 GMT
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Age: 134
+X-Timer: S1565264326.711857,VS0,VE4
+Vary: Cookie,Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Served-By: cache-lhr6334-LHR
+Content-Language: en
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0

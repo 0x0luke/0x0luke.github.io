@@ -1,0 +1,16 @@
+200 OK
+Content-Security-Policy: default-src * 'unsafe-inline' 'unsafe-eval'; img-src * data:
+Set-Cookie: BIGipServer~C50~C50_PMAIL_IPv4_80_POOL=940214363.20480.0000; path=/; Httponly; Secure
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Content-Type: text/html
+Server: Apache
+Pragma: no-cache
+Expires: Tue, 01 Jan 1980 1:00:00 GMT
+Date: Thu, 08 Aug 2019 11:32:03 GMT
+Access-Control-Allow-Origin: https://cdn.raygun.io
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+X-Xss-Protection: 1
+Vary: Accept-Encoding
+Referrer-Policy: no-referrer-when-downgrade

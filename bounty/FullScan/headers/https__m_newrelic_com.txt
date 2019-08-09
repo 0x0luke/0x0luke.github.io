@@ -1,0 +1,24 @@
+200 OK
+Content-Security-Policy: frame-ancestors *.newrelic.com
+X-Request-Id: 7f937815f5735fbaf7fee42842ea75db
+X-Ua-Compatible: IE=Edge,chrome=1
+Retry-Count: 0
+Vary: Accept-Encoding
+Proxied-By: Service Gateway
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/html; charset=utf-8
+Status: 200 OK
+X-Cache-Hits: 0
+X-Served-By: cache-lhr6328-LHR
+X-Cache: MISS
+Set-Cookie: _storefront_z8f3h2_2016_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY2MmMxZWY2OWM3YTc0NjNjMzc2NjFjZjYxMTcxNjBmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVZCRHhPWmliMUFBTXgxdUNJVE10amFwNnVLOUhEMnF6dUw5b3NkYy9KWGs9BjsARg%3D%3D--fc7361a13417bcfd1498929d59ab7c003eb9dd58; path=/; expires=Thu, 05-Sep-2019 11:19:35 GMT; secure; HttpOnly
+X-Rack-Cache: miss
+X-Runtime: 0.014028
+Age: 0
+X-Timer: S1565263176.808600,VS0,VE115
+Cache-Control: max-age=0, private, must-revalidate
+Etag: "211575ad61d5e649ffa401fc8d325b22"
+Server: nginx
+Accept-Ranges: bytes bytes
+Date: Thu, 08 Aug 2019 11:19:35 GMT
+Via: 1.1 varnish

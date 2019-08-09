@@ -1,0 +1,24 @@
+200 OK
+Content-Length: 391
+Is_tablet: false
+Server: Apache
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Mac OS X;device_os_version=10.14;is_tablet=false;is_wireless_device=false2;mobile_browser=Safari;mobile_browser_version=12;physical_screen_height=400;physical_screen_width=400;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false
+Device_os_version: 10.14
+Is_wireless_device: false
+Mobile_browser_version: 12
+Physical_screen_height: 400
+Viewport_initial_scale: 
+Content-Type: text/html
+Etag: "187-4db338a4d9d40"
+Is_mobile: false
+Resolution_width: 1280
+Viewport_width: width_equals_max_image_width
+Date: Wed, 07 Aug 2019 05:42:28 GMT
+X-Xss-Protection: 1; mode=block
+Ajax_preferred_geoloc_api: none
+Device_os: Mac OS X
+Mobile_browser: Safari
+Physical_screen_width: 400
+Resolution_height: 800
+Vary: Accept-Encoding
+Retry-Count: 0

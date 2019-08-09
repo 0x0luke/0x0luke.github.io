@@ -1,0 +1,14 @@
+200 OK
+Cache-Control: max-age=31536000,public
+Last-Modified: Tue, 30 Jul 2019 09:16:55 GMT
+Age: 348068
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Id: jreGl3V6XxMRxncOEji1jGPWeYpFU88C0Ycr0W4JD6Venok8ysffNw==
+Content-Type: text/html
+Content-Length: 6076
+Date: Sun, 04 Aug 2019 14:12:08 GMT
+Retry-Count: 0
+Via: 1.1 303be8e520ae79b36bb0034ccfc3861a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR4
+Etag: "0ed47a77be9be0a58b1a7f338959c741"
+Server: AmazonS3

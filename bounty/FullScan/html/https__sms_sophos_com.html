@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<!--[if lte IE 9]>
+  <html class="lt-ie9 no-flexbox">
+<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Mobile Notification Service</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.6f3b603fb83f48ffb337.css"></head>
+
+<body>
+  <script>
+    __Zone_enable_cross_context_check = true;
+
+  </script>
+
+  <app-root></app-root>
+
+  <p class="browsernotsupported" id="browsernotsupported">
+    You are using an
+    <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a>
+    to improve your experience.
+  </p>
+
+  <div id="pre-bootstrap-container">
+    <style type="text/css">
+      #pre-bootstrap {
+        background-color: white;
+        bottom: 0px;
+        left: 0px;
+        opacity: 1.0;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        transition: all linear 300ms;
+        -webkit-transition: all linear 300ms;
+        z-index: 999999;
+      }
+
+      #pre-bootstrap.loaded {
+        opacity: 0.0;
+      }
+
+      #pre-bootstrap div.messaging {
+        color: #242629;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        left: 0px;
+        margin-top: -1.9rem;
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        top: 50%;
+      }
+
+      #pre-bootstrap h1 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+      }
+
+      #pre-bootstrap p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin: 0;
+      }
+
+    </style>
+
+    <div id="pre-bootstrap">
+      <div class="messaging">
+        <h1 id="pre-bootstrap-header">App is Loading</h1>
+        <p id="pre-bootstrap-subheader">Please stand by...</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      if (document.addEventListener) {
+        document.addEventListener('appready', handleAppReady, false);
+      } else {
+        // for browsers prior IE9
+        if (window.console) {
+          window.console.log("Doesn't support addEventListener..");
+        }
+        document.attachEvent('appready', handleAppReady, false);
+      }
+
+      // I handle the "appready" event and teardown the loading screen.
+      function handleAppReady(event) {
+        var preBootstrapContainer = document.getElementById("pre-bootstrap-container");
+        var preBootstrap = document.getElementById("pre-bootstrap");
+
+        // Add the class-name to initiate the transitions.
+        preBootstrap.className = "loaded";
+        // Remove the bootstrap container after the transition has
+        // completed (based on the known transition time).
+        setTimeout(
+          function removeLoadingScreen() {
+            preBootstrapContainer.parentNode.removeChild(preBootstrapContainer);
+          },
+          300
+        );
+      }
+
+    </script>
+  </div>
+
+  <style type="text/css">
+    html #browsernotsupported {
+      display: none;
+    }
+
+    html.no-flexbox #browsernotsupported {
+      display: block;
+    }
+
+    html.no-flexbox #pre-bootstrap-container {
+      display: none;
+    }
+
+  </style>
+
+<script type="text/javascript" src="runtime.a5dd35324ddfd942bef1.js"></script><script type="text/javascript" src="polyfills.1d8f0e29113b301021c5.js"></script><script type="text/javascript" src="scripts.35b452fe84e5cd51ce73.js"></script><script type="text/javascript" src="main.a0c52253784026740873.js"></script></body>
+
+</html>

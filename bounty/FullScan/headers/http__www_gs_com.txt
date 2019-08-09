@@ -1,0 +1,25 @@
+200 OK
+Ajax_preferred_geoloc_api: none
+Physical_screen_height: 175
+Etag: "c780-58f8e252af855"
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Windows NT;device_os_version=6.1;is_tablet=false;is_wireless_device=false2;mobile_browser=Firefox;mobile_browser_version=63;physical_screen_height=175;physical_screen_width=280;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT
+Is_mobile: false
+Device_os: Windows NT
+Resolution_width: 1280
+X-Xss-Protection: 1; mode=block
+Mobile_browser_version: 63
+Viewport_initial_scale: 
+Viewport_width: width_equals_max_image_width
+Device_os_version: 6.1
+Is_wireless_device: false
+Physical_screen_width: 280
+Retry-Count: 0
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 07:20:33 GMT
+Server: Apache
+Content-Type: text/html
+Is_tablet: false
+Mobile_browser: Firefox
+Resolution_height: 800
+X-Akamai-Transformed: 9 45367 0 pmb=mRUM,3

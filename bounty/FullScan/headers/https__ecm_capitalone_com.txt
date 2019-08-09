@@ -1,0 +1,18 @@
+200 OK
+X-Amz-Server-Side-Encryption: AES256
+X-Amz-Cf-Id: --0uifIG3wB2s7xshbwL8HVumB6y3rFjcnayRDzHYtMLp6hLgMCAMQ==
+Access-Control-Allow-Methods: GET,POST
+Retry-Count: 0
+Content-Length: 49
+X-Amz-Version-Id: mGY73BmJ5.0LYrq1S8PcMveEkJIFTYcg
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 09:09:40 GMT
+Access-Control-Allow-Headers: *
+Last-Modified: Fri, 28 Jun 2019 01:22:15 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html
+Etag: "e6f62efdd8a9e6f1f52dff9fbca284f8"
+Server: AmazonS3
+X-Amz-Cf-Pop: LHR62-C1
+Access-Control-Max-Age: 86400
+Access-Control-Allow-Credentials: false

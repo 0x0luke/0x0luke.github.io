@@ -1,0 +1,22 @@
+200 OK
+X-Amz-Server-Side-Encryption: AES256
+X-Frame-Options: SAMEORIGIN
+Age: 212552
+X-Cache: Error from cloudfront
+X-Amz-Cf-Id: BUuAAz4r_BMEBos3skCSVyo8qjXNqb3VD88YAUa2MCAp0h3P0fb8VQ==
+Retry-Count: 0
+Content-Length: 954
+Date: Mon, 05 Aug 2019 20:38:09 GMT
+X-Amz-Replication-Status: COMPLETED
+Etag: "3bc62c77c4d2b73e3b191d73e5b947ad"
+Server: AmazonS3
+Via: 1.1 967425266468bd56bf14d0a928942c04.cloudfront.net (CloudFront)
+Content-Type: text/html
+Last-Modified: Fri, 02 Aug 2019 18:17:37 GMT
+Accept-Ranges: bytes
+X-Xss-Protection: 1; mode=block
+X-Amz-Version-Id: SY6vK_FliL5350grI9rWxelXasoQcQFV
+Content-Security-Policy: frame-ancestors *.paribus.co
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Pop: LHR50-C1

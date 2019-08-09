@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>The RealReal</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:zEHYI6Kq0th3rkab/8FrMr2E8phlG9DZ57h3AxJqJ2VxqN9UvByFDKu3Q9P8MYpKwd0XAvsfy3DhRc2tv7GQWg==" />
+  <link rel="canonical" href="https://therealreal.zendesk.com/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://therealreal.zendesk.com/hc/en-us" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p14.zdassets.com/hc/theming_assets/187959/2679376/style.css?digest=360300505613" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/187959/75a122267bb9a1622e931da819100d6f72615a00.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.3/mobile-detect.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.js"></script>
+
+<style>
+  @font-face {
+    font-family: 'Austin Roman';
+    src: url(//theme.zdassets.com/theme_assets/187959/59dde86eedd017aa2571bb2366b128d95035616d.eot);
+    src: url(//theme.zdassets.com/theme_assets/187959/59dde86eedd017aa2571bb2366b128d95035616d.eot?#iefix) format('embedded-opentype'),
+      url(//theme.zdassets.com/theme_assets/187959/7d0303b149050bc8b20d57303b5088110d795378.woff2) format('woff2'),
+      url(//theme.zdassets.com/theme_assets/187959/e4e157a3d3c3df56c4dd4328168f5ec9328b8bca.woff) format('woff'),
+      url(//theme.zdassets.com/theme_assets/187959/5f1d1b69c868f38a3f4d0f50b2fad9e768f4a8b3.ttf) format('truetype'),
+      url(//theme.zdassets.com/theme_assets/187959/8b251bc2275b7f048f2a09f3eec9bbfbf9f48531.svg#Austin-Roman) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+
+<script>
+  HC_SETTINGS = {};
+  HC_SETTINGS.isAuthorized = true;
+</script>
+
+<script type="text/template" id="content-template">
+  <% _.each(categories, function(category) { %>
+    <% _.each(category.sections, function(section) { %>
+      <section class="section" id="<%= section.name %>">
+        <ul class="article-list">
+          <% _.each(section.articles, function(article) { %>
+            <li class="article-list-item" data-article="<%= article.id %>">
+              <a class="article-list-item__link" href="/hc/<%= locale %>/articles/<%= article.id %>" data-article-list-item-link><%= article.title %></a>
+              <div class="article-list-item__body">
+                <%= article.body %>
+								<p>
+                  <a href="/hc/<%= locale %>/articles/<%= article.id %>">
+                    Go to the article page
+                  </a>
+                </p>
+  </div>
+  </li>
+          <% }); %>
+  </ul>
+        <h3 class="section__title">
+          Have another question? Click 
+          <a class="section__title-link" href="/hc/<%= locale %>/sections/<%= section.id %>">here</a> 
+          to see more.
+  </h3>
+  </section>
+    <% }); %>
+  <% }); %>
+</script>
+
+<script type="text/template" id="section-articles-template">
+  <% _.each(categories, function(category) { %>
+    <% _.each(category.sections, function(section) { %>
+      <% if (section.isCurrent) { %>
+        <% _.each(section.articles, function(article) { %>
+          <li class="article-list-item" data-article="<%= article.id %>">
+            <a class="article-list-item__link" href="/hc/<%= locale %>/articles/<%= article.id %>" data-article-list-item-link><%= article.title %></a>
+            <div class="article-list-item__body">
+              <%= article.body %>
+							<p>
+                <a href="/hc/<%= locale %>/articles/<%= article.id %>">
+                  Go to the article page
+                </a>
+              </p>
+  </div>
+  </li>
+        <% }); %>
+      <% }; %>
+    <% }); %>
+  <% }); %>
+</script>
+  <script type="text/javascript" src="//p14.zdassets.com/hc/theming_assets/187959/2679376/script.js?digest=360300505613"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div class="layout">
+
+  <div id="usver" class="hidden">   <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Ftherealreal.zendesk.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+</div>
+
+  <div class="head-components ">
+    <div class="head-toolbar" data-path="/phoenix/header">
+      <div class="head-toolbar__content">
+        <div class="head-toolbar__cell head-toolbar__cell--hamburger"><a
+             class="icon-button icon-button--hamburger" href="javascript:;"></a>
+        </div>
+        <div class="head-toolbar__cell head-toolbar__cell--logo"><a
+             class="head-toolbar__logo-link"
+             href="https://www.therealreal.com/">
+            <div class="head-toolbar__logo-img-large"></div>
+          </a><a class="head-toolbar__logo-link"
+             href="https://www.therealreal.com/">
+            <div class="head-toolbar__logo-img"></div>
+          </a></div>
+        <div class="head-toolbar__cell head-toolbar__cell--utility">
+          <div class="head-toolbar__btn mobile-search-icon"><a
+               class="icon-button js-header-search-open"
+               href="javascript:;"><img class="head-toolbar__search"
+                   src="//theme.zdassets.com/theme_assets/187959/83acebcc62bc59d1058b74bd4c10da9089a322d1.svg"></a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-search-container suggestion-inactive">
+        <div class="autocomplete-search-box js-autocomplete-search"
+             data-search-path="/products">
+          <div class="branch-journeys-top"></div>
+          <form accept-charset="UTF-8"
+                action="https://www.therealreal.com/products"
+                class="mobile_search_form" method="get"><input name="_utf8"
+                   type="hidden" value="✓"><input autocomplete="off"
+                   class="autocomplete-search-box__input" maxlength="100"
+                   name="keywords" placeholder="Search" type="search"></form>
+          <img class="autocomplete-search-box__cancel hidden"
+               src="//theme.zdassets.com/theme_assets/187959/1ae0e54112339f030b4ab33b81834d08d864d1a5.svg"><img
+               class="autocomplete-search-box__search-icon"
+               src="//theme.zdassets.com/theme_assets/187959/83acebcc62bc59d1058b74bd4c10da9089a322d1.svg">
+          <div class="autocomplete-search-box__options"></div>
+        </div><img class="autocomplete-search-box__search-icon-white"
+             src="//theme.zdassets.com/theme_assets/187959/94861711e52de38a6ce1ff87f5369ff3327f130c.svg">
+      </div>
+    </div>
+    <div class="head-marketing-page-spanner js-head-marketing-page-spanner  ">
+      <p class="head-marketing-page-spanner-p"></p>
+    </div>
+    <div class="head-utility-container">
+      <div class="head-utility-page-spanner">
+        <div class="head-utility-row js-header-menu-align">
+          <div class="head-utility-row__member-msg">&nbsp;</div>
+          <div class="head-utility-row__links">&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <div class="head-menu-tip js-header-account-menu-arrow"></div>
+    </div>
+    <div class="head-logo-row"><a class="head-logo-row__link"
+         href="https://www.therealreal.com/">
+        <div class="head-toolbar__logo-img-large"></div>
+      </a></div>
+    <div class="navigation-container">
+      <div class="head-nav-row js-header-nav-menu-align">
+        <div class="head-nav-row__categories-cell"><a aria-label="New Arrivals"
+             class=" head-nav-row__link js-header-nav-link"
+             data-content="New Arrivals"
+             data-menu="sales/shop-new-arrivals-5753"
+             href="https://www.therealreal.com/sales/shop-new-arrivals-5753">New
+            Arrivals</a><a aria-label="Designers"
+             class=" head-nav-row__link js-header-nav-link"
+             data-content="Designers" data-menu="designers"
+             href="https://www.therealreal.com/designers">Designers</a><a
+             aria-label="Women" class=" head-nav-row__link js-header-nav-link"
+             data-content="Women" data-menu="women"
+             href="https://www.therealreal.com/women">Women</a><a
+             aria-label="Men" class=" head-nav-row__link js-header-nav-link"
+             data-content="Men" data-menu="men"
+             href="https://www.therealreal.com/men">Men</a><a
+             aria-label="Jewelry" class=" head-nav-row__link js-header-nav-link"
+             data-content="Jewelry" data-menu="jewelry"
+             href="https://www.therealreal.com/jewelry">Jewelry</a><a
+             aria-label="Watches" class=" head-nav-row__link js-header-nav-link"
+             data-content="Watches" data-menu="watches"
+             href="https://www.therealreal.com/watches">Watches</a><a
+             aria-label="Home" class=" head-nav-row__link js-header-nav-link"
+             data-content="Home" data-menu="home"
+             href="https://www.therealreal.com/home">Home</a><a
+             aria-label="Kids" class=" head-nav-row__link js-header-nav-link"
+             data-content="Kids" data-menu="kids"
+             href="https://www.therealreal.com/kids">Kids</a><a
+             aria-label="Sale" class=" head-nav-row__link js-header-nav-link"
+             data-content="Sale" data-menu="sales/on-sale-now"
+             href="https://www.therealreal.com/sales/on-sale-now">Sale</a><a
+             aria-label="Consign"
+             class=" head-nav-row__link js-header-nav-link head-nav-row__link--consign js-header-consign-link"
+             data-content="consign"
+             href="https://www.therealreal.com/consign">Consign</a></div>
+        <div class="head-nav-row__search-cell">
+          <div class="autocomplete-search-box js-autocomplete-search"
+               data-search-path="/products">
+            <div class="branch-journeys-top"></div>
+            <form accept-charset="UTF-8"
+                  action="https://www.therealreal.com/products"
+                  class="mobile_search_form" method="get"><input name="_utf8"
+                     type="hidden" value="✓"><input autocomplete="off"
+                     class="autocomplete-search-box__input" maxlength="100"
+                     name="keywords" placeholder="Search" type="search"></form>
+            <div class="autocomplete-search-box__options"></div>
+          </div>
+        </div>
+      </div>
+      <div class="head-hamburger-section js-hamburger-menu-container">
+        <div class="head-hamburger js-hamburger-menu">
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="New Arrivals">
+            <a href="https://www.therealreal.com/sales/shop-new-arrivals-5753">New
+              Arrivals</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Designers">
+            <a href="https://www.therealreal.com/designers">Designers</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Women">
+            <a href="https://www.therealreal.com/women">Women</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Men">
+            <a href="https://www.therealreal.com/men">Men</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Jewelry">
+            <a href="https://www.therealreal.com/jewelry">Jewelry</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Watches">
+            <a href="https://www.therealreal.com/watches">Watches</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Home">
+            <a href="https://www.therealreal.com/home">Home</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Kids">
+            <a href="https://www.therealreal.com/kids">Kids</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1"
+               data-menu-top-level="Sale">
+            <a href="https://www.therealreal.com/sale">Sale</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1">
+            <a href="https://www.therealreal.com/login">Account</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1">
+            <a class="js-track-click-event"
+               data-event-menu-item-path="/first_look_subscriptions"
+               data-event-menu-item-title="first_look"
+               data-event-menu-top-level="" data-event-menu-type="hamburger"
+               data-event-name="Menu Clicked"
+               href="https://www.therealreal.com/first_look_subscriptions">First
+              Look</a>
+          </div>
+          <a class="head-hamburger__item head-hamburger__item--level1"
+             href="https://www.therealreal.com/about">
+            About Us
+          </a>
+          <div class="head-hamburger__item head-hamburger__item--level1">
+            <a href="https://www.therealreal.com/authenticity">Authenticity</a>
+          </div>
+          <div class="head-hamburger__separator"></div>
+          <div class="head-hamburger__item head-hamburger__item--level1">
+            <a href="https://www.therealreal.com/gift_cards/new">Gift Card</a>
+          </div>
+          <div class="head-hamburger__item head-hamburger__item--level1">
+            <a href="http://realstyle.therealreal.com/" target="_blank">Real
+              Style</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="js-scrollup scrollup"></div>
+    </div>
+
+  <main role="main">
+    <div class="container">
+
+  <div class="container">
+  <div class="hero-unit container-inner" data-hero-unit>
+    <div class="intro-title">Frequently Asked Questions</div>
+  </div>
+</div>
+
+
+  <div class="container-inner">
+    <div class="row row--main">
+      <div class="column column--main">
+
+        
+          <ul class="category-list" id="category-list">
+            
+              
+                <li class="category-list-item">
+                  <a class="category-list-item__link" href="#Buyer" data-category-list-item-link>
+                    <h2 class="h5 category-list-item__title">Buyer</h2>
+                  </a>
+                </li>
+              
+                <li class="category-list-item">
+                  <a class="category-list-item__link" href="#Consignor" data-category-list-item-link>
+                    <h2 class="h5 category-list-item__title">Consignor</h2>
+                  </a>
+                </li>
+              
+                <li class="category-list-item">
+                  <a class="category-list-item__link" href="#Account" data-category-list-item-link>
+                    <h2 class="h5 category-list-item__title">Account</h2>
+                  </a>
+                </li>
+              
+                <li class="category-list-item">
+                  <a class="category-list-item__link" href="#Other" data-category-list-item-link>
+                    <h2 class="h5 category-list-item__title">Other</h2>
+                  </a>
+                </li>
+              
+            
+            <li class="category-list-item category-list-item__promoted">
+              <a class="category-list-item__link" href="#promoted-articles" data-category-list-item-link>
+                <h2 class="h5 category-list-item__title"><span class="fa fa-star"></span> Promoted articles</h2>
+              </a>
+            </li>
+            
+          </ul>
+        
+
+        <div class="search-box search-box--sidebar clearfix">
+          <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="SEARCH" autocomplete="off" aria-label="SEARCH" />
+<input type="submit" name="commit" value="Search" /></form>
+        </div>
+      </div>
+      <div class="column main-column">
+        <div class="category-tree" id="category-tree" data-content-template></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  </div>
+<!-- /.layout -->
+<a href="#" class="scroll-to-top fa fa-angle-up" data-scroll-to-top></a>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://therealreal.zendesk.com/auth/v2/host.js" data-brand-id="2679376" data-return-to="https://therealreal.zendesk.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="2679376,false,true"></script>
+  <script type="text/javascript" src="https://p14.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"therealreal","environment":"production","name":"The RealReal"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:clEY0mVuifSgYCamsHlo2G9X8ntUEuxx40K1Bs0P267PuB+le9jeIHx5I+6ziYmgEw4X4coW99jlvw+oYNRskQ==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://therealreal.zendesk.com","current_host_mapping":null,"current_path":null,"authentication_domain":"https://therealreal.zendesk.com","show_autocomplete_breadcrumbs":false,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":true,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://therealreal.zendesk.com/hc/admin/plan?locale=en-us","manage_content_url":"https://therealreal.zendesk.com/hc/en-us","arrange_content_url":"https://therealreal.zendesk.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://therealreal.zendesk.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://therealreal.zendesk.com/knowledge/user_segments?brand_id=2679376","has_community_enabled":false,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://therealreal.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://therealreal.zendesk.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://therealreal.zendesk.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://therealreal.zendesk.com/knowledge/arrange?brand_id=2679376","article_verification_url":"https://therealreal.zendesk.com/knowledge/verification?brand_id=2679376","has_article_verification":false,"guide_language_settings_url":"https://therealreal.zendesk.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://therealreal.zendesk.com/knowledge/import_articles?brand_id=2679376","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://therealreal.zendesk.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkDN94COhNoZWxwX2NlbnRlcl9pZGkE8i/uCzoNYnJhbmRfaWRpA1DiKDoMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--9957744379903d721737ec699c8bbf6fa1d9119c");
+})();
+
+  </script>
+</body>
+</html>

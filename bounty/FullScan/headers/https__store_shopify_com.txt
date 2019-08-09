@@ -1,0 +1,27 @@
+200 OK
+X-Shopify-Stage: production
+X-Download-Options: noopen
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+X-Request-Id: 9ce316bd-17cc-4518-99fb-b446a57af574
+Cf-Ray: 503228df2bf8bfcf-MAN
+Content-Language: en
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+X-Permitted-Cross-Domain-Policies: none
+X-Shopid: 13264473
+Content-Security-Policy: frame-ancestors *; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9ce316bd-17cc-4518-99fb-b446a57af574
+Set-Cookie: __cfduid=d0159271ba8f8209082a8674c8a8841d61565274326; expires=Fri, 07-Aug-20 14:25:26 GMT; path=/; domain=.stockroom.shopify.com; HttpOnly _shopify_y=051af365-2f29-4531-914b-eb524781b340; path=/; expires=Sun, 08 Aug 2021 02:03:51 -0000 cart_currency=USD; path=/; expires=Thu, 22 Aug 2019 14:25:27 -0000 _orig_referrer=https%3A%2F%2Fstore.shopify.com%2F; Expires=Thu, 22-Aug-19 14:25:27 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:25:27 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:25:27 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:25:27 -0000; HttpOnly
+X-Cache: hit, server
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9ce316bd-17cc-4518-99fb-b446a57af574
+Date: Thu, 08 Aug 2019 14:25:27 GMT
+Etag: cacheable:15f6bc2e99d8109be5df65e72fe80315
+X-Alternate-Cache-Key: cacheable:d16ed283fd7a9d24b36cf070d7d06451
+Server: cloudflare
+X-Sorting-Hat-Podid: 55
+X-Sorting-Hat-Shopid: 13264473
+X-Shardid: 55
+Strict-Transport-Security: max-age=7889238
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8

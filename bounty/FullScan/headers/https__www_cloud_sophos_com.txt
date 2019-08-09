@@ -1,0 +1,15 @@
+200 
+Server: -
+X-Frame-Options: DENY
+Content-Language: en-US
+Content-Security-Policy: frame-ancestors 'none'
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 07 Aug 2019 11:53:32 GMT
+Public-Key-Pins: pin-sha256="JBnHTGEpBFfw06YuLmYFcSB/DDbQrtL/UVqoqUmc2o0="; max-age=5184000; includeSubDomains
+Set-Cookie: SESSION=5f474f01-83c6-4196-9108-1b60984bd935; Domain=sophos.com; Path=/; HttpOnly
+Cache-Control: no-store,no-cache,must-revalidate,max-age=0;
+Strict-Transport-Security: max-age=31536000
+Content-Length: 5850
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1

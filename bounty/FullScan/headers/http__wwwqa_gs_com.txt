@@ -1,0 +1,12 @@
+200 OK
+Content-Type: text/html
+Vary: Accept-Encoding
+Expires: Thu, 08 Aug 2019 07:33:42 GMT
+Etag: "c780-58f8e250119a7"
+X-Akamai-Transformed: 9 45367 0 pmb=mRUM,3
+Cache-Control: max-age=788
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Server: Apache
+Server-Timing: edge; dur=10 cdn-cache; desc=HIT
+Date: Thu, 08 Aug 2019 07:20:34 GMT

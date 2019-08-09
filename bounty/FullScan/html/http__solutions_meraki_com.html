@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Cisco Meraki - Explore apps for Meraki products">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link rel="canonical" href="https://apps.meraki.io"><title>Cisco Meraki &#8211; Explore apps for Meraki products</title>
+<script type='text/javascript'>function ctSetCookie(c_name, value, def_value){document.cookie = c_name + '=' + escape(value) + '; path=/';}ctSetCookie('ct_checkjs', '1259607814', '0');</script><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Cisco Meraki &raquo; Feed" href="https://apps.meraki.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Cisco Meraki &raquo; Comments Feed" href="https://apps.meraki.io/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/apps.meraki.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://apps.meraki.io/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bp-parent-css-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/buddypress/css/buddypress.css?ver=4.1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://apps.meraki.io/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fau-admin-bar-style-css'  href='https://apps.meraki.io/wp-content/plugins/oc-plugin-admin-ui/css/fau_styles_adminbar_front.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-styles-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/style.css?ver=1532973473' type='text/css' media='all' />
+<style id='parent-styles-inline-css' type='text/css'>
+.section-hero{background-repeat:no-repeat;background-attachment:scroll}
+</style>
+<link rel='stylesheet' id='open-sans-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='toastr-css'  href='https://apps.meraki.io/wp-content/plugins/oc-plugin-developer/assets/css/toastr.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/bootstrap/css/bootstrap.min.css?ver=4.0.0-alpha.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ocmarketplace-styles-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/css/oc-marketplace.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='stylish-support-style-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/style.css?ver=1560515127' type='text/css' media='all' />
+<style id='stylish-support-style-inline-css' type='text/css'>
+#content-title{color:#888}.btn-primary.focus,.btn-primary:focus{-webkit-box-shadow:0 0 0 2px rgba(103,179,70,0.5);box-shadow:0 0 0 2px rgba(103,179,70,0.5)}
+</style>
+<link rel='stylesheet' id='kirki-styles-stylish-support-css'  href='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/inc/customizer/kirki/assets/css/kirki-styles.css?ver=3.0.22' type='text/css' media='all' />
+<style id='kirki-styles-stylish-support-inline-css' type='text/css'>
+.site-header, .sticky-wrapper{background-color:#282b30;}.site-branding a, .site-description, .main-navigation ul.menu a, .menu-toggle, .main-navigation ul.menu a:focus, .main-navigation ul.menu .menu-item:focus > a{color:#ffffff;}.site-branding a:hover, .main-navigation ul.menu a:hover, .main-navigation ul.menu .menu-item:hover > a, .main-navigation ul.menu .current-menu-item > a, .main-navigation ul.menu li.current_page_item > a, .main-navigation ul.menu li.current-menu-item > a, .main-navigation ul.menu li.current-page-ancestor > a, .main-navigation ul.menu li.current-menu-ancestor > a{color:#ffffff;}.main-navigation ul.menu .current-menu-item > a, .main-navigation ul.menu li.current_page_item > a, .main-navigation ul.menu li.current-menu-item > a, .main-navigation ul.menu > .menu-item > a:hover{border-color:#ffffff;}.site-footer{background-color:#282b30;}.site-footer p{color:#b7b7b7;}.site-footer a{color:#b7b7b7;}.site-footer a:hover{color:#ffffff;}body{background-color:#ffffff;color:#7a7a7a;font-family:ProximaNovaRegular, sans-serif;font-size:1rem;font-weight:400;line-height:1.5;}a{color:#67b346;}a:hover, a:focus{color:#888888;}h1, h2, h3, h4, h5, h6{color:#888888;}.btn-primary, .btn-primary.disabled, .btn-primary:disabled{background-color:#67b346;border-color:#67b346;color:#fff;}.btn-primary.focus, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .btn-primary:hover:not(.disabled):not(:disabled){background-color:#67b346;border-color:#67b346;color:#fff;}.btn-secondary, .btn-secondary.disabled, .btn-secondary:disabled{background-color:#fff;border-color:#ccc;color:#292b2c;}.btn-secondary.focus, .btn-secondary:focus, .btn-secondary.active, .btn-secondary:active, .btn-secondary:hover:not(.disabled):not(:disabled){background-color:#e6e6e6;border-color:#adadad;color:#292b2c;}h1,.h1{font-family:ProximaNovaXBold, sans-serif;font-size:2rem;font-weight:700;line-height:1.25;}h2,.h2{font-family:ProximaNovaThin, sans-serif;font-size:1.35rem;font-weight:400;line-height:1.25;}h3,.h3{font-family:ProximaNovaRegular, sans-serif;font-size:1.6rem;font-weight:400;line-height:1.25;}h4,.h4{font-family:ProximaNovaRegular, sans-serif;font-size:1.05rem;font-weight:700;line-height:1.25;}h5,.h5{font-family:ProximaNovaRegular, sans-serif;font-size:1.25rem;font-weight:400;line-height:1.25;}h6,.h6{font-family:ProximaNovaRegular, sans-serif;font-size:1rem;font-weight:400;line-height:1.25;}pre, code{font-family:Monaco,"Lucida Sans Typewriter","Lucida Typewriter","Courier New",Courier,monospace;font-size:0.875rem;font-weight:400;line-height:1.5;}.ocdeveloper-pages .main-title{background-color:#f7f7f7;border-color:#e5e5e5;}.ocdeveloper-pages .breadcrumb, .ocdeveloper-pages .breadcrumb a{color:#777777;}.add-app .action-title{color:#fff;}.add-app .action-container{background-color:#404040;}.add-app a.btn{color:#ffffff;}.add-app a.btn:hover{background-color:#ffffff;color:#54555a;}.my-apps .action-title{color:#4a4a4a;}#ocdeveloper-apps .card{background-color:#fff;}#ocdeveloper-apps .card-overlay .btn-bg{background-color:#fff;color:#4a4a4a;border-color:#fff;}.card-status.draft, .card-status.inDevelopment{background-color:#9b9b9b;}.card-status.pending, .card-status.inReview{background-color:#5f7bbd;}.card-status.approved{background-color:#66b245;}.card-status.suspended{background-color:#eec820;}.card-status.rejected{background-color:#ff5b5b;}.ocdeveloper-pages .modal-content{background-color:#fff;}.site-header{border-top-color:#282b30;}.section-hero h1{color:#fff;}.hero-subtitle{color:#fff;}.section-hero{background-color:#282b30;-webkit-background-size:Original;-moz-background-size:Original;-ms-background-size:Original;-o-background-size:Original;background-size:Original;}#integrationsearch, .search-marketplace .input-group-addon .fa{color:#4a4a4a;}#integrationsearch, .search-marketplace .input-group-addon.left{border-color:#4a4a4a;}.category-title a{color:#171717;}.category-title a:hover{color:#67b346;}#ocmarketplace-apps .sidebar .heading{color:#171717;}#ocmarketplace-apps .sidebar ul li a{color:#4a4a4a;}.product-card h3 a, #ocmarketplace-apps.archive .content .card h3 a{color:#000000;}.product-card p, #ocmarketplace-apps.archive .content .card p{color:#878787;}.product-card, .popdown, #ocmarketplace-apps.archive .content .card{background-color:#ffffff;}.product-card, #ocmarketplace-apps.archive .content .card{border-color:#ffffff;}[data-popup].active .product-card:after{color:#ffffff;}.product-card:hover{background-color:#ffffff;}[data-popup].active .product-card:hover:after{color:#ffffff;}#ocmarketplace-apps.archive .content .card{background-color:#fff;border-color:#fff;}#ocmarketplace-apps.archive .content .card:hover{background-color:#f2f2f6;border-color:#f2f2f6;}#ocmarketplace-app-detail .section-hero{background-color:#282b30;}#ocmarketplace-app-detail .section-hero .hero-title{color:#fff;}#ocmarketplace-app-detail .section-hero p{color:#fff;}#ocmarketplace-app-detail .section-hero .badge{color:#858b92;background-color:#fff;}#ocmarketplace-app-detail .container-tab, #ocmarketplace-app-detail .nav-tabs .nav-link.active{background-color:#ffffff;}#ocmarketplace-app-detail .nav-tabs .nav-link, #ocmarketplace-app-detail .nav-tabs .nav-link:focus, #ocmarketplace-app-detail .nav-tabs .nav-link:hover, #ocmarketplace-app-detail .nav-tabs .nav-link.active{color:#444;}#ocmarketplace-app-detail .nav-tabs .btn-demo{background-color:#67b346;}#ocmarketplace-app-detail .well{background-color:#fff;}#ocmarketplace-app-detail .tab-content, .well h3, #accordion .card-header a{color:#444;}@media screen and (min-width: 992px){.main-navigation ul.menu .sub-menu{background-color:#ffffff;}.main-navigation ul.menu > li > ul:before{border-color:transparent transparent #ffffff transparent;}.main-navigation ul.menu .menu-item:hover > .sub-menu a, .main-navigation ul.menu .menu-item.focus > .sub-menu a{color:#666666;}.main-navigation ul.menu .menu-item:hover > .sub-menu a{border-color:#f7f7f7;}.main-navigation ul.menu .menu-item:hover > .sub-menu a:hover{color:#666666;}.main-navigation ul.menu .sub-menu a:hover, .main-navigation ul.menu .sub-menu a:focus{background-color:#f7f7f7;}}
+</style>
+<script type='text/javascript' src='https://apps.meraki.io/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=4.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=4.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=4.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js?ver=4.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js?ver=4.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Favorite","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Remove Favorite","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/buddypress/bp-templates/bp-legacy/js/buddypress.min.js?ver=4.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.js?ver=5.112'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctNocache = {"ajaxurl":"https:\/\/apps.meraki.io\/wp-admin\/admin-ajax.php","info_flag":"","set_cookies_flag":"","blog_home":"https:\/\/apps.meraki.io\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk_nocache.js?ver=5.112'></script>
+<link rel='https://api.w.org/' href='https://apps.meraki.io/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://apps.meraki.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://apps.meraki.io/wp-includes/wlwmanifest.xml" /> 
+
+	<script type="text/javascript">var ajaxurl = 'https://apps.meraki.io/wp-admin/admin-ajax.php';</script>
+
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-114338265-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+	        <!--ocAdmin Custom CSS Code-->
+                    <style>
+  body.login #nav a:first-child{
+      display:none
+  }
+</style>                <!--/ocAdmin Custom CSS Code-->
+        <link rel="icon" href="https://apps.meraki.io/wp-content/uploads/2018/02/Cisco-Meraki-icon-200x200-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://apps.meraki.io/wp-content/uploads/2018/02/Cisco-Meraki-icon-200x200.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://apps.meraki.io/wp-content/uploads/2018/02/Cisco-Meraki-icon-200x200.png" />
+<meta name="msapplication-TileImage" content="https://apps.meraki.io/wp-content/uploads/2018/02/Cisco-Meraki-icon-200x200.png" />
+</head>
+
+<body class="home-page bp-legacy home blog wp-custom-logo hfeed full-width no-js">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+
+		<div class="container">
+			<div class="site-branding">
+						<a href="/" class="custom-logo-link" rel="home" itemprop="url"><img src="https://apps.meraki.io/wp-content/uploads/2019/03/MerakiMarketplace-Logo-1.png" class="custom-logo" alt="Cisco Meraki" itemprop="logo"></a>
+							<h1 class="site-title"><a href="/" rel="home">Cisco Meraki</a></h1>
+									<p class="site-description">Explore apps for Meraki products</p>
+							</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+				<div class="container"><ul id="primary-menu" class="menu"><li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://apps.meraki.io/apps/">Browse</a></li>
+<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-292"><a href="https://apps.meraki.io/overview/">Partners<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-293"><a href="https://apps.meraki.io/overview/">Program Overview</a></li>
+	<li id="menu-item-295" class="bp-menu bp-login-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-295"><a href="https://apps.meraki.io/wp-login.php?redirect_to=https%3A%2F%2Fapps.meraki.io%2F">Partner Login</a></li>
+</ul>
+</li>
+<li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-296"><a target="_blank" rel="noopener noreferrer" href="https://create.meraki.io">Developers</a></li>
+						</ul></div>			</nav><!-- #site-navigation -->
+
+		</div><!-- .container -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+<div id="ocmarketplace-apps">
+        <div class="section-hero">
+		<div class="container">
+                			<h1 class="hero-title">Explore apps for Meraki products</h1>
+    			<p class="hero-subtitle">Track assets, measure behavior, build marketing campaigns, and more.</p>                                        <form accept-charset="UTF-8" action="https://apps.meraki.io/apps/" class="search-form search-marketplace" method="get">
+                    <div class="input-group">
+                        <div class="left input-group-addon"><i class="search-icon fa fa-search"></i></div>
+                        <input value="" type="text" name="query" placeholder="Search for apps" aria-label="Search" id="integrationsearch" class="form-control search">
+                        <div class="right input-group-addon"><button type="submit" class="btn btn-primary">Search</button></div>
+                    </div>
+                </form>
+                    </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <!-- sidebar -->
+                <div class="col-md-3 hidden-md-down">
+                    <div class="sidebar">
+											<h4 class="heading">Collections</h4>
+						<ul class="collection-lists">
+													<li><a class="collection-link" href="https://apps.meraki.io/apps/?collection=Browse+All+Apps">Browse All Apps</a></li>
+														<li><a class="collection-link" href="https://apps.meraki.io/apps/?collection=Featured">Featured</a></li>
+													</ul>
+					                                                <h4 class="heading">Industries</h4>
+                            <ul class="industries-lists">
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Architecture+%26+Construction">Architecture &amp; Construction</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Event+Venues">Event Venues</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Government">Government</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Healthcare">Healthcare</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Higher+Education">Higher Education</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Hospitality+%26+Tourism">Hospitality &amp; Tourism</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=K-12+Education">K-12 Education</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Manufacturing">Manufacturing</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Retail">Retail</a></li>
+                                                                <li><a class="industries-link" href="https://apps.meraki.io/apps/?industries=Service+Provider">Service Provider</a></li>
+                                                        </ul>
+                                                                </div>
+                </div><!-- end sidebar -->
+
+                <div class="col-sm-12 col-md-9">
+                    <div class="main-content apps-lists">
+                                                    <section class="products hidden">
+                                    <div class="container">
+                                        <h2 id="featured" class="category-title"><a href="https://apps.meraki.io/apps/?collection=Featured">Featured</a></h2>
+                                                                                                                        <div class="product-slider">
+                                            <div class="row">
+                                                <div class="arrow"></div>
+                                                                                                <div class="col item">
+                                                    <div class="product-card">
+                                                        <div class="image-wrapper">
+                                                                                                                        <img src="//d3grfap2l5ikgv.cloudfront.net/59dd5762ca753d3e42491710/public/5cbf2ea36eb20e7b6b03890b.jpg" class="product-logo" alt="">
+                                                                                                                    </div>
+                                                        <div class="product-details">
+                                                            <h3><a href="https://apps.meraki.io/details/pagerduty-platform-for-action">PagerDuty Platform for Action</a></h3>
+                                                            <p class="category">Network Management</p>
+                                                            <p class="summary">The platform for real-time operations empowers over 10,500 organizations globally to deliver excellent customer experiences and accelerate innovation</p>
+                                                            <a href="https://apps.meraki.io/details/pagerduty-platform-for-action" class="detail-link">Learn More <i class="fa fa-angle-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            </div>
+                                        </div>
+                                                                            </div>
+                                </section>
+                                                        <section class="products">
+                                <div class="container">
+                                    <h2 id="category" class="heading">Categories</h2>
+                                    <div class="row">
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Asset+Tracking">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/asset-tracking.png" class="product-logo" alt="">
+                                                                                                <h3>Asset Tracking</h3>
+                                                <p class="summary">Track physical assets, either by scanning barcode labels attached to the assets or by using GPS, BLE or RFID tags that broadcast their location.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Footfall+Analytics">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/footfall-analytics.png" class="product-logo" alt="">
+                                                                                                <h3>Footfall Analytics</h3>
+                                                <p class="summary">Use the wireless network to gain deep insight into how customers behave in a physical space, without customers downloading a mobile app.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Guest+WiFi">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/guest-wifi.png" class="product-logo" alt="">
+                                                                                                <h3>Guest WiFi</h3>
+                                                <p class="summary">Easily and securely grant WiFi access to visitors on a landing page customized with your brand and content.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Identity+Services">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/identity-analytics.png" class="product-logo" alt="">
+                                                                                                <h3>Identity Services</h3>
+                                                <p class="summary">Associate user rights and restrictions with established identities providing simplified access to applications, networks, and systems for individuals or groups.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=IoT+Security">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/IoT%20Security.png" class="product-logo" alt="">
+                                                                                                <h3>IoT Security</h3>
+                                                <p class="summary">Safeguard all IoT devices connected at the edge protecting the entire network from emerging vulnerabilities. </p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Network+Management">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/network-automation.png" class="product-logo" alt="">
+                                                                                                <h3>Network Management</h3>
+                                                <p class="summary">Automate the configuration, deployment, monitoring and management of devices in a network.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Proximity+Marketing">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/proximity-marketing.png" class="product-logo" alt="">
+                                                                                                <h3>Proximity Marketing</h3>
+                                                <p class="summary">Deliver localized, relevant offers to your customers at the right place, and time using your WiFi network.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Point+Of+Sale">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/point-of-sale.png" class="product-logo" alt="">
+                                                                                                <h3>Point Of Sale</h3>
+                                                <p class="summary">Discover complete plug-and-play solutions that is secure, PCI compliant, and provides added benefits such as guest wifi, visitor insights and omni-channel marketing capabilities.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Online+to+Offline+Marketing">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/online-offline-marketing.png" class="product-logo" alt="">
+                                                                                                <h3>Online to Offline Marketing</h3>
+                                                <p class="summary">Integrate your digital and physical marketing channels so that your clients and customers receive a consistent and customized experience no matter where you meet them.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Video+Analytics">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/video-analytics.png" class="product-logo" alt="">
+                                                                                                <h3>Video Analytics</h3>
+                                                <p class="summary">Analyze data sourced from Meraki Video Cameras to bring new insights into physical spaces. Instantly derive new business insights into people counting, queue length monitoring, entry &amp; exit behavior and deeper integration with physical security solutions.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                            <div class="col-sm-6 item">
+                                            <a href="https://apps.meraki.io/apps/?category=Wayfinding+%26+Mapping">
+                                            <div class="product-card">
+                                                                                                <img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/wayfinding-mapping.png" class="product-logo" alt="">
+                                                                                                <h3>Wayfinding &amp; Mapping</h3>
+                                                <p class="summary">Map physical spaces to provide directions and context that helps users find their way through and navigate to key locations in your space.</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                                                        </div>
+                                </div>
+                            </section>
+                                    			</div>
+        		</div>
+            </div><!--.row-->
+        </div><!--.container-->
+	</div><!--.content-->
+    <div class="create-own-apps">
+        <img class="element1" src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/bg_elements.svg"/>
+        <div class="container">
+            <div class="row">
+                <div class="create-apps col-3"><img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/create-apps.svg"/></div>
+                <div class="col-9">
+                    <h6>Create Your Own Apps</h6>
+                    <p>Meraki provides easy to use and comprehensive APIs connected with our highly programmable, cloud-based network architecture. Our APIs are&nbsp;free to use and easy to integrate into other applications. Check out our Developer Hub to learn more about creating your own&nbsp;custom solutions.&nbsp;</p>
+                    <a class="btn btn-primary mt-4" href="http://create.meraki.io/">Visit Developer Hub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="site-info col-sm-3">
+					<div class="footer-logo"><img src="https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/img/logo-footer.png"/></div>
+					<p>&#x000A9;&nbsp;2019 <a href="https://apps.meraki.io">Cisco Meraki Solution Architectures</a></p>
+				</div><!-- .site-info -->
+				<nav id="footer-navigation" class="footer-navigation col-sm-6" role="navigation">
+					<div class="container"><ul id="footer-menu" class="menu"><li id="menu-item-310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-310"><a target="_blank" rel="noopener noreferrer" href="https://meraki.cisco.com">Cisco Meraki</a></li>
+<li id="menu-item-311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-311"><a target="_blank" rel="noopener noreferrer" href="https://meraki.cisco.com/support/#policies:tou">Terms of Service</a></li>
+<li id="menu-item-312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-312"><a target="_blank" rel="noopener noreferrer" href="https://meraki.cisco.com/support/#policies:privacy">Privary Policy</a></li>
+</ul></div>				</nav>
+				<div class="col-sm-2">
+					<a href="javascript:void(0);" class="btn btn-make-wish" data-toggle="modal" data-target="#make-a-wish">Make a Wish</a>
+				</div>
+			</div>
+		</div><!-- .container -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div class="modal fade modal-make-a-wish" id="make-a-wish">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title">Make a Wish</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body">
+				<div role="form" class="wpcf7" id="wpcf7-f120-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/#wpcf7-f120-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="120" />
+<input type="hidden" name="_wpcf7_version" value="5.1.1" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f120-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="g-recaptcha-response" value="" />
+</div>
+<div class="form-group"><label>Share a suggestion or an idea with us!</label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false"></textarea></span> </div>
+<div class="form-group"><label> Your Email (required) </label><br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" /></span></div>
+<div class="form-group hidden"> <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></div>
+<input type='hidden' id='ct_checkjs_cf7_addfa9b7e234254d26e9c7f2af1005cb' name='ct_checkjs_cf7' value='0' /><script type='text/javascript'>setTimeout(function(){var ct_input_name = 'ct_checkjs_cf7_addfa9b7e234254d26e9c7f2af1005cb';if (document.getElementById(ct_input_name) !== null) {var ct_input_value = document.getElementById(ct_input_name).value;document.getElementById(ct_input_name).value = document.getElementById(ct_input_name).value.replace(ct_input_value, '1259607814');}}, 1000);</script><div class="wpcf7-response-output wpcf7-display-none"></div></form></div>			</div>
+			<div class="modal-form modal-footer pull-left">
+				<button type="submit" class="btn btn-primary">Send</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+jQuery(function($){
+	$('#make-a-wish').on('show.bs.modal', function (event) {
+		modal = $(this);
+		$(this).find('.wpcf7-submit').addClass('hidden');
+		$(this).find('.wpcf7-submit').parent().addClass('hidden');
+		$(this).find(".modal-footer button[type=submit]").on('click', function(){
+			modal.find(".wpcf7-submit").parent().removeClass('hidden');
+			modal.find(".wpcf7-submit").trigger('click');
+		});
+		$(this).find('.wpcf7-response-output').hide();
+	});
+});
+</script>
+
+        <!--ocAdmin Custom Script Code-->
+                    <script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>                <!--/ocAdmin Custom Script Code-->
+        <script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/apps.meraki.io\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/plugins/oc-plugin-developer/assets/js/toastr.min.js?ver=2.1.4'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/js/fitvids.min.js?ver=1.1'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-cisco/assets/js/slick.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/js/tether/tether.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/bootstrap/js/bootstrap.min.js?ver=4.0.0-alpha.5'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/js/bxslider.js?ver=4.2.1'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/js/magnific-popup.min.js?ver=1.1.0'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-content/themes/oc-theme-marketplace-base/assets/js/stylish-support.js?ver=1538490627'></script>
+<script type='text/javascript' src='https://apps.meraki.io/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js?ver=3.0.22'></script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+var slider;
+jQuery(function($){
+    if ($.fn.slick) {
+        //for slick slider
+        $('.product-slider > .row').each(function(idx, item) {
+            var carouselId = "carousel" + idx;
+            this.id = carouselId;
+            $(this).slick({
+                slide: "#" + carouselId + " .item",
+                appendArrows: "#" + carouselId + " .arrow",
+                prevArrow: '<a href="#" class="prev"><i class="fa fa-angle-left"></i></a>',
+                nextArrow: '<a href="#" class="next"><i class="fa fa-angle-right"></i></a>',
+                infinite: true,
+                autoplay: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $(this).parents('.products.hidden').removeClass('hidden');
+        });
+    }
+
+    //for second popup if one is already open
+    $('.hero-categories a').on('click', function(e) {
+        $("html, body").animate({
+            scrollTop: $($(this).attr('href')).offset().top - 20
+        }, 800);
+
+		return false;
+    });
+});
+</script>

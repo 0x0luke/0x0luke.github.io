@@ -1,0 +1,15 @@
+200 OK
+X-Frame-Options: DENY
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+X-Powered-By: Cupcakes
+X-Ua-Compatible: IE=edge
+Retry-Count: 0
+Cache-Control: no-cache, no-store, must-revalidate
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Server: Microsoft-IIS/8.5
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 09:10:22 GMT
+X-Xss-Protection: 1; mode=block
+Expires: Thu, 08 Aug 2019 09:10:22 GMT
+X-Content-Type-Options: nosniff

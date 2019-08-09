@@ -1,0 +1,16 @@
+200 OK
+X-Connection-Hash: 22f2e24ff508841ce9744081bfc4812f
+X-Xss-Protection: 0
+Retry-Count: 0
+Strict-Transport-Security: max-age=631138519
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://s1259914507.t.eloqua.com; font-src 'self' https://*.twimg.com https://*.twitter.com data:; frame-src 'self' https://twitter.com https://*.twitter.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://www.google-analytics.com https://cdn.cms-twdigitalassets.com https://s1259914507.t.eloqua.com data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' 'sha256-fQA5TUUFOgZ9EqMDjFVCpyabQhMDT+xAqFnjFxdGfbc=' https://*.twimg.com https://*.twitter.com https://static.ads-twitter.com; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self'
+Expires: Thu, 08 Aug 2019 14:57:52 GMT
+Server: tsa_f
+Set-Cookie: personalization_id="v1_P4JsPtyJbkDOAWwJF3i0Pw=="; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:57:52 GMT; Path=/; Domain=.twitter.com guest_id=v1%3A156527627244412444; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:57:52 GMT; Path=/; Domain=.twitter.com
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+X-Response-Time: 111
+X-Frame-Options: SAMEORIGIN
+Age: 55417
+Content-Type: text/html
+Date: Thu, 08 Aug 2019 14:57:52 GMT

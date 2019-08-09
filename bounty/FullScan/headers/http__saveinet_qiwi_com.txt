@@ -1,0 +1,15 @@
+200 OK
+Server: nginx
+Accept-Ranges: bytes
+Strict-Transport: max-age=31536000
+Date: Wed, 07 Aug 2019 04:05:24 GMT
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff nosniff
+Etag: "5d36fe60-13dd"
+Strict-Transport-Security: max-age=63072000; includeSubdomains max-age=31536000
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html
+Content-Length: 5085
+Last-Modified: Tue, 23 Jul 2019 12:32:32 GMT

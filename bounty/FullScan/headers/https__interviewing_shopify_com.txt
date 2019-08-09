@@ -1,0 +1,27 @@
+200 OK
+Content-Security-Policy: frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d775a8ba-2886-48d4-8bc8-e0d90100bb80
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Retry-Count: 0
+X-Sorting-Hat-Shopid: 8140961
+X-Shopid: 8140961
+X-Cache: hit, server
+X-Request-Id: d775a8ba-2886-48d4-8bc8-e0d90100bb80
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Shardid: 55
+Strict-Transport-Security: max-age=7889238
+X-Alternate-Cache-Key: cacheable:2031bfa6fc09831346d9bc808b0d7c14
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Sorting-Hat-Podid: 55
+Etag: cacheable:f048bf5de06f62376a8f12c9677c03b6
+X-Dc: gcp-us-east1,gcp-us-east1
+Set-Cookie: __cfduid=deadd77bb299dad4a3d0445acdc3cfd401565274319; expires=Fri, 07-Aug-20 14:25:19 GMT; path=/; domain=.interviewing.shopify.com; HttpOnly _shopify_y=d655d5e2-bd6c-417e-a614-cda60c646525; path=/; expires=Sun, 08 Aug 2021 02:03:44 -0000 cart_currency=CAD; path=/; expires=Thu, 22 Aug 2019 14:25:20 -0000 _orig_referrer=; Expires=Thu, 22-Aug-19 14:25:20 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:25:20 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:25:20 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:25:20 -0000; HttpOnly
+Content-Language: en
+X-Shopify-Stage: production
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d775a8ba-2886-48d4-8bc8-e0d90100bb80
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Cf-Ray: 503228b3a8fe362d-MAN
+Date: Thu, 08 Aug 2019 14:25:20 GMT
+Content-Type: text/html; charset=utf-8

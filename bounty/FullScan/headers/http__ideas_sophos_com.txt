@@ -1,0 +1,19 @@
+200 OK
+Date: Thu, 08 Aug 2019 07:52:15 GMT
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: _rf=0; path=/; Secure _uvsid=c75cfdb26a48a9c787b7dc77644387e9; path=/; HttpOnly; Secure
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 502fe8e58fdf3681-MAN
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Download-Options: noopen
+Referrer-Policy: strict-origin-when-cross-origin
+Etag: W/"f14347b5cfcd9a2f7ecefd91749a2d0f"
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+Cache-Control: private
+X-Request-Id: 63be491557bf9f090847e8d0e4177806

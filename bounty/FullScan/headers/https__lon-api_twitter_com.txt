@@ -1,0 +1,11 @@
+404 Not Found
+Retry-Count: 0
+Content-Security-Policy: default-src 'none'; img-src https://abs.twimg.com https://ssl.google-analytics.com http://www.google-analytics.com; script-src https://abs.twimg.com https://ssl.google-analytics.com https://ajax.googleapis.com http://www.google-analytics.com about:; style-src https://abs.twimg.com https://fonts.googleapis.com 'unsafe-inline'; font-src https://abs.twimg.com https://twitter.com; connect-src 'none'; object-src 'none'; media-src 'none'; frame-src 'none'; report-uri https://twitter.com/i/csp_report?a=ORTGK%3D%3D%3D&ro=false
+Content-Type: text/html;charset=utf-8
+Server: tsa_f
+Set-Cookie: personalization_id="v1_gGQ37SpOiVatVuvLbBpCyg=="; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:34 GMT; Path=/; Domain=.twitter.com guest_id=v1%3A156527631481495815; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:34 GMT; Path=/; Domain=.twitter.com
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: 077f38aa7922751285242e07dc7e0ecc
+X-Response-Time: 108
+Date: Thu, 08 Aug 2019 14:58:34 GMT
+X-Xss-Protection: 0

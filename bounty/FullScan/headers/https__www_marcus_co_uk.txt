@@ -1,0 +1,18 @@
+200 
+Age: 8068
+Cache-Control: public, max-age=30
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+Strict-Transport-Security: max-age=63072000; includeSubdomains;
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Expires: Wed, 07 Aug 2019 07:47:51 GMT
+Vary: Accept-Encoding
+Date: Wed, 07 Aug 2019 07:47:21 GMT
+X-Request-Id: XUpadeMKSnJF3xnfCBOtMAAAAAc
+Content-Security-Policy: default-src 'none'; connect-src 'self' https://smetrics.marcus.com https://api.marcus.co.uk https://trackerapi.trustarc.com https://api.addressnow.co.uk https://dpm.demdex.net https://c.go-mpulse.net https://s.go-mpulse.net https://*.mpstat.us https://*.akstat.io; font-src    'self' https://consent.trustarc.com data:;frame-ancestors 'self'; frame-src   'self' https://v.marcus.co.uk https://consent-pref.trustarc.com https://v.marcus.co.uk https://assets.adobedtm.com https://8818527.fls.doubleclick.net https://gsmosaic.demdex.net https://www.facebook.com; img-src     'self' https://www.google.com https://www.google.co.uk https://googleads.g.doubleclick.net https://googleads4.g.doubleclick.net https://pagead2.googlesyndication.com https://t.co https://consent-pref.trustarc.com https://bat.bing.com https://www.googleadservices.com https://www.facebook.com https://consent.trustarc.com https://v.marcus.co.uk https://adservice.google.com https://smetrics.marcus.com https://*.online-metrix.net data:; manifest-src 'self'; object-src  'self'; script-src  'self' https://googleads.g.doubleclick.net https://ad.doubleclick.net https://www.googletagservices.com https://www.googleadservices.com https://static.ads-twitter.com https://analytics.twitter.com https://connect.facebook.net https://www.googletagmanager.com https://consent.trustarc.com https://api.addressnow.co.uk https://assets.adobedtm.com https://v.marcus.co.uk https://bat.bing.com https://*.go-mpulse.net 'unsafe-inline' 'unsafe-eval'; style-src   'self' https://api.addressnow.co.uk 'unsafe-inline';
+Cf-Cache-Status: HIT
+Server: cloudflare
+Cf-Ray: 5027a45d3963bfcf-MAN

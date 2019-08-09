@@ -1,0 +1,15 @@
+200 OK
+X-Connection-Hash: 8e369cabe80e03e59f4b6543cc7492f8
+X-Response-Time: 116
+Age: 55467
+Date: Thu, 08 Aug 2019 14:58:47 GMT
+Expires: Thu, 08 Aug 2019 14:58:47 GMT
+Accept-Ranges: bytes
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=0
+Strict-Transport-Security: max-age=631138519
+Retry-Count: 0
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://*.twitter.com https://api.meetup.com https://s1259914507.t.eloqua.com https://api.company-target.com; font-src 'self' https://*.twimg.com https://*.twitter.com data:; frame-src 'self' https://twitter.com https://*.twitter.com https://www.gstatic.com https://www.google.com https://docs.google.com https://www.youtube.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://www.google-analytics.com https://cdn.cms-twdigitalassets.com https://*.g.doubleclick.net https://www.google.com/pagead/1p-user-list/780419404/ data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' https://*.twimg.com https://*.twitter.com https://www.gstatic.com https://www.google.com https://api.meetup.com https://twitterinc.tt.omtrdc.net https://cdn.tt.omtrdc.net https://static.ads-twitter.com https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self'
+Server: tsa_f
+X-Xss-Protection: 0

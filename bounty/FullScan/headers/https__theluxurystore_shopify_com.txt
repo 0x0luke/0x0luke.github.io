@@ -1,0 +1,19 @@
+404 Not Found
+Server: cloudflare
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a392aec3-1c38-458c-a09d-128943fdc07f
+X-Request-Id: a392aec3-1c38-458c-a09d-128943fdc07f
+Set-Cookie: __cfduid=d6cfb804de216a9b3c4b611ecdea6e95a1565274312; expires=Fri, 07-Aug-20 14:25:12 GMT; path=/; domain=.theluxurystore.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Date: Thu, 08 Aug 2019 14:25:12 GMT
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a392aec3-1c38-458c-a09d-128943fdc07f
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Shopify-Stage: production
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Cf-Ray: 50322886991dd21c-MAN

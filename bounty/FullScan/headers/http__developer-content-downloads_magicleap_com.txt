@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Type: application/xml
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, HEAD
+Access-Control-Max-Age: 86400
+Server: AmazonS3
+Via: 1.1 1b5424f4e08ca48fc35e311bea9e9ff7.cloudfront.net (CloudFront), 1.1 97be960cbcbf2461f0a9deaf29686a85.cloudfront.net (CloudFront)
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 03:58:20 GMT
+X-Amz-Cf-Pop: LHR62-C3 MAN50-C1
+X-Cache: Error from cloudfront
+X-Amz-Cf-Id: 83QOPEb_rQlIgHu1mI9V_wh2Y8BkCS64rpYbtUiQw1S3xOTqaR1EgA==

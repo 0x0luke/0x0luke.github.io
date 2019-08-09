@@ -1,0 +1,24 @@
+200 OK
+Retry-Count: 0
+Set-Cookie: __cfduid=d366a1d8af7d6bbe4f72588a55bb9202e1565160101; expires=Thu, 06-Aug-20 06:41:41 GMT; path=/; domain=.www.xsnet.com; HttpOnly __cfruid=56ffcd49682d291c5db6d1e379703e2212657194-1565160101; path=/; domain=.www.xsnet.com; HttpOnly
+Content-Security-Policy: upgrade-insecure-requests
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script
+X-Hs-Hub-Id: 64787
+Date: Wed, 07 Aug 2019 06:41:41 GMT
+Cache-Control: s-maxage=7200,max-age=5
+Age: 5570
+Edge-Cache-Tag: CT-6129608871,P-64787,L-9231687333,CW-10496413821,CW-9291822677,E-1800826680,E-4747834012,PGS-ALL,SW-3,SD-37
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Powered-By: HubSpot
+X-Trace: 2B81A2B615496B09A8FFDACD56F79866CEE3DBB110000000000000000000
+Cf-Ray: 50274429ad7abfd4-MAN
+Access-Control-Allow-Credentials: false
+Strict-Transport-Security: max-age=0
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Id: 6129608871
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: HIT
+Vary: Accept-Encoding
+X-Hs-Combine-Css: Retry
+X-Hs-Content-Campaign-Id: 6b12e9cb-dcb8-47a4-99d7-bbb9407b0798
+Server: cloudflare

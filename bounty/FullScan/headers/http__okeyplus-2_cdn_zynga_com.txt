@@ -1,0 +1,14 @@
+200 OK
+P3p: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+X-Server-W: Web01
+Content-Type: text/html; charset=utf-8
+Server: nginx
+X-Amz-Cf-Pop: LHR3-C1
+Retry-Count: 0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Id: QCfVYpZLY_iCW4ndxayTvmfJketNc9SJGU3FlwyZkzUIaekcKbVEgA==
+Date: Thu, 08 Aug 2019 08:49:39 GMT
+Via: 1.1 58f040c89bfa807063443a43cdc364af.cloudfront.net (CloudFront)

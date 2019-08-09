@@ -1,0 +1,11 @@
+403 Forbidden
+Access-Control-Allow-Origin: *
+Content-Type: application/xml
+Server: AmazonS3
+X-Amz-Bucket-Region: us-east-1
+X-Cache: Error from cloudfront
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 12:37:53 GMT
+Via: 1.1 a09186728c1bcdf0a561aedd92656804.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: 3vZ777zvoJoRTbA08i0v3OuDJdi-jcoBifbkBG3e44SjfXhsotLU3g==
+X-Amz-Cf-Pop: FRA50-C1

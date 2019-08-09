@@ -1,0 +1,17 @@
+200 OK
+X-Cache: HIT
+X-Timer: S1565182883.371308,VS0,VE0
+Last-Modified: Tue, 06 Aug 2019 15:29:57 GMT
+X-Amz-Meta-Surrogate-Control: max-age=864000
+Date: Wed, 07 Aug 2019 13:01:23 GMT
+Via: 1.1 varnish
+Age: 75415
+X-Cache-Hits: 5
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+X-Served-By: cache-lhr6320-LHR
+Etag: "330f4582bb6a6c854410300e1b6bc5af"
+Retry-Count: 0
+Vary: Accept-Encoding,Fastly-SSL
+X-Amz-Expiration: expiry-date="Fri, 09 Aug 2019 00:00:00 GMT", rule-id="YjJmYjUwNTUtYmE1My00OTNjLTk5ZmUtYmI4YjFhOTFkMjYx"
+Cache-Control: max-age=3600

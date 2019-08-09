@@ -1,0 +1,28 @@
+200 OK
+X-Alternate-Cache-Key: cacheable:d0ecd47681a47218edd3170ff85cbeb4
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Etag: cacheable:8118d7a136094e28c04d7d5c59f15e79
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0
+Content-Security-Policy: frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=7fc81026-26db-488a-b08e-24f87802a4ef
+X-Sorting-Hat-Podid: 55
+Strict-Transport-Security: max-age=7889238
+X-Request-Id: 7fc81026-26db-488a-b08e-24f87802a4ef
+Date: Thu, 08 Aug 2019 14:25:12 GMT
+X-Robots-Tag: nofollow
+X-Sorting-Hat-Shopid: 16414857
+Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:25:12 -0000; secure; HttpOnly _landing_page=%2Fpassword; Expires=Thu, 22-Aug-19 14:25:12 GMT; Path=/; HttpOnly _orig_referrer=https%3A%2F%2Ftashboard.shopify.com%2F; Expires=Thu, 22-Aug-19 14:25:12 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:25:12 -0000; HttpOnly
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=7fc81026-26db-488a-b08e-24f87802a4ef
+X-Shopid: 16414857
+X-Shardid: 55
+Content-Language: en
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Cf-Ray: 50322884ed6ad220-MAN
+Content-Type: text/html; charset=utf-8
+X-Download-Options: noopen
+X-Dc: gcp-us-east1,gcp-us-east1
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+X-Cache: hit, server

@@ -1,0 +1,11 @@
+404 Not Found
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Content-Length: 13
+Set-Cookie: __cfduid=d8c231070531c4abe24bd2bf380b9618e1565276356; expires=Fri, 07-Aug-20 14:59:16 GMT; path=/; domain=.upwork.com; HttpOnly AWSALB=fJHGAP+0ZOt9ez2bdmv+NHrrN4uX/ATVIVrH9xnTYFVWc5dgFWqBGAbrW6cHD9X/0fxXr3oQ54ZmtmMbNDJbghdYazc909QZz/vF6aeGuMYU1Te2uDtLwCLIIRZl; Expires=Thu, 15 Aug 2019 14:59:16 GMT; Path=/ __cfruid=d5c3d587488635cf788cc80561f9695bd1a2a2a0-1565276356; path=/; domain=.upwork.com; HttpOnly
+Server: cloudflare
+Cf-Ray: 50325a6a9844d21c-MAN
+Date: Thu, 08 Aug 2019 14:59:16 GMT
+Content-Type: text/plain; charset=UTF-8

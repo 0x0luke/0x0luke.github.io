@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>Mediaocean</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:6KSPI2ALgMtzXxASBwsAd9uSho7pDHV5DFgmfq8pE6zZln7jOJhCPEziShBw9x8TFxUXXpcJtqN/6VxnscB5pQ==" />
+  <link rel="canonical" href="https://support-na.mediaocean.com/hc/en-us" />
+<link rel="alternate" hreflang="de" href="https://support-na.mediaocean.com/hc/de" />
+<link rel="alternate" hreflang="en" href="https://support-na.mediaocean.com/hc/en-us" />
+<link rel="alternate" hreflang="zh" href="https://support-na.mediaocean.com/hc/zh-cn" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p14.zdassets.com/hc/theming_assets/1900697/7457308/style.css?digest=360328119813" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/1900697/bdf1531ccf13f60258bb9ed010f33057073c22f2.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40942863-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
+<script src="//p5.zdassets.com/hc/theme_assets/1900697/115000226808/ga-1.7.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300,100" rel="stylesheet">
+
+
+<!-- Multiselect Fields -->
+<script src="https://unpkg.com/vue-multiselect@2.0.0/dist/vue-multiselect.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.0.0/dist/vue-multiselect.min.css">
+
+<!-- Custom JS Asset -->
+<script src="//theme.zdassets.com/theme_assets/1900697/4ab6703c0d0acd9d2420a007d66af04e11431a5d.js"></script>
+
+<!-- Custom CSS Asset -->
+<link rel="stylesheet" href="//theme.zdassets.com/theme_assets/1900697/db13a15c54d62a298405b3d2b3fd11b3b70e2e2e.css">
+<!--link type="text/css" rel="stylesheet" href="https://support.mediaocean.com/sc/public/files/css/mstyle.css" media="all"-->
+
+
+<script>
+HC.DC = HC.DC || {};
+
+var dc = {
+  hc_header_search_placeholder: "Search Help Center",
+};
+
+HC.DC = _.extend(HC.DC, dc);
+</script>
+
+
+
+
+
+<script>
+HC.DC = HC.DC || {};
+
+var dc = {
+  // Ticket Fields
+  ticket_field_requester: "Requester",
+  ticket_field_subject: "Subject",
+  ticket_field_status: "Status",
+  ticket_field_account_name: "Account Name",
+  ticket_field_ticket_form: "Ticket Form",
+  ticket_field_client_priority: "Client Priority",
+  ticket_field_mediaocean_severity: "Mediaocean Severity",
+  ticket_field_lumina_advertiser: "Lumina Advertiser",
+  ticket_field_platform: "Platform",
+  ticket_field_media: "Media",
+  ticket_field_application: "Application",
+  ticket_field_program: "Program",
+  ticket_field_component: "Component",
+  ticket_field_created_at: "Created At",
+  ticket_field_solved_date: "Solved Date",
+  ticket_field_scope: "Scope",
+  ticket_field_isolated_sites: "Isolated Sites",
+  ticket_field_support_region: "Region and support team",
+  ticket_field_training_request_region: "Region for Training Request",
+  ticket_field_attendees_count: "No. of attendees",
+  ticket_field_training_recap: "Training Recap",
+  ticket_field_id: "Id",
+  ticket_field_requester: "Requester",
+  ticket_field_subject: "Subject",
+  ticket_field_status: "Status",
+  ticket_field_account_name: "Account Name",
+  ticket_field_project_service_type: "Project Services Type",
+  ticket_field_request_date: "Request Date",
+  ticket_field_demo_delivery_date: "Demo Delivery Date",
+  ticket_field_production_delivery_date: "Production Delivery Date",
+  ticket_field_client_review_status: "Client Review Status",
+  ticket_field_lumina_advertiser: "Lumina Advertiser",
+  ticket_field_solved_date: "Solved Date",
+
+
+  /************ DROPDOWN FIELD OPTIONS *****************/
+
+  // Region
+  field_option_region_united_states: "United States",
+  field_option_region_canada: "Canada",
+  field_option_region_france: "France",
+  field_option_region_germany: "Germany",
+  field_option_region_united_kingdom: "United Kingdom",
+  field_option_region_australia: "Australia",
+
+  // Severity
+  field_option_severity_system_down: "System Down",
+  field_option_severity_critical: "Critical / High",
+  field_option_severity_normal: "Normal/Medium",
+  field_option_severity_low: "Low",
+
+  // Status
+  field_option_status_open: "Open",
+  field_option_status_solved: "Solved",
+  field_option_status_awaiting: "Awaiting Your Reply",
+  field_option_status_fixed: "Fixed - Pending RCA",
+};
+
+HC.DC = _.extend(HC.DC, dc);
+</script>
+  <script type="text/javascript" src="//p14.zdassets.com/hc/theming_assets/1900697/7457308/script.js?digest=360328119813"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div class="header">
+<header class="l-header" role="banner">
+  <div
+    id="stickyNavTest"
+    class="panel-pane pane-panels-mini pane-new-new-main-menu"
+  >
+    <div
+      class="panel-display panel-1col clearfix"
+      id="mini-panel-new_new_main_menu"
+    >
+      <div class="panel-panel panel-col">
+        <div>
+          <div class="panel-pane pane-custom pane-14">
+            <div class="header_tools">
+              <ul class="clearfix">               
+                <!--<li class="twtr icon"><a href="https://twitter.com/teammediaocean" rel="nofollow">Twitter</a></li>
+    <li class="fb icon"><a href="https://www.facebook.com/team.mediaocean" rel="nofollow">Facebook</a></li>
+    <li class="link icon"><a href="http://www.linkedin.com/company/mediaocean" rel="nofollow">LinkedIn</a></li>
+          <li class="inst icon"><a href="http://instagram.com/teammediaocean" rel="nofollow">Instagram</a></li>
+          <li class="yt icon"><a href="https://www.youtube.com/channel/UC6yyS7nedWwYlbMLkYjI_VA" rel="nofollow">Youtube</a></li>-->
+                <li class="contact">
+                  <a
+                    href="https://www.mediaocean.com/contact-us"
+                    onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'Contact']);"
+                    >Contact</a
+                  >
+                </li>
+                <li class="region">
+                  <ul class="clearfix">
+                    <li>
+                      <a
+                        class="region_us"
+                        href="/"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'US']);"
+                        >United States</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_can"
+                        href="https://www.mediaocean.com/ca"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'CA EN']);"
+                        rel="nofollow"
+                        >Canada</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_fr"
+                        href="https://www.mediaocean.com/fr"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'FR']);"
+                        rel="nofollow"
+                        >France</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_fr"
+                        href="https://www.mediaocean.com/fr/en"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'FR EN']);"
+                        rel="nofollow"
+                        >France (EN)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_ge"
+                        href="https://www.mediaocean.com/de"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'DE']);"
+                        rel="nofollow"
+                        >Germany</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_ge"
+                        href="https://www.mediaocean.com/de/en"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'DE EN']);"
+                        rel="nofollow"
+                        >Germany (EN)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_uk"
+                        href="https://www.mediaocean.com/uk"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'UK &amp; Ireland']);"
+                        rel="nofollow"
+                        >UK &amp; Ireland</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="region_aus"
+                        href="https://www.mediaocean.com/au"
+                        onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'Australia']);"
+                        rel="nofollow"
+                        >Australia</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-pane pane-block pane-superfish-1">
+            <table class="menuInclosing">
+              <tbody>
+                <tr>
+                  <td class="imageMenu1">
+                    <div class="imageMO">
+                      <span class="surroundingSpan"
+                        ><a href="/" rel="home" id="logo" title="Home"
+                          ><img
+                            src="https://www.mediaocean.com/sites/mediaocean.com/files/wave-topmenu.png"
+                            alt="Home"/></a
+                      ></span>
+                    </div>
+                  </td>
+                  <td align="center">
+                    <ul                     
+                      class="menu sf-menu sf-horizontal"
+                      id="superfish-1"
+                      style=""
+                    >
+                      <li                         
+                        class="current"
+                      >
+                        <a href="https://www.mediaocean.com/products" class="sf-depth-1 menuparent"
+                          >Products</a
+                        >
+                        <ul
+                          class="sf-hidden"
+                          style="display:none;"
+                        >
+                         
+                          <li
+                            class=""
+                            style=""
+                          >
+                            <a
+                              href="https://www.mediaocean.com/products/planning-reporting"
+                              style=""
+                              >Planning &amp; Reporting</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/products/digital-media-buying"
+                              class="sf-depth-2"
+                              style=""
+                              >Digital Media Buying</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/products/traditional-media-buying">Traditional Media Buying</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/products/ad-sales-operations">Ad Sales &amp; Operations</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/products/time-costs"
+                              >Time &amp; Costs</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/products/blockchain-for-media">Blockchain for Media</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://connect.mediaocean.com">API Platform</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://www.mediaocean.com/solutions">Solutions</a
+                        >
+                        <ul class="sf-hidden">                         
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/solutions/for-advertisers">For Advertisers</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/solutions/for-agencies">For Agencies</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.mediaocean.com/solutions/for-media-owners">For Media Owners</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://connect.mediaocean.com">For Partners</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://www.mediaocean.com/fast-facts"
+                          >Company</a
+                        >
+                        <ul class="sf-hidden">                          
+                          <li>
+                            <a href="https://www.mediaocean.com/fast-facts"
+                              >Fast Facts</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://www.mediaocean.com/leadership">Leadership</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://www.mediaocean.com/clients"
+                              >Clients</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://www.mediaocean.com/news">Newsroom</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://www.mediaocean.com/offices">Offices</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://www.mediaocean.com/blog">Blog &amp; Insights</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="http://support.mediaocean.com">Support &amp; Training</a
+                        >
+                        <ul class="sf-hidden">
+                          <li>
+                            <a
+                              href="http://support.mediaocean.com"
+                              class="sf-depth-1 menuparent"
+                              >Support &amp; Training</a
+                            >
+                          </li>
+                          <li
+                            id="menu-796-1"
+                            class="first odd sf-item-1 sf-depth-2 sf-no-children"
+                            style=""
+                          >
+                            <a
+                              href="http://support.mediaocean.com"
+                              class="sf-depth-2"
+                              style=""
+                              >Mediaocean Support</a
+                            >
+                          </li>
+                          <li
+                            id="menu-797-1"
+                            class="middle even sf-item-2 sf-depth-2"
+                            style=""
+                          >
+                            <a
+                              href="https://www.mediaocean.com/mou-new"
+                              id="menu-mediaocean-u"
+                              class="sf-depth-2"
+                              style=""
+                              >Mediaocean University</a
+                            >
+                          </li>
+                          <li
+                            id="menu-1040-1"
+                            class="middle odd sf-item-3 sf-depth-2 sf-no-children"
+                            style=""
+                          >
+                            <a
+                              href="https://support-na.mediaocean.com/hc/en-us/articles/115011552987-Learning-Center?req=webinars"
+                              class="sf-depth-2"
+                              style=""
+                              >Training Calendar</a
+                            >
+                          </li>
+                          <li
+                            id="menu-1514-1"
+                            class="last even sf-item-4 sf-depth-2 sf-no-children"
+                            style=""
+                          >
+                            <a
+                              href="https://www.mediaocean.com/digital-marketing-guide"
+                              class="sf-depth-2"
+                              style=""
+                              >Digital Advertising Guidebook</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        id="menu-814-1"
+                        class="last odd sf-item-5 sf-depth-1 sf-no-children"
+                      >
+                        <a href="https://www.mediaocean.com/mo-careers" class="sf-depth-1">Careers</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+</div>
+
+<div class="container">
+  <nav class="user-nav">
+    <div class="nav-wrapper">
+      <a href="/hc/en-us" class="hc-home header-button">SUPPORT HOME</a>
+      <div class="nav-right">
+        
+          <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport-na.mediaocean.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+      </div>
+    </div>
+
+      <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search Help Center" aria-label="Search Help Center" /></form>
+  </nav>  
+</div>
+
+
+<div class="page-dc" style="display:none;">
+  <div name="hc_header_search_placeholder">Search Help Center</div>
+</div>
+
+
+<script>
+  HC.templates.subheader.$mount(".user-nav");
+	
+</script>
+
+
+  <main role="main">
+    <div class="container">
+  <div class="knowledge-base">
+    <div class="announcement"  style="display:none">
+      <div class="announcement-title">
+         <h2>Mediaocean Support</h2>
+<span>*Use Chrome for the best experience.</span>
+
+      </div>
+      <div class="announcement_content">
+         <div id="top-announcement" class="announcement-section" style="display:none">
+          <div class="announcement-box">
+            <!-- ==========  MAKE SURE TO FILL OUT THE ANNOUNCEMENT EXPIRATION DATE IN THE LINE BELOW =========== -->
+<div id="top-primary-announcement" data-expiration-date="2019-08-10">
+
+<span class="announcement-box-title">Announcing the new Mediaocean Learning Center!</span>
+
+<p>Mediaocean University has launched the new Learning Center! </p><p>For a full description of what's new,<a href="/hc/en-us/articles/360033210034" target="_blank"> click here ➔ </a> or <a href="/hc/en-us/articles/115011552987">go straight on to the new Learning Center ➔</a></p> 
+<p>For a quick overview, <a href="https://support.mediaocean.com/sc/us/public/videoplayer.html?playlistTabs=6063794693001&bctid=6064207448001" target="_blank">click here for a video ➔</a> and <a href="https://support.mediaocean.com/sc/public/NewLCJuly2019_US.pdf" target="_blank">here for a quick reference card ➔</a></p>
+
+ <!--span class="announcement-box-title">Prisma, Radia, Working Capital, and Aura Reporting Upgrade</span>
+
+<p>An upgrade will affect new or edited reports this weekend. For more information on the upgrade,<a href="/hc/en-us/articles/360026651334"> click here ➔ </a></p -->
+
+<!--span class="announcement-box-title">Prisma Performance issue </span>
+<p> We are currently experiencing a performance issue with Prisma. <a href="https://support-na.mediaocean.com/hc/en-us/articles/360028744833"> Click here for more details ➔ </a></p -->
+
+<!-- <span class="announcement-box-title">Mediaocean's Help Center</span>
+
+<p>Want to get the most from our new support site? </p>
+<p>We've created a handy quick card and video for your reference! <ul><li> <a href="https://support.mediaocean.com/sc/us/public/Mediaocean_Support_Portal_NA_QC.pdf" target="_blank">Learn how to sign up and use the site here ➔</a></li><li> <a href="https://support-na.mediaocean.com/hc/en-us/articles/115013627187?playlistId=5024520920001" target="_blank">Click here for the video ➔</a></p> -->
+
+</div>
+          </div>
+          <div class="announcement-box announcement-box-secondary">
+            <span class="announcement-box-title announcement-box-title-secondary">Welcome to Mediaocean Support!</span>
+
+<p><a href="/hc/en-us/articles/115011548727">Support contacts and system hours ➔</a> </p>
+
+<p><a href="/hc/en-us/articles/115011698168-Mediaocean-Global-Support-Policy">Global Support Policy ➔</a> </p>
+
+<p><a href="/hc/en-us/articles/115011552987">Mediaocean University Learning Center ➔</a> </p>
+
+          </div>
+        </div>
+         <div id="bottom-announcement" class="announcement-section" style="display:none">
+          <div class="announcement-box" style="background-color: #FBB03B">
+            <!-- ==========  MAKE SURE TO FILL OUT THE ANNOUNCEMENT EXPIRATION DATE IN THE LINE BELOW =========== -->
+<div id="bottom-primary-announcement" data-expiration-date="2019-05-01">
+
+<span class="announcement-box-title"><b>Mediaocean now offers Hands-on Learning! </b>  </span>
+
+<p>Hands-on learning combines the convenience of a webinar with the hands-on experience you used to get only in the classroom. Learn new features, get tips, and do practice exercises without having to leave your office to attend a two-hour session.</p>
+
+<a href="https://support-na.mediaocean.com/hc/en-us/articles/115013627187?playlistId=5579438483001&playlistVideoId=5579569111001" class="announcement-box-button" style="color:#FBB03B;">Check out our Hands-on Learning intro video here.<span style="font-size:.75em;"> ▶</span></a>
+
+<a href="https://support-na.mediaocean.com/hc/en-us/articles/115012970008" class="announcement-box-button" style="color:#FBB03B;">View our current Hands-on Learning course listing.<span style="font-size:.75em;"> ▶</span></a>
+
+</div>
+          </div>
+          <div class="announcement-box announcement-box-secondary">
+            <span class="announcement-box-title announcement-box-title-secondary">Visit the Mediaocean Learning Center!</span>
+<p>Access all our learning assets and build custom eLearning playlists! </p>
+<p> <a href="/hc/en-us/articles/115011552987-Learning-Center">To get started, click here ➔</a></p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h1>Mediaocean</h1>
+    <!-- This only displays if none of the announcement boxes, 'top' or 'bottom' is visible -->
+
+<div id="navbar-links" class="user-nav" style="font-size: 13px; display: none">
+<p style="margin-block-start: 0px;
+    margin-block-end: 0px;"><a href="/hc/en-us/articles/115011548727"><b>Click here for support contacts and system hours ➔</b></a></p>
+<p style=" margin-block-start: 0px;
+    margin-block-end: 0px;"><a href="/hc/en-us/articles/115011698168-Mediaocean-Global-Support-Policy"><b>Click here for our Global Support Policy ➔</b></a></p>
+<p style=" margin-block-start: 0px;
+    margin-block-end: 0px;"><b><a href="/hc/en-us/articles/115011552987">Click here for the Learning Center ➔</b></a></p>
+</div>
+    
+    <ul class="category-list">
+      
+        <li class="category-item" data-id="115001711328">
+          <icon id="115001711328" name="Technical Support"></icon>
+          <a href="/hc/en-us/categories/115001711328-Technical-Support" class="category-item-link">
+            <h4 class="category-item-title">Technical Support</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001648788">
+          <icon id="115001648788" name="Prisma for Buyers"></icon>
+          <a href="/hc/en-us/categories/115001648788-Prisma-for-Buyers" class="category-item-link">
+            <h4 class="category-item-title">Prisma for Buyers</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001652467">
+          <icon id="115001652467" name="Radia"></icon>
+          <a href="/hc/en-us/categories/115001652467-Radia" class="category-item-link">
+            <h4 class="category-item-title">Radia</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001558027">
+          <icon id="115001558027" name="Lumina Plan Management"></icon>
+          <a href="/hc/en-us/categories/115001558027-Lumina-Plan-Management" class="category-item-link">
+            <h4 class="category-item-title">Lumina Plan Management</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001653107">
+          <icon id="115001653107" name="Prisma for Sellers"></icon>
+          <a href="/hc/en-us/categories/115001653107-Prisma-for-Sellers" class="category-item-link">
+            <h4 class="category-item-title">Prisma for Sellers</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001712028">
+          <icon id="115001712028" name="Aura"></icon>
+          <a href="/hc/en-us/categories/115001712028-Aura" class="category-item-link">
+            <h4 class="category-item-title">Aura</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001739468">
+          <icon id="115001739468" name="Connect"></icon>
+          <a href="/hc/en-us/categories/115001739468-Connect" class="category-item-link">
+            <h4 class="category-item-title">Connect</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001743167">
+          <icon id="115001743167" name="Prisma Authorizations"></icon>
+          <a href="/hc/en-us/categories/115001743167-Prisma-Authorizations" class="category-item-link">
+            <h4 class="category-item-title">Prisma Authorizations</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="360000843933">
+          <icon id="360000843933" name="Spectra DS"></icon>
+          <a href="/hc/en-us/categories/360000843933-Spectra-DS" class="category-item-link">
+            <h4 class="category-item-title">Spectra DS</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001715167">
+          <icon id="115001715167" name="Spectra OX"></icon>
+          <a href="/hc/en-us/categories/115001715167-Spectra-OX" class="category-item-link">
+            <h4 class="category-item-title">Spectra OX</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001913767">
+          <icon id="115001913767" name="Spectra AV"></icon>
+          <a href="/hc/en-us/categories/115001913767-Spectra-AV" class="category-item-link">
+            <h4 class="category-item-title">Spectra AV</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001749988">
+          <icon id="115001749988" name="Mediaocean University"></icon>
+          <a href="/hc/en-us/categories/115001749988-Mediaocean-University" class="category-item-link">
+            <h4 class="category-item-title">Mediaocean University</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001743207">
+          <icon id="115001743207" name="DealMaker Digital"></icon>
+          <a href="/hc/en-us/categories/115001743207-DealMaker-Digital" class="category-item-link">
+            <h4 class="category-item-title">DealMaker Digital</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001743187">
+          <icon id="115001743187" name="DealMaker"></icon>
+          <a href="/hc/en-us/categories/115001743187-DealMaker" class="category-item-link">
+            <h4 class="category-item-title">DealMaker</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001743227">
+          <icon id="115001743227" name="ProPost"></icon>
+          <a href="/hc/en-us/categories/115001743227-ProPost" class="category-item-link">
+            <h4 class="category-item-title">ProPost</h4>
+          </a>
+        </li>
+      
+        <li class="category-item" data-id="115001742888">
+          <icon id="115001742888" name="TView"></icon>
+          <a href="/hc/en-us/categories/115001742888-TView" class="category-item-link">
+            <h4 class="category-item-title">TView</h4>
+          </a>
+        </li>
+      
+      <li class="category-item"></li>
+      <li class="category-item"></li>
+      <li class="category-item"></li>
+    </ul>
+
+
+    
+  </div>
+
+  <div class="fineprint">
+    <h4>The Fine Print .....</h4>
+
+<p>
+This portal contains articles, training, and other product information. You can also enter and track your support requests within this site.
+</p>
+
+<p>
+At Mediaocean we recognize and respect your rights with regard to the privacy and confidentiality of your information. Please see our <a href="http://www.mediaocean.com/privacy-policy" target="_blank">privacy policy</a> for details.
+</p>
+
+<p>
+In selecting Zendesk as our partner, we have ensured that Zendesk has put in place robust measures for the confidentiality and security of the personal information within their service, by employing technological, physical and administrative security safeguards such as firewalls and security procedures.
+</p>
+
+<p>
+However, Mediaocean is unable to guarantee the security of Zendesk’s system and is not responsible for failures in Zendesk’s security procedures. For that reason, you may prefer to avoid attaching files containing sensitive information (such as personal financial details or commercially sensitive data) to your Zendesk support ticket. Please contact your Mediaocean representative for alternative methods for sending these files securely, if required as part of your support request.
+</p>
+
+  </div>
+  
+</div>
+
+
+
+<div id="anon-submitted" style="display:none">
+  Thank you! We will respond to you request as soon as possible. You can log in to review your request anytime. If you don’t already have a login, it’s easy to create one by clicking <strong>Sign in</strong> and then clicking <strong>Sign up</strong> on the login page.
+</div>
+
+
+  
+<!-- begin SnapEngage code -->
+  <script type="text/javascript">
+  (function() {
+    var se = document.createElement('script');
+    se.type = 'text/javascript';
+    se.async = true;
+    se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/ff0e9810-9fcb-4012-a875-7374e3085b70.js';
+    var done = false;
+    se.onload = se.onreadystatechange = function() {
+      if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
+        done = true;
+        // Place your SnapEngage JS API code below
+        // SnapEngage.allowChatSound(true); // Example JS API: Enable sounds for Visitors. 
+      }
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(se, s);
+  })();
+  </script>
+  <!-- end SnapEngage code -->
+
+  <script>HC.templates.home.$mount("main");</script>
+
+  </main>
+
+  <div>
+	<footer class="l-footer" role="contentinfo">
+	  <div class="l-region l-region--footer">
+    <div class="panel-pane pane-panels-mini pane-new-footer footerArea">
+            <div class="panel-display panel-2col clearfix" id="mini-panel-new_footer">
+  <div class="panel-panel panel-col-first">
+    <div class="inside"><div class="panel-pane pane-custom pane-9">
+            <div class="footerLeftPadding">
+<div class="whiteLogo" style="text-align:left; margin-top:-10px; margin-left:0;">
+			<img src="https://www.mediaocean.com/sites/mediaocean.com/files/mo_logo_white%20%282%29.png" width="180">
+		</div>
+<div class="copyrightText">
+<span style="color:#FFFFFF; text-transform:uppercase;     font-size: 14px;
+    font-weight: 700; font-family:'Roboto'">Copyright © 2019 Mediaocean
+</span>
+</div>
+</div>    </div>
+<div class="panel-pane pane-custom pane-10">
+               </div>
+</div>
+  </div>
+
+  <div class="panel-panel panel-col-last">
+    <div class="inside"><div class="panel-pane pane-custom pane-11">
+            <div class="menuContainerFooter">
+<div class="menuColumn1 menuColumn">
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/products">Products</a></span></div>
+<!--<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Cross-media planning and analytics platform</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Digital media management platform</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Cross-media management platform for sellers</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Traditional media management platform & bill/pay</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Time & cost management platform for agencies</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">API partner platform</a></span></div>-->
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/solutions">Solutions</a></span></div>
+<!--<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Advertisers</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Agencies</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="http://www.mediaocean.com/products">Media Sellers</a></span></div>
+<div class="menuItem"><span class="menuSubItem"><a href="https://connect.mediaocean.com">API Partners</a></span></div>-->
+<div class="menuItem"><span class="menuHeader"><a href="https://support.mediaocean.com/">Support &amp; Training</a></span></div>
+</div>
+<div class="menuColumn2 menuColumn">
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/leadership">Leadership</a></span></div>
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/at-a-glance">Company</a></span></div>
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/contact-us">Contact</a></span></div>
+</div>
+<div class="menuColumn3 menuColumn">
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/news">News</a></span></div>
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/blog">Blog</a></span></div>
+<div class="menuItem"><span class="menuHeader"><a href="http://www.mediaocean.com/mo-careers">Careers</a></span></div>
+</div>
+</div>    </div>
+<div class="panel-pane pane-custom pane-12">
+            <div class="menuLinksFooter"><div class="menuItem fullWidth"><div class="noFloat" style="float:left; width:50%;"><span class="menuHeader"><a href="http://www.mediaocean.com/privacy-policy">Privacy Policy</a> | <a href="http://www.mediaocean.com/terms-of-use">Terms of Use</a> | <a href="http://www.mediaocean.com/cookies-policy">Cookies</a></span></div><div class="noFloat" style="float:left; width:50%;"><span class="menuHeader">Find us on: <a href="https://www.facebook.com/mediaocean" style="color:#00AEEF;">FACEBOOK</a> | <a href="https://www.twitter.com/teammediaocean" style="color:#00AEEF;">TWITTER</a> | <a href="https://www.linkedin.com/company/mediaocean" style="color:#00AEEF;">LINKEDIN</a></span></div></div>
+<div class="mobileCopyright"><span style="color:#FFFFFF; text-transform:uppercase;     font-size: 14px;
+    font-weight: 700;">Copyright © 2019 Mediaocean
+</span></div>
+</div>    </div>
+</div>
+  </div>
+</div>
+    </div>
+<div class="panel-pane pane-custom pane-13">
+            <!-- AddThisEvent --><script type="text/javascript" src="https://addthisevent.com/libs/1.5.8/ate.min.js"></script><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+addthisevent.settings({
+    mouse     : false,
+    css       : false,
+    outlook   : {show:true, text:"Outlook Calendar"},
+    google    : {show:true, text:"Google Calendar"},
+    ical      : {show:true, text:"iCal Calendar"},
+    dropdown  : {order:"outlook,google,ical"},
+    callback  : ""
+});
+
+//--><!]]>
+</script>    </div>
+<div class="panel-pane pane-custom pane-14">
+            <!-- Style Overrides -->
+<!-- Global site tag (gtag.js) - Google AdWords: 968106854 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-968106854"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-968106854');
+</script>
+<script type="text/javascript"> _linkedin_data_partner_id = "117673"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=117673&fmt=gif" /> </noscript>
+<script type="text/javascript">
+jQuery(function($){
+$(".static_banner_wrapper").fadeIn("fast");
+$(".static_banner_wrapper").css("margin-top", "-40px");
+$('.view-id-products ul.slides li:last-child .views-field .field-content a').attr('href', 'http://connect.mediaocean.com'); 
+$('.view-id-products ul.slides li:last-child .views-field .field-content a').attr('target', '_blank');
+$(".standard-region--sidebar-first").insertAfter(".standard-region--content");
+ $("iframe").attr("width", "100%");
+});
+</script>
+
+</div>
+<div class="panel-pane pane-custom pane-16">
+</div>
+<div class="panel-pane pane-custom pane-17">
+            </div>
+<div class="panel-pane pane-custom pane-18">
+             </div>
+<div class="panel-pane pane-custom pane-19">
+              </div>
+<div class="panel-pane pane-custom pane-20">
+            </div>
+  </div>
+  </footer>
+</div>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://mediaoceanhelp.zendesk.com/auth/v2/host.js" data-brand-id="7457308" data-return-to="https://support-na.mediaocean.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="7457308,true,true"></script>
+  <script type="text/javascript" src="https://p14.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"mediaoceanhelp","environment":"production","name":"Mediaocean"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:H4fK3l+0P87mqVSnVV52+sz5zHzfb2HrQROPNdG7+AcutTseByf9OdkUDqUiommeAH5drKFqojEyovUsz1KSDg==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://mediaoceanhelp.zendesk.com","current_host_mapping":"support-na.mediaocean.com","current_path":null,"authentication_domain":"https://mediaoceanhelp.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support-na.mediaocean.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support-na.mediaocean.com/hc/en-us","arrange_content_url":"https://support-na.mediaocean.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support-na.mediaocean.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://mediaoceanhelp.zendesk.com/knowledge/user_segments?brand_id=7457308","has_community_enabled":false,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://mediaoceanhelp.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support-na.mediaocean.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support-na.mediaocean.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://mediaoceanhelp.zendesk.com/knowledge/arrange?brand_id=7457308","article_verification_url":"https://mediaoceanhelp.zendesk.com/knowledge/verification?brand_id=7457308","has_article_verification":false,"guide_language_settings_url":"https://support-na.mediaocean.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://mediaoceanhelp.zendesk.com/knowledge/import_articles?brand_id=7457308","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support-na.mediaocean.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkDmQAdOhNoZWxwX2NlbnRlcl9pZGwrCPgzjMYaADoNYnJhbmRfaWRpAxzKcToMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--35d6bc16bdbac5533d2e3da79b2630f3f83fcf12");
+})();
+
+  </script>
+</body>
+</html>

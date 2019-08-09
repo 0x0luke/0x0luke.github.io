@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>eero Help Center </title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:8B4da9w9ogtnctQepEOvGYwvLRF4AUAWxrleYa2aosw4Eev295meB3WDG4Q0MYej6EK9SkWgCysJ1HI0XVYp6w==" />
+  <link rel="canonical" href="https://support.eero.com/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://support.eero.com/hc/en-us" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p20.zdassets.com/hc/theming_assets/621018/243419/style.css?digest=360296846592" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/621018/0754ada9f8e9ae34640d791cb96e7db8533d9eb1.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-59224146-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+<!-- add code here that should appear in the document head -->
+<!-- Bootstrap: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Bootstrap: Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Bootstrap: Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- UJET -->
+<!--<script src="https://websdk.ujet.co/v1/loader/loader.js"></script>-->
+
+<!-- Bright Pattern Escalation Chat-->
+<link type="text/css" rel="stylesheet" href="https://eero.brightpattern.com/clientweb/chat-client-v4/css/form.css">
+<script type="text/javascript">
+    SERVICE_PATTERN_CHAT_CONFIG = {
+        appId: '287073073433491a878ea3fdbe50f835',
+        apiUrl: 'https://eero.brightpattern.com/clientweb/api/v1',
+        tenantUrl: 'eero.brightpattern.com',
+        chatPath: 'https://eero.brightpattern.com/clientweb/chat-client-v4/'
+
+        /*        
+         // Default customer data, it can be collected on current site's context
+         first_name: '',
+         last_name: '',
+         email: '',
+         phone_number: ''
+ 		*/
+    };
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+	
+  	// Check if Help Center object exists
+    if (HelpCenter && HelpCenter.user){
+  
+  		// Assign and check user role
+  		var role;
+  		role = HelpCenter.user.role;
+  		if(role == "manager" || role == "agent") {
+  			// console.log("User is a " + role);
+  			// Get init script for Bright Pattern Escalation Chat
+  			$.getScript("https://eero.brightpattern.com/clientweb/chat-client-v4/js/init.js");
+      }
+  
+    }
+	
+	});
+</script>
+
+<!-- Eero Assets -->
+ <link rel="apple-touch-icon" sizes="57x57" href="https://assets.eero.com/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://assets.eero.com/img/apple-touch-icon-60x60.png">
+    <link rel="icon" type="image/png" href="https://assets.eero.com/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://assets.eero.com/img/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+		
+    <!--<script type="text/javascript">
+
+        SERVICE_PATTERN_CHAT_CONFIG = {
+
+            appId: '3MTVTpRXvAxE7d76Zzj2K6',
+
+            clientId: 'WebChat',
+
+            apiUrl: 'https://eero.brightpattern.com:9443/clientweb/api/v1',
+
+            tenantUrl: 'eero.brightpattern.com',
+
+            width: 300,
+
+            chatPath: 'https://corp.trusourcelabs.com/int/BrightPattern/chat-client-eero/'
+
+
+
+            /* Default customer data, it can be collected on current site's context*/
+
+            /* Customer data also can be requested via "Request Input" block + "MobileChatCustomerData" formName */
+
+            /*
+
+             first_name: '',
+
+             last_name: '',
+
+             email: '',
+
+             account_number: '',
+
+             phone_number: '', /
+
+             location : {
+
+             latitude: 37.5151481,
+
+             longitude: -122.4183997
+
+             }
+
+             */
+
+        };
+
+    </script>
+
+
+
+    <script src="https://corp.trusourcelabs.com/int/BrightPattern/chat-client-eero/js/snippet.js"></script>-->
+
+  <script type="text/javascript" src="//p20.zdassets.com/hc/theming_assets/621018/243419/script.js?digest=360296846592"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <header class="header" id="header">
+ <div class="custom-nav">
+        <div class="logo"><a href="http://www.eero.com/" class="logo-a">
+      <div class="hc eero-logo">
+        
+       <!-- <img class="logo-img" src="//p4.zdassets.com/hc/theme_assets/982227/115000005323/support_hc.png"/>-->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 106.5 34" enable-background="new 0 0 106.5 34" xml:space="preserve">
+    <g>
+    	<path class="eero-logo" d="M17.1 4c-1.9 0-3.7 0.4-5.3 1.1c-1.6 0.7-3 1.7-4.2 2.9c-1.2 1.2-2.1 2.7-2.8 4.4c-0.6 1.7-1 3.5-1 5.5 c0 2.1 0.3 4 0.9 5.7c0.6 1.7 1.5 3.2 2.7 4.4c1.2 1.2 2.6 2.2 4.2 2.9c1.6 0.7 3.5 1 5.5 1c2.4 0 4.6-0.4 6.5-1.3 c1.9-0.9 3.6-2.3 4.9-4.3l-2.4-2c-0.9 1.4-2.2 2.6-3.8 3.4c-1.7 0.9-3.4 1.3-5.2 1.3c-2.1 0-3.8-0.4-5.1-1.2C11 27 9.9 26.1 9.1 25 c-0.8-1.1-1.3-2.2-1.6-3.4c-0.3-1.1-0.4-2.1-0.4-2.8v-0.1h22.5v-2.3c0-1.5-0.3-3-0.8-4.5c-0.5-1.5-1.3-2.8-2.4-4 c-1-1.2-2.4-2.1-3.9-2.8C20.9 4.3 19.1 4 17.1 4z M26.3 15.8H7.1v-0.1c0-0.4 0.2-1 0.5-2c0.3-1 0.8-1.9 1.6-3c0.7-1 1.7-1.9 3-2.7 c1.3-0.8 2.9-1.2 4.8-1.2c1.3 0 2.5 0.2 3.7 0.7c1.1 0.5 2.1 1.1 3 1.9c0.8 0.8 1.5 1.7 2 2.8c0.5 1.1 0.7 2.2 0.7 3.4V15.8z"/>
+    </g>
+    <g>
+    	<path class="eero-logo" d="M46.7 4C44.8 4 43 4.3 41.4 5c-1.6 0.7-3 1.7-4.2 2.9c-1.2 1.2-2.1 2.7-2.8 4.4c-0.6 1.7-1 3.5-1 5.5 c0 2.1 0.3 4 0.9 5.7c0.6 1.7 1.5 3.2 2.7 4.4c1.2 1.2 2.6 2.2 4.2 2.9c1.6 0.7 3.5 1 5.5 1c2.4 0 4.6-0.4 6.5-1.3 c1.9-0.9 3.6-2.3 4.9-4.3l-2.4-2c-0.9 1.4-2.2 2.6-3.8 3.4c-1.7 0.9-3.4 1.3-5.2 1.3c-2.1 0-3.8-0.4-5.1-1.2 c-1.3-0.8-2.4-1.7-3.1-2.8c-0.8-1.1-1.3-2.2-1.6-3.4c-0.3-1.1-0.4-2.1-0.4-2.8v-0.1h22.5v-2.3c0-1.5-0.3-3-0.8-4.5 C57.8 10.4 57 9 56 7.8c-1-1.2-2.4-2.1-3.9-2.8C50.5 4.3 48.7 4 46.7 4z M55.9 15.8H36.7v-0.1c0-0.4 0.2-1 0.5-2 c0.3-1 0.8-1.9 1.6-3c0.7-1 1.7-1.9 3-2.7c1.3-0.8 2.9-1.2 4.8-1.2c1.3 0 2.5 0.2 3.7 0.7c1.1 0.5 2.1 1.1 3 1.9 c0.8 0.8 1.5 1.7 2 2.8c0.5 1.1 0.7 2.2 0.7 3.4V15.8z"/>
+    </g>
+    <g>
+    	<path class="eero-logo" d="M88.7 4c-2 0-3.9 0.3-5.6 1c-1.7 0.7-3.2 1.7-4.4 2.9c-1.2 1.2-2.2 2.7-2.9 4.4c-0.7 1.7-1 3.6-1 5.6 c0 2 0.3 3.9 1 5.6c0.7 1.7 1.7 3.2 2.9 4.4c1.2 1.2 2.7 2.2 4.4 2.9c1.7 0.7 3.6 1 5.6 1c2 0 3.9-0.3 5.6-1 c1.7-0.7 3.2-1.7 4.4-2.9c1.2-1.2 2.2-2.7 2.9-4.4c0.7-1.7 1-3.6 1-5.6c0-2-0.3-3.9-1-5.6c-0.7-1.7-1.7-3.2-2.9-4.4 C97.5 6.7 96 5.7 94.3 5C92.6 4.3 90.7 4 88.7 4z M88.7 29c-1.6 0-3.1-0.3-4.4-0.9c-1.3-0.6-2.5-1.4-3.4-2.4 c-0.9-1-1.7-2.2-2.1-3.5c-0.5-1.3-0.7-2.8-0.7-4.3s0.2-3 0.7-4.3c0.5-1.3 1.2-2.5 2.1-3.5c0.9-1 2.1-1.8 3.4-2.4 c1.3-0.6 2.8-0.9 4.4-0.9c1.6 0 3.1 0.3 4.4 0.9c1.3 0.6 2.5 1.4 3.4 2.4c0.9 1 1.6 2.2 2.1 3.5c0.5 1.3 0.7 2.8 0.7 4.3 s-0.2 3-0.7 4.3c-0.5 1.3-1.2 2.5-2.1 3.5c-0.9 1-2.1 1.8-3.4 2.4C91.8 28.7 90.3 29 88.7 29z"/>
+    </g>
+    <g>
+    	<path class="eero-logo" d="M63.1 31.2h3.3V16.7c0-1.3 0.2-2.6 0.5-3.7c0.4-1.1 0.9-2.2 1.6-3c0.7-0.9 1.6-1.5 2.8-2 c1.1-0.5 2.4-0.7 3.8-0.7v-3c-3.8 0.1-6.8 1.2-8.8 3.4c-3.4 3.6-3.2 8.9-3.2 8.9L63.1 31.2z"/>
+    </g>
+        </svg></div>
+      </a>
+    </div>
+      <ul class="c-nav-list">
+        <!--<li><a href="https://support.eero.com/hc/en-us/articles/207376426-How-do-I-contact-eero-support-">Get in Touch</a></li>-->
+        <li class="justify-content-end"><a class="blue-button" href="https://www.eero.com/shop/home-wifi-system">Shop</a></li>
+      </ul>
+      </div>
+  <section class="cat-mini js-find">
+  	<div class="row">
+      <div class="col-md-1 col-sm-6 mobile-hidden">
+        <a href="https://support.eero.com/hc/en-us"><img class="home" src="//theme.zdassets.com/theme_assets/621018/5dcd57452a9662a7fddd2933a1fd08e345b2f9e6.png"/></a>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12"><h4 class="cat-name"><a href="https://support.eero.com/hc/en-us/categories/201159783-eero-eero-Beacon">eero &amp; Beacon</a></h4></div>
+      <div class="col-md-2 col-sm-6 col-xs-12"><h4 class="cat-name"><a href="https://support.eero.com/hc/en-us/categories/201159803-Features">Features</a></h4></div>
+      <div class="col-md-2 col-sm-6 col-xs-12"><h4 class="cat-name"><a href="https://support.eero.com/hc/en-us/categories/201150616-Troubleshooting">Troubleshooting</a></h4></div>
+      <div class="col-md-2 col-sm-6 col-xs-12"><h4 class="cat-name"><a href="https://support.eero.com/hc/en-us/categories/201150626-Orders-more">Orders &amp; more</a></h4></div>
+      <div class="col-md-3 col-sm-12 col-xs-12"><form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form></div>
+     </div>
+  </section>
+</header>
+
+
+  <main role="main">
+    <section class="clearfix">
+  <div class="knowledge-base">
+  <div class="home-splash">   
+  <div class="header-inner">
+    <h1 class="text-center">We're here to help.</h1>
+        
+
+    <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+    
+      <section class="promoted-articles padded-section mini-menu">
+        <div class=" center-block restrict-width">
+          <p class="text-center pop-cont">Popular Content</p>
+              <ul class="quick-list">
+          		
+                <li>
+                  <a href="/hc/en-us/articles/207548386-Does-eero-replace-my-Internet-Service-Provider-">Does eero replace my Internet Service Provider?</a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/115002718486-What-s-the-difference-between-eero-eero-Beacon-">What&#39;s the difference between eero &amp; eero Beacon?</a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/115002932406-Will-my-1st-generation-eero-continue-to-be-supported-">Will my 1st-generation eero continue to be supported?</a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/207926293-Can-I-use-eero-with-my-current-ISP-">Can I use eero with my current ISP?</a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/207624886-How-many-eeros-do-I-need-">How many eeros do I need? </a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/207937603-How-do-I-set-up-eero-">How do I set up eero? </a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/209605453-Can-I-use-eero-with-my-modem-">Can I use eero with my modem?</a>
+                </li>
+              
+                <li>
+                  <a href="/hc/en-us/articles/360001082263-Will-eero-support-WPA3-">Will eero support WPA3?</a>
+                </li>
+              
+            </ul>
+          </div>
+      </section>
+    
+  </div>
+  </div>
+    <!--<nav id="breadcrumbs" class="sub-nav clearfix category-breadcrumbs">
+      <ol class="breadcrumbs"><li><a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a></li></ol>
+</nav>-->
+    <div class="container-fluid">
+      <div class="margin-section center-block max-width-1200">
+    <!--<h1>eero Help Center </h1>-->
+    <!--<ul class="category-list">-->
+        <h1>Help Center</h1>
+        <p class="subtitle">Find answers and information about everything eero.</p>
+      <section class="category-list center-block">
+      <div class="row">
+      
+        <div class="col-md-4 col-sm-4 col-xs-12 eero">
+          <div class="category-list-item" onclick="window.location='/hc/en-us/categories/201159783-eero-eero-Beacon';">
+          
+          <a href="/hc/en-us/categories/201159783-eero-eero-Beacon"><h4 class="main-title">eero &amp; eero Beacon</h4></a>
+          
+          <p class="category-description-home">Learn more about our hardware</p>
+            <h4 class="text-center mt-20 blue-button-ext">Browse articles</h4>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12 eero">
+          <div class="category-list-item" onclick="window.location='/hc/en-us/categories/201159803-Features';">
+          
+          <a href="/hc/en-us/categories/201159803-Features"><h4 class="main-title">Features</h4></a>
+          
+          <p class="category-description-home">Discover the eero app &amp; eero Plus</p>
+            <h4 class="text-center mt-20 blue-button-ext">Browse articles</h4>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12 eero">
+          <div class="category-list-item" onclick="window.location='/hc/en-us/categories/201150616-Troubleshooting-Support';">
+          
+          <a href="/hc/en-us/categories/201150616-Troubleshooting-Support"><h4 class="main-title">Troubleshooting &amp; Support</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12 eero">
+          <div class="category-list-item" onclick="window.location='/hc/en-us/categories/201150626-Orders-more';">
+          
+          <a href="/hc/en-us/categories/201150626-Orders-more"><h4 class="main-title">Orders &amp; more</h4></a>
+          
+          <p class="category-description-home">Get the details on our warranty &amp; more</p>
+            <h4 class="text-center mt-20 blue-button-ext">Browse articles</h4>
+          
+          
+          </div>
+        </div>
+      
+			
+      
+        
+      </div>
+      </section>
+        <section class="promo-info">
+      <div class="center-block clearfix">
+        <section class="category-list sub-group center-block max-width-1200">
+          <h1 class="clearfix">eero Plus</h1>
+        <p class="subtitle">Premium protection for your network.</p>
+      <div class="row mb-md--50">
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/115002766063-What-is-eero-Plus-"><h4>What is eero Plus?</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/115005476423-What-applications-are-included-with-eero-Plus-"><h4>What applications are included with eero Plus?</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/115003437183-Is-my-network-still-secure-without-eero-Plus-"><h4>Is my network still secure without eero Plus?</h4></a>
+          
+          
+          </div>
+        </div>
+        
+      </div>
+      </section>
+      <section class="solvvy-section">
+      <div class="center-block clearfix">
+        <section class="category-list sub-group center-block max-width-1200">
+          <h1 class="clearfix">Have a Question?</h1>
+          <p class="solvvy-button"><a href="https://support.eero.com/hc/en-us/requests/new" class="blue-button">➞ Get Instant Answers</a></p>
+        	<p class="subtitle">If we can't find a solution, someone on our team will!</p>
+      
+      	</section>
+      </div>
+    </section>  
+        
+      <section class="category-list sub-group center-block">
+          <h1 class="clearfix">Get Help</h1>
+        <p class="subtitle">Need a hand? We have you covered.</p>
+      <div class="row extended-height">
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/207613176-How-do-I-bridge-my-modem-router-combo-device-"><h4>How do I bridge my modem/router combo?</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/213372343-When-can-I-update-my-network-s-eeroOS-"><h4>How do I update my network?</h4></a>
+          
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/207908613--I-m-experiencing-slow-performance-on-my-entire-eero-network"><h4>My network seems slow</h4></a>
+          
+          
+          </div>
+        </div>
+        </div>
+        <div class="row mt-40 restrict-width ">
+         <div class="col-md-6 col-xs-12">
+          <img src="//theme.zdassets.com/theme_assets/621018/3df798856fc040b081ae787af3be0bb8509d4694.png"/>
+        </div>
+        <div class="col-md-6 col-xs-12 pl-60"><div class="padded-sub">	
+          <h2 class="">Something else?</h2>
+          <p class=" text-left mb-4">See all our troubleshooting articles here.</p>
+          <p><a href="https://support.eero.com/hc/en-us/categories/201150616-Troubleshooting" class="blue-button">See Articles</a></p></div>
+        </div>
+      </div>
+    </section>
+   </div>
+  </div>
+      <section class="promo-info">
+      <div class="center-block clearfix">
+        <section class="category-list sub-group center-block max-width-1200">
+          <h1 class="clearfix">New to eero?</h1>
+        <p class="subtitle">Let us get you up to speed!</p>
+      <div class="row mb-md--50">
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/207624886-How-many-eeros-do-I-need-"><h4>How many eeros do I need?</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/207646676-What-s-a-mesh-network-"><h4>What is a mesh network?</h4></a>
+          
+          
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="category-list-item beacon">
+          
+          <a href="https://support.eero.com/hc/en-us/articles/207937603-How-do-I-set-up-eero-"><h4>How do I setup my eeros?</h4></a>
+          
+          
+          </div>
+        </div>
+        
+      </div>
+      </section>
+        </div>
+    </section>
+    <section class="help-contact-section">
+      <div class="center-block clearfix">
+        <section class="category-list sub-group center-block max-width-1200">
+          <h1 class="clearfix">Need help? We're here for you!</h1>
+          <p class="solvvy-button"><a href="https://support.eero.com/hc/en-us/requests/new" class="blue-button">Submit Your Question</a></p>
+          <p class="subtitle"><b><a href="https://support.eero.com/hc/en-us/articles/207376426-How-do-I-contact-eero-support-">We're available 7 days a week</a></b></p>
+      		<p class="availability text-center"><b>Monday–Sunday:</b><br> 7am–5pm PT</p>
+      
+      	</section>
+      </div>
+    </section>  
+   
+    <div class="row no-gutter mt-40 center-block max-width-1200">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <figure><img src="//theme.zdassets.com/theme_assets/621018/6c34718a04ce74c0cd367c1cef47fd56ceb3670d.png"/></figure>
+        </div> 
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <figure><img src="//theme.zdassets.com/theme_assets/621018/9bba974192f51ab079cb126f4365bb17f0a5b3a2.png"/></figure>
+        </div> 
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <figure><img src="//theme.zdassets.com/theme_assets/621018/d727a5d5f01b9280f55ae8affd090b910e6e2355.png"/></figure>
+        </div> 
+    </div>
+   
+    </div>
+</section>
+
+  </main>
+
+  <footer class="footer padded-section">
+  <div class="footer-inner center-block">
+    <div class="row">
+      <section class="col-md-3 col-sm-3 col-xs-12">
+        <p><a class="faq-link" href="http://www.eero.com/our-story" target="_blank">Our story</a></p>
+      </section>
+      <section class="col-md-3 col-sm-3 col-xs-12">
+         <p><a class="blog-link" href="http://www.eero.com/jobs" target="_blank">Jobs</a></p>
+      </section> 
+      <section class="col-md-3 col-sm-3 col-xs-12">
+         <p><a class="blog-link" href="http://blog.eero.com/" target="_blank">Blog</a></p>
+      </section>
+       <!--<section class="col-md-2 col-sm-12">
+         <p><a class="privacy-link" href="http://www.eero.com/press">Press</a></p>
+      </section>-->
+      <section class="col-md-3 col-sm-3 col-xs-12">
+        <p><a class="terms" href="http://www.eero.com/legal" target="_blank">Legal</a></p>
+      </section> 
+    </div>
+  </div>
+  
+</footer>
+
+<script type="text/javascript" src="https://cdn.solvvy.com/deflect/customization/eero/solvvy.js" async></script>
+
+    <div class="powered-by-zendesk">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+    <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"/>
+  </svg>
+
+  <a href="https://www.zendesk.com/help-center/?utm_source=helpcenter&utm_medium=poweredbyzendesk&utm_campaign=text&utm_content=eero%20Customer%20Support" target="_blank" >Powered by Zendesk</a>
+</div>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://eero.zendesk.com/auth/v2/host.js" data-brand-id="243419" data-return-to="https://support.eero.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="243419,true,true"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"eero","environment":"production","name":"eero Customer Support"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:dLg2f63aOLvlZfgjY6Nvb9X6nzZansNz0MVaQH4JWPK8t8Dihn4Et/eUN7nz0UfVsZcPbWc/iE4fqHYVjsXT1Q==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://eero.zendesk.com","current_host_mapping":"support.eero.com","current_path":null,"authentication_domain":"https://eero.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":true,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.eero.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.eero.com/hc/en-us","arrange_content_url":"https://support.eero.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.eero.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://eero.zendesk.com/knowledge/user_segments?brand_id=243419","has_community_enabled":false,"has_internal_sections":true,"has_answer_bot_web_form_enabled":true,"billing_url":"/access/return_to?return_to=https://eero.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.eero.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.eero.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://eero.zendesk.com/knowledge/arrange?brand_id=243419","article_verification_url":"https://eero.zendesk.com/knowledge/verification?brand_id=243419","has_article_verification":false,"guide_language_settings_url":"https://support.eero.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://eero.zendesk.com/knowledge/import_articles?brand_id=243419","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.eero.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkD2nkJOhNoZWxwX2NlbnRlcl9pZGkEgyTtCzoNYnJhbmRfaWRpA9u2AzoMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--988f963f69ba8271fd8e34c30b691a8c834d024d");
+})();
+
+  </script>
+</body>
+</html>

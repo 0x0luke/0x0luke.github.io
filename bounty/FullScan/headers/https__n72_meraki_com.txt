@@ -1,0 +1,15 @@
+200 OK
+Content-Security-Policy: default-src 'self' data: https://*.typekit.net https://*.typekit.com https://csi.gstatic.com https://www.google.com https://captcha.guard.qcloud.com https://captcha.gtimg.com;  style-src 'self' 'unsafe-inline' https://use.typekit.com https://captcha.gtimg.com;  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.typekit.com/ https://maps.googleapis.com https://www.google.com https://www.gstatic.com https://captcha.guard.qcloud.com https://captcha.gtimg.com; report-uri /nmr/browser_metrics/log_csp_report
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Date: Thu, 08 Aug 2019 11:18:05 GMT
+Retry-Count: 0
+Server: nginx
+Vary: Accept-Encoding
+X-Request-Id: 8c2373b9b9baf8a0e3916e8a7e7e5fd3
+X-Runtime: 0.030439
+Set-Cookie: _session_id_for_n72=f2777b885abfba205f2934228742aa52; path=/; secure; HttpOnly
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: sameorigin
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: "e88b8f51f3fb4b57f93ef44a501223a3"
+Cache-Control: max-age=0, private, must-revalidate

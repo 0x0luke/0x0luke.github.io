@@ -1,0 +1,28 @@
+200 OK
+Etag: cacheable:8be0b04d79b734dad92924c2fe2291f7
+Set-Cookie: _shopify_y=dbbb228f-b547-4f88-9878-7ee55317b4e2; path=/; expires=Fri, 06 Aug 2021 15:57:53 -0000 cart_currency=USD; path=/; expires=Wed, 21 Aug 2019 04:19:29 -0000 _orig_referrer=http%3A%2F%2Fshop.sophos.com%2F; Expires=Wed, 21-Aug-19 04:19:29 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 04:19:29 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Wed, 21-Aug-19 04:19:29 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 04:19:29 -0000; HttpOnly
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Retry-Count: 0
+X-Request-Id: 1424c760-664d-4188-99b6-ec15ba12b624
+Server: cloudflare
+X-Sorting-Hat-Shopid: 6750231
+Strict-Transport-Security: max-age=7889238
+X-Alternate-Cache-Key: cacheable:ca2a7e4d9d09018dcddd57f415731c1a
+X-Permitted-Cross-Domain-Policies: none
+Date: Wed, 07 Aug 2019 04:19:29 GMT
+X-Shopify-Stage: production
+Cf-Ray: 502673dcca91bfde-MAN
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+X-Frame-Options: DENY
+X-Shopid: 6750231
+X-Shardid: 101
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=1424c760-664d-4188-99b6-ec15ba12b624
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: 101
+Content-Language: en
+X-Cache: hit, server
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=1424c760-664d-4188-99b6-ec15ba12b624

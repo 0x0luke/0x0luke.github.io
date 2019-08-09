@@ -1,0 +1,19 @@
+404 Not Found
+X-Dc: gcp-us-central1,gcp-us-central1
+Date: Thu, 08 Aug 2019 14:25:04 GMT
+Content-Type: text/html; charset=utf-8
+Set-Cookie: __cfduid=d4e01536a7a105aa90d49bcb2d3df93131565274304; expires=Fri, 07-Aug-20 14:25:04 GMT; path=/; domain=.dev-shops.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Shopify-Stage: production
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b24a80c2-d23b-4304-aafc-3affc0d74d50
+Server: cloudflare
+X-Content-Type-Options: nosniff
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b24a80c2-d23b-4304-aafc-3affc0d74d50
+Cf-Ray: 503228554dfdd218-MAN
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+X-Request-Id: b24a80c2-d23b-4304-aafc-3affc0d74d50
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

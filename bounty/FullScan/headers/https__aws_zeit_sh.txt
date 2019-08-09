@@ -1,0 +1,12 @@
+200 OK
+Server: Server
+Cache-Control: private
+Vary: Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+Date: Thu, 08 Aug 2019 15:04:22 GMT
+Content-Length: 989
+Retry-Count: 0
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: awsc-authTimer=%7B%22start%22%3A%221565276662451%22%7D; Secure; HttpOnly aws-creds=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/console; Secure aws-creds=""; Domain=console.aws.amazon.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/console; Secure aws-creds=""; Domain=aws.amazon.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/console; Secure JSESSIONID=D4988CB9BDE416879855F51459D5CFB8; Path=/; Secure; HttpOnly
+Content-Type: text/html;charset=ISO-8859-1
+Strict-Transport-Security: max-age=47304000; includeSubDomains
+X-Amz-Rid: AX7SBFTVQB79QDEFVX6W

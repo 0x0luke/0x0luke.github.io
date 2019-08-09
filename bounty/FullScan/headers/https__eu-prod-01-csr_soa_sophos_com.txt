@@ -1,0 +1,17 @@
+200 OK
+Cache-Control: private, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 14:25:44 GMT
+Last-Modified: Sat, 27 Jul 2019 09:21:46 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Etag: "cd1159b65c44d51:0"
+Server: Microsoft-IIS/8.5
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Accept-Ranges: bytes
+Content-Length: 178

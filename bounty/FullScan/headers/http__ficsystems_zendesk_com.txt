@@ -1,0 +1,26 @@
+200 OK
+X-Request-Id: 503032664ea1d214-SEA
+Server: cloudflare
+Date: Thu, 08 Aug 2019 08:42:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Language: es
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000;
+X-Zendesk-User-Id: 
+Cache-Tags: resource:restricted#show, pod:pod13
+X-Runtime: 0.123760
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+X-Frame-Options: SAMEORIGIN
+P3p: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+Status: 200 OK
+Etag: W/"e42248bb53c2dfe6af1164049662d60a"
+X-Zendesk-Origin-Server: help-center-unicorn-7674f8cd7f-n4pwj
+X-Content-Type-Options: nosniff
+Cf-Ray: 503032664ea1d214-MAN
+Cache-Control: max-age=0, private, must-revalidate
+Protocol: HTTP/1.0
+Cf-Cache-Status: BYPASS
+Vary: Accept-Encoding
+Set-Cookie: _zendesk_authenticated=; path=/; expires=Thu, 01 Jan 1970 00:00:00 -0000; secure; HttpOnly _help_center_session=U3B0alpHWlZ4ejhUNjR4ZzBqekpYait2dGZxZkNlaWFmTDJPSjRHQ2poMXRNT0R2UUR5RmNsZWhLbEhnTkFnTDR6KzZ2K2FFVVBHa0gzYUV5S0FRRHlRVGxxaTIrUG1GNzd3Q01iL1pJbTRSa2pSVnNER2JpZnFUelBnYmZ1SEo2TDZkODJJbFdTTnpNOWRZV0t3b3VLYXJ6MGluMnVyTXVEeTR3MU95V1FkNUFjVnU1R09pQjJlOTB6eTN1QUsxVTlBbVozMUNkaHJGbmppMFBnSDlJVGdkNlZqeHpYU3dlRXVRcjE2VkZvcz0tLVlocjVPQkpnVkVlTFpxN1o1SHJxaHc9PQ%3D%3D--f49f2406dae5a591ee690eb8ca557e1fdb379c63; path=/; secure; HttpOnly
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

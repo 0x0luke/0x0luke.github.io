@@ -1,0 +1,18 @@
+404 Not Found
+X-Shopify-Stage: production
+X-Request-Id: 670b5d2f-1803-4a94-b65a-527b0af5bde9
+Date: Wed, 07 Aug 2019 04:17:06 GMT
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=670b5d2f-1803-4a94-b65a-527b0af5bde9
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=670b5d2f-1803-4a94-b65a-527b0af5bde9
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Retry-Count: 0
+Set-Cookie: __cfduid=df14de84eb1704e682510bcdc01f252801565151426; expires=Thu, 06-Aug-20 04:17:06 GMT; path=/; domain=.warmme.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Server: cloudflare
+Cf-Ray: 5026705f2ffc366f-MAN

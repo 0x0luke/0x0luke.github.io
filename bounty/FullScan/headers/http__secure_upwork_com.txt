@@ -1,0 +1,11 @@
+403 Forbidden
+Content-Type: text/html
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 502697f1ef2ed224-MAN
+Date: Wed, 07 Aug 2019 04:44:07 GMT
+Set-Cookie: __cfduid=d17c75985c568522af56fc98d510c18ef1565153047; expires=Thu, 06-Aug-20 04:44:07 GMT; path=/; domain=.upwork.com; HttpOnly _pxhd=031f637dce3d8a444d7cfe862d023a1a5ff5d2122bcfe2caa46ce6c2a653f27c:fde46141-b8cd-11e9-bcf2-e525b7fa3d44; Expires=Thu, 06-Aug-20 04:44:07 GMT; Path=/
+Vnd-Eo-Trace-Id: 502697f1ef2ed224-MAN
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Server: cloudflare

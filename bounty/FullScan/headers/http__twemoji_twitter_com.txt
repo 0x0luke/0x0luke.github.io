@@ -1,0 +1,15 @@
+200 OK
+Age: 39338
+Cache-Control: max-age=0
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	syndication.twitter.com; font-src 'self' https://*.twimg.com https://*.twitter.com data:; frame-src 'self' https://twitter.com https://*.twitter.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://www.google-analytics.com https://cdn.cms-twdigitalassets.com data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' https://*.twimg.com https://*.twitter.com https://static.ads-twitter.com; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self'
+Date: Wed, 07 Aug 2019 04:43:04 GMT
+Accept-Ranges: bytes
+X-Connection-Hash: 9b13227b790b9cd2dee358f6b3a07272
+X-Response-Time: 110
+Retry-Count: 0
+Expires: Wed, 07 Aug 2019 04:43:04 GMT
+Server: tsa_f
+Strict-Transport-Security: max-age=631138519

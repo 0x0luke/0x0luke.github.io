@@ -1,0 +1,14 @@
+200 OK
+Content-Security-Policy: frame-ancestors https://marina.digitalocean.com https://digitaloceaninc.lookbookhq.com
+Server: cloudflare
+Content-Type: text/html
+X-Frame-Options: ALLOW-FROM https://marina.digitalocean.com/
+Last-Modified: Wed, 07 Aug 2019 20:23:09 GMT
+Etag: W/"5d4b332d-2a5ad"
+Date: Thu, 08 Aug 2019 07:12:46 GMT
+Set-Cookie: __cfduid=deba72a69ef6863702ee4fc6c05e71af51565248366; expires=Fri, 07-Aug-20 07:12:46 GMT; path=/; domain=.digitalocean.com; HttpOnly
+X-Content-Security-Policy: frame-ancestors https://marina.digitalocean.com https://digitaloceaninc.lookbookhq.com
+Cf-Ray: 502faf117e5fbfed-MAN
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

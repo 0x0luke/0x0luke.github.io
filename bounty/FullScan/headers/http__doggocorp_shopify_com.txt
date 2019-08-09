@@ -1,0 +1,18 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+X-Dc: gcp-us-central1,gcp-us-central1
+X-Download-Options: noopen
+Cf-Ray: 50266ff3fad3d21c-MAN
+Retry-Count: 0
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+Set-Cookie: __cfduid=d2a011b25074e403ec8c16b0063477d411565151409; expires=Thu, 06-Aug-20 04:16:49 GMT; path=/; domain=.doggocorp.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Request-Id: 7aff4435-b8eb-4662-ae73-da61ab4d143e
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7aff4435-b8eb-4662-ae73-da61ab4d143e
+Date: Wed, 07 Aug 2019 04:16:49 GMT
+Content-Type: text/html; charset=utf-8
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7aff4435-b8eb-4662-ae73-da61ab4d143e

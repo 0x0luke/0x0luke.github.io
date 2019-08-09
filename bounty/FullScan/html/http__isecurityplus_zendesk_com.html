@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16494 -->
+
+  <title>Tend Insights</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:sfyv8wAID0KZoRirG8IRZv8XpzN3XnFHjlQbCpMPKoAY7Jn4zwedSM1JIN0or+8vzCZ7aJKf1lU7OC3nDV8tHQ==" />
+  <link rel="canonical" href="https://support.tendinsights.com/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://support.tendinsights.com/hc/en-us" />
+<link rel="alternate" hreflang="es" href="https://support.tendinsights.com/hc/es" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p13.zdassets.com/hc/theming_assets/105388/2243406/style.css?digest=360001356803" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/105388/f3e270a66f8ffbfa86e67403a4c747e081f39634.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+<!--- external libraries --->
+<!--- Google Font Montserrat and Raleway --->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+<!--- FONTAWESOME --->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+<!--- BOOTSTRAP --->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--- Script for passing data to tickets --->
+<script>
+  (function() {
+    var regex = /tu\=[^\&\#\/\?]+/g;
+    
+    function fill() {
+        var tu = localStorage.getItem('tu');
+        
+        console.log('got item from localstorage ' + tu);
+        
+        if (tu && typeof this.ticket === 'function') {
+            var ticket = this.ticket();
+            if (ticket) {
+                console.log('assigning values to ticket');
+                ticket.customField("custom_field_25012383", atob(decodeURIComponent(tu)));
+                ticket.customField("custom_field_25397023", atob(decodeURIComponent(tu)));
+            }
+        }
+    }
+    
+    if (localStorage) {
+        var searchResult = location.search.match(regex);
+        if (searchResult) {
+            var tu = searchResult[0].substring(3);
+            console.log(tu);
+            console.log(atob(decodeURIComponent(tu)));
+            localStorage.setItem('tu', tu);
+        }
+        setTimeout(fill, 1000);
+    }
+}());
+
+
+</script>
+<!--- FACEBOOK SOCIAL SCRIPT --->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <script type="text/javascript" src="//p13.zdassets.com/hc/theming_assets/105388/2243406/script.js?digest=360001356803"></script>
+</head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <!---
+<header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/105388/827dfea892d111a8f094a7d3a779fbfdb30b0ed5.png" alt="Logo">
+    </a>
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu"></span>
+    <nav class="user-nav" id="user-nav">
+      <a href="/hc/en-us/community/topics">Community</a>
+      <a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>
+    </nav>
+      <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.tendinsights.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+  </div>
+</header>
+--->
+<header class="header">
+  <div class="logo">
+    <a href="https://www.tendinsights.com">
+      <img src="//theme.zdassets.com/theme_assets/105388/827dfea892d111a8f094a7d3a779fbfdb30b0ed5.png" alt="Logo">
+    </a>
+    <!---<a title="Home" href="/hc/en-us">--->
+    
+    <!---</a>--->
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu"></span>
+    <nav class="user-nav" id="user-nav">
+      <a title="Home" href="/hc/en-us">
+      	Support Home
+      </a>
+      <a href="/hc/en-us/community/topics">Community</a>
+      <a class="submit-a-request" href="/hc/en-us/requests/new">Contact Us</a>
+    </nav>
+      <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.tendinsights.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+  </div>
+</header>
+
+
+  <main role="main">
+    
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2>How can we help?</h2>
+    <br>
+    <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Ask here" autocomplete="off" aria-label="Ask here" /></form>
+    <br>
+    <h4>Please use the search function or browse our collection </h4>
+    <br>
+    <!---<a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>--->
+    <h4>
+    	<a class="herolink" href="https://support.tendinsights.com/hc/en-us/requests/new">Submit Help Request</a>
+    </h4>
+  </div>
+</div>
+
+
+<div class="container-main container-fluid">
+	
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <h2 style="text-align:center">Knowledge Base Sections</h2>
+        <br>
+      	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        
+         <!-- if you need to hide sections -->
+        <div class="panel panel-red">
+          <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#tab_115001240723" id="headingOne">
+            <h4 class="panel-title accordion-toggle">
+              <a role="">
+                <h3>
+                
+                
+                  <!--- <img src="" /> --->
+                  <i class="fa fa-newspaper-o fa-fw fa-lg"></i>
+                   News
+                  </h3>              
+              </a>
+            </h4>
+          </div>
+
+          <div id="tab_115001240723" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body accordion-list">
+                
+                <section class="section">
+                  <a href="/hc/en-us/sections/115001564963-Press-Releases"><h3 class=home-section>Press Releases</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005429806-Release-Tend-s-New-Lynx-Solar-Camera-Delivers-Smart-Sun-Powered-Home-Security">
+                          
+                          Release: Tend&#39;s New Lynx Solar™ Camera Delivers Smart, Sun-Powered Home Security
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  </section>
+                  
+              </div>
+            </div>
+        </div>
+        
+        
+         <!-- if you need to hide sections -->
+        <div class="panel panel-red">
+          <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#tab_200326625" id="headingOne">
+            <h4 class="panel-title accordion-toggle">
+              <a role="">
+                <h3>
+                  <!---<img src="" />--->
+                  <i class="fa fa-question-circle fa-fw fa-lg"></i>
+                  FAQ
+                  
+                
+                </h3>              
+              </a>
+            </h4>
+          </div>
+
+          <div id="tab_200326625" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body accordion-list">
+                
+                <section class="section">
+                  <a href="/hc/en-us/sections/200852715-Using-Your-Camera"><h3 class=home-section>Using Your Camera</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005483986-How-do-I-access-my-camera-from-a-Windows-or-Mac-based-computer-">
+                          
+                          <i class="icon-star" "promoted-icon"></i>
+                          
+                          How do I access my camera from a Windows or Mac based computer?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/360000084603-How-do-I-delete-events-from-the-web-app-">
+                          
+                          How do I delete events from the web app?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005748786-Camera-Volume-Control">
+                          
+                          Camera Volume Control
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005639966-How-do-I-download-a-video-">
+                          
+                          How do I download a video?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005526803-What-are-the-technical-specs-for-the-cameras-">
+                          
+                          What are the technical specs for the cameras?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005431786-How-do-I-delete-an-event-from-Tend-or-Tend-Secure-">
+                          
+                          How do I delete an event from Tend or Tend Secure?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  <a href="/hc/en-us/sections/200852715-Using-Your-Camera" class="see-all-articles button-small" role="button">
+                    See all 16 articles
+                  </a>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/202272083-Configuring-Your-Camera"><h3 class=home-section>Configuring Your Camera</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/360000091943-Turn-on-Notifications-in-Tend-Secure">
+                          
+                          Turn on Notifications in Tend Secure
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204711325-How-do-I-change-the-name-of-my-camera-">
+                          
+                          How do I change the name of my camera?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204711725-How-do-I-change-the-time-zone-of-my-camera-">
+                          
+                          How do I change the time zone of my camera?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204026129-How-do-I-change-night-vision-settings-">
+                          
+                          How do I change night vision settings?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204705125-How-do-I-change-the-resolution-video-quality-or-frame-rate-of-my-live-video-stream-">
+                          
+                          How do I change the resolution, video quality, or frame rate of my live video stream?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204710965-How-does-changing-my-video-resolution-quality-or-frame-rate-impact-the-video-stream-of-a-shared-camera-">
+                          
+                          How does changing my video resolution, quality, or frame rate impact the video stream of a shared camera?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/202275886-Sharing-Your-Camera"><h3 class=home-section>Sharing Your Camera</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005728746-How-to-share-with-family-and-friends-through-the-Tend-and-Tend-Secure-apps">
+                          
+                          How to share with family and friends through the Tend and Tend Secure apps
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204027499-How-do-I-share-my-camera-with-family-and-friends-">
+                          
+                          How do I share my camera with family and friends?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204027469-How-do-I-un-share-my-camera-from-all-of-my-family-and-friends-">
+                          
+                          How do I un-share my camera from all of my family and friends?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204703305-How-do-I-un-share-my-camera-from-only-some-of-my-family-and-friends-">
+                          
+                          How do I un-share my camera from only some of my family and friends?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/200829029-Using-Motion-Triggered-Recordings"><h3 class=home-section>Using Motion-Triggered Recordings</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/203413269-How-do-I-enable-motion-triggered-mobile-notifications-">
+                          
+                          How do I enable motion-triggered mobile notifications?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204028659-How-do-I-schedule-when-I-receive-motion-triggered-mobile-notifications-">
+                          
+                          How do I schedule when I receive motion-triggered mobile notifications?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204028749-What-are-motion-triggered-recordings-and-lifetime-1-Day-Cloud-Storage-">
+                          
+                          What are motion-triggered recordings and lifetime 1-Day Cloud Storage?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204028709-How-do-I-enable-motion-triggered-recordings-and-free-1-Day-Cloud-Storage-">
+                          
+                          How do I enable motion-triggered recordings and free 1-Day Cloud Storage?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/203494629-How-do-I-view-my-motion-triggered-recordings-">
+                          
+                          How do I view my motion-triggered recordings?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204017609-How-do-I-download-my-motion-triggered-recordings-">
+                          
+                          How do I download my motion-triggered recordings?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  <a href="/hc/en-us/sections/200829029-Using-Motion-Triggered-Recordings" class="see-all-articles button-small" role="button">
+                    See all 15 articles
+                  </a>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/200811009-Account-Management"><h3 class=home-section>Account Management</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/360000035266-Tend-brand-cameras-Information-concerning-storage-and-subscriptions">
+                          
+                          Tend brand cameras: Information concerning storage and subscriptions
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005703266-Forgotten-username-or-password">
+                          
+                          Forgotten username or password
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204697735-How-do-I-change-my-password-">
+                          
+                          How do I change my password?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204009199-How-do-I-change-my-email-address-">
+                          
+                          How do I change my email address?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204009099-How-do-I-delete-a-camera-from-my-iSecurity-account-">
+                          
+                          How do I delete a camera from my iSecurity+ account?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204705785-Can-I-change-my-iSecurity-username-">
+                          
+                          Can I change my iSecurity+ username?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  <a href="/hc/en-us/sections/200811009-Account-Management" class="see-all-articles button-small" role="button">
+                    See all 7 articles
+                  </a>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/200829609-Troubleshooting"><h3 class=home-section>Troubleshooting</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005720503-How-to-reset-the-Lynx-Indoor-after-changing-your-router-or-network-password">
+                          
+                          How to reset the Lynx Indoor after changing your router or network password
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005697483-iOS-Reset-Notifications">
+                          
+                          iOS - Reset Notifications
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005654943-How-do-I-turn-on-my-Lynx-Solar-">
+                          
+                          How do I turn on my Lynx Solar?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005479186-How-do-I-reset-my-network-">
+                          
+                          How do I reset my network?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005472903-I-just-installed-a-new-router-why-is-my-camera-not-working-">
+                          
+                          I just installed a new router, why is my camera not working?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204015579-Why-does-my-camera-get-warm-">
+                          
+                          Why does my camera get warm?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  <a href="/hc/en-us/sections/200829609-Troubleshooting" class="see-all-articles button-small" role="button">
+                    See all 20 articles
+                  </a>
+                  
+                  </section>
+                  
+              </div>
+            </div>
+        </div>
+        
+        
+         <!-- if you need to hide sections -->
+        <div class="panel panel-red">
+          <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#tab_115001240703" id="headingOne">
+            <h4 class="panel-title accordion-toggle">
+              <a role="">
+                <h3>
+                
+                  <!---<img src="" />--->
+                  <i class="fa fa-university fa-fw fa-lg"></i>
+                  Lib
+                
+                </h3>              
+              </a>
+            </h4>
+          </div>
+
+          <div id="tab_115001240703" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body accordion-list">
+                
+                <section class="section">
+                  <a href="/hc/en-us/sections/200887715-About-Us"><h3 class=home-section>About Us</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204697405-Who-is-Tend-Insights-Inc-and-what-is-iSecurity-">
+                          
+                          Who is Tend Insights, Inc. and what is iSecurity+?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204196395-What-cameras-are-compatible-with-iSecurity-">
+                          
+                          What cameras are compatible with iSecurity+?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/200852725-Installing-Your-Camera"><h3 class=home-section>Installing Your Camera</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005628243-TendSecure-Lynx-Indoor-Setup">
+                          
+                          TendSecure Lynx Indoor Setup
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005559383-Despicable-Me-Minion-Flexi-Cam-Visual-Setup-Guide">
+                          
+                          Despicable Me™ Minion Flexi-Cam Visual Setup Guide
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005477943-Despicable-Me-Stuart-Minion-setup-Android-and-iOS-">
+                          
+                          Despicable Me™ Stuart Minion setup (Android and iOS)
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005460983-Will-your-cameras-work-with-my-network-setup-">
+                          
+                          Will your cameras work with my network setup?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005431666-How-do-I-install-my-Bluetooth-Despicable-Me-camera-under-Android-">
+                          
+                          How do I install my Bluetooth Despicable Me™ camera under Android?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/115005428463-How-do-I-install-my-Despicable-Me-Minion-Bluetooth-Camera-with-an-iPhone-">
+                          
+                          How do I install my Despicable Me™ Minion Bluetooth Camera with an iPhone?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  <a href="/hc/en-us/sections/200852725-Installing-Your-Camera" class="see-all-articles button-small" role="button">
+                    See all 16 articles
+                  </a>
+                  
+                  </section>
+                  
+                <section class="section">
+                  <a href="/hc/en-us/sections/200931479-Security-and-Privacy"><h3 class=home-section>Security and Privacy</h3></a>
+                    <ul class="article-list promoted-articles">
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204703095-Can-iSecurity-employees-view-my-videos-">
+                          
+                          Can iSecurity+ employees view my videos?
+                        </a>             
+                      </li>
+                      
+                      <li class="promoted-articles-item ">               
+                        <a href="/hc/en-us/articles/204703085-Is-my-video-secure-">
+                          
+                          Is my video secure?
+                        </a>             
+                      </li>
+                      
+                    </ul>
+                  
+                  </section>
+                  
+              </div>
+            </div>
+        </div>
+        
+        
+				</div>        
+      </div>
+    </div>
+  </div> 
+</div>	
+
+<div class="container-community container-fluid">
+  
+	
+    <section class="section community">
+        <!-- Reordered below sections to keep look with Article Sections-->
+        
+        <a class="community-link" href="/hc/en-us/community/topics">
+      		<h3><i class="fa fa-comments-o fa-lg"></i>
+        	Community Forums</h3>
+        </a>
+        <!-- End edits -->
+
+      </section>
+  
+	<br>
+  <section class="section activity">
+    <div data-app="recent-activity" data-url="/hc/api/internal/recent_activities?locale=en-us"></div>
+  </section>
+  
+</div>
+
+
+
+
+  </main>
+
+  <!--- <footer class="footer">
+  <!---<div class="footer-inner">
+    <a title="Home" href="/hc/en-us">
+    	Tend Support Portal Home
+    </a>
+
+    <div class="footer-language-selector">
+      
+        <div class="dropdown language-selector" aria-haspopup="true">
+          <a class="dropdown-toggle">
+            English (US)
+          </a>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            
+              <a href="/hc/change_language/es?return_to=%2Fhc%2Fes" dir="ltr" rel="nofollow" role="menuitem">
+                Español
+              </a>
+            
+          </span>
+        </div>
+      
+    </div>
+  </div>
+</footer>--->
+
+<footer id="tdFooter">
+    <div class="container">
+       <div class="row">
+           <div class="col-sm-3">
+               <!---<h2 class="logo">
+                   <a href="#">Tend</a>
+               </h2>--->
+             	 <div class="tdFooter-Logo">
+             	 		<a href="https://www.tendinsights.com">
+      					 		<img src="//theme.zdassets.com/theme_assets/105388/4a401e9bc7d9049492b303f6546fd75f8f7f451d.png" alt="Logo">
+    					 		</a>
+               </div>
+           </div>
+           <div class="col-sm-5"></div>
+           <div class="col-sm-4">
+               <div class="social-networks">
+                    <a href="https://www.facebook.com/tendinsights" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tendinsights" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/tendinsights" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/tend-insights" class="linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.youtube.com/c/tendinsights" class="youtube"><i class="fa fa-youtube-play"></i></a>
+               </div>
+           </div>
+       </div>
+      <div class="row">
+          <div class="col-sm-2">
+              <h5>Company</h5>
+            	<hr class="special-white">
+              <ul>
+                  <li><a href="https://www.tendinsights.com/pages/about">About Us</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/meet-the-team">Meet the team</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/press">Press</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+              <h5>Orders & Returns</h5>
+            	<hr class="special-white">
+              <ul>
+                  <li><a href="https://www.tendinsights.com/pages/shipping">Shipping</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/refunds-and-exchanges">Refunds and Exchanges</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/warranty">Warranty</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-2">
+              <h5>Helpful Links</h5>
+            	<hr class="special-white">
+              <ul>
+                  <li><a href="https://support.tendinsights.com/hc/en-us">Faqs</a></li>
+                  <li><a href="https://support.tendinsights.com/hc/en-us">Product Support</a></li>
+                  <li><a href="https://support.tendinsights.com/hc/en-us/requests/new">Contact Us</a></li>
+                  <li><a href="https://www.tendinsights.com/tools/store-locator">Store Locator</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/john-deere-dealers">John Deere Dealers</a></li>
+                  <li><a href="https://www.tendinsights.com/pages/site-map">Site Map</a></li>
+              </ul>
+          </div>
+
+      </div>
+  </div>
+  <div class="footer-copyright">
+      <p>© 2017. Tend Insights, Inc. All rights reserved. View our Terms and Conditions and Privacy Policy. Apple, iPad, and iPhone are trademarks of Apple, Inc. Android is the trademark of Google, Inc. Both are registered in the US and other countries. The Kodak trademark, logo and trade dress are used under license from Kodak. John Deere's green and yellow color scheme, the leaping deer symbol, and JOHN DEERE are trademarks of Deere & Company. Despicable Me, Minion Made and all related marks and characters are trademarks and copyrights of Universal Studios. Licensed by Universal Studios. Products and prices (not including sales tax) are valid in U.S. only. Only one promo code may be applied per order and may not be combined with any other offer.</p>
+  </div>
+</footer>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-a4bd0945bfe2f2a85fa3a27593dc8175.js"></script>
+  <script src="https://isecurityplus.zendesk.com/auth/v2/host.js" data-brand-id="2243406" data-return-to="https://support.tendinsights.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="2243406,true,true"></script>
+  <script type="text/javascript" src="https://p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"isecurityplus","environment":"production","name":"Tend Insights, Inc."};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:Wk9zU+AvPHz4KvUef3n2IVzW2ieCXsZXidad/MF6NaDzX0VYLyCudqzCzWhMFAhob+cGfGefYUU8uqsRXyoyPQ==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://isecurityplus.zendesk.com","current_host_mapping":"support.tendinsights.com","current_path":null,"authentication_domain":"https://isecurityplus.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"3d2540a9294ebb4c305cdeaa87901e63700549fc","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":true,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.tendinsights.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.tendinsights.com/hc/en-us","arrange_content_url":"https://support.tendinsights.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.tendinsights.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://isecurityplus.zendesk.com/knowledge/user_segments?brand_id=2243406","has_community_enabled":true,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://isecurityplus.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://support.tendinsights.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://support.tendinsights.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://isecurityplus.zendesk.com/knowledge/arrange?brand_id=2243406","article_verification_url":"https://isecurityplus.zendesk.com/knowledge/verification?brand_id=2243406","has_article_verification":false,"guide_language_settings_url":"https://support.tendinsights.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://isecurityplus.zendesk.com/knowledge/import_articles?brand_id=2243406","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.tendinsights.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkDrJsBOhNoZWxwX2NlbnRlcl9pZGkEr3/tCzoNYnJhbmRfaWRpA047IjoMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--dea117d72a3df5d60889c989230b6b25df84d2d6");
+})();
+
+  </script>
+</body>
+</html>

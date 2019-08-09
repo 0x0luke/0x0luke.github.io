@@ -1,0 +1,18 @@
+200 OK
+Server: nginx + Phusion Passenger
+X-Request-Id: a7ae205e-537a-4e90-b819-0a559727b179
+X-Ua-Compatible: IE=Edge,chrome=1
+Vary: Accept-Encoding
+X-Powered-By: Phusion Passenger
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Date: Thu, 08 Aug 2019 15:01:26 GMT
+Status: 200 OK
+X-Rack-Cache: miss
+X-Runtime: 0.125693
+Via: 1.1 vegur
+Retry-Count: 0
+Etag: "6ab6a5aa24f4e27592514620f850a305"
+P3p: CP="ALL DSP COR CURa ADMa DEVa OUR IND COM NAV"
+Set-Cookie: _session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNmYmEwOGY5YTZjMTg2ZjE1NGQyZTdjNzVlOGYyNmM2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTYrYWMxWmt5QSthelB1cWNFZU5TL1hZNzc4Vm1jNDlYZWlMaXBjR1lpaDg9BjsARg%3D%3D--2d13e4ff6681710743b735ba8e9020de05f70fee; domain=.vhx.tv; path=/; expires=Sat, 08-Aug-2020 15:01:26 GMT; secure; HttpOnly
+X-Frame-Options: SAMEORIGIN

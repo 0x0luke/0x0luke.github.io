@@ -1,0 +1,14 @@
+200 OK
+X-Powered-By: PHP/5.6.40
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 502fa25ce99bd214-MAN
+Pragma: no-cache
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 07:04:06 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Strict-Transport-Security: max-age=31536000; preload
+X-Frame-Options: DENY
+Server: cloudflare

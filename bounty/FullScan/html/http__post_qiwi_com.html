@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QIWI Box</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="icon" type="image/png" href="/static/ql/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/ql/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/ql/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/ql/img/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/static/ql/img/favicon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/static/ql/img/favicon-152x152.png" sizes="152x152">
+
+    <link rel="stylesheet" type="text/css" href="/static/ql/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/ql/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/static/ql/css/back.css">
+    <link rel="stylesheet" href="/static/components/fancybox/source/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="/static/components/dropzone/dist/min/basic.min.css" type="text/css"
+          media="screen"/>
+    <link rel="stylesheet" href="/static/components/dropzone/dist/min/dropzone.min.css" type="text/css"
+          media="screen"/>
+    <link rel="stylesheet" href="/static/components/suggestions.jquery/dist/css/suggestions.css" type="text/css"
+          media="screen"/>
+
+    <script>
+        var dadataToken = "5b79ff2931be91604e377ad5867655d4f7f3590e";
+        var ipstackAccessKey = "573127be4727b88f899bd9fa619b8fdb";
+        var LICENSE_READ = false;
+    </script>
+
+</head>
+<body>
+<div class="burger"></div>
+<div class="big-block up-block" id="qiwibox-main">
+    <div class="block">
+        <div class="header">
+            <a class="logo">
+                <img height="107" src="/static/ql/img/logo-qiwi-slogan.svg" alt=""></a>
+            <ul class="main">
+                <li>
+                    <a href="#qiwibox-send-request"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-send-request');"
+                       class="scroll-to">Отправить заявку</a>
+                </li>
+                <li>
+                    <a href="#qiwibox-postamat"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-postamat');"
+                       class="scroll-to">Постамат</a>
+                </li>
+                <li>
+                    <a href="#qiwibox-gallery"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-gallery');"
+                       class="scroll-to">Галерея</a>
+                </li>
+
+                
+                    <li>
+                        <a href="#qiwibox-login"
+                           class="qiwibox-popup">Личный кабинет</a>
+                    </li>
+                
+                <li>
+                    <a href="/faq/"
+                       class="help-link">Частые вопросы</a>
+                </li>
+
+            </ul>
+            <div class="mail">
+                <a href="mailto:tochka@postamat.tech">tochka@postamat.tech</a>
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="half-flex-box">
+
+                <p class="big-text">
+                    Постаматы шаговой доступности
+                    <br/>
+                    специально для агентов QIWI
+                </p>
+                <a href="#qiwibox-send-request"
+                   onclick="ga('send', 'event', 'Nav', 'Click', 'But');"
+                   class="nice-button scroll-to">отправить заявку</a>
+            </div>
+            <div class="half-flex-box">
+                <div class="advantages">
+                    <div class="advantage">
+                        <img src="/static/ql/img/advantage-1.png" alt="">
+                        <p>
+                            <br>
+                            Дополнительный
+                            <br>
+                            доход
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <img src="/static/ql/img/advantage-2.png" alt="">
+                        <p>
+
+                            Делаем бизнес<br>
+                            в растущем сегменте рынка
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <img src="/static/ql/img/advantage-3.png" alt="">
+                        <p>
+                            <br>
+                            Новые
+                            <br>технологии
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <img src="/static/ql/img/advantage-4.png" alt="">
+                        <p>
+                            <br>
+                            Без
+                            <br>
+                            инвестиций
+                        </p>
+                    </div>
+                </div>
+                <a href="/static/ql/QIWIBox_Agents_Lite.pdf"
+                   onclick="ga('send', 'event', 'Presentation', 'Download', 'Header');"
+                   class="load-presentation" target="_blank">Скачать
+                    подробную презентацию</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="big-block call-back">
+    <div class="block">
+        <p>Есть вопросы? Оставьте заявку на звонок!<br/>
+            <a href="/faq/">Ответы на часто задаваемые вопросы</a>
+        </p>
+        <a href="#callback"
+           onclick="ga('send', 'event', 'СallBack', 'Win', 'CallbackWinOpen');ga('send', 'pageview', '/virtual/CallbackWinOpen/');"
+           class="nice-button qiwibox-popup">Перезвоните мне!</a>
+    </div>
+</div>
+<div class="big-block gallery-block" id="qiwibox-gallery">
+    <div class="block">
+        <h2>Галерея успешных установок</h2>
+        <p>
+            Посмотрите примеры установок наших постаматов.
+            <br>Ваши клиенты будут вам благодарны!</p>
+        <div class="gallary">
+            <div class="half-gallary">
+                <div class="quarter-gallary">
+                    <a class="gallery-img" href="/static/ql/img/gallery-1.jpeg"
+                       onclick="ga('send', 'event', 'Gallery', 'Photo', 'Open');"
+                       rel="first">
+                        <img src="/static/ql/img/gallery-1.jpeg" alt=""></a>
+                </div>
+                <div class="quarter-gallary">
+                    <div class="eighth-gallary">
+                        <a class="gallery-img" href="/static/ql/img/gallery-2.png"
+                           onclick="ga('send', 'event', 'Gallery', 'Photo', 'Open');"
+                           rel="first">
+                            <img src="/static/ql/img/gallery-2.png" alt=""></a>
+                    </div>
+                    <div class="eighth-gallary">
+                        <a class="gallery-img" href="/static/ql/img/gallery-3.jpg"
+                           onclick="ga('send', 'event', 'Gallery', 'Photo', 'Open');"
+                           rel="first">
+                            <img src="/static/ql/img/gallery-3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="half-gallary">
+                <a class="gallery-img" href="/static/ql/img/gallery-4.jpg"
+                   onclick="ga('send', 'event', 'Gallery', 'Photo', 'Open');"
+                   rel="first">
+                    <img src="/static/ql/img/gallery-4.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-block" id="qiwibox-postamat">
+    <div class="about-block-img">
+        <img src="/static/ql/img/about-img.jpg" alt=""></div>
+    <div class="about-block-content">
+        <h2>
+            Что такое
+            <br>
+            постамат
+            <span>QIWI</span>
+        </h2>
+
+        <p>
+            Постаматы QiwiBox – способ доставки товаров из интернет-магазинов для тех,
+            кто не хочет тратить время на общение с курьером.
+            <br>
+            <br>
+            Постамат подключается к платёжному терминалу.
+            На терминале включается третья кнопка «Получить заказ».
+            <br>
+            <br>
+            Постамат состоит из модулей (колонна с ячейками). В комплекте 2 модуля: основной и дополнительный.
+            <br>
+            <br>
+            Высота постамата – 188 см, в ширину 2 модуля - 110 см, глубина постамата – 45 см.
+            <br>
+        </p>
+    </div>
+</div>
+<div class="big-block form-block" id="qiwibox-send-request">
+    <div class="block">
+        <div class="form">
+            <form action="/irequest/" enctype="multipart/form-data">
+                <input type='hidden' name='csrfmiddlewaretoken' value='vbUiX6gsEy2u3I61KpHSTqLFth7Ftlc1vqXDD9FCKZgGHh6UnHN1XIeOuA9gepyD' />
+                
+                    <input type="hidden" name="suggestion" id="id_proposals_suggestion" />
+                
+                    <input type="hidden" name="proposal_timestamp" id="id_proposals_proposal_timestamp" />
+                
+                    <input type="hidden" name="captcha" id="id_proposals_captcha" />
+                
+                <h2>Отправить заявку на установку постамата</h2>
+                <div class="form-sections">
+                    <div class="form-section">
+                        <div class="input-set">
+                            <label for="id_proposals_username">
+                                Контактное лицо
+                                <span class="star">*</span>
+                            </label>
+                            <input type="text" name="username" placeholder="Ваше имя" maxlength="255" class="nice-input" required id="id_proposals_username" />
+                        </div>
+                        <div class="input-set input-3">
+                            <label for="id_proposals_phone">
+                                Контактный телефон
+                                <span class="star">*</span>
+                            </label>
+                            <input type="text" name="phone" placeholder="+7 123 456-78-90" class="phone-mask nice-input" maxlength="255" required id="id_proposals_phone" />
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="input-set">
+                            <label for="id_proposals_email">
+                                Контактный email
+                                <span class="star">*</span>
+                            </label>
+                            <input type="email" name="email" placeholder="email@mail.com" maxlength="255" class="nice-input" required id="id_proposals_email" />
+                        </div>
+                        <div class="input-set input-set-address input-3">
+                            <label for="id_proposals_address">
+                                Адрес объекта
+                                <span class="star">*</span>
+                            </label>
+                            <input type="text" name="address" placeholder="Миклухо-маклая 154" maxlength="255" data-rule-dadataAddress="#address-helper" class="nice-input" required id="id_proposals_address" />
+
+                            <a href="#adress" class="qiwibox-popup"><span class="form-checkonmap_link  pseudolink">Проверить на карте</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-sections">
+                    <div class="form-section">
+                        <p class="comment-line">
+                            Поля отмеченные звёздочкой (<span class="star">*</span>) обязательны к заполнению
+                        </p>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-spoiler_link_wr">
+                            <span class="form-spoiler_link  pseudolink  js-showadditional">Дополнить информацию</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-additional">
+                    <div class="form-sections">
+                        <div class="form-section">
+                            <div class="input-set">
+                                <label for="id_proposals_workhours">
+                                    Режим работы
+                                </label>
+                                <input type="text" name="workhours" placeholder="Например, будни с 9 до 21" maxlength="255" class="nice-input" id="id_proposals_workhours" />
+                            </div>
+                            <div class="input-set input-2">
+                                <label for="id_proposals_comment">Комментарий:</label>
+                                <textarea name="comment" cols="40" rows="10" placeholder="Комментарий в свободной форме" maxlength="255" class="nice-input nice-textarea" id="id_proposals_comment">
+</textarea>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <label for="">Фотографии СНАРУЖИ</label>
+                            <div id="photos-preview" style="display: none;">
+                                <div class="input-image">
+                                    <label>
+                                        <img data-dz-thumbnail data-dz-remove/>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="photos-preview-tmp" style="display: none;">
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="img-set" id="photos-outside">
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <label for="" class="input-5">Фотографии ВНУТРИ</label>
+                            <div class="img-set" id="photos-inside">
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                                <div class="input-image input-image-tmp">
+                                    <label for="">
+                                        <p class="">
+                                            Загрузить
+                                            <br>фото</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-sections">
+                        <div class="form-section form-section-checkbox">
+                            <label>Обязательные пункты:</label>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="required" value="in_building" disabled id="id_proposals_required_0" checked />
+                                    <label for="id_required_0">
+                                        Ставится в помещение
+                                    </label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="required" value="is_evening" disabled id="id_proposals_required_1" checked />
+                                    <label for="id_required_1">
+                                        Работает и доступен после 19 часов
+                                    </label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="required" value="no_one_else" disabled id="id_proposals_required_2" checked />
+                                    <label for="id_required_2">
+                                        В здании нет других постаматов и пвз
+                                    </label>
+                                </div>
+                            
+                        </div>
+                        <div class="form-section form-section-checkbox">
+                            <label>Справочные пункты:</label>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="is_beside_mall" id="id_proposals_optional_0" />
+                                    <label for="id_proposals_optional_0">ТЦ рядом с точкой</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="is_chain_store" id="id_proposals_optional_1" />
+                                    <label for="id_proposals_optional_1">Сетевой магазин рядом с точкой</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="quickly_find" id="id_proposals_optional_2" />
+                                    <label for="id_proposals_optional_2">Точку быстро найти внутри</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="in_fst_floor" id="id_proposals_optional_3" />
+                                    <label for="id_proposals_optional_3">Точка расположена на 1-ом этаже</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="is_beside_enter" id="id_proposals_optional_4" />
+                                    <label for="id_proposals_optional_4">Точка расположена близко ко входу</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="free_parking" id="id_proposals_optional_5" />
+                                    <label for="id_proposals_optional_5">Рядом бесплатная парковка</label>
+                                </div>
+                            
+                                <div class="input-checkbox">
+                                    <input type="checkbox" name="optional" value="is_terminal_exists" id="id_proposals_optional_6" />
+                                    <label for="id_proposals_optional_6">Есть терминал на точке</label>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="recaptcha"></div>
+                <p id="submit_button"><input type="submit" class="nice-button"
+                                             onclick="ga('send', 'event', 'Proposal', 'Click', 'TopAuthConfirm');"
+                                             value="Отправить заявку"></p>
+                <p class="loader" id="submit_loader"><input type="submit"
+                                                            class="nice-button" value="Обработка"
+                                                            disabled="disabled"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="big-block call-back">
+    <div class="block">
+        <p>Есть вопросы? Оставьте заявку на звонок!</p>
+        <a href="#callback"
+           onclick="ga('send', 'event', 'СallBack', 'Win', 'CallbackWinOpen');ga('send', 'pageview', '/virtual/CallbackWinOpen/');"
+           class="nice-button qiwibox-popup">Перезвоните мне!</a>
+    </div>
+</div>
+
+<div class="big-block footer">
+    <div class="block">
+        <div class="sub-main">
+            <a class="logo">
+                <img src="/static/ql/img/logo-2.png" alt=""></a>
+            <ul class="main">
+                <li>
+                    <a href="#qiwibox-main"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-main');"
+                       class="scroll-to">Главная</a>
+                </li>
+                <li>
+                    <a href="#qiwibox-postamat"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-postamat');"
+                       class="scroll-to">Постамат</a>
+                </li>
+                <li>
+                    <a href="#qiwibox-gallery"
+                       onclick="ga('send', 'event', 'Nav', 'Click', 'Link', 'qiwibox-gallery');"
+                       class="scroll-to">Галерея</a>
+                </li>
+
+                
+                    <li>
+                        <a href="#qiwibox-login"
+                           class="qiwibox-popup">Личный кабинет</a>
+                    </li>
+                
+            </ul>
+            <div class="mail">
+                <p>Адрес Эл. почты</p>
+                <a href="mailto:tochka@postamat.tech">tochka@postamat.tech</a>
+            </div>
+            <div class="mail">
+                <p>Презентация для агентов</p>
+                <a href="/static/ql/QIWIBox_Agents_Lite.pdf" class="load-presentation"
+                   onclick="ga('send', 'event', 'Presentation', 'Download', 'Footer');" target="_blank">Скачать презентацию</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p></p>
+            <p>
+                © 2019, ООО "Постаматные Технологии"<br/>
+                <a class="offer" href="/offer/">Оферта</a>
+                <a href="/agreement/">Пользовательское соглашение</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="pop" id="callback">
+    <div class="callback-pop content-pop">
+        <div class="close-pop"></div>
+        <p><b>Обратный звонок</b></p>
+        <div class="form-message-success" style="display:none;">
+            <p>Мы обязательно вам перезвоним!</p>
+        </div>
+        <div class="form-content">
+            <p>Если у вас есть вопросы, оставьте свой номер телефона, и наш менеджер свяжется с вами в ближайшее
+                время</p>
+
+            <form action="/callback/" method="post">
+                <input type='hidden' name='csrfmiddlewaretoken' value='vbUiX6gsEy2u3I61KpHSTqLFth7Ftlc1vqXDD9FCKZgGHh6UnHN1XIeOuA9gepyD' />
+                
+                    <input type="hidden" name="user_timestamp" id="id_callback_user_timestamp" />
+                
+                    <input type="hidden" name="captcha" id="id_callback_captcha" />
+                
+                
+                    <div class="input-set">
+                        <label for="id_callback_phone">
+                            Ваш контактный телефон
+                            <span class="star">*</span>
+                        </label>
+
+                        <input type="text" name="phone" placeholder="+7 123 456-78-90" class="phone-mask nice-input" maxlength="255" required id="id_callback_phone" />
+                    </div>
+                
+
+
+                <div class="recaptcha"></div>
+                <input type="submit"
+                       class="nice-button"
+                       value="перезвоните мне!">
+
+            </form>
+            <p class="mail"><br>Для связи по эл. почте пишите на адрес <a href="mailto:tochka@postamat.tech">tochka@postamat.tech</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="pop" id="qiwibox-login">
+    <div class="callback-pop content-pop">
+        <div class="close-pop"></div>
+        <p><b>Личный кабинет</b></p>
+        <div class="form-content">
+            <form id="login_form" action="/login/" method="post">
+                <input type='hidden' name='csrfmiddlewaretoken' value='vbUiX6gsEy2u3I61KpHSTqLFth7Ftlc1vqXDD9FCKZgGHh6UnHN1XIeOuA9gepyD' />
+                
+                    <input type="hidden" name="captcha_auth" id="id_auth_captcha_auth" />
+                
+                
+                    <div class="input-set input-set-error">
+                        <label for="id_auth_username">
+                            Email адрес
+                            <span class="star">*</span>
+                            
+                        </label>
+                        <input type="text" name="username" autofocus maxlength="254" class="nice-input" required id="id_auth_username" />
+                    </div>
+                
+                    <div class="input-set input-set-error">
+                        <label for="id_auth_password">
+                            Пароль
+                            <span class="star">*</span>
+                            
+                                <a href="/recover/" class="error pass-restore-link">забыли пароль?</a>
+                            
+                        </label>
+                        <input type="password" name="password" class="nice-input" required id="id_auth_password" />
+                    </div>
+                
+                <div class="recaptcha"></div>
+                <br/>
+                <input type="submit" class="nice-button"
+                       value="Войти!">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="pop" id="thankyou">
+    <div class="callback-pop content-pop">
+        <div class="close-pop"></div>
+        <p><b>Ваша заявка принята!</b></p>
+        <div class="form-content">
+            <p>Мы приняли вашу заявку и она поступила в обработку.<br/>Мы обязательно с вами свяжемся!</p>
+            <p class="mail"><br>Для связи по эл. почте пишите на адрес <a href="mailto:tochka@postamat.tech">tochka@postamat.tech</a></p>
+        </div>
+    </div>
+</div>
+<div class="pop" id="adress">
+    <div class="pop-adress block content-pop">
+        <div class="close-pop"></div>
+        <p><b>Укажите адрес объекта</b></p>
+        <label for="address-helper">Адрес объекта</label>
+        <p class="addr-inpop"><input type="text" id="address-helper" class="nice-input"><span
+                id="address-helper-cross"></span></p>
+        <input type="submit" id="address-choose_top" class="nice-button"
+               onclick="ga('send', 'event', 'Proposal', 'Click', 'TopAuthBut');"
+               value="Выбрать адрес">
+        <div class="map" id="address-map"></div>
+        <input type="submit" id="address-choose" class="nice-button"
+               onclick="ga('send', 'event', 'Proposal', 'Click', 'TopAuthBut');"
+               value="Выбрать адрес">
+    </div>
+</div>
+<div class="pop gallary-pop" id="gallary">
+    <div class="pop-adress block">
+        <div class="close-pop"></div>
+        <img class="galary-pop-img" src="">
+    </div>
+</div>
+<div class="pop" id="file_image_type_error">
+    <div class="callback-pop content-pop">
+        <div class="close-pop"></div>
+        <p><b>Ошибка!</b></p>
+        <form action="">
+            <div class="form-content">
+                <p>Недопустимый тип файла!</p>
+                <p>
+                Допустимые форматы файлов:
+                <ul>
+                    <li>~.jpg, ~.jpeg</li>
+                    <li>~.png</li>
+                    <li>~.gif</li>
+                    <li>~.tif, ~.tiff</li>
+                </ul>
+                </p>
+            </div>
+
+            <input id="type_error_close"
+                   type="submit"
+                   class="nice-button"
+                   value="ОК">
+        </form>
+
+    </div>
+</div>
+
+<div class="pop" id="agreementModal">
+    <div class="agreement-pop content-pop">
+        <p><b>Пользовательское соглашение</b></p>
+        <div class="form-content">
+            <form>
+            <div class="form-section form-section-checkbox">
+
+                <div class="input-checkbox">
+                    <input type="checkbox" name="required" required id="agreement-checkbox" />
+                    <label for="agreement-checkbox">
+                        Я принимаю условия пользовательского <a target="_blank" href="/agreement/">соглашения</a> и
+                        даю согласие на обработку моих персональных данных
+                    </label>
+                </div>
+
+            </div>
+            <button type="submit" class="nice-button">Принимаю</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="//api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script src="/static/components/jquery/dist/jquery.min.js"></script>
+<script src="/static/components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="/static/components/jquery-mask/dist/jquery.mask.min.js"></script>
+<script src="/static/components/suggestions.jquery/dist/js/jquery.suggestions.min.js"></script>
+<script src="/static/components/jquery-validate/dist/jquery.validate.min.js"></script>
+<script src="/static/components/jquery-validate/dist/additional-methods.min.js"></script>
+<script src="/static/components/dropzone/dist/min/dropzone.min.js"></script>
+<script src="/static/ql/js/validate.dadata.address.js"></script>
+<script src="/static/ql/js/index.js"></script>
+<script src="/static/js/cookie.js"></script>
+<script src="/static/ql/js/form.validation.js"></script>
+    
+    
+        <script>
+            var RECAPTCHA_KEY = "6Lf17CEUAAAAAH_Y2Pq2dJ7C_UjinkL5k-qBTXKO";
+            document.recaptchaActive = true;
+        </script>
+        <script src="/static/js/captcha.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit"
+                async defer></script>
+    
+<!-- BEGIN JIVOSITE CODE {literal} -->
+
+    <script type='text/javascript'>
+        (function(){ var widget_id = 'ZaYFizp6wH';var d=document;var w=window;function l(){
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-92401333-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter43001994 = new Ya.Metrika({
+                id: 43001994,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                trackHash: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks"); </script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/43001994" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>

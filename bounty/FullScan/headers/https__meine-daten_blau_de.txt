@@ -1,0 +1,17 @@
+200 OK
+Retry-Count: 0
+X-Cache: MISS
+Set-Cookie: JSESSIONID=7E82DDBFFACC06A2DFBF5E9DACB51B11; Path=/cae; Secure; HttpOnly touchPoints=P|20190807071013; Domain=.blau.de; Expires=Thu, 06-Aug-2020 05:10:13 GMT; Path=/ o2-Cust=""; Domain=.blau.de; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ cust=CUST%3A0%23FV%3A1565154613066%23; Domain=.blau.de; Expires=Fri, 06-Aug-2021 05:10:13 GMT; Path=/ tde-routing=true;path=/;domain=www.blau.de;
+Vary: Accept-Encoding
+Content-Type: text/html;charset=utf-8
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2019 05:10:13 GMT
+Via: 1.1 varnish (Varnish/5.2)
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: DENY SAMEORIGIN
+Content-Language: de-DE
+X-Cnection: close
+X-Varnish: 40930097
+Age: 0
+Server: TEF-NG2
+X-Content-Type-Options: nosniff

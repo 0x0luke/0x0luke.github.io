@@ -1,0 +1,28 @@
+200 OK
+X-Sorting-Hat-Podid: 55
+X-Dc: gcp-us-east1,gcp-us-east1
+Retry-Count: 0
+X-Cache: hit, server
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Server: cloudflare
+Date: Wed, 07 Aug 2019 04:16:55 GMT
+X-Sorting-Hat-Shopid: 1510342712
+Etag: cacheable:c21d5d55b91ccd92168d15fce535fc54
+X-Alternate-Cache-Key: cacheable:dcb03654fcd0495b955c13a9691e968c
+X-Request-Id: 8b5d636e-1927-43b4-ba11-863e63ef07f9
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8b5d636e-1927-43b4-ba11-863e63ef07f9
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=7889238
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Shopid: 1510342712
+X-Shardid: 55
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Cf-Ray: 5026701b0eb1d21c-MAN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Language: en
+Set-Cookie: _shopify_y=ff6f7dcf-6741-4c3a-abe1-5cdae3568d6b; path=/; expires=Fri, 06 Aug 2021 15:55:19 -0000 cart_currency=USD; path=/; expires=Wed, 21 Aug 2019 04:16:55 -0000 _orig_referrer=http%3A%2F%2Fla.shopify.com%2F; Expires=Wed, 21-Aug-19 04:16:55 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 04:16:55 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Wed, 21-Aug-19 04:16:55 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 04:16:55 -0000; HttpOnly
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8b5d636e-1927-43b4-ba11-863e63ef07f9
+X-Permitted-Cross-Domain-Policies: none

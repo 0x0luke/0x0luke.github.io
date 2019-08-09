@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zynga Account Preferences</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://d2qwkmp691iow7.cloudfront.net/vendor/bootstrap.min.css">
+  <!--Include CSS File Here -->
+  <link rel="stylesheet" href="https://d2qwkmp691iow7.cloudfront.net/accounts/styles.28a6d40a.css"/>
+  <style type="text/css">
+    .backgroundDiv {
+      /*Including this here because we need to replace the background image path using grunt*/
+      background-image: url(https://d2qwkmp691iow7.cloudfront.net/accounts/img/zcloud_bg.3232696d.png);
+    }
+  </style>
+</head>
+
+<body>
+<div id="processStatus">Processing ...</div>
+<div class="backgroundDiv"></div>
+
+<div id="header">
+  <img class="zyngaLogo" src="https://d2qwkmp691iow7.cloudfront.net/accounts/img/zynga-logo.53ca0264.jpg" width="100px">
+  <div class="portalHeading">Email Settings</div>
+</div>
+
+<div class="container-fluid" id="masterLoginScreen">
+  <div class="row">
+    <div class="col-md-6 loginOptions">
+      <h2>Sign In</h2>
+      <div class="mainText">
+        Connect with Zynga.com or Facebook to access your Email Settings
+      </div>
+      <div class="marginTop">
+
+        <div name="zyngaLogin" id="zyngaLogin" class="btn btnZynga col-md-12">
+          <div class="btnLogo">
+            <img src="https://d2qwkmp691iow7.cloudfront.net/accounts/img/zyngaLogoBtn.0dfda82b.png" height="40"/>
+          </div>
+          <div class="btnText">Connect with Zynga</div>
+        </div>
+
+        <div id="loginError"></div>
+
+        <div id="loginForm">
+          <form class="form" method="post" action="#">
+            <div class="form-group">
+              <div class="formLabel">Email</div>
+              <input type="text" name="email" id="email" class="col-md-12"/>
+            </div>
+            <div class="form-group">
+              <div class="formLabel">Password</div>
+              <input type="password" name="password" id="password" class="col-md-12"/>
+            </div>
+            <div class="marginTop">
+              <div name="zyngaLogin" id="login" class="btn btnZynga col-md-12">
+                <div class="btnLogo">
+                  <img src="https://d2qwkmp691iow7.cloudfront.net/accounts/img/zyngaLogoBtn.0dfda82b.png" height="40"/>
+                </div>
+                <div class="btnText">Login</div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="marginTop">
+          <div name="fb_login" class="btn btnFb col-md-12" id="fb_button">
+            <div class="btnLogo">
+              <img src="https://d2qwkmp691iow7.cloudfront.net/accounts/img/fbLogo.79dd584b.png" height="40"/>
+            </div>
+            <div class="btnText">Connect with Facebook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 emailOptions">
+      <h2>Email</h2>
+      <div id="emailForm" class="marginTop">
+        <div class="mainText">
+          Enter your email address here and an email will be sent to that account with instructions on how to
+          unsubscribe.
+        </div>
+
+        <div id="emailError"></div>
+        <!-- Opt out through Email -->
+        <div>
+          <div class="formLabel marginTop">Email address</div>
+          <input id="emailAdd" name="emailAdd" type="text" class="col-md-12"/>
+        </div>
+        <div class="marginTop">
+          <button type="button" class="btn btnEmail col-md-12" id="getDetails">Unsubscribe</button>
+        </div>
+      </div>
+      <div id="formResponse"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="OptOutList">
+  <h2>Everything</h2>
+  <div class="mainText">
+    <input type="checkbox" id="CheckAll" onchange="setDataOptOut(this, id);">
+    <span class="gameName">We love a Know-It-All. Select to receive all emails from Zynga, or customize by cherry picking the options below.</span>
+  </div>
+
+  <div id="OptOutForm"></div>
+  <script id="OptOutForm-template" type="text/x-handlebars-template">
+    <h2 class="marginTop">Games</h2>
+    <div class="mainText">
+      Get game smart. Boost your game play with free rewards, new game announcements, and fun feature updates.
+    </div>
+    <div class="marginTop"></div>
+    {{#apps}}
+    <div>
+      <input type="checkbox" id={{app_id}} onchange="setDataOptOut(this, id);" {{optOutStatus opt_out}}>
+      <span class="gameName">{{name}}</span>
+    </div>
+    <hr/>
+    {{/apps}}
+    <h2>Nothing</h2>
+    <div class="mainText">
+      <input type="checkbox" id="EmptyAll" onchange="setDataOptOut(this, id);" {{optOutStatus_Nothing global.opt_out}}>
+      <span class="gameName">By selecting this option, you will no longer receive any emails from Zynga.</span>
+    </div>
+  </script>
+  <div id="saveButton" class="marginTop">
+    <button class="btn btnEmail">Save</button>
+  </div>
+</div>
+
+<div id="finalMessage" class="container-fluid loginOptions"></div>
+
+<!-- Include JS Files Here -->
+<script src="https://d2qwkmp691iow7.cloudfront.net/vendor/jquery-3.3.1.min.a09e13ee.js"></script>
+<script src="https://d2qwkmp691iow7.cloudfront.net/vendor/handlebars-v4.0.11.502d150a.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://connect.facebook.net/en_US/all.js"></script>
+<script src="https://d2qwkmp691iow7.cloudfront.net/accounts/login.a8340fb8.js"></script>
+<script src="https://d2qwkmp691iow7.cloudfront.net/accounts/api.js"></script>
+
+<script>
+  $("#zyngaLogin").click(function () {
+    $("#zyngaLogin").hide(0);
+    $("#loginForm").slideDown(400, function () {
+
+    });
+  });
+</script>
+<script>
+  Handlebars.registerHelper("optOutStatus", function (opt_out) {
+    if (opt_out === 0)
+      return "checked";
+    else if (opt_out === 1)
+      return "";
+  });
+</script>
+<script>
+  Handlebars.registerHelper("optOutStatus_Nothing", function (opt_out) {
+    if (opt_out === 1)
+      return "checked";
+    else if (opt_out === 0)
+      return "";
+  });
+</script>
+</body>
+</html>
+

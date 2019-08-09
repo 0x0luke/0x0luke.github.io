@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <!--Portal integration stylesheets-->
+    <link rel="stylesheet" href="https://stage.portal.zynga.com/dist/css/applicationPrefixed.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+    <!--Window objects for Portal integration-->
+    <script type="text/javascript">
+      var universalplatformDomId = "universal-platform-header"; // we use this to determine which element to bootstrap
+      var user = null; // user object with the following fields: username (the oneLogin user identity), firstName and lastName
+      var currentPortal = 'Payments'; // the name of your portal e.g. 'Economy'
+      var disableHeaderRouting = true; // **Optional set this to true if you find there are conflicts with the routing in header and on your portal.
+      // var subDirectory = ''; // **Optional if your urls have different subDirectorys e.g. https://portal.zynga.com/development/
+      var universalAuth = false; // **Optional if you want us to handle authentication. Must be disabled for External login.
+      // var gameId = null; // the zynga gameId of the current game on the page, null if not on a game
+      // var gamesList = [ gamesList ]; // **Optional provide a list of games if you wish to override the default portal games list. (useful for staging/development environments
+      // var additionalIcons = [ additionalIcons ] ; // **Optional provide a list of additional icons you wish to include in the top of the portal for any additional navigation your site might have
+      // var hideGamesList = false // **Optional set this to true if you wish to hide the games list on your portal
+    </script>
+
+    <!--Portal integration files-->
+    <script type="text/javascript" src="https://stage.portal.zynga.com/dist/universalplatform.js"></script>
+    <script type="text/javascript" src="https://stage.portal.zynga.com/dist/scripts/config.js"></script>
+    <!--Remove Portal version of angular-->
+    <script>window.angular = null;</script>
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/ng-tags-input/ng-tags-input.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/angular-ui-select/dist/select.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/PaymentsAdmin-0.0.0.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/PaymentsAdmin-0.0.0.js"></script>
+
+  </head>
+
+  <body>
+    <!--Universal Platform Header-->
+    <div id="universal-platform-header" class="platform container">
+      <header data-ng-include="'https://stage.portal.zynga.com/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-default"></header>
+      <script type="text/javascript">
+        $.noConflict(true);
+      </script>
+    </div>
+
+    <div id="IAPAdmin" class="container-fluid" ng-controller="AppController">
+      <div class="row">
+        <div class="col-lg-12 c2ol-lg-offset-1 col-md-12 c2ol-md-offset-1 col-sm-12 col-xs-12" ui-view="main"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <footer>
+        <!-- <hr> -->
+        &copy;2016-2019 Zynga Inc. - v0.0.0
+      </footer>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+200 OK
+Cache-Control: public, max-age=3600
+Fastly-Soc-X-Request-Id: 0da6734de5e32b802fc3aafe4637f0e9e7c9e7b047dfd80708afeec880b2e4a1
+Link: <https://careers.pinterest.com/careers/engineering>; rel="canonical",<https://careers.pinterest.com/careers/engineering>; rel="shortlink"
+X-Request-Id: 1e18e9f7746df69050c0baf5bd65f10049743e3d7de077955525962d158663f4
+Age: 3376
+Retry-Count: 0
+Vary: Cookie,Accept-Encoding
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 11:38:45 GMT
+X-Served-By: cache-lhr6344-LHR
+X-Cache: HIT, HIT
+X-Cache-Hits: 8, 1
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Content-Language: en
+Content-Type: text/html; charset=utf-8
+Etag: "1565260949-1"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Thu, 08 Aug 2019 10:42:29 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Accept-Ranges: bytes
+X-Timer: S1565264325.264601,VS0,VE4
+X-Frame-Options: SameOrigin

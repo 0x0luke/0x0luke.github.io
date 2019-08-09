@@ -1,0 +1,18 @@
+404 Not Found
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a7a2d139-f2e7-4830-af17-3c9ea1fef005
+Cf-Ray: 50267007be24d218-MAN
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a7a2d139-f2e7-4830-af17-3c9ea1fef005
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: __cfduid=dc1d53e1b8a0a76254234129ee549ccfa1565151412; expires=Thu, 06-Aug-20 04:16:52 GMT; path=/; domain=.gurulandia.shopify.com; HttpOnly
+X-Shopify-Stage: production
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Date: Wed, 07 Aug 2019 04:16:52 GMT
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Request-Id: a7a2d139-f2e7-4830-af17-3c9ea1fef005
+X-Download-Options: noopen

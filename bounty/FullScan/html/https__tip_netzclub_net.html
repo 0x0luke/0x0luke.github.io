@@ -1,0 +1,116 @@
+
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'
+  'http://www.w3.org/TR/REC-html40/loose.dtd'>
+
+<html>
+  <head>
+    <title>Telefonica - Account login</title>
+    <link rel="stylesheet" type="text/css" href="/MEnable/Client/Media/Modern/Brand/Telefonica/login.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+<style>body { display : none }</style>
+<noscript><style>body { display : block }</style></noscript>
+<meta http-equiv="X-Frame-Options" content="deny" />
+</head>
+
+  <body OnLoad="document.LoginForm.Email.focus();">
+    <div class="container-fluid">
+
+	<div class="custom_login">
+
+	<img src="/MEnable/Client/Media/Modern/Brand/Telefonica/Images/M-EnableLogin.png" />
+
+
+      <form name="LoginForm"
+        action="/MEnable/Client/servlets/Login"
+        onsubmit="this.JavascriptEnabled.value='yes'; return true;"
+        method="POST" class="form-horizontal">
+	<input type="hidden" name="b" value="2665" />
+        <input type="hidden" name="JavascriptEnabled" value="no" />
+        
+        <input type="password" style="position:absolute;top:-50px;width:1px;">
+	<br/>
+	  
+	<br/>
+	<p><label><b>Email Address</b></label>
+	<input type="text" name="Email" size="30" class="span4" placeholder="Enter Email Address"  />
+	<p><label><b>Password</b></label>
+	<input type="password" name="Password" size="30" class="span4" placeholder="Enter Password" autocomplete="off"/></p>
+	<br/>
+	<p>
+          <input type="submit" value="Log in" alt="Log in"
+          class="login-button"/>
+          
+          
+	  <a class="forgot-password" href="/MEnable/Client/servlets/ForgotPassword?b=2665">Forgot Password?</a>
+	  
+        </p>
+        
+	<br/>
+	  <div class="custom_login-footer"><small>Engage Hub &copy; 2019&nbsp;-&nbsp;Version&nbsp;12.3
+</div>
+
+      </form>
+
+    </div> 
+  </div> 
+
+  <p style="visibility:hidden">System OK</p>
+
+
+	<script language="javascript">
+		// reset selection for the main header
+		sessionStorage.setItem("last_menuitem_selected", "Monitoring");
+	</script>
+
+  <style type="text/css">
+    body { 
+      background-image: url("/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Background.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio : 1.5),
+      all and (-o-min-device-pixel-ratio: 3/2),
+      all and (min--moz-device-pixel-ratio: 1.5),
+      all and (min-device-pixel-ratio: 1.5) {
+     
+      body {
+        background-image: url("/MEnable/Client/Media/Modern/Brand/Telefonica/Images/Background@2x.jpg");
+      }
+    }
+  </style>
+
+
+   <script type="text/javascript">        
+  if (self == top) 
+    {
+      var theBody = document.getElementsByTagName ('body')[0];
+      theBody.style.display = "block";
+    }
+  else 
+    {
+      top.location = self.location;
+    }   
+</script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+200 OK
+Strict-Transport-Security: max-age=63072000; includeSubdomains;
+X-Content-Type-Options: nosniff
+Last-Modified: Sat, 13 Oct 2018 23:21:42 GMT
+Etag: "1324-5782477770d80-gzip"
+Expires: Thu, 08 Aug 2019 08:08:41 GMT
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=30
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 08:08:11 GMT
+X-Frame-Options: DENY
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Type: text/html
+Server: Apache

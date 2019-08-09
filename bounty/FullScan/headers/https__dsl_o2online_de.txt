@@ -1,0 +1,17 @@
+200 OK
+Date: Thu, 08 Aug 2019 11:31:31 GMT
+Set-Cookie: cms_pixie_tag=true; path=/; domain=.o2online.de; expires=Sat, 07-Sep-2019 11:31:29 GMT; secure; HttpOnly JSESSIONID=18BAC7ED1B483E4B548A623A38FFC4A7; Path=/cae; Secure; HttpOnly o2-Cust=""; Domain=.o2online.de; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+X-Frame-Options: DENY SAMEORIGIN
+X-Cnection: close
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Content-Type: text/html;charset=utf-8
+Vary: Accept-Encoding
+X-Cache: MISS
+Server: TEF-NG2
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+Accept-Ranges: bytes
+X-Xss-Protection: 1; mode=block
+Content-Language: de-DE
+X-Varnish: 627263168

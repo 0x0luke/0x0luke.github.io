@@ -1,0 +1,18 @@
+200 OK
+X-Powered-By: HubSpot
+Vary: Accept-Encoding
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Hub-Id: 2510940
+Server: cloudflare
+Date: Wed, 07 Aug 2019 06:20:25 GMT
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: MISS
+Edge-Cache-Tag: CT-4498563967,P-2510940,L-4496416912,L-4496477132,L-4498573707,CW-4494045817,CW-4494045822,E-4496477127,E-4655521531,MENU-4533156917,PGS-ALL,SW-4,SD-40
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/post_listing_asset.js>; rel=preload; as=script </hs-fs/hub/2510940/hub_generated/template_assets/1562615765542/combined-css-5e658d0582b36d4c4e29560ed786fbd5.css>; rel=preload; as=style </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+X-Trace: 2BCA61A14B4BC0B74602CD569CFEA512295654A0AD000000000000000000
+Set-Cookie: __cfduid=de8d10bc1c2edc232d0467440559c3aa11565158824; expires=Thu, 06-Aug-20 06:20:24 GMT; path=/; domain=.www.springstax.com; HttpOnly __cfruid=0ee1ba5da440f9cbec2ebcb6b8f47613603b5630-1565158825; path=/; domain=.www.springstax.com; HttpOnly
+Access-Control-Allow-Credentials: false
+Retry-Count: 0
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 502724ff4f353621-MAN
+X-Hs-Content-Id: 4498563967

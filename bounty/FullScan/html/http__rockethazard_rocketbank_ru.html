@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Рокетбанк | RocketHazard</title>
+    <script src="index.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125740219-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125740219-2');
+    </script>
+
+    <meta content="website" property="og:type" >
+    <meta content="https://rockethazard.rocketbank.ru" property="og:url" >
+    <meta content="summary_large_image" name="twitter:card" >
+    <meta content="!" name="fragment" >
+    <meta content="Рокетбанк | RocketHazard" property="og:site_name" >
+    <meta content="https://rockethazard.rocketbank.ru/assets/social/share.jpg" property="og:image" >
+    <meta content="Страх, ненависть и подарки" property="og:title" >
+    <meta content="Пройди лабиринт и поучаствуй в розыгрыше коллекционного издания Resident Evil 2 Remake для PS4" property="og:description" >
+  </head>
+  <body>
+    <div id="finish" style="display: none; height: 100vh; width: 100%;">
+      <iframe id="stampedya" src="https://rocketbank.ru/wanted/rockethazard" frameborder="0"></iframe>
+      <p>Зашерить результат друзьям</p>
+      <div class="links">
+        <a id="fb" alt="фейсбук" target="_blank"></a>
+        <a id="vk" alt="вконтакте" target="_blank"></a>
+        <a id="tw" alt="твиттер" target="_blank"></a>
+      </div>
+    </div>
+
+    <div id="loser" class="card">
+      <p>Заказать карту без участия в конкурсе</p>
+      <a href="https://rocketbank.ru/welcome?utm_source=maze&utm_campaign=rockethazard&utm_medium=nokey" target="_blank">Получить карту</a>
+    </div>
+    <script>
+      document.querySelector('#stampedya').onload = function() {
+        var queryString = window.location.search;
+
+        if (queryString) {
+          window.stampedya.contentWindow.postMessage(queryString, '*');
+        }
+      }
+    </script>
+  <script type="text/javascript" src="main.js"></script></body>
+  <style>
+  body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @media only screen and (max-width: 500px) { 
+    body {
+      width: 100vw;
+      overflow: hidden;
+    }
+  }
+
+  .card {
+    color: white;
+    font-size: 20px;
+    font-family: Proxima, sans-serif;
+    text-align: center;
+    width: 251px;
+
+    display: none;
+  }
+
+  .card a {
+    text-decoration: none;
+    line-height: 40px;
+    color: white;
+    background: #ef0000;
+    display: block;
+
+    width: 251px;
+    height: 70px;
+    font-size: 18px;
+    letter-spacing: -.2px;
+    line-height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+  }
+
+  #finish {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #finish p {
+    font-family: Proxima, sans-serif;
+    width: 300px;
+    text-align: center;
+    color: white;
+    margin: 50px auto 0;
+  }
+  
+  .links {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin: 10px auto 0;
+    align-items: center;
+  }
+
+  .links a:nth-child(1) {
+    display: block;
+    width: 25px;
+    height: 24px;
+    background: url('../assets/social/fb.svg') no-repeat center center;
+  }
+
+  .links a:nth-child(2) {
+    display: block;
+    width: 33px;
+    height: 20px;
+    margin-left: 7px;
+    background: url('../assets/social/vk.svg') no-repeat center center;
+  }
+
+  .links a:nth-child(3) {
+    display: block;
+    width: 28px;
+    height: 22px;
+    margin-left: 10px;
+    background: url('../assets/social/tw.svg') no-repeat center center;
+  }
+  </style>
+</html>

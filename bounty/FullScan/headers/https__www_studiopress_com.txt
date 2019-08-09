@@ -1,0 +1,16 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Link: <https://www.studiopress.com/wp-json/>; rel="https://api.w.org/" <https://www.studiopress.com/>; rel=shortlink
+Cf-Ray: 503243c6a9c6bfca-MAN
+Date: Thu, 08 Aug 2019 14:43:49 GMT
+Retry-Count: 0
+Set-Cookie: __cfduid=df3eb445c185cba85b4605fa23d3be55d1565275428; expires=Fri, 07-Aug-20 14:43:48 GMT; path=/; domain=.www.studiopress.com; HttpOnly
+Wpe-Backend: apache
+X-Cacheable: SHORT
+X-Cache-Group: normal
+Vary: Accept-Encoding Accept-Encoding Accept-Encoding,Cookie
+X-Pass-Why: 
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cache-Control: max-age=600, must-revalidate s-maxage=30
+X-Cache: HIT: 1
+Server: cloudflare

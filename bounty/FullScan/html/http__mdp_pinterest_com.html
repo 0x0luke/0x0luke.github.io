@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-35781104-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="Pinterest Business" />
+<link rel="alternate" hreflang="x-default" href="https://business.pinterest.com/en" />
+<meta property="og:site_name" content="Pinterest Business" />
+<link rel="canonical" href="https://business.pinterest.com/en" />
+<link rel="shortlink" href="https://business.pinterest.com/en" />
+<meta name="description" content="Build your brand with Pinterest marketing. Increase your sales, traffic &amp; amplify your audience engagement. Get discovered &amp; drive results today." />
+<meta property="fb:app_id" content="274266067164" />
+<meta property="og:url" content="https://business.pinterest.com/en/homepage/marketing-with-pinterest" />
+<meta property="og:title" content="Pinterest Business" />
+<meta property="og:description" content="Build your brand with Pinterest marketing. Increase your sales, traffic &amp; amplify your audience engagement. Get discovered &amp; drive results today." />
+<meta property="pin:url" content="https://business.pinterest.com/en/homepage/marketing-with-pinterest" />
+<meta property="pin:description" content="Build your brand with Pinterest marketing. Increase your sales, traffic &amp; amplify your audience engagement. Get discovered &amp; drive results today." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/profiles/contrib/pin/favicon.png" />
+<link rel="alternate" hreflang="en" href="https://business.pinterest.com/en" />
+<link rel="alternate" hreflang="id" href="https://business.pinterest.com/id" />
+<link rel="alternate" hreflang="ms" href="https://business.pinterest.com/ms" />
+<link rel="alternate" hreflang="cs" href="https://business.pinterest.com/cs" />
+<link rel="alternate" hreflang="da" href="https://business.pinterest.com/da" />
+<link rel="alternate" hreflang="de" href="https://business.pinterest.com/de" />
+<link rel="alternate" hreflang="en-gb" href="https://business.pinterest.com/en-gb" />
+<link rel="alternate" hreflang="es" href="https://business.pinterest.com/es" />
+<link rel="alternate" hreflang="fr" href="https://business.pinterest.com/fr" />
+<link rel="alternate" hreflang="it" href="https://business.pinterest.com/it" />
+<link rel="alternate" hreflang="hu" href="https://business.pinterest.com/hu" />
+<link rel="alternate" hreflang="nl" href="https://business.pinterest.com/nl" />
+<link rel="alternate" hreflang="nb" href="https://business.pinterest.com/nb" />
+<link rel="alternate" hreflang="pl" href="https://business.pinterest.com/pl" />
+<link rel="alternate" hreflang="pt-br" href="https://business.pinterest.com/pt-br" />
+<link rel="alternate" hreflang="pt-pt" href="https://business.pinterest.com/pt-pt" />
+<link rel="alternate" hreflang="ro" href="https://business.pinterest.com/ro" />
+<link rel="alternate" hreflang="sk" href="https://business.pinterest.com/sk" />
+<link rel="alternate" hreflang="fi" href="https://business.pinterest.com/fi" />
+<link rel="alternate" hreflang="sv" href="https://business.pinterest.com/sv" />
+<link rel="alternate" hreflang="tl" href="https://business.pinterest.com/tl" />
+<link rel="alternate" hreflang="vi" href="https://business.pinterest.com/vi" />
+<link rel="alternate" hreflang="tr" href="https://business.pinterest.com/tr" />
+<link rel="alternate" hreflang="el" href="https://business.pinterest.com/el" />
+<link rel="alternate" hreflang="ru" href="https://business.pinterest.com/ru" />
+<link rel="alternate" hreflang="uk" href="https://business.pinterest.com/uk" />
+<link rel="alternate" hreflang="hi" href="https://business.pinterest.com/hi" />
+<link rel="alternate" hreflang="th" href="https://business.pinterest.com/th" />
+<link rel="alternate" hreflang="ko" href="https://business.pinterest.com/ko" />
+<link rel="alternate" hreflang="ja" href="https://business.pinterest.com/ja" />
+<link rel="revision" href="https://business.pinterest.com/en/homepage/marketing-with-pinterest" />
+
+    <title>Pinterest Business</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_RhRyAGxdwhZYSGJpgrkHOA9HzmAdpmMvPYR1O-kmqNo.css?pv65bk" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_OalcWcca6DteCxfNDAKfXraeNGspP3rwKN0MjxZ41Pk.css?pv65bk" />
+
+    <script>document.documentElement.classList.add('js');</script>
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="site">
+
+    <header class="site__header" role="banner">
+    <div class="navigation navigation--white-bg"
+   data-nav-overlay="false">
+  <div class="navigation__inner">
+
+      <div id="block-sitebranding" class="header-section header-section--small">
+  
+    
+    <aside class="branding">
+            <div class="branding__logo">
+        <a href="/en" title="Home" rel="home">
+          <img src="/profiles/contrib/pin/logo.svg?dpid=45d8acbdb801047d849ff554d256c079" alt="Home" width="24" height="24" />
+        </a>
+      </div>
+      
+            <h6 class="branding__name">
+        <a href="/en" title="Home" rel="home">Business</a>
+      </h6>
+      
+        </aside>
+</div>
+<nav role="navigation" aria-labelledby="block-headernavigation-menu" id="block-headernavigation" class="header__nav-main header-section desktop menu--main-nav">
+            
+  <h2 class="visually-hidden" id="block-headernavigation-menu">Header navigation</h2>
+  
+
+        
+  
+      
+            <ul class="menu--main menu">
+    
+          <li class="menu__item" data-submenu-target="1">
+        <a href="/en/get-started-how-to-use-pinterest" data-drupal-link-system-path="node/1401">Get started</a>
+              </li>
+          <li class="menu__item" data-submenu-target="2">
+        <a href="/en/promote-on-pinterest" data-drupal-link-system-path="node/3656">Ads</a>
+              </li>
+          <li class="menu__item" data-submenu-target="3">
+        <a href="/en/resources-and-guides" data-drupal-link-system-path="node/4721">Resources</a>
+              </li>
+          <li class="menu__item" data-submenu-target="4">
+        <a href="/en/success-stories" data-drupal-link-system-path="node/486">Success stories</a>
+              </li>
+          <li class="menu__item" data-submenu-target="5">
+        <a href="/en/blog" data-drupal-link-system-path="node/81">News</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-headernavigationactions-menu" id="block-headernavigationactions" class="header__nav-actions header-section header-section--large desktop menu--tools-nav">
+            
+  <h2 class="visually-hidden" id="block-headernavigationactions-menu">Header navigation - actions</h2>
+  
+
+        
+  
+      
+            <ul class="menu--tools menu">
+              <li class="menu__item">
+        <a href="https://ads.pinterest.com/">Create ad</a>
+              </li>
+          <li class="menu__item">
+        <a href="https://www.pinterest.com/business/create">Sign up</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    <button class="menu__toggle menu__toggle--collapsed " data-menu-target="menu--mobile">
+  <div class="menu__toggle-text">Open menu</div>
+</button>
+
+
+
+  
+
+      
+            
+                  <ul class="menu--mobile menu">
+      
+              <li class="menu__item" data-submenu-target="1">
+          <a href="/en/get-started-how-to-use-pinterest" data-drupal-link-system-path="node/1401">Get started</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item" data-submenu-target="1">
+          <a href="/en/how-pinterest-works" data-drupal-link-system-path="node/326">About Pinterest</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2">
+          <a href="/en/pinterest-stories" data-drupal-link-system-path="node/4156">Our audience</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="3">
+          <a href="/en/creating-your-account" data-drupal-link-system-path="node/16">Set up your account</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="4">
+          <a href="/en/how-to-create-pins" data-drupal-link-system-path="node/4921">Start creating content</a>
+                  </li>
+                </ul>
+  
+                  </li>
+              <li class="menu__item" data-submenu-target="2">
+          <a href="/en/promote-on-pinterest" data-drupal-link-system-path="node/3656">Ads</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item" data-submenu-target="1">
+          <a href="/en/pinterest-ad-formats" data-drupal-link-system-path="node/56">Formats</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2">
+          <a href="/en/pinterest-ad-targeting-capabilities" data-drupal-link-system-path="node/61">Targeting</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="3">
+          <a href="/en/pinterest-measurement" data-drupal-link-system-path="node/66">Measurement</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="4">
+          <a href="/en/awareness" data-drupal-link-system-path="node/3636">Build awareness</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="5">
+          <a href="/en/drive-consideration" data-drupal-link-system-path="node/3641">Drive consideration</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="6">
+          <a href="/en/conversions" data-drupal-link-system-path="node/5071">Get conversions</a>
+                  </li>
+                </ul>
+  
+                  </li>
+              <li class="menu__item" data-submenu-target="3">
+          <a href="/en/resources-and-guides" data-drupal-link-system-path="node/4721">Resources</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item" data-submenu-target="1">
+          <a href="/en/creative-best-practices" title="creative best practices" data-drupal-link-system-path="node/2631">Creative best practices</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2">
+          <a href="/en/pinterest-brand-guidelines" data-drupal-link-system-path="node/1436">Brand guidelines</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="3">
+          <a href="/en/creators" title="Resources for creators" data-drupal-link-system-path="node/4726">For creators</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="4">
+          <a href="/en/agencies" data-drupal-link-system-path="node/1431">For agencies</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="5">
+          <a href="/en/pinterest-partners" data-drupal-link-system-path="node/276">Find a Pinterest Partner</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="6">
+          <a href="/en/pin-collective" data-drupal-link-system-path="node/281">Work with the Pin Collective</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="7">
+          <a href="/en/expert" data-drupal-link-system-path="node/3916">Contact sales</a>
+                  </li>
+                </ul>
+  
+                  </li>
+              <li class="menu__item" data-submenu-target="4">
+          <a href="/en/success-stories" data-drupal-link-system-path="node/486">Success stories</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="5">
+          <a href="/en/blog" data-drupal-link-system-path="node/81">News</a>
+                          
+            
+                  <ul>
+      
+              <li class="menu__item" data-submenu-target="1">
+          <a href="/en/blog" data-drupal-link-system-path="node/81">What&#039;s new</a>
+                  </li>
+              <li class="menu__item" data-submenu-target="2">
+          <a href="/en/insights" data-drupal-link-system-path="node/481">Insights</a>
+                  </li>
+                </ul>
+  
+                  </li>
+              <li class="isolated-item menu__item" data-submenu-target="6">
+          <a href="https://ads.pinterest.com/">Create ad</a>
+                  </li>
+              <li class="isolated-item menu__item" data-submenu-target="7">
+          <a href="https://www.pinterest.com/business/create">Sign up</a>
+                  </li>
+                </ul>
+  
+
+    
+
+
+  
+  </div>
+</div>
+
+      
+
+
+  
+      
+
+                          <div class="submenu">
+          <ul class="submenu__items">
+                                          <li class="submenu__item" data-submenu="1">
+                  <div class="submenu__item-inner">
+                        
+
+                                  
+                                        
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                            <div class="submenu__menu">
+            <ul class="menu--submenu menu">
+                                                                                                                                              
+                <li class="menu__item">
+                                      <a href="/en/how-pinterest-works" data-drupal-link-system-path="node/326">About Pinterest</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-stories" data-drupal-link-system-path="node/4156">Our audience</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/creating-your-account" data-drupal-link-system-path="node/16">Set up your account</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/how-to-create-pins" data-drupal-link-system-path="node/4921">Start creating content</a>
+                  
+                                  </li>
+              
+            </ul>
+          </div>
+                            
+                  </div>
+                </li>
+                                                        <li class="submenu__item" data-submenu="2">
+                  <div class="submenu__item-inner">
+                        
+
+                                  
+                                        
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                            <div class="submenu__menu">
+            <ul class="menu--submenu menu">
+                                                                                                                                                                                                              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-ad-formats" data-drupal-link-system-path="node/56">Formats</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-ad-targeting-capabilities" data-drupal-link-system-path="node/61">Targeting</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-measurement" data-drupal-link-system-path="node/66">Measurement</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/awareness" data-drupal-link-system-path="node/3636">Build awareness</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/drive-consideration" data-drupal-link-system-path="node/3641">Drive consideration</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/conversions" data-drupal-link-system-path="node/5071">Get conversions</a>
+                  
+                                  </li>
+              
+            </ul>
+          </div>
+                            
+                  </div>
+                </li>
+                                                        <li class="submenu__item" data-submenu="3">
+                  <div class="submenu__item-inner">
+                        
+
+                                  
+                                        
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                                                
+            
+                            <div class="submenu__menu">
+            <ul class="menu--submenu menu">
+                                                                                                                                                                                                                                              
+                <li class="menu__item">
+                                      <a href="/en/creative-best-practices" title="creative best practices" data-drupal-link-system-path="node/2631">Creative best practices</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-brand-guidelines" data-drupal-link-system-path="node/1436">Brand guidelines</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/creators" title="Resources for creators" data-drupal-link-system-path="node/4726">For creators</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/agencies" data-drupal-link-system-path="node/1431">For agencies</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pinterest-partners" data-drupal-link-system-path="node/276">Find a Pinterest Partner</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/pin-collective" data-drupal-link-system-path="node/281">Work with the Pin Collective</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/expert" data-drupal-link-system-path="node/3916">Contact sales</a>
+                  
+                                  </li>
+              
+            </ul>
+          </div>
+                            
+                  </div>
+                </li>
+                                                        <li class="submenu__item" data-submenu="4">
+                  <div class="submenu__item-inner">
+                        
+
+                                  
+                                        
+                      
+                                                    
+                                    <div class="submenu__promos">
+                            
+                <div class="views-element-container"><div class="js-view-dom-id-90e8cb970e23be68b5ee0b8fd584057a392d6d603f3d4a2c6984f84f02620fd1">
+  
+  
+  
+
+  
+  
+  
+
+  
+                            
+  <div class="promo-block" data-promo-count="4">
+
+  <ul class="promo-block__items">
+        <li class="promo-block__item">
+              <article role="article" about="/en/success-stories/blendjet">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/success-stories/blendjet" class="image-tile__image-link">
+          
+            <div>  <a href="/en/success-stories/blendjet" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/ss_menu_promo/2019-06/2019-BlendJet-success-story-thumbnail.jpg?itok=zcI7A8kD" width="560" height="300" alt="BlendJet" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/blendjet" ><span>BlendJet</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      <li class="promo-block__item">
+              <article role="article" about="/en/success-stories/toyota">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/success-stories/toyota" class="image-tile__image-link">
+          
+            <div>  <a href="/en/success-stories/toyota" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/ss_menu_promo/2019-06/toyota%20nail.jpg?itok=xc6KRn4C" width="560" height="300" alt="Toyota Avalon" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/toyota" ><span>Toyota</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      <li class="promo-block__item">
+              <article role="article" about="/en/success-stories/old-el-paso">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/success-stories/old-el-paso" class="image-tile__image-link">
+          
+            <div>  <a href="/en/success-stories/old-el-paso" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/ss_menu_promo/2019-06/2019-OldElPaso-Partner-blog-header-02%20%281%29.jpg?itok=8MmqoYPN" width="560" height="300" alt="Old El Paso" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/old-el-paso" ><span>Old El Paso</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      <li class="promo-block__item">
+              <article role="article" about="/en/success-stories/equinox">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/success-stories/equinox" class="image-tile__image-link">
+          
+            <div>  <a href="/en/success-stories/equinox" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/ss_menu_promo/2019-06/2018-success-story_equinox-thumbnail%20%282%29.jpg?itok=FiVqHqrI" width="560" height="300" alt="Equinox lobby" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/equinox" ><span>Equinox</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+              
+          </div>
+                    
+                  </div>
+                </li>
+                                                        <li class="submenu__item" data-submenu="5">
+                  <div class="submenu__item-inner">
+                        
+
+                                  
+                                        
+                                                
+            
+                                                
+            
+                      
+                                                    
+                            <div class="submenu__menu">
+            <ul class="menu--submenu menu">
+                                                                              
+                <li class="menu__item">
+                                      <a href="/en/blog" data-drupal-link-system-path="node/81">What&#039;s new</a>
+                  
+                                  </li>
+              
+                <li class="menu__item">
+                                      <a href="/en/insights" data-drupal-link-system-path="node/481">Insights</a>
+                  
+                                  </li>
+              
+            </ul>
+          </div>
+                          <div class="submenu__promos">
+                            
+                <div class="views-element-container"><div class="js-view-dom-id-440a5d7b66ced49042e8142eef86561e47a4f0b91426b72d95844f08da46b2df">
+  
+  
+  
+
+  
+  
+  
+
+  
+                      
+  <div class="promo-block" data-promo-count="3">
+
+  <ul class="promo-block__items">
+        <li class="promo-block__item">
+              
+<article role="article" about="/en/blog/the-top-trends-for-august-2019">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/blog/the-top-trends-for-august-2019" class="image-tile__image-link">
+          
+            <div>  <a href="/en/blog/the-top-trends-for-august-2019" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/blog_menu_promo/2019-08/PINTrends_August2019_promoted%20thumb.jpg?itok=6DACUMO0" width="560" height="300" alt="Woman with hat" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/blog/the-top-trends-for-august-2019" ><span>The top trends for August 2019</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      <li class="promo-block__item">
+              
+<article role="article" about="/en/blog/the-top-trends-for-july-2019">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/blog/the-top-trends-for-july-2019" class="image-tile__image-link">
+          
+            <div>  <a href="/en/blog/the-top-trends-for-july-2019" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/blog_menu_promo/2019-06/PINTrends_July2019-Header%20new.jpg?itok=WSmMwoKo" width="560" height="300" alt="white flowers" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/blog/the-top-trends-for-july-2019" ><span>The top trends for July 2019</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      <li class="promo-block__item">
+              
+<article role="article" about="/en/blog/the-top-trends-for-june-2019">
+
+    <figure class="image-tile image-tile--promo">
+
+        <div class="image-tile__image-wrap">
+        <a href="/en/blog/the-top-trends-for-june-2019" class="image-tile__image-link">
+          
+            <div>  <a href="/en/blog/the-top-trends-for-june-2019" hreflang="en"><img src="/sites/default/files/styles/promo_menu/public/blog_menu_promo/2019-05/PINTrends_June2019-Header-%20new.jpg?itok=-clOsnN1" width="560" height="300" alt="deviled eggs" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+        </a>
+        <div class="promo-image-overlay u-opacity--20"> </div>
+      </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/blog/the-top-trends-for-june-2019" ><span>The top trends for June 2019</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </li>
+      </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+              
+          </div>
+                    
+                  </div>
+                </li>
+                                    </ul>
+        </div>
+
+            
+
+  
+  
+
+
+
+
+  </header>  
+    <div class="site__utility">
+      <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+  </div>  
+  <main class="site__content" role="main">
+        <a id="main-content" tabindex="-1" aria-hidden="true"></a>
+
+      <div>
+    <article role="article" about="/en/homepage/marketing-with-pinterest">
+
+  
+    
+
+  
+  <div>
+    
+            <div>
+  
+  
+  <div  data-pin-con-id="13206" data-pin-con-type="header_media_short" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+
+
+
+<header class="header u-full-width   header--large-text   header--has-bg-video  header--full-width u-anim-staggered-start" data-anim-trigger="view">
+
+        
+      
+                        <span class="header__bg-video-overlay u-opacity--10"></span>
+              
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. -->
+      <video class="header__bg-video u-anim-staggered-start__item u-anim-fade-in" autoplay muted loop poster="/sites/default/files/header_short/2018-07/2018-food-bev-biz-header-static.jpg">
+                                  <source src="https://v.pinimg.com/sub/business/1200x488/mp4/2018-07-Business-site-Header-animation-v01.mp4" type="video/mp4" media="screen and (min-width: 1200px)">
+        
+                  <img src="/sites/default/files/header_short/2018-07/2018-food-bev-biz-header-static.jpg" alt="" />
+              </video>
+
+              <div class="header__bg-video-poster u-anim-staggered-start__item u-anim-fade-in" style="background-image: url('/sites/default/files/header_short/2018-07/2018-food-bev-biz-header-static.jpg');">
+        </div>
+            
+  <div class="header__inner">
+              <h1 class="header__text u-text--white u-anim-fade-in-and-slide-up u-anim-staggered-start__item"
+      >Your inspiring ideas <br> belong here</h1>
+        
+            
+              <div class="header__cta u-anim-fade-in-and-slide-up u-anim-staggered-start__item"
+      >
+        <a href="https://www.pinterest.com/business/create" class="button">Join Pinterest</a>
+      </div>
+        
+            
+                </div>
+
+</header>
+
+  </div>
+</div>
+      
+      <div>
+              <div>
+  <div  data-pin-con-id="13161" data-pin-con-type="headline_txtile_container" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+<div class="headline headline--text-tile">
+  <div class="headline_inner l-smart-grid" data-row-items-large="2">
+    <header class="headline__header">
+      <div class="headline__title">
+        
+            <div>What makes Pinterest different?</div>
+      
+      </div>
+    </header>
+    <div class="headline__content">
+      <div class="headline__text-tiles">
+          
+
+  <div  data-pin-con-id="13146" data-pin-con-type="headline_txtile" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+<div class="text-tile">
+  
+              
+              
+                  <div class="text-tile__summary">
+          
+            <div><p><strong>Mindset matters</strong><br />
+People come to Pinterest to get inspired and try new things.</p>
+</div>
+      
+        </div>
+          
+              
+  </div>
+
+  </div>
+
+  
+
+  <div  data-pin-con-id="13151" data-pin-con-type="headline_txtile" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+<div class="text-tile">
+  
+              
+              
+                  <div class="text-tile__summary">
+          
+            <div><p dir="ltr"><strong>Timing is everything</strong><br />
+Reach people when they’re planning and making decisions.</p>
+</div>
+      
+        </div>
+          
+              
+  </div>
+
+  </div>
+
+  
+
+  <div  data-pin-con-id="13156" data-pin-con-type="headline_txtile" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+<div class="text-tile">
+  
+              
+              
+                  <div class="text-tile__summary">
+          
+            <div><p dir="ltr"><strong>Get more love</strong><br />
+On Pinterest, brands don’t interrupt—they inspire. Share your ideas with people who want to see them.</p>
+</div>
+      
+        </div>
+          
+              
+  </div>
+
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+              <div>
+
+<div class="stats stats--numbers u-text--green--slate u-anim-staggered-start" data-anim-trigger="view">
+    <div class="stats__inner">
+  
+    
+            
+
+<figure class="stat stat--numbers u-anim-fade-in-and-slide-up u-anim-staggered-start__item">
+        
+        
+      <div class="stat__value">
+      
+              <span>
+            <div>300m</div>
+      </span>
+      
+          </div>
+  
+                  <figcaption class="stat__caption">
+        
+            <div>people</div>
+      
+      </figcaption>
+      </figure>
+
+
+          
+
+<figure class="stat stat--numbers u-anim-fade-in-and-slide-up u-anim-staggered-start__item">
+        
+        
+      <div class="stat__value">
+      
+              <span>
+            <div>50%+</div>
+      </span>
+      
+          </div>
+  
+                  <figcaption class="stat__caption">
+        
+            <div>international</div>
+      
+      </figcaption>
+      </figure>
+
+
+          
+
+<figure class="stat stat--numbers u-anim-fade-in-and-slide-up u-anim-staggered-start__item">
+        
+        
+      <div class="stat__value">
+      
+              <span>
+            <div>85%</div>
+      </span>
+      
+          </div>
+  
+                  <figcaption class="stat__caption">
+        
+            <div>on mobile</div>
+      
+      </figcaption>
+      </figure>
+
+
+          
+
+<figure class="stat stat--numbers u-anim-fade-in-and-slide-up u-anim-staggered-start__item">
+        
+        
+      <div class="stat__value">
+      
+              <span>
+            <div>200b</div>
+      </span>
+      
+          </div>
+  
+                  <figcaption class="stat__caption">
+        
+            <div>Pins saved</div>
+      
+      </figcaption>
+      </figure>
+
+
+      
+  
+    </div>
+  </div>
+
+</div>
+              <div>
+  <div  data-pin-con-id="13141" data-pin-con-type="media_full" data-pin-seg-enabled="1" class="paragraph__pin-segment" >
+
+
+  <figure class="media-block">
+
+      <div class="video--youtube video-wrapper">
+      <a href="javascript:void(0);" class="video-poster js-play-trigger" data-play-target="video-player">
+                <img src="/sites/default/files/media_no_bleed/2018-09/2018_partner_campaign_blog-barcart.jpg" width="1440" height="720" alt="Man near a bar" typeof="foaf:Image" />
+
+
+            </a>
+
+      <div class="video-player" style="display: none;">
+        <div class="video-embed-field-provider-youtube video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/oFGIqwiuRUg?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+
+      </div>
+    </div>
+  
+</figure>
+
+  
+  </div>
+</div>
+              <div>
+  <div  data-pin-con-id="3541" data-pin-con-type="ss_home_block" data-pin-seg-enabled="0" class="paragraph__pin-segment ss_home_block" >
+
+
+<div class="success-stories">
+
+  <div class="success-stories__header l-grid--2-0-1">
+
+        <h3 class="success-stories__title u-no-spacing-up">
+            <div>Success stories</div>
+      </h3>
+    
+        <div class="success-stories__link u-spacing-down">
+      <a href="/en/success-stories" class="link--more">See more</a>
+    </div>
+    
+  </div>
+
+  <div class="success-stories__items">
+
+    <div class="l-smart-grid">
+                </div>
+
+  </div>
+
+</div>
+
+
+
+            <div><div class="views-element-container" id="block-views-block-successstories-home-successstories-home-block">
+  
+    
+      <div><div class="js-view-dom-id-64f08d97e6e35e6fceb37e69572e9e9e0dcca26b5d3e092de37eacb4bd490054">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+<div class="success-stories">
+
+
+  <div class="success-stories__items">
+    <div class="l-smart-grid"data-row-items-xsmall="2"data-row-items-large="4">
+  
+                  <div class="success-stories__item">
+            
+<article role="article" about="/en/success-stories/blendjet">
+
+    <figure class="image-tile image-tile--square image-tile--click-zone js-image-tile--click-zone">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/success-stories/blendjet" hreflang="en"><img src="/sites/default/files/styles/thumb_square/public/ss_thumb_square/2019-05/2019-BlendJet-success-story-thumbnail.jpg?itok=mLxGheSZ" width="560" height="560" alt="BlendJet blenders" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/blendjet" class="link--more" ><span>BlendJet</span>
+</a>
+            </h4>
+      
+        
+            <div class="image-tile__summary">
+              
+            <div>Smoothing the way to more sales</div>
+      
+            </div>
+      
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </div>
+                  <div class="success-stories__item">
+            
+<article role="article" about="/en/success-stories/toyota">
+
+    <figure class="image-tile image-tile--square image-tile--click-zone js-image-tile--click-zone">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/success-stories/toyota" hreflang="en"><img src="/sites/default/files/styles/thumb_square/public/ss_thumb_square/2019-02/thumbnail%20%286%29.jpg?itok=0fBvteLU" width="560" height="560" alt="Toyota Avalon" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/toyota" class="link--more" ><span>Toyota</span>
+</a>
+            </h4>
+      
+        
+            <div class="image-tile__summary">
+              
+            <div>Revving up awareness and purchase intent</div>
+      
+            </div>
+      
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </div>
+                  <div class="success-stories__item">
+            
+<article role="article" about="/en/success-stories/old-el-paso">
+
+    <figure class="image-tile image-tile--square image-tile--click-zone js-image-tile--click-zone">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/success-stories/old-el-paso" hreflang="en"><img src="/sites/default/files/styles/thumb_square/public/ss_thumb_square/2019-06/2019-OldElPaso-Partner-blog-header-02%20%281%29.jpg?h=ed1c34f9&amp;itok=n8lFYegH" width="560" height="560" alt="Old El Paso" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/old-el-paso" class="link--more" ><span>Old El Paso</span>
+</a>
+            </h4>
+      
+        
+            <div class="image-tile__summary">
+              
+            <div>Spicing up a campaign strategy</div>
+      
+            </div>
+      
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </div>
+                  <div class="success-stories__item">
+            
+<article role="article" about="/en/success-stories/equinox">
+
+    <figure class="image-tile image-tile--square image-tile--click-zone js-image-tile--click-zone">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/success-stories/equinox" hreflang="en"><img src="/sites/default/files/styles/thumb_square/public/ss_thumb_square/2018-12/2018-success-story_equinox-thumbnail%20%282%29.jpg?itok=AKg1BL8e" width="560" height="560" alt="Lobby of an Equinox gym" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+        
+            <h4 class="image-tile__title">
+              <a href="/en/success-stories/equinox" class="link--more" ><span>Equinox</span>
+</a>
+            </h4>
+      
+        
+            <div class="image-tile__summary">
+              
+            <div>Buffing up an acquisition strategy</div>
+      
+            </div>
+      
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+          </div>
+        
+      </div>
+  </div>
+  
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+</div>
+      
+
+  </div>
+</div>
+              <div>
+
+
+<blockquote class="pull-quote u-full-width u-bg--chalkboard">
+  <div class="pull-quote__inner l-smart-grid" data-row-items-large="2">
+
+      <footer class="pull-quote__byline u-bg--chalkboard u-anim-fade-in-and-slide-up" data-anim-trigger="view">
+      <span class="pull-quote__author">Alasdhair Willis</span>
+      <br />
+      <span class="pull-quote__company">Hunter Boots</span>
+    </footer>
+  
+      <div class="pull-quote__quote  pull-quote__quote--small u-bg--chalkboard u-anim-fade-in-and-slide-up" data-anim-trigger="view">
+                        “Pinterest is where we see a highly engaged user who’s actively searching for inspiration to purchase from Hunter”
+              </div>
+    </div>
+</blockquote>
+
+</div>
+              <div>
+  <div  data-pin-con-id="3586" data-pin-con-type="blog_block" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+<div class="blog-block blog-block--default">
+
+  <div class="blog-block__header l-grid--2-0-1">
+
+        <h3 class="blog-block__title u-no-spacing-up">What’s new</h3>
+    
+        <div class="blog-block__link u-spacing-down">
+      <a href="/en/blog" class="link--more">See more</a>
+    </div>
+    
+  </div>
+
+</div>
+
+
+            <div class="blog-block-grid"><div class="views-element-container" id="block-views-block-blog-block-home-blog-block">
+  
+    
+      <div><div class="js-view-dom-id-689d4d2b13b418355ae763533254688c08d251a22e1f269f5cf686b48c3dada8">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+<div class="success-stories">
+
+
+    <div class="success-stories__items">
+      <div class="l-smart-grid"data-row-items-xsmall="2"data-row-items-large="4">
+  
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/research-retail-brands-can-see-2x-higher-returns-on-pinterest-than-other-digital-channels">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/research-retail-brands-can-see-2x-higher-returns-on-pinterest-than-other-digital-channels" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-07/Retail_blogthumbnail.png?itok=V0gyXrgq" width="560" height="904" alt="Man shopping" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-07-30T12:00:00Z">July 30, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/research-retail-brands-can-see-2x-higher-returns-on-pinterest-than-other-digital-channels" class="link--more" ><span>Research: Retail brands can see 2x higher returns on Pinterest than other digital channels</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/creative-spotlight-loreal-paris-uk-botanicals-fresh-care">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/creative-spotlight-loreal-paris-uk-botanicals-fresh-care" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-07/2019-LOreal-success-story-thumbnail-02.jpg?itok=omquLX4H" width="560" height="904" alt="L&#039;Oreal Botanicals bottle" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-07-12T12:00:00Z">July 12, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/creative-spotlight-loreal-paris-uk-botanicals-fresh-care" class="link--more" ><span>Creative spotlight: L’Oréal Paris Botanicals </span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/pinterests-big-ahas-and-to-dos-from-cannes-lions-2019">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/pinterests-big-ahas-and-to-dos-from-cannes-lions-2019" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-06/Cannes_SELECTS-0-thumbnail.jpg?itok=8PvVrkvQ" width="560" height="904" alt="Cannes viewfinder" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-06-25T12:00:00Z">June 25, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/pinterests-big-ahas-and-to-dos-from-cannes-lions-2019" class="link--more" ><span>Pinterest’s big ahas and to-dos from Cannes Lions 2019</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/how-to-think-about-targeting-on-pinterest">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/how-to-think-about-targeting-on-pinterest" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-06/2018-quicktips-red-thumbnail%20%282%29.jpg?itok=e2TXDEeB" width="560" height="904" alt="Quick tips icon" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-06-10T12:00:00Z">June 10, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/how-to-think-about-targeting-on-pinterest" class="link--more" ><span>Quick tips: How to think about targeting on Pinterest</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/come-play-discover-and-dream-with-pinterest-at-cannes-lions">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/come-play-discover-and-dream-with-pinterest-at-cannes-lions" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-06/Pinterest-cannes-blog%2Bthumbnail-560x904px.png?itok=2_eollFf" width="560" height="904" alt="Cannes image" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-06-03T12:00:00Z">June 3, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/come-play-discover-and-dream-with-pinterest-at-cannes-lions" class="link--more" ><span>Come play, discover and dream with Pinterest at Cannes Lions</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/creative-spotlight-the-ad-council">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/creative-spotlight-the-ad-council" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-04/usethis.jpg?itok=nO2qzlHt" width="560" height="904" alt="Two women sitting on a couch" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-05-01T12:00:00Z">May 1, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/creative-spotlight-the-ad-council" class="link--more" ><span>Creative spotlight: The Ad Council</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/creative-spotlight-blue-moon">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/creative-spotlight-blue-moon" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-04/thumbnail2.jpg?itok=5h-8o8Mc" width="560" height="904" alt="Blue Moon " typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-04-29T12:00:00Z">April 29, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/creative-spotlight-blue-moon" class="link--more" ><span>Creative spotlight: Blue Moon </span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+                                  <div class="success-stories__item">
+              
+<article role="article" about="/en/blog/introducing-pinterest-ads-in-germany-austria-spain-and-italy">
+
+    <figure class="image-tile image-tile--staggered-large">
+
+      <div class="image-tile__image-wrap">
+      
+            <div>  <a href="/en/blog/introducing-pinterest-ads-in-germany-austria-spain-and-italy" hreflang="en"><img src="/sites/default/files/styles/thumb_var_lg/public/blog_thumb_lg/2019-02/2019-euro-ads-GTM-thumbnail.jpg?itok=1Etf6Bzc" width="560" height="904" alt="greeting thumb" typeof="foaf:Image" />
+
+</a>
+</div>
+      
+    </div>
+    
+  <figcaption class="image-tile__caption">
+            <div class="image-tile__date u-text--grey--medium">
+              
+            <div><time datetime="2019-03-06T12:00:00Z">March 6, 2019</time>
+</div>
+      
+            </div>
+      
+            <h4 class="image-tile__title">
+              <a href="/en/blog/introducing-pinterest-ads-in-germany-austria-spain-and-italy" class="link--more" ><span>Introducing Pinterest Ads in Germany, Austria, Spain and Italy</span>
+</a>
+            </h4>
+      
+        
+        
+        
+  </figcaption>
+
+</figure>
+  
+</article>
+
+            </div>
+          
+        </div>
+    </div>
+
+  
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+</div>
+      
+
+  </div>
+</div>
+              <div>
+  <div  data-pin-con-id="3576" data-pin-con-type="cta" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+
+
+<div class="cta">
+  <div class="cta__inner">
+                  <div class="cta__title">
+      
+        Get a business account
+      </div>
+    
+          <a href="https://www.pinterest.com/business/create" class="button">
+        Sign up
+      </a>
+      </div>
+</div>
+
+  </div>
+</div>
+              <div>
+  <div  data-pin-con-id="3581" data-pin-con-type="cta" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+
+
+<div class="cta">
+  <div class="cta__inner">
+                  <div class="cta__title">
+      
+        Create an ad
+      </div>
+    
+          <a href="https://ads.pinterest.com/" class="button button--alt">
+        Get started
+      </a>
+      </div>
+</div>
+
+  </div>
+</div>
+              <div>
+
+  <div  data-pin-con-id="7046" data-pin-con-type="headline_txt" data-pin-seg-enabled="0" class="paragraph__pin-segment" >
+
+  
+
+<div class="headline u-full-width   headline--text" data-mobile-layout="false" id="headline--407409044">
+      
+  <div class="headline__inner l-smart-grid" data-row-items-large="2">
+    <header class="headline__header">
+                  <div class="headline__title">
+          
+        </div>
+          
+              
+            
+          <div class="headline__secondary-content">
+        <div class="text-tile text-tile--text">
+  
+              
+              
+              
+              
+  </div>
+      </div>
+        </header>
+
+    <div class="headline__content">
+
+                    
+              <div class="text-tile text-tile--text">
+  
+              
+              
+                  <div class="text-tile__summary">
+          <p><small>Sources: Pinterest, Global analysis, 2017-2019</small></p>
+
+        </div>
+          
+                  
+          
+  </div>
+      
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</div>
+          </div>
+  
+  </div>
+
+</article>
+
+  </div>
+
+
+    
+
+          <aside class="site__alerts" role="alert">
+          <div>
+    
+  <aside class="alerts u-bg--cork--light alerts--disabled alerts--eu-cookie-bar" data-alert-display-height="0">
+  <div class="alerts__inner">
+        <ul class="alerts__items">
+      <li class="alerts__item">
+              <div class="l-grid--3-1 eu-cookie-bar" data-row-items-large="2" data-alert-tracker-id="eu-cookie-bar">
+        <div class="eu-cookie-bar__text"><strong>Pinterest is <a href="https://policy.pinterest.com/cookies" class="link--inline eu-cookie-bar__link">using cookies</a> to help give you the best experience we can.</strong></div>
+        <div class="eu-cookie-bar__confirmation"><a class="button js-alerts__close-button eu-cookie-bar__button">Got it!</a></div>
+      </div>
+          </li>
+    </ul>
+  </div>
+</aside>
+
+  </div>
+
+      </aside>
+      </main>
+  
+      <footer class="site__footer" role="contentinfo">
+      
+<div class="footer u-bg--cork--medium">
+  <div class="footer__inner">
+    <div class="footer__info">
+                    
+      <div class="footer__logo">
+        <a href="https://www.pinterest.com">
+          <img src="/profiles/contrib/pin/badge-wordmark.svg?dpid=45d8acbdb801047d849ff554d256c079" alt="Pinterest" width="300" height="72">
+        </a>
+      </div>
+
+      <div class="footer__language">
+            <div class="language-switcher-language-url" id="block-languageswitcher" role="navigation">
+  
+    
+      
+<div class="form-item">
+  <span class="select-toggle">
+    <select class="form-select js-language-block">
+                      <option hreflang="en" data-drupal-link-system-path="&lt;front&gt;" class="en is-active" value="/en" selected="selected">English (US)</option>
+                              <option hreflang="id" data-drupal-link-system-path="&lt;front&gt;" class="id" value="/id">Bahasa Indonesia</option>
+                              <option hreflang="ms" data-drupal-link-system-path="&lt;front&gt;" class="ms" value="/ms">Bahasa Malaysia</option>
+                              <option hreflang="cs" data-drupal-link-system-path="&lt;front&gt;" class="cs" value="/cs">Čeština</option>
+                              <option hreflang="da" data-drupal-link-system-path="&lt;front&gt;" class="da" value="/da">Dansk</option>
+                              <option hreflang="de" data-drupal-link-system-path="&lt;front&gt;" class="de" value="/de">Deutsch</option>
+                              <option hreflang="en-gb" data-drupal-link-system-path="&lt;front&gt;" class="en-gb" value="/en-gb">English (UK)</option>
+                              <option hreflang="es" data-drupal-link-system-path="&lt;front&gt;" class="es" value="/es">Español</option>
+                              <option hreflang="fr" data-drupal-link-system-path="&lt;front&gt;" class="fr" value="/fr">Français</option>
+                              <option hreflang="it" data-drupal-link-system-path="&lt;front&gt;" class="it" value="/it">Italiano</option>
+                              <option hreflang="hu" data-drupal-link-system-path="&lt;front&gt;" class="hu" value="/hu">Magyar</option>
+                              <option hreflang="nl" data-drupal-link-system-path="&lt;front&gt;" class="nl" value="/nl">Nederlands</option>
+                              <option hreflang="nb" data-drupal-link-system-path="&lt;front&gt;" class="nb" value="/nb">Norsk bokmål</option>
+                              <option hreflang="pl" data-drupal-link-system-path="&lt;front&gt;" class="pl" value="/pl">Polski</option>
+                              <option hreflang="pt-br" data-drupal-link-system-path="&lt;front&gt;" class="pt-br" value="/pt-br">Português (Brasil)</option>
+                              <option hreflang="pt-pt" data-drupal-link-system-path="&lt;front&gt;" class="pt-pt" value="/pt-pt">Português (Europeu)</option>
+                              <option hreflang="ro" data-drupal-link-system-path="&lt;front&gt;" class="ro" value="/ro">Română</option>
+                              <option hreflang="sk" data-drupal-link-system-path="&lt;front&gt;" class="sk" value="/sk">Slovenčina</option>
+                              <option hreflang="fi" data-drupal-link-system-path="&lt;front&gt;" class="fi" value="/fi">Suomi</option>
+                              <option hreflang="sv" data-drupal-link-system-path="&lt;front&gt;" class="sv" value="/sv">Svenska</option>
+                              <option hreflang="tl" data-drupal-link-system-path="&lt;front&gt;" class="tl" value="/tl">Filipino</option>
+                              <option hreflang="vi" data-drupal-link-system-path="&lt;front&gt;" class="vi" value="/vi">Tiếng Việt</option>
+                              <option hreflang="tr" data-drupal-link-system-path="&lt;front&gt;" class="tr" value="/tr">Türkçe</option>
+                              <option hreflang="el" data-drupal-link-system-path="&lt;front&gt;" class="el" value="/el">Ελληνικά</option>
+                              <option hreflang="ru" data-drupal-link-system-path="&lt;front&gt;" class="ru" value="/ru">Русский</option>
+                              <option hreflang="uk" data-drupal-link-system-path="&lt;front&gt;" class="uk" value="/uk">Українська</option>
+                              <option hreflang="hi" data-drupal-link-system-path="&lt;front&gt;" class="hi" value="/hi">हिन्दी</option>
+                              <option hreflang="th" data-drupal-link-system-path="&lt;front&gt;" class="th" value="/th">ภาษาไทย</option>
+                              <option hreflang="ko" data-drupal-link-system-path="&lt;front&gt;" class="ko" value="/ko">한국어</option>
+                              <option hreflang="ja" data-drupal-link-system-path="&lt;front&gt;" class="ja" value="/ja">日本語</option>
+                  </select>
+  </span>
+</div>
+
+  </div>
+
+        </div>
+    </div>
+
+    <div class="footer__menus">
+                        <nav class="footer__menu footer__menu--menu-1">
+            <div class="footer__menu__title">About us</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item"data-country-code=DE>
+                    <a href="https://policy.pinterest.com/de/impressum" class="footer__menu__link">Impressum</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://about.pinterest.com" class="footer__menu__link">What&#039;s Pinterest</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://pinterest.com/pinterest" class="footer__menu__link">Our Pinterest page</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://medium.com/@Pinterest_Engineering" class="footer__menu__link">Engineering blog</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://business.pinterest.com/brand-guidelines" class="footer__menu__link">Brand guidelines</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://careers.pinterest.com" class="footer__menu__link">Careers</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://help.pinterest.com" class="footer__menu__link">Help Center</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://labs.pinterest.com" class="footer__menu__link">Pinterest Labs</a>
+                                      </li>
+                                          </ul>
+          </nav>
+                  <nav class="footer__menu footer__menu--menu-2">
+            <div class="footer__menu__title">Our policies</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/copyright" class="footer__menu__link">Copyright</a>
+                                          <span class="footer__menu__combinator">&amp;</span>
+                      <ul class="footer__submenu">
+                                                  <li class="footer__submenu__item">
+                            <a href="https://policy.pinterest.com/trademark" class="footer__submenu__link">trademark</a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://help.pinterest.com/articles/personalized-ads-pinterest" class="footer__menu__link">Personalized ads</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/terms-of-service" class="footer__menu__link">Terms of service</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://policy.pinterest.com/privacy-policy" class="footer__menu__link">Privacy</a>
+                                          <span class="footer__menu__combinator">&amp;</span>
+                      <ul class="footer__submenu">
+                                                  <li class="footer__submenu__item">
+                            <a href="https://policy.pinterest.com/cookies" class="footer__submenu__link">cookies</a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                          </ul>
+          </nav>
+                  <nav class="footer__menu footer__menu--menu-3">
+            <div class="footer__menu__title">More info</div>
+            <ul class="footer__menu__list">
+                                                <li class="footer__menu__item">
+                    <a href="https://business.pinterest.com" class="footer__menu__link">For businesses</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://developers.pinterest.com" class="footer__menu__link">For developers</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://newsroom.pinterest.com" class="footer__menu__link">For press</a>
+                                      </li>
+                                                                <li class="footer__menu__item">
+                    <a href="https://investor.pinterestinc.com" class="footer__menu__link">For investors</a>
+                                      </li>
+                                          </ul>
+          </nav>
+                  </div>
+
+    <p class="footer__copyright">&copy; Pinterest 2019</p>
+  </div>
+</div>
+
+
+    </footer>
+  
+  
+</div>
+  </div>
+
+    <img height="1" width="1" alt="" style="display:none" src="https://dc.ads.linkedin.com/collect/?pid=44352&amp;fmt=gif" />
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=956400731086791&amp;ev=PageView&amp;noscript=1" />
+</noscript><noscript><img height="1" width="1" alt="" style="display:none" src="https://ct.pinterest.com/v3/?tid=2617163279608&amp;noscript=1" />
+</noscript>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/431","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"codesnippet\/codesnippet.highlightjs,codesnippet\/codesnippet.style.googlecode,core\/html5shiv,fastly\/fastly,footnotes\/footnotes,js_sha\/js_sha.sha,paragraphs\/drupal.paragraphs.unpublished,pin_base\/core,pin_blocks_eu_cookie_bar\/cookiebar,pin_business_linkedin_insights_tag\/pin_business_linkedin_insights_tag.infographics,pin_business_linkedin_insights_tag\/pin_business_linkedin_insights_tag.whitepapers,pin_business_marketing_facebook\/pin_business_marketing_facebook.holiday_report_sub2695,pin_business_marketing_facebook\/pin_business_marketing_facebook.infographics,pin_business_marketing_facebook\/pin_business_marketing_facebook.trackscroll,pin_business_marketing_facebook\/pin_business_marketing_facebook.whitepapers,pin_business_marketing_general\/source-tracking,pin_business_marketing_google\/pin_business_marketing_google.infographics,pin_business_marketing_google\/pin_business_marketing_google.whitepapers,pin_business_marketing_google_analytics\/pin_business_marketing_google_analytics.infographics,pin_business_marketing_google_analytics\/pin_business_marketing_google_analytics.navigation,pin_business_marketing_google_analytics\/pin_business_marketing_google_analytics.social_share,pin_business_marketing_google_analytics\/pin_business_marketing_google_analytics.whitepapers,pin_business_marketing_pinterest\/pin_business_marketing_pinterest.infographics,pin_business_marketing_pinterest\/pin_business_marketing_pinterest.whitepapers,pin_business_marketing_twitter\/pin_business_marketing_twitter.infographics,pin_business_marketing_twitter\/pin_business_marketing_twitter.whitepapers,pin_captcha\/pin_captcha.recaptcha_invisible,pin_marketing_demandbase\/pin_marketing_demandbase.placement,pin_marketing_google\/pin_marketing_google.conversion_async,pin_marketing_pinterest\/pin_marketing_pinterest.tracking,pin_marketing_twitter\/pin_marketing_twitter.tracking,pin_pinterest_client\/client_identification,pin_segment\/segment_main,system\/base,video_embed_field\/responsive-video,views\/views.module","theme":"pin_base","theme_token":null},"ajaxTrustedUrl":[],"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"pin_blocks_eu_cookie_bar":{"active":true,"eu_countries":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"]},"pin_marketing_demandbase":{"account_id":"cdfd24f0"},"pin_business_marketing_general":{"pin_source_tracker":{"host":"business.pinterest.com"}},"pin_marketing_facebook":{"pixel_id":"956400731086791"},"pin_marketing_google":{"account_ids":["DC-8032161","AW-852082959"]},"pin_marketing_pinterest":{"account_id":"2617163279608"},"pin_marketing_twitter":{"pixel_id":"nuzh8"},"segment":{"segmentJS":{"pin_segment_key":"VlXUIWOZkZOApmolrGdsVggDshPBQC3c","pin_segment_version":"4.1.0"},"trigger":{"scroll_threshold":"10","file_extensions":"pdf, zip, png","types":{"button_click":{"seg_api_method":"track","seg_event_name":"BUTTON_CLICK"},"button_click_p100":{"seg_api_method":"track","seg_event_name":"BUTTON_CLICK_P100"},"file_download":{"seg_api_method":"track","seg_event_name":"FILE_DOWNLOAD"},"form_submit":{"seg_api_method":"track","seg_event_name":"FORM_SUBMIT"},"link_click":{"seg_api_method":"track","seg_event_name":"LINK_CLICK"},"readmore_click":{"seg_api_method":"track","seg_event_name":"READMORE_CLICK"},"videoplayer_click":{"seg_api_method":"track","seg_event_name":"VIDEOPLAYER_CLICK"}},"groups":{"blog_block":{"blog_block_read_more":{"link":".blog-block__link a.link--more"}},"cta":{"cta_link_and_title":{"link":".cta__inner a","title":".cta__inner .cta__title"}},"header_form_embed":{"header_form_embed":{"submit":"form .webform-button--submit"}},"headline_txt":{"headline_text_button":{"link":"a.button"},"headline_text_with_text_tile_link_s_":{"link":".text-tile a"}},"headline_txt_img_sm":{"headline_txt_img_sm":{"link":"a.button"}},"ss_home_block":{"ss_home_block_read_more":{"link":".success-stories__link a.link--more"}},"media_full":{"video_player_container_click_media_full_":{"link":".video-wrapper a"}},"business_forms":{"web_form_submit":{"submit":"form .webform-button--submit"}}},"instances":{"13141":{"container_type":"media_full","name":"Homepage video play","trigger_type":"videoplayer_click"},"16111":{"container_type":"headline_txt","name":"TestingAdWordsConversion","trigger_type":"link_click"},"16356":{"container_type":"header_form_embed","name":"propel_form_submission","trigger_type":"form_submit"},"17801":{"container_type":"header_form_embed","name":"business_newsletter_signup","trigger_type":"form_submit"},"24546":{"container_type":"headline_txt","name":"P100_CREATE_CAMPAIGN_JUMPRIGHTIN","trigger_type":"button_click_p100"},"24551":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_TRAVEL","trigger_type":"button_click_p100"},"24556":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_HEALTH","trigger_type":"button_click_p100"},"24561":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_HOBBIES","trigger_type":"button_click_p100"},"24566":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_CELEBRATION","trigger_type":"button_click_p100"},"24571":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_FOOD","trigger_type":"button_click_p100"},"24576":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_HOME","trigger_type":"button_click_p100"},"24581":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_MENSTYLE","trigger_type":"button_click_p100"},"24586":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_WOMENSTYLE","trigger_type":"button_click_p100"},"24591":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_BEAUTY","trigger_type":"button_click_p100"},"24596":{"container_type":"headline_txt_img_sm","name":"P100_CREATE_CAMPAIGN_KIDS","trigger_type":"button_click_p100"},"24606":{"container_type":"headline_txt","name":"P100_CREATE_CAMPAIGN","trigger_type":"button_click_p100"},"25346":{"container_type":"headline_txt","name":"TestingAdWordsConversion","trigger_type":"testing_conversion"}},"page_vars":{"objectid":"431","subdomain":"business.pinterest.com","viewtype":"node","viewparametertype":"homepage"}}},"user":{"uid":0,"permissionsHash":"e605dbb7294ec95cc96429730e166c8d2eb0a2345ab41509e65049a5ead768bf"}}</script>
+<script src="/sites/default/files/js/js_9hgJssFwaDOyYRXSyxsffvM3FzJ-ZS2kA0C5nd13HvM.js"></script>
+<script src="//www.googletagmanager.com/gtag/js?id=DC-8032161"></script>
+<script src="/sites/default/files/js/js_FuRrkCPXS6hmrIRyC-ipNlxCHZg5lN17195gHlQoF2s.js"></script>
+<script src="//platform.twitter.com/oct.js"></script>
+<script src="/sites/default/files/js/js_3ugeiXoYLj4H3RP8oIVIqiUQbT0EjQAoI7mJ36H1oDU.js"></script>
+<script src="//assets.pinterest.com/js/pinit.js" async defer></script>
+<script src="/sites/default/files/js/js_qVhklTpTRkHWbgrcTtHL2333G3HwBHwh8CPM_X3rGwU.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7ea89c5a2f","applicationID":"27045843,27045844","transactionName":"MQRSZEMFX0VTVUYIDQhOcVNFDV5YHUJdCgcIPkBCVDtDU1xSVxM9AAhVXFU7RVlZU1w=","queueTime":0,"applicationTime":796,"atts":"HUNREgsfTEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

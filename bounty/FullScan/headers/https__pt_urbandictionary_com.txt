@@ -1,0 +1,17 @@
+200 OK
+Etag: "330f4582bb6a6c854410300e1b6bc5af"
+Date: Wed, 07 Aug 2019 13:01:20 GMT
+Via: 1.1 varnish
+X-Cache: HIT
+Vary: Accept-Encoding,Fastly-SSL
+X-Amz-Expiration: expiry-date="Fri, 09 Aug 2019 00:00:00 GMT", rule-id="YjJmYjUwNTUtYmE1My00OTNjLTk5ZmUtYmI4YjFhOTFkMjYx"
+X-Served-By: cache-lhr6350-LHR
+X-Cache-Hits: 8
+X-Timer: S1565182880.042369,VS0,VE0
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Age: 75411
+X-Amz-Meta-Surrogate-Control: max-age=864000
+Cache-Control: max-age=3600
+Last-Modified: Tue, 06 Aug 2019 15:29:57 GMT

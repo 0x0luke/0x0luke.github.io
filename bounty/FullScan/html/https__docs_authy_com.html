@@ -1,0 +1,761 @@
+﻿
+
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+    <script>
+  var twilio = twilio || {};
+  twilio.environment = "prod";
+  twilio.baseUrl = "https://www.twilio.com";
+  twilio.SWIFTYPE_ENGINE_KEY = "T68bXEBf7NaKzyRpvbnG";
+  twilio.DOCSEARCH_API_KEY = "2dbc0c5e764a2669b21db8acc967fbd8";
+  twilio.FACEBOOK_APP_ID = "414254592083321";
+</script>
+
+
+<script>
+  twilio.account = twilio.account || {};
+  
+
+  twilio.user = twilio.user || {};
+  
+  
+    twilio.user.visitorSid = "VId85d35fb98a82af30facb9d31e5813b1";
+  
+  
+
+  
+  twilio.user.language = "php";
+  
+
+  
+
+</script>
+
+
+    <script>
+  
+  window.userBetaFeatures = ["numbers-console-identities", "api.v1.serverless", "api.preview.messaging-sessions", "api.voicecon.geo-permissions", "whatsapp-docs", "vnv-console-text-to-speech", "vnv-console-taskrouter-workspace-taskqueues", "wireless-ga-pricing-launch", "api.video.compositions", "numbers-console-nextgen", "api.understand.v1", "marketplace.otters", "clear-large-cookies", "twilio.quest", "api.messaging.next-gen", "marketplace"];
+</script>
+
+    <script>
+  
+    window.experiment = '';
+  
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width">
+    
+    
+    <meta name="description" content="Easily add two-factor authentication and passwordless logins via API or with our Helper Libraries. Protect logins and step-up transactions with SMS, Voice, PushAuthentications, and TOTP through a simple API. Reduce fraud and increase user trust - follow these guides, reference docs, and tutorials.">
+    
+    
+    
+
+    
+
+    <title>
+      Authy: Two-factor Authentication and Passwordless Login by API and SDK - Twilio
+    </title>
+
+    
+      <link rel="canonical" href="https://www.twilio.com/docs/authy" />
+    
+
+    
+    <link rel="shortcut icon" href="/docs/static/img/favicons/favicon.96fbaa0d.ico"/>
+    <link rel="apple-touch-icon" href="/docs/static/img/favicons/favicon_57.96fbaa0d.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/docs/static/img/favicons/favicon_72.96fbaa0d.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/docs/static/img/favicons/favicon_114.96fbaa0d.png"/>
+
+    
+    <link rel="stylesheet" href="/docs/static/css/fonts.min.96fbaa0d.css" />
+    <link rel="stylesheet" href="/docs/static/css/font-awesome.min.96fbaa0d.css" />
+    <link rel="stylesheet" href="/docs/static/css/devicon.min.96fbaa0d.css" />
+    <link rel="stylesheet" href="/docs/static/css/twilio-icons.96fbaa0d.css" />
+    <link rel="stylesheet" href="/docs/static/css/font-mfizz.96fbaa0d.css" />
+
+    
+    
+    <meta property="og:title" content="Authy: Two-factor Authentication and Passwordless Login by API and SDK">
+    
+    
+    <meta property="og:description" content="Easily add two-factor authentication and passwordless logins via API or with our Helper Libraries. Protect logins and step-up transactions with SMS, Voice, PushAuthentications, and TOTP through a simple API. Reduce fraud and increase user trust - follow these guides, reference docs, and tutorials.">
+    
+    
+    <meta property="og:url" content="https://www.twilio.com/docs/authy?utm_source=docs&utm_medium=social&utm_campaign=guides_tags">
+
+    
+    
+    <meta name="twitter:title" content="Authy: Two-factor Authentication and Passwordless Login by API and SDK">
+    
+    
+    <meta name="twitter:description" content="Easily add two-factor authentication and passwordless logins via API or with our Helper Libraries. Protect logins and step-up transactions with SMS, Voice, PushAuthentications, and TOTP through a simple API. Reduce fraud and increase user trust - follow these guides, reference docs, and tutorials.">
+    
+    
+
+    
+    
+    <meta property="fb:app_id" content="414254592083321" />
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/docs/static/css/docs.min.96fbaa0d.css" />
+    
+
+    <!--  Stylesheet for docsearch -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+
+    
+    
+  </head>
+
+  <body class="
+    
+      apireference
+    
+    
+    
+  ">
+
+    
+
+	
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWRD6S"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MWRD6S');</script>
+	<!-- End Google Tag Manager -->
+	
+
+
+    
+    <div class="docs-banner">
+        <div class="docs-seasonal-banner">
+            
+        </div>
+
+        
+        
+
+<nav class="docs-nav docs-layout-nav">
+  <div class="docs-nav__brand">
+    <a href="/docs" class="docs-nav__link router-link-exact-active router-link-active" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="logo"><span class="docs-nav__logo"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="twlo-logomark"><path fill="currentColor" d="M14.4,11.3c0,1.7-1.4,3.1-3.1,3.1S8.2,13,8.2,11.3s1.4-3.1,3.1-3.1S14.4,9.6,14.4,11.3z M11.3,15.6c-1.7,0-3.1,1.4-3.1,3.1 s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S13,15.6,11.3,15.6z M30,15c0,8.3-6.7,15-15,15S0,23.3,0,15S6.7,0,15,0S30,6.7,30,15z M26,15 c0-6.1-4.9-11-11-11S4,8.9,4,15s4.9,11,11,11S26,21.1,26,15z M18.7,15.6c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1 S20.4,15.6,18.7,15.6z M18.7,8.2c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S20.4,8.2,18.7,8.2z"></path></svg></span> <span class="docs-nav__title">Twilio Docs</span></a>
+  </div>
+
+  <ul class="docs-nav__primary">
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/sms" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="SMS">SMS</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/voice" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Voice">Voice</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/runtime" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Runtime">Runtime</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/chat" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Chat">Chat</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/studio" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Studio">Studio</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/all" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="All docs...">All docs...</a>
+      
+    </li>
+    
+  </ul>
+
+  <ul class="docs-nav__secondary">
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://www.twilio.com/docs/libraries" class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="SDKs">SDKs</a>
+      
+    </li>
+    
+    <li class="docs-nav__item">
+      
+        <a href="https://support.twilio.com/hc/en-us"  target="_blank"  class="docs-nav__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Help">Help</a>
+      
+    </li>
+    
+    <li class="docs-nav__docsearch">
+      <input type="search" name="q" placeholder="Search" id="docsearch">
+    </li>
+
+    
+      <li class="docs-nav__item">
+        <a href="/login" class="docs-nav__login" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="log in">Log in</a>
+      </li>
+      <li class="docs-nav__item">
+        <a href="/try-twilio" class="docs-nav__signup" data-glinktype="cta-link" data-glinklocation="docs" data-glinkname="signup-sign-up">Sign up</a>
+      </li>
+    
+  </ul>
+
+  <span class="docs-nav-mobile">
+      <div class="docs-navicon">
+          <a href="#" class="docs-navicon__trigger">
+              <div class="docs-navicon__lines">
+                  <span class="docs-navicon__lines--center"></span>
+              </div>
+          </a>
+      </div>
+      <ul class="docs-nav-mobile__menu">
+          <li><form method="get" action="/docs/search"><input type="search" name="q" class="docs-nav-mobile__search"></form></li>
+
+      
+        
+          <li><a href="https://www.twilio.com/docs/sms" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="SMS">SMS</a></li>
+        
+      
+        
+          <li><a href="https://www.twilio.com/docs/voice" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Voice">Voice</a></li>
+        
+      
+        
+          <li><a href="https://www.twilio.com/docs/runtime" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Runtime">Runtime</a></li>
+        
+      
+        
+          <li><a href="https://www.twilio.com/docs/chat" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Chat">Chat</a></li>
+        
+      
+        
+          <li><a href="https://www.twilio.com/docs/studio" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Studio">Studio</a></li>
+        
+      
+        
+          <li><a href="https://www.twilio.com/docs/all" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="All docs...">All docs...</a></li>
+        
+      
+
+      
+        
+          <li><a href="https://www.twilio.com/docs/libraries" class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="SDKs">SDKs</a></li>
+        
+      
+        
+          <li><a href="https://support.twilio.com/hc/en-us"  target="_blank"  class="docs-nav-mobile__link" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="Help">Help</a></li>
+        
+      
+
+          <li><a href="/login" class="docs-nav-mobile__login" data-glinktype="site navigation" data-glinklocation="docs" data-glinkname="log in">Log in</a></li>
+          <li><a href="/try-twilio" class="docs-nav-mobile__signup" data-glinktype="cta-link" data-glinklocation="docs" data-glinkname="signup-sign-up">Sign up</a></li>
+      </ul>
+  </span>
+</nav>
+
+    </div>
+    
+
+
+
+<div class="docs-layout ">
+<div class="docs-sidebar docs-layout-sidebar">
+<div class="docs-sidebar__header">
+<a class="docs-sidebar__title router-link-exact-active router-link-active" href="/docs/authy">
+        Authy: 2FA and Passwordless Login
+      </a>
+<a class="docs-sidebar__status" href="https://status.twilio.com/" id="twilio-status-link" target="_blank" twilio_status_url="/docs/twilio_status/mq9q3ytpkyfz">
+<div class="docs-sidebar__status-indicator"></div>
+<div class="docs-sidebar__status-overlay">
+<p class="docs-sidebar__status-title">Twilio</p>
+<p class="docs-sidebar__status-subtitle"></p>
+</div>
+</a>
+</div>
+<div class="docs-sidebar__mobile-menu">
+<p class="docs-sidebar__mobile-menu-title">Menu</p>
+<svg class="twlo-icon-interface-dropdown" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 7l-6 6-6-6V6h1l5 5 5-5h1v1z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="docs-sidebar__content">
+<ul class="docs-sidebar__file-tree">
+<!-- Page menu entries -->
+<li class="folder">
+<input checked="" id="getting-started" name="getting-started" type="checkbox"/>
+<label for="getting-started">Getting Started</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="page ">
+<a href="/docs/authy/obtain-your-app-id">
+          Obtaining your Authy APP_ID
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-nodejs">
+          2FA Quickstart: Node.js
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-java-spring">
+          2FA Quickstart: Java-Spring
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-java-servlets">
+          2FA Quickstart: Java-Servlets
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-ruby-rails">
+          2FA Quickstart: Ruby on Rails
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-php-laravel">
+          2FA Quickstart: PHP and Laravel
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/dotnet-core-csharp-two-factor-authentication">
+          2FA Quickstart: C# and .NET
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-python-flask">
+          2FA Quickstart: Python and Flask
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/quickstart/two-factor-authentication-python-django">
+          2FA Quickstart: Python and Django
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/psd2-compliant-authentication-authy">
+          PSD2 Compliant Authentication
+      </a>
+</li>
+</ul>
+</li>
+<li class="folder">
+<input checked="" id="api-reference" name="api-reference" type="checkbox"/>
+<label for="api-reference">API Reference</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="folder">
+<input checked="" id="authy-api-3234" name="authy-api-3234" type="checkbox"/>
+<label for="authy-api-3234">Authy API</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="page ">
+<a href="/docs/authy/api">
+          Overview
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/applications">
+          Applications
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/users">
+          Users
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/one-time-passwords">
+          One-Time Passwords (OTP)
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/transactional-time-based-one-time-passwords">
+          Transactional Time-based One Time Passwords (PSD2)
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/push-authentications">
+          Push Authentications
+      </a>
+</li>
+</ul>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/reporting">
+          Authy Reporting API
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/api/webhooks">
+          Authy Webhooks API
+      </a>
+</li>
+</ul>
+</li>
+<li class="folder">
+<input checked="" id="api-usage" name="api-usage" type="checkbox"/>
+<label for="api-usage">API Usage</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="page ">
+<a href="/docs/authy/validation">
+          Validating Twilio Authy Callbacks
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/return-and-error-codes">
+          Authy Return and Error Codes
+      </a>
+</li>
+</ul>
+</li>
+<li class="folder">
+<input checked="" id="more-information" name="more-information" type="checkbox"/>
+<label for="more-information">More Information</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="linkout">
+<a href="https://www.twilio.com/authy/pricing" target="_blank">
+        Authy Pricing
+    </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/two-factor-authentication-channels">
+          Authy Authentication Channels
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/choose-an-account-security-implementation">
+          Choosing an Account Security Implementation
+      </a>
+</li>
+<li class="page ">
+<a href="/docs/authy/two-factor-authentication-developer-best-practices">
+          Developer Best Practices for 2FA
+      </a>
+</li>
+<li class="linkout">
+<a href="https://www.twilio.com/help/sales" target="_blank">
+        Talk to Sales About Authy
+    </a>
+</li>
+</ul>
+</li>
+<li class="folder">
+<input checked="" id="libraries" name="libraries" type="checkbox"/>
+<label for="libraries">Libraries</label>
+<ul class="menu-accordion" role="menu-accordion">
+<li class="linkout">
+<a href="https://github.com/twilio/authy-php" target="_blank">
+        PHP Authy Helper Library
+    </a>
+</li>
+<li class="linkout">
+<a href="https://github.com/twilio/authy-ruby" target="_blank">
+        Ruby Authy Helper Library
+    </a>
+</li>
+<li class="linkout">
+<a href="https://github.com/twilio/authy-python" target="_blank">
+        Python Authy Helper Library
+    </a>
+</li>
+<li class="linkout">
+<a href="https://bitbucket.org/devinmartin/authy.net/wiki/Home" target="_blank">
+        C#.NET Authy Helper Library
+    </a>
+</li>
+<li class="linkout">
+<a href="https://github.com/evilpacket/node-authy" target="_blank">
+        Node.js Authy Helper Library
+    </a>
+</li>
+<li class="linkout">
+<a href="https://github.com/twilio/authy-java" target="_blank">
+        Java Authy Helper Library
+    </a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<main class="docs-layout-main docs-layout-multi-columns">
+<div class="docs-sidebar-toggle is-open"></div>
+<div class="docs-layout-column">
+<div class="docs-reader-mode-toggle">
+<span class="docs-reader-mode-toggle__label hidden">Collapse</span>
+<svg class="icon-minimize hidden" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M4 0h2v6H0V4h4V0zm0 18v-4H0v-2h6v6H4zm14-4h-4v4h-2v-6h6v2zM14 0v4h4v2h-6V0h2z" fill="#FFF" fill-rule="nonzero"></path></svg>
+<span class="docs-reader-mode-toggle__label">Expand</span>
+<svg class="icon-maximize" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M2 6H0V0h6v2H2v4zm0 6v4h4v2H0v-6h2zm10 4h4v-4h2v6h-6v-2zm4-10V2h-4V0h6v6h-2z" fill="#FFF" fill-rule="nonzero"></path></svg>
+</div>
+<div class="docs-feedback ">
+<form action="/docs/submit-feedback" method="POST">
+<input name="page" type="hidden" value="3538"/>
+<input name="requested_path" type="hidden" value="/docs/authy"/>
+<input name="star_rating" type="hidden" value=""/>
+<input name="csrfmiddlewaretoken" type="hidden" value="UeuwefgkOgo3kDN1VXdyUVZHvJLJy9JDqSgGbMEejMTU2NTE0MjI3NS45OTY4NTM"/>
+<div class="docs-feedback__rating-card">
+<span class="docs-feedback__rating-label">Rate this page:</span>
+<ol class="docs-feedback__rating-stars">
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+</ol>
+</div>
+<div class="docs-modal-overlay">
+<div class="twlo-loading loading-no-bg" style="display: none;">
+<div class="twlo-loading__inner">
+<div class="twlo-loading__spinner">
+<svg><circle cx="25" cy="25" fill="none" r="20" stroke-miterlimit="10" stroke-width="2"></circle></svg>
+</div>
+<div class="twlo-laoding__message">
+              Sending your feedback...
+            </div>
+</div>
+</div>
+<div class="docs-modal__submit-message" style="display: none;">👍 We got it!</div>
+<div class="docs-modal">
+<span class="docs-modal__close">
+<svg class="icon-close" fill="#233659" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 4l-5 5 5 5v1h-1l-5-5-5 5H3v-1l5-5-5-5V3h1l5 5 5-5h1v1z"></path>
+</svg>
+</span>
+<h2 class="docs-modal__title">Thanks for rating this page!</h2>
+<p class="docs-modal__body">We are always striving to improve our documentation quality, and your feedback is valuable to us. How could this documentation serve you better?</p>
+<textarea class="docs-modal__textarea" name="comment" placeholder="Suggestions..."></textarea>
+<div class="feedback-countries">
+<label for="countries">If applicable fill in the countries where you are using Twilio</label><br/>
+<input name="countries" value=""/><br/>
+</div>
+<button class="twlo-btn feedback-submit-btn">Send your suggestions</button>
+<div class="feedback-footer">
+<div class="talk-to-support">
+<a href="/console/support/tickets/create" target="_blank">Talk to Support</a>
+</div>
+<div class="rc-anchor-pt">
+              Protected by reCAPTCHA – <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a><span aria-hidden="true" role="presentation"> - </span><a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<article class="docs-article docs-prose">
+<header>
+<h1 class="docs-article__title">
+        Authy: 2FA and Passwordless Login
+      </h1>
+</header>
+<section>
+<div class="rich-text"><p>Authy is the fastest way to add two-factor authentication or passwordless login to your app. Secure your users’ accounts with high-security checks during logins and step-up transactions to ensure you’re letting the right person in. Easy support for SMS, Voice, OTP, and Push Authentication channels. Let’s get building.  </p>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/authy/api">See the Authy API Reference</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart">Add 2FA to Your First App</a></li>
+<li><a href="https://www.twilio.com/quest/mission/4">Authy Two-factor Authentication in TwilioQuest</a></li>
+</ul>
+<h2 class="docs-article__section-title" id="get-started-with-authy-two-factor-authentication-2fa"><a class="toclink" href="#get-started-with-authy-two-factor-authentication-2fa">Get Started with Authy Two-factor Authentication (2FA)</a></h2>
+<p>All you need is an API Key and a developer environment to get started. Grab your credentials from the <a href="https://www.twilio.com/console/authy/applications">Authy Console</a>, create a new Application and API Key while you're there, then code in the language of your choice.</p>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-nodejs">2FA Quickstart for Node.js and Express</a></li>
+<li><a href="https://www.twilio.com/docs/authy/tutorials/two-factor-authentication-java-servlets">2FA Quickstart for Java and Servlets</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-java-spring">2FA Quickstart for Java and Spring</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-ruby-rails">2FA Quickstart for Ruby on Rails</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-php-laravel">2FA Quickstart for PHP and Laravel</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/dotnet-core-csharp-two-factor-authentication">2FA Quickstart for C# and .NET Core</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-python-flask">2FA Quickstart for Python and Flask</a></li>
+<li><a href="https://www.twilio.com/docs/authy/quickstart/two-factor-authentication-python-django">2FA Quickstart for Python and Django</a></li>
+</ul>
+<h4 class="docs-article__section-title" id="helper-libraries"><a class="toclink" href="#helper-libraries">Helper Libraries</a></h4>
+<p>Instead of using the Authy API directly to integrate two-factor authentication into your app, we provide a helper library for common web languages. If your language is supported, it's the fastest way to get started.</p>
+<ul class="docs-article__list">
+<li><a href="https://github.com/twilio/authy-php">PHP Authy Helper Library</a></li>
+<li><a href="https://github.com/twilio/authy-ruby">Ruby Authy Helper Library</a></li>
+<li><a href="https://github.com/twilio/authy-python">Python Authy Helper Library</a></li>
+<li><a href="https://github.com/evilpacket/node-authy">Node.js Authy Helper Library</a></li>
+<li><a href="https://github.com/twilio/authy-java">Java Authy Helper Library</a></li>
+</ul>
+<h2 class="docs-article__section-title" id="build-your-app"><a class="toclink" href="#build-your-app">Build Your App</a></h2>
+<p>You've got an app in mind or an app already built and you want to increase security. These Authy API Reference Docs and guides will make your security integration simple.</p>
+<h4 class="docs-article__section-title" id="api-reference"><a class="toclink" href="#api-reference">API Reference</a></h4>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/api/authy/rest">Authy API Overview</a></li>
+<li><a href="https://www.twilio.com/docs/api/authy/rest/push-authentications">Push Authentication with Authy</a> </li>
+<li><a href="https://www.twilio.com/docs/api/authy/two-factor-authentication-channels">Authy Two-factor Authentication Channel Overview</a></li>
+</ul>
+<h4 class="docs-article__section-title" id="authy-posts"><a class="toclink" href="#authy-posts">Authy Posts</a></h4>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/blog/2017/03/onboarding-authy-users.html">Authy User Onboarding Process</a></li>
+<li><a href="https://www.twilio.com/blog/2017/10/protect-your-npm-account-with-2fa-and-authy.html">Protect Your npm Account with Authy</a></li>
+<li><a href="https://www.twilio.com/blog/2018/01/google-authenticator-support-in-authy-api.html">Google Authenticator Support in Authy</a></li>
+<li><a href="https://www.twilio.com/blog/2018/02/new-webhooks-and-reporting-for-twilio-authy-2fa-and-verify-phone-verification-apis.html">Authy Reporting and Webhooks API Overview</a></li>
+</ul>
+<h2 class="docs-article__section-title" id="advanced-authy-features"><a class="toclink" href="#advanced-authy-features">Advanced Authy Features</a></h2>
+<p>Use classic <a href="https://www.twilio.com/docs/api/authy/two-factor-authentication-channels">two-factor authentication channels</a> SMS and Voice or more secure methods such as push authentication and soft tokens. The <a href="https://authy.com/download/">Authy Client</a> and <a href="https://www.twilio.com/docs/authy/twilioauth-sdk">Authentication SDK</a> make the journey easy.</p>
+<p>Once you’ve started integrating Authy to your application, read our <a href="https://www.twilio.com/docs/authy/two-factor-authentication-developer-best-practices">two-factor authentication best practices</a> for help keeping everything smooth. Increase user trust, gate risky transactions, and add features such as passwordless login.</p>
+<h3 class="docs-article__section-title" id="implementation-docs"><a class="toclink" href="#implementation-docs">Implementation Docs</a></h3>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/authy/two-factor-authentication-developer-best-practices">2FA Best Practices</a></li>
+<li><a href="https://www.twilio.com/docs/authy/validation">Validating Twilio Webhooks</a></li>
+</ul>
+<h3 class="docs-article__section-title" id="two-factor-authentication-channels"><a class="toclink" href="#two-factor-authentication-channels">Two-factor Authentication Channels</a></h3>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/authy/two-factor-authentication-channels">SMS &amp; Voice</a></li>
+<li><a href="https://www.twilio.com/docs/authy/api/one-time-passwords">Soft Token</a></li>
+<li><a href="https://www.twilio.com/docs/authy/api/push-authentications">Push Authentication</a></li>
+</ul>
+<h3 class="docs-article__section-title" id="user-facing-authentication"><a class="toclink" href="#user-facing-authentication">User Facing Authentication</a></h3>
+<ul class="docs-article__list">
+<li><a href="https://authy.com">Authy Client</a></li>
+</ul>
+<h2 class="docs-article__section-title" id="account-security-products"><a class="toclink" href="#account-security-products">Account Security Products</a></h2>
+<p>Twilio will help you with your complete account security flow. Verify users have the number they claim or look-up phone number carrier and type.</p>
+<ul class="docs-article__list">
+<li><a href="https://www.twilio.com/docs/lookup/api">Lookup</a></li>
+<li><a href="https://www.twilio.com/docs/verify/api/v1">Verify</a></li>
+</ul>
+<p>For pricing on Authy, check out our <a href="https://www.twilio.com/authy/pricing">pricing page</a> or reach out to <a href="https://www.twilio.com/help/sales">sales</a>.</p></div>
+</section>
+<div class="docs-feedback ">
+<form action="/docs/submit-feedback" method="POST">
+<input name="page" type="hidden" value="3538"/>
+<input name="requested_path" type="hidden" value="/docs/authy"/>
+<input name="star_rating" type="hidden" value=""/>
+<input name="csrfmiddlewaretoken" type="hidden" value="aHk8Ibzlr3ZvbPne0W5L4J6AzEB7DEzy56x2cHI0AMTU2NTE0MjI3Ni4xMzk5NDk"/>
+<div class="docs-feedback__rating-card">
+<span class="docs-feedback__rating-label">Rate this page:</span>
+<ol class="docs-feedback__rating-stars">
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+<li class="docs-feedback__rating-star"></li>
+</ol>
+</div>
+</form>
+</div>
+<footer class="docs-article-footer">
+<ul class="docs-article-footer__list">
+<li class="docs-article-footer__list-item">
+<a class="docs-article-footer__link" href="/legal/tos">Terms of Service</a>
+</li>
+<li class="docs-article-footer__list-item">
+<a class="docs-article-footer__link" href="/legal/privacy">Privacy Policy</a>
+</li>
+<li class="docs-article-footer__list-item">Copyright © 2019 Twilio Inc.</li>
+</ul>
+</footer>
+</article>
+</div>
+<div class="twlo-code code-rail" data-column-mode="true" id="coderail">
+<div class="rail-placeholder"></div>
+<header class="twlo-code-header rail-title">
+<div class="twlo-code-header__title">
+<a href="#linkcode">
+<div class="twlo-code-header__title-inner">Loading Code Sample...</div>
+<div class="twlo-code-header__title-loading"></div>
+</a>
+<svg class="twlo-icon-interface-dropdown" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M15 7l-6 6-6-6V6h1l5 5 5-5h1v1z" fill="currentColor"></path></svg>
+</div>
+<ul class="twlo-code-header__dropdown"></ul>
+<div class="twlo-code-header__actions">
+<ul class="twlo-code-header__languages"></ul>
+<ul class="twlo-code-header__versions"></ul>
+</div>
+</header>
+<div class="twlo-code__sample">
+<div class="twlo-code__actions">
+<span class="twlo-code__action twlo-code__outdated" style="display: none;">
+        You are viewing an outdated version of this SDK.
+      </span>
+<span class="twlo-code__action clippy">
+<svg class="twlo-icon-interface-clipboard" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7v2h-5v2L8 8l3-3v2h5zM8 5H4v1h4V5zm-4 7h5v-1H4v1zm9-1h1v3H2V0h12v5h-1V3H3v10h10v-2zM3 2h10V1H3v1zm1 7v1h3V9H4zm0-1h3V7H4v1z" fill="currentColor"></path></svg>
+</span>
+<a class="twlo-code__action github" href="https://github.com" target="_blank">
+<svg class="twlo-icon-interface-repo" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5 3H4V2h1v1zm0 1H4v1h1V4zm0 4H4v1h1V8zm0-2H4v1h1V6zm9-6v14H7v2l-1.5-1L4 16v-2H2V0h12zm-1 11H3v2h1v-1h3v1h6v-2zm0-10H3v9h10V1z" fill="currentColor"></path></svg>
+</a>
+</div>
+<pre class="twlo-code__snippet line-numbers"></pre>
+<div class="docs-coderail__next">
+<a class="docs-coderail__next-link" href="#">Next Sample</a>
+</div>
+</div>
+<div class="twlo-code__output" style="display: none;">
+<div class="docs-coderail__label">Output</div>
+<pre class="twlo-code__snippet line-numbers language-json"></pre>
+</div>
+</div>
+</main>
+</div>
+<script src="/docs/static/js/vendor.min.96fbaa0d.js"></script>
+<!-- Mixpanel -->
+<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+  typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+    e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+    mixpanel.init("f71c19735fa6ecc5225ff563285e1794");
+    </script>
+<!-- Eloqua -->
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '815114181']);
+    _elqQ.push(['elqTrackPageView']);
+    _elqQ.push(['elqUseFirstPartyCookie', 'www.twilio.com']);
+
+    (function () {
+      function async_load() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//img03.en25.com/i/elqCfg.min.js';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      }
+      if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+      else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+    </script>
+<!-- Transifex -->
+<script type="text/javascript">
+    window.liveSettings = {
+      api_key: '4c06c1c5a6b341e591d969476fe2675f'
+    };
+    </script>
+<script src="//cdn.transifex.com/live.js" type="text/javascript"></script>
+<style>
+    .txlive-langselector { display: none; }
+    </style>
+<script src="/docs/static/js/docs.min.96fbaa0d.js"></script>
+
+
+
+    
+    <!-- Initialize recaptcha v3 -->
+    <script src='https://www.google.com/recaptcha/api.js?render=6Ld1J2sUAAAAAEzfAkJKSWq8Za2Bt9Hw-rpCbBE9'></script>
+    <!--  Initialize docsearch -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript"> docsearch({
+     apiKey: window.twilio.DOCSEARCH_API_KEY,
+     indexName: 'twilio',
+     inputSelector: '#docsearch',
+     debug: false, // Set debug to true if you want to inspect the dropdown
+     algoliaOptions: {
+         hitsPerPage: 6
+     }
+    });
+    </script>
+  </body>
+</html>

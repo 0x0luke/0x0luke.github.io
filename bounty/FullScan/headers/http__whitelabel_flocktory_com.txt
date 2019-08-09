@@ -1,0 +1,17 @@
+200 OK
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/octet-stream
+Etag: W/"9a843f20677a52ca79af903123147af0"
+P3p: policyref="/w3c/p3p.xml", CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT", CP="CAO PSA OUR"
+Server: openresty
+Set-Cookie: __flocktory-web_session2=036a2e24-c902-43af-9d34b2a7a406916b; Expires=Fri, 06-Aug-21 03:30:57 GMT; Domain=.flocktory.com; Path=/; Secure; SameSite=None
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 03:30:57 GMT
+Status: 200 OK
+Strict-Transport-Security: max-age=0;
+X-Backend-Server: 8e59829c0e5c
+X-Runtime: 0.002086
+Content-Length: 8
+X-Frame-Options: ALLOWALL
+X-Request-Id: 188b83c2-3df6-470d-8735-0fbbceaee9e0

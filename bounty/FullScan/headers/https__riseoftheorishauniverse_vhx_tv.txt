@@ -1,0 +1,17 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+X-Runtime: 0.129713
+Via: 1.1 vegur
+P3p: CP="ALL DSP COR CURa ADMa DEVa OUR IND COM NAV"
+Vary: Accept-Encoding
+Etag: "f52656f97a16283fc03a27003e6a969f"
+Server: nginx + Phusion Passenger
+X-Rack-Cache: miss
+X-Ua-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: f1c12d81-73ce-458d-b8f1-b6b8ddc60c26
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 15:01:31 GMT
+Status: 200 OK
+X-Powered-By: Phusion Passenger
+Content-Type: text/html; charset=utf-8

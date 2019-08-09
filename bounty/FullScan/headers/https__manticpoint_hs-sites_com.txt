@@ -1,0 +1,18 @@
+200 OK
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-7545523047,P-457766,L-7194556533,L-7194854611,L-7195623061,CW-5735854872,CW-5735856967,CW-5737132487,CW-5737448357,CW-5737812459,CW-7195623162,CW-7215358708,CW-7351016195,CW-7352736531,CW-7356960961,CW-7358726179,E-7195427764,E-7195430725,E-7423314378,E-7423314656,MENU-7194560863,PGS-ALL,SW-1,SD-16
+X-Trace: 2B7AC30824F9999D88922681E37D5A0926145065E7000000000000000000
+Date: Thu, 08 Aug 2019 09:38:58 GMT
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d3fcc58f2bd4d2d4a61e90a210dd22c721565257138; expires=Fri, 07-Aug-20 09:38:58 GMT; path=/; domain=.www.manticpoint.com; HttpOnly __cfruid=8ceb2e5f5dc5125e7924215f6288f81dc7749e61-1565257138; path=/; domain=.www.manticpoint.com; HttpOnly
+X-Hs-Hub-Id: 457766
+X-Powered-By: HubSpot
+Server: cloudflare
+Cf-Cache-Status: EXPIRED
+Cache-Control: s-maxage=7200,max-age=5
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/hub/457766/hub_generated/template_assets/1559745269165/combined-css-9bcd95bfaba6b192260dee7120e34ac1.css>; rel=preload; as=style </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+X-Hs-Content-Id: 7545523047
+Retry-Count: 0
+Cf-Ray: 5030853cecb3367b-MAN
+Vary: Accept-Encoding
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s

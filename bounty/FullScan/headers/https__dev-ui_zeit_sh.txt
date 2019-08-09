@@ -1,0 +1,20 @@
+200 OK
+Referrer-Policy: origin
+Etag: W/"5f9c1-jZHrYZ2YN8BhrwyBs6wpn9TzR3U"
+Server: now
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self' zeit.co *.zeit.co *.zeit.sh *.stripe.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' www.google.com www.gstatic.com *.googleapis.com *.youtube.com *.ytimg.com zeit.co *.zeit.co *.zeit.sh *.stripe.com; child-src *.youtube.com *.stripe.com www.google.com; style-src 'self' 'unsafe-inline' *.googleapis.com zeit.co *.zeit.co *.zeit.sh *.stripe.com; img-src 'self' data: zeit.co *.zeit.co *.zeit.sh *.stripe.com res.cloudinary.com *.githubusercontent.com i.ytimg.com *.googleapis.com *.gstatic.com; media-src 'self' zeit.co *.zeit.co *.zeit.sh *.stripe.com res.cloudinary.com; connect-src 'self' zeit.co *.zeit.co *.zeit.sh *.stripe.com hooks.slack.com zeit-slackin.now.sh wss://state-io.zeit.co wss://log-io.zeit.co; font-src *.gstatic.com
+X-Now-Instance: 1308181680
+Date: Thu, 08 Aug 2019 15:04:58 GMT
+X-Download-Options: noopen
+X-Now-Trace: lhr1,bru1
+X-Xss-Protection: 1; mode=block
+X-Version: 4.17.4
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Dns-Prefetch-Control: off
+Content-Language: en
+X-Now-Id: lhr1:2qzb4-1565276698365-bf05bb8b77d9
+Cache-Control: s-maxage=0
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0

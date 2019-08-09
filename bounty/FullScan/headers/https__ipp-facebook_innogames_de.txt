@@ -1,0 +1,18 @@
+200 OK
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+X-Frame-Options: DENY
+Access-Control-Allow-Credentials: true
+Cache-Control: private, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Strict-Transport-Security: max-age=15552000; preload
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: https://www.facebook.com
+Retry-Count: 0
+Content-Security-Policy: default-src * data: blob: 'self';script-src *.facebook.com *.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src data: blob: 'unsafe-inline' *;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net *.spotilocal.com:* wss://*.facebook.com:* https://fb.scanandcleanlocal.com:* attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' chrome-extension://boadgeojelhgndaghljhdicfkmllpafd chrome-extension://dliochdbjfkdbacpmhlcpmleaejidimm;
+Content-Type: text/html; charset="utf-8"
+Date: Thu, 08 Aug 2019 11:04:12 GMT
+X-Xss-Protection: 0
+Access-Control-Expose-Headers: X-FB-Debug, X-Loader-Length
+Vary: Origin Accept-Encoding
+Access-Control-Allow-Methods: OPTIONS
+X-Fb-Debug: eDgUtZu3FyWIx42cPJTTAYKQbL0rLKwf7NZNDdoxwzIKlH+3HAItxpV47ROoLUH0hvy6gpHULELFDh+3ekCQRQ==

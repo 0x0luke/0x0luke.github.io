@@ -1,0 +1,23 @@
+200 OK
+X-Cache: HIT, MISS
+X-Cache-Hits: 1, 0
+X-Goog-Metageneration: 2
+X-Goog-Stored-Content-Encoding: identity
+X-Goog-Stored-Content-Length: 41023
+X-Goog-Meta-Mtime: 2019-08-06T16:32:39.460685156+05:30
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Expires: 0
+Pragma: no-cache
+Age: 0
+Cache-Control: no-cache, no-store, private, must-revalidate, max-age=0, max-stale=0, post-check=0, pre-check=0
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Via: 1.1 varnish
+Last-Modified: Fri, 02 Aug 2019 03:43:06 GMT
+X-Goog-Generation: 1564717386813897
+Content-Type: text/html; charset=utf-8
+Date: Thu, 08 Aug 2019 11:13:49 GMT
+Etag: "2f5c8f63021cba7197c49a464ca6789a"
+X-Served-By: cache-jfk8132-JFK, cache-lcy19278-LCY
+X-Timer: S1565262829.088649,VS0,VE71

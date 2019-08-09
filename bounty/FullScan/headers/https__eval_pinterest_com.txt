@@ -1,0 +1,16 @@
+200 OK
+X-Pinterest-Rid: 7541129910375043
+X-Cdn: akamai
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com cdn.ampproject.org *.cdn.ampproject.org pinterest-media-upload.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net blob:; media-src 'self' *.pinimg.com blob: data:; object-src 'self' h.online-metrix.net; prefetch-src *; script-src 'nonce-XxZXsUEUXO' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com 'unsafe-inline' 'unsafe-eval'; base-uri 'none'; report-uri /_/_/csp_report/
+Pinterest-Generated-By: eval-prod-docker-0a0189eb
+X-Upstream-Env: python
+X-Envoy-Upstream-Service-Time: 120
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Vary: User-Agent, Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 08 Aug 2019 11:39:31 GMT
+X-Content-Type-Options: nosniff
+Pinterest-Version: 7505a48

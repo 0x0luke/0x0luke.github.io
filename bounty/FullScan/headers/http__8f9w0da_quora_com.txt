@@ -1,0 +1,21 @@
+404 Not Found
+Server: nginx
+Strict-Transport-Security: max-age=31536000;
+X-Content-Type-Options: nosniff
+X-Cache: MISS
+Cache-Control: private, no-store, max-age=0, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Q-Stat: 81,bd98ccac5f49060602f77edba2aeeffc,10.0.0.232,30466,89.238.135.143,,2247522065,1,1565250156.906,0.213,,.,0,0,0.000,0.212,-,0,0,2320,247,123,10,26847,,,,,,,
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html; charset=utf-8
+Set-Cookie: m-b="kLdlwW7ZN7A4o8oG_ksdWA\075\075"; Domain=.quora.com; Max-Age=63072000; Path=/; expires=Sat, 07-Aug-2021 07:42:36 GMT; secure; HttpOnly m-s="BYKSp3aaWLoL7j2_Rg2F3w\075\075"; Domain=.quora.com; Max-Age=63072000; Path=/; expires=Sat, 07-Aug-2021 07:42:36 GMT; secure; HttpOnly m-early_v=06f5d6e3bf8eab2c; Domain=.quora.com; Max-Age=63115200; Path=/; expires=Sat, 07-Aug-2021 19:42:36 GMT
+X-Content-Security-Policy: default-src * data: blob:;style-src * 'unsafe-inline';script-src https://*.quora.com https://*.facebook.net https://*.facebook.com https://*.googleapis.com https://*.twitter.com https://*.quoracdn.net https://*.google.com https://*.google-analytics.com https://*.gstatic.com https://*.youtube.com https://*.ytimg.com https://*.jwpcdn.com https://*.stripe.com https://*.intercom.io https://*.intercomcdn.com https://*.syndication.twimg.com https://cdnjs.cloudflare.com https://*.jwplatform.com https://*.googlesyndication.com https://*.googletagmanager.com https://*.googleadservices.com https://*.doubleclick.net https://*.googletagservices.com https://*.ampproject.org https://*.ads-twitter.com https://*.dwin1.com https://*.marketo.net https://*.licdn.com https://*.linkedin.com https://*.qualtrics.com https://*.siteintercept.qualtrics.com 'unsafe-inline' 'unsafe-eval' 127.0.0.1:*;connect-src 'self' https://*.quora.com wss://*.quora.com https://*.quoracdn.net https://*.stripe.com https://*.intercom.io wss://*.intercom.io https://*.jwplatform.com https://*.jwpsrv.com https://syndication.twitter.com https://*.syndication.twimg.com https://*.googleapis.com https://*.qualtrics.com https://*.facebook.com https://*.fbcdn.net blob: https://*.mktoresp.com https://*.doubleclick.net ;report-uri /security_reports/content_security_policy_violation_3RD_PARTY_POST
+X-Ua-Compatible: IE=10, chrome=1
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 07:42:36 GMT
+X-Served-By: cache-lhr6344-LHR
+Pragma: no-cache
+X-Cache-Hits: 0
+X-Timer: S1565250157.655579,VS0,VE292
+Via: 1.1 varnish
+Retry-Count: 0

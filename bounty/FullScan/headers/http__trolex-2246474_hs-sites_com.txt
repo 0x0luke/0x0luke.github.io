@@ -1,0 +1,11 @@
+429 Too Many Requests
+Cf-Ray: 502fbf6b9e1cd21c-MAN
+Retry-After: 569
+Set-Cookie: __cfduid=d7ae2dc35173e5e5f726ecd75a17a28991565249036; expires=Fri, 07-Aug-20 07:23:56 GMT; path=/; domain=.hs-sites.com; HttpOnly
+Cache-Control: no-cache
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Server: cloudflare
+Date: Thu, 08 Aug 2019 07:23:56 GMT
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>CXSupport</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:22/2k3kRKCp/YtdWUVSFsYTqRyRIbESQ9mjUNwdODSuEx1XU+f3c2HT3E+I8Akge1wOBHOvm5nbLOJ2OWWSucw==" />
+  <link rel="canonical" href="https://cxsupport.ingersollrand.com/hc/en-us" />
+<link rel="alternate" hreflang="cs" href="https://cxsupport.ingersollrand.com/hc/cs" />
+<link rel="alternate" hreflang="de" href="https://cxsupport.ingersollrand.com/hc/de" />
+<link rel="alternate" hreflang="en-gb" href="https://cxsupport.ingersollrand.com/hc/en-gb" />
+<link rel="alternate" hreflang="en" href="https://cxsupport.ingersollrand.com/hc/en-us" />
+<link rel="alternate" hreflang="es" href="https://cxsupport.ingersollrand.com/hc/es" />
+<link rel="alternate" hreflang="es-419" href="https://cxsupport.ingersollrand.com/hc/es-419" />
+<link rel="alternate" hreflang="fr" href="https://cxsupport.ingersollrand.com/hc/fr" />
+<link rel="alternate" hreflang="fr-ca" href="https://cxsupport.ingersollrand.com/hc/fr-ca" />
+<link rel="alternate" hreflang="hu" href="https://cxsupport.ingersollrand.com/hc/hu" />
+<link rel="alternate" hreflang="it" href="https://cxsupport.ingersollrand.com/hc/it" />
+<link rel="alternate" hreflang="pl" href="https://cxsupport.ingersollrand.com/hc/pl" />
+<link rel="alternate" hreflang="pt" href="https://cxsupport.ingersollrand.com/hc/pt" />
+<link rel="alternate" hreflang="pt-br" href="https://cxsupport.ingersollrand.com/hc/pt-br" />
+<link rel="alternate" hreflang="ro" href="https://cxsupport.ingersollrand.com/hc/ro" />
+<link rel="alternate" hreflang="ru" href="https://cxsupport.ingersollrand.com/hc/ru" />
+<link rel="alternate" hreflang="sk" href="https://cxsupport.ingersollrand.com/hc/sk" />
+<link rel="alternate" hreflang="zh" href="https://cxsupport.ingersollrand.com/hc/zh-cn" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p19.zdassets.com/hc/theming_assets/461787/176674/style.css?digest=360319368333" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/461787/fdc0546891db784027a9aecf29b693ab693e1aa0.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-113870578-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<link rel="stylesheet" href="https://assets.zendesk.com/apps/sdk-assets/css/1/zendesk_garden.css" type="text/css">
+<script src="https://unpkg.com/vue-multiselect@2.0.0"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.0.0/dist/vue-multiselect.min.css">
+
+
+<meta name="dc-placeholder" content="What can we help you find?" />
+<meta name="dc-user-segments-i-am-a" content="I am a..." />
+<meta name="dc-customer" content="Customer" />
+<meta name="dc-distributor" content="Distributor" />
+<meta name="dc-service-center" content="Service Center" />
+<meta name="dc-product" content="Product" />
+<meta name="dc-aro" content="ARO Fluid Products (Pumps, Valves, Cylinders, Filters, Regulators, Lubricators (FRL) and Lubrication Equipment)" />
+<meta name="dc-material-handling" content="Material Handling Systems (Hoists, Winches, Handling Systems, Balancers, End Effectors and Support Structures)" />
+<meta name="dc-power-tools" content="Power Tools (Tools, Industrial Lift, Ergonomic Handling Systems, Air Starters, DC Fastening, etc...)" />
+<meta name="dc-question" content="Question" />
+<meta name="dc-question-i-have" content="I have a product question or issue..." />
+<meta name="dc-question-i-want" content="I want to get or buy something..." />
+<meta name="dc-question-i-need" content="I need to request something or get help..." />
+<meta name="dc-topic" content="Topic" />
+<meta name="dc-application-advice" content="Application Advice" />
+<meta name="dc-service-locator" content="Service Locator" />
+<meta name="dc-technical-documentation" content="Technical Documentation" />
+<meta name="dc-technical-training" content="Technical Training" />
+<meta name="dc-distributor-locator-pricing" content="Distributor Locator / Pricing" />
+<meta name="dc-part-model-id" content="Part/Model Identification" />
+<meta name="dc-system-issue-error" content="System Issue/Error" />
+<meta name="dc-product-registration" content="Product Registration" />
+<meta name="dc-warranty-claims" content="Warranty / Claims" />
+<meta name="dc-warranty-service-request" content="Warranty Service Request" />
+<meta name="dc-tavant-claims" content="Tavant Claims" />
+<meta name="dc-issue-capture" content="Issue Capture" />
+<meta name="dc-pricing-and-availability" content="Pricing and Availability" />
+<meta name="dc-order-entry" content="Order Entry" />
+<meta name="dc-document-requests" content="Document Requests" />
+<meta name="dc-order-modification" content="Order Modification" />
+<meta name="dc-order-status" content="Order Status" />
+<meta name="dc-order-invoicing" content="Order Invoicing" />
+<meta name="dc-account-management" content="Account Management" />
+
+<script>
+	var article_mapping_ids = [
+    {"ircx": 115006266587, "mhdsupport": 360013918573}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115004426087, "mhdsupport": 360013806274}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115003310107, "mhdsupport": 360013806294}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000319467, "mhdsupport": 360013806314}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360002020907, "mhdsupport": 360013806334}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115007484127, "mhdsupport": 360013806354}, <!-- CXSupport version already had been archived; noted during 7/5/19 review (JCR) -->
+    {"ircx": 115015407448, "mhdsupport": 360013918593}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012077507, "mhdsupport": 360013918613}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000058447, "mhdsupport": 360013806394}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115010870168, "mhdsupport": 360013806414}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115014389128, "mhdsupport": 360013918633}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012634688, "mhdsupport": 360013918653}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012750687, "mhdsupport": 360013918673}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012749507, "mhdsupport": 360013806434}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012913348, "mhdsupport": 360013918693}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012912028, "mhdsupport": 360013806454}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115012911468, "mhdsupport": 360013918713}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000708708, "mhdsupport": 360013918733}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360001562228, "mhdsupport": 360013918753}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360002087527, "mhdsupport": 360013918773}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360002100607, "mhdsupport": 360013918793}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360002084227, "irtoolhelp": 360002080967}, <!-- archived on CXSupport and fixed redirect during  7/5/19 review (JCR) -->
+    {"ircx": 115002832227, "irtoolhelp": 360013808934}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000560607, "irtoolhelp": 360013806614}, <!-- CXSupport version already had been archived; noted during 7/5/19 review (JCR) -->
+    {"ircx": 360002056547, "irtoolhelp": 360013919113}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115010560367, "irtoolhelp": 360013808954}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115010560027, "irtoolhelp": 360013806634}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115010560167, "irtoolhelp": 360013808974}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115010727568, "irtoolhelp": 360013808994}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115013244507, "irtoolhelp": 360013921313}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115008206408, "irtoolhelp": 360013919133}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115008354667, "irtoolhelp": 360013919153}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    <!-- {"ircx": 115014292827, "irtoolhelp": 360013806654}, archived on CXSupport and IRToolHelp during 7/5/19 review (JCR) -->
+    <!-- {"ircx": 115006224788, "irtoolhelp": 360013806674}, archived on CXSupport and IRToolHelp during 7/5/19 review (JCR) -->
+    {"ircx": 115006974368, "irtoolhelp": 360013806694}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115006700287, "irtoolhelp": 360013919173}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115011281227, "irtoolhelp": 360013806714}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115009415527, "irtoolhelp": 360013919193}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000326508, "irtoolhelp": 360013919213}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000096367, "irtoolhelp": 360013806734}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360002013008, "irtoolhelp": 360013806754}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115016129488, "irtoolhelp": 360013919253}, <!-- CXSupport version already had been archived; noted during 7/5/19 review (JCR) -->
+    {"ircx": 115013739748, "irtoolhelp": 360013919273}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 360000172487, "irtoolhelp": 360013806774}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115007937828, "irtoolhelp": 360013806794}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+    {"ircx": 115015450628, "irtoolhelp": 360013919293}, <!-- archived on CXSupport during 7/5/19 review (JCR) -->
+  
+  <!--
+			NOTE: INSIGHTQC KNOWLEDGE CENTER CATEGORY DELETED ON CXSUPPORT
+			THIS ACTION AUTOMATICALLY ARCHIVES ALL ARTICLES THEREIN.  THESE 
+			ARTICLES HAD BEEN REDIRECTED AND INACCESSIBLE TO CUSTOMERS FOR
+ 			MORE THAN SIX MONTHS.  ACTIONS PERFORMED 7/5/19 REVIEW (JCR)
+	-->
+  
+    {"ircx": 115004090767, "irtoolhelp": 360013919313},
+    {"ircx": 360000103808, "irtoolhelp": 360013806814},
+    {"ircx": 115005295487, "irtoolhelp": 360013919333},
+    {"ircx": 115003765868, "irtoolhelp": 360013806834},
+    {"ircx": 360002064987, "irtoolhelp": 360013919353},
+    {"ircx": 360001921108, "irtoolhelp": 360013919373},
+    {"ircx": 115003953707, "irtoolhelp": 360013806854},
+    {"ircx": 360000105368, "irtoolhelp": 360013806874},
+    {"ircx": 115006788608, "irtoolhelp": 360013806894},
+    {"ircx": 115004234528, "irtoolhelp": 360013919393},
+    {"ircx": 115010394548, "irtoolhelp": 360013806914},
+    {"ircx": 115007124348, "irtoolhelp": 360013919413},
+    {"ircx": 115008874007, "irtoolhelp": 360013919433},
+    {"ircx": 360000464907, "irtoolhelp": 360013806934},
+    {"ircx": 360001246567, "irtoolhelp": 360013919453},
+    {"ircx": 115010565607, "irtoolhelp": 360013919473},
+    {"ircx": 360000326708, "irtoolhelp": 360013806954},
+    {"ircx": 115003340727, "irtoolhelp": 360013919493},
+    {"ircx": 115006198567, "irtoolhelp": 360013806974},
+    {"ircx": 360002063568, "irtoolhelp": 360013806994},
+    {"ircx": 115012052647, "irtoolhelp": 360013807014},
+    {"ircx": 360001250928, "irtoolhelp": 360013919513},
+    {"ircx": 115009390987, "irtoolhelp": 360013807034},
+    {"ircx": 115010412748, "irtoolhelp": 360013807054},
+    {"ircx": 360002012588, "irtoolhelp": 360013919533},
+    {"ircx": 360001244027, "irtoolhelp": 360013807074},
+    {"ircx": 115015924268, "irtoolhelp": 360013807094},
+    {"ircx": 360000340948, "irtoolhelp": 360013807114},
+    {"ircx": 360000772508, "irtoolhelp": 360013807134},
+    {"ircx": 360000100208, "irtoolhelp": 360013807154},
+    {"ircx": 115011285108, "irtoolhelp": 360013919553},
+    {"ircx": 360000487868, "irtoolhelp": 360013807174},
+    {"ircx": 115003496828, "irtoolhelp": 360013807194},
+    {"ircx": 360002087328, "irtoolhelp": 360013807214},
+    {"ircx": 115004904047, "irtoolhelp": 360013807234},
+    {"ircx": 115012912928, "irtoolhelp": 360013919573},
+    {"ircx": 360001394107, "irtoolhelp": 360013807254},
+    {"ircx": 115012824347, "irtoolhelp": 360013919593},
+    {"ircx": 360002072248, "irtoolhelp": 360013919613},
+    {"ircx": 115007080908, "irtoolhelp": 360013807274},
+    {"ircx": 115005134867, "irtoolhelp": 360013919633},
+    {"ircx": 115010596987, "irtoolhelp": 360013919653},
+    {"ircx": 360000096327, "irtoolhelp": 360013919673},
+    {"ircx": 115007130047, "irtoolhelp": 360013919693},
+    {"ircx": 115003540668, "irtoolhelp": 360013919713},
+    {"ircx": 115013355768, "irtoolhelp": 360013919733},
+    {"ircx": 115006882287, "irtoolhelp": 360013919753},
+    {"ircx": 115013695247, "irtoolhelp": 360013807294},
+    {"ircx": 115010655628, "irtoolhelp": 360013919773},
+    {"ircx": 360001994928, "irtoolhelp": 360013807314},
+    {"ircx": 115013851727, "irtoolhelp": 360013919793},
+    {"ircx": 115015364188, "irtoolhelp": 360013807334},
+    {"ircx": 115006309048, "irtoolhelp": 360013919813},
+    {"ircx": 115012913128, "irtoolhelp": 360013919833},
+    {"ircx": 115011652227, "irtoolhelp": 360013919853},
+    {"ircx": 115010515667, "irtoolhelp": 360013919873},
+    {"ircx": 360000013627, "irtoolhelp": 360013807354},
+    {"ircx": 115007570587, "irtoolhelp": 360013919893},
+    {"ircx": 115006971227, "irtoolhelp": 360013919913},
+    {"ircx": 360000111787, "irtoolhelp": 360013807374},
+    {"ircx": 115007390648, "irtoolhelp": 360013807394},
+    {"ircx": 115012750447, "irtoolhelp": 360013807414},
+    {"ircx": 115012750347, "irtoolhelp": 360013919933},
+    {"ircx": 360000108028, "irtoolhelp": 360013807434},
+    {"ircx": 115006698187, "irtoolhelp": 360013807454},
+    {"ircx": 115011457407, "irtoolhelp": 360013807474},
+    {"ircx": 115016061808, "irtoolhelp": 360013919953},
+    {"ircx": 115003341127, "irtoolhelp": 360013919973},
+    {"ircx": 115016064747, "irtoolhelp": 360013919993},
+<!--    {"ircx": 115012948328, "irtoolhelp": 360013920013}, -->
+    {"ircx": 360000557787, "irtoolhelp": 360013807494},
+    {"ircx": 115013090668, "irtoolhelp": 360013807514},
+    {"ircx": 115016061947, "irtoolhelp": 360013920033},
+    {"ircx": 115007055347, "irtoolhelp": 360013920053},
+    {"ircx": 115007930308, "irtoolhelp": 360013807534},
+    {"ircx": 115012913408, "irtoolhelp": 360013920073},
+    {"ircx": 115013649747, "irtoolhelp": 360013807554},
+    {"ircx": 115012864508, "irtoolhelp": 360013920093},
+    {"ircx": 115012699407, "irtoolhelp": 360013807574},
+    {"ircx": 360000986907, "irtoolhelp": 360013807594},
+    {"ircx": 115015448208, "irtoolhelp": 360013807634},
+    {"ircx": 115012699547, "irtoolhelp": 360013920113},
+    {"ircx": 115012864828, "irtoolhelp": 360013807654},
+    {"ircx": 115012911548, "irtoolhelp": 360013920133},
+    {"ircx": 115012750887, "irtoolhelp": 360013920153},
+    {"ircx": 360000639208, "irtoolhelp": 360013807674},
+    {"ircx": 360001666947, "irtoolhelp": 360013807694},
+    {"ircx": 115013810888, "irtoolhelp": 360013807714},
+    {"ircx": 115015759947, "irtoolhelp": 360013920173},
+    {"ircx": 115012911748, "irtoolhelp": 360013807734},
+    {"ircx": 115012749247, "irtoolhelp": 360013807754},
+    {"ircx": 115012749267, "irtoolhelp": 360013920193},
+    {"ircx": 115012911928, "irtoolhelp": 360013920213},
+    {"ircx": 360001811307, "irtoolhelp": 360013807774},
+    {"ircx": 360001850287, "irtoolhelp": 360013920233},
+    {"ircx": 360002078647, "irtoolhelp": 360013920253},
+    {"ircx": 360001830467, "irtoolhelp": 360013920273},
+    {"ircx": 360000318307, "irtoolhelp": 360013920293},
+    {"ircx": 360001044228, "irtoolhelp": 360013807794},
+    {"ircx": 360000158247, "irtoolhelp": 360013807814},
+    {"ircx": 360000158227, "irtoolhelp": 360013807834},
+    {"ircx": 360000167988, "irtoolhelp": 360013807854},
+    {"ircx": 360000158207, "irtoolhelp": 360013920313},
+    {"ircx": 360001455568, "irtoolhelp": 360013807874},
+    {"ircx": 360001479648, "irtoolhelp": 360013807894},
+    {"ircx": 360000168908, "irtoolhelp": 360013807914},
+    {"ircx": 360000163147, "irtoolhelp": 360013807934},
+    {"ircx": 360000159187, "irtoolhelp": 360013920333},
+    {"ircx": 360000172508, "irtoolhelp": 360013920353},
+    {"ircx": 360000172608, "irtoolhelp": 360013920373},
+    {"ircx": 360000169008, "irtoolhelp": 360013920393},
+    {"ircx": 360000162847, "irtoolhelp": 360013807954},
+    {"ircx": 360000162807, "irtoolhelp": 360013807974},
+    {"ircx": 360000172648, "irtoolhelp": 360013920413},
+    {"ircx": 360000247807, "irtoolhelp": 360013920433},
+    {"ircx": 360000256268, "irtoolhelp": 360013807994},
+    {"ircx": 360000247047, "irtoolhelp": 360013920453},
+    {"ircx": 360000256828, "irtoolhelp": 360013808014},
+    {"ircx": 360000256228, "irtoolhelp": 360013808034},
+    {"ircx": 360000247307, "irtoolhelp": 360013920473},
+    {"ircx": 360000247827, "irtoolhelp": 360013808054},
+    {"ircx": 360000247687, "irtoolhelp": 360013808074},
+    {"ircx": 360000257008, "irtoolhelp": 360013808094},
+    {"ircx": 360000256668, "irtoolhelp": 360013808114},
+    {"ircx": 360000247667, "irtoolhelp": 360013920493},
+    {"ircx": 360000237787, "irtoolhelp": 360013920513},
+    {"ircx": 360001636568, "irtoolhelp": 360013808134},
+    {"ircx": 360000167908, "irtoolhelp": 360013920533},
+    {"ircx": 360000231667, "irtoolhelp": 360013920553},
+    {"ircx": 360000242168, "irtoolhelp": 360013920573},
+    {"ircx": 360000176688, "irtoolhelp": 360013808154},
+    {"ircx": 360000232007, "irtoolhelp": 360013920593},
+    {"ircx": 360000233127, "irtoolhelp": 360013920613},
+    {"ircx": 360000246408, "irtoolhelp": 360013920633},
+    {"ircx": 360000246628, "irtoolhelp": 360013808174},
+    {"ircx": 360000245428, "irtoolhelp": 360013808194},
+    {"ircx": 360000245308, "irtoolhelp": 360013808214},
+    {"ircx": 360000236467, "irtoolhelp": 360013920653},
+    {"ircx": 360000236407, "irtoolhelp": 360013808234},
+    {"ircx": 360000244928, "irtoolhelp": 360013808254},
+    {"ircx": 360000237707, "irtoolhelp": 360013808274},
+    {"ircx": 360000246868, "irtoolhelp": 360013808294},
+    {"ircx": 360000946447, "irtoolhelp": 360013808314},
+    {"ircx": 360000278007, "irtoolhelp": 360013920673},
+    {"ircx": 360000278047, "irtoolhelp": 360013920693},
+    {"ircx": 360000277747, "irtoolhelp": 360013808334},
+    {"ircx": 360000286288, "irtoolhelp": 360013808354},
+    {"ircx": 360000275207, "irtoolhelp": 360013920713},
+    {"ircx": 360000273887, "irtoolhelp": 360013808374},
+    {"ircx": 360000285828, "irtoolhelp": 360013920733},
+    {"ircx": 360000284028, "irtoolhelp": 360013808394},
+    {"ircx": 360000277347, "irtoolhelp": 360013808414},
+    {"ircx": 360000285868, "irtoolhelp": 360013920753},
+    {"ircx": 360000267008, "irtoolhelp": 360013808434},
+    {"ircx": 360000265407, "irtoolhelp": 360013920773},
+    {"ircx": 360000277127, "irtoolhelp": 360013920793},
+    {"ircx": 360000286108, "irtoolhelp": 360013808454},
+    {"ircx": 360000176748, "irtoolhelp": 360013808474},
+    {"ircx": 360000170907, "irtoolhelp": 360013920813},
+    {"ircx": 360001741247, "irtoolhelp": 360013920833},
+    {"ircx": 360000989107, "irtoolhelp": 360013808494},
+    {"ircx": 360000176908, "irtoolhelp": 360013808514},
+    {"ircx": 360000282827, "irtoolhelp": 360013808534},
+    {"ircx": 360000282867, "irtoolhelp": 360013808554},
+    {"ircx": 360000277607, "irtoolhelp": 360013920853},
+    {"ircx": 360000163247, "irtoolhelp": 360013920873},
+    {"ircx": 360000172728, "irtoolhelp": 360013808574},
+    {"ircx": 360000172768, "irtoolhelp": 360013920893},
+    {"ircx": 360000172708, "irtoolhelp": 360013920913},
+    {"ircx": 360000096487, "irtoolhelp": 360013920933},
+    {"ircx": 360000463968, "irtoolhelp": 360013920953},
+    {"ircx": 115015472888, "irtoolhelp": 360013920973}
+	];
+  
+  if(window.location.href.indexOf("/articles/") > -1) {
+  	var article_id = parseInt(window.location.href.split("/articles/")[1].split("-")[0]);
+  
+  	var new_article = _.findWhere(article_mapping_ids, {"ircx": article_id});
+    
+  	if(new_article.irtoolhelp) {
+  		window.location.href = 'https://irtoolhelp.ingersollrand.com/hc/en-us/articles/' + new_article.irtoolhelp;
+    } else if(new_article.mhdsupport) {
+  		window.location.href = 'https://mhdsupport.ingersollrand.com/hc/en-us/articles/' + new_article.mhdsupport;
+    }
+  }	
+</script>
+  <script type="text/javascript" src="//p19.zdassets.com/hc/theming_assets/461787/176674/script.js?digest=360319368333"></script>
+</head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="//theme.zdassets.com/theme_assets/461787/d979301b7a5b963ff1f2b49ef2c6f5ad564fe335.png" alt="Logo">
+    </a>
+    <div class="brand-dropdown hide">
+      <label class="brand-dropdown-label">
+        Product/Business:
+        <div class="current-brand"></div>
+        <ul class="other-brands hide"></ul>
+      </label>
+    </div>
+  </div>
+  <div class="nav-wrapper">
+      <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fcxsupport.ingersollrand.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+  </div>
+</header>
+
+<div class="brand-icons hide">
+  <img src="//theme.zdassets.com/theme_assets/461787/15503669740b2e81bc766951c9740023c54a4d78.png" data-name="irtoolhelp.ingersollrand.com" data-dc="Power Tools">
+  <img src="//theme.zdassets.com/theme_assets/461787/0b84b487c53e8f737763ed4cbc238a95264a9eb6.png" data-name="arosupport.ingersollrand.com" data-dc="ARO Fluid Management">
+  <img src="//theme.zdassets.com/theme_assets/461787/7fce228b1f75561514efd428e5c6072541ff6ae5.png" data-name="mhdsupport.ingersollrand.com" data-dc="Material Handling">
+  <img src="//theme.zdassets.com/theme_assets/461787/086ebae85dcb7ba00b657ff07bbd330807fb10e4.png" data-name="cxsupport.ingersollrand.com" data-dc="FMT Global Support">
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+  	$("[data-auth-action='signin']").on('click', function() {
+      window.sessionStorage.clear();
+    });
+    if (HelpCenter.user && HelpCenter.user.role !== "anonymous") {
+      $(".brand-dropdown").removeClass("hide");
+      var exclusiveBrands = ["cxsupport.ingersollrand.com"];
+      var currentSubdomain = window.location.hostname;
+      var user = window.HelpCenter.user;
+      var brands = "cxsupport.ingersollrand.com,arosupport.ingersollrand.com,irtoolhelp.ingersollrand.com,mhdsupport.ingersollrand.com".replace(/\s/g, '').split(',');
+      var otherBrands = _.reject(brands, function(brand) { return brand === currentSubdomain });
+      var isAgentAdmin = user.role === "agent" || user.role === "manager";
+      var userTags = user.tags;
+      var orgTags = user.organizations && user.organizations.length ? _.flatten(_.pluck(user.organizations, "tags")) : [];
+      var currentBrandName = $(".brand-icons").find("[data-name='"+currentSubdomain+"']").data("dc");
+
+      $(".current-brand").html("<span></span>"+currentBrandName);
+      $(".current-brand span").append($(`[data-name='${currentSubdomain}']`));
+
+      if (!isAgentAdmin) {
+        if (userTags && orgTags && userTags.indexOf('distributor') === -1 && orgTags.indexOf('distributor') === -1) {
+          exclusiveBrands.forEach(function(exclusiveBrand) {
+            otherBrands = _.reject(otherBrands, function(brand) { return brand === exclusiveBrand });
+          });
+        };
+      }
+
+      otherBrands.forEach(function(brand) {
+        var brandName = $(".brand-icons").find("[data-name='"+brand+"']").data("dc");
+        var $otherBrand = $("<li><a href='https://" + brand + "/hc/" + HelpCenter.user.locale + "/signin?return_to=http%3A%2F%2F" + brand + "%2Fhc%2F" + HelpCenter.user.locale + "&locale=" + HelpCenter.user.locale + "'><span></span>"+brandName+"</a></li>")
+        $(".other-brands").append($otherBrand);
+        $otherBrand.find("span").append($(`[data-name='${brand}']`));
+  			$otherBrand.on('click', function() {
+          window.sessionStorage.clear();
+        });
+      });
+
+      $(".current-brand").on('click', function() {
+        if ($(".other-brands").hasClass("hide")) {
+          $(".other-brands").removeClass("hide");
+        } else {
+          $(".other-brands").addClass("hide");
+        }
+      })
+    }
+  });
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.current-brand')) {
+      if (!$(".other-brands").hasClass("hide")) {
+        $(".other-brands").addClass("hide");
+      }
+    }
+  }
+</script>
+
+
+  <main role="main">
+    <section class="section hero">
+  <div class="hero-inner">
+    <h1 class="hero-message">How can we help?</h1>
+    <div class="search-bar u-6/12">
+      <span class="search-field">
+        <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="What can we help you find?" autocomplete="off" aria-label="What can we help you find?" />
+<input type="submit" name="commit" value="Search" /></form>
+      </span>
+  </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="section role">
+    <h3 class="roles-intro">I am a...</h3>
+    <ul class="roles-list">
+      <li
+          class="roles-items"
+          @click="selectUserType"
+          data-user-type="customer">
+            Customer
+      </li>
+      <li
+          class="roles-items"
+          @click="selectUserType"
+          data-user-type="distributor">
+            Distributor
+      </li>
+      <li
+          class="roles-items"
+          @click="selectUserType"
+          data-user-type="service_center">
+            Service Center
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    
+      <section class="articles homepage-promoted">
+        <h3 class="promoted-subheading">Featured Articles</h3>
+        <ul class="article-list promoted-articles">
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(360022744694)">
+              <a href="/hc/en-us/articles/360022744694--FAQ-Pendant-Information-">
+                [FAQ] - Pendant Information 
+              </a>
+            </li>
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(360019832033)">
+              <a href="/hc/en-us/articles/360019832033-HLK-series-pneumatic-hoist-product-information">
+                HLK series pneumatic hoist product information
+              </a>
+            </li>
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(360019650214)">
+              <a href="/hc/en-us/articles/360019650214-CLK-series-pneumatic-hoist-product-information">
+                CLK series pneumatic hoist product information
+              </a>
+            </li>
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(360019829693)">
+              <a href="/hc/en-us/articles/360019829693-MLK-series-pneumatic-hoist-product-information-">
+                MLK series pneumatic hoist product information 
+              </a>
+            </li>
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(115007570587)">
+              <a href="/hc/en-us/articles/115007570587--How-to-Download-Product-Manuals">
+                [How-to] - Download Product Manuals
+              </a>
+            </li>
+          
+            <li
+                class="promoted-articles-item"
+                v-show="canShowArticle(115003651247)">
+              <a href="/hc/en-us/articles/115003651247--FAQ-Find-a-Repair-Service-Center">
+                [FAQ] - Find a Repair/Service Center
+              </a>
+            </li>
+          
+        </ul>
+      </section>
+    
+
+
+    <!-- flex two sides right against each other -->
+    <section class="knowledge-base">
+      <h3 class="category-subheading">Categories</h3>
+      <div class="knowledge-selection">
+
+        <!-- categories on left side -->
+        <ul class="nav-list">
+
+          
+            <li :class="['nav-item']"
+                data-category-id="200176697"
+                @click="onCategoryClick(200176697, '/hc/en-us/categories/200176697-Knowledge-Base')"
+                >
+              <div :class="['nav-flex', 'categories-item-link', isActive(200176697) && 'active']">
+                <ir-icon :id="200176697" :current="currentCategory" class="category-icon"></ir-icon>
+                <h4 class="blocks-item-title">Knowledge Base</h4>
+                <!-- Arrow to the right when category is selected -->
+                <span :class="['categories-arrow', isActive(200176697) && 'active']"></span>
+              </div>
+            </li>
+          
+        </ul>
+
+        <!-- sections on right side -->
+        <div class="nav-content">
+          <ul class="nav-content-inner hide">
+            
+              <div v-show="isActive(200176697)"
+                   class="homepage-sections-container">
+                
+                  <a v-show="canShowSection(115001077967)"
+                     href="/hc/en-us/sections/115001077967-Getting-Started"
+                     class="homepage-section"
+                     @mouseenter="currentSection = 115001077967"
+                     @mouseleave="currentSection = 'null'">
+                      <ir-icon :id="115001077967"
+                               :current="currentSection"
+                               class="section-icon">
+                      </ir-icon>
+                    <h3 class="section-title">Getting Started</h3>
+                  </a>
+                
+                  <a v-show="canShowSection(115001076168)"
+                     href="/hc/en-us/sections/115001076168-Support-Information"
+                     class="homepage-section"
+                     @mouseenter="currentSection = 115001076168"
+                     @mouseleave="currentSection = 'null'">
+                      <ir-icon :id="115001076168"
+                               :current="currentSection"
+                               class="section-icon">
+                      </ir-icon>
+                    <h3 class="section-title">Support Information</h3>
+                  </a>
+                
+                  <a v-show="canShowSection(200532118)"
+                     href="/hc/en-us/sections/200532118-Non-Warranty-Repairs"
+                     class="homepage-section"
+                     @mouseenter="currentSection = 200532118"
+                     @mouseleave="currentSection = 'null'">
+                      <ir-icon :id="200532118"
+                               :current="currentSection"
+                               class="section-icon">
+                      </ir-icon>
+                    <h3 class="section-title">Non-Warranty Repairs</h3>
+                  </a>
+                
+                  <a v-show="canShowSection(360000048248)"
+                     href="/hc/en-us/sections/360000048248-Legacy-Product-Support"
+                     class="homepage-section"
+                     @mouseenter="currentSection = 360000048248"
+                     @mouseleave="currentSection = 'null'">
+                      <ir-icon :id="360000048248"
+                               :current="currentSection"
+                               class="section-icon">
+                      </ir-icon>
+                    <h3 class="section-title">Legacy Product Support</h3>
+                  </a>
+                
+              </div>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  HC.templates.home.$mount("main");
+</script>
+
+  </main>
+
+  <div class="footer-wrapper">
+  <div class="footer-curves">
+    <img class="full-width"
+         src="//theme.zdassets.com/theme_assets/461787/e189ec16e818cbf6e4f69dcc2a1d31f39c823c04.png"
+         alt="ingersoll rand logo waves">
+  </div>
+
+  <div class="cant-find-request">
+    <h3 class="cant-find-question">
+      Can't find what you're looking for?
+    </h3>
+    <a href="/hc/en-us/requests/new" class="request-button">
+      Submit a request
+    </a>
+  </div>
+
+
+  
+  <footer class="footer">
+    <div class="corporate-footer">
+      <div class="footer-inner">
+        <div class="footer-left u-8/12">
+          <div class="footer-brands">
+            <div><p><em>Explore our family of brands</em></p></div>
+            <div class="">
+              <a href="http://www.trane.com/?webSyncID=1a7bb548-8079-8c99-b4c6-00c76517bb92&amp;sessionGUID=7cd36ddb-8d0d-c9b0-13db-5ddb35b287ea" target="_blank">
+                <img src="//theme.zdassets.com/theme_assets/461787/bca34bc38f588c31d561827838cdf2f64797fe9e.png" alt="trane logo">
+              </a>
+            </div>
+            <div>
+              <a href="http://www.clubcar.com/" target="_blank">
+                <img src="//theme.zdassets.com/theme_assets/461787/1d844a9af94647923d11329ce7906a228cee0402.png" alt="club car logo">
+              </a>
+            </div>
+            <div>
+              <a href="http://www.thermoking.com/" target="_blank">
+                <img src="//theme.zdassets.com/theme_assets/461787/b612fd4fc8676373f74c28b90abeaf16afee40b6.png" alt="thermo king logo">
+              </a>
+            </div>
+          </div>
+          <div class="footer-words">
+            <p>© Ingersoll-Rand plc, 2014 | 170/175 Lakeview Drive, Airside Business Park, Swords, Co. Dublin, Ireland<br>IN IRELAND WITH LIMITED LIABILITY REGISTERED NUMBER 469272<br>Ingersoll Rand is a diverse and inclusive environment. We are an equal opportunity employer and are dedicated to hiring qualified protected veterans and individuals with disabilities.</p>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.ingersollrandproducts.com/en-us/privacy-policy.html">Privacy Policy</a>
+            <a href="https://www.ingersollrandproducts.com/en-us/sitemap.html">Sitemap</a>
+          </div>
+        </div>
+        <div class="footer-logo u-4/12">
+          <img src="//theme.zdassets.com/theme_assets/461787/d6ecc3c2ff3ff75d9d59f54e9ebfa8a8bb89c792.png"
+               alt="ingersoll rand logo white on black">
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://ircx.zendesk.com/auth/v2/host.js" data-brand-id="176674" data-return-to="https://cxsupport.ingersollrand.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="176674,true,true"></script>
+  <script type="text/javascript" src="https://p19.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ircx","environment":"production","name":"Ingersoll Rand"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:qrS6VmI44BnEA/Vrw8Bj11b8jdzl1pyWCblJXyhr1eD1HBkR4tQU68+WMd+ulq54BRVL5EZcPnA06QDmdkF2uA==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ircx.zendesk.com","current_host_mapping":"cxsupport.ingersollrand.com","current_path":null,"authentication_domain":"https://ircx.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://cxsupport.ingersollrand.com/hc/admin/plan?locale=en-us","manage_content_url":"https://cxsupport.ingersollrand.com/hc/en-us","arrange_content_url":"https://cxsupport.ingersollrand.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://cxsupport.ingersollrand.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://ircx.zendesk.com/knowledge/user_segments?brand_id=176674","has_community_enabled":true,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://ircx.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://cxsupport.ingersollrand.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://cxsupport.ingersollrand.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":true,"arrange_articles_url":"https://ircx.zendesk.com/knowledge/arrange?brand_id=176674","article_verification_url":"https://ircx.zendesk.com/knowledge/verification?brand_id=176674","has_article_verification":true,"guide_language_settings_url":"https://cxsupport.ingersollrand.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://ircx.zendesk.com/knowledge/import_articles?brand_id=176674","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://cxsupport.ingersollrand.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkD2wsHOhNoZWxwX2NlbnRlcl9pZGkEsOTrCzoNYnJhbmRfaWRpAyKyAjoMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q=--91678d0af9e974fdedc8970c318fbf340963f80b");
+})();
+
+  </script>
+</body>
+</html>

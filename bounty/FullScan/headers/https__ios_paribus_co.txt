@@ -1,0 +1,14 @@
+403 Forbidden
+Content-Security-Policy: frame-ancestors *.paribus.co
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Via: 1.1 d49345f27e682301e9becd397a22df2c.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: C5my14Pyb6sLwKJr2FQ2ndPT5q26bKVxTUMBATtpq6or9IalEN54bA==
+Content-Type: application/xml
+Retry-Count: 0
+X-Amz-Cf-Pop: LHR50-C1
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Cache: Error from cloudfront
+Date: Thu, 08 Aug 2019 11:37:08 GMT
+Server: AmazonS3

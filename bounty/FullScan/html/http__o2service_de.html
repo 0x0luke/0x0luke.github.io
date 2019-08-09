@@ -1,0 +1,103 @@
+<!--#include virtual="/selfcare/templates/selfcare_before_title.html" -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="__viewport" content="initial-scale=1.0;">
+  <meta name="viewport" content="width=device-width" />
+
+
+  <title>
+
+Ihr pers&ouml;nlicher Bereich rund um Ihren Vertrag
+</title>
+  <link href="/apl/html/css/style.css" rel="stylesheet" />
+  <link href="/apl/html/css/landing.css" rel="stylesheet" />
+  <link href="/apl/html/css/faq.css" rel="stylesheet" />
+  <script src="/apl/html/js/jquery-1.4.2.min.js"></script>
+  <script src="/apl/html/js/all.min.js"></script>
+</head>
+<body class="portrait">
+ <div id="container">
+   <div id="header">
+      <h1>Ihr pers&ouml;nlicher Bereich rund um Ihren Vertrag</h1>
+      <p>Verwalten Sie ganz einfach und bequem Ihren Tarif &mdash; einfach einloggen und los geht's &hellip;</p>
+  </div>
+
+         <!-- CONTENT -->
+<div id="section" class="start">
+     <div class="content">
+      <div class="box"> 
+          <h1>Bitte melden Sie sich an!</h1>
+          <p >Loggen Sie sich einfach hier mit Ihrem <span class="productname">O<sub>2</sub> Blue</span> Benutzernamen und Ihrem pers&ouml;nlichen Kennwort ein.</p>
+      </div>
+
+    
+
+    
+
+    
+
+    <form action= "/selfcare/servlet/Login;jsessionid=BC90D9519102BBFE64A5D78D7EC8F8D9.aplprdb?uid=912144" method="post" name="login">
+       <p><label  for="username"> Benutzername</label></p>
+       <p><input type="text" maxlength="20" name="username" id="username" value="" title="Ihr Benutzername" placeholder="Benutzername" /></p>
+       <p><label  for="password">Kennwort</label></p>
+       <p><input type="password" name="password" value="" title="Ihr Kennwort" placeholder="Kennwort" /></p>
+    <input type="submit" name="submit" class="button" value="Anmelden" />
+    
+
+    
+    </form>
+
+
+    <!-- CONTENT END --> 
+     
+    </div> <!-- end of div.content -->
+     <div class="sidebar">
+        <div class="box klick">
+           <h1>Sie haben Ihr Kennwort vergessen?</h1>
+           <p>Call O2 Blue Kundenbetreuung to get a new password.</p>
+        </div>
+          <div class="box klick">
+           <h1>Sie haben Ihren Benutzernamen vergessen?</h1>
+           <p>Mit Ihrer Registrierungs&shy;nummer (ICCID) k&ouml;nnen Sie Ihren Benutzer&shy;namen erneut anfordern.</p>
+           <div class="button"><a href="UsernameForgotten;jsessionid=BC90D9519102BBFE64A5D78D7EC8F8D9.aplprdb?uid=912144" class="label">Anfordern</a></div>
+        </div>
+     </div>
+   </div><!-- section -->
+
+   <div id="footer">
+      <ul>       
+       <li class="img back"><a href="javascript:history.back()"><img src="/apl/html/img/back-transp.png" alt="Zur&uuml;ck" />zur&uuml;ck</a></li>
+       <li class="img"><a href="/selfregistration/servlet/StartPageMD"><img src="/apl/html/img/home-logo-transp.png" alt="Startseite"></a></li>
+       <li><a href="/selfcare/servlet/TariffInformation;jsessionid=BC90D9519102BBFE64A5D78D7EC8F8D9.aplprdb?uid=912144">Tarife</a></li>
+       <li><a class="faq" href="/apl/html/faq.html#starting" class="faq">Fragen &amp; Antworten</a></li>
+       <li><a href="ContactMail;jsessionid=BC90D9519102BBFE64A5D78D7EC8F8D9.aplprdb?uid=912144" title="Kontakt">Kontakt</a></li>
+       <li><a href="/apl/html/agb.html">AGB</a></li>
+       <li><a href="/apl/html/impressum.html">Impressum</a></li>
+	  <li><a href="/apl/html/faq.html#Datenschutz1">Datenschutz</a></li>
+     </ul>
+    
+	 <img id="telefonica" alt="a Telef&oacute;nica company" src="/apl/html/img/telefonica.png" />
+   </div><!-- footer -->
+   <div style="display:none"><div id="target"></div></div>
+
+ </div>
+ 
+      <a name="emos_name" title="siteid" rel="www.o2service.de" rev=""></a>
+     <a name="emos_name" title="activation" rel="APL/Selfcare/Login" rev=""></a>
+     <script type="text/javascript">var emosPageId="APL/Selfcare/Login";</script>
+     <script src="/apl/html/js/emos2.js"></script> 
+ 
+ 
+</body>
+ 
+ <div id="modal" class="box">
+   <div id="modal_button"></div>
+   <div id="modal_content"></div>
+ </div><!-- id = modal -->
+ <div id="modal_store"></div>
+
+</html>
+

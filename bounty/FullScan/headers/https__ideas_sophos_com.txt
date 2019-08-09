@@ -1,0 +1,19 @@
+200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Server: cloudflare
+Referrer-Policy: strict-origin-when-cross-origin
+Set-Cookie: __cfduid=dd13afc28e7f2ee052b4681958c4885171565274367; expires=Fri, 07-Aug-20 14:26:07 GMT; path=/; domain=.ideas.sophos.com; HttpOnly _rf=0; path=/; Secure _uvsid=5d199183501f407f8ad05088412593aa; path=/; HttpOnly; Secure
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Request-Id: a6b8617100539f6331b6d676a80b5f60
+Cf-Ray: 503229dd4bcabfc0-MAN
+Date: Thu, 08 Aug 2019 14:26:08 GMT
+Content-Type: text/html; charset=utf-8
+Etag: W/"50fedb204e1ca78d194733527a6ac03a"
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0

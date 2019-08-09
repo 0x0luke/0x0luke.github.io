@@ -1,0 +1,19 @@
+404 Not Found
+Set-Cookie: __cfduid=d96309103e2ee68858bdca07b1a0228c91565274314; expires=Fri, 07-Aug-20 14:25:14 GMT; path=/; domain=.zabeelind.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=456e47d3-02d8-4247-900c-eca4dc16d3ff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: 456e47d3-02d8-4247-900c-eca4dc16d3ff
+Server: cloudflare
+Date: Thu, 08 Aug 2019 14:25:14 GMT
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=456e47d3-02d8-4247-900c-eca4dc16d3ff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+Cf-Ray: 5032288fea3f367b-MAN

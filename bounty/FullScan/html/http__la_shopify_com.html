@@ -1,0 +1,1611 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js supports-no-cookies" lang="en"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">
+  // Trekkie
+  (function(){
+    var config = {
+      'Trekkie': {
+        'appName': 'marketing-misc'
+      },
+      'Clickstream': {
+        'appName': 'marketing-misc'
+      }
+    };
+    var trekkie_version = '2017.03.08';
+    var analytics = window.analytics = window.analytics || [];
+    if (analytics.integrations) {
+      return;
+    }
+
+    // Inject a rogue trekkie object so that storefront loader doesn't get triggered.
+    // This will get wiped away when the blog trekkie instance initializes.
+    window.trekkie = [];
+    window.trekkie.integrations = [];
+
+    analytics.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    analytics.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+    analytics.load = function(config) {
+      analytics.config = config;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) { (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load'; };
+      script.async = true;
+      script.src = '//cdn.shopify.com/s/javascripts/tricorder/trekkie.' + config.Trekkie.appName + '.min.js?v=' + trekkie_version;
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+    };
+    analytics.load(config);
+    analytics.page();
+  })();
+  // Google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','_gaUTracker');
+  var _gaUTrackerOptions = {};
+  analytics.ready(function() {
+    _gaUTrackerOptions.clientId = analytics.user().traits().uniqToken;
+    _gaUTracker('create', 'UA-82702-49', _gaUTrackerOptions);
+    _gaUTracker('set', 'transport', 'beacon');
+    _gaUTracker('require', 'displayfeatures');
+    _gaUTracker('send', 'pageview');
+    _gaUTrackerOptions.name = '_other';
+    _gaUTracker('create', 'UA-82702-3', _gaUTrackerOptions);
+    _gaUTracker('_other.set', 'transport', 'beacon');
+    _gaUTracker('_other.require', 'displayfeatures');
+    _gaUTracker('_other.send', 'pageview');
+  });
+</script>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#c4cdd5">
+
+  <link rel="canonical" href="https://la.shopify.com/" /><link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0015/1034/2712/files/favicon_32x32.png?v=1537885327" type="image/png"><title>Shopify Los Angeles - Support appointments &amp; Retail consultations
+&ndash; Shopify LA</title><meta name="description" content="Our Shopify space in LA is a destination for current and aspiring business owners to visit, learn, experiment, and build together with Shopify. Join educational classes attend inspiring events in Shopify Los Angeles. Meet with Shopify Gurus and Retail Consultants for any queries of yours.">
+
+
+<meta property="og:site_name" content="Shopify LA">
+<meta property="og:url" content="https://la.shopify.com/">
+<meta property="og:title" content="Shopify Los Angeles - Support appointments &amp; Retail consultations">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Our Shopify space in LA is a destination for current and aspiring business owners to visit, learn, experiment, and build together with Shopify. Join educational classes attend inspiring events in Shopify Los Angeles. Meet with Shopify Gurus and Retail Consultants for any queries of yours."><meta property="og:image" content="http://cdn.shopify.com/s/files/1/0015/1034/2712/files/share_image.jpg?v=1537471910">
+    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0015/1034/2712/files/share_image.jpg?v=1537471910">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="">
+
+<meta name="twitter:site" content="@">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shopify Los Angeles - Support appointments &amp; Retail consultations">
+<meta name="twitter:description" content="Our Shopify space in LA is a destination for current and aspiring business owners to visit, learn, experiment, and build together with Shopify. Join educational classes attend inspiring events in Shopify Los Angeles. Meet with Shopify Gurus and Retail Consultants for any queries of yours.">
+
+  
+<link type="text/css" href="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/layout.theme.css?21311" rel="stylesheet">
+
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', '');
+
+    // This is needed for the API call.
+    window.shopPermanentDomain = "shop-la-online-store.myshopify.com";
+    window.shopURL = "https://la.shopify.com";
+
+    // The event product card needs access to this cdn image url
+    window.linkArrow = "//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311";
+  </script>
+
+  
+  <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+  
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  </script>
+
+  
+<script type="text/javascript" src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/layout.theme.js?21311" defer="defer"></script><script type="text/javascript" src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/template.index.js?21311" defer="defer"></script><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/template.product.js?21311" as="script">
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/1510342712/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="147b343f53e3cc7f78437a2eed0cfba1">
+<style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, Helvetica Neue, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--google-pay{line-height:0 !important;padding:0 !important;border-radius:unset !important;width:80px !important}@media (max-width: 500px){.additional-checkout-button--google-pay{width:100% !important}}.gpay-iframe{height:44px !important;width:100%  !important;cursor:pointer;vertical-align:middle !important}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--paypal,.additional-checkout-button--venmo{vertical-align:top;line-height:0 !important;padding:0 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
+</style>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":1510342712,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/1510342712","merchantName":"Shopify LA","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Shopify LA","amount":"1.00"}}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"147b343f53e3cc7f78437a2eed0cfba1","betas":[],"domain":"la.shopify.com","predictiveSearch":true,"shopId":1510342712,"smart_payment_buttons_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "shop-la-online-store.myshopify.com";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.theme = {"name":"Shopify LA Theme","id":32687063096,"theme_store_id":796,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "pay.shopify.com";</script>
+<script id="__st">var __st={"a":1510342712,"offset":-25200,"reqid":"5f4c1243-4249-459e-a289-0e17f6bc33da","pageurl":"la.shopify.com\/","u":"d411986e0a5e","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.Shopify = window.Shopify || {};
+window.Shopify.Checkout = window.Shopify.Checkout || {};
+window.Shopify.Checkout.apiHost = "shop-la-online-store.myshopify.com";</script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var isDuplicatedThankYouPageView = function() {
+    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  }
+
+  var setCookieIfThankYouPage = function() {
+    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
+        window.location.pathname.indexOf('/thank_you') !== -1) {
+
+      var twoMonthsFromNow = new Date(Date.now());
+      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+    }
+  }
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":1510342712,"isMerchantRequest":null,"themeId":32687063096,"themeCityHash":7138139377748829960,"contentLanguage":"en"}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.01},"StorefrontPerformance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+
+    if (!isDuplicatedThankYouPageView()) {
+      setCookieIfThankYouPage();
+      
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+      
+      
+    }
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-acf771159f9849ef6e5265782c99efe8b99406214c96a4373224ecafe285d7bb.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script crossorigin="anonymous" defer="defer" src="//cdn.shopify.com/s/assets/shopify_pay/storefront-8ddbd55cc19e1ebbff92d676e1481c8e6b42e0c2714d3fdf6b810b1f193347b8.js?v=20190107"></script>
+<script integrity="sha256-XvJAR0GWTFITqI9Je626Jg9XHK1rY52ie+f6Eq4D/dM=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/express_buttons-5ef2404741964c5213a88f497badba260f571cad6b639da27be7fa12ae03fdd3.js" crossorigin="anonymous"></script>
+<script integrity="sha256-qzPTa4Ven/Yc2yyXr9BKZWCTXSrPTCnbGdWsxA7YCw0=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/features-ab33d36b855e9ff61cdb2c97afd04a6560935d2acf4c29db19d5acc40ed80b0d.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 120px;
+  }
+}
+</style>
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+</head>
+
+<body id="shopify-los-angeles-support-appointments-amp-retail-consultations" class="template-index">
+  <div id="SiteContainer">
+    <a class="in-page-link skip-to-main visuallyhidden focusable" data-ga-event="Main Nav" data-ga-action="Skip to content" data-trekkie-event="Main Nav" data-trekkie-action="Skip to content" data-trekkie-id="Main Nav Skip to content" href="#MainContent">Skip to Content</a>
+
+    <div class="global-header__wrapper">
+      <div class="global-header__banner">
+        
+          <div class="global-banner">
+  <section role="region" aria-label="Annoucement">
+    <div class="global-banner__background">
+      <div class="global-banner__content-wrapper grid grid--vertically-centered grid--equal-height">
+        <div class="global-banner__content grid__item grid__item--mobile-up-three-quarters grid__item--tablet-up-5">
+
+          <span class="color-white heading--4 global-banner__content-heading gutter-bottom--reset">
+            Hey Los Angeles, you’ve got this. We’ve got you.
+          </span>
+        </div>
+
+        <div class="grid__item grid__item--mobile-up-quarter grid__item--tablet-up-1">
+          <button
+            name = "close"
+            type = "button"
+            class = "global__banner-expand-icon"
+            aria-label = "Expand Content"
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = 'Banner Expand'
+            data-trekkie-label = 'Homepage'
+            data-ga-event = 'Shopify LA'
+            data-ga-action = 'Banner Expand'
+            data-ga-label = 'Homepage'>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-indigo-dark color-white global-banner__panel">
+      <div class="grid global-banner__panel-inner grid--vertically-centered">
+        <div class="grid__item grid__item--desktop-up-half">
+          <div class="grid grid--bleed">
+            <div class="grid__item grid__item--tablet-up-third grid__item--desktop-up-half gutter-bottom address__location-info">
+  <p class="heading--5 text--upper color-white address__location-heading">Address</p>
+  <p>ROW DTLA<br>
+  777 S. Alameda Street<br>
+  Bldg. 1, Unit 100<br>
+  Los Angeles, CA 90021</p>
+</div>
+
+<div class="grid__item grid__item--tablet-up-third grid__item--desktop-up-half gutter-bottom--mobile">
+  <p class="heading--5 text--upper color-white address__hours-heading">Hours</p>
+  <p class="address__hours gutter-bottom--reset">Mon <span>11am-6pm</span></p>
+  <p class="address__hours gutter-bottom--reset">Tue-Fri <span>10am-7pm</span></p>
+  <p class="address__hours gutter-bottom">Sat-Sun <span>11am-5pm</span></p>
+</div>
+
+<div class="grid__item grid__item--tablet-up-third grid__item--desktop-up-half gutter-bottom--mobile">
+  <p class="heading--5 text--upper color-white address__contact-heading">Contact us</p>
+  <p class="gutter-bottom--reset"><a class="color-sky-dark address__contact-email body-link" href="mailto:losangeles@shopify.com">losangeles@shopify.com</a></p>
+  <p><a class="color-sky-dark address__contact-phone body-link" href="tel:+1 213-436-5919">+1 213-436-5919</a></p>
+</div>
+
+          </div>
+        </div>
+
+        <div class="grid__item grid__item--desktop-up-half text-center">
+          <div class="map global-banner__map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+        
+      </div>
+
+      <div class="global-header__nav">
+        
+
+
+
+
+
+
+
+<div id="SiteNavContainer" role="banner">
+  <div class="marketing-nav-wrapper background-white ">
+    <div class="marketing-nav-content__container">
+      <nav class="marketing-nav marketing-nav__primary navigation__shopify-la" id="ShopifyMainNav" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" aria-label="Main Navigation">
+
+        <button type="button" class="marketing-nav__hamburger hide--desktop js-drawer-open-right" aria-controls="NavDrawer" aria-expanded="false">
+          <span class="visuallyhidden">Open Main Navigation</span>
+        </button>
+
+        <div class="marketing-nav__logo">
+          <a
+            class="marketing-nav__logo__shopify"
+              href="https://la.shopify.com"
+            data-ga-event="Main Nav" data-ga-action="Logo" data-trekkie-event="Main Nav" data-trekkie-action="Logo" data-trekkie-id="Main Nav Logo">
+            <span class="visuallyhidden">Home</span>
+          </a>
+        </div>
+
+        <ul class="marketing-nav__items display--desktop">
+          
+          
+            
+            <li>
+              <a
+                class="marketing-nav__item marketing-nav__item--primary"
+                itemprop="name"
+                href="/pages/about"
+                data-trekkie-event = 'Shopify LA'
+                data-trekkie-action = "Help & Support"
+                data-trekkie-label = 'Main Nav'
+                data-ga-event = 'Shopify LA'
+                data-ga-action = "Help & Support"
+                data-ga-label = 'Main Nav'>
+                Help & Support
+              </a>
+            </li>
+          
+            
+            <li>
+              <a
+                class="marketing-nav__item marketing-nav__item--primary"
+                itemprop="name"
+                href="/pages/classes"
+                data-trekkie-event = 'Shopify LA'
+                data-trekkie-action = "Classes"
+                data-trekkie-label = 'Main Nav'
+                data-ga-event = 'Shopify LA'
+                data-ga-action = "Classes"
+                data-ga-label = 'Main Nav'>
+                Classes
+              </a>
+            </li>
+          
+            
+            <li>
+              <a
+                class="marketing-nav__item marketing-nav__item--primary"
+                itemprop="name"
+                href="/pages/events"
+                data-trekkie-event = 'Shopify LA'
+                data-trekkie-action = "Events"
+                data-trekkie-label = 'Main Nav'
+                data-ga-event = 'Shopify LA'
+                data-ga-action = "Events"
+                data-ga-label = 'Main Nav'>
+                Events
+              </a>
+            </li>
+          
+            
+            <li>
+              <a
+                class="marketing-nav__item marketing-nav__item--primary"
+                itemprop="name"
+                href="/pages/growth-lab"
+                data-trekkie-event = 'Shopify LA'
+                data-trekkie-action = "Growth Lab"
+                data-trekkie-label = 'Main Nav'
+                data-ga-event = 'Shopify LA'
+                data-ga-action = "Growth Lab"
+                data-ga-label = 'Main Nav'>
+                Growth Lab
+              </a>
+            </li>
+          
+            
+            <li>
+              <a
+                class="marketing-nav__item marketing-nav__item--primary"
+                itemprop="name"
+                href="/pages/faq"
+                data-trekkie-event = 'Shopify LA'
+                data-trekkie-action = "FAQ"
+                data-trekkie-label = 'Main Nav'
+                data-ga-event = 'Shopify LA'
+                data-ga-action = "FAQ"
+                data-ga-label = 'Main Nav'>
+                FAQ
+              </a>
+            </li>
+          
+        </ul>
+
+        <ul class="marketing-nav__items marketing-nav__user display--desktop">
+          <li>
+            <a
+              class="marketing-nav__item marketing-nav__item--user"
+              itemprop="name"
+              href="https://www.shopify.com"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "Shopify"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = 'Shopify'
+              data-ga-label = 'Main Nav'>
+              shopify.com<span class="marketing-nav__external-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          
+        </ul>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="NavDrawer" class="drawer drawer--right ">
+    <div class="drawer__inner">
+      <div class="drawer__top">
+        <div class="marketing-nav__logo">
+          <a
+            class="marketing-nav__logo__shopify"
+            href="https://la.shopify.com"
+            data-ga-event="Main Nav" data-ga-action="Logo" data-trekkie-event="Main Nav" data-trekkie-action="Logo" data-trekkie-id="Main Nav Logo">
+            <span class="visuallyhidden">Home</span>
+          </a>
+        </div>
+
+        <button type="button" class="drawer__close-button js-drawer-close" aria-controls="NavDrawer" aria-expanded="true">
+          <span class="visuallyhidden">Close Main Navigation</span>
+        </button>
+      </div>
+
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="drawer__items drawer__items--primary" id="DrawerNavPrimaryAccordion">
+          
+            
+            <li>
+              <a
+              class="drawer__item drawer__item--primary"
+              href="/pages/about"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "Help & Support"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = "Help & Support"
+              data-ga-label = 'Main Nav'>
+              Help & Support
+            </a>
+            </li>
+          
+            
+            <li>
+              <a
+              class="drawer__item drawer__item--primary"
+              href="/pages/classes"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "Classes"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = "Classes"
+              data-ga-label = 'Main Nav'>
+              Classes
+            </a>
+            </li>
+          
+            
+            <li>
+              <a
+              class="drawer__item drawer__item--primary"
+              href="/pages/events"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "Events"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = "Events"
+              data-ga-label = 'Main Nav'>
+              Events
+            </a>
+            </li>
+          
+            
+            <li>
+              <a
+              class="drawer__item drawer__item--primary"
+              href="/pages/growth-lab"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "Growth Lab"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = "Growth Lab"
+              data-ga-label = 'Main Nav'>
+              Growth Lab
+            </a>
+            </li>
+          
+            
+            <li>
+              <a
+              class="drawer__item drawer__item--primary"
+              href="/pages/faq"
+              data-trekkie-event = 'Shopify LA'
+              data-trekkie-action = "FAQ"
+              data-trekkie-label = 'Main Nav'
+              data-ga-event = 'Shopify LA'
+              data-ga-action = "FAQ"
+              data-ga-label = 'Main Nav'>
+              FAQ
+            </a>
+            </li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div id="PageContainer" class="page-container">
+      <main role="main" id="MainContent">
+        <div class="section-container homepage-background-top">
+  <section class="section section--padding-top-only homepage-wrapper">
+    <div class="display--mobile text-center">
+      <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-mobile-overlay.png?21311"
+        srcset="
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-mobile-overlay.png?21311 1x,
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-mobile-overlay-2x.png?21311 2x
+        "
+        class="lazyload homepage-hero__mobile-image" data-property="lazyload" alt />
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="homepage-background__right-image hide--mobile" viewBox="-10 0 1004 719" width="1004" height="719" aria-hidden="true" role="img">
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M340 51.636a3.638 3.638 0 1 1 7.275.001 3.638 3.638 0 0 1-7.275-.001"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M656 51.636a3.638 3.638 0 1 1 7.275.001 3.638 3.638 0 0 1-7.275-.001"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M340 359.636a3.638 3.638 0 1 1 7.275.001 3.638 3.638 0 0 1-7.275-.001"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M656 359.636a3.638 3.638 0 1 1 7.275.001 3.638 3.638 0 0 1-7.275-.001"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M656 667.636a3.638 3.638 0 1 1 7.275.001 3.638 3.638 0 0 1-7.275-.001"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M32 359.637a3.638 3.638 0 1 1 7.275.001 3.637 3.637 0 0 1-7.275 0"/>
+  <path class="homepage-background__right-image--dot" fill="#FFF" d="M32 51.637a3.638 3.638 0 1 1 7.275.001 3.637 3.637 0 0 1-7.275 0"/>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M174.175 95.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(149 9)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M174.175 404.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(149 318)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M798.175 404.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(773 318)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M643.175 244.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(618 158)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M653.175 552.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(628 466)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M972.175 552.871s34.481-23.329 60.233-20.451c0 0-23.02-6.474-42.297-4.748 0 0 15.105-8.345 36.685-1.87 0 0-10.308-12.805-24.504-14.242 0 0 19.183-4.605 32.705 14.675 0 0 6.187-12.518-8.2-19.567 0 0 26.905 3.474 15.108 23.101 0 0 30.93 5.24 25.895 21.642 0 0-12.802-12.804-24.458-14.674 0 0 6.044 19.277-17.84 18.99 0 0 13.523-9.207 8.056-22.011 0 0-17.455-1.94-57.644 20.97l-3.739-1.815z"/>
+    <path transform="translate(947 466)" fill="#102A7B" d="M23.882 88.888s2.266 2.016 5-.286c0 0 .61-32.948 1.906-38.847 1.295-5.898 7.337-20.716 9.353-21.723 0 0 15.105 4.46 17.55 29.781 0 0 11.366-26.76-9.064-32.66 0 0 14.532-6.905 29.782 1.008 0 0-12.948-20.43-36.542-6.62 0 0-6.763-29.347-32.228-16.11 0 0 19.424.142 24.747 15.824 0 0-19.712-12.66-34.387 3.885 0 0 17.553-6.187 29.35.718 0 0-15.968 1.871-20.285 25.897 0 0 17.41-18.27 27.623-21.148 0 0-8.343 14.243-9.782 20.716-1.44 6.476-3.884 30.932-3.023 39.565"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path transform="translate(473 305)" fill="#102A7B" d="M45.094 49.196v64.722s.147 2.61-2.462 1.016C40.025 113.34 11.624 96.82 11.624 96.82s-1.016-.63-1.016-1.884V29.103L.753 23.74s-1.399-.675-.386-1.496C1.383 21.422 26.065.652 26.065.652s1.69-2.027 3.19 1.063C30.747 4.808 55.092 51.95 55.092 51.95s1.258 2.946-.819 1.98c-2.076-.966-9.18-4.733-9.18-4.733"/>
+    <path fill="#4B5CB6" d="M517.815 382.016l24.637-14.297-8.309-5.119s-1.352-2.029 1.93-2.029c3.284 0 55.45-3.284 55.45-3.284s2.318-.097 1.835 2.221c-.483 2.318-6.762 30.913-6.762 30.913s-.87 2.607-4.25.675c-3.382-1.93-7.826-4.733-7.826-4.733l-56.704 33.167v-37.514z"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M15.514 204.069l36.324-20.912-7.582-4.158-36.104 20.718L0 204.513l18.806 10.46 7.762-5.076zM54.632 216.391l-7.016-3.806 20.856-8.312-13.84 12.118zm19.872-20.238l-53.412 20.414 6.604 3.738 11.354-4.506 9.686 5.592-8.008 6.322 7.232 4.156 36.15-30.256-9.606-5.46zM112.993 218.256l-19.552 5.448 9.7-11.044-7.986-4.702-13.358 16.792-32.162 7.994 7.338 4.296 22.362-6.022-11.044 12.416 8.106 4.506 14.804-17.966 29.406-7.464z"/>
+    <path fill="#102A7B" d="M0 153.001v51.336l18.808 10.46v-8.956l-11.644-6.884v-41.75zM30.665 202.485l3.582-19.566 3.58 23.688s-7.126-4.018-7.162-4.122zm8.804-26.692l-9.504-5.59-8.872 46.186 6.604 3.738 1.816-10.026 9.536 5.52 1.678 11.914 7.232 4.158-8.49-55.9zM50.37 182.151l7.862 4.438 4.996 19.634 5.028-13.87 6.99 4.052-7.478 19.88 8.63 31.478-8.106-4.506-5.626-22.256-5.692 15.862-7.338-4.296 8.698-21.382z"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M478.514 55.069l36.324-20.912-7.582-4.158-36.104 20.718L463 55.513l18.806 10.46 7.762-5.076zM517.632 67.391l-7.016-3.806 20.856-8.312-13.84 12.118zm19.872-20.238l-53.412 20.414 6.604 3.738 11.354-4.506 9.686 5.592-8.008 6.322 7.232 4.156 36.15-30.256-9.606-5.46zM575.993 69.256l-19.552 5.448 9.7-11.044-7.986-4.702-13.358 16.792-32.162 7.994 7.338 4.296 22.362-6.022-11.044 12.416 8.106 4.506 14.804-17.966 29.406-7.464z"/>
+    <path fill="#102A7B" d="M463 4.001v51.336l18.808 10.46v-8.956l-11.644-6.884V8.207zM493.665 53.485l3.582-19.566 3.58 23.688s-7.126-4.018-7.162-4.122zm8.804-26.692l-9.504-5.59-8.872 46.186 6.604 3.738 1.816-10.026 9.536 5.52 1.678 11.914 7.232 4.158-8.49-55.9zM513.37 33.151l7.862 4.438 4.996 19.634 5.028-13.87 6.99 4.052-7.478 19.88 8.63 31.478-8.106-4.506-5.626-22.256-5.692 15.862-7.338-4.296 8.698-21.382z"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M856.425 55.051l2.921 1.67 38.073-12.357-20.498 22.377 27.177 15.946-40.495-2.42-21.039 22.124-13.693-24.129-31.561-2.087z"/>
+    <path fill="#102A7B" d="M820.238 0l-8.185 29.755L784 13.054l22.543 34.735-8.6 29.306 22.378-8.016 22.876 34.233-8.682-39.326 22.543-8.015v-.002l-27.887-16.532z"/>
+  </g>
+  <g class="homepage-background__right-image--flair">
+    <path fill="#4B5CB6" d="M799.514 674.814l36.324-20.912-7.582-4.158-36.104 20.718-8.152 4.796 18.806 10.46 7.762-5.076zM838.632 687.136l-7.016-3.806 20.856-8.312-13.84 12.118zm19.872-20.238l-53.412 20.414 6.604 3.738 11.354-4.506 9.686 5.592-8.008 6.322 7.232 4.156 36.15-30.256-9.606-5.46zM896.993 689.001l-19.552 5.448 9.7-11.044-7.986-4.702-13.358 16.792-32.162 7.994 7.338 4.296 22.362-6.022-11.044 12.416 8.106 4.506 14.804-17.966 29.406-7.464z"/>
+    <path fill="#102A7B" d="M784 623.746v51.336l18.808 10.46v-8.956l-11.644-6.884v-41.75zM814.665 673.23l3.582-19.566 3.58 23.688s-7.126-4.018-7.162-4.122zm8.804-26.692l-9.504-5.59-8.872 46.186 6.604 3.738 1.816-10.026 9.536 5.52 1.678 11.914 7.232 4.158-8.49-55.9zM834.37 652.896l7.862 4.438 4.996 19.634 5.028-13.87 6.99 4.052-7.478 19.88 8.63 31.478-8.106-4.506-5.626-22.256-5.692 15.862-7.338-4.296 8.698-21.382z"/>
+  </g>
+</svg>
+
+
+    <div class="homepage-background__icon shopify-la-bounce hide--mobile">
+      <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/shopify-la-pin.svg?21311" alt />
+    </div>
+
+    <div class="grid">
+      <div class="grid__item grid__item--mobile-up-three-quarters grid__item--tablet-up-two-thirds grid__item--desktop-up-half homepage-hero__content">
+        <div class="section-heading section-heading--left text-left gutter-bottom--mobile">
+          <h1 class="section-heading__heading heading--extra-jumbo color-white">
+            Let’s make you a business
+          </h1>
+        </div>
+      </div>
+      <div class="grid__item homepage-hero__content">
+        <div class="grid">
+          <div class="grid__item grid__item--tablet-up-two-thirds grid__item--desktop-up-two-thirds">
+            <span class="heading--3 color-white homepage__overview-heading">
+              Shopify’s space in <abbr title='Los Angeles'>LA</abbr> is a destination for current and aspiring business owners seeking to learn, experiment, and build with Shopify.
+            </span>
+          </div>
+          <div class="grid__item grid__item--desktop-up-two-thirds">
+            <div class="heading-divider--white">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container homepage-background-bottom">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-left.png?21311"
+    srcset="
+      //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-left.png?21311 1x,
+      //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/homepage-hero-left-2x.png?21311 2x
+    "
+    class="lazyload homepage-background__left-image display--desktop" data-property="lazyload" alt />
+
+  <section class="section homepage__overview-section">
+    <div class="grid grid--equal-height"><div class="grid__item grid__item--desktop-up-third grid__item--tablet-up-half gutter-bottom--tablet-down">
+          <span class="lazyload-image gutter-bottom">
+            
+              <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521020829_5ce3c00_3f9c773b-00d3-43c9-b21b-3555c8a8624d_600x.jpg?v=1564787162"
+                srcset="
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521020829_5ce3c00_3f9c773b-00d3-43c9-b21b-3555c8a8624d_600x.jpg?v=1564787162 1x,
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521020829_5ce3c00_3f9c773b-00d3-43c9-b21b-3555c8a8624d_1200x.jpg?v=1564787162 2x
+                "
+                class="lazyload" data-property="lazyload" alt />
+            
+          </span>
+
+          <h2 class="heading--4 color-white gutter-bottom--mobile">
+            1:1 Guru Appointments
+          </h2>
+
+          <p class="gutter-bottom color-white">
+            Book an appointment with a Shopify Guru. They can answer your questions and provide advice that’s tailored to your business, regardless of its size.
+          </p>
+
+          <a
+            href="/products/book-your-1-1-guru-appointment"
+            class="marketing-button marketing-button--small homepage__overview-button gutter-bottom--tablet-down"
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "Support appointment"
+            data-trekkie-label = 'Homepage Main'
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "Support appointment"
+            data-ga-label = 'Homepage Main'>
+            Book appointment
+          </a>
+        </div><div class="grid__item grid__item--desktop-up-third grid__item--tablet-up-half gutter-bottom--tablet-down">
+          <span class="lazyload-image gutter-bottom">
+            
+              <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521021007_5ce3c06_600x.jpg?v=1564697809"
+                srcset="
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521021007_5ce3c06_600x.jpg?v=1564697809 1x,
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/products/20190521021007_5ce3c06_1200x.jpg?v=1564697809 2x
+                "
+                class="lazyload" data-property="lazyload" alt />
+            
+          </span>
+
+          <h2 class="heading--4 color-white gutter-bottom--mobile">
+            Podcast Studio
+          </h2>
+
+          <p class="gutter-bottom color-white">
+            Considering hosting your own podcast? At Shopify LA you can record and produce professional grade audio and video without the hassle and cost of building your own studio. Book a session today.
+          </p>
+
+          <a
+            href="/products/podcast-studio"
+            class="marketing-button marketing-button--small homepage__overview-button gutter-bottom--tablet-down"
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "Podcast Studio"
+            data-trekkie-label = 'Homepage Main'
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "Podcast Studio"
+            data-ga-label = 'Homepage Main'>
+            Book podcast studio
+          </a>
+        </div></div>
+  </section>
+</div>
+
+<div class="section-container homepage__classes-flair">
+  <section class="section section--padding-top-only">
+    <div class="grid">
+      <div class="grid__item">
+        
+
+<div class="grid grid--equal-height">
+  <div class="grid__item grid__item--desktop-up-two-thirds">
+    <div class="grid grid--vertically-centered gutter-bottom--tablet-down">
+      <div class="grid__item grid__item--tablet-up-half grid__item--tablet-up-push-3 grid__item--desktop-up-push-reset gutter-bottom--mobile hide--desktop">
+        <span class="lazyload-image text-center">
+          <picture>
+            <source media="(min-width: 750px)"
+              srcset="
+                //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes.png?21311 1x,
+                //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes-2x.png?21311 2x
+              " />
+            <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes-mobile.png?21311"
+              srcset="
+                //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes-mobile.png?21311 1x,
+                //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes-mobile-2x.png?21311 2x
+              "
+              class="lazyload homepage__classes-image--tablet display--inline-block" data-property="lazyload" alt />
+          </picture>
+        </span>
+      </div>
+
+      <div class="grid__item grid__item--tablet-up-half grid__item--tablet-up-pull-3 grid__item--desktop-up-pull-reset full-width--desktop">
+        <div class="grid grid--vertically-centered gutter-bottom">
+  <div class="grid__item grid__item--desktop-up-half">
+    <div class="section-heading section-heading--left text-left">
+      <h2 class="section-heading__heading heading--2 gutter-bottom">Educational classes</h2>
+
+      <p class="section-heading__subhead text-major">There’s a lot to know about running a business and questions will come up daily. Join any of our educational classes and learn how to get the most out of your business.</p>
+
+      <p>
+        <a
+          href="
+  /pages/classes
+"
+          class="body-cta"
+          data-ga-event = 'Shopify LA'
+          data-ga-action = "All Classes"
+          data-ga-label = 'Featured Product Header'
+          data-trekkie-event = 'Shopify LA'
+          data-trekkie-action = "All Classes"
+          data-trekkie-label = 'Featured Product Header'>Learn more about Shopify classes</a>
+        <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+      </p>
+    </div>
+  </div>
+
+  <div class="grid__item grid__item--desktop-up-half">
+    <ul class="feature-events__list-items">
+      
+        <li>
+          <p><strong>Informative talks</strong> from industry experts</p>
+        </li>
+      
+        <li>
+          <p><strong>Workshops</strong> to receive helpful advice on specific Shopify topics</p>
+        </li>
+      
+        <li>
+          <p><strong>Previews of Shopify products</strong> and features in action</p>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="grid gutter-bottom">
+      <div class="grid__item gutter-bottom">
+        <span class="heading--5 color-ink-lighter">Featured classes</span>
+        <div class="heading-divider--sky"></div>
+      </div>
+
+      <ul><li class="grid__item grid__item--tablet-up-half">
+  <div class="box-shadow">
+    <div class="classes-card card--border background-white gutter-bottom">
+      <div class="background-indigo-darkest">
+        <div class="grid grid__margin-horizontal--reset">
+          <div class="grid__item classes-card__heading-content grid__item--mobile-up-two-thirds">
+            <p class="classes-card__type heading--5 color-sky">Workshop</p>
+            <h3 class="heading--4 color-white">Getting Started with Shopify Marketing</h3>
+          </div>
+
+          <div class="grid__item grid__item--mobile-up-third">
+            <span class="lazyload-image">
+              
+
+
+  
+    <img
+      src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/workshop.svg?21311"
+      class="lazyload classes-card__icon"
+      data-property="lazyload"
+      aria-hidden="true"
+      alt />
+  
+
+
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid__margin-horizontal--reset">
+        <div class="grid__item classes-card__content gutter-bottom--half">
+          <p class="color-ink-lighter">This class is designed to grow your business with Facebook and Google Ads</p>
+          <a
+            href="/products/getting-started-with-shopify-marketing"
+            class="body-link body-cta"
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "View Details - Getting Started with Shopify Marketing"
+            data-ga-label = 'Classes Card'
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "View Details - Getting Started with Shopify Marketing"
+            data-trekkie-label = 'Classes Card'>View details</a>
+          <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="grid__item grid__item--tablet-up-half">
+  <div class="box-shadow">
+    <div class="classes-card card--border background-white gutter-bottom">
+      <div class="background-indigo-darkest">
+        <div class="grid grid__margin-horizontal--reset">
+          <div class="grid__item classes-card__heading-content grid__item--mobile-up-two-thirds">
+            <p class="classes-card__type heading--5 color-sky">Workshop</p>
+            <h3 class="heading--4 color-white">Build the Online Store of Your Dreams</h3>
+          </div>
+
+          <div class="grid__item grid__item--mobile-up-third">
+            <span class="lazyload-image">
+              
+
+
+  
+    <img
+      src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/workshop.svg?21311"
+      class="lazyload classes-card__icon"
+      data-property="lazyload"
+      aria-hidden="true"
+      alt />
+  
+
+
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid__margin-horizontal--reset">
+        <div class="grid__item classes-card__content gutter-bottom--half">
+          <p class="color-ink-lighter">We will share the tools you’ll need to build the perfect online store, including everything from finding a theme to building your navigation menus.</p>
+          <a
+            href="/products/introduction-to-online-store-build-the-online-store-of-your-dreams"
+            class="body-link body-cta"
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "View Details - Build the Online Store of Your Dreams"
+            data-ga-label = 'Classes Card'
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "View Details - Build the Online Store of Your Dreams"
+            data-trekkie-label = 'Classes Card'>View details</a>
+          <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+</ul>
+
+      <div class="grid__item gutter-bottom text-right">
+        <a
+          href="
+  /pages/classes
+"
+          class="body-link body-cta"
+          data-trekkie-event = 'Shopify LA'
+          data-trekkie-action = "All Classes"
+          data-trekkie-label = 'Featured Product End'
+          data-ga-event = 'Shopify LA'
+          data-ga-action = 'All Classes'
+          data-ga-label = 'Featured Product End'>See all classes</a>
+        <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="grid__item grid__item--desktop-up-third display--desktop">
+    <span class="lazyload-image">
+      <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes.png?21311"
+        srcset="
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes.png?21311 1x,
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-classes-2x.png?21311 2x
+        "
+        class="lazyload" data-property="lazyload" alt />
+    </span>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section-container border homepage__events-flair">
+  <section class="section section--padding-top-only">
+    <div class="grid">
+      <div class="grid__item">
+        
+
+<div class="grid grid--equal-height">
+  <div class="grid__item grid__item--desktop-up-quarter display--desktop">
+    <span class="lazyload-image">
+      <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events.png?21311"
+        srcset="
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events.png?21311 1x,
+          //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events-2x.png?21311 2x
+        "
+        class="lazyload" data-property="lazyload" alt />
+    </span>
+  </div>
+
+  <div class="grid__item grid__item--desktop-up-offset-1 grid__item--desktop-up-two-thirds">
+    <div class="grid grid--vertically-centered gutter-bottom--tablet-down">
+      <div class="grid__item grid__item--tablet-up-half gutter-bottom--mobile hide--desktop">
+        <span class="lazyload-image text-center">
+          <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events.png?21311"
+            srcset="
+              //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events.png?21311 1x,
+              //cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/featured-events-2x.png?21311 2x
+            "
+            class="lazyload homepage__events-image--tablet display--inline-block" data-property="lazyload" alt />
+        </span>
+      </div>
+
+      <div class="grid__item grid__item--tablet-up-half full-width--desktop padding-half-left--tablet">
+        <div class="grid grid--vertically-centered gutter-bottom">
+  <div class="grid__item grid__item--desktop-up-half">
+    <div class="section-heading section-heading--left text-left">
+      <h2 class="section-heading__heading heading--2 gutter-bottom">Community events</h2>
+
+      <p class="section-heading__subhead text-major">You’re invited to attend a variety of scheduled events that are tailored to inspire, encourage, and help you plan for the future.</p>
+
+      <p>
+        <a
+          href="
+  /pages/events
+"
+          class="body-cta"
+          data-ga-event = 'Shopify LA'
+          data-ga-action = "All Events"
+          data-ga-label = 'Featured Product Header'
+          data-trekkie-event = 'Shopify LA'
+          data-trekkie-action = "All Events"
+          data-trekkie-label = 'Featured Product Header'>Learn more about Shopify events</a>
+        <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+      </p>
+    </div>
+  </div>
+
+  <div class="grid__item grid__item--desktop-up-half">
+    <ul class="feature-events__list-items">
+      
+        <li>
+          <p><strong>Networking opportunities</strong> with other owners</p>
+        </li>
+      
+        <li>
+          <p><strong>Preview</strong> new product launches, features, and exciting updates</p>
+        </li>
+      
+        <li>
+          <p><strong>Panels</strong> to discuss the ups and downs of independent business ownership</p>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="grid gutter-bottom">
+      <div class="grid__item gutter-bottom">
+        <span class="heading--5 color-ink-lighter">Featured events</span>
+        <div class="heading-divider--sky"></div>
+      </div>
+
+      <ul class="js-event-list" id="HomepageEvents">
+      </ul>
+
+      <div class="grid__item gutter-bottom text-right">
+        <a href="
+  /pages/events
+" class="body-link body-cta">See all events</a>
+        <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- BEGIN content_for_index --><div id="shopify-section-1560274524997" class="shopify-section">
+
+<div class="section-container featured-content featured-content--right border-bottom secondary__yellow">
+  <section class="section">
+    <div class="grid grid--equal-height grid--vertically-centered">
+      <div class="grid__item grid__item--tablet-up-half grid__item--desktop-up-4 gutter-bottom--half featured-content__heading">
+        <div>
+          <p class="section-heading__kicker heading--5 gutter-bottom--half">Photo Studio</span>
+          <h2 class="gutter-bottom--half">Photo studio</h2>
+          <p>Photography is an essential part of creating a brand. Let us help you with your first fashion shoot, or capture that perfect product shot. Book a session at our Photo Studio today.</p>
+
+          
+            <div class="grid__item gutter-bottom">
+              <a
+                href="/products/photo-studio"
+                class="body-link body-cta">
+                Book photo studio
+              </a>
+              <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--tablet-up-half grid__item--desktop-up-7 grid__item--desktop-up-push-1 featured-content__featured-image-container">
+        <div class="featured-content__featured-image-wrapper">
+          <img
+            src="//cdn.shopify.com/s/files/1/0015/1034/2712/files/shopify_la_photo_studio_2_1_840x488_crop_center.jpg?v=1559865428"
+            srcset="
+              //cdn.shopify.com/s/files/1/0015/1034/2712/files/shopify_la_photo_studio_2_1_840x488_crop_center.jpg?v=1559865428 1x,
+              //cdn.shopify.com/s/files/1/0015/1034/2712/files/shopify_la_photo_studio_2_1_840x488_crop_center@2x.jpg?v=1559865428 2x
+            " alt />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+</div><div id="shopify-section-1560274674344" class="shopify-section">
+
+<div class="section-container featured-content featured-content--left border-bottom secondary__salmon">
+  <section class="section">
+    <div class="grid grid--equal-height grid--vertically-centered">
+      <div class="grid__item grid__item--tablet-up-half grid__item--desktop-up-4 grid__item--desktop-up-push-1 gutter-bottom--half featured-content__heading">
+        <div>
+          <p class="section-heading__kicker heading--5 gutter-bottom--half"></span>
+          <h2 class="gutter-bottom--half">Pop-up Space</h2>
+          <p>Looking for a place to host your next pop–up? At Shopify LA we provide a customizable space equipped with our latest POS hardware, and a team ready help you 7 days a week.</p>
+
+          
+            <div class="grid__item gutter-bottom">
+              <a
+                href="https://airtable.com/shrBNwx67nyFZIv4G"
+                class="body-link body-cta">
+                Inquiry Form
+              </a>
+              <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="grid__item grid__item--tablet-up-half grid__item--desktop-up-7 featured-content__featured-image-container">
+        <div class="featured-content__featured-image-wrapper">
+          <img
+            src="//cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA_-_Popup_Space_840x488_crop_center.jpg?v=1559865661"
+            srcset="
+              //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA_-_Popup_Space_840x488_crop_center.jpg?v=1559865661 1x,
+              //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA_-_Popup_Space_840x488_crop_center@2x.jpg?v=1559865661 2x
+            " alt />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+</div><div id="shopify-section-1560275543020" class="shopify-section"><div class="section-container border-bottom homepage__classes-flair secondary__teal">
+  <section class="section section--padding-top-only">
+    <div class="grid">
+      <div class="grid__item">
+        <div class="grid grid--equal-height">
+          <div class="grid__item grid__item--desktop-up-two-thirds">
+            <div class="grid grid--vertically-centered gutter-bottom--tablet-down">
+              <div class="grid__item grid__item--tablet-up-half grid__item--tablet-up-push-3 grid__item--desktop-up-push-reset gutter-bottom--mobile hide--desktop">
+                <span class="lazyload-image text-center">
+                  <picture>
+                    <source media="(min-width: 750px)"
+                      srcset="
+                        //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Desk3_412x613_crop_center.png?v=1559866227 1x,
+                        //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Desk3_824x1226_crop_center.png?v=1559866227 2x
+                      " />
+                    <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Mob2_358x264_crop_center.jpg?v=1559866268"
+                      srcset="
+                        //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Mob2_358x264_crop_center.jpg?v=1559866268 1x,
+                        //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Mob2_716x528_crop_center.jpg?v=1559866268 2x
+                      "
+                      class="lazyload homepage__classes-image--tablet display--inline-block" data-property="lazyload" alt />
+                  </picture>
+                </span>
+              </div>
+
+              <div class="grid__item grid__item--tablet-up-half grid__item--tablet-up-pull-3 grid__item--desktop-up-pull-reset full-width--desktop">
+                <div class="grid grid--vertically-centered gutter-bottom">
+                  <div class="grid__item grid__item--desktop-up-half">
+                    <div class="section-heading section-heading--left text-left">
+                      <h2 class="section-heading__heading heading--2 gutter-bottom">
+                        Growth Lab
+                      </h2>
+
+                      <p class="section-heading__subhead text-major">
+                        Let's take your commerce game to the next level. Sign up for our Growth Lab classes today! Hosted by industry experts sharing what they do best.
+                      </p>
+
+                      <p>
+                        <a
+                          href="/pages/growth-lab"
+                          class="body-cta"
+                          data-trekkie-event = Shopify-LA
+                          data-trekkie-action = Featured Collection End
+                          data-trekkie-label = Shopify-LA
+                          data-ga-event = Shopify-LA
+                          data-ga-action = Featured Collection End
+                          data-ga-label = Shopify-LA>
+                          Learn more about our Growth Lab
+                        </a>
+                        <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="grid__item grid__item--desktop-up-half">
+                    <ul class="feature-events__list-items">
+                      
+                        <li>
+                          <p><strong>Advanced SEO</strong> How to master organic traffic in 2019</p>
+                        </li>
+                      
+                        <li>
+                          <p><strong>Copywriting</strong> Building brand loyalty through storytelling</p>
+                        </li>
+                      
+                        <li>
+                          <p><strong>Email Marketing</strong> Setting up your email campaigns for success</p>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gutter-bottom">
+              <div class="grid__item gutter-bottom">
+                <span class="heading--5 color-ink-lighter">
+                  Growth Lab Classes
+                </span>
+                <div class="heading-divider--sky"></div>
+              </div>
+
+              <ul><li class="grid__item grid__item--tablet-up-half">
+  <div class="box-shadow">
+    <div class="classes-card card--border background-white gutter-bottom">
+      <div class="background-indigo-darkest">
+        <div class="grid grid__margin-horizontal--reset">
+          <div class="grid__item classes-card__heading-content grid__item--mobile-up-two-thirds">
+            <p class="classes-card__type heading--5 color-sky">Growth Lab</p>
+            <h3 class="heading--4 color-white">How to Master Influencer Marketing</h3>
+          </div>
+
+          <div class="grid__item grid__item--mobile-up-third">
+            <span class="lazyload-image">
+              
+
+
+  <img
+    src="//cdn.shopify.com/s/files/1/0015/1034/2712/products/1563924350336_zf73uukc_100x.jpg?v=1563936992"
+    srcset="
+      //cdn.shopify.com/s/files/1/0015/1034/2712/products/1563924350336_zf73uukc_100x.jpg?v=1563936992 1x,
+      //cdn.shopify.com/s/files/1/0015/1034/2712/products/1563924350336_zf73uukc_100x@2x.jpg?v=1563936992 2x
+    "
+    class="lazyload classes-card__icon"
+    data-property="lazyload"
+    aria-hidden="true"
+    alt />
+
+
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid__margin-horizontal--reset">
+        <div class="grid__item classes-card__content gutter-bottom--half">
+          <p class="color-ink-lighter"></p>
+          <a
+            href="/products/how-to-master-influencer-marketing"
+            class="body-link body-cta"
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "View Details - How to Master Influencer Marketing"
+            data-ga-label = 'Classes Card'
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "View Details - How to Master Influencer Marketing"
+            data-trekkie-label = 'Classes Card'>View details</a>
+          <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="grid__item grid__item--tablet-up-half">
+  <div class="box-shadow">
+    <div class="classes-card card--border background-white gutter-bottom">
+      <div class="background-indigo-darkest">
+        <div class="grid grid__margin-horizontal--reset">
+          <div class="grid__item classes-card__heading-content grid__item--mobile-up-two-thirds">
+            <p class="classes-card__type heading--5 color-sky">Growth Lab</p>
+            <h3 class="heading--4 color-white">Grow Your Ecommerce Sales with Powerful Storytelling</h3>
+          </div>
+
+          <div class="grid__item grid__item--mobile-up-third">
+            <span class="lazyload-image">
+              
+
+
+  <img
+    src="//cdn.shopify.com/s/files/1/0015/1034/2712/products/1559947174779_krs66aw1_100x.jpg?v=1564014656"
+    srcset="
+      //cdn.shopify.com/s/files/1/0015/1034/2712/products/1559947174779_krs66aw1_100x.jpg?v=1564014656 1x,
+      //cdn.shopify.com/s/files/1/0015/1034/2712/products/1559947174779_krs66aw1_100x@2x.jpg?v=1564014656 2x
+    "
+    class="lazyload classes-card__icon"
+    data-property="lazyload"
+    aria-hidden="true"
+    alt />
+
+
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid__margin-horizontal--reset">
+        <div class="grid__item classes-card__content gutter-bottom--half">
+          <p class="color-ink-lighter"></p>
+          <a
+            href="/products/grow-your-ecommerce-sales-with-powerful-storytelling"
+            class="body-link body-cta"
+            data-ga-event = 'Shopify LA'
+            data-ga-action = "View Details - Grow Your Ecommerce Sales with Powerful Storytelling"
+            data-ga-label = 'Classes Card'
+            data-trekkie-event = 'Shopify LA'
+            data-trekkie-action = "View Details - Grow Your Ecommerce Sales with Powerful Storytelling"
+            data-trekkie-label = 'Classes Card'>View details</a>
+          <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+</ul>
+
+              <div class="grid__item gutter-bottom text-right">
+                <a
+                  href="/pages/growth-lab"
+                  class="body-link body-cta"
+                  data-trekkie-event = Shopify-LA
+                  data-trekkie-action = Featured Classes End
+                  data-trekkie-label = Shopify-LA
+                  data-ga-event = Shopify-LA
+                  data-ga-action = Featured Classes End
+                  data-ga-label = Shopify-LA>
+                  More classes
+                </a>
+                <span class="lazyload-image body-cta__link-icon">
+  <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/link-arrow.svg?21311" class="lazyload" data-property="lazyload" alt />
+</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__item grid__item--desktop-up-third display--desktop">
+            <span class="lazyload-image">
+              <img src="//cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Desk3_412x613_crop_center.png?v=1559866227"
+                srcset="
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Desk3_412x613_crop_center.png?v=1559866227 1x,
+                  //cdn.shopify.com/s/files/1/0015/1034/2712/files/Shopify_LA-Growth_Lab_Desk3_824x1226_crop_center.png?v=1559866227 2x"
+                class="lazyload" data-property="lazyload" alt />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+</div><!-- END content_for_index -->
+
+
+<section class="section" id="notify-me">
+  <div class="grid">
+    <div class="grid__item grid__item--tablet-up-three-quarters grid__item--desktop-up-half grid__item--mobile-up-align-center text-center gutter-bottom">
+      <div class="email-subscribe__section-heading">
+        <h2 class="heading--1 gutter-bottom">
+          You’ve got this. We’ve got you.
+        </h2>
+        <p class="text-major">
+          Sign-up to receive notifications for upcoming workshops, events, and&nbsp;networking&nbsp;opportunities.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid__item grid__item--tablet-up-two-thirds grid__item--desktop-up-third grid__item--mobile-up-align-center">
+      <div class="subscribe js-subscribe">
+        <div class="subscribe__content-wrapper">
+          <div class="subscribe__content">
+            <form class="subscribe__form marketing-form marketing-form--inline"
+              novalidate="novalidate"
+              action="https://www.shopify.com/content-services/subscribers"
+              accept-charset="UTF-8"
+              method="post">
+              <input name="utf8" type="hidden" value="✓">
+              <div class="marketing-input-wrapper marketing-input-button-pair">
+                <div class="marketing-input-button__field-wrapper">
+                  <label class="marketing-input-button-pair__input">
+                    <span class="marketing-label marketing-label--in-field marketing-label--floating">
+                      Email address
+                    </span>
+                    <input
+                      placeholder="Email address"
+                      class="marketing-input-button-pair__input marketing-input marketing-input--floating"
+                      type="email"
+                      name="email">
+                  </label>
+                  <button
+                    class="marketing-button marketing-form__button marketing-input-button-pair__button"
+                    name="button"
+                    data-ga-event = 'Shopify LA'
+                    data-ga-action = 'Email Subscribe'
+                    data-ga-label = 'Homepage'
+                    data-trekkie-event = 'Shopify LA'
+                    data-trekkie-action = 'Email Subscribe'
+                    data-trekkie-label = 'Homepage'
+                    type="submit">
+                    Notify me
+                  </button>
+                  <input name="data_extension_key" type="hidden" value="A4BDECE1-08FA-4C91-BB2A-6B00D6E38882">
+                </div>
+                <span class="marketing-form__messages"></span>
+              </div>
+            </form>
+          </div>
+          <div class="subscribe__success text-center" aria-hidden="true">
+            <p class="heading--3 subscribe__success__heading">Thanks! We’ll be in touch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  window.homepageEvents = {};
+  ""
+    window.homepageEvents["1976117854264"] = {
+      title: "Apple Business Chat: Grow Your Business Through Conversation",
+      type: "Shopify LA",
+      url: "/products/apple-business-chat-grow-your-business-through-conversation",
+      image: "//cdn.shopify.com/s/files/1/0015/1034/2712/products/ping_app_icon-200x200_2x_1ff5e409-a12a-4c97-acf5-c1190efd1dd5_small.png?v=1564445896"
+    };
+  ""
+    window.homepageEvents["1976275402808"] = {
+      title: "Tap into the Buying Power of Snapchatters",
+      type: "Shopify LA",
+      url: "/products/tap-into-the-buying-power-of-snapchatters",
+      image: "//cdn.shopify.com/s/files/1/0015/1034/2712/products/Snapchat-Thumbail-200x200_small.jpg?v=1564703926"
+    };
+  ""
+    window.homepageEvents["1976147542072"] = {
+      title: "Streetwear and Sneaker Culture: A Conversation",
+      type: "Shopify LA",
+      url: "/products/streetwear-and-sneaker-culture-a-conversation",
+      image: "//cdn.shopify.com/s/files/1/0015/1034/2712/products/pp_small.jpg?v=1564789282"
+    };
+  ""
+</script>
+
+        <div class="section-container background-indigo-dark">
+  <section class="section color-sky-dark section--tight">
+    <div class="grid">
+      <div class="grid__item grid__item--tablet-up-third grid__item--desktop-up-quarter gutter-bottom--tablet-down">
+        <h2 class="heading--3 color-white">Drop by for a visit</h2>
+        <p class="text-major address-footer__subhead">We look forward to meeting&nbsp;you!</p>
+        <img class="address-footer__flair" src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/tree.svg?21311" aria-hidden="true" alt />
+      </div>
+      <div class="grid__item grid__item--tablet-up-half grid__item--tablet-up-push-1 grid__item--desktop-up-push-reset grid__item--desktop-up-5 address-footer__info gutter-bottom--tablet-down">
+        <div class="grid">
+          <div class="grid__item grid__item--tablet-up-half gutter-bottom--mobile address__location-info">
+  <p class="heading--5 text--upper color-white address__location-heading">Address</p>
+  <p>ROW DTLA<br>
+  777 S. Alameda Street<br>
+  Bldg. 1, Unit 100<br>
+  Los Angeles, CA 90021</p>
+</div>
+
+<div class="grid__item grid__item--tablet-up-half gutter-bottom--mobile">
+  <p class="heading--5 text--upper color-white address__hours-heading">Hours</p>
+  <p class="address__hours gutter-bottom--reset">Mon <span>11am-6pm</span></p>
+  <p class="address__hours gutter-bottom--reset">Tue-Fri <span>10am-7pm</span></p>
+  <p class="address__hours gutter-bottom">Sat-Sun <span>11am-5pm</span></p>
+
+  <p class="heading--5 text--upper color-white address__contact-heading">Contact us</p>
+  <p class="gutter-bottom--reset"><a class="color-sky-dark address__contact-email" href="mailto:losangeles@shopify.com">losangeles@shopify.com</a></p>
+  <p><a class="color-sky-dark address__contact-phone" href="tel:+1 213-436-5919">+1 213-436-5919</a></p>
+</div>
+
+        </div>
+      </div>
+      <div class="grid__item grid__item--desktop-up-third address-footer__map">
+        <div class="map"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+      </main>
+
+      <div class="footer__wrapper">
+        <footer id="ShopifyMainFooter" role="contentinfo" class="footer--main">
+    <div class="footer-bottom">
+      <div class="grid">
+        <div class="grid__inner">
+          <div class="grid__item grid__item--tablet-up-2 footer-bottom__social text-center--mobile">
+            <div class="footer-bottom-item footer-bottom__social">
+  <a class="footer-link footer-social__icon icon icon-social-facebook" data-ga-action="Facebook" data-ga-event="Social" data-ga-label="Footer" href="https://www.facebook.com/ShopifyLA" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">Facebook</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-twitter" data-ga-action="Twitter" data-ga-event="Social" data-ga-label="Footer" href="https://www.twitter.com/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">Twitter</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-youtube" data-ga-action="Youtube" data-ga-event="Social" data-ga-label="Footer" href="https://www.youtube.com/user/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">YouTube</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-instagram" data-ga-action="Instagram" data-ga-event="Social" data-ga-label="Footer" href="https://www.instagram.com/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">Instagram</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-linkedin" data-ga-action="LinkedIn" data-ga-event="Social" data-ga-label="Footer" href="https://www.linkedin.com/company/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">LinkedIn</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-pinterest" data-ga-action="Pinterest" data-ga-event="Social" data-ga-label="Footer" href="https://www.pinterest.com/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">Pinterest</span>
+  </a>
+
+  <a class="footer-link footer-social__icon icon icon-social-snapchat" data-ga-action="Snapchat" data-ga-event="Social" data-ga-label="Footer" href="https://www.snapchat.com/add/shopify" rel="me noopener" target="_blank">
+    <span class="visuallyhidden">Snapchat</span>
+  </a>
+</div>
+
+          </div>
+
+          <div class="grid__item grid__item--tablet-up-4 footer-bottom__links text-center--mobile text-right--tablet-up">
+            <a href="https://www.shopify.com/legal/terms" target="_blank">Terms of Service</a>
+            <a href="https://www.shopify.com/legal/privacy" target="_blank">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="//cdn.shopify.com/s/files/1/0015/1034/2712/t/1/assets/application.js?21311" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsRyTkn-kfYMDwMGKZvr0AwnVefJGI_Yg&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Vary: Accept
+Strict-Transport-Security: max-age=31536000;
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 15:35:27 GMT
+P3p: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+X-Runtime: 0.045854
+Cf-Ray: 50328f6ade59bfbb-MAN
+Retry-Count: 0
+X-Request-Id: 50328f6ade59bfbb-IAD
+X-Zendesk-Request-Id: b4028ec28e3ad53dc796
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: _zendesk_authenticated=; path=/; expires=Thu, 01 Jan 1970 00:00:00 -0000; secure; HttpOnly _zendesk_session=BAh7C0kiD3Nlc3Npb25faWQGOgZFVEkiJTU1Mjg1OWQ0YmNkZTFhOGI5ODk3ZTc5ZDBjNWMwN2YyBjsAVEkiDGFjY291bnQGOwBGaQM%2FIB5JIgpyb3V0ZQY7AEZpA7MvHUkiDmlzX21vYmlsZQY7AFRGSSITd2FyZGVuLm1lc3NhZ2UGOwBUewBJIhBfY3NyZl90b2tlbgY7AEZJIkVKSzZ2S2NDQTNvUVlOWXcrNHJKQkxmMExjUjVUckI4anBvNmNnbWJobFZqZmpkYVgrWmk3OE0ybXhTTTdRVWhJBjsARg%3D%3D--8e0c5fd6250778a31c25af1f85c177a038e5732a; path=/; secure; HttpOnly
+Etag: W/"16f0878017bcc3fd038e7f2cda59d20b"
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app43.pod14.use1.zdsys.com
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare

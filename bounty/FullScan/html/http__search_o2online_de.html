@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var contextPath = '/searchapp';	
+		var colors = ['#d00a45', '#28a2c7', '#948a0f', '#57033f', '#d0980b', '#100756', '#d05a0b', '#6d7a6c', '#0a6465', '#660000'];
+	</script>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+	<title>HAUPIA SaaS</title>
+	<!-- Bootstrap core CSS -->
+	<link href="/searchapp/static/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="all">
+	<!-- Custom styles for this template -->
+	<link href="/searchapp/static/css/haupia.css" rel="stylesheet" media="all">
+	
+	<style type="text/css">
+	.text-grey {
+	  color: gray;
+	}
+	.CodeMirror {
+	  border: 1px solid #eee;
+	  height: auto;
+	}
+	.CodeMirror-scroll {
+	  overflow-y: hidden;
+	  overflow-x: auto;
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="welcome.jsp" class="navbar-brand"><img src="/searchapp/static/images/logo-haupia.png" height="46" width="182" /></a>
+			</div>
+		</div>
+	</div>
+	<div class="navi-container js-navi-container"></div>
+	<div class="naviDisplay js-naviDisplay">
+		<span></span>
+	</div>
+	<div class="container-fluid content-wrapper">
+		<div class="main-content">
+			<div class="main">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-4  col-lg-offset-4">
+							<h2>HAUPIA as a Service</h2>
+						</div>
+						<div class="col-xs-12 col-md-8 col-lg-8 ">
+							<a href="/searchapp/service" class="navbar-brand">Hier finden Sie die Definition der REST Services!</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<script src="/searchapp/static/js/jquery/jquery-1.11.1.min.js"></script>
+	<script src="/searchapp/static/js/bootstrap/bootstrap.min.js"></script>
+	
+	<script>
+	//Setting defaults for bootbox
+	bootbox.setDefaults({
+		locale: "de",
+		closeButton: false
+	});
+	</script>
+</body>
+</html>

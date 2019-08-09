@@ -1,0 +1,19 @@
+200 OK
+Server: nginx
+Content-Type: text/html
+Date: Wed, 07 Aug 2019 12:27:33 GMT
+Last-Modified: Wed, 18 Jul 2018 15:05:56 GMT
+Cache-Control: max-age=0 must-revalidate no-cache no-store
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Content-Security-Policy: default-src 'self'; img-src 'self' data:; connect-src 'self' wss:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'
+Accept-Ranges: bytes
+Expires: Wed, 07 Aug 2019 12:27:33 GMT
+X-Xss-Protection: 1; mode=block
+X-Sp-Otp-Auth: 0
+Content-Length: 8932
+Etag: "5b4f5754-22e4"
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self'; img-src 'self' data:; connect-src 'self' wss:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'
+X-Sp-Interface-Type: User
+Retry-Count: 0

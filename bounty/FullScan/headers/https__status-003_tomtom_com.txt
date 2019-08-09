@@ -1,0 +1,14 @@
+200 OK
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+Expires: Thu, 01 Jan 1970 00:00:00 UTC
+X-Frame-Options: DENY
+Server: Server
+Date: Thu, 08 Aug 2019 14:55:01 GMT
+Cache-Control: private
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Amz-Cognito-Request-Id: 7f8e1a3d-47c1-40da-8dcc-88019db7d1e0
+X-Application-Context: application:prod:8443
+X-Content-Type-Options: nosniff
+Content-Language: en-US

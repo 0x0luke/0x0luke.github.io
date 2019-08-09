@@ -1,0 +1,16 @@
+200 OK
+Link: </ab/assets/Adquiro/ed4181d/wp/images/empty.776f5f447e5e.gif>;rel=preload;as=image,</static/marketing/ui/master/img/upwork-logo.svg>;rel=preload;as=image,</ab/assets/Adquiro/ed4181d/wp/ppc-october-promo.322d7d8ee6ac.css>;rel=preload;as=style
+Report-To: {'endpoints': [{'url': 'https://www.upwork.com/ab/csp/index'}], 'group': 'csp-endpoint', 'max-age': 10886400}
+X-Content-Type-Options: nosniff
+Date: Wed, 07 Aug 2019 04:44:04 GMT
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Retry-Count: 0
+Set-Cookie: session_id=223202db70ae37974636922e3f10c7b7; path=/; domain=.upwork.com; secure; HttpOnly device_view=full; expires=Sat, 07-Sep-2019 04:44:04 GMT; Max-Age=2678400; path=/; domain=.upwork.com; HttpOnly restriction_verified=1; path=/; domain=.upwork.com; secure; HttpOnly track_url_params=%5B%5D; path=/; domain=.upwork.com; secure; HttpOnly visitor_id=60.120.39.159.1565153044336415; expires=Fri, 07-Aug-2020 04:44:04 GMT; Max-Age=31622400; path=/; domain=.upwork.com; secure XSRF-TOKEN=84f3fe43eb5a204a67430fb15f8cada5; path=/; domain=.upwork.com; secure
+Cache-Control: private
+X-Frame-Options: SAMEORIGIN
+Vnd-Eo-Trace-Id: 502697de6829d218-MAN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 502697de6829d218-MAN
+Content-Type: text/html; charset=UTF-8

@@ -1,0 +1,18 @@
+200 OK
+Strict-Transport-Security: max-age=63072000; includeSubdomains; max-age=31536000; includeSubdomains;
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://www.help.gsmosaic.gs.com
+Pragma: no-cache
+Date: Thu, 08 Aug 2019 07:20:24 GMT
+Set-Cookie: renderid=rend01; path=/ NSC_JOdl53ppdckqhteeyujvqdcy4jztnec=14b5a3d9e883820c8569b1d861abd83ffe600c3aea6439adc04b6f1cd97c841e328e45d6;expires=Thu, 08-Aug-2019 07:22:24 GMT;path=/;secure;httponly
+Server: Apache
+X-Xss-Protection: 1; mode=block 1; mode=block
+Cache-Control: no-cache, no-store no-store, no-cache, must-revalidate, max-age=0
+Content-Secure-Policy: default-src 'none';script-src *.gs.com*;img-src *.gs.com;connect-src 'self' wss://*.gs.com* *.gs.com* https://qaglobal-liquidity.gs.com;style-src *.gs.com;media-src 'self' *.gs.com;frame-ancestors 'self' http://qaglobal-liquidity.gs.com
+Retry-Count: 0
+Content-Security-Policy: default-src 'self' gap: https://*.gs.com 'unsafe-inline'; font-src 'self' https://*.gs.com data:; script-src 'self' https://assets.adobedtm.com https://*.zopim.com https://assets.zendesk.com https://*.gs.com 'unsafe-inline' 'unsafe-eval'; connect-src 'self'  https://*.gs.com 'unsafe-inline' data:; object-src 'self' https://*.gs.com; child-src gap: 'self' https://*.gs.com ; img-src 'self' * data:; style-src 'self' https://*.gs.com 'unsafe-inline';
+Vary: Accept-Encoding
+X-Frame-Options: *.gs.com, *.gs.com SAMEORIGIN
+X-Content-Type-Options: nosniff nosniff
+Content-Type: text/html;charset=UTF-8
+Expires: Thu, 08 Aug 2019 07:20:24 GMT

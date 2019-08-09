@@ -1,0 +1,18 @@
+200 OK
+X-Hs-Hub-Id: 2895024
+Retry-Count: 0
+Access-Control-Allow-Credentials: false
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Id: 5396927619
+Date: Thu, 08 Aug 2019 09:39:38 GMT
+Cf-Ray: 50308631184c3669-MAN
+Vary: Accept-Encoding
+Edge-Cache-Tag: CT-5396927619,P-2895024,L-5396950194,L-5396950575,L-5396951200,CW-5396950579,CW-5396950586,CW-5396950610,CW-5396950661,CW-5414277644,CW-5497100174,CW-5736910036,CW-5738836737,E-5396950569,E-5396950570,E-5397311368,E-5397988619,E-5476290303,MENU-5396923803,MENU-5965915112,MENU-6030220361,PGS-ALL,SW-2,SD-24
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/2895024/hub_generated/template_assets/1555949795056/combined-css-4ba44ae7a578a398d1a3414510cb2ba0.css>; rel=preload; as=style </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Trace: 2BAC1116BD0690BA6D3B1074709231EB08ED982896000000000000000000
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=da80b3782455755dced676f1627d82ab61565257177; expires=Fri, 07-Aug-20 09:39:37 GMT; path=/; domain=.www.materialogic.com; HttpOnly __cfruid=481eba65f2dbacb4fe2865c01f5874414dc5a426-1565257178; path=/; domain=.www.materialogic.com; HttpOnly
+Cf-Cache-Status: EXPIRED
+Cache-Control: s-maxage=7200,max-age=5
+X-Powered-By: HubSpot
+Server: cloudflare

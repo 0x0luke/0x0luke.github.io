@@ -1,0 +1,13 @@
+200 OK
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: new_visit=539212ad962c2e5c2ce0bbff2cd4752d08035424s%3A36%3A%22ij45odc3bc60jh8t1hiep1qllj%3Anew_visit%22%3B; expires=Thu, 08-Aug-2019 08:38:07 GMT; Max-Age=1800; path=/; secure; HttpOnly
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Cache-Control: private
+Server: nginx
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 08 Aug 2019 08:08:07 GMT
+Etag: "e416505ba78b5af3b428cd4fbdcb5eff"
+Vary: Accept-Encoding

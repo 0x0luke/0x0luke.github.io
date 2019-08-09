@@ -1,0 +1,14 @@
+200 OK
+Cache-Control: max-age=0, must-revalidate, private
+X-Content-Type-Options: nosniff
+Content-Security-Policy: frame-ancestors 'self' https://*.spotify.com https://*.spotify.net
+Content-Type: text/html; charset=UTF-8
+X-Cache: HIT from 36be7af7d66c
+Vary: X-Forwarded-Proto,Accept-Encoding
+X-Content-Security-Policy: frame-ancestors 'self' https://*.spotify.com https://*.spotify.net
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Server: nginx
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:28:02 GMT
+Set-Cookie: spsess=Tf-6blfbNfeGtcz4UW0Hue9wmF3WfvXHFtwF%2CC%2Cs2ZPTlGGd; path=/; secure; HttpOnly spsess=Tf-6blfbNfeGtcz4UW0Hue9wmF3WfvXHFtwF%2CC%2Cs2ZPTlGGd; path=/; secure; HttpOnly sp_ftv=1; path=/; secure; httponly sp_landing=https%3A%2F%2Fwww.spotify.com%2Fuk%2F; expires=Fri, 09-Aug-2019 14:28:02 GMT; Max-Age=86400; path=/; httponly sp_landingref=https%3A%2F%2Fwww.spotify.com%2F; expires=Fri, 09-Aug-2019 14:28:02 GMT; Max-Age=86400; path=/; httponly sp_30d=1; expires=Sat, 07-Sep-2019 14:28:02 GMT; Max-Age=2592000; path=/; httponly sp_usid=b52bf792-8b57-4386-b44a-ad2d4962ddb5; expires=Thu, 08-Aug-2019 14:58:02 GMT; Max-Age=1800; path=/; domain=.spotify.com; secure sp_t=95bcd875d978b1ca5a710bb719574488; expires=Mon, 07-Oct-2019 14:28:02 GMT; Max-Age=5184000; path=/; domain=.spotify.com; secure sp_new=1; expires=Fri, 09-Aug-2019 14:28:02 GMT; Max-Age=86400; path=/; domain=.spotify.com; secure sp_ab=%7B%222019_04_premium_menu%22%3A%22control%22%2C%222016_12_headspace_carousel%22%3A%22show_headspace%22%7D; expires=Sat, 07-Sep-2019 14:28:02 GMT; Max-Age=2592000; path=/; domain=.spotify.com; secure spot=%7B%22t%22%3A1565274482%2C%22m%22%3A%22uk%22%2C%22p%22%3Anull%7D; expires=Thu, 06-Apr-2023 14:28:02 GMT; Max-Age=115516800; path=/; domain=spotify.com
+X-Join-The-Band: https://www.spotify.com/jobs/

@@ -1,0 +1,16 @@
+429 Too Many Requests
+Accept-Ranges: bytes bytes
+Via: 1.1 varnish
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1565250214.254279,VS0,VE174
+Content-Type: text/plain; charset=UTF-8
+Server: nginx
+X-Q-Stat: 81,966cb707d17382265fd76a8c6ac51941,10.0.0.232,36016,89.238.135.143,,2247553850,1,1565250214.390,0.095,,.,0,0,0.000,0.096,-,0,0,1063,297,148,10,26847,,,,,,,
+X-Ua-Compatible: IE=Edge, chrome=1
+Date: Thu, 08 Aug 2019 07:43:34 GMT
+Retry-Count: 0
+Set-Cookie: m-b="PfERPpT5QqnmJyd-asJYlw\075\075"; Domain=.quora.com; Max-Age=63072000; Path=/; expires=Sat, 07-Aug-2021 07:43:34 GMT; secure; HttpOnly m-s="29BJrRrIE6FC7cRJFr3RzQ\075\075"; Domain=.quora.com; Max-Age=63072000; Path=/; expires=Sat, 07-Aug-2021 07:43:34 GMT; secure; HttpOnly m-early_v=06f5d6e3bf8eab2c; Domain=.quora.com; Max-Age=63115200; Path=/; expires=Sat, 07-Aug-2021 19:43:34 GMT m-early_v=06f5d6e3bf8eab2c; Domain=.quora.com; Max-Age=63115200; Path=/; expires=Sat, 07-Aug-2021 19:43:34 GMT m-early_v=06f5d6e3bf8eab2c; Domain=.quora.com; Max-Age=63115200; Path=/; expires=Sat, 07-Aug-2021 19:43:34 GMT
+X-Served-By: cache-lhr6334-LHR
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block

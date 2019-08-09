@@ -1,0 +1,15 @@
+200 OK
+Retry-Count: 0
+Content-Security-Policy: connect-src * *; default-src 'self' *; img-src 'self' data: * blob:; font-src 'self' * data:; object-src 'self' *; media-src 'self' *; script-src 'self' 'unsafe-inline' * 'unsafe-eval' blob:; style-src 'self' 'unsafe-inline' blob: *; child-src * blob:; frame-src *
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+X-Download-Options: noopen
+X-Frame-Options: SAMEORIGIN
+Server: cloudflare
+Cf-Ray: 5030b1e619cfbff2-MAN
+Date: Thu, 08 Aug 2019 10:09:28 GMT
+Set-Cookie: __cfduid=dfe5a738a37660c5d09fc7fb39ca1e4251565258968; expires=Fri, 07-Aug-20 10:09:28 GMT; path=/; domain=.jobstreet.com.my; HttpOnly; Secure az-1=j%3A%7B%22id%22%3A%22898328a5-0bd8-42d7-9d0f-08510888eb13%22%2C%22createdAt%22%3A%222019-07-29T01%3A52%3A34.669Z%22%7D; Max-Age=31536000; Path=/; Expires=Fri, 07 Aug 2020 10:09:28 GMT
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=2592000; includeSubDomains

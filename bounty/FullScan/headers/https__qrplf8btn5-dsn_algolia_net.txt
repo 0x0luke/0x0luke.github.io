@@ -1,0 +1,11 @@
+404 Not Found
+Server: nginx
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Cache-Control: no-cache
+Content-Disposition: inline; filename=a.txt
+Date: Thu, 08 Aug 2019 09:01:49 GMT
+Content-Length: 155
+Retry-Count: 0

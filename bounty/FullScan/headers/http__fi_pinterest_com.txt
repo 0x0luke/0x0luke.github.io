@@ -1,0 +1,19 @@
+200 OK
+Date: Thu, 08 Aug 2019 07:42:02 GMT
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-nivcYlmKZG' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+X-Upstream-Proxy: pythonvianode
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Content-Type: text/html; charset=utf-8
+Pinterest-Version: d28c701
+X-Content-Type-Options: nosniff
+Pinterest-Generated-By: coreapp-webapp-prod-0a01c520, coreapp-webapp-prod-0a01c520 coreapp-webapp-prod-0a01c520 coreapp-webapp-prod-0a01c520
+X-Pinterest-Rid: 6932334651003891
+X-Cdn: akamai
+Vary: User-Agent, Cookie, Accept-Encoding
+X-Upstream-Env: python node
+X-Envoy-Upstream-Service-Time: 130
+Set-Cookie: _auth=0; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:02 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=h36qItP8jMO3aRQK45eXKka2T1nUOBqK; expires=Thu, 06-Aug-2020 07:42:02 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSYvUFdFTWRSVm9KbU5VaFZCem5QZ2hMM1dpNnNDYkw0UmZNNDdxM1EyemhkREFXQ2RjYXNpUXpFejQ3RzN2aTJ4aWQ3em5hSkJ4NDhoQlpMalpIQkRYQ3ArK2srTC9MK3hxQ2o3VnlZZm1CcVVqNUd3WVk3MDFmVjViZ004Nk5XV3lUdnNVdU0wc3JkNkxjTXFCTnBEUlE9PSZmczl4QVJNUzF3Q052aHR3L0Y3V0ErL3VhNDA9; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 07:42:02 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="e2556e39-6203-4566-9cb9-0505d8977bcd"; Max-Age=86400; Path=/; HttpOnly
+Retry-Count: 0

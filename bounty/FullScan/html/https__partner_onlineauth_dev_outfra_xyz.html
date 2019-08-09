@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Error</title>
+    <link rel="stylesheet" type="text/css" href="error.css" />
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+    <header>
+      <a class="sk-logo" href="https://www.seek.com.au/" title="SEEK"></a>
+    </header>
+    <section class="clearfix">
+      <div class="error-image"></div>
+      <div class="error-msg">
+        <div id="access-expired" style="display:none;">
+          <h1>Something's gone wrong.</h1>
+          <h2>
+            The given password reset token is invalid or may have expired.
+          </h2>
+          <p>
+            Please click <a href="https://talent.seek.com.au/signin">here</a> to
+            get a new link.
+          </p>
+        </div>
+        <div id="default-error" style="display:none;">
+          <h1>Something's gone wrong.</h1>
+          <h2>Sorry about that, we'll get the mechanic right onto it.</h2>
+          <p>While we do that, you can try</p>
+          <ol>
+            <li>
+              going <a href="javascript:history.back()">back</a> to the previous
+              page
+            </li>
+            <li>
+              <a id="talent-link" href="https://talent.seek.com.au/"
+                >signing in</a
+              >
+              to your SEEK employer account
+            </li>
+            <li>
+              contacting our
+              <a id="cs-link" href="https://talent.seek.com.au/ContactUs"
+                >customer service</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <footer>&copy; SEEK. All rights reserved</footer>
+
+    <script type="text/javascript">
+      (function() {
+        var isNz =
+          location && location.hash && location.hash.indexOf('src=nz') > 0;
+        if (isNz) {
+          document.getElementById('talent-link').href =
+            'https://talent.seek.co.nz/';
+          document.getElementById('cs-link').href =
+            'https://talent.seek.co.nz/ContactUs';
+        }
+      })();
+    </script>
+    <script type="text/javascript">
+      (function() {
+        function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, '\\$&');
+          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        function processError(error, description) {
+          if (description === 'Access expired.') {
+            document.querySelector('#access-expired').style.display = 'block';
+            document.querySelector('#default-error').style.display = 'none';
+          } else {
+            document.querySelector('#default-error').style.display = 'block';
+          }
+        }
+
+        const error = getParameterByName('error');
+        const error_description = getParameterByName('error_description');
+
+        processError(error, error_description);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+404 Not Found
+X-Sorting-Hat-Podid: -1
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=4d892da0-a5bf-4a67-999e-62d52157a784
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=4d892da0-a5bf-4a67-999e-62d52157a784
+X-Dc: gcp-us-central1,gcp-us-central1
+Content-Type: text/html; charset=utf-8
+Cf-Ray: 50267004eb42362d-MAN
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff
+Set-Cookie: __cfduid=dfe5b922df5227a76186f43311f1687df1565151411; expires=Thu, 06-Aug-20 04:16:51 GMT; path=/; domain=.frozen-roller-llc.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Request-Id: 4d892da0-a5bf-4a67-999e-62d52157a784
+X-Download-Options: noopen
+Date: Wed, 07 Aug 2019 04:16:52 GMT
+X-Frame-Options: DENY
+Server: cloudflare
+Retry-Count: 0

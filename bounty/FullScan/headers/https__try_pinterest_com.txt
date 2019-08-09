@@ -1,0 +1,22 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Envoy-Upstream-Service-Time: 16
+Content-Length: 1973
+X-Webkit-Csp: default-src 'self'; img-src 'self' https://i.pinimg.com https://www.google-analytics.com; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Etag: "7b5-pE6mowhpzYVUdlzFniFz81944T0"
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Cdn: fastly
+Retry-Count: 0
+X-Content-Security-Policy: default-src 'self'; img-src 'self' https://i.pinimg.com https://www.google-analytics.com; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'
+Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+Expires: 0
+X-Download-Options: noopen
+Pragma: no-cache
+Content-Security-Policy: default-src 'self'; img-src 'self' https://i.pinimg.com https://www.google-analytics.com; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'
+X-Dns-Prefetch-Control: off
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Next.js 6.1.2
+X-Pinterest-Rid: 6907631732003533
+Date: Thu, 08 Aug 2019 11:40:37 GMT

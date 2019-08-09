@@ -1,0 +1,12 @@
+200 
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Server: nginx
+Date: Wed, 07 Aug 2019 08:22:45 GMT
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: no-cache, no-store, must-revalidate
+X-Content-Type-Options: nosniff
+Expires: 0

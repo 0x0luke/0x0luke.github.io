@@ -1,0 +1,17 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Dns-Prefetch-Control: on
+Set-Cookie: buid=AQABAAEAAAAP0wLlqdLVToOpA4kwzSnxwj5sOczhUvvCw8EmHidgW_A3T50uwSsew1MmKuDS1RUUxyrtMFU3CQgTro4MMS_BWGOawNFfnyIQvfo2psAnl-8P5ht2JdfHiN-o6GRdN1AgAA; expires=Sat, 07-Sep-2019 07:07:25 GMT; path=/; secure; HttpOnly fpc=AhMNxNR3bplEp5QLfPNRDbc-NjKRAQAAACzB3dQOAAAA; expires=Sat, 07-Sep-2019 07:07:26 GMT; path=/; secure; HttpOnly esctx=AQABAAAAAAAP0wLlqdLVToOpA4kwzSnx6XjxlqJx_EcDMhwzDVde53-yeV2RPTCG7JRz7kHboxsgAlwdLieJq0CnwZKPuoS7B2MGV72WvRo4w1x6cZdFLcY-v2HLe2l0pBfu_oqz9YDXJtMZt6IGYnB6ssTFTshfXVpRbj-FsPqyiwnMHpR04nuJc-BaQ3cm3pJsb_4cplAgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly x-ms-gateway-slice=prod; path=/; secure; HttpOnly stsservicecookie=ests; path=/; secure; HttpOnly
+X-Content-Type-Options: nosniff
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Date: Thu, 08 Aug 2019 07:07:25 GMT
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+X-Ms-Request-Id: fb943401-ed5a-4454-965c-0b505a8a0e00
+Referrer-Policy: strict-origin-when-cross-origin
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Expires: -1
+X-Frame-Options: DENY
+Vary: Accept-Encoding
+Link: <https://aadcdn.msauth.net>; rel=preconnect; crossorigin <https://aadcdn.msauth.net>; rel=dns-prefetch <https://aadcdn.msftauth.net>; rel=dns-prefetch

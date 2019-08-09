@@ -1,0 +1,18 @@
+404 Not Found
+Content-Type: text/html; charset=utf-8
+Set-Cookie: __cfduid=d13c6707547b4c3cc4c3b3064ce52c4051565151418; expires=Thu, 06-Aug-20 04:16:58 GMT; path=/; domain=.mx.shopify.com; HttpOnly
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=c3d88b56-e220-4554-bce7-6b1b80f9aa23
+Cf-Ray: 5026702f68ef361b-MAN
+X-Sorting-Hat-Podid: -1
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=c3d88b56-e220-4554-bce7-6b1b80f9aa23
+X-Dc: gcp-us-central1,gcp-us-central1
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Date: Wed, 07 Aug 2019 04:16:58 GMT
+Vary: Accept-Encoding
+X-Request-Id: c3d88b56-e220-4554-bce7-6b1b80f9aa23
+Server: cloudflare

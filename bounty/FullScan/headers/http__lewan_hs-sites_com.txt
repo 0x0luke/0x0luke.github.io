@@ -1,0 +1,22 @@
+200 OK
+Edge-Cache-Tag: CT-2714728329,P-482156,L-2400106286,L-2644705683,L-2704701137,L-2786727333,CW-5653171654,E-2633351642,MENU-10818006788,PGS-ALL,SW-0,SD-6
+Strict-Transport-Security: max-age=0
+X-Hs-Combine-Css: Bot
+Access-Control-Allow-Credentials: false
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Powered-By: HubSpot
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d387146d9ede0c2dc81d2a6322b34a86f1565248960; expires=Fri, 07-Aug-20 07:22:40 GMT; path=/; domain=.www.lewan.com; HttpOnly __cfruid=d480063d24ccb3371c15132544f4babf1f1df4bc-1565248960; path=/; domain=.www.lewan.com; HttpOnly
+Cf-Cache-Status: HIT
+Retry-Count: 0
+Cache-Control: s-maxage=7200,max-age=5
+Content-Security-Policy: upgrade-insecure-requests
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Vary: Accept-Encoding
+X-Hs-Content-Id: 2714728329
+X-Hs-Hub-Id: 482156
+X-Trace: 2BF86C21CED32A6DCB1833DB404DB806BD9CF93C62000000000000000000
+Date: Thu, 08 Aug 2019 07:22:40 GMT
+Cf-Ray: 502fbd938d06d218-MAN
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/rss_listing_asset.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script

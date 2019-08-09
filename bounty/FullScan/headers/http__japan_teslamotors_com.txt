@@ -1,0 +1,17 @@
+200 OK
+Date: Thu, 08 Aug 2019 08:04:34 GMT
+Strict-Transport-Security: max-age=15768000
+Content-Type: text/html; charset=UTF-8
+Server: Apache
+Vary: Accept-Encoding
+Set-Cookie: AWSELB=5529AD9518716C3F5C2D99BFF5D1274662A41B20B9BBDF94D25D4822D9B8BC9FD2D1D34A20C8813E7C80123EDFDE86B6B64DE2576011577D00975B6E4EAE0396CCB0F9F64A;PATH=/;MAX-AGE=900
+Etag: "faa3-58f8fb9ace982"
+X-Frame-Options: SAMEORIGIN
+X-Vhost: publish
+Last-Modified: Wed, 07 Aug 2019 23:59:01 GMT
+X-Akamai-Transformed: 9 64163 0 pmb=mRUM,3
+Retry-Count: 0
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=194 origin; dur=212
+Accept-Ranges: bytes
+Cache-Control: public, max-age=3600 no-cache="set-cookie"
+X-Dispatcher: 1

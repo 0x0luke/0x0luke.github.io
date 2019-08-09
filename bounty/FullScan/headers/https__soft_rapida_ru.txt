@@ -1,0 +1,10 @@
+200 OK
+Server: nginx
+Date: Thu, 08 Aug 2019 14:24:53 GMT
+Content-Type: text/html; charset=CP-1251
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000 max-age=31536000;
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy-Report-Only: default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report

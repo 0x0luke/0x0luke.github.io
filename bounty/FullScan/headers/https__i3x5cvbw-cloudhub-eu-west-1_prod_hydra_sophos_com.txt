@@ -1,0 +1,12 @@
+500 Server Error
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Length: 92
+X-Content-Type-Options: nosniff
+Expires: 0
+X-Frame-Options: DENY
+X-Application-Context: application:aws,AWS_PROD,prod:8080
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:26:06 GMT
+Content-Type: application/json;charset=utf-8
+X-Xss-Protection: 1; mode=block

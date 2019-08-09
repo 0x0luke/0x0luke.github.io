@@ -1,0 +1,9 @@
+403 Forbidden
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Retry-Count: 0
+X-Envoy-Upstream-Service-Time: 0
+Content-Type: text/html
+Set-Cookie: __cfduid=d024a30059e9e2a577705b129d3c120bc1565255198; expires=Fri, 07-Aug-20 09:06:38 GMT; path=/; domain=.bitdefender.net; HttpOnly
+Cf-Ray: 503055df9cf0362d-MAN
+Date: Thu, 08 Aug 2019 09:06:38 GMT

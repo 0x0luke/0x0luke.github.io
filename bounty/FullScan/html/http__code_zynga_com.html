@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!--><html lang="en-US"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover'>
+        <title>Engineering Blog - Zynga - Zynga</title>
+        <link rel="shortcut icon" href="https://www.zynga.com/storage/2018/09/logo.png" alt="Zynga Logo" type="image/png">
+        <!-- OneTrust start -->
+<script src="https://cdn.cookielaw.org/langswitch/3dd247cf-7ae4-4cb5-b3fa-f710bbec3b2b.js" type="text/javascript" charset="UTF-8"></script>
+<!-- OneTrust End -->
+
+<script type="text/javascript">
+function OptanonWrapper() { 
+    Optanon.BlockGoogleAnalytics('UA-55546448-3', 2);
+}
+</script>
+
+<!-- Google Analytics start -->
+
+<script>
+// Existing GA code…
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-55546448-3", {"cookieDomain":"auto"});ga("send", "pageview");
+</script>
+
+<!-- Google Analytics end -->
+
+<!-- Google Structured Data: customize Knowledge Graph -->
+        <script type="application/ld+json">
+            {
+                "@context" : "http://schema.org",
+                "@type" : "Organization",
+                "name" : "Zynga",
+                "url" : "https://zynga.com",
+                "sameAs" : [
+                    "https://twitter.com/zynga",
+                    "https://www.facebook.com/zynga",
+                    "https://www.youtube.com/user/ZyngaNetwork",
+                    "https://www.linkedin.com/company/zynga",
+                    "https://www.instagram.com/zynga"
+                ],
+                "logo": "https://www.zynga.com/storage/2018/09/logo.png"
+            }
+        </script>
+<!-- Google Structured Data: customize Knowledge Graph end-->        <link type="text/plain" rel="author" href="https://www.zynga.com/core/assets/zynga/humans.txt" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#dc0606" />
+        
+<!-- This site is optimized with the Yoast SEO plugin v11.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.zynga.com/blogs/engineering" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Engineering Blog - Zynga" />
+<meta property="og:url" content="https://www.zynga.com/blogs/engineering" />
+<meta property="og:site_name" content="Zynga" />
+<meta property="article:publisher" content="https://www.facebook.com/zynga" />
+<meta property="og:image" content="https://www.zynga.com/storage/2018/09/zynga-social-share.png" />
+<meta property="og:image:secure_url" content="https://www.zynga.com/storage/2018/09/zynga-social-share.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Engineering Blog - Zynga" />
+<meta name="twitter:site" content="@zynga" />
+<meta name="twitter:image" content="https://origin.zynga.com/storage/2018/09/zynga-social-share.png" />
+<meta name="twitter:creator" content="@zynga" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.zynga.com/#organization","name":"Zynga","url":"https://www.zynga.com/","sameAs":["https://www.facebook.com/zynga","https://www.instagram.com/zynga","https://www.youtube.com/user/ZyngaNetwork","https://twitter.com/zynga"]},{"@type":"WebSite","@id":"https://www.zynga.com/#website","url":"https://www.zynga.com/","name":"Zynga","publisher":{"@id":"https://www.zynga.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.zynga.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.zynga.com/blogs/engineering#webpage","url":"https://www.zynga.com/blogs/engineering","inLanguage":"en-US","name":"Engineering Blog - Zynga","isPartOf":{"@id":"https://www.zynga.com/#website"},"datePublished":"2018-09-13T06:13:49+00:00","dateModified":"2018-11-02T22:12:47+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//www.zynga.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.zynga.com/lib/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://www.zynga.com/core/modules/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='style_css-css'  href='https://www.zynga.com/core/assets/zynga/dist/css/style.css?ver=1559419560' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.zynga.com/core/assets/zynga/dist/js/script.js?ver=1559419561'></script>
+<link rel='https://api.w.org/' href='https://www.zynga.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.zynga.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.zynga.com/lib/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.2" />
+<link rel='shortlink' href='https://www.zynga.com/?p=940' />
+<link rel="alternate" type="application/json+oembed" href="https://www.zynga.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zynga.com%2Fblogs%2Fengineering" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.zynga.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.zynga.com%2Fblogs%2Fengineering&#038;format=xml" />
+    </head>
+    <body class="page-template page-template-engineering page-template-engineering-php page page-id-940 news engineering">
+        
+            <style>
+                
+                
+                
+                 
+
+                
+
+            </style>
+            
+                    
+
+
+        <div id="page_content">
+            <div id="wrapper">
+                <div id="header">
+                    <div id="logo">
+                        <a href="https://www.zynga.com/">
+                            Zynga                        </a>
+                    </div>
+                    <div id="navigation">
+                        <ul id="menu-main-menu" class="menu"><li id="menu-item-143" class="games menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="https://www.zynga.com/games/">Games</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-48"><a href="#">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://www.zynga.com/news/">News</a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="https://www.zynga.com/leadership/">Leadership</a></li>
+	<li id="menu-item-203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-203"><a href="http://investor.zynga.com/">Investors</a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204"><a href="http://www.zyngaads.com/">Advertisers</a></li>
+	<li id="menu-item-944" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-940 current_page_item menu-item-944"><a href="https://www.zynga.com/blogs/engineering" aria-current="page">Engineering Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-1441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1441"><a href="https://www.zynga.com/jobs/careers/">Careers</a>
+<ul class="sub-menu">
+	<li id="menu-item-952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-952"><a href="https://www.zynga.com/jobs/careers/">Job Openings</a></li>
+	<li id="menu-item-951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-951"><a href="https://www.zynga.com/jobs/locations/">Locations</a></li>
+	<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="https://www.zynga.com/jobs/university/">University</a></li>
+</ul>
+</li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-112"><a href="https://www.zynga.com/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://www.zynga.com/support/">Player Support</a></li>
+	<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="http://forums.zynga.com/">Player Forums</a></li>
+</ul>
+</li>
+</ul>                    </div>
+                    <div id="social">
+                        <div class="social">
+                            <a href="https://www.facebook.com/zynga" target="_blank">
+                                <i class="socicon-facebook"></i>
+                            </a>
+                            <a href="https://www.twitter.com/zynga" target="_blank">
+                                <i class="socicon-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zynga" target="_blank">
+                                <i class="socicon-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/ZyngaNetwork" target="_blank">
+                                <i class="socicon-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://www.zynga.com/games/" class="mobile_only games"></a>
+                    <div class="clear"></div>
+                </div>
+                <div id="mobile_menu">
+                    <ul id="menu-mobile-menu" class="menu"><li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://www.zynga.com/games/">Games</a></li>
+<li id="menu-item-167" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-167"><a href="#">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="https://www.zynga.com/news/">News</a></li>
+	<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="https://www.zynga.com/leadership/">Leadership</a></li>
+	<li id="menu-item-202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-202"><a href="http://investor.zynga.com/">Investors</a></li>
+	<li id="menu-item-447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-447"><a href="http://www.zyngaads.com/">Advertisers</a></li>
+	<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-940 current_page_item menu-item-943"><a href="https://www.zynga.com/blogs/engineering" aria-current="page">Engineering Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-1455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1455"><a href="#">Careers</a>
+<ul class="sub-menu">
+	<li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-946"><a href="https://www.zynga.com/jobs/careers/">Listings</a></li>
+	<li id="menu-item-947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="https://www.zynga.com/jobs/locations/">Locations</a></li>
+	<li id="menu-item-948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-948"><a href="https://www.zynga.com/jobs/university/">University</a></li>
+</ul>
+</li>
+<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-129"><a href="https://www.zynga.com/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a href="https://www.zynga.com/support/">Player Support</a></li>
+	<li id="menu-item-171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-171"><a href="http://forums.zynga.com/">Player Forums</a></li>
+</ul>
+</li>
+</ul>                </div>
+                <div id="nav_games">
+                    <div class="container">
+                        <div class="slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="mobile_only">
+                            <ul>
+                                <li>
+                                        <a href="https://www.zynga.com/games/101-okey-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/101-plus-icon175x175.png" alt="101 Okey Plus App Icon">
+                                            </span>
+                                            <span class="name">101 Okey Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/1010">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/1010-icon175x175.jpg" alt="1010! App Icon">
+                                            </span>
+                                            <span class="name">1010!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/1010color/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/1010Color_AppIcon.png" alt="1010! Color App Icon">
+                                            </span>
+                                            <span class="name">1010! Color</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/backgammon-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/tavla-plus-icon175x175.png" alt="Backgammon Plus App Icon">
+                                            </span>
+                                            <span class="name">Backgammon Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/bid-whist-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/bid-whist-plus-icon175x175.png" alt="Bid Whist Plus App Icon">
+                                            </span>
+                                            <span class="name">Bid Whist Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/black-diamond-casino/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/slots-black-diamond.jpg" alt="Black Diamond Casino App Icon">
+                                            </span>
+                                            <span class="name">Black Diamond Casino</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/boggle-with-friends/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/boggle-friends.png" alt="Boggle With Friends App Icon">
+                                            </span>
+                                            <span class="name">Boggle With Friends</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/bounzy/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/icon-3.png" alt="Bounzy! App Icon">
+                                            </span>
+                                            <span class="name">Bounzy!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/canak-okey-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/canak-okey-icon175x175.png" alt="Çanak Okey Plus App Icon">
+                                            </span>
+                                            <span class="name">Çanak Okey Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/chess-with-friends/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/chess_icon.png" alt="Chess with Friends App Icon">
+                                            </span>
+                                            <span class="name">Chess with Friends</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/crazy-cake-swap/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/crazy-cake-swap.png" alt="Crazy Cake Swap App Icon">
+                                            </span>
+                                            <span class="name">Crazy Cake Swap</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/crazy-kitchen/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/crazy-kitchen.png" alt="Crazy Kitchen App Icon">
+                                            </span>
+                                            <span class="name">Crazy Kitchen</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/crosswords-with-friends/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/Crosswords-With-Friends.png" alt="Crosswords With Friends App Icon">
+                                            </span>
+                                            <span class="name">Crosswords With Friends</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/csr-racing-2/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/csr2.png" alt="CSR Racing 2 App Icon">
+                                            </span>
+                                            <span class="name">CSR Racing 2</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/dawn-of-titans/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/icon-4.png" alt="Dawn of Titans App Icon">
+                                            </span>
+                                            <span class="name">Dawn of Titans</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/draw-something/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/draw-something-1.png" alt="Draw Something App Icon">
+                                            </span>
+                                            <span class="name">Draw Something</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/empires-and-puzzles/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/App_Icon_Elena.png" alt="Empires &#038; Puzzles: RPG Quest App Icon">
+                                            </span>
+                                            <span class="name">Empires &#038; Puzzles: RPG Quest</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/empires-and-allies/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/Empires-Allies.png" alt="Empires and Allies App Icon">
+                                            </span>
+                                            <span class="name">Empires and Allies</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/farmville/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/farmville-1.png" alt="FarmVille App Icon">
+                                            </span>
+                                            <span class="name">FarmVille</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/farmville-2/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/farmville2.png" alt="FarmVille 2 App Icon">
+                                            </span>
+                                            <span class="name">FarmVille 2</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/farmville-2-country-escape/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/farmville2-country-escape.png" alt="FarmVille 2: Country Escape App Icon">
+                                            </span>
+                                            <span class="name">FarmVille 2: Country Escape</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/farmville-tropic-escape/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/Original_AppIcon-512-min.png" alt="FarmVille 2: Tropic Escape App Icon">
+                                            </span>
+                                            <span class="name">FarmVille 2: Tropic Escape</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/farmville-harvest-swap/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/farmville-harvest-swap.png" alt="FarmVille: Harvest Swap App Icon">
+                                            </span>
+                                            <span class="name">FarmVille: Harvest Swap</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/game-of-thrones-slots-casino/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/GT_190515_JonSnowOnBlueSilverSLOTS_1536x1536-min.png" alt="Game of Thrones Slots Casino App Icon">
+                                            </span>
+                                            <span class="name">Game of Thrones Slots Casino</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/gin-rummy-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/GinRummyPlus1024x1024.png" alt="Gin Rummy Plus App Icon">
+                                            </span>
+                                            <span class="name">Gin Rummy Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/hit-it-rich/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/hit-it-rich.png" alt="Hit It Rich! App Icon">
+                                            </span>
+                                            <span class="name">Hit It Rich!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/merge-dragons/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/MergeDragons_AppIcon-min.png" alt="Merge Dragons! App Icon">
+                                            </span>
+                                            <span class="name">Merge Dragons!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/merge-farm/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/merge-farm-icon175x175.jpg" alt="Merge Farm! App Icon">
+                                            </span>
+                                            <span class="name">Merge Farm!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/merge-gems/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/merge-gems-icon175x175.jpg" alt="Merge Gems! App Icon">
+                                            </span>
+                                            <span class="name">Merge Gems!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/merge-town/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/merge-town-icon175x175.jpg" alt="Merge Town! App Icon">
+                                            </span>
+                                            <span class="name">Merge Town!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/merged/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/merged-icon175x175.jpg" alt="Merged! App Icon">
+                                            </span>
+                                            <span class="name">Merged!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/okey-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/okey-plus-icon175x175.png" alt="Okey Plus App Icon">
+                                            </span>
+                                            <span class="name">Okey Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/paint-tower/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/paint-tower-icon175x175.jpg" alt="Paint Tower! App Icon">
+                                            </span>
+                                            <span class="name">Paint Tower!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/six/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/six-icon175x175.jpg" alt="Six! App Icon">
+                                            </span>
+                                            <span class="name">Six!</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/solitaire/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/solitaire.png" alt="Solitaire App Icon">
+                                            </span>
+                                            <span class="name">Solitaire</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/spades-plus/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/SpadesPlus1024x1024.png" alt="Spades Plus App Icon">
+                                            </span>
+                                            <span class="name">Spades Plus</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/tiny-royale/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2019/05/app-icon.jpg" alt="Tiny Royale™ App Icon">
+                                            </span>
+                                            <span class="name">Tiny Royale™</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/willy-wonka-slots/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/wonka-slots.png" alt="Willy Wonka Slots App Icon">
+                                            </span>
+                                            <span class="name">Willy Wonka Slots</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/wizard-of-oz-magic-match/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/Wizard-of-Oz-Magic-Match.png" alt="Wizard of Oz Magic Match App Icon">
+                                            </span>
+                                            <span class="name">Wizard of Oz Magic Match</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/wizard-of-oz-slots/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/Wizard-of-Oz-Slots.png" alt="Wizard of Oz Slots App Icon">
+                                            </span>
+                                            <span class="name">Wizard of Oz Slots</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/wonkas-world-of-candy">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/wonka-world-of-candy-app-icon.png" alt="Wonka&#8217;s World of Candy App Icon">
+                                            </span>
+                                            <span class="name">Wonka&#8217;s World of Candy</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/words-with-friends-2/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/icon-1.png" alt="Words with Friends 2 App Icon">
+                                            </span>
+                                            <span class="name">Words with Friends 2</span>
+                                        </a>
+                                    </li><li>
+                                        <a href="https://www.zynga.com/games/zynga-poker/">
+                                            <span class="thumb">
+                                                <img src="https://www.zynga.com/storage/2018/09/icon.png" alt="Zynga Poker App Icon">
+                                            </span>
+                                            <span class="name">Zynga Poker</span>
+                                        </a>
+                                    </li>                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+<div id="content">
+    <div class="section section1">
+        <img src="https://www.zynga.com/storage/2018/09/engineering-header-bg.jpg" alt="Enginering Hero Image" class="slide-img">
+        <div class="desc animate" data-animation="fade-in">
+            <h1>Engineering Blog</h1>
+            <div class="desc_text">Zynga is a social game company and our mission is to connect the world through games — this has become quite broadly known. Perhaps less known is that Zynga is hugely focused on technology.</div>
+        </div>
+    </div>
+    <div class="section section2">
+        <div class="container">
+            <div class="row">
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">September 16, 2018</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/engineering/why-how-words-with-friends-is-adopting-react-native/">Why &#038; How Words With Friends Is Adopting React Native</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Why &#038; How Words With Friends Is Adopting React Native<br />
+By John Bacon, Brian Liang, and Peter Turner on September 18, 2018<br />
+App and game developers who work on frequently updated products are often tasked with keeping up&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/engineering/why-how-words-with-friends-is-adopting-react-native/" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">September 6, 2018</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/words-friends-2-how-we-built-lightning-round">Words With Friends 2 &#038; How We Built Lightning Round</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>In 2018, we’ll be celebrating our 9 year anniversary since launching Words With Friends on mobile&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/words-friends-2-how-we-built-lightning-round" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">February 20, 2018</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/tracking-down-random-nulls-php-couchbase-extension">Tracking down random nulls from PHP Couchbase extension</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Parikshit Agnihotry and Leo Nishio Migrating primary data stores with no downtime, without losing data can be tricky and a lot could go wrong. One of the games at Zynga, recently completed such a project to migrate our primary data store to Couchbase from Membase, an older version of Couchbase server which is Memcached with&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/tracking-down-random-nulls-php-couchbase-extension" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">July 27, 2017</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/live-games-have-evolving-performance">Live Games Have Evolving Performance</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Andrew Heidgerken Running a live social game can be a lot like playing a game of Jenga; the more moves you make the higher the chance the whole thing may crash down. Earlier this year, noting an increase in user complaints, we realized that the web game I work was threatening to collapse. Years ago,&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/live-games-have-evolving-performance" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">July 5, 2017</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/zynga-geo-proxy-reducing-mobile-game-latency">Zynga Geo Proxy: Reducing Mobile Game Latency</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Sergey Skachkov and Ajinkya Apte (AWS Global Infrastructure) Purpose Zynga games have a wide global audience. Our main servers being in Oregon USA, the latency i.e. time for user devices to hit Zynga servers and back, especially for our global users is super high. Hence our aim was to reduce the latency for our end&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/zynga-geo-proxy-reducing-mobile-game-latency" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">August 29, 2014</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/zyngas-first-foray-webgl-and-how-it-runs-ie10-2">Zynga’s first foray into WebGL, and how it runs on IE10</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>James Gregory Zynga recently released the web version of Duck Dynasty Slots , a game that started life as a mobile-only game. By leveraging Mozilla’s Emscripten project, we were able to port it to the web and deliver an experience just as compelling as the mobile version, all from one codebase for iOS, Android and&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/zyngas-first-foray-webgl-and-how-it-runs-ie10-2" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">February 14, 2014</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/saigon-zyngas-central-nagios-configuration-service-2">Saigon – Zynga’s Central Nagios Configuration Service</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Mary Sharp Managing a large infrastructure can be challenging — to say the least — and monitoring that infrastructure can be even tougher. At Zynga we have approached this problem by providing our teams with a central micro-system which allows them leverage Nagios and to use standards without having to even know them. Saigon allows&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/saigon-zyngas-central-nagios-configuration-service-2" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">January 18, 2014</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/three-nodenpm-modules-grunt-dependency-resolver-grunt-vendor-permutator-grunt-2">Three Node/NPM Modules (grunt-dependency-resolver, grunt-vendor-permutator, grunt-instant-play)</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Paul Bakaus Over the last few months, my team and I at Zynga have been working hard on a more granular, JS-based alternative to Jasy . Without further ado, meet the Instant Play plugin collection for Grunt: Grunt Dependency Resolver ( npm , github ) Grunt Cruncher ( npm , github ) Grunt Vendor Mutator&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/three-nodenpm-modules-grunt-dependency-resolver-grunt-vendor-permutator-grunt-2" class="read_more">Read More</a>
+                    </div>
+                </div>
+                                <div class="col s4">
+                    <div class="post">
+                        <div class="date">August 26, 2013</div>
+                        <div class="title">
+                            <h2><a href="https://www.zynga.com/blogs/engineering/zbase-high-performance-elastic-distributed-key-value-store-2">zBase – A high-performance, elastic, distributed key-value store</a></h2>
+                        </div>
+                        <div class="excerpt">
+                            <p>Manik Taneja zBase is a distributed key-value store that is the storage backbone for almost all Zynga games.  It supports the memcached protocol on the front-end and is designed for persisting data to disk along with in-memory data replication for high availability.  zBase was forked from membase in early Jan 2012 and, since then, the&#8230;</p>
+                        </div>
+                        <a href="https://www.zynga.com/blogs/engineering/zbase-high-performance-elastic-distributed-key-value-store-2" class="read_more">Read More</a>
+                    </div>
+                </div>
+                            </div>
+            <div class="clear"></div>
+            <div class='wp-pagenavi' role='navigation'>
+<span class='pages'>Page 1 of 4</span><span aria-current='page' class='current'>1</span><a class="page larger" title="Page 2" href="https://www.zynga.com/blogs/engineering/page/2/">2</a><a class="page larger" title="Page 3" href="https://www.zynga.com/blogs/engineering/page/3/">3</a><a class="page larger" title="Page 4" href="https://www.zynga.com/blogs/engineering/page/4/">4</a><a class="nextpostslink" rel="next" href="https://www.zynga.com/blogs/engineering/page/2/">»</a>
+</div>                    </div>
+    </div>
+</div>
+
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="top">
+                Zynga is a leading developer of the world's most popular social games that are played by millions of people around the world each day.
+            </div>
+            <div class="footer">
+                <div class="menu_items">
+                    <ul id="menu-footer-menu" class="footer-menu"><li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="https://www.zynga.com/support/">Support</a></li>
+<li id="menu-item-989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989"><a href="https://www.zynga.com/about/contact-us">Contact</a></li>
+<li id="menu-item-358" class="menu-item menu-item-type-post_type menu-item-object-privacy-policy menu-item-358"><a href="https://www.zynga.com/privacy/policy">Privacy</a></li>
+<li id="menu-item-1170" class="menu-item menu-item-type-post_type menu-item-object-legal menu-item-1170"><a href="https://www.zynga.com/legal/terms-of-service">Terms of Service</a></li>
+<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-cookies menu-item-360"><a href="https://www.zynga.com/privacy/about-cookies">Cookies</a></li>
+<li id="menu-item-1171" class="menu-item menu-item-type-post_type menu-item-object-privacy-policy menu-item-1171"><a href="https://www.zynga.com/security/">Security</a></li>
+</ul>                </div>
+                <div class="follow">
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/zynga" target="_blank"><i class="socicon-facebook"></i></a>
+                        <a href="https://www.twitter.com/zynga" target="_blank"><i class="socicon-twitter"></i></a>
+                        <a href="https://www.instagram.com/zynga" target="_blank"><i class="socicon-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/ZyngaNetwork" target="_blank"><i class="socicon-youtube"></i></a>
+                    </div>
+                    <div class="logos">
+                        <a href="http://www.naturalmotion.com/" target="_blank">
+                            <img src="https://www.zynga.com/core/assets/zynga/assets/images/naturalmotion.png" alt="Natural Motion Logo">
+                        </a>
+                        <img src="https://www.zynga.com/core/assets/zynga/assets/images/bbb.png" alt="Better Business Bureau Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            ©2019 Zynga Inc. All rights reserved
+        </div>
+    </div>
+</div>
+
+<a href="javascript:void(0)" id="mobile_icon" class="mobile_only"><span></span></a>
+
+<script>
+jQuery(".cookies-link").on("click", function(){
+   Optanon.ToggleInfoDisplay();
+});
+</script>
+
+
+
+
+
+<script type='text/javascript' src='https://www.zynga.com/lib/js/wp-embed.min.js?ver=5.2.2'></script>
+</body>
+</html>

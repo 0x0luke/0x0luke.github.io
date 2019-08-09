@@ -1,0 +1,27 @@
+200 OK
+X-Content-Type-Options: nosniff
+X-Request-Id: 8d31bd87-0785-4ab6-bcf6-0b11524a7544
+X-Shardid: 96
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Date: Thu, 08 Aug 2019 09:24:21 GMT
+Etag: cacheable:6d2c3f3b44c23d1ecce6a37dd744622a
+X-Download-Options: noopen
+X-Shopid: 2626023
+Content-Language: en
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors *; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8d31bd87-0785-4ab6-bcf6-0b11524a7544
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=d0ada52da4c18db12c8df3b3113a4969e1565256261; expires=Fri, 07-Aug-20 09:24:21 GMT; path=/; domain=.duckduckgo.merchmadeeasy.com; HttpOnly _shopify_y=12655e73-ddc6-4df5-b846-62b50b06b033; path=/; expires=Sat, 07 Aug 2021 21:02:45 -0000 _orig_referrer=https%3A%2F%2Fshop.duckduckgo.com%2F; Expires=Thu, 22-Aug-19 09:24:21 GMT; Path=/; HttpOnly _landing_page=%2F; Expires=Thu, 22-Aug-19 09:24:21 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 09:24:21 -0000; secure; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 09:24:21 -0000; HttpOnly
+X-Sorting-Hat-Podid: 96
+X-Sorting-Hat-Shopid: 2626023
+X-Cache: hit, server
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=7889238
+X-Alternate-Cache-Key: cacheable:1d17958dc5af280f1337579257ab65e5
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=8d31bd87-0785-4ab6-bcf6-0b11524a7544
+Cf-Ray: 50306fd12c82361b-MAN

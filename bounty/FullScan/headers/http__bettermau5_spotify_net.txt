@@ -1,0 +1,13 @@
+200 OK
+Cache-Control: private, max-age=0
+X-Cloud-Trace-Context: db094ca858f3418b2b35d15dc41092de
+Server: Google Frontend
+X-Frame-Options: DENY
+Content-Type: text/html; charset=utf-8
+Etag: W/"6a4-T1d4MAalO3R9E/lp6bn7tytZB1o"
+Date: Wed, 07 Aug 2019 04:20:40 GMT
+Retry-Count: 0
+X-Powered-By: Express
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Security-Policy: object-src 'none'; script-src 'nonce-16260da9-0419-4527-b6e8-61af8f85a97a' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval'; base-uri 'self'; report-uri https://csp.withgoogle.com/csp/pergamon/0.1.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains

@@ -1,0 +1,19 @@
+404 Not Found
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7a8f6c90-3e99-47a2-8c22-bf07d5d0afa0
+Server: cloudflare
+X-Sorting-Hat-Podid: -1
+X-Request-Id: 7a8f6c90-3e99-47a2-8c22-bf07d5d0afa0
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Dc: gcp-us-central1,gcp-us-central1
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: __cfduid=dde016dba139506e179c7493568c573091565178312; expires=Thu, 06-Aug-20 11:45:12 GMT; path=/; domain=.ahmedstore.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7a8f6c90-3e99-47a2-8c22-bf07d5d0afa0
+X-Content-Type-Options: nosniff
+Date: Wed, 07 Aug 2019 11:45:12 GMT
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Cf-Ray: 502900c4f89f3657-MAN

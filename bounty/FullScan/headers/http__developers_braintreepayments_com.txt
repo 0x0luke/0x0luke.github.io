@@ -1,0 +1,17 @@
+200 OK
+X-Powered-By: Express
+X-Xss-Protection: 1
+Strict-Transport-Security: max-age=31536000 max-age=63072000; includeSubdomains; preload
+X-Frame-Options: DENY
+X-Cache: Miss from cloudfront
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Server: nginx
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 07:05:19 GMT
+Via: 1.1 f960e36cae6548ee1a3142e3d61bcba8.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR50-C1
+X-Amz-Cf-Id: pbkwd-P6fmLAVuIwWMHMn4-crZfzXIi-_1OypRlMAHtSoXOnGEn7nA==
+Content-Security-Policy: frame-ancestors "self"
+Set-Cookie: sdkPreferences=j%3A%7B%22client%22%3A%22javascript%22%2C%22server%22%3A%22ruby%22%2C%22versions%22%3A%7B%22android%22%3A%223%22%2C%22ios%22%3A%224%22%2C%22javascript%22%3A%223%22%7D%2C%22languages%22%3A%7B%22java%22%3A%22java%22%2C%22dotnet%22%3A%22csharp%22%2C%22node%22%3A%22javascript%22%2C%22php%22%3A%22php%22%2C%22python%22%3A%22python%22%2C%22ruby%22%3A%22ruby%22%2C%22android%22%3A%22java%22%2C%22ios%22%3A%22objectivec%22%2C%22javascript%22%3A%22callback%22%7D%2C%22preventAutoScroll%22%3Afalse%7D; Max-Age=31536000; Path=/; Expires=Fri, 07 Aug 2020 07:05:18 GMT; Secure

@@ -1,0 +1,19 @@
+200 OK
+Date: Wed, 07 Aug 2019 07:45:25 GMT
+Content-Security-Policy: default-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self'; script-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' 'unsafe-inline' 'unsafe-eval' data: https://magicleap.com/assets/js/ https://www.google-analytics.com https://www.googletagmanager.com https://cdn.amplitude.com https://api.amplitude.com http://tagmanager.google.com https://connect.facebook.net https://storage.googleapis.com/workbox-cdn/releases/ https://cc.cdn.civiccomputing.com/ http://static.ads-twitter.com/ https://analytics.twitter.com/ https://js.hs-scripts.com/ http://js.hs-analytics.net/analytics/; style-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' 'unsafe-inline' https://tagmanager.google.com https://fonts.googleapis.com; font-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' https://cdnjs.cloudflare.com https://magicleap.com/assets/fonts/ https://fonts.gstatic.com; img-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' data: https://www.google-analytics.com https://images.contentful.com https://images.ctfassets.net https://ml-cms.imgix.net https://ml-cdn.imgix.net https://*.gstatic.com https://stats.g.doubleclick.net https://www.facebook.com http://t.co/ https://img.youtube.com https://ml-identity-avatars-production.s3.amazonaws.com https://avatars.magicleap.com https://track.hubspot.com/; media-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' https://videos.ctfassets.net; child-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self'; frame-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' https://www.youtube.com https://www.youtube-nocookie.com https://8777618.fls.doubleclick.net; connect-src https://static-1.www.magicleap.com/ https://static-2.www.magicleap.com/ 'self' https://static-1.www.magicleap.com/ https://magicleap.com/assets/ https://cdn.contentful.com https://maps.googleapis.com https://sentry.io/api/ https://forms.hubspot.com/ https://api.hubapi.com/ https://cdn.amplitude.com https://api.amplitude.com https://www.google-analytics.com https://tagmanager.google.com https://ml-cms.imgix.net https://apikeys.civiccomputing.com/ https://api.magicleap.com/identity/; frame-ancestors 'self'
+Age: 12
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Id: HlUuWvRMHnICR0UkPggdH5hXsbEpDt7LmSw4UkDUgS9JAYJtogICpQ==
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Xss-Protection: 1; mode=block
+Via: 1.1 1a4e563a6e42bff0fa38a09a453befac.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR3-C2
+Referrer-Policy: origin-when-cross-origin
+X-Download-Options: noopen
+X-Frame-Options: DENY
+X-Powered-By: Made with Love in Florida
+Cache-Control: public, max-age=300
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding

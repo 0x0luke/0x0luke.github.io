@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>WEBFLEET Tachograph Manager</title>
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" media="screen" />
+  <script src="/NoLogin/jquery-2.1.4.js" type="text/javascript"></script>
+  <script src="/NoLogin/jquery-ui.js" type="text/javascript"></script>
+  <script src="/NoLogin/sugar.js" type="text/javascript"></script>
+  <script type="text/javascript">Sugar.extend();</script>
+  <link href="/NoLogin/font.css" rel="stylesheet" type="text/css" />
+  <link href="/NoLogin/public.css" rel="stylesheet" type="text/css" />
+  <script src="/NoLogin/public.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    dw.cultureCode = 'de';
+    dw.flavour = 'tomtom';
+    if (dw.api === undefined)
+      dw.api = {};
+    dw.api.basePath = '/NoLogin/api';
+    dw.basePath = '';
+    dw.Language = 'de';
+    dw.Theme = "tomtom";
+    tw.addTexts({
+'Invalid IBAN format. Please make sure that the IBAN you entered constists of 14 to 34 characters and contains no spaces or hyphens.': 'Invalid IBAN format. Please make sure that the IBAN you entered constists of 14 to 34 characters and contains no spaces or hyphens.',
+'E-mail address doesn\'t look like info@example.com': 'E-Mail Adresse hat nicht das Format info@example.com',
+'E-mail address should not consist of more than 100 characters': 'E-mail address should not consist of more than 100 characters',
+'Please check the entered Tax ID number. The format doesn\'t comply with the selected country.': 'Please check the entered Tax ID number. The format doesn\'t comply with the selected country.',
+'Please check the entered Tax ID number.': 'Please check the entered Tax ID number.',
+'Telephone number must be at least 6 characters long': 'Telefonnummer muss mindestens 6 Zeichen lang sein',
+'Telephone number should not consist of more than 20 characters': ' Telefonnummer darf nicht mehr als  20 Zeichen lang sein',
+'Telephone number is not valid: it must start with "0" or "+", may only contain digits and the special characters "-", "/", "(" and ")".': 'Telefonnummer ist nicht gültig: sie muss mit "0" oder "+" beginnen, darf nur Ziffern und die Sonderzeichen "-", "/", "(" und ")" enthalten.',
+'Brackets don\'t match: always use the brackets "(" and ")" in pairs.': 'Brackets don\'t match: always use the brackets "(" and ")" in pairs.',
+'Hint': 'Hinweis',
+'Login': 'Anmeldung',
+'Sign in': 'Einloggen',
+'Forgot password': 'Passwort vergessen',
+'New customer': 'Neukunde',
+'Register now': 'Jetzt neu registrieren',
+'Please insert an account name.': 'Bitte geben Sie einen Accountnamen ein.',
+'Please insert a password.': 'Bitte geben Sie ein Passwort ein.',
+'Forgot your password? Please enter your contact data in the form, we will send you a new activation link. In case you forgot your company ID, please contact our costumer support via +49 3641 22778 500.': 'Sie haben Ihr Passwort vergessen? Bitte tragen Sie Ihre Kontaktdaten in das Formular ein, wir senden Ihnen dann einen neuen Aktivierungslink zu. Sollten Sie Ihre Firmenkennung vergessen haben, wenden Sie sich bitte an unseren Support unter der Nummer +49 3641 22778 500.',
+'Send': 'Senden',
+'Cancel': 'Abbrechen',
+'Register company': 'Firma registrieren',
+'Until now, the different logins (administrator, user) were arranged in different boxes on the login site. We have reduced these boxes to one single entry box, where all users can log in. Please enter your company ID resp. code into the box “account name”. The box “user” should contain the user name (in case of administrator login, the box remains empty), and in the last field you enter your password.': 'Unser neues Login:<br/><br/>Accountname = Firmenkennung/Firmenkürzel<br/>Benutzer = Login (entfällt für Administratoren)<br/><br/>Um Ihnen die Anmeldung zu vereinfachen, haben wir die Anzahl der Logins (TW5: Administrator und Benutzer) auf ein Feld reduziert, so dass sich alle Nutzer hier einloggen können.<br/><br/>Ihre Firmenkennung bzw. Firmenkürzel können sie jetzt im Feld „Accountname“ eingeben.<br/>Bitte tragen Sie bei „Benutzer“ Ihren Nutzernamen (entfällt bei Adminlogin) und in das untere Feld Ihr Passwort ein.<br/><br/>Falscher Accountname oder falsches Passwort:<br/>Bei Passwörtern der Form PASS-WORT-1234-5678 bitten wir Sie die Eingabe ohne „-“ vorzunehmen (in diesem Fall: PASSWORT12345678).<br/><br/>Sollten dennoch Schwierigkeiten auftreten, melden sie sich gern bei uns unter: +49 3641 22778 500',
+'Account name': 'Accountname',
+'Close': 'Schließen',
+'The design and the contents of these pages are protected by copyright<br/>All rights reserved.': 'Die Gestaltung sowie alle Inhalte dieser Seiten sind urheberrechtlich geschützt.<br/>Alle Rechte vorbehalten.',
+'Registered Office is Jena<br/> Register Court: Jena<br/> Registration Number: HRB 512470<br/> VAT number according to § 27 a<br/> Turnover Tax Law: DE237198855': 'Registergericht: Jena | HRB 512470<br/>USt.-IdNr. gemäß § 27 Umsatzsteuergesetz: DE237198855<br/>Sitz der Gesellschaft ist Jena',
+'Managing Director: Thomas Becker': 'Geschäftsführer: Thomas Becker',
+'Liability note:': 'Liability note:',
+'Impressum': 'Impressum',
+'Despite careful control of the contents we do not accept any liability for the contents of external links.<br/> The operators of these linked pages are exclusively liable for their contents.': 'Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.<br/>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.',
+'This declaration shall apply for all external links shown in this Internet representation<br/>and for all the contents of the pages to which these links guide you.': 'Diese Erklärung gilt für alle in dieser Internetpräsentation angezeigten externen Links<br/>sowie für alle Inhalte der Seiten, zu denen diese führen.',
+'General terms and conditions': 'AGB',
+'Required fields are marked with (*)': 'Pflichtfelder sind mit (*) gekennzeichnet.',
+'Basic data': 'Basisdaten',
+'Name of the company': 'Name des Unternehmens',
+'Company ID': 'Firmenkürzel',
+'Tax ID number': 'UStID',
+'Tax number': 'Steuernummer',
+'E-mail': 'E-Mail',
+'Telephone number': 'Telefon',
+'Main address': 'Hauptanschrift',
+'Additional information': 'Adresszusatz',
+'Street': 'Straße',
+'House number': 'Hausnummer',
+'Postal code': 'PLZ',
+'City': 'Ort',
+'Country': 'Land',
+'Please choose': 'Bitte auswählen',
+'Select none': 'Nichts auswählen',
+'Contact': 'Kontakt',
+'Personal title': 'Anrede',
+'Mr.': 'Herr',
+'Mrs.': 'Frau',
+'First name': 'Vorname',
+'Last name': 'Name',
+'Mobile': 'Mobil',
+'Fax number': 'Fax',
+'IBAN': 'IBAN',
+'BIC': 'BIC',
+'Account information': 'Kontoinformationen',
+'Bank': 'Kreditinstitut',
+'Invoice shall be sent by regular mail (additional 5 EUR handling fee).': 'Die Rechnung soll per Post zugesandt werden (zzgl. 5 Euro netto Bearbeitungskosten).',
+'Others': 'Sonstige',
+'Service code': 'Dienstleisterkennung',
+'I agree the privacy agreement': 'Ich stimme den <a href="%1" target="_blank">Datenschutzvereinbarungen</a> zu',
+'Reset': 'Zurücksetzen',
+'Save': 'Speichern',
+'User': 'Benutzer',
+'About TachoWeb': 'Impressum',
+'I agree with the general terms and conditions': 'Ich stimme den <a href="%1" target="_blank">AGBs</a> zu',
+'The registration link will be sent to this e-mail address.': 'An diese E-Mail-Adresse wird der Registrierungslink versandt.',
+'Welcome to DAKO-TachoWeb, the powerful assistant for your smart transport management. To register, please enter your data in the form below and press "Register" to confirm your entry.': 'Herzlich Willkommen im DAKO – TachoWeb, dem starken Helfer für Ihr intelligentes Transportmanagement. <br> <br> Zur Registrierung tragen Sie bitte Ihre Daten in das unten abgebildete Formular ein. Bestätigen Sie Ihre Eingabe, indem Sie den Button „Registrieren“ klicken.',
+'Thank you for your registration! You will soon receive an E-Mail with your contract documents and an activation link. Please confirm to complete your registration. You will then have access to all features and services included in the basic package.': 'Vielen Dank für Ihre Registrierung! <br> <br> In Kürze erhalten Sie eine E-Mail mit den Vertragsunterlagen und einem Aktivierungslink. <br> Bitte bestätigen Sie diesen, um Ihre Anmeldung abzuschließen. Danach haben Sie Zugriff auf alle Funktionen und Services des Basic-Pakets.',
+'An error has occured. Please contact our costumer support: +49 3641 22778 500.': 'Es ist ein Fehler aufgetreten. Bitte wenden Sie sich an unseren Support: +49 3641 22778 500.',
+'Please fill in required fields': 'Bitte füllen Sie alle Pflichtfelder aus',
+'Error messages': 'Fehlermeldungen',
+'Driver card': 'Fahrerkarte',
+
+    });
+    $(function () {
+      dw.msg = new MsgManager(document.getElementById('MessagesContainer'));
+    });
+  </script>
+  
+  <script src="/NoLogin/login.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var ErrorMessage;
+    var SuccessMessage;
+    var countries, providers;
+    $(function () {
+      if (!navigator.cookieEnabled) {
+        dw.msg.clearAll().showError('Cookies_Are_Required_For_Tachoweb');
+      }
+       countries = [
+        { value: "BE", label: "Belgien" },
+                                                            
+        { value: "BG", label: "Bulgarien" },
+                                                            
+        { value: "DK", label: "Dänemark" },
+                                                            
+        { value: "DE", label: "Deutschland" },
+                                                            
+        { value: "EE", label: "Estland" },
+                                                            
+        { value: "FI", label: "Finnland" },
+                                                            
+        { value: "FR", label: "Frankreich" },
+                                                            
+        { value: "GR", label: "Griechenland" },
+                                                            
+        { value: "GB", label: "Vereinigtes Königreich Großbritannien und Nordirland" },
+                                                            
+        { value: "IE", label: "Irland" },
+                                                            
+        { value: "IT", label: "Italien" },
+                                                            
+        { value: "HR", label: "Kroatien" },
+                                                            
+        { value: "LV", label: "Lettland" },
+                                                            
+        { value: "LI", label: "Liechtenstein" },
+                                                            
+        { value: "LT", label: "Litauen" },
+                                                            
+        { value: "LU", label: "Luxemburg" },
+                                                            
+        { value: "MT", label: "Malta" },
+                                                            
+        { value: "MC", label: "Monaco" },
+                                                            
+        { value: "NL", label: "Niederlande" },
+                                                            
+        { value: "NO", label: "Norwegen" },
+                                                            
+        { value: "AT", label: "Österreich" },
+                                                            
+        { value: "PL", label: "Polen" },
+                                                            
+        { value: "PT", label: "Portugal" },
+                                                            
+        { value: "RO", label: "Rumänien" },
+                                                            
+        { value: "SE", label: "Schweden" },
+                                                            
+        { value: "CH", label: "Schweiz" },
+                                                            
+        { value: "SK", label: "Slowakei" },
+                                                            
+        { value: "SI", label: "Slowenien" },
+                                                            
+        { value: "ES", label: "Spanien" },
+                                                            
+        { value: "CZ", label: "Tschechische Republik" },
+                                                            
+        { value: "HU", label: "Ungarn" },
+                                                            
+      ];
+      providers = [
+        { value: "100", label: "100" },
+                                                            
+        { value: "100-10", label: "100-10" },
+                                                            
+        { value: "100-11", label: "100-11" },
+                                                            
+        { value: "100-200", label: "100-200" },
+                                                            
+        { value: "100-201", label: "100-201" },
+                                                            
+        { value: "100-202", label: "100-202" },
+                                                            
+        { value: "100-203", label: "100-203" },
+                                                            
+        { value: "100-204", label: "100-204" },
+                                                            
+        { value: "100-205", label: "100-205" },
+                                                            
+        { value: "100-208", label: "100-208" },
+                                                            
+        { value: "100-209", label: "100-209" },
+                                                            
+        { value: "100-210", label: "100-210" },
+                                                            
+        { value: "100-211", label: "100-211" },
+                                                            
+        { value: "100-212", label: "100-212" },
+                                                            
+        { value: "100-213", label: "100-213" },
+                                                            
+        { value: "100-250", label: "100-250" },
+                                                            
+        { value: "100-26", label: "100-26" },
+                                                            
+        { value: "111", label: "111" },
+                                                            
+        { value: "112", label: "112" },
+                                                            
+        { value: "131", label: "131" },
+                                                            
+        { value: "131-1", label: "131-1" },
+                                                            
+        { value: "131-2", label: "131-2" },
+                                                            
+        { value: "131-3", label: "131-3" },
+                                                            
+        { value: "132", label: "132" },
+                                                            
+        { value: "134", label: "134" },
+                                                            
+        { value: "135", label: "135" },
+                                                            
+        { value: "135-1", label: "135-1" },
+                                                            
+        { value: "135-2", label: "135-2" },
+                                                            
+        { value: "135-3", label: "135-3" },
+                                                            
+        { value: "138", label: "138" },
+                                                            
+        { value: "138-1", label: "138-1" },
+                                                            
+        { value: "138-10", label: "138-10" },
+                                                            
+        { value: "138-11", label: "138-11" },
+                                                            
+        { value: "138-12", label: "138-12" },
+                                                            
+        { value: "138-13", label: "138-13" },
+                                                            
+        { value: "138-2", label: "138-2" },
+                                                            
+        { value: "138-3", label: "138-3" },
+                                                            
+        { value: "138-4", label: "138-4" },
+                                                            
+        { value: "138-5", label: "138-5" },
+                                                            
+        { value: "138-6", label: "138-6" },
+                                                            
+        { value: "138-7", label: "138-7" },
+                                                            
+        { value: "138-8", label: "138-8" },
+                                                            
+        { value: "138-9", label: "138-9" },
+                                                            
+        { value: "139", label: "139" },
+                                                            
+        { value: "140", label: "140" },
+                                                            
+        { value: "140-141", label: "140-141" },
+                                                            
+        { value: "142", label: "142" },
+                                                            
+        { value: "142-1", label: "142-1" },
+                                                            
+        { value: "142-10", label: "142-10" },
+                                                            
+        { value: "142-11", label: "142-11" },
+                                                            
+        { value: "142-12", label: "142-12" },
+                                                            
+        { value: "142-2", label: "142-2" },
+                                                            
+        { value: "142-3", label: "142-3" },
+                                                            
+        { value: "142-4", label: "142-4" },
+                                                            
+        { value: "142-5", label: "142-5" },
+                                                            
+        { value: "142-6", label: "142-6" },
+                                                            
+        { value: "142-7", label: "142-7" },
+                                                            
+        { value: "142-8", label: "142-8" },
+                                                            
+        { value: "142-9", label: "142-9" },
+                                                            
+        { value: "144", label: "144" },
+                                                            
+        { value: "145", label: "145" },
+                                                            
+        { value: "146", label: "146" },
+                                                            
+        { value: "147", label: "147" },
+                                                            
+        { value: "148", label: "148" },
+                                                            
+        { value: "149", label: "149" },
+                                                            
+        { value: "150", label: "150" },
+                                                            
+        { value: "150-49-576", label: "150-49-576" },
+                                                            
+        { value: "152", label: "152" },
+                                                            
+        { value: "153", label: "153" },
+                                                            
+        { value: "153-1", label: "153-1" },
+                                                            
+        { value: "153-2", label: "153-2" },
+                                                            
+        { value: "153-3", label: "153-3" },
+                                                            
+        { value: "153-4", label: "153-4" },
+                                                            
+        { value: "154", label: "154" },
+                                                            
+        { value: "154-183", label: "154-183" },
+                                                            
+        { value: "154-184", label: "154-184" },
+                                                            
+        { value: "155-200", label: "155-200" },
+                                                            
+        { value: "155-201", label: "155-201" },
+                                                            
+        { value: "155-202", label: "155-202" },
+                                                            
+        { value: "155-203", label: "155-203" },
+                                                            
+        { value: "155-204", label: "155-204" },
+                                                            
+        { value: "155-205", label: "155-205" },
+                                                            
+        { value: "155-206", label: "155-206" },
+                                                            
+        { value: "155-207", label: "155-207" },
+                                                            
+        { value: "155-208", label: "155-208" },
+                                                            
+        { value: "155-209", label: "155-209" },
+                                                            
+        { value: "155-210", label: "155-210" },
+                                                            
+        { value: "155-211", label: "155-211" },
+                                                            
+        { value: "155-212", label: "155-212" },
+                                                            
+        { value: "157", label: "157" },
+                                                            
+        { value: "157-1", label: "157-1" },
+                                                            
+        { value: "158", label: "158" },
+                                                            
+        { value: "158-1", label: "158-1" },
+                                                            
+        { value: "158-2", label: "158-2" },
+                                                            
+        { value: "158-3", label: "158-3" },
+                                                            
+        { value: "158-4", label: "158-4" },
+                                                            
+        { value: "158-5", label: "158-5" },
+                                                            
+        { value: "159", label: "159" },
+                                                            
+        { value: "160-1", label: "160-1" },
+                                                            
+        { value: "160-2", label: "160-2" },
+                                                            
+        { value: "161", label: "161" },
+                                                            
+        { value: "161-1", label: "161-1" },
+                                                            
+        { value: "161-10", label: "161-10" },
+                                                            
+        { value: "161-11", label: "161-11" },
+                                                            
+        { value: "161-111", label: "161-111" },
+                                                            
+        { value: "161-12", label: "161-12" },
+                                                            
+        { value: "161-13", label: "161-13" },
+                                                            
+        { value: "161-14", label: "161-14" },
+                                                            
+        { value: "161-15", label: "161-15" },
+                                                            
+        { value: "161-16", label: "161-16" },
+                                                            
+        { value: "161-163", label: "161-163" },
+                                                            
+        { value: "161-164", label: "161-164" },
+                                                            
+        { value: "161-17", label: "161-17" },
+                                                            
+        { value: "161-170", label: "161-170" },
+                                                            
+        { value: "161-18", label: "161-18" },
+                                                            
+        { value: "161-185", label: "161-185" },
+                                                            
+        { value: "161-19", label: "161-19" },
+                                                            
+        { value: "161-195", label: "161-195" },
+                                                            
+        { value: "161-196", label: "161-196" },
+                                                            
+        { value: "161-197", label: "161-197" },
+                                                            
+        { value: "161-198", label: "161-198" },
+                                                            
+        { value: "161-199", label: "161-199" },
+                                                            
+        { value: "161-2", label: "161-2" },
+                                                            
+        { value: "161-20", label: "161-20" },
+                                                            
+        { value: "161-230", label: "161-230" },
+                                                            
+        { value: "161-231", label: "161-231" },
+                                                            
+        { value: "161-232", label: "161-232" },
+                                                            
+        { value: "161-233", label: "161-233" },
+                                                            
+        { value: "161-234", label: "161-234" },
+                                                            
+        { value: "161-235", label: "161-235" },
+                                                            
+        { value: "161-236", label: "161-236" },
+                                                            
+        { value: "161-237", label: "161-237" },
+                                                            
+        { value: "161-238", label: "161-238" },
+                                                            
+        { value: "161-239", label: "161-239" },
+                                                            
+        { value: "161-240", label: "161-240" },
+                                                            
+        { value: "161-3", label: "161-3" },
+                                                            
+        { value: "161-4", label: "161-4" },
+                                                            
+        { value: "161-5", label: "161-5" },
+                                                            
+        { value: "161-51", label: "161-51" },
+                                                            
+        { value: "161-6", label: "161-6" },
+                                                            
+        { value: "161-7", label: "161-7" },
+                                                            
+        { value: "161-8", label: "161-8" },
+                                                            
+        { value: "161-9", label: "161-9" },
+                                                            
+        { value: "162", label: "162" },
+                                                            
+        { value: "162-1", label: "162-1" },
+                                                            
+        { value: "162-2", label: "162-2" },
+                                                            
+        { value: "162-3", label: "162-3" },
+                                                            
+        { value: "162-4", label: "162-4" },
+                                                            
+        { value: "162-5", label: "162-5" },
+                                                            
+        { value: "162-6", label: "162-6" },
+                                                            
+        { value: "165", label: "165" },
+                                                            
+        { value: "166", label: "166" },
+                                                            
+        { value: "167", label: "167" },
+                                                            
+        { value: "167-1", label: "167-1" },
+                                                            
+        { value: "167-2", label: "167-2" },
+                                                            
+        { value: "167-3", label: "167-3" },
+                                                            
+        { value: "167-4", label: "167-4" },
+                                                            
+        { value: "167-5", label: "167-5" },
+                                                            
+        { value: "167-6", label: "167-6" },
+                                                            
+        { value: "168", label: "168" },
+                                                            
+        { value: "169", label: "169" },
+                                                            
+        { value: "171", label: "171" },
+                                                            
+        { value: "172", label: "172" },
+                                                            
+        { value: "172-1", label: "172-1" },
+                                                            
+        { value: "172-2", label: "172-2" },
+                                                            
+        { value: "174", label: "174" },
+                                                            
+        { value: "175", label: "175" },
+                                                            
+        { value: "175-111", label: "175-111" },
+                                                            
+        { value: "175-51", label: "175-51" },
+                                                            
+        { value: "176", label: "176" },
+                                                            
+        { value: "177", label: "177" },
+                                                            
+        { value: "177-1", label: "177-1" },
+                                                            
+        { value: "178", label: "178" },
+                                                            
+        { value: "180", label: "180" },
+                                                            
+        { value: "180-51", label: "180-51" },
+                                                            
+        { value: "181", label: "181" },
+                                                            
+        { value: "182", label: "182" },
+                                                            
+        { value: "186", label: "186" },
+                                                            
+        { value: "186-1", label: "186-1" },
+                                                            
+        { value: "186-2", label: "186-2" },
+                                                            
+        { value: "187", label: "187" },
+                                                            
+        { value: "188", label: "188" },
+                                                            
+        { value: "189", label: "189" },
+                                                            
+        { value: "189-1", label: "189-1" },
+                                                            
+        { value: "189-2", label: "189-2" },
+                                                            
+        { value: "190", label: "190" },
+                                                            
+        { value: "191", label: "191" },
+                                                            
+        { value: "194", label: "194" },
+                                                            
+        { value: "200", label: "200" },
+                                                            
+        { value: "200-001", label: "200-001" },
+                                                            
+        { value: "200-002", label: "200-002" },
+                                                            
+        { value: "200-003", label: "200-003" },
+                                                            
+        { value: "201", label: "201" },
+                                                            
+        { value: "201-001", label: "201-001" },
+                                                            
+        { value: "211", label: "211" },
+                                                            
+        { value: "211-1", label: "211-1" },
+                                                            
+        { value: "211-2", label: "211-2" },
+                                                            
+        { value: "211-3", label: "211-3" },
+                                                            
+        { value: "212", label: "212" },
+                                                            
+        { value: "212-1", label: "212-1" },
+                                                            
+        { value: "212-2", label: "212-2" },
+                                                            
+        { value: "212-3", label: "212-3" },
+                                                            
+        { value: "212-4", label: "212-4" },
+                                                            
+        { value: "212-5", label: "212-5" },
+                                                            
+        { value: "212-6", label: "212-6" },
+                                                            
+        { value: "212-7", label: "212-7" },
+                                                            
+        { value: "212-8", label: "212-8" },
+                                                            
+        { value: "212-9", label: "212-9" },
+                                                            
+        { value: "213", label: "213" },
+                                                            
+        { value: "213-1", label: "213-1" },
+                                                            
+        { value: "214", label: "214" },
+                                                            
+        { value: "2154-0003", label: "2154-0003" },
+                                                            
+        { value: "216", label: "216" },
+                                                            
+        { value: "216-111", label: "216-111" },
+                                                            
+        { value: "217", label: "217" },
+                                                            
+        { value: "218", label: "218" },
+                                                            
+        { value: "218-002", label: "218-002" },
+                                                            
+        { value: "220-1", label: "220-1" },
+                                                            
+        { value: "220-2", label: "220-2" },
+                                                            
+        { value: "222", label: "222" },
+                                                            
+        { value: "222-1", label: "222-1" },
+                                                            
+        { value: "222-111", label: "222-111" },
+                                                            
+        { value: "222-2", label: "222-2" },
+                                                            
+        { value: "222-5", label: "222-5" },
+                                                            
+        { value: "222-51", label: "222-51" },
+                                                            
+        { value: "222-6", label: "222-6" },
+                                                            
+        { value: "222-7", label: "222-7" },
+                                                            
+        { value: "222-8", label: "222-8" },
+                                                            
+        { value: "222-9", label: "222-9" },
+                                                            
+        { value: "223", label: "223" },
+                                                            
+        { value: "223-1", label: "223-1" },
+                                                            
+        { value: "223-2", label: "223-2" },
+                                                            
+        { value: "223-3", label: "223-3" },
+                                                            
+        { value: "223-4", label: "223-4" },
+                                                            
+        { value: "224", label: "224" },
+                                                            
+        { value: "224-1", label: "224-1" },
+                                                            
+        { value: "224-2", label: "224-2" },
+                                                            
+        { value: "224-3", label: "224-3" },
+                                                            
+        { value: "225", label: "225" },
+                                                            
+        { value: "226", label: "226" },
+                                                            
+        { value: "226-1", label: "226-1" },
+                                                            
+        { value: "226-2", label: "226-2" },
+                                                            
+        { value: "226-3", label: "226-3" },
+                                                            
+        { value: "226-4", label: "226-4" },
+                                                            
+        { value: "226-5", label: "226-5" },
+                                                            
+        { value: "226-6", label: "226-6" },
+                                                            
+        { value: "226-7", label: "226-7" },
+                                                            
+        { value: "227", label: "227" },
+                                                            
+        { value: "228", label: "228" },
+                                                            
+        { value: "228-1", label: "228-1" },
+                                                            
+        { value: "228-2", label: "228-2" },
+                                                            
+        { value: "229", label: "229" },
+                                                            
+        { value: "240", label: "240" },
+                                                            
+        { value: "240-1", label: "240-1" },
+                                                            
+        { value: "240-2", label: "240-2" },
+                                                            
+        { value: "240-3", label: "240-3" },
+                                                            
+        { value: "241", label: "241" },
+                                                            
+        { value: "242", label: "242" },
+                                                            
+        { value: "2433-0001", label: "2433-0001" },
+                                                            
+        { value: "2434-0001", label: "2434-0001" },
+                                                            
+        { value: "244", label: "244" },
+                                                            
+        { value: "246", label: "246" },
+                                                            
+        { value: "247", label: "247" },
+                                                            
+        { value: "247-1", label: "247-1" },
+                                                            
+        { value: "247-2", label: "247-2" },
+                                                            
+        { value: "2473-0001", label: "2473-0001" },
+                                                            
+        { value: "248", label: "248" },
+                                                            
+        { value: "249", label: "249" },
+                                                            
+        { value: "250", label: "250" },
+                                                            
+        { value: "250-1", label: "250-1" },
+                                                            
+        { value: "250-2", label: "250-2" },
+                                                            
+        { value: "250-3", label: "250-3" },
+                                                            
+        { value: "250-4", label: "250-4" },
+                                                            
+        { value: "250-5", label: "250-5" },
+                                                            
+        { value: "251", label: "251" },
+                                                            
+        { value: "252", label: "252" },
+                                                            
+        { value: "253", label: "253" },
+                                                            
+        { value: "253-1", label: "253-1" },
+                                                            
+        { value: "254", label: "254" },
+                                                            
+        { value: "255", label: "255" },
+                                                            
+        { value: "256", label: "256" },
+                                                            
+        { value: "256-1", label: "256-1" },
+                                                            
+        { value: "256-2", label: "256-2" },
+                                                            
+        { value: "256-3", label: "256-3" },
+                                                            
+        { value: "256-4", label: "256-4" },
+                                                            
+        { value: "257", label: "257" },
+                                                            
+        { value: "259", label: "259" },
+                                                            
+        { value: "260", label: "260" },
+                                                            
+        { value: "261", label: "261" },
+                                                            
+        { value: "262", label: "262" },
+                                                            
+        { value: "263", label: "263" },
+                                                            
+        { value: "264", label: "264" },
+                                                            
+        { value: "265", label: "265" },
+                                                            
+        { value: "266", label: "266" },
+                                                            
+        { value: "268", label: "268" },
+                                                            
+        { value: "269", label: "269" },
+                                                            
+        { value: "270", label: "270" },
+                                                            
+        { value: "270-1", label: "270-1" },
+                                                            
+        { value: "270-2", label: "270-2" },
+                                                            
+        { value: "270-3", label: "270-3" },
+                                                            
+        { value: "270-4", label: "270-4" },
+                                                            
+        { value: "270-5", label: "270-5" },
+                                                            
+        { value: "270-6", label: "270-6" },
+                                                            
+        { value: "271", label: "271" },
+                                                            
+        { value: "272", label: "272" },
+                                                            
+        { value: "273", label: "273" },
+                                                            
+        { value: "274", label: "274" },
+                                                            
+        { value: "275", label: "275" },
+                                                            
+        { value: "276", label: "276" },
+                                                            
+        { value: "277", label: "277" },
+                                                            
+        { value: "277-1", label: "277-1" },
+                                                            
+        { value: "277-2", label: "277-2" },
+                                                            
+        { value: "277-3", label: "277-3" },
+                                                            
+        { value: "277-4", label: "277-4" },
+                                                            
+        { value: "278", label: "278" },
+                                                            
+        { value: "279", label: "279" },
+                                                            
+        { value: "280", label: "280" },
+                                                            
+        { value: "281", label: "281" },
+                                                            
+        { value: "281-1", label: "281-1" },
+                                                            
+        { value: "281-2", label: "281-2" },
+                                                            
+        { value: "282", label: "282" },
+                                                            
+        { value: "285", label: "285" },
+                                                            
+        { value: "286", label: "286" },
+                                                            
+        { value: "287-1", label: "287-1" },
+                                                            
+        { value: "287-2", label: "287-2" },
+                                                            
+        { value: "288", label: "288" },
+                                                            
+        { value: "289", label: "289" },
+                                                            
+        { value: "290", label: "290" },
+                                                            
+        { value: "290-51", label: "290-51" },
+                                                            
+        { value: "292", label: "292" },
+                                                            
+        { value: "293", label: "293" },
+                                                            
+        { value: "296", label: "296" },
+                                                            
+        { value: "298", label: "298" },
+                                                            
+        { value: "298-111", label: "298-111" },
+                                                            
+        { value: "299", label: "299" },
+                                                            
+        { value: "300", label: "300" },
+                                                            
+        { value: "300-1", label: "300-1" },
+                                                            
+        { value: "300-2", label: "300-2" },
+                                                            
+        { value: "300-3", label: "300-3" },
+                                                            
+        { value: "300-51", label: "300-51" },
+                                                            
+        { value: "301", label: "301" },
+                                                            
+        { value: "302", label: "302" },
+                                                            
+        { value: "303", label: "303" },
+                                                            
+        { value: "304", label: "304" },
+                                                            
+        { value: "305", label: "305" },
+                                                            
+        { value: "307", label: "307" },
+                                                            
+        { value: "308", label: "308" },
+                                                            
+        { value: "309", label: "309" },
+                                                            
+        { value: "310", label: "310" },
+                                                            
+        { value: "311", label: "311" },
+                                                            
+        { value: "312", label: "312" },
+                                                            
+        { value: "313", label: "313" },
+                                                            
+        { value: "316", label: "316" },
+                                                            
+        { value: "316-1", label: "316-1" },
+                                                            
+        { value: "316-2", label: "316-2" },
+                                                            
+        { value: "316-3", label: "316-3" },
+                                                            
+        { value: "316-4", label: "316-4" },
+                                                            
+        { value: "316-5", label: "316-5" },
+                                                            
+        { value: "317", label: "317" },
+                                                            
+        { value: "319", label: "319" },
+                                                            
+        { value: "320", label: "320" },
+                                                            
+        { value: "322", label: "322" },
+                                                            
+        { value: "323", label: "323" },
+                                                            
+        { value: "326", label: "326" },
+                                                            
+        { value: "327", label: "327" },
+                                                            
+        { value: "328", label: "328" },
+                                                            
+        { value: "332", label: "332" },
+                                                            
+        { value: "333", label: "333" },
+                                                            
+        { value: "334", label: "334" },
+                                                            
+        { value: "337", label: "337" },
+                                                            
+        { value: "338", label: "338" },
+                                                            
+        { value: "340", label: "340" },
+                                                            
+        { value: "341", label: "341" },
+                                                            
+        { value: "342", label: "342" },
+                                                            
+        { value: "346", label: "346" },
+                                                            
+        { value: "348", label: "348" },
+                                                            
+        { value: "349", label: "349" },
+                                                            
+        { value: "350", label: "350" },
+                                                            
+        { value: "351", label: "351" },
+                                                            
+        { value: "351-111", label: "351-111" },
+                                                            
+        { value: "354", label: "354" },
+                                                            
+        { value: "355", label: "355" },
+                                                            
+        { value: "357", label: "357" },
+                                                            
+        { value: "359", label: "359" },
+                                                            
+        { value: "360", label: "360" },
+                                                            
+        { value: "361", label: "361" },
+                                                            
+        { value: "362", label: "362" },
+                                                            
+        { value: "363", label: "363" },
+                                                            
+        { value: "365", label: "365" },
+                                                            
+        { value: "366", label: "366" },
+                                                            
+        { value: "3670-0001", label: "3670-0001" },
+                                                            
+        { value: "3670-0002", label: "3670-0002" },
+                                                            
+        { value: "3670-0003", label: "3670-0003" },
+                                                            
+        { value: "3670-0004", label: "3670-0004" },
+                                                            
+        { value: "3670-0005", label: "3670-0005" },
+                                                            
+        { value: "3670-0006", label: "3670-0006" },
+                                                            
+        { value: "3670-0007", label: "3670-0007" },
+                                                            
+        { value: "3670-0008", label: "3670-0008" },
+                                                            
+        { value: "368", label: "368" },
+                                                            
+        { value: "370", label: "370" },
+                                                            
+        { value: "371", label: "371" },
+                                                            
+        { value: "372", label: "372" },
+                                                            
+        { value: "373", label: "373" },
+                                                            
+        { value: "374-1", label: "374-1" },
+                                                            
+        { value: "376", label: "376" },
+                                                            
+        { value: "377", label: "377" },
+                                                            
+        { value: "378", label: "378" },
+                                                            
+        { value: "379", label: "379" },
+                                                            
+        { value: "380", label: "380" },
+                                                            
+        { value: "381", label: "381" },
+                                                            
+        { value: "383", label: "383" },
+                                                            
+        { value: "384", label: "384" },
+                                                            
+        { value: "385", label: "385" },
+                                                            
+        { value: "386-001", label: "386-001" },
+                                                            
+        { value: "387-001", label: "387-001" },
+                                                            
+        { value: "388", label: "388" },
+                                                            
+        { value: "388-001", label: "388-001" },
+                                                            
+        { value: "388-002", label: "388-002" },
+                                                            
+        { value: "388-003", label: "388-003" },
+                                                            
+        { value: "388-004", label: "388-004" },
+                                                            
+        { value: "388-005", label: "388-005" },
+                                                            
+        { value: "388-006", label: "388-006" },
+                                                            
+        { value: "388-007", label: "388-007" },
+                                                            
+        { value: "388-008", label: "388-008" },
+                                                            
+        { value: "388-009", label: "388-009" },
+                                                            
+        { value: "389", label: "389" },
+                                                            
+        { value: "390", label: "390" },
+                                                            
+        { value: "391", label: "391" },
+                                                            
+        { value: "393", label: "393" },
+                                                            
+        { value: "394", label: "394" },
+                                                            
+        { value: "394-001", label: "394-001" },
+                                                            
+        { value: "394-002", label: "394-002" },
+                                                            
+        { value: "396", label: "396" },
+                                                            
+        { value: "397", label: "397" },
+                                                            
+        { value: "399", label: "399" },
+                                                            
+        { value: "400", label: "400" },
+                                                            
+        { value: "401", label: "401" },
+                                                            
+        { value: "402", label: "402" },
+                                                            
+        { value: "403", label: "403" },
+                                                            
+        { value: "404", label: "404" },
+                                                            
+        { value: "405", label: "405" },
+                                                            
+        { value: "406", label: "406" },
+                                                            
+        { value: "407", label: "407" },
+                                                            
+        { value: "408", label: "408" },
+                                                            
+        { value: "409", label: "409" },
+                                                            
+        { value: "41", label: "41" },
+                                                            
+        { value: "410", label: "410" },
+                                                            
+        { value: "411", label: "411" },
+                                                            
+        { value: "413", label: "413" },
+                                                            
+        { value: "413-001", label: "413-001" },
+                                                            
+        { value: "413-002", label: "413-002" },
+                                                            
+        { value: "413-003", label: "413-003" },
+                                                            
+        { value: "413-004", label: "413-004" },
+                                                            
+        { value: "413-005", label: "413-005" },
+                                                            
+        { value: "413-006", label: "413-006" },
+                                                            
+        { value: "414-001", label: "414-001" },
+                                                            
+        { value: "416", label: "416" },
+                                                            
+        { value: "417", label: "417" },
+                                                            
+        { value: "418", label: "418" },
+                                                            
+        { value: "419", label: "419" },
+                                                            
+        { value: "420", label: "420" },
+                                                            
+        { value: "421", label: "421" },
+                                                            
+        { value: "422", label: "422" },
+                                                            
+        { value: "423", label: "423" },
+                                                            
+        { value: "424", label: "424" },
+                                                            
+        { value: "426", label: "426" },
+                                                            
+        { value: "427", label: "427" },
+                                                            
+        { value: "428", label: "428" },
+                                                            
+        { value: "429", label: "429" },
+                                                            
+        { value: "430", label: "430" },
+                                                            
+        { value: "431", label: "431" },
+                                                            
+        { value: "432", label: "432" },
+                                                            
+        { value: "435", label: "435" },
+                                                            
+        { value: "436", label: "436" },
+                                                            
+        { value: "500", label: "500" },
+                                                            
+        { value: "500-001", label: "500-001" },
+                                                            
+        { value: "500-0102", label: "500-0102" },
+                                                            
+        { value: "500-0112", label: "500-0112" },
+                                                            
+        { value: "500-0113", label: "500-0113" },
+                                                            
+        { value: "500-0114", label: "500-0114" },
+                                                            
+        { value: "500-0119", label: "500-0119" },
+                                                            
+        { value: "500-0144", label: "500-0144" },
+                                                            
+        { value: "500-0202", label: "500-0202" },
+                                                            
+        { value: "500-0203", label: "500-0203" },
+                                                            
+        { value: "500-0205", label: "500-0205" },
+                                                            
+        { value: "500-0206", label: "500-0206" },
+                                                            
+        { value: "500-0207", label: "500-0207" },
+                                                            
+        { value: "500-0208", label: "500-0208" },
+                                                            
+        { value: "500-0209", label: "500-0209" },
+                                                            
+        { value: "500-0210", label: "500-0210" },
+                                                            
+        { value: "500-0211", label: "500-0211" },
+                                                            
+        { value: "500-0212", label: "500-0212" },
+                                                            
+        { value: "500-0213", label: "500-0213" },
+                                                            
+        { value: "500-0214", label: "500-0214" },
+                                                            
+        { value: "500-0221", label: "500-0221" },
+                                                            
+        { value: "500-0223", label: "500-0223" },
+                                                            
+        { value: "500-0224", label: "500-0224" },
+                                                            
+        { value: "500-0225", label: "500-0225" },
+                                                            
+        { value: "500-0226", label: "500-0226" },
+                                                            
+        { value: "500-0227", label: "500-0227" },
+                                                            
+        { value: "500-0228", label: "500-0228" },
+                                                            
+        { value: "500-0229", label: "500-0229" },
+                                                            
+        { value: "500-0230", label: "500-0230" },
+                                                            
+        { value: "500-0231", label: "500-0231" },
+                                                            
+        { value: "500-0232", label: "500-0232" },
+                                                            
+        { value: "500-0235", label: "500-0235" },
+                                                            
+        { value: "500-0302", label: "500-0302" },
+                                                            
+        { value: "500-0303", label: "500-0303" },
+                                                            
+        { value: "500-0304", label: "500-0304" },
+                                                            
+        { value: "500-0305", label: "500-0305" },
+                                                            
+        { value: "500-0306", label: "500-0306" },
+                                                            
+        { value: "500-0307", label: "500-0307" },
+                                                            
+        { value: "500-0308", label: "500-0308" },
+                                                            
+        { value: "500-0309", label: "500-0309" },
+                                                            
+        { value: "500-0312", label: "500-0312" },
+                                                            
+        { value: "500-0313", label: "500-0313" },
+                                                            
+        { value: "500-0314", label: "500-0314" },
+                                                            
+        { value: "500-0315", label: "500-0315" },
+                                                            
+        { value: "500-0316", label: "500-0316" },
+                                                            
+        { value: "500-0317", label: "500-0317" },
+                                                            
+        { value: "500-0319", label: "500-0319" },
+                                                            
+        { value: "500-0320", label: "500-0320" },
+                                                            
+        { value: "500-0322", label: "500-0322" },
+                                                            
+        { value: "500-0323", label: "500-0323" },
+                                                            
+        { value: "500-0325", label: "500-0325" },
+                                                            
+        { value: "500-0400", label: "500-0400" },
+                                                            
+        { value: "500-0403", label: "500-0403" },
+                                                            
+        { value: "500-0412", label: "500-0412" },
+                                                            
+        { value: "500-0415", label: "500-0415" },
+                                                            
+        { value: "500-0422", label: "500-0422" },
+                                                            
+        { value: "500-0423", label: "500-0423" },
+                                                            
+        { value: "500-044", label: "500-044" },
+                                                            
+        { value: "500-0452", label: "500-0452" },
+                                                            
+        { value: "500-0454", label: "500-0454" },
+                                                            
+        { value: "500-0456", label: "500-0456" },
+                                                            
+        { value: "500-0458", label: "500-0458" },
+                                                            
+        { value: "500-0460", label: "500-0460" },
+                                                            
+        { value: "500-0462", label: "500-0462" },
+                                                            
+        { value: "500-0464", label: "500-0464" },
+                                                            
+        { value: "500-0465", label: "500-0465" },
+                                                            
+        { value: "500-0466", label: "500-0466" },
+                                                            
+        { value: "500-0468", label: "500-0468" },
+                                                            
+        { value: "500-0471", label: "500-0471" },
+                                                            
+        { value: "500-0472", label: "500-0472" },
+                                                            
+        { value: "500-0474", label: "500-0474" },
+                                                            
+        { value: "500-0476", label: "500-0476" },
+                                                            
+        { value: "500-0482", label: "500-0482" },
+                                                            
+        { value: "500-0483", label: "500-0483" },
+                                                            
+        { value: "500-0484", label: "500-0484" },
+                                                            
+        { value: "500-0485", label: "500-0485" },
+                                                            
+        { value: "500-0486", label: "500-0486" },
+                                                            
+        { value: "500-0492", label: "500-0492" },
+                                                            
+        { value: "500-0493", label: "500-0493" },
+                                                            
+        { value: "500-0494", label: "500-0494" },
+                                                            
+        { value: "500-0496", label: "500-0496" },
+                                                            
+        { value: "500-0498", label: "500-0498" },
+                                                            
+        { value: "500-0535", label: "500-0535" },
+                                                            
+        { value: "500-0542", label: "500-0542" },
+                                                            
+        { value: "500-0557", label: "500-0557" },
+                                                            
+        { value: "500-060", label: "500-060" },
+                                                            
+        { value: "500-0607", label: "500-0607" },
+                                                            
+        { value: "500-0618", label: "500-0618" },
+                                                            
+        { value: "500-080", label: "500-080" },
+                                                            
+        { value: "500-111", label: "500-111" },
+                                                            
+        { value: "500-115", label: "500-115" },
+                                                            
+        { value: "500-133", label: "500-133" },
+                                                            
+        { value: "500-188", label: "500-188" },
+                                                            
+        { value: "500-219", label: "500-219" },
+                                                            
+        { value: "500-222", label: "500-222" },
+                                                            
+        { value: "500-230", label: "500-230" },
+                                                            
+        { value: "500-238", label: "500-238" },
+                                                            
+        { value: "500-245", label: "500-245" },
+                                                            
+        { value: "500-260", label: "500-260" },
+                                                            
+        { value: "500-262", label: "500-262" },
+                                                            
+        { value: "500-263", label: "500-263" },
+                                                            
+        { value: "500-280", label: "500-280" },
+                                                            
+        { value: "500-292", label: "500-292" },
+                                                            
+        { value: "500-318", label: "500-318" },
+                                                            
+        { value: "500-324", label: "500-324" },
+                                                            
+        { value: "500-327", label: "500-327" },
+                                                            
+        { value: "500-328", label: "500-328" },
+                                                            
+        { value: "500-333", label: "500-333" },
+                                                            
+        { value: "500-350", label: "500-350" },
+                                                            
+        { value: "500-382", label: "500-382" },
+                                                            
+        { value: "500-413", label: "500-413" },
+                                                            
+        { value: "500-414", label: "500-414" },
+                                                            
+        { value: "500-424", label: "500-424" },
+                                                            
+        { value: "500-425", label: "500-425" },
+                                                            
+        { value: "500-453", label: "500-453" },
+                                                            
+        { value: "500-461", label: "500-461" },
+                                                            
+        { value: "500-467", label: "500-467" },
+                                                            
+        { value: "500-477", label: "500-477" },
+                                                            
+        { value: "500-481", label: "500-481" },
+                                                            
+        { value: "500-495", label: "500-495" },
+                                                            
+        { value: "500-501", label: "500-501" },
+                                                            
+        { value: "500-503", label: "500-503" },
+                                                            
+        { value: "500-504", label: "500-504" },
+                                                            
+        { value: "500-507", label: "500-507" },
+                                                            
+        { value: "500-508", label: "500-508" },
+                                                            
+        { value: "500-509", label: "500-509" },
+                                                            
+        { value: "500-51", label: "500-51" },
+                                                            
+        { value: "500-514", label: "500-514" },
+                                                            
+        { value: "500-515", label: "500-515" },
+                                                            
+        { value: "500-517", label: "500-517" },
+                                                            
+        { value: "500-520", label: "500-520" },
+                                                            
+        { value: "500-522", label: "500-522" },
+                                                            
+        { value: "500-523", label: "500-523" },
+                                                            
+        { value: "500-528", label: "500-528" },
+                                                            
+        { value: "500-529", label: "500-529" },
+                                                            
+        { value: "500-530", label: "500-530" },
+                                                            
+        { value: "500-532", label: "500-532" },
+                                                            
+        { value: "500-533", label: "500-533" },
+                                                            
+        { value: "500-534", label: "500-534" },
+                                                            
+        { value: "500-537", label: "500-537" },
+                                                            
+        { value: "500-538", label: "500-538" },
+                                                            
+        { value: "500-541", label: "500-541" },
+                                                            
+        { value: "500-543", label: "500-543" },
+                                                            
+        { value: "500-551", label: "500-551" },
+                                                            
+        { value: "500-552", label: "500-552" },
+                                                            
+        { value: "500-557", label: "500-557" },
+                                                            
+        { value: "500-558", label: "500-558" },
+                                                            
+        { value: "500-560", label: "500-560" },
+                                                            
+        { value: "500-561", label: "500-561" },
+                                                            
+        { value: "500-563", label: "500-563" },
+                                                            
+        { value: "500-564", label: "500-564" },
+                                                            
+        { value: "500-565", label: "500-565" },
+                                                            
+        { value: "500-566", label: "500-566" },
+                                                            
+        { value: "500-567", label: "500-567" },
+                                                            
+        { value: "500-568", label: "500-568" },
+                                                            
+        { value: "500-569", label: "500-569" },
+                                                            
+        { value: "500-571", label: "500-571" },
+                                                            
+        { value: "500-572", label: "500-572" },
+                                                            
+        { value: "500-573", label: "500-573" },
+                                                            
+        { value: "500-575", label: "500-575" },
+                                                            
+        { value: "500-577", label: "500-577" },
+                                                            
+        { value: "500-579", label: "500-579" },
+                                                            
+        { value: "500-581", label: "500-581" },
+                                                            
+        { value: "500-582", label: "500-582" },
+                                                            
+        { value: "500-583", label: "500-583" },
+                                                            
+        { value: "500-584", label: "500-584" },
+                                                            
+        { value: "500-585", label: "500-585" },
+                                                            
+        { value: "500-586", label: "500-586" },
+                                                            
+        { value: "500-587", label: "500-587" },
+                                                            
+        { value: "500-588", label: "500-588" },
+                                                            
+        { value: "500-589", label: "500-589" },
+                                                            
+        { value: "500-593", label: "500-593" },
+                                                            
+        { value: "500-594", label: "500-594" },
+                                                            
+        { value: "500-597", label: "500-597" },
+                                                            
+        { value: "500-598", label: "500-598" },
+                                                            
+        { value: "500-599", label: "500-599" },
+                                                            
+        { value: "500-600", label: "500-600" },
+                                                            
+        { value: "500-601", label: "500-601" },
+                                                            
+        { value: "500-604", label: "500-604" },
+                                                            
+        { value: "500-605", label: "500-605" },
+                                                            
+        { value: "500-606", label: "500-606" },
+                                                            
+        { value: "500-608", label: "500-608" },
+                                                            
+        { value: "500-609", label: "500-609" },
+                                                            
+        { value: "500-610", label: "500-610" },
+                                                            
+        { value: "500-611", label: "500-611" },
+                                                            
+        { value: "500-612", label: "500-612" },
+                                                            
+        { value: "500-613", label: "500-613" },
+                                                            
+        { value: "500-614", label: "500-614" },
+                                                            
+        { value: "500-615", label: "500-615" },
+                                                            
+        { value: "500-616", label: "500-616" },
+                                                            
+        { value: "500-617", label: "500-617" },
+                                                            
+        { value: "500-619", label: "500-619" },
+                                                            
+        { value: "500-620", label: "500-620" },
+                                                            
+        { value: "500-624", label: "500-624" },
+                                                            
+        { value: "500-626", label: "500-626" },
+                                                            
+        { value: "500-629", label: "500-629" },
+                                                            
+        { value: "500-650", label: "500-650" },
+                                                            
+        { value: "500-652", label: "500-652" },
+                                                            
+        { value: "500-653", label: "500-653" },
+                                                            
+        { value: "500-654", label: "500-654" },
+                                                            
+        { value: "500-655", label: "500-655" },
+                                                            
+        { value: "500-656", label: "500-656" },
+                                                            
+        { value: "500-657", label: "500-657" },
+                                                            
+        { value: "500-658", label: "500-658" },
+                                                            
+        { value: "500-660", label: "500-660" },
+                                                            
+        { value: "500-661", label: "500-661" },
+                                                            
+        { value: "500-663", label: "500-663" },
+                                                            
+        { value: "500-664", label: "500-664" },
+                                                            
+        { value: "500-665", label: "500-665" },
+                                                            
+        { value: "500-666", label: "500-666" },
+                                                            
+        { value: "500-777", label: "500-777" },
+                                                            
+        { value: "500-888", label: "500-888" },
+                                                            
+        { value: "500-999", label: "500-999" },
+                                                            
+        { value: "51", label: "51" },
+                                                            
+        { value: "54", label: "54" },
+                                                            
+        { value: "555", label: "555" },
+                                                            
+        { value: "555-1", label: "555-1" },
+                                                            
+        { value: "555-2", label: "555-2" },
+                                                            
+        { value: "555-3", label: "555-3" },
+                                                            
+        { value: "555-4", label: "555-4" },
+                                                            
+        { value: "555-5", label: "555-5" },
+                                                            
+        { value: "555-6", label: "555-6" },
+                                                            
+        { value: "555-7", label: "555-7" },
+                                                            
+        { value: "556", label: "556" },
+                                                            
+        { value: "600-001", label: "600-001" },
+                                                            
+        { value: "900", label: "900" },
+                                                            
+        { value: "900-111", label: "900-111" },
+                                                            
+        { value: "900-51", label: "900-51" },
+                                                            
+        { value: "999", label: "999" },
+                                                            
+        { value: "Geiselhart", label: "Geiselhart" },
+                                                            
+      ];
+    });
+  
+  </script>
+
+</head>
+<body>
+  <div id="BodyArea">
+    <div id="LeftSideArea">
+      <div class="TopArea">
+      </div>
+    </div>
+    <div id="RightSideArea">
+      <div class="TopArea">
+        
+          <img alt="Product logo" src="/NoLogin/product-logo.svg" />
+
+      <div id="Quickbar">
+        <form method="get" action="#" id="Language">
+          <input type="text" name="L" id="LangSelection" />
+          <script type="text/javascript">
+            $(function () {
+              var lang = [
+                { label: "Čeština", value: "cs" },
+                { label: "Dansk", value: "da" },
+                { label: "Deutsch", value: "de" },
+                { label: "English", value: "en" },
+                { label: "Español", value: "es" },
+                { label: "Français", value: "fr" },
+                { label: "Italiano", value: "it" },
+                { label: "Nederlands", value: "nl" },
+                { label: "Polski", value: "pl" },
+                { label: "Português", value: "pt" },
+              ];
+              $('#LangSelection').dwSingleSelection({
+                items: lang,
+                preSelected: "de",
+                onSelect: function () {
+                  $('#Language').submit();
+                },
+              });
+              $('#Language').on('submit', function () {
+                var val = $('#LangSelection').dwSingleSelection("value");
+                $('#LangSelection').val(val);
+              });
+            });
+          </script>
+
+        </form>
+      </div>
+      </div>
+      <div id="ContentMenuWrapper">
+        <div id="ContactArea">
+          <div><a href="http://www.dako.de" target="_blank">www.dako.de</a></div> 
+          <div>
+            <a id="ShowImpressum" title="Impressum">Impressum</a>
+            <script type="text/javascript">
+              $(function () {
+                $('#ShowImpressum').on('click', function () {
+                    $('<div>').append($('<div>')
+                      .append(
+                      'Die Gestaltung sowie alle Inhalte dieser Seiten sind urheberrechtlich geschützt.<br/>Alle Rechte vorbehalten.'),
+                      
+                      '<br/><h4>DAKO GmbH</h4><br/>',
+                      '<pre style="white-space:pre-line;font-family:Tahoma, Verdana, Arial">' +
+                      'Brüsseler Str. 22<br/>' +
+                      'D - 07747 Jena<br/>' +
+                      'Fon : +49 3641 22778-0<br/>' +
+                      'Fax : +49 3641 22778-199<br/>' +
+                      'info@dako.de | www.dako.de<br/><br/>' +
+                      'Geschäftsführer: Thomas Becker' + '<br/>' +
+                      'Registergericht: Jena | HRB 512470<br/>USt.-IdNr. gemäß § 27 Umsatzsteuergesetz: DE237198855<br/>Sitz der Gesellschaft ist Jena' +
+                      '</pre><br/>',
+                      $('<h4>').append(
+                        '<a href="/NoLogin/ressources/AGB_DE.pdf" target="_blank" rel="noopener">' +
+                        '<img src="/NoLogin/pfeil.gif" alt="" />' +
+                        'AGB' +
+                        '</a>'),
+                      $('<h4>').append(
+                        '<a href="/NoLogin/ressources/tachoweb_AGB_DE.pdf" target="_blank" rel="noopener">' +
+                        ' <img src="/NoLogin/pfeil.gif" alt="" />' +
+                        'Produktspezifische AGB' +
+                        '</a>'),
+                      '<br/><h4>' + 'Haftungshinweis' + ':</h4><br/>',
+                      $('<p>').append(
+                        'Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.<br/>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.' + '<br/>',
+                        'Diese Erklärung gilt für alle in dieser Internetpräsentation angezeigten externen Links<br/>sowie für alle Inhalte der Seiten, zu denen diese führen.'
+                      )
+
+                  ).dwDialog(dw.tr("About TachoWeb"), {
+                    noMessages: true,
+                    cancelButtonText: dw.tr("Close")
+                  });
+                });
+              });
+            </script>
+          </div>
+          <div>
+            <a href="/NoLogin/ressources/Datenschutz_DE.pdf"
+              target="_blank" rel="noopener">
+              Datenschutzvereinbarung
+            </a>
+          </div>
+          
+          <div>
+            <a href="https://tachostationsfinder.dako.de/" target="_blank" rel="noopener">TachoStationsfinder</a>
+          </div>
+            
+        </div>
+        <div id="ContentWrapper">
+          <div id="MainContent">
+  <div id="BackgroundLogin">
+    <div>
+      <form method="post" action="?Login=1#" id="LoginBox">
+        <input type="hidden" name="Type" value="Login" />
+        <div class="dwOverviewBoxTable">
+          <div>
+            <div>Accountname</div>
+            <div>
+              <input type="text" name="CompanyName" placeholder="D.MUSTERMANNGMBH.07747.01"
+                />
+            </div>
+          </div>
+          <div>
+            <div>Benutzer</div>
+            <div>
+              <input type="text" name="UserName"
+                
+                />
+            </div>
+          </div>
+          <div>
+            <div>Passwort</div>
+            <div><input type="password" name="Password"/></div>
+          </div>
+          <div>
+            <div>Angemeldet bleiben</div>
+            <div><input type="checkbox" name="stayLoggedOn"/></div>
+          </div>
+        </div>
+      </form>
+      
+      <div id="RegisterNewCompany">Digitales Transportmanagement von DAKO: TachoWeb bringt mit vernetzten Funktionen rund um Transportplanung, Management von Tachografendaten und Telematik Transparenz in Ihre Fuhrparkprozesse. Damit koordinieren Sie Ihren gesamten Fuhrpark in einem Portal – webbasiert, flexibel und sicher. Lassen Sie sich von unserem <a href="https://telematics.dako.de/kontakt/" target="_blank">Team</a> beraten oder registrieren Sie sich gleich hier. (Bitte beachten: Mit der Registrierung gehen Sie einen verbindlichen Vertrag mit uns ein. Die Unterlagen erhalten Sie dann per Post.)</div>
+      
+    </div>
+  </div>
+  <div id="NewsContent">
+    
+      <div class="NewsBox">
+        <div class="NewsImage">
+          <img alt="Neuer DAKO-Key liest auch Smart Tachograf aus" src="/NoLogin/NewsBox1.jpg" />
+        </div>
+        <div>
+          <div class="NewsTitle">Neuer DAKO-Key liest auch Smart Tachograf aus</div>
+          <div class="NewsText">Der kürzlich eingeführte Smart Tachograf verfügt über eine neue Verschlüsselungstechnik der Daten. Sowohl Hardware zum manuellen Auslesen als auch Systeme für das Fernauslesen müssen mit der neuen Datenstruktur umgehen können, um Tachograf und Fahrerkarte weiterhin gesetzeskonform auszulesen. <br/><br/>DAKO hat jetzt eine neue Version des DAKO-Keys herausgebracht, die zum manuellen Auslesen der neuen Smart Tachografen ebenso wie für die Vorgängergeräte genutzt werden kann. Das Fernauslesen per Remote Download bei DAKO ist ebenfalls bereits auf die neue Technologie der Smart Tachografen umgestellt. <br/><br/>Der neue DAKO-Key ist natürlich auch kompatibel mit der DAKO-TachoStation 2.0, die die ausgelesenen Daten direkt in die Webplattform TachoWeb überträgt. Der neue Key ist bei uns im Shop erhältlich unter <a href="https://shop.dako.de/de/dako-key.html?utm_source=tw-login&utm_medium=news&utm_campaign=key" target="_blank">shop.dako.de</a> oder sprechen Sie unser Vertriebsteam an unter +49 3641 22778 500 bzw. <a href="mailto:vertrieb@dako.de">vertrieb@dako.de</a>.</div>
+        </div>
+      </div>
+    
+      <div class="NewsBox">
+        <div class="NewsImage">
+          <img alt="Der neue Smart Tachograf – Weiterbildungsangebot von DAKO" src="/NoLogin/NewsBox2.jpg" />
+        </div>
+        <div>
+          <div class="NewsTitle">Der neue Smart Tachograf – Weiterbildungsangebot von DAKO</div>
+          <div class="NewsText">Die neue Generation von Tachografen ist vor kurzem eingeführt worden. Seit 15. Juni 2019 müssen alle neu zugelassenen Nutzfahrzeuge ab 3,5t über einen intelligenten Tachografen (Smart Tacho) verfügen. Das schreibt die EU-Verordnung Nr. 165/2014 vor. Die Geräte sollen durch die neuen Vorgaben unter anderem besser gegen Manipulationen geschützt sein und die Effizienz von Kontrollverfahren verbessern, indem sie eine Vorselektion ermöglichen. <br/><br/>Die Einführung der neuen Smart Tachografen bietet viel Raum für offene Fragen, die jeden im Transport betreffen. Aufbauend auf unserer Expertise im Bereich der Lenk- und Ruhezeiten möchten wir Unternehmen fit für diese Neuerungen machen und gleichzeitig neue Horizonte bei der Digitalisierung und Automatisierung der Abläufe im Fuhrpark eröffnen. Deshalb bieten wir eine Weiterbildung zum Smart Tachograf in unserem Hause an. Informationen zu Inhalten und Anmeldung erhalten Sie hier: <a href="https://telematics.dako.de/smart-tacho/?utm_source=tw-login&utm_medium=news&utm_campaign=smart-tacho#weiterbildung" target="_blank">https://telematics.dako.de/smart-tacho/#weiterbildung</a>. </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Bottom">
+    <div>
+      <div>
+        
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

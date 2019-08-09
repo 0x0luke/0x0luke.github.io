@@ -1,0 +1,27 @@
+200 OK
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+X-Shardid: 55
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=7889238
+Content-Security-Policy: ; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=68afaef6-dc68-4e40-a0cd-c701452647e9
+Date: Thu, 08 Aug 2019 14:25:11 GMT
+X-Shopid: 9537378
+Content-Language: en
+X-Cache: hit, server
+X-Download-Options: noopen
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+X-Sorting-Hat-Podid: 55
+Etag: cacheable:9c9f7f73a74c581e2d2d38e727322953
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: __cfduid=df69fda43d413ac8cda270bc502a20bab1565274311; expires=Fri, 07-Aug-20 14:25:11 GMT; path=/; domain=.myshopify.com; HttpOnly _shopify_y=9fd867e9-5183-4d43-b7b4-43eaa2e30eb3; path=/; expires=Sun, 08 Aug 2021 02:03:35 -0000 cart_currency=USD; path=/; expires=Thu, 22 Aug 2019 14:25:11 -0000 _orig_referrer=https%3A%2F%2Fshop.shopify.com%2F; Expires=Thu, 22-Aug-19 14:25:11 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:25:11 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:25:11 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:25:11 -0000; HttpOnly
+Server: cloudflare
+X-Shopify-Stage: production
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Sorting-Hat-Shopid: 9537378
+X-Alternate-Cache-Key: cacheable:9b427118794481c08b7fba1f359f08aa
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=68afaef6-dc68-4e40-a0cd-c701452647e9
+X-Request-Id: 68afaef6-dc68-4e40-a0cd-c701452647e9
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5032287da967d21c-MAN

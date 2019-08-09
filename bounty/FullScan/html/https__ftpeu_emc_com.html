@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="icon" href="/img/icon_32.png" sizes="32x32" /><link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <title>FTPEU Login  - Web - FTPEU.EMC.COM a Cork Based FTP service </title>
+    <link rel="stylesheet" href="/css/base.css" type="text/css"/><link rel="stylesheet" href="/css/login.css" type="text/css"/>
+</head>
+<body>
+
+        <noscript><div class="js-enable">This page requires JavaScript enabled in browser.</div></noscript>
+
+        <div class="wrapper">
+            
+
+<div id="header">
+    <h1><a href="/" ><img src="/img/logo.gif" alt="FTPEU.EMC.COM a Cork Based FTP service " id="logo" title="FTPEU.EMC.COM a Cork Based FTP service "/></a></h1><a class="skip" href="#content">Skip to content</a>
+</div>
+            <div id="content">
+                <h1>FTPEU Login  - Web</h1>
+                <p>Enter domain, username and password and click Login.</p>
+                
+<form action="/action/login" method="post" id="loginform" accept-charset="utf-8">
+    <input type="hidden" name="x-js-at" value="FPB9-QF2A-XPJA-0FTM-1RQN-4FPL-IRNB-Z1NS"/><input type="hidden" name="domain" value="ftp.emc.com"/>
+
+                    <table role="presentation">
+                        <tr><td><label for="username">Username:<span class="req" title="Required field">*</span></label></td><td><input type="text" name="username" id="username" value="" size="25" autocomplete="off" maxlength="150" required="required"/></td></tr><tr><td><label for="password">Password:</label></td><td><input type="password" name="password" id="password" value="" size="25" autocomplete="off" maxlength="50"/></td></tr>
+                    </table><br/>
+
+                    
+
+<div><span>User Interface: </span>
+    <input type="radio" name="ui" id="uihtml" value="uihtml" checked="checked"/>&nbsp;<label for="uihtml">HTML</label><input type="radio" name="ui" id="uiapplet" value="uiapplet" />&nbsp;<label for="uiapplet">Java Applet</label>
+</div><br/>
+
+
+                    <div id="login-buttons">
+                        
+
+<button type="submit" title="Login"><img src="/img/login.gif" alt="Login"  /><span>Login</span></button>
+                    </div>
+                
+</form>
+            </div>
+            <div id="footer"></div>
+        </div>
+
+        <script type="text/javascript">
+            function jsc_setCookie(name, value) { document.cookie = name + "=" + value + ";path=/"; }
+            function jsc_focus(f){var ch=f?[f.domain,f.username,f.password]:[];while(ch.length){var el=ch.shift();if(el&&el.getAttribute('type')!='hidden'&&!el.value){el.focus();break;}}}
+            window.onload=function(){var f=document.getElementById&&document.getElementById('loginform');if(f){jsc_focus(f);f.onsubmit=function(){jsc_setCookie("MFT_CS", new Date().getTime());}}}
+        </script>
+    </body>
+</html>

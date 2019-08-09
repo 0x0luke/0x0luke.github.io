@@ -1,0 +1,19 @@
+404 Not Found
+Server: cloudflare
+Retry-Count: 0
+Vary: Accept-Encoding
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9f51a066-59fa-44a8-8609-cf19bc6dd491
+Cf-Ray: 503228833ca6d210-MAN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cfduid=dba0f60db8ada8bb7fe45f83f3e6c28c31565274312; expires=Fri, 07-Aug-20 14:25:12 GMT; path=/; domain=.paidbytheminute.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9f51a066-59fa-44a8-8609-cf19bc6dd491
+X-Dc: gcp-us-central1,gcp-us-central1
+Date: Thu, 08 Aug 2019 14:25:12 GMT
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+X-Request-Id: 9f51a066-59fa-44a8-8609-cf19bc6dd491
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none

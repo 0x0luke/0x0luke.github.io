@@ -1,0 +1,18 @@
+404 Not Found
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a495b275-65e2-42af-9e6f-f1c10bf6c386
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a495b275-65e2-42af-9e6f-f1c10bf6c386
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Cf-Ray: 50266fcf7fd9d20c-MAN
+Date: Wed, 07 Aug 2019 04:16:43 GMT
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: a495b275-65e2-42af-9e6f-f1c10bf6c386
+Set-Cookie: __cfduid=d4ffb0a96b52c153e39caf16c20d3628e1565151403; expires=Thu, 06-Aug-20 04:16:43 GMT; path=/; domain=.annawiest.shopify.com; HttpOnly

@@ -1,0 +1,19 @@
+404 Not Found
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=610c28cb-a8c1-463a-a0e1-4f4b377b72fc
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=610c28cb-a8c1-463a-a0e1-4f4b377b72fc
+X-Request-Id: 610c28cb-a8c1-463a-a0e1-4f4b377b72fc
+Date: Thu, 08 Aug 2019 14:25:03 GMT
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Download-Options: noopen
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Cf-Ray: 5032284cca093639-MAN
+Set-Cookie: __cfduid=d7a4db1869fd22d8673b40d57273aefac1565274303; expires=Fri, 07-Aug-20 14:25:03 GMT; path=/; domain=.catherineisawesome.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1

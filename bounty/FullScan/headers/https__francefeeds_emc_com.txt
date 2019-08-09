@@ -1,0 +1,18 @@
+200 OK
+Vary: Accept-Encoding
+X-Ua-Compatible: IE=edge
+X-Robots-Tag: noindex, follow
+X-Frame-Options: SAMEORIGIN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Thu, 08 Aug 2019 09:27:37 GMT
+Link: <https://blog.dellemc.com/wp-json/>; rel="https://api.w.org/"
+Last-Modified: Wed, 07 Aug 2019 15:25:14 GMT
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cf-Cache-Status: MISS
+Cf-Ray: 50307494abc43681-MAN
+Retry-Count: 0
+Content-Type: application/rss+xml; charset=UTF-8
+Etag: W/"6b6f5c431fa2346eefb36c5b85adbf87"
+X-Xss-Protection: 1; mode=block
+Server: cloudflare

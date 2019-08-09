@@ -1,0 +1,9 @@
+200 OK
+X-Frame-Options: ALLOW-FROM https://www.telefonica.de/
+Strict-Transport-Security: max-age=31536000
+X-Proxy-Cache: HIT
+Content-Security-Policy: script-src  'self' 'unsafe-inline' 'unsafe-eval' *.youtube-nocookie.com *.flickr.com tde-stats.spin-ag.de *.telefonica.de; style-src   'self' 'unsafe-inline'; connect-src 'self' www.telefonica.de; media-src   'self' *.telefonica.de *.youtube-nocookie.com *.flickr.com *.staticflickr.com; child-src   'self' *.telefonica.de *.udldigital.de *.youtube-nocookie.com; frame-src   'self' *.telefonica.de *.youtube-nocookie.com data:; object-src  'self'; form-action 'self'; img-src     'self' *.udldigital.de *.telefonica.de *.flickr.com *.staticflickr.com tde-stats.spin-ag.de data:;
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Server: nginx
+Date: Thu, 08 Aug 2019 14:43:33 GMT

@@ -1,0 +1,18 @@
+200 OK
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=63072000;includeSubdomains
+X-Sct: true
+Content-Type: text/html;charset=UTF-8
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+Server: Apache
+Date: Thu, 08 Aug 2019 11:35:30 GMT
+Content-Security-Policy: default-src data: 'self' 'unsafe-inline' 'unsafe-eval' ok.ru *.ok.ru odnoklassniki.ru *.odnoklassniki.ru mycdn.me http://*.mycdn.me https://*.mycdn.me wss://ad.mail.ru *.mail.ru *.imgsmail.ru *.mradx.net *.serving-sys.com *.googleapis.com *.gstatic.com www.google.com https://api-maps.yandex.ru yastatic.net yandex.st *.doubleverify.com *.adsafeprotected.com https://consentmanager.mgr.consensu.org blob:;  script-src 'unsafe-inline' 'unsafe-eval' *.mail.ru https://*.mail.ru *.imgsmail.ru *.mradx.net ok.ru *.ok.ru odnoklassniki.ru *.odnoklassniki.ru mycdn.me http://*.mycdn.me https://*.mycdn.me mc.yandex.ru an.yandex.ru yastatic.net yandex.st *.google-analytics.com api-maps.yandex.ru https://api-maps.yandex.ru https://clck.yandex.ru *.googleapis.com *.gstatic.com www.google.com www.youtube.com https://www.youtube.com *.ytimg.com https://*.ytimg.com *.doubleverify.com *.dvtps.com *.doubleclick.net *.googletagservices.com *.googlesyndication.com *.googleadservices.com *.goodgame.ru https://*.goodgame.ru https://*.moatads.com *.adlooxtracking.com *.adsafeprotected.com *.serving-sys.com https://enterprise.api-maps.yandex.ru https://suggest-maps.yandex.ru https://*.hit.gemius.pl https://consentmanager.mgr.consensu.org;  worker-src blob: 'self';  connect-src * wss: blob:;  font-src * data: blob:; frame-src * blob: 'self';  img-src * data: blob: about:;  media-src * data: blob:;  object-src *;  report-uri /csp/report;
+Content-Security-Policy-Report-Only: default-src data: blob: about: 'self' 'unsafe-inline' 'unsafe-eval' https: wss:; report-uri /csp/report?always;
+Retry-Count: 0
+Vary: Accept-Encoding
+Cache-Control: no-cache no-store
+Rendered-Blocks: HtmlPage
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: bci=-3302742614491372450; Domain=.ok.ru; Expires=Tue, 26-Aug-2087 14:49:37 GMT; Path=/; HttpOnly _statid=a2a45273-495a-42dd-8f8d-92ce34f26639; Domain=.ok.ru; Expires=Tue, 26-Aug-2087 14:49:37 GMT; Path=/; HttpOnly

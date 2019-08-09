@@ -1,0 +1,279 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1" />
+		<meta name="robots" content="noindex, nofollow">	
+		
+        <title>Sign In - Cisco WebEx</title>
+		<link type="text/css" href="/orion/html/themes/orion.css?20027" rel="stylesheet">	
+		<link type="text/css" href="/orion/html/themes/login.css?20027" rel="stylesheet">	
+	</head>
+ 
+   
+   
+   <script>
+		var image_array = ['/orion/html/themes/images/hd/1.png', '/orion/html/themes/images/hd/1.jpg', '/orion/html/themes/images/hd/1.gif'];
+		function load_img(imgId, image, images, index) {
+			// If index of array crossing then return
+			if(index >= images.length){
+				return;
+			}
+			
+			image.onerror = function() {
+				load_img(imgId, this, images, index+1);
+			};
+			
+			image.onload = function() {
+				var element = document.getElementById(imgId);
+				if(element) {
+					if(document.getElementById("hdDiv").className == "hd white") {
+						element.src = '/orion/html/themes/images/hd/lg-white.png';
+					} else {
+						element.src = this.src;
+					}
+					element.style.display = 'block';
+				}
+			};
+			
+			image.src = images[index];
+		}
+	</script>
+
+	<body class="lg">
+        <noscript>
+			<div class="top-notice">
+				<div class="top-notice-inner">
+					<div class="top-notice-c">
+					It appears that JavaScript is not enabled on your computer, so some WebEx functions will not work. To learn how to enable JavaScript, <a href="http://www.cisco.com/c/en/us/td/docs/collaboration/CWMS/2_8/FAQs.html" target="_blank">go here</a>.
+					</div>
+				</div>
+			</div>
+		</noscript>
+		<div class="top-notice" id="top_nocookie" style="display:none;">
+				<div class="top-notice-inner">
+				    <div class="top-notice-s">
+					</div>
+					<div class="top-notice-c">
+					It appears that cookies are not enabled on your computer, so some WebEx functions will not work. To enable cookies, change the privacy settings in your browser, and then refresh the page.
+					</div>
+				</div>
+			</div>
+		<div class="top-notice" id="top_notbrowser" style="display:none;">
+				<div class="top-notice-inner">
+					<div class="top-notice-c">
+					Your browser version is not supported for use with WebEx and may not provide an optimal experience.To view browsers that support the best WebEx experience, <a href="http://www.cisco.com/c/en/us/td/docs/collaboration/CWMS/2_8/FAQs.html" target="_blank">go here</a>.
+					</div>
+				</div>
+		</div>
+		<!-- header here-->
+		<div id="hdDiv" class="hd">
+			<div class="hd-content">
+				<a href="/orion/login?siteurl=meeting"  class="hd-logo-lt">
+					<img id="logoImg" src="/orion/html/themes/images/hd/1.png" title="Cisco WebEx Meetings Server" alt="Cisco WebEx Meetings Server" />
+				</a>
+				<div class="hd-menu">
+					<div style="display: table-cell; vertical-align: middle; height: 48px;">
+					<img src='/companylogo/company_logo.png' style='float:right;' alt='' >
+					<ul class="hd-menu-ul">
+						
+						<li class="hd-menu-li hd-menu-li2 hd-menu-li-line">
+							<a href='/orion/join?siteurl=meeting'>Join by Number</a>
+						</li>
+						
+						
+						<li class="hd-menu-li hd-menu-li2 hd-menu-li-last">
+							<a href='/orion/help/faq?siteurl=meeting'>Help</a>
+						</li>
+						
+					   
+					  
+					</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+<!-- body -->
+<div class="orion-container">
+<div class="orion-grid-lg">
+        <form id="login-form" action="/orion/login" method="post"> 
+        
+		<div class="lg-mainwidth">
+			<h2 class="lg-header">Sign in to WebEx</h2>
+			
+			
+				<fieldset style="margin-bottom: 11px;margin-top: 5px;">
+					<label id="labelDirectoryIntegrationTip" for="pp">Enter your company email address and password.</label>
+				</fieldset>
+			
+			<fieldset class="lg-label">
+				<label class="common-input-label" for="username">Email Address:</label>
+				<input type="text" id="username" name="username" class="common-input" maxlength="64" aria-required="true" autocomplete="off"
+				value="" />
+				<p role='alert' class="common-hide"> </p>
+			</fieldset>
+			<fieldset class="lg-label">
+				<label class="common-input-label" for="userpassword">Password:</label>
+				<input type="password" id="userpassword" name="password" class="common-input" maxlength="64" aria-required="true" autocomplete="off"
+				value="" />
+				<p id="pwderror" role='alert' class="common-hide">Enter your WebEx password.</p>
+			</fieldset>
+			
+            
+            
+			<fieldset style="margin-bottom: 11px;margin-top: 5px;">
+				<input type="checkbox" id="rem" name="rememberme" value="true" class="lg-rem" checked style="margin-top:4px;">
+				<label for="rem">Remember me</label>
+				<a style="vertical-align:bottom;padding-bottom:2px;" id="remHelp" class="common-help" href="javascript:void(0);">Help</a>
+			</fieldset>
+			
+			
+			
+			    
+			
+			
+			
+			
+
+			<div class="action">
+				<a href="javascript:void(0);" id="signin" role="button" class="common-btn btn-green" onclick="return false;"><span>Sign In</span></a><br/>
+				
+			</div>
+			
+				<fieldset style="margin-bottom: 11px;margin-top: 15px;">
+					<label id="labelDirectoryIntegrationForgotpwTip" for="pp">Contact your system administrator to retrieve or reset your password.</label>
+				</fieldset>
+			
+		</div>
+		<input type="hidden" id="login-type" name="type"/>
+		<input type="hidden" id="siteurl" name="siteurl" value="meeting"/>
+		<input type="hidden" name="csrfToken" value="HOIk1WNhq73wWv\x2fOZJAWC47M5gRLnEsiZPXa29q7CMo\x3d"/>
+		<input type="hidden" name="unlocktoken" id="unlocktoken" value=""/>
+		<input type="hidden" name="usid" id="usid" value=""/>
+		<input type="hidden" id="captcha-type" name="captcha_type" value=""/>
+		</form>
+		<div id="logininfo" errorid=""></div>
+		
+	</div>
+</div>
+
+<!-- Begin to define error message -->
+<div class="common-hide">
+<div id="login-noemail">Enter the address linked to your WebEx account.</div>
+<div id="login-erroremail">Enter a valid address. Example: name@email.com</div>
+<div id="login-nopwd">Enter your WebEx password.</div>
+<div id="login-errorpwd">Incorrect email address or password.</div>
+<div id="login-sessionlimited">The maximum number of simultaneous user sessions allowed has been exceeded. <br/>End one of your sessions and sign in again.</div>
+<div id="img-nocaptcha">You did not enter any text. Enter text that matches the image.</div>
+<div id="audio-nocaptcha">You did not enter any text. Enter text that matches the audio challenge.</div>
+<div id="img-err-captcha">The text you entered doesn't match the image. Try again.</div>
+<div id="audio-err-captcha">The text you entered doesn't match the audio challenge. Try again.</div>
+<div id="audio-captcha-text">Enter what you hear:</div>
+<div id="image-captcha-text">Enter the text in the image:</div>
+
+
+
+
+<div id="login-remhelp1">If you check "Remember me".</div>
+<div id="login-remhelp2">Your password will be saved for 2 weeks to allow automatic sign in.</div>
+<div id="login-remhelp3">Your email address will be saved for 3 months to allow easy access.</div>
+<div id="login-remhelp4">Sign out of your account to completely clear your credentials from your computer's memory.</div>
+<div id="login-remhelp5">Note: We highly recommend that you do NOT check this box on a public computer.</div>
+<div id="login_msg_from_update"><strong>Done! Password successfully changed.</strong><br>Use your new password to sign in to your account.</div>
+<div id="login_msg_from_create"><strong>Done! Password successfully created.</strong><br>Use your password to sign in to your account.</div>
+
+<div id="login_from_update">0</div>
+
+</div>
+<!-- End error message -->
+
+<!-- end container-16 -->
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer here-->
+
+
+
+
+<div class="ft">
+		&copy; 2019 Cisco and/or its affiliates. All rights reserved.
+		<a href="null" target="_blank" class="ft-link" style='display:none'>Terms of Service</a><span style='display:none'> |</span>
+		<a href="null" target="_blank" class="ft-link" style='display:none'>Privacy Policy</a>
+		
+		
+			<span style='display:none'> |</span>
+			<a href="null" target="_blank" class="ft-link" style='display:none'>Contact Support</a> 
+		
+		<a href="http://www.cisco.com" target="_blank" class="ft-cisco"><img src="/orion/html/themes/images/common/cisco_logo.png" alt="Cisco" width="46" height="24" title="Cisco"/></a>
+		<input type="hidden" name="upjitccsrfToken" value="null"/>
+</div>	
+
+	</body>
+	<!-- Load javascript common and customized -->
+	<script type="text/javascript">
+		var orion_resource_common = {
+			mmm:'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec',
+			mmmm:'January,February,March,April,May,June,July,August,September,October,November,December',
+			e:'S,M,T,W,T,F,S',
+			eee:'Sun,Mon,Tue,Wed,Thu,Fri,Sat',
+			eeee:'Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday',
+			previousmonth:'Previous month',
+			nextmonthNext:'month',
+			chooseyear:'Choose year and month quickly',
+			today:'Today',
+			ok:'OK',
+			cancel:'Cancel'
+		};
+		var Orion_siteurl = 'meeting';
+	</script>
+	<script type="text/javascript" src="/orion/html/js/orion.js?20027"></script>
+	
+<script language="JavaScript" type="text/javascript" src="/orion/html/js/module/login.js?20027"></script>
+	<script type="text/javascript">
+		$(function(){
+			load_img('logoImg', new Image(), image_array, 0);
+		});
+	</script>
+</html>

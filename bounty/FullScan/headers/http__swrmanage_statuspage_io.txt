@@ -1,0 +1,18 @@
+200 OK
+Strict-Transport-Security: max-age=31536000
+Last-Modified: Wed, 07 Aug 2019 04:16:04 GMT
+X-Magnolia-Registration: Registered
+X-Powered-By: Express
+Retry-Count: 0
+Server: nginx
+Date: Wed, 07 Aug 2019 04:22:48 GMT
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Envoy-Upstream-Service-Time: 0
+Etag: W/"25b2-GAnAFPKQP0ZVO3SkqUZKMu7KBPU"
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0
+Content-Type: text/html;charset=UTF-8
+X-Content-Type-Options: nosniff
+Set-Cookie: JSESSIONID=4B9BC28ED53D8C26E0270EEDDCB2F455; Path=/; Secure; HttpOnly NEW_VISITOR=new; Expires=Thu, 08-Aug-2019 04:22:48 GMT; HttpOnly VISITOR=returning; Path=/; HttpOnly ajs_anonymous_id=%22200e97a3-0763-3507-f3d3-112e0638ca73%22; Max-Age=315360000; Domain=.statuspage.io; Path=/; Expires=Sat, 04 Aug 2029 04:22:48 GMT bxp_gateway_request_id=12656234-c1a5-6d17-e3a6-2a2f5d18ee04; Max-Age=300; Domain=.statuspage.io; Path=/; Expires=Wed, 07 Aug 2019 04:27:48 GMT atlCohort={"bucketAll":{"bucketedAtUTC":"2019-08-07T04:22:48.717Z","version":"2","index":86,"bucketId":0}}; Max-Age=315360000; Domain=.atlassian.com; Path=/; Expires=Sat, 04 Aug 2029 04:22:48 GMT
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block

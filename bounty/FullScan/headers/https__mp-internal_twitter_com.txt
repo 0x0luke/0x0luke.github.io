@@ -1,0 +1,16 @@
+200 OK
+Server: tsa_f
+Strict-Transport-Security: max-age=631138519
+X-Frame-Options: SAMEORIGIN
+Age: 0
+Set-Cookie: personalization_id="v1_ioDQ2WCnw3hrMg5iW8//EQ=="; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:45 GMT; Path=/; Domain=.twitter.com guest_id=v1%3A156527632499704255; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:45 GMT; Path=/; Domain=.twitter.com
+Cache-Control: max-age=0
+Retry-Count: 0
+Content-Type: text/html
+Expires: Thu, 08 Aug 2019 14:58:44 GMT
+X-Connection-Hash: b2499b30bd76342db09461960eaab720
+X-Xss-Protection: 0
+Accept-Ranges: bytes
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://s1259914507.t.eloqua.com; font-src 'self'  data:; frame-src 'self' https://twitter.com https://*.twitter.com https://www.google.com; img-src 'self' https://www.google-analytics.com data:; media-src 'self' ; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w='; style-src 'self' 'unsafe-inline' 	; report-uri ; frame-ancestors 'self'
+Date: Thu, 08 Aug 2019 14:58:45 GMT
+X-Response-Time: 977

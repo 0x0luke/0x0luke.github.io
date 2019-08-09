@@ -1,0 +1,21 @@
+200 OK
+Vary: Accept,Accept-Encoding,X-Forwarded-Host,X-Forwarded-Scheme,X-Forwarded-Proto,Fastly-SSL
+X-Cache: MISS
+Date: Thu, 08 Aug 2019 14:39:04 GMT
+X-Xss-Protection: 1; mode=block
+X-Statuspage-Skip-Logging: true
+Strict-Transport-Security: max-age=259200
+X-Runtime: 0.309863
+X-Content-Type-Options: nosniff
+X-Statuspage-Version: 926662ee64c0da3cfe2f803937587788a1e197a2
+Referrer-Policy: strict-origin-when-cross-origin
+Age: 0
+Cache-Control: max-age=0, private, must-revalidate
+Retry-Count: 0
+X-Request-Id: 7bf291e8-be04-4943-86cf-272579e81f6e
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Etag: W/"gz[a7612482f96237fb5dadd2061f697727]"

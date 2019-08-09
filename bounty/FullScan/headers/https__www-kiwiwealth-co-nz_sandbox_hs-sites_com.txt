@@ -1,0 +1,23 @@
+200 OK
+Vary: Accept-Encoding
+Content-Type: text/html;charset=utf-8
+Content-Security-Policy: upgrade-insecure-requests
+Strict-Transport-Security: max-age=0
+X-Hs-Combine-Css: Bot
+X-Hs-Hub-Id: 703880
+Date: Wed, 07 Aug 2019 06:38:46 GMT
+Cf-Cache-Status: HIT
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 50273fe27903bfbb-MAN
+Access-Control-Allow-Credentials: false
+Retry-Count: 0
+Edge-Cache-Tag: CT-4994829209,CG-703880,P-703880,L-3856787761,L-5312117145,L-7828326712,CW-3890937032,CW-4030835565,CW-4086176025,CW-5679460358,CW-5679990514,E-3884921203,E-3900428282,E-3906398548,E-4018193515,E-4018279200,E-5979706233,MENU-3881027163,MENU-3885896969,PGS-ALL,SW-3,SD-30
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Content-Campaign-Id: b67d344e-2514-4bbd-833e-fc95b49900aa
+X-Powered-By: HubSpot
+Server: cloudflare
+Age: 6251
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Content-Id: 4994829209
+X-Trace: 2BFC642040AA4C49622490B77A723490ACE0E24F5C000000000000000000

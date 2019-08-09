@@ -1,0 +1,11 @@
+404 Not Found
+Content-Disposition: inline; filename=a.txt
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 06:56:44 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 155
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Cache-Control: no-cache
+Server: nginx

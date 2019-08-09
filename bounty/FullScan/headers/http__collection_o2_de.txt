@@ -1,0 +1,15 @@
+500 Internal Server Error
+Content-Type: text/html; charset=UTF-8
+X-Varnish: 24225475
+Via: 1.1 varnish-v4
+X-Url: /
+X-Cacheable: YES
+Age: 0
+X-Cache: MISS
+Server: nginx/1.12.2
+Content-Length: 0
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 04:02:04 GMT
+X-Powered-By: PHP/7.0.33
+Cache-Control: max-age=0, private
+X-Cache-Hits: 0

@@ -1,0 +1,15 @@
+404 Not Found
+Strict-Transport-Security: max-age=0
+Cf-Cache-Status: MISS
+Access-Control-Allow-Credentials: false
+Vary: Accept-Encoding
+X-Hs-Reason: No view mapper found to handle request
+X-Hubspot-Notfound: true
+Date: Thu, 08 Aug 2019 10:01:17 GMT
+Retry-Count: 0
+Cache-Control: s-maxage=5,max-age=5
+X-Trace: 2B1E2E20B043A9703E4E21E5AD545BF3FF27ECD31A000000000000000000
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=dc72b829a7f47e5e3829ab433283fce6e1565258477; expires=Fri, 07-Aug-20 10:01:17 GMT; path=/; domain=.www.s-mqs.com; HttpOnly __cfruid=1f35b8a523b288e25b546501e4fe4fa7c999a3ff-1565258477; path=/; domain=.www.s-mqs.com; HttpOnly
+Cf-Ray: 5030a5ea487bd214-MAN

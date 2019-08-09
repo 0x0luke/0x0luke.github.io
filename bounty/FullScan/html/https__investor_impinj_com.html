@@ -1,0 +1,1031 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head><title>
+	Impinj, Inc. - Investor Relations
+</title><meta content="text/html; charset=UTF-8" http-equiv="Content-type" /><meta content="RevealTrans(Duration=0,Transition=0)" http-equiv="Page-Enter" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4b6f7f959c","applicationID":"229922501","transactionName":"b1xWMUIDWBdWARFYX1YWdTZgTVIBUQMQXUQWWEcVSA==","queueTime":0,"applicationTime":525,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><meta content="width=device-width, initial-scale=1" name="viewport" /><script type='text/javascript'>window.mobileRedirect = { mobileEnabled: 0, deepLinkUrl: '/m'}</script>
+    <script type="text/javascript" src="/js/mobileRedirect.js">
+    </script>
+    
+    <!--[if lte IE 8]>
+<link id="respond-proxy" rel="respond-proxy" media="screen" href="//s22.q4cdn.com/275039025/files/js/respond-proxy.html" />
+<link id="respond-redirect" rel="respond-redirect" media="screen" href="https://investor.impinj.com/js/respond.proxy.gif" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+<link type="image/x-icon" rel="icon" media="" href="//s22.q4cdn.com/275039025/files/favicon.ico" />
+<link type="image/x-icon" rel="shortcut icon" media="" href="//s22.q4cdn.com/275039025/files/favicon.ico" />
+<link rel="stylesheet" media="print" href="//s22.q4cdn.com/275039025/files/css/print.css" />
+<link id="htmlGlobalLinkCss" type="text/css" rel="stylesheet" media="all" href="//s22.q4cdn.com/275039025/files/css/global.css?v=32999" /><link id="htmlClientLinkCss" type="text/css" rel="stylesheet" media="all" href="//s22.q4cdn.com/275039025/files/css/client.css?v=32020" /><link id="htmlLinkPrintCss" type="text/css" rel="stylesheet" media="print" href="//s22.q4cdn.com/275039025/files/css/print.css" /><script type="text/javascript" src="//s22.q4cdn.com/275039025/files/js/q4.core.1.0.3.min.js"></script>
+<script type="text/javascript" src="//s22.q4cdn.com/275039025/files/js/q4.app.1.0.3.min.js"></script>
+<script type="text/javascript" src="//widgets.q4app.com/widgets/q4.api.1.12.18.min.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://investor.impinj.com/js/respond.proxy.js"></script>
+<![endif]-->
+
+<script type="text/javascript">(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+var trackingCodes = [{qualifier: 'Q4', trackingCode: 'UA-128093481-41'}];
+
+$.each(trackingCodes, function (i, data) {
+    if (data.qualifier == "Q4") {
+        ga('create', data.trackingCode, 'auto'); // Q4 tracker
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Q4 tracker
+    } else {
+        ga('create', data.trackingCode, 'auto', { 'name': data.qualifier }); // Client tracker
+        ga(data.qualifier + '.set', 'anonymizeIp', true);
+        ga(data.qualifier + '.send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Client tracker
+    }
+});</script></head>
+<body style="margin: 0px" class="BodyBackground">
+    <input type="hidden" id="__RequestVerificationToken"/>
+    <!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53RR6F"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window, document, 'script', 'dataLayer', 'GTM-53RR6F');
+</script>
+<!-- End Google Tag Manager -->
+    
+    <div id="pageClass" class="Sectionoverview PageDefault PageOverview LayoutHomePageLayout Languageen-US">
+        <div class="PageDefaultInner">
+            <div id="litPageDiv" class="PageOverview SectionOverview ParentSection_overview">
+                <a name="top"></a>
+                <form action="default.aspx" method="post" id="fmForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['fmForm1'];
+if (!theForm) {
+    theForm = document.fmForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function GetViewType(){ return '2'; }
+function GetRevisionNumber(){ return '1'; }
+function GetLanguageId(){ return '1'; }
+function GetVersionNumber(){ return '5.23.3.1'; }
+function GetViewDate(){{ return ''; }}
+function GetSignature(){{ return ''; }}
+//]]>
+</script>
+
+                    
+                    <a id="lnkPostback" href="javascript:__doPostBack(&#39;lnkPostback&#39;,&#39;&#39;)" style="display: none"></a>
+                    
+<div class="layout layout--home">
+    <div class="layout_inner">
+        <div class="layout_header">
+            <div class="pane pane--breadcrumb">
+                <div class="pane_inner"><span class='BreadcrumbPaneDiv11'><div id="_ctrl0_ctl33_divModuleContainer" class="module module-html module-corporate-nav">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="grid-block shrink top-nav">
+    <div class="grid-content">
+        <div class="grid-block network-links show-for-large">
+            <div class="grid-container">
+                <div class="grid-block small-up-1 medium-up-2">
+                    <div class="grid-content">
+                        <ul class="inline-list">
+                            <li>
+                            	<span class="fa q4-icon_home" aria-hidden="true"></span>
+                            	<a href="https://www.impinj.com/" class="nav-icon"> Impinj.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-content">
+                        <div class="grid-block align-right">
+                            <div class="grid-content shrink">
+                                <div class="search module-search-corporate">
+                                    <input type="text" name="addsearch" placeholder="Search Impinj.com" class="input__search">
+                                    <label class="button-search"><i class="fa q4-icon_search" aria-hidden="true"></i><input type="submit"></label>
+                                </div>
+                            </div>
+                            <div class="grid-content shrink">
+                                <ul class="social-links inline-list">
+                                    <li><a href="https://www.facebook.com/Impinj" target="_blank"><i class="fa q4-icon_facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/impinj" target="_blank"><i class="fa q4-icon_twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/impinj" target="_blank"><i class="fa q4-icon_linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.youtube.com/impinj" target="_blank"><i class="fa q4-icon_youtube-play" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--header grid--no-gutter">
+                <div class="pane_inner"><span class='HeaderPaneDiv'><span class='HeaderPaneDiv1'><div id="_ctrl0_ctl06_divModuleContainer" class="module module-embed module-skip">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a class="module-skip_link" href="#maincontent">Skip to main content</a>
+        </div>
+    </div>
+</div></span><span class='HeaderPaneDiv2'><div id="_ctrl0_ctl09_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script type="text/javascript">
+var Q4ApiKey = 'BF185719B0464B3CB809D23926182246';
+</script>
+        </div>
+    </div>
+</div></span><span class='HeaderPaneDiv3'><div id="_ctrl0_ctl12_divModuleContainer" class="module module-embed module-logo grid_col grid_col--1-of-6 grid_col--lc-1-of-2 grid_col--md-1-of-2">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="/overview/default.aspx"><img src="//s22.q4cdn.com/275039025/files/design/Impinj-Landing-Page-Logo-Investors.jpg" alt="Impinj Logo"></a>
+        </div>
+    </div>
+</div></span><span class='HeaderPaneDiv4'><nav class="nav nav--main grid_col grid_col--5-of-6"><ul class="level1">
+	<li class="selected has-children home"><a href="https://investor.impinj.com/overview/default.aspx">Overview</a><ul class="level2">
+		<li class="has-children"><a href="https://investor.impinj.com/news-and-events/news/default.aspx">News & Events</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/news-and-events/news/default.aspx">News</a></li><li><a href="https://investor.impinj.com/news-and-events/events/default.aspx">Events</a></li><li><a href="https://investor.impinj.com/news-and-events/annual-meeting-of-stockholders/default.aspx">Annual Meeting of Stockholders</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/financials/quarterly-results/default.aspx">Financials</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/financials/quarterly-results/default.aspx">Quarterly Results</a></li><li><a href="https://investor.impinj.com/financials/sec-filings/default.aspx">SEC Filings</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/stock-information/quote-and-chart/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/stock-information/quote-and-chart/default.aspx">Quote & Chart</a></li><li><a href="https://investor.impinj.com/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/governance/governance-documents/default.aspx">Governance</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/governance/governance-documents/default.aspx">Governance Documents</a></li><li><a href="https://investor.impinj.com/governance/board-of-directors/default.aspx">Board of Directors</a></li><li><a href="https://www.impinj.com/about-us/management-team" target="_blank">Management Team</a></li><li><a href="https://investor.impinj.com/governance/committee-composition/default.aspx">Committee Composition</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/resources/ir-contacts/default.aspx">Resources</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/resources/ir-contacts/default.aspx">IR Contacts</a></li><li><a href="https://investor.impinj.com/resources/faqs/default.aspx">FAQs</a></li><li><a href="https://investor.impinj.com/resources/email-alerts/default.aspx">Email Alerts</a></li>
+		</ul></li>
+	</ul></li>
+</ul></nav></span><span class='HeaderPaneDiv5'><div id="_ctrl0_ctl18_divModuleContainer" class="module module-embed layout_toggle grid_col grid_col--1-of-2 grid_col--sm-1-of-2">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="wrapper-module-hamburger-menu">
+	<span class="module-hamburger-menu"></span>
+</div>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--banner grid">
+                <div class="pane_inner"><span class='HeaderPane2Div1'><div id="_ctrl0_ctl51_divModuleContainer" class="module module-html module-banner-text-overview">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <h1>Digital life for everyday items</h1>
+<p>Our platform uses RAIN RFID to wirelessly connect billions of everyday items to business and consumer applications delivering digital life to the physical world</p>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--navigation">
+                <div class="pane_inner"><span class='NavigationPaneDiv7'><nav class="nav nav--secondary"><ul class="level1">
+	<li class="selected has-children home"><a href="https://investor.impinj.com/overview/default.aspx">Overview</a><ul class="level2">
+		<li class="has-children"><a href="https://investor.impinj.com/news-and-events/news/default.aspx">News &amp; Events</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/news-and-events/news/default.aspx">News</a></li><li><a href="https://investor.impinj.com/news-and-events/events/default.aspx">Events</a></li><li><a href="https://investor.impinj.com/news-and-events/annual-meeting-of-stockholders/default.aspx">Annual Meeting of Stockholders</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/financials/quarterly-results/default.aspx">Financials</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/financials/quarterly-results/default.aspx">Quarterly Results</a></li><li><a href="https://investor.impinj.com/financials/sec-filings/default.aspx">SEC Filings</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/stock-information/quote-and-chart/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/stock-information/quote-and-chart/default.aspx">Quote &amp; Chart</a></li><li><a href="https://investor.impinj.com/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/governance/governance-documents/default.aspx">Governance</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/governance/governance-documents/default.aspx">Governance Documents</a></li><li><a href="https://investor.impinj.com/governance/board-of-directors/default.aspx">Board of Directors</a></li><li><a href="https://www.impinj.com/about-us/management-team" target="_blank">Management Team</a></li><li><a href="https://investor.impinj.com/governance/committee-composition/default.aspx">Committee Composition</a></li>
+		</ul></li><li class="has-children"><a href="https://investor.impinj.com/resources/ir-contacts/default.aspx">Resources</a><ul class="level3">
+			<li><a href="https://investor.impinj.com/resources/ir-contacts/default.aspx">IR Contacts</a></li><li><a href="https://investor.impinj.com/resources/faqs/default.aspx">FAQs</a></li><li><a href="https://investor.impinj.com/resources/email-alerts/default.aspx">Email Alerts</a></li>
+		</ul></li>
+	</ul></li>
+</ul></nav></span><span class='NavigationPaneDiv8'><div id="_ctrl0_ctl24_divModuleContainer" class="module module-html module-search-and-icon-home-mobile">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul class="inline-list">
+    <li>
+        <span class="fa q4-icon_home" aria-hidden="true"></span>
+        <a href="https://www.impinj.com/" class="nav-icon"> Impinj.com</a>
+    </li>
+</ul>
+<div class="search module-search-corporate">
+    <input type="text" name="addsearch" placeholder="Search Impinj.com" class="input__search">
+    <label class="button-search"><i class="fa q4-icon_search" aria-hidden="true"></i><input type="submit"></label>
+</div>
+        </div>
+    </div>
+</div></span><span class='NavigationPaneDiv9'><div id="_ctrl0_ctl27_divModuleContainer" class="module module-search" role="search">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl27_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl27$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl27_txtSearchInput" class="module_input module-search_input" aria-label="Search query" placeholder="Search Investors..." value="" onkeypress="javascript:var key; if (window.event) { key = window.event.keyCode; } else if (e) { key = e.which; } else { return true; } if (key == 13) __doPostBack(&#39;_ctrl0$ctl27$btnSearch&#39;, &#39;&#39;); " />
+            <input type="submit" name="_ctrl0$ctl27$btnSearch" value="" id="_ctrl0_ctl27_btnSearch" class="module_button module-search_button" />
+            
+        </div>
+    </div>
+</div></span><span class='NavigationPaneDiv10'><div id="_ctrl0_ctl30_divModuleContainer" class="module module-html module-social-media-mobile">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul class="social-links inline-list">
+        <li><a href="https://www.facebook.com/Impinj" target="_blank"><i class="fa q4-icon_facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/impinj" target="_blank"><i class="fa q4-icon_twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/impinj" target="_blank"><i class="fa q4-icon_linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/impinj" target="_blank"><i class="fa q4-icon_youtube-play" aria-hidden="true"></i></a></li>
+</ul>
+
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+        <div class="layout_content" id="maincontent">
+            <div class="pane pane--left">
+                <div class="pane_inner"><span class='LeftPaneDiv'><span class='LeftPaneDiv12'><div id="_ctrl0_ctl36_divModuleContainer" class="module module-search  grid_col grid_col--1-of-2" role="search">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl36_lblTitle" class="module_title"><span id="_ctrl0_ctl36_lblModuleTitle" class="ModuleTitle"><span class="sr-only">Site Search</span><span class="q4-icon_search"></span></span></h2>
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl36_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl36$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl36_txtSearchInput" class="module_input module-search_input" aria-label="Search query" placeholder="Search Investors..." value="" onkeypress="javascript:var key; if (window.event) { key = window.event.keyCode; } else if (e) { key = e.which; } else { return true; } if (key == 13) __doPostBack(&#39;_ctrl0$ctl36$btnSearch&#39;, &#39;&#39;); " />
+            <input type="submit" name="_ctrl0$ctl36$btnSearch" value="" id="_ctrl0_ctl36_btnSearch" class="module_button module-search_button" />
+            
+        </div>
+    </div>
+</div></span><span class='LeftPaneDiv2'><div id="_ctrl0_ctl54_divModuleContainer" class="module module-embed module-stock-header grid_col grid_col--1-of-2">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script src="https://widgets.q4app.com/widgets/q4.stockQuote.1.0.9.min.js"></script>
+<script>
+ $('.module-stock-header .module_container--inner').stockQuote({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    dateFormat: 'mm/dd/yy',
+    changeCls: ['module-stock-header_down', 'module-stock-header_up'],
+    stockTpl: (
+        '<a class="module-stock-header_link" href="/stock-information/quote-and-chart/default.aspx"><span class="sr-only">Read More</span></a>'+
+        '{{#.}}<div class="grid grid--no-gutter">' +
+            '<div class="module-stock-header-inner-wrapper">'+
+                '<span class="module-stock-wrapper-description-price">' +
+                    '<span class="module-stock-header_description1">{{exchange}}: {{symbol}}</span>' +
+                    '<span class="module-stock-header_stock-price">{{tradePrice}}</span>' +
+                '</span>' +
+                '<span class="module-stock-header_description3">Pricing delayed by 20 minutes</span>' +
+                '<span class="module-stock-header_change {{uod}}">' +
+                    '<span class="module-stock-header_indicator">{{uodSymbol}}</span>{{change}} ( {{percChange}}% )' +
+                '</span>' +
+            '</div>'+
+        '</div>{{/.}}'
+    )
+});
+</script>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--content">
+                <div class="pane_inner"><span class='ContentPaneDiv'><span class='ContentPaneDiv3'><div id="_ctrl0_ctl57_divModuleContainer" class="module module-embed module-news-latest">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <h2 class="module_title">Recent News <a class="button button--cta" href="/news-and-events/news/default.aspx">View All News ></a></h2>
+<div class="module_container module_container--content grid text-left"></div>
+<script type="text/javascript">
+$('.module-news-latest .module_container--content').news({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    dateFormat: 'M dd, yy',
+    showAllYears: true,
+    limit: 3,
+    append: false,
+    loadShortBody: true,
+    shortBodyLength: 150,
+    template: (
+        /* beautify preserve:start */
+        '{{#items}}' +
+            '<div class="module_item">' +
+                '<div class="module_item-wrap">'+
+                    '<div class="module_date-time">' +
+                        '<span class="module_date-text">{{date}}</span>' +
+                    '</div>' +
+                    '<div class="module_headline">' +
+                        '<a class="module_headline-link" href="{{url}}"{{#blank}} target="_blank"{{/blank}}>' +
+                            '<span class="module-headline-link-text">{{title}} {{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}</span>' +
+                            // '<span class="module-short-body">{{shortBody}}</span>' +
+                        '</a>' +
+                    '</div>' +
+                '</div>' +
+            '</div>'+
+        '{{/items}}'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+        $.each(data.items, function(idx, item) {
+            var url = item.url.toLowerCase().split('.');
+
+            if (url[url.length - 1] == 'pdf') {
+                item.blank = true;
+            }
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span><span class='ContentPaneDiv4'><div id="_ctrl0_ctl60_divModuleContainer" class="module module-embed background--grey module-upcoming-recent-events-overview module--no-padding-top">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="grid">
+    <div class="grid_col grid_col--1-of-2 grid_col--lc-1-of-1 grid_col--md-1-of-1 module--no-padding-top">
+        <div class="module module-event module-event-upcoming">
+            <h2 class="module_title">Upcoming Events</h2>
+            <div class="module_container module_container--content"></div>
+        </div>
+    </div>
+    <div class="grid_col grid_col--1-of-2 grid_col--lc-1-of-1 grid_col--md-1-of-1 module--no-padding-top">
+        <div class="module module-event module-event-latest">
+            <h2 class="module_title">Recent Events
+                    <a href="/news-and-events/events/default.aspx" class="button--cta">View All Events ></a>
+            </h2>
+            <div class="module_container module_container--content"></div>
+        </div>
+    </div>
+</div>
+<script>
+$('.module-event-upcoming').events({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    showAllYears: true,
+    limit: 2,
+    itemNotFoundMessage: '<p>There are no events scheduled at this time.</p>',
+    dateFormat: {
+        date: 'MMM DD, YYYY',
+        time: 'hh:mm A'
+    },
+    sortAscending: true,
+    useMoment: true,
+    showPast: false,
+    itemContainer: '.module_container--content',
+    itemTemplate: (
+        /* beautify preserve:start */
+        '<div class="module_item">' +
+            '<div class="module_date-time">' +
+                '<span class="module_date-text">{{date.date}}</span> | <span class="module_time-text">{{date.time}} {{timeZone}}</span>' +
+            '</div>' +
+            '<div class="module_headline">' +
+                '<a class="module_headline-link" href="{{url}}">{{title}}</a>' +
+            '</div>' +
+            '{{#location.length}}' +
+                '<div class="module_location">' +
+                    '<span class="module_location-text"><strong>Location: </strong>{{location}}</span>' +
+                '</div>' + 
+            '{{/location.length}}' +
+            '{{#speakers.length}}' +
+                '<div class="module_speakers list--reset">' +
+                    '<h4>Speaker(s):</h4>' +
+                    '<ul>' +
+                        '{{#speakers}}' +
+                            '<li class="module_speaker">' +
+                                '<i class="q4-icon_user-fill"></i> ' +
+                                '{{name}}, {{position}}' +
+                            '</li> ' +
+                        '{{/speakers}}' +
+                    '</ul>' +
+                '</div>' +
+            '{{/speakers.length}}' +
+            '<div class="module_links module_links--separator module_q4-icon-links list--reset">' +
+                '{{#isFuture}}' +
+                    '<div class="module_add-to-calendar">' +
+                        '<span class="module_link module_add-to-calendar-reveal" tabindex="0">Add to Calendar</span>' +
+                        '<ul class="module_add-to-calendar-list">' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--apple">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_apple"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Apple Calendar</span>' +
+                                '</a>' +
+                            '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--google">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}&platform=GoogleCalendar" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_google"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Google Calendar</span>' +
+                                '</a>' +
+                             '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--outlook">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_microsoft"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Microsoft Outlook</span>' +
+                                '</a>' +
+                            '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--ics">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_calendar"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to iCalendar</span>' +
+                                '</a>' +
+                            '</li>' +
+                        '</ul>' +
+                    '</div>' +
+                '{{/isFuture}}' +
+                '{{#webcast}}' +
+                    '<div class="module_webcast"><a href="{{webcast}}" target="_blank" class="module_link module_webcast-link">Webcast <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/webcast}}' +
+                '{{#presentations}}' +
+                    '<div class="module_presentation"><a href="{{docUrl}}" target="_blank" class="module_link module_presentation-link">Presentation <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/presentations}}' +
+                '{{#pressReleases}}' +
+                    '<div class="module_news"><a href="{{url}}" class="module_link module_news-link">Press Release <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/pressReleases}}' +
+                '{{#docs.length}}' +
+                    '<ul class="module_attachments">' +
+                        '{{#docs}}' +
+                            '<li class="module_attachment {{type}}">' +
+                                '<a href="{{url}}" target="_blank" class="module_link module_attachment-link">{{title}} <span class="sr-only">(opens in new window)</span></a>' +
+                            '</li>' +
+                        '{{/docs}}' +
+                    '</ul>' +
+                '{{/docs.length}}' +
+                '{{#financialReports}}' +
+                    '<ul class="module_financials">' +
+                        '{{#docs}}' +
+                            '<li>' +
+                                '<a href="{{docUrl}}" {{#blank}} target="_blank"{{/blank}} class="module_link module_financial-link {{docCategory}}"> {{docTitle}} <span class="sr-only">(opens in new window)</span></a>' +
+                            '</li>' +
+                        '{{/docs}}' +
+                    '</ul>' +
+                '{{/financialReports}}' +
+            '</div>'+
+        '</div>'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+        $.each(data.items, function(idx, item) {
+            $.each(item.financialReports, function(idx, fin) {
+                $.each(fin.docs, function(idx, doc) {
+                    var url = doc.docUrl.toLowerCase().split('.');
+                    if (url[url.length - 1] != 'aspx') {
+                        doc.blank = true;
+                    }
+                })
+            });
+        });
+    },
+    complete: function(e) {
+        q4App.addToCalendar($(e.target));
+    }
+});
+$('.module-event-latest').events({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    showFuture: false,
+    limit: 1,
+    showAllYears: true,
+    itemNotFoundMessage: '<p><i class="q4-icon_warning-line"></i> There are not events scheduled at this time.</p>',
+    dateFormat: {
+        date: 'MMM DD, YYYY',
+        time: 'hh:mm A'
+    },
+    useMoment: true,
+    itemContainer: '.module_container--content',
+    itemTemplate: (
+        /* beautify preserve:start */
+            '<div class="module_date-time">' +
+                '<span class="module_date-text">{{date.date}}</span> | <span class="module_time-text">{{date.time}} {{timeZone}}</span>' +
+            '</div>' +
+            '<div class="module_headline">' +
+                '<a class="module_headline-link" href="{{url}}">{{title}}</a>' +
+            '</div>' +
+            '{{#location}}' +
+                '<div class="module_location">' +
+                    '<span class="module_location-text">{{location}}</span>' +
+                '</div>' +
+            '{{/location}}' +
+            '{{#speakers.length}}' +
+                '<div class="module_speakers list--reset">' +
+                    '<h4>Speaker(s):</h4>' +
+                    '<ul>' +
+                        '{{#speakers}}' +
+                            '<li class="module_speaker">' +
+                                '<i class="q4-icon_user-fill"></i> ' +
+                                '{{name}}, {{position}}' +
+                            '</li> ' +
+                        '{{/speakers}}' +
+                    '</ul>' +
+                '</div>' +
+            '{{/speakers.length}}' +
+            '<div class="module_links module_links--separator module_q4-icon-links list--reset">' +
+                '{{#isFuture}}' +
+                    '<div class="module_add-to-calendar">' +
+                        '<span class="module_link module_add-to-calendar-reveal" tabindex="0">Add to Calendar</span>' +
+                        '<ul class="module_add-to-calendar-list">' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--apple">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_apple"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Apple Calendar</span>' +
+                                '</a>' +
+                            '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--google">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}&platform=GoogleCalendar" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_google"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Google Calendar</span>' +
+                                '</a>' +
+                             '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--outlook">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_microsoft"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to Microsoft Outlook</span>' +
+                                '</a>' +
+                            '</li>' +
+                            '<li class="module_add-to-calendar-item module_add-to-calendar-item--ics">' +
+                                '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                    '<i class="q4-icon_calendar"></i>' +
+                                    '<span class="module_add-to-calendar-text sr-only">Add to iCalendar</span>' +
+                                '</a>' +
+                            '</li>' +
+                        '</ul>' +
+                    '</div>' +
+                '{{/isFuture}}' +
+                '{{#webcast}}' +
+                    '<div class="module_webcast"><a href="{{webcast}}" target="_blank" class="module_link module_webcast-link">Webcast <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/webcast}}' +
+                '{{#presentations}}' +
+                    '<div class="module_presentation"><a href="{{docUrl}}" target="_blank" class="module_link module_presentation-link">Presentation <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/presentations}}' +
+                '{{#pressReleases}}' +
+                    '<div class="module_news"><a href="{{url}}" class="module_link module_news-link">Press Release <span class="sr-only">(opens in new window)</span></a></div>' +
+                '{{/pressReleases}}' +
+                '{{#docs.length}}' +
+                    '<ul class="module_attachments">' +
+                        '{{#docs}}' +
+                            '<li class="module_attachment {{type}}">' +
+                                '<a href="{{url}}" target="_blank" class="module_link module_attachment-link">{{title}} <span class="sr-only">(opens in new window)</span></a>' +
+                            '</li>' +
+                        '{{/docs}}' +
+                    '</ul>' +
+                '{{/docs.length}}' +
+                '{{#financialReports}}' +
+                    '<ul class="module_financials">' +
+                        '{{#docs}}' +
+                            '<li>' +
+                                '<a href="{{docUrl}}" target="_blank" class="module_link module_financial-link {{docCategory}}"> {{docTitle}} <span class="sr-only">(opens in new window)</span></a>' +
+                            '</li>' +
+                        '{{/docs}}' +
+                    '</ul>' +
+                '{{/financialReports}}' +
+            '</div>'+
+        '</div>'
+    ),
+});
+</script>
+        </div>
+    </div>
+</div></span><span class='ContentPaneDiv5'><div id="_ctrl0_ctl63_divModuleContainer" class="module module-embed module-financial-latest dark module--thick-bottom ">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <h2>Latest Quarterly Results <a class="button button--cta" href="/financials/quarterly-results/default.aspx">View All Financial Results ></a></h2>
+<div class="module_container module_container--content text-center"></div>
+<script type="text/javascript">
+$('.module-financial-latest .module_container--content').financials({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    fetchAllYears: true,
+    reportTypes: ['First Quarter', 'Second Quarter', 'Third Quarter', 'Fourth Quarter'],
+    shortTypes: {
+        'First Quarter': 'Q1',
+        'Second Quarter': 'Q2',
+        'Third Quarter': 'Q3',
+        'Fourth Quarter': 'Q4'
+    },
+    limit: 1,
+    append: false,
+    loadingMessage: '<p class="module_loader"><i class="q4-icon_spinner"></i><span class="sr-only">Loading latest financials...</span></p>',
+    template: (
+        /* beautify preserve:start */
+        '{{#items}}' +
+            '<div class="grid grid--no-space">' +
+                '<div class="grid_col grid_col--1-of-8 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2">' +
+                    '<div class="module-financial_type-text">{{shortType}}</div>' +
+                    '<div class="module-financial_year-text">{{year}}</div>' +
+                '</div>' +
+                '{{#docs}}' +
+                    '<div class="grid_col grid_col--1-of-8 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2 module_links module_q4-icon-links">' +
+                        '<a class="module_link module_link-{{docCategory}}" href="{{docUrl}}"{{#blank}} target="_blank"{{/blank}}>' +
+                            '<span class="module_link-text">{{docTitle}}</span>' +
+                            '{{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}'+
+                        '</a>' +
+                    '</div>' +
+                '{{/docs}}' +
+            '</div>' +
+        '{{/items}}'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+        $.each(data.items, function(idx, item) {
+            $.each(item.docs, function(idx, doc) {
+                // Make sure any local links open in the same window
+                var url = doc.docUrl.toLowerCase().split('.');
+                if ( url[url.length-1] != 'aspx' ) {
+                    doc.blank = true;
+                }
+                if (doc.docCategory === 'tenq') {
+                    doc.docTitle = '10-Q';
+                }
+            });
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span><span class='ContentPaneDiv6'><div id="_ctrl0_ctl66_divModuleContainer" class="module module-embed module-articles-feed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <h2>Recent Blog Articles <a class="button button--cta" href="https://www.impinj.com/library/blog/" target="_blank">View All Blog Articles ></a> <span><a class="button button--cta" href="http://go.impinj.com/subscribe-to-the-impinj-blog" target="_blank">Subscribe to Blog ></a></span></h2>
+<div class="module_container--feed grid"></div>    
+
+<script type="text/javascript" src="//s22.q4cdn.com/275039025/files/js/q4.rssfeed.js"></script>
+<script>
+$('.module-articles-feed .module_container--feed').rssfeed({
+    url: 'https://api.q4web.com/q4proxy/v1/?alias=impinj-blog',
+    dateFormat: 'MMMM D, YYYY',
+    limit: 3,
+    summaryLength: 0,
+    parseLinks: true,
+    template: (
+        '{{#items}}<div class="module_item module_item-facebook grid_col grid_col--1-of-3 grid_col--lc-1-of-1 grid_col--md-1-of-1 grid_col--sm-1-of-1">' +
+            '<div class="module_item-wrap">'+ 
+                '{{#mediaImg}}<div class="module_image" style="background-image:url({{mediaImg}});"></div>{{/mediaImg}}' +
+                '<div class="module_date">{{date}}</div>' +
+                '<div class="module_item-inner-wrap">' +
+                    '<div class="module_pre-title">{{{preTitle}}}</div>' +
+                    '<div class="module_headline"><a class="module_headline-link" href="{{url}}" target="_blank">{{{title}}}</a></div>' +
+                    '<div class="module_description"><p>{{{summary}}}</p></div>' +
+                    '<div class="module_more"><span><i class="q4-icon_blog"></i> Blog Article</span> <a class="module_more-link" href="{{url}}" target="_blank">Learn More ></a></div>' +
+                '</div>' +
+            '</div>'+
+        '</div>{{/items}}'
+    )
+});
+</script>
+
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--right">
+                <div class="pane_inner"><span class='RightPaneDiv'></span></div>
+            </div>
+        </div>
+        <div class="layout_footer" role="contentinfo">
+            <div class="pane pane--footer grid">
+                <div class="pane_inner"><span class='FooterPaneDiv'><span class='FooterPaneDiv13'><div id="_ctrl0_ctl39_divModuleContainer" class="module module-html module-description-footer grid_col grid_col--3-of-5 grid_col--lc-1-of-2 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="https://www.impinj.com/"><img src="//s22.q4cdn.com/275039025/files/design/Impinj-logo-footer-gray-red-150.png" alt="Impinj Logo"></a>
+<p>Impinj (NASDAQ: PI) wirelessly connects billions of everyday items such as apparel, medical supplies, and automobile parts to consumer and business applications such as inventory management, patient safety, and asset tracking. The Impinj platform uses RAIN RFID to deliver timely information about these items to the digital world, thereby enabling the Internet of Things.</p>
+        </div>
+    </div>
+</div></span><span class='FooterPaneDiv14'><div id="_ctrl0_ctl42_divModuleContainer" class="module module-html module-contact grid_col grid_col--2-of-5 grid_col--lc-1-of-2 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl42_lblTitle" class="module_title"><span id="_ctrl0_ctl42_lblModuleTitle" class="ModuleTitle">Contact Investor Relations</span></h2>
+        <div class="module_container module_container--inner">
+            <div>
+	<p>
+	   <a href="tel:123-123-1234"><i class="q4-icon_phone-fill"></i>  +1 (206) 315-4470</a>
+	   <br><a href="mailto:ir@impinj.com"><i class="q4-icon_envelope-fill"></i> ir@impinj.com</a>
+	</p>	
+</div>
+<div>
+	<a href="/resources/email-alerts/default.aspx" class="button button--subscribe-email">Subscribe to Email Alerts</a>
+</div>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--footer2 grid">
+                <div class="pane_inner clearfix"><span class='FooterPane2Div15'><div id="_ctrl0_ctl45_divModuleContainer" class="module module-html module-corporate-footer">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="footer">
+    <div class="lower">
+        <div class="grid-container">
+            <div class="grid-block">
+                <div class="grid-content small-12 medium-12 large-4">
+                    <span>© 2012 - 2019 Impinj, Inc. All rights reserved.</span>
+                </div>
+                <div class="grid-content small-12 medium-12 large-8 text-right">
+                    <ul class="inline-list">
+                        <li><a href="https://www.impinj.com/terms-of-use/">Terms of Use</a></li>
+                        <li><a href="https://www.impinj.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.impinj.com/trademarks/">Trademarks</a></li>
+                        <li><a href="https://www.impinj.com/patents/">Patents</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--credits">
+                <div class="pane_inner"><span class='Q4FooterDiv16'><div id="_ctrl0_ctl48_divModuleContainer" class="module module-embed hidden">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+    var q4App = $.extend(true, q4Defaults, {
+        options: {
+            termsText: 'In order to sign up, please read Terms & Conditions and Privacy Notice and check the box in order to accept them.',
+            consentText: 'In order to sign up, please consent.',
+            headerOffset: 130,
+            mailingListConfig: {
+                tpl: (
+                    '<div id="SubscriberConfirmation" class="module module-subscribe module-subscribe--fancy dark grid_col grid_col--5-of-12 grid_col--md-1-of-1">' +
+                        '<div class="module_container--outer">' +
+                            '<h2 class="module_title">Investor Email Alerts</h2>' +
+                            '<div class="module_container--inner">' +
+                                '<p class="module_message module_message--success"></p>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>'
+                ),
+                location: '.pane--footer',
+                submitText: 'Subscribe'
+            }
+        },
+        _mailingListValidation: function( $el ) {
+            var inst = this,
+                errors = [];
+
+            $el.find('.js--invalid').removeClass('js--invalid');
+
+            $el.find('.module_required').each(function(){
+                var $item = $(this).closest('.module-subscribe_table-input'),
+                    message = inst.options.requiredText,
+                    field = $item.find('label:first').text(),
+                    validation = true;
+
+                // Does the input exist?
+                if ( $item.find('input').length ) {
+                    if ( $item.hasClass('module-subscribe_email') ) {
+                        // Does the email address contain text?
+                        if ( !$item.find('input').val().length ) {
+                            validation = false;
+                        } 
+                        // Is the email address valid?
+                        else if ( !inst.isValidEmailAddress ( $item.find('input').val() ) ) {
+                            validation = false;
+                            message = inst.options.invalidText;
+                        }
+                    }
+                    if ( $item.hasClass('module-subscribe_terms') ) {
+                        // Is the terms box checked?
+                        if ( !$item.find('input[type="checkbox"]:checked').length ) {
+                            validation = false;
+                            field = '';
+                            message = inst.options.termsText;
+                        } 
+                    }  
+                    if ( $item.hasClass('module-subscribe_consent') ) {
+                        // Is the terms box checked?
+                        if ( !$item.find('input[type="checkbox"]:checked').length ) {
+                            validation = false;
+                            field = '';
+                            message = inst.options.consentText;
+                        } 
+                    }  
+                    // Does the input contain text?
+                    else if ( !$item.find('input').val().length ) {
+                        validation = false;
+                    }
+                } else if ( $item.find('select').length ) {
+                    if ( !$item.find('select option:selected').index() ) {
+                        validation = false;
+                    }
+                } else {
+                    if ( !$item.closest('table').find('input[type="checkbox"]:checked').length ) {
+                        $item = $item.next();
+                        validation = false;
+                    }
+                }
+
+                if (!validation) {
+                    $item.addClass('js--invalid');
+                    errors.push({
+                        name: field,
+                        message: message
+                    });
+                }
+            });
+
+            if (errors.length) {
+                $el.find('.module_error-container').html( Mustache.render( inst.options.errorTpl, {
+                    errors: errors,
+                    errorMessage: inst.options.errorMessage
+                })).show();
+            } else {
+                $el.find('.module_error-container').html('');
+
+            }
+
+            return errors;
+        },
+        scollingTable: function(selector){
+            $(selector).not(selector+' table').wrap('<div class="table-wrapper" />');
+        },
+        meetingFancy: function($selector, trigger){
+            var bCookie = document.cookie.replace(/(?:(?:^|.*;\s*)bCookie\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+            if ( !bCookie.length ) {
+                $selector.removeClass('js--hidden');
+            }
+            $selector.on('click', '.button--cookie',function(){
+                $selector.addClass('js--hidden');
+                document.cookie = 'bCookie=true; path=/';
+            });
+    
+            $selector.on('click', trigger, function(e){
+                e.preventDefault();
+                $.fancybox.open({
+                    type: 'iframe',
+                    src: '/request-meeting-iframe/default.aspx',
+                    opts: {
+                        smallBtn: false,
+                        margin: [10, 0],
+                        slideClass: 'fancybox-slide--form',
+                        parentEl: 'form'
+                    }
+                })
+            });
+            window.addEventListener('message', function (event) {
+                if (event.data == 'close-fancybox') {                
+                    $.fancybox.close();
+                }
+            }, false);
+        },
+        stickyNavBar: function() {
+            var inst = this,
+                $window = $(window),
+                $layout = $('.layout'),
+                $header = $('.pane--header'),
+                $nav = $('.nav--secondary'),
+                $navContainer = $('.pane--navigation'),
+                navContainerPos = function(){
+                    return $navContainer.position().top
+                };
+    
+            $window.on('scroll',function(){
+                if ( $window.scrollTop() > 0 ) {
+                    $layout.addClass('js--header-small')
+                } else {
+                    $layout.removeClass('js--header-small');
+                }
+                
+                if ($window.width() > 1200) {
+                    $navContainer.css('min-height', $nav.outerHeight());
+    
+                    if ( $window.scrollTop() + $header.outerHeight() >= navContainerPos() ) {
+                        $layout.addClass('js--sticky');
+                        $nav.css('top', $header.height());
+                    } else {
+                        $layout.removeClass('js--sticky');
+                        $nav.removeAttr('style');
+                    }
+                } else {
+                    $layout.removeClass('js--sticky');
+                    $nav.removeAttr('style');
+                    $navContainer.removeAttr('style');
+                }
+            });
+            $window.on('resize', function(){
+                if ($window.width() > 1024) {
+                    $layout.removeClass('js--sticky');
+                    $navContainer.removeAttr('style').css('min-height', $nav.outerHeight());
+                    $nav.removeAttr('style');
+                } else {
+                    $layout.removeClass('js--sticky');
+                    $nav.removeAttr('style');
+                    $navContainer.removeAttr('style');
+                }
+                $window.trigger('scroll');
+            }).resize();
+        },
+        sections: function(){
+            var hash = decodeURIComponent(window.location.hash.length ? window.location.hash.substring(1) : '');
+            if ( $('.module-'+hash).length ) {
+                setTimeout(function(){
+                    q4App.scrollTo($('.module-'+hash));
+                    window.location.hash = hash;
+                }, 1000);
+            }
+            $('nav').on('click','a[href*="#"]', function(e){
+                var $parent = $(this).closest('ul').parent('li'),
+                    hash = $(this).attr('href').split('#')[1];
+                if ($parent.hasClass('selected')) {
+                    e.preventDefault();
+                    window.location.hash = hash;
+                    q4App.scrollTo($('.module-'+hash));
+                }
+            });
+        },
+        search: function(button_s, input_s){
+            $(button_s).on('click', function(e) {
+                e.preventDefault();
+                var val2 = $(input_s).val();
+                window.open('https://www.impinj.com/search/?addsearch=' + val2, '_blank');
+            });
+
+            $(input_s).on('keydown', function(e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    var val2 = $(this).val();
+                    if ($(this).val().length) {
+                        window.open('https://www.impinj.com/search/?addsearch=' + val2, '_blank');
+                    }
+                }
+            });
+        },
+        _onMobileMenuExpand: function($nav) {
+            $nav.on('click', 'li.has-children:not(.home) > a', function(e) {
+                var $this = $(this),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('js--expanded')) {
+                    e.preventDefault();
+                    $parent.siblings().removeClass('js--expanded');
+                    $parent.addClass('js--expanded');
+                }
+            });
+        },
+        init: function() {
+            var app = this;
+    
+            app.cleanUp();
+            app.submitOnEnter('.module-unsubscribe');
+            app.submitOnEnter('.module-search');
+            app.validateSubmit('.module-search');
+            app.superfish($('.nav--main .level2'), {cssArrows: false});
+            app.mobileMenuToggle($('.layout'), '.pane--navigation', '.wrapper-module-hamburger-menu');
+            app.cleanQuickLinks($('.module-links'));
+            app.copyright($('.copyright_year'))
+            app.docTracking();
+            app.fancySignup();
+            app.resetDate(['.nav a[href*="s3.q4web.com"]:not([href$=".pdf"])']);
+            app.previewToolbar();
+            app.reveal('.pane--header .module-search','h2','input[type="text"]', '.module-subscribe_mailing-list, .module_actions', false);
+            app.stickyNavBar();
+            app.meetingFancy($('.module-cta'),'.button--meeting');
+            app.sections();
+            app.search('.button-search > input', '.module-search-corporate .input__search');
+        }
+    });
+    
+    q4App.init();
+    </script>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <input type="hidden" name="__antiCSRF" id="__antiCSRF" value=""/>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/anti-csrf.js">
+    </script>
+</body>
+</html>

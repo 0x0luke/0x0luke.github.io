@@ -1,0 +1,16 @@
+404 Not Found
+Accept-Ranges: bytes bytes
+Retry-Count: 0
+X-Served-By: cache-lhr6348-LHR
+X-Timer: S1565152945.773903,VS0,VE195
+Via: 1.1 varnish
+Access-Control-Allow-Methods: GET, HEAD
+X-Content-Type-Options: nosniff
+X-Content-Security-Policy: default-src 'self' https://*.twitter.com https://*.twimg.com http://*.twimg.com; connect-src *; font-src 'self' https://*.twitter.com https://*.twimg.com http://*.twimg.com data:; frame-src 'self' https://*.twitter.com https://*.twimg.com http://*.twimg.com; img-src *; media-src *; object-src *; script-src 'self' https://*.twitter.com https://*.twimg.com http://*.twimg.com; style-src 'unsafe-inline' 'self' https://*.twitter.com https://*.twimg.com http://*.twimg.com; report-uri https://twitter.com/i/csp_report?ro=false;
+Date: Wed, 07 Aug 2019 04:42:24 GMT
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Retry-After: 0
+Content-Length: 0
+Access-Control-Allow-Origin: https://amp.twimg.com
+Access-Control-Expose-Headers: Content-Type, Content-Length
+X-Cache: MISS

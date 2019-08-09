@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-store, no-cache, must-revalidate
+X-Trogdor-Host: ais81.iad2b.square
+X-Trogdor-Backend: idp.global.square/10.134.1.8:443
+Server: Duo/1.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+X-Content-Security-Policy: default-src 'self'; frame-src 'self' https://*.duosecurity.com; img-src 'self' data: https://static.duosecurity.com; object-src 'none'
+X-Frame-Options: deny
+X-Ua-Compatible: IE=edge
+Date: Wed, 07 Aug 2019 04:20:48 GMT
+Retry-Count: 0
+Content-Security-Policy: default-src 'self'; frame-src 'self' https://*.duosecurity.com; img-src 'self' data: https://static.duosecurity.com; object-src 'none'
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=631152000; preload; includeSubDomains
+Set-Cookie: AWSALB=aIIi7XlL0vdxm6P8VykUO+YVoE50GEjmJzTXb8eeAIuE5ElG/YWG0My/k0Vxwcp80gSxqvTDGt6tPAZhr7QJfKcu3umfe/LuwFSex0Ekk23M9uAeaOXWKPzrBJWz; Expires=Wed, 14 Aug 2019 04:20:48 GMT; Path=/ csrfp_token=63995a51fb97c5608f9d4bff9652b43f; expires=Wed, 07-Aug-2019 04:50:48 GMT; Max-Age=1800; secure
+Pragma: no-cache
+X-Xss-Protection: 1; mode=block
+X-Robots-Tag: noindex, nofollow

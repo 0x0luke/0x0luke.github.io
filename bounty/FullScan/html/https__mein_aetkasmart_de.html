@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- before html -->
+<!--[if IE 8]>               <html class="no-js ie ie8 lt-ie9"><![endif]-->
+<!--[if IE 9]>               <html class="no-js ie ie9"><![endif]-->
+<!--[if IEMobile]>           <html class="no-js ie ie-mobile"><![endif]-->
+<!--[if gt IE 8 | !IE]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+    
+    <head >
+
+        <title>Mein aetkaSMART</title>
+        <meta name="keywords" content="Homepage" />
+<meta name="description" content="Mein aetkaSMART - das aetkaSMART Kundenportal" />
+<meta name="robots" content="index, follow" />
+<meta property="og:site_name" content="Mein aetkaSMART" />
+<meta property="og:description" content="Mein aetkaSMART - das aetkaSMART Kundenportal" />
+<meta property="og:type" content="article" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <meta charset="utf-8">
+        <meta name="moni" content="ok"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <script>
+            localStorage.setItem("jwt", "");
+        </script>
+
+                    <link rel="shortcut icon" href="/uploads/media/mein.aetkasmart.de/de/6286/img/favicon.ico" type="image/x-icon" />
+            <link rel="icon" href="/uploads/media/mein.aetkasmart.de/de/6286/img/favicon.ico" type="image/x-icon" />
+            <link rel="apple-touch-icon" href="/uploads/media/mein.aetkasmart.de/de/6286/img/apple-touch-icon.png" />
+        
+                                        
+                        
+        
+                                
+                                                        
+                                                
+                                        
+        <!-- Body Scripts -->
+<script>
+    // Das Objekt dient zum vorhalten von Funktionen, die unmittelbar nach dem ready-Event von jQuery ausgeführt werden sollen
+    window.domReadyObject = {
+        countProperties: function(){
+            var count = 0;
+            for(var property in this){
+                if(this.hasOwnProperty(property)){
+                    count += 1;
+                }
+            }
+            return count;
+        }
+    };
+
+    // Die übergebenen Funktion wird entweder unmittelbar ausgeführt, wenn jQuery geladen und das 'ready'-Event geschmissen wurde, oder im domReadyObject vorgehalten.
+    window.onDomOrAjaxReady = function(p_function){
+        if(typeof jQuery !== 'undefined'){
+            ($.isReady) ? p_function() : $(document).on('ready', p_function);
+        }else{
+            window.domReadyObject['func_' + window.domReadyObject.countProperties()] = p_function;
+        }
+    };
+
+    // Hier werden alle vorgehaltenen Funktionen im domReadyObject ausgeführt
+    window.execDomReadyObject = function(){
+        for(var property in window.domReadyObject){
+            if(window.domReadyObject.hasOwnProperty(property) && ('countProperties' !== property)){
+                window.domReadyObject[property]();
+            }
+        }
+    };
+
+    window.dc = window.dc || {};
+    window.dc.config = window.dc.config || {};
+    window.dc.localStorage = window.dc.localStorage || {};
+    window.dc.localStorage.timestemp = window.dc.localStorage.timestemp || 1402389706108;
+    // Modernizr-Test auf localStorage
+    // localStorage test
+    window.dc.localStorage.test = function(){
+        if(window.dc.localStorage.testSuccessful){
+            return true;
+        }else if(window.dc.localStorage.testSuccessful === false){
+            return false;
+        }
+        try{
+            localStorage.setItem('modernizr', 'modernizr');
+            localStorage.removeItem('modernizr');
+            window.dc.localStorage.testSuccessful = true;
+        }catch(e){
+            window.dc.localStorage.testSuccessful = false;
+        }
+    };
+
+    window.dc.localStorage.checkDebugMode = (function(){
+        if (window.dc.localStorage.test() && localStorage.getItem('debug') !== null) {
+            window.dc.config.useLocalStorage = false;
+            window.dc.config.loadUnminifyVersion = true;
+        } else {
+            window.dc.config.useLocalStorage = true;
+            window.dc.config.loadUnminifyVersion = false;
+        }
+    })();
+
+    if(dc.config.useLocalStorage && dc.config.loadUnminifyVersion){
+        console.warn('-------------!!!!!-----localStorage wird nicht gelöscht!------!!!!!-----');
+    }
+
+    // Die Funktion prüft, ob es im localStorage schon einen identischen key (jeweils ohne versionierungsnummer) gibt und löscht diese incl. value im localStorage.
+    // check for a identical key (each without version number) in localStorage and delete it possibly.
+
+    window.dc.localStorage.clearOldVersionEntry = function(p_key){
+        var keyWithoutExtension = p_key.substr(0, p_key.lastIndexOf('.'));
+        var nonversionkey = keyWithoutExtension.substr(0, keyWithoutExtension.lastIndexOf('.'));
+        var patt = new RegExp(nonversionkey);
+        var index = 0;
+        var length = localStorage.length;
+        try{
+            for(; index <= length; index++){
+                if(patt.test(localStorage.key(index)) && (localStorage.key(index) !== p_key)){
+                    localStorage.removeItem(localStorage.key(index));
+                }
+            }
+        }catch(e){
+
+        }
+    };
+
+    // Fügt das CSS zum DOM entweder als link-Element oder aus dem localStorage
+    window.dc.localStorage.addCSSToDOM = function(p_src){
+        var linkElem;
+        var styleElem;
+        // wenn localStorage vorliegt aber der Datei-Pfade(key) und entsprechen die value nicht vorhanden ist.
+        // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades und anschließender ajax nach Dom-Ready um den Conten im localStorage abzulengen (kommt aus dem Cache).
+        if (dc.config.useLocalStorage && dc.localStorage.test() && (localStorage[p_src] === undefined)) {
+            // window.localStorage is available!
+            linkElem = document.createElement('link');
+            linkElem.setAttribute('rel', 'stylesheet');
+            linkElem.setAttribute('href', p_src);
+            document.getElementsByTagName('head')[0].appendChild(linkElem);
+            onDomOrAjaxReady(function(){
+                (function(){
+                    var xhr;
+                    xhr = new XMLHttpRequest();
+                    xhr.open('GET', p_src, true);
+                    xhr.send();
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== ''){
+                            dc.localStorage.clearOldVersionEntry(p_src);
+                            localStorage[p_src] = xhr.responseText;
+                        }
+                    };
+                })();
+            });
+            // wenn localStorage vorliegt und der Datei-Pfade(key) und entsprecher value im localStorage vorhanden ist.
+            // -> dynamische Erstellung eines style-tags mit injection der value aus dem localStorage.
+        }else if(dc.config.useLocalStorage && dc.localStorage.test() && (localStorage[p_src] !== undefined)){
+            styleElem = document.createElement('style');
+            styleElem.appendChild(document.createTextNode(localStorage[p_src]));
+            document.getElementsByTagName('head')[0].appendChild(styleElem);
+            // wenn kein localStorage vorliegt
+            // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades
+        }else{
+            linkElem = document.createElement('link');
+            linkElem.setAttribute('rel', 'stylesheet');
+            linkElem.setAttribute('href', p_src);
+            document.getElementsByTagName('head')[0].appendChild(linkElem);
+        }
+    };
+
+    // Fügt das JS zum DOM entweder als link-Element oder aus dem localStorage
+    window.dc.localStorage.addJSToDOM = function(p_src, p_attrkey, p_attrval, p_callback){
+        var scriptElem;
+        // wenn localStorage vorliegt aber der Datei-Pfade(key) und entsprechen die value nicht vorhanden ist.
+        // -> dynamische Erstellung eines script-tags mit Angabe des Datei-Pfades und anschließender ajax nach Dom-Ready um den Conten im localStorage abzulengen (kommt aus dem Cache).
+        if(dc.config.useLocalStorage && dc.localStorage.test() && (typeof localStorage[p_src] === 'undefined')){
+            // window.localStorage is available!
+            scriptElem = document.createElement('script');
+            scriptElem.setAttribute('src', p_src);
+            if(typeof p_attrkey !== 'undefined'){
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.async = false;
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+            onDomOrAjaxReady(function(){
+                (function(){
+                    var xhr;
+                    xhr = new XMLHttpRequest();
+                    xhr.open('GET', p_src, true);
+                    xhr.send();
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== ''){
+                            dc.localStorage.clearOldVersionEntry(p_src);
+                            localStorage[p_src] = xhr.responseText;
+                        }
+                    };
+                })();
+            });
+            // wenn localStorage vorliegt und der Datei-Pfade(key) und entsprecher value im localStorage vorhanden ist.
+            // -> dynamische Erstellung eines style-tags mit injection der value aus dem localStorage.
+        }else if(dc.config.useLocalStorage && dc.localStorage.test() && (typeof localStorage[p_src] !== 'undefined')){
+            scriptElem = document.createElement('script');
+            if(typeof p_attrkey !== 'undefined'){
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.text = localStorage[p_src];
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+            if(typeof p_callback !== 'undefined'){
+                p_callback.call(this);
+            }
+            // wenn kein localStorage vorliegt
+            // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades
+        }else{
+            scriptElem = document.createElement('script');
+            scriptElem.type = 'text/javascript';
+            scriptElem.setAttribute('src', p_src);
+            if(typeof p_attrkey !== 'undefined'){
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.async = false;
+            if(typeof p_callback !== 'undefined'){
+                scriptElem.onreadystatechange = function () {
+                    if (this.readyState == 'complete') p_callback();
+                }
+                scriptElem.onload = p_callback;
+            }
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+        }
+    };
+
+    window.dc.localStorage.addLocalStorageEntryToDom = function(p_str, p_url, p_moduleName, p_callback){
+        try{
+            (function firstTryToCreateScirptElement( code ) {
+                var script;
+                if ( code ) {
+                    new Function(code);
+                    script = document.createElement('script');
+                    script.setAttribute('data-name', p_moduleName);
+                    script.text = code;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                p_callback();
+            })(p_str);
+        }catch(e){
+            try{Raven.captureException(e);}catch(e){}
+            (function secontTryToCreateScirptElement(){
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', p_url, true);
+                xhr.send();
+                xhr.onreadystatechange = function () {
+                    if(xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== ''){
+                        dc.localStorage.clearOldVersionEntry(p_url);
+                        localStorage.setItem(p_url, xhr.responseText);
+                        (function secontTryToCreateScirptElementAjaxResponse( code ) {
+                            var script;
+                            if ( code ) {
+                                new Function(code);
+                                script = document.createElement('script');
+                                script.setAttribute('data-name', p_moduleName);
+                                script.text = code;
+                                document.getElementsByTagName('head')[0].appendChild(script);
+                            }
+                        })(xhr.responseText);
+                        p_callback();
+                    }else{
+                        try{Raven.captureMessage('Ajax File load is Broken!', { tags: { key: 'The response of secontTryToCreateScirptElementAjax is not (xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== \'\')'}});}catch(e){}
+                    }
+                };
+            })();
+        }
+    };
+
+    window.dc.localStorage.checkTimestamp = (function(){
+        if(dc.config.useLocalStorage && dc.localStorage.test()){
+            try{
+                // wenn kein timestamp im localStorage vorhanden ist wird einer erstellt.
+                if(localStorage.getItem('timestamp') === null){
+                    localStorage['timestamp'] = new Date().getTime().toString();
+                }else{
+                    // wenn der timestamp im localStorage kleiner ist als der fest codierte Timestamp, wird wird der localStorage gelöscht.
+                    if (parseInt(localStorage['timestamp'], 10) < window.dc.localStorage.timestemp) { // Nicht Ändern!!!! So wird bei allen Clients der localStorage gelöscht!!!! Nur Ändern, wenn sich die Datei-Pfad in der main.js zu den Modulen ändern Bsp. require.config({  paths:{ 'jmButtonForAddClassOnRelatedElem': 'mylibs/AMD-Plugins/jmButtonForAddClassOnRelatedElem',......
+                        window.localStorage.clear();
+                    }
+                }
+            }catch(e){
+            }
+        }
+    })();
+
+</script>
+
+<script>
+    window.dc = window.dc || {
+        client: {},
+        config: {},
+        perf: {}
+    };
+
+            window.dc.config.debug = false;
+        window.dc.config.useLocalStorage = true;
+        window.dc.config.loadUnminifyVersion = false;
+        window.temppath = '/bundles/chameleondefault/dist';
+    
+            window.mediaPath = '/uploads/media/mein.aetkasmart.de/de/6286';
+    
+    if(window.dc.config.loadUnminifyVersion){
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/modernizr.custom.js', undefined, undefined, function(){
+            if(!(Modernizr.picture && Modernizr.srcset) && navigator.userAgent.indexOf('Google Page Speed Insights') === -1){
+                dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/picturefill3.js');
+            }
+        });
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/matchmedia.js');
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/require.2.1.11.js', 'data-main', window.temppath+'/js/describer-config/main.js');
+    }else{
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/modernizr.custom.c2a06ed4b9.min.js');
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/modernizr.custom.c2a06ed4b9.min.js', undefined, undefined, function(){
+            if(!(Modernizr.picture && Modernizr.srcset) && navigator.userAgent.indexOf('Google Page Speed Insights') === -1){
+                dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/picturefill3.13fccff304.min.js');
+            }
+        });
+        dc.localStorage.addJSToDOM(window.temppath+'/js/describer-core/libs/matchmedia.6c68483cd3.min.js');
+        dc.localStorage.addJSToDOM(window.temppath + '/js/describer-localStorage/require.2.1.11-localStorage.f517098051.min.js', 'data-main', window.temppath + '/js/describer-config/main.dc49e546cb.min.js');
+    }
+</script>
+
+    <link rel="stylesheet" href="/uploads/media/mein.aetkasmart.de/de/6286/css/style.1e82d5a72c.min.css">
+
+            <script src="/uploads/media/mein.aetkasmart.de/de/6286/js/dc.ext.b25328890d.min.js"></script>
+    
+
+                                    
+    </head>
+
+
+<body><!-- Google Tag Manager START -->
+<gtm>
+			<script>
+            dataLayer = [];
+		</script>
+	
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-TJJ6D9T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TJJ6D9T');</script>
+</gtm>
+<!-- Google Tag Manager END -->
+    
+
+<div class="page">
+    
+            <script>
+
+            if (top.location != location) {
+                if (location.href.search('payment-cc-success-handle')) {
+                    top.location.href = location.href.replace('payment-cc-success-handle', 'payment-cc-success');
+                } else {
+                    top.location.href = document.location.href;
+                }
+                stop();
+            }
+        </script>
+                    
+
+        
+    
+    
+    <header class="page-header" role="banner">
+
+            
+            <div class="section">
+                    
+<a class="logo" href="https://mein.aetkasmart.de/de/startseite"><img alt="sunnysim" src="/uploads/media/mein.aetkasmart.de/de/6286/img/logo.png" /></a></div>
+
+                                
+                        
+    <nav class="nav nav--empty" id="nav" role="navigation">
+        <div class="section">
+                                </div>
+            </nav>
+
+        </header>
+        <main class="page-main" role="main">
+            <div class="page-section">
+                <div class="section">
+                                            
+
+                        
+
+                        
+                        
+
+                        <div class="grid-container">
+                                                                                                                                                        
+                
+                    
+                
+            <div id="ajaxReplaceAreaId-25150"
+             class="grid-col grid-col-4-4 ">
+                <div class="panel">
+        <form action="/de/login_check" method="post" class="form-login" data-jmname="form" data-jmdominit="true" novalidate>
+            <h2 class="form-login__title">Login</h2>
+            <fieldset class="form-set">
+    
+                                
+                                
+                                
+                <div class="form-group">
+                    <div class="form-section">
+                            		<label class="label-text" for="username">aetkaSMART Mobilfunknummer <abbr title="required">*</abbr></label>
+    
+
+
+
+	<input
+
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+					autocorrect="off"
+			class="input-text"
+			maxlength="30"
+			type="tel"
+			x-autocompletetype="tel"
+						data-rule-jmmsisdnph="Bitte geben Sie eine g&uuml;ltige Mobilfunknummer ein."
+							data-rule-jmrequired="Pflichtfeld"
+								
+
+		
+		
+
+		
+
+
+				id="username"		name="form[username]"																
+
+	/>
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="form-section">
+                        <label class="label-text" for="password">Passwort</label>
+                        <input class="input-text" type="password" id="password" name="form[password]" />
+                    </div>
+                    <div class="form-section">
+                        <button id ="loginBtn" type="submit" class="cta">Anmelden</button>
+                    </div>
+                    <input type="hidden" name="_csrf_token" value="W_z5XSJb_Cs_h-tyBKu-0kTv1f4_qP8jSx9VSi-zUIQ">
+
+                                    </div>
+
+                                    <div class="form-login__meta">
+                        <p><a href="/de/neu-registrieren">Neu registrieren</a><a href="/de/passwort-vergessen">Passwort vergessen</a></p>
+                    </div>
+                
+            </fieldset>
+        </form>
+    </div>
+
+        </div>
+    
+    
+                    
+                
+        
+                                                                                     </div>
+                    
+                    
+                </div>
+            </div>
+
+                            
+
+                                    
+                                        
+        </main>
+
+        
+        <footer class="page-footer" role="contentinfo">
+    <div class="section">
+        
+        <div class="legal">
+            <p class="copyright">Copyright &copy; 2019 aetka Communication Center AG, Alle Rechte vorbehalten</p>
+            <nav class="footer-nav">
+                <ul>
+	<li><a href="http://www.aetkasmart.de/startseite.aspx" target="_blank">www.aetkasmart.de</a></li>
+	<li><a href="http://www.aetkasmart.de/kontakt.aspx" target="_blank">Kontakt</a></li>
+	<li><a href="/de/datenschutzerklaerung" target="_blank">Datenschutz</a></li>
+	<li><a href="http://www.aetkasmart.de/PortalData/6/Resources/pdf/Preisliste_aetkaSMART.pdf" target="_blank">Preisliste</a></li>
+	<li><a href="http://www.aetkasmart.de/produktinformationsblatt.aspx" target="_blank">Produktinformationsbl&auml;tter</a></li>
+	<li><a href="http://www.aetkasmart.de/formulare.aspx" target="_blank">Formulare</a></li>
+	<li><a href="https://www.aetkasmart.de//portaldata/6/Resources/PDF/Produktinformationsblatt/Business/201804024_aetkaSMART_AGB_Postpaid_inkl_Leistungsbeschreibung.pdf" target="_blank">AGB</a></li>
+	<li><a href="/de/impressum">Impressum</a></li>
+</ul>
+            </nav>
+        </div>
+        <div class="legal-notes">
+            <a class="legal-notes-subject" href="#" data-jmname="legalNotes">Hinweise zu den Tarifen</a>
+            <div class="legal-notes-panel">
+                <p><p style="text-align:justify">1) <strong>Smart Flat mit 700 MB - </strong>Monatlicher Paketpreis: 9,90&euro;; Vermarktungsstart: 20.02.2017; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. Im Tarif sind monatlich enthalten sind 350 Einheiten f&uuml;r Standard- Sprach- und SMS Verbindungen innerhalb Deutschlands und im EU-Ausland. 700 MB monatliches Datenvolumen. Nach Verbrauch der Inklusiveinheiten nutzungsabh&auml;ngige Verbindungspreise gem&auml;&szlig; Preisliste; bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Festnetznummer 5,00 &euro; zus&auml;tzlich zum monatlichen Paketpreis, Laufzeit gem&auml;&szlig; Hauptvertrag. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p>
+
+<p style="text-align:justify">2) <strong>Smart Flat mit&nbsp;2 GB - </strong>Monatlicher Paketpreis: 14,90&euro;; Vermarktungsstart: 20.02.2017; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. Im Tarif sind monatlich enthalten sind 350 Einheiten f&uuml;r Standard- Sprach- und SMS Verbindungen innerhalb Deutschlands und im EU-Ausland. 2 GB monatliches Datenvolumen. Nach Verbrauch der Inklusiveinheiten nutzungsabh&auml;ngige Verbindungspreise gem&auml;&szlig; Preisliste; bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Festnetznummer 5,00 &euro; zus&auml;tzlich zum monatlichen Paketpreis, Laufzeit gem&auml;&szlig; Hauptvertrag. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p>
+
+<p style="text-align:justify">3) <strong>Allnet Flat mit 3 GB - </strong>Monatlicher Paketpreis: 19,90&euro;; Vermarktungsstart: 20.02.2017; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. Im Tarif monatlich enthalten sind unbegrenzte Inklusiveinheiten f&uuml;r Standard- Sprach- und SMS Verbindungen innerhalb Deutschlands und im EU-Ausland. 3 GB monatliches Datenvolumen. Nach Verbrauch der Inklusiveinheiten nutzungsabh&auml;ngige Verbindungspreise gem&auml;&szlig; Preisliste; bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p>
+
+<p style="text-align:justify">4) <strong>Allnet Flat mit 4 GB -</strong> Monatlicher Paketpreis: 24,90&euro;; Vermarktungsstart: 20.02.2017; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. Im Tarif monatlich enthalten sind unbegrenzte Inklusiveinheiten f&uuml;r Standard- Sprach- und SMS Verbindungen innerhalb Deutschlands und im EU-Ausland. 4 GB monatliches Datenvolumen. Nach Verbrauch der Inklusiveinheiten nutzungsabh&auml;ngige Verbindungspreise gem&auml;&szlig; Preisliste; bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p>
+
+<p style="text-align:justify">5) <strong>Surf-Flat M mit 1 GB - </strong>Monatlicher Paketpreis: 8,90&euro;; Vermarktungsstart: 01.05.2016; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. 1 GB monatliches Datenvolumen. Bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p>
+
+<p style="text-align:justify">6) <strong>Surf-Flat XL mit 5 GB -&nbsp;</strong>Monatlicher Paketpreis: 14,90&euro;; Vermarktungsstart: 01.05.2016; Mindestvertragslaufzeit 24 Monate, K&uuml;ndigungsfrist 3 Monate zum Vertragsende. 5 GB monatliches Datenvolumen. Bis zum Verbrauch des inkludierten Datenvolumens 21,6 Mbit/s im Download (8,6 Mbit/s im Upload), danach max. 64 Kbit/s (Up- und Download), gilt f&uuml;r paketvermittelte Daten auch innerhalb der EU. Alle Einzelheiten des Tarifes sind der Leistungsbeschreibung, der Preisliste und den AGB zu entnehmen.</p><p>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+                                    <script>
+                var CaptchaCallback = function () {
+                    if (typeof chamCaptchas == 'undefined') {
+                        return;
+                    }
+                    captchaWidgets = [];
+
+                    for (var i = 0; i < chamCaptchas.length; i++) {
+                        captchaWidgets.push(grecaptcha.render(chamCaptchas[i], {"sitekey": captchaSiteKey}));
+                    }
+                };
+            </script>
+
+            <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+            
+
+                                                                                    
+            
+            
+    <!-- monitoring:3e9fda56df2cdd3b039f189693ab7844fbb2d4f6 -->
+</div>
+
+
+</body>
+</html>

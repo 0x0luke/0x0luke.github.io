@@ -1,0 +1,14 @@
+200 OK
+X-Ua-Compatible: IE=edge
+Set-Cookie: csrf_token=AQDPmYlKvBQ70-LvrHqJs_9pT6cImAmjWs4Rp6Z_MjaqpzGMVBKR6SfQbjHYjLyi4y2ZbXA5MgBV8cI57w;Version=1;Domain=accounts.spotify.com;Path=/;Secure
+Date: Wed, 07 Aug 2019 04:19:54 GMT
+Vary: Accept-Encoding
+Content-Security-Policy: default-src 'self'; script-src 'self' https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://accounts.scdn.co; img-src 'self' https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://profile-images.scdn.co https://aci.scdn.co https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net https://platform-lookaside.fbsbx.com https://www.google-analytics.com https://stats.g.doubleclick.net data: https://accounts.scdn.co; font-src 'self' https://sp-bootstrap.global.ssl.fastly.net https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://accounts.scdn.co; frame-src 'self' https://www.spotify.com https://www.google.com https://app.adjust.com https://itunes.apple.com itms-apps:;
+X-Content-Security-Policy: default-src 'self'; script-src 'self' https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://accounts.scdn.co; img-src 'self' https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://profile-images.scdn.co https://aci.scdn.co https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net https://platform-lookaside.fbsbx.com https://www.google-analytics.com https://stats.g.doubleclick.net data: https://accounts.scdn.co; font-src 'self' https://sp-bootstrap.global.ssl.fastly.net https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://accounts.scdn.co; frame-src 'self' https://www.spotify.com https://www.google.com https://app.adjust.com https://itunes.apple.com itms-apps:;
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Server: nginx
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000

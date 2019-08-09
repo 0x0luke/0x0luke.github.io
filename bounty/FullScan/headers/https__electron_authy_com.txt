@@ -1,0 +1,16 @@
+200 OK
+Date: Wed, 07 Aug 2019 05:09:51 GMT
+Content-Type: application/json
+Set-Cookie: __cfduid=d0d89f92531dbf0a22eafcdab9d7fa1661565154591; expires=Thu, 06-Aug-20 05:09:51 GMT; path=/; domain=.authy.com; HttpOnly
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Id: 9Cg6jU7rKh1xOfkl_P4w4l1efpFTks4f-vr8aTGpcXmRfdyhYS8MCQ==
+Cf-Ray: 5026bda509c0d220-MAN
+Retry-Count: 0
+Via: 1.1 9ba3cc0531c92002d06a895bfb6e3f55.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR62-C3
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Length: 0
+X-Amzn-Requestid: 960eaab3-b8d1-11e9-8b93-156e146b5f1a
+X-Amz-Apigw-Id: eCN88G1RoAMFtYQ=
+X-Content-Type-Options: nosniff
+Server: cloudflare

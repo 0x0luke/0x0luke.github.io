@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--[if IE 8]>               <html class="no-js ie ie8 lt-ie9"><![endif]-->
+<!--[if IE 9]>               <html class="no-js ie ie9"><![endif]-->
+<!--[if IEMobile]>           <html class="no-js ie ie-mobile"><![endif]-->
+<!--[if gt IE 8 | !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <meta name="msapplication-square180x180logo" content="/apple-touch-icon.png" />
+
+
+
+    
+
+    <title>Die günstigen NettoKOM Mobilfunktarife für Ihr Handy</title>
+<meta content="NettoKOM - die günstige Prepaid SIM Karte. Tarife für Handy und Smartphone zum telefonieren und für mobiles Internet" name="description"/>
+<meta content="deutschland,handy,telefonieren,inland,Basic,9,tarif,world,smart,roaming" name="keywords"/>
+
+<link href="https://www.nettokom.de/" rel="canonical" />
+
+
+    <script>
+    // Das Objekt dient zum vorhalten von Funktionen, die unmittelbar nach dem ready-Event von jQuery ausgefÃ¼hrt werden sollen
+    window.domReadyObject = {
+        countProperties: function () {
+            var count = 0;
+            for (var property in this) {
+                if (this.hasOwnProperty(property)) {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+    };
+
+    // Die Ã¼bergebenen Funktion wird entweder unmittelbar ausgefÃ¼hrt, wenn jQuery geladen und das 'ready'-Event geschmissen wurde, oder im domReadyObject vorgehalten.
+    window.onDomOrAjaxReady = function (p_function) {
+        if (typeof jQuery !== 'undefined') {
+            ($.isReady) ? p_function() : $(document).on('ready', p_function);
+        } else {
+            window.domReadyObject['func_' + window.domReadyObject.countProperties()] = p_function;
+        }
+    };
+
+    // Hier werden alle vorgehaltenen Funktionen im domReadyObject ausgefÃ¼hrt
+    window.execDomReadyObject = function () {
+        for (var property in window.domReadyObject) {
+            if (window.domReadyObject.hasOwnProperty(property) && ('countProperties' !== property)) {
+                window.domReadyObject[property]();
+            }
+        }
+    };
+
+    window.dc = window.dc || {};
+    window.dc.config = window.dc.config || {};
+    window.dc.localStorage = window.dc.localStorage || {};
+    window.dc.localStorage.timestemp = window.dc.localStorage.timestemp || 1402389706108;
+    // Modernizr-Test auf localStorage
+    // localStorage test
+    window.dc.localStorage.test = function () {
+        if (window.dc.localStorage.testSuccessful) {
+            return true;
+        } else if (window.dc.localStorage.testSuccessful === false) {
+            return false;
+        }
+        try {
+            localStorage.setItem('modernizr', 'modernizr');
+            localStorage.removeItem('modernizr');
+            window.dc.localStorage.testSuccessful = true;
+        } catch (e) {
+            window.dc.localStorage.testSuccessful = false;
+        }
+    };
+
+    window.dc.localStorage.checkDebugMode = (function () {
+        if (window.dc.localStorage.test() && localStorage.getItem('debug') !== null) {
+            window.dc.config.useLocalStorage = false;
+            window.dc.config.loadUnminifyVersion = true;
+        } else {
+            window.dc.config.useLocalStorage = true;
+            window.dc.config.loadUnminifyVersion = false;
+        }
+    })();
+
+    if (dc.config.useLocalStorage && dc.config.loadUnminifyVersion) {
+        console.warn('-------------!!!!!-----localStorage wird nicht gelÃ¶scht!------!!!!!-----');
+    }
+
+    // Die Funktion prÃ¼ft, ob es im localStorage schon einen identischen key (jeweils ohne versionierungsnummer) gibt und lÃ¶scht diese incl. value im localStorage.
+    // check for a identical key (each without version number) in localStorage and delete it possibly.
+
+    window.dc.localStorage.clearOldVersionEntry = function (p_key) {
+        var keyWithoutExtension = p_key.substr(0, p_key.lastIndexOf('.'));
+        var nonversionkey = keyWithoutExtension.substr(0, keyWithoutExtension.lastIndexOf('.'));
+        var patt = new RegExp(nonversionkey);
+        var index = 0;
+        var length = localStorage.length;
+        try {
+            for (; index <= length; index++) {
+                if (patt.test(localStorage.key(index)) && (localStorage.key(index) !== p_key)) {
+                    localStorage.removeItem(localStorage.key(index));
+                }
+            }
+        } catch (e) {
+
+        }
+    };
+
+    // FÃ¼gt das CSS zum DOM entweder als link-Element oder aus dem localStorage
+    window.dc.localStorage.addCSSToDOM = function (p_src) {
+        var linkElem;
+        var styleElem;
+        // wenn localStorage vorliegt aber der Datei-Pfade(key) und entsprechen die value nicht vorhanden ist.
+        // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades und anschlieÃŸender ajax nach Dom-Ready um den Conten im localStorage abzulengen (kommt aus dem Cache).
+        if (dc.config.useLocalStorage && dc.localStorage.test() && (localStorage[p_src] === undefined)) {
+            // window.localStorage is available!
+            linkElem = document.createElement('link');
+            linkElem.setAttribute('rel', 'stylesheet');
+            linkElem.setAttribute('href', p_src);
+            document.getElementsByTagName('head')[0].appendChild(linkElem);
+            onDomOrAjaxReady(function () {
+                (function () {
+                    var xhr;
+                    xhr = new XMLHttpRequest();
+                    xhr.open('GET', p_src, true);
+                    xhr.send();
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== '') {
+                            dc.localStorage.clearOldVersionEntry(p_src);
+                            localStorage[p_src] = xhr.responseText;
+                        }
+                    };
+                })();
+            });
+            // wenn localStorage vorliegt und der Datei-Pfade(key) und entsprecher value im localStorage vorhanden ist.
+            // -> dynamische Erstellung eines style-tags mit injection der value aus dem localStorage.
+        } else if (dc.config.useLocalStorage && dc.localStorage.test() && (localStorage[p_src] !== undefined)) {
+            styleElem = document.createElement('style');
+            styleElem.appendChild(document.createTextNode(localStorage[p_src]));
+            document.getElementsByTagName('head')[0].appendChild(styleElem);
+            // wenn kein localStorage vorliegt
+            // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades
+        } else {
+            linkElem = document.createElement('link');
+            linkElem.setAttribute('rel', 'stylesheet');
+            linkElem.setAttribute('href', p_src);
+            document.getElementsByTagName('head')[0].appendChild(linkElem);
+        }
+    };
+
+    // FÃ¼gt das JS zum DOM entweder als link-Element oder aus dem localStorage
+    window.dc.localStorage.addJSToDOM = function (p_src, p_attrkey, p_attrval, p_callback) {
+        var scriptElem;
+        // wenn localStorage vorliegt aber der Datei-Pfade(key) und entsprechen die value nicht vorhanden ist.
+        // -> dynamische Erstellung eines script-tags mit Angabe des Datei-Pfades und anschlieÃŸender ajax nach Dom-Ready um den Conten im localStorage abzulengen (kommt aus dem Cache).
+        if (dc.config.useLocalStorage && dc.localStorage.test() && (typeof localStorage[p_src] === 'undefined')) {
+            // window.localStorage is available!
+            scriptElem = document.createElement('script');
+            scriptElem.setAttribute('src', p_src);
+            if (typeof p_attrkey !== 'undefined') {
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.async = false;
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+            onDomOrAjaxReady(function () {
+                (function () {
+                    var xhr;
+                    xhr = new XMLHttpRequest();
+                    xhr.open('GET', p_src, true);
+                    xhr.send();
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== '') {
+                            dc.localStorage.clearOldVersionEntry(p_src);
+                            localStorage[p_src] = xhr.responseText;
+                        }
+                    };
+                })();
+            });
+            // wenn localStorage vorliegt und der Datei-Pfade(key) und entsprecher value im localStorage vorhanden ist.
+            // -> dynamische Erstellung eines style-tags mit injection der value aus dem localStorage.
+        } else if (dc.config.useLocalStorage && dc.localStorage.test() && (typeof localStorage[p_src] !== 'undefined')) {
+            scriptElem = document.createElement('script');
+            if (typeof p_attrkey !== 'undefined') {
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.text = localStorage[p_src];
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+            if (typeof p_callback !== 'undefined') {
+                p_callback.call(this);
+            }
+            // wenn kein localStorage vorliegt
+            // -> dynamische Erstellung eines link-tags mit Angabe des Datei-Pfades
+        } else {
+            scriptElem = document.createElement('script');
+            scriptElem.type = 'text/javascript';
+            scriptElem.setAttribute('src', p_src);
+            if (typeof p_attrkey !== 'undefined') {
+                scriptElem.setAttribute(p_attrkey, p_attrval);
+            }
+            scriptElem.async = false;
+            if (typeof p_callback !== 'undefined') {
+                scriptElem.onreadystatechange = function () {
+                    if (this.readyState == 'complete') p_callback();
+                }
+                scriptElem.onload = p_callback;
+            }
+            document.getElementsByTagName('head')[0].appendChild(scriptElem);
+        }
+    };
+
+    window.dc.localStorage.addLocalStorageEntryToDom = function (p_str, p_url, p_moduleName, p_callback) {
+        try {
+            (function firstTryToCreateScirptElement(code) {
+                var script;
+                if (code) {
+                    new Function(code);
+                    script = document.createElement('script');
+                    script.setAttribute('data-name', p_moduleName);
+                    script.text = code;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                p_callback();
+            })(p_str);
+        } catch (e) {
+            try { Raven.captureException(e); } catch (e) { }
+            (function secontTryToCreateScirptElement() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', p_url, true);
+                xhr.send();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== '') {
+                        dc.localStorage.clearOldVersionEntry(p_url);
+                        localStorage.setItem(p_url, xhr.responseText);
+                        (function secontTryToCreateScirptElementAjaxResponse(code) {
+                            var script;
+                            if (code) {
+                                new Function(code);
+                                script = document.createElement('script');
+                                script.setAttribute('data-name', p_moduleName);
+                                script.text = code;
+                                document.getElementsByTagName('head')[0].appendChild(script);
+                            }
+                        })(xhr.responseText);
+                        p_callback();
+                    } else {
+                        try { Raven.captureMessage('Ajax File load is Broken!', { tags: { key: 'The response of secontTryToCreateScirptElementAjax is not (xhr.readyState === 4 && xhr.status !== 404 && xhr.responseText !== \'\')' } }); } catch (e) { }
+                    }
+                };
+            })();
+        }
+    };
+
+    window.dc.localStorage.checkTimestamp = (function () {
+        if (dc.config.useLocalStorage && dc.localStorage.test()) {
+            try {
+                // wenn kein timestamp im localStorage vorhanden ist wird einer erstellt.
+                if (localStorage.getItem('timestamp') === null) {
+                    localStorage['timestamp'] = new Date().getTime().toString();
+                } else {
+                    // wenn der timestamp im localStorage kleiner ist als der fest codierte Timestamp, wird wird der localStorage gelÃ¶scht.
+                    if (parseInt(localStorage['timestamp'], 10) < window.dc.localStorage.timestemp) { // Nicht Ã„ndern!!!! So wird bei allen Clients der localStorage gelÃ¶scht!!!! Nur Ã„ndern, wenn sich die Datei-Pfad in der main.js zu den Modulen Ã¤ndern Bsp. require.config({  paths:{ 'jmButtonForAddClassOnRelatedElem': 'mylibs/AMD-Plugins/jmButtonForAddClassOnRelatedElem',......
+                        window.localStorage.clear();
+                    }
+                }
+            } catch (e) {
+            }
+        }
+    })();
+
+</script>
+<script>
+    window.dc = window.dc || {
+        client: {},
+        config: {},
+        perf: {}
+    };
+
+        
+        window.dc.config.debug = false;
+        window.dc.config.useLocalStorage = true;
+        window.dc.config.loadUnminifyVersion = false;
+        
+
+    if (window.dc.config.loadUnminifyVersion) {
+        dc.localStorage.addJSToDOM('/js/describer-core/libs/modernizr.custom.js', undefined, undefined, function () {
+            if (!(Modernizr.picture && Modernizr.srcset) && navigator.userAgent.indexOf('Google Page Speed Insights') === -1) {
+                dc.localStorage.addJSToDOM('/js/describer-core/libs/picturefill3.js');
+            }
+        });
+        dc.localStorage.addJSToDOM('/js/describer-core/libs/matchmedia.js');
+        dc.localStorage.addJSToDOM('/js/describer-core/libs/require.2.1.11.js', 'data-main', '/js/describer-config/main.js');
+    } else {
+        dc.localStorage.addJSToDOM('/js/build/describer-core/libs/modernizr.custom.c2a06ed4b9.min.js');
+        dc.localStorage.addJSToDOM('/js/build/describer-core/libs/modernizr.custom.c2a06ed4b9.min.js', undefined, undefined, function () {
+            if (!(Modernizr.picture && Modernizr.srcset) && navigator.userAgent.indexOf('Google Page Speed Insights') === -1) {
+                dc.localStorage.addJSToDOM('/js/build/describer-core/libs/picturefill3.13fccff304.min.js');
+            }
+        });
+        dc.localStorage.addJSToDOM('/js/build/describer-core/libs/matchmedia.6c68483cd3.min.js');
+        dc.localStorage.addJSToDOM('/js/build/describer-localStorage/require.2.1.11-localStorage.f517098051.min.js', 'data-main', '/js/build/describer-config/main.fa501356d4.min.js');
+        dc.localStorage.addCSSToDOM('/css/style.7b9cd49472.min.css');
+    }
+
+</script>
+
+
+<noscript>
+    <link rel="stylesheet" href="/css/style.css">
+</noscript>
+</head>
+<body>
+    <div class="page">
+        
+
+<header class="page-header" role="banner">
+    <div class="section">
+        <div class="logos">
+            <a href="/"><img alt="NettoKOM" src="/img/logo.png"></a>
+        </div>
+    </div>
+
+    <nav class="nav" id="nav" role="navigation">
+	    <div class="section">
+		            
+			<div class="button-nav">				
+                <a href="https://mein.nettokom.de/" class="btn btn--yellow">Kundenlogin</a>
+			</div>
+
+			<a class="menu-btn" href="#nav" data-jmname="nav">Menu</a>
+
+			<ul class="nav-items">
+                    <li class="nav-item has-flyout">
+                            <a href="/tarife" class="nav-link cursor " data-jmname="nav-link" data-jmdominit="true" >Tarife</a>
+                                                    <div class="flyout">
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/tarife/tarifuebersicht">Tarif&#252;bersicht</a>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/tarife/basic/inland">Basic</a>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/tarife/smart">Smart</a>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/tarife/world/tarif">World</a>
+                                            </div>
+                                        </div>
+                            </div>
+                                            </li>
+                    <li class="nav-item">
+                            <a href="/freischalten" class="nav-link " data-jmname="nav-link" data-jmdominit="true" >Freischalten</a>
+                                                                    </li>
+                    <li class="nav-item">
+                            <a href="/bestellen/tarife" class="nav-link " data-jmname="nav-link" data-jmdominit="true" >Bestellen</a>
+                                                                    </li>
+                    <li class="nav-item has-flyout">
+                            <a href="/hilfe" class="nav-link cursor " data-jmname="nav-link" data-jmdominit="true" >Hilfe &amp; Service</a>
+                                                    <div class="flyout">
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/hilfe/faq">FAQ</a>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/hilfe/kontakt">Kontakt</a>
+                                            </div>
+                                        </div>
+                                        <div class="flyout-group">
+                                            <div class="flyout-item">
+                                                        <a class="flyout-group-title " data-jmname="flyout-link"  href="/downloads">Downloads &amp; Formulare</a>
+                                            </div>
+                                        </div>
+                            </div>
+                                            </li>
+
+                <li class="nav-item hide-small">
+                    <a href="https://mein.nettokom.de/" class="nav-link">Kundenlogin</a>
+                </li>
+			</ul>
+
+	    </div>
+    </nav>
+</header>
+
+        <main class="page-main" role="main">
+
+
+
+<div class="page-section">
+    <div class="section">
+        <!-- data-jmname="carousel" hinzufügen, wenn wieder mehrere Stage-Teaser verfügbar sind -->
+        <div class="js-before-init" data-size="[]" data-jmdominit="true">
+            <div class="stage-teaser visible">
+				<div class="st-figure">
+                    <div style="position: absolute; top: 75%; left: 39%;">
+                        <div class="rt-modal-btn--red"><a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/Netto_LTE_lang" target="blank">*</a></div>
+                    </div>
+                    <div style="position: absolute; top: 75%; left: 55.6%;">
+                        <div class="rt-modal-btn--red"><a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/Netto_LTE_lang" target="blank">*</a></div>
+                    </div>
+                    <div style="position: absolute; top: 75%; left: 71.6%;">
+                        <div class="rt-modal-btn--red"><a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/Netto_LTE_lang" target="blank">*</a></div>
+                    </div>
+					<a href="/tarife/smart" title="Jetzt bestellen">
+						<img src="/img/homepage/gallery-teaser/1905017_NettoKOM_Onlinebanner_Startseite_Juni2019_02.jpg" alt="">
+					</a>
+				</div>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page-section section-content">
+    <div class="section">
+
+        <div class="section-teaser section-teaser--plus-margin" data-jmname="equalheights-not-mobile" data-jmdominit="true">
+
+            <div class="teaser-promotion teaser-promotion--orange">
+                <div class="t-header">
+                    <img class="t-head-img" src="/img/homepage/box1/header.png" alt="" />
+                    <h3 class="t-subhead">Der günstige Basistarif.<br />&nbsp;</h3>
+                </div>
+
+                <div class="t-main">
+                    <ul class="check-list check-list--orange" data-jmselector="equal-heights-children">
+                        <li class="list-item">9 Cent/Minute</li>
+                        <li class="list-item">9 Cent/SMS</li>
+                        <li class="list-item">Tarif-Optionen zubuchbar</li>
+                        <li class="list-item">Ohne Vertragsbindung</li>
+                        <li class="list-item">Innerhalb Deutschlands und im EU-Ausland</li>
+                        <li class="list-item">Bei Rufnummern-Mitnahme 25 € zusätzlich <a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/netto_mnp" target="blank">*</a></li>
+                    </ul>
+                    <div class="price-box price-box--orange">
+                        <span class="pb-price">0 €</span> <span class="pb-post">Grundgebühr</span>
+                    </div>
+                    <p class="t-one-time-price">Startpaket einmalig 9,99 € inkl. 10 € Startguthaben</p>
+                    <p class="align-center t-pib"><a href="/documents/produktinformationsblatt_nettokom_basic.pdf" class="link-hero" target="_blank">Produktinformationsblatt</a></p>
+                </div>
+
+                <div class="t-footer">
+                    <a href="/tarife/basic/inland" class="link-hero">Infos zu NettoKOM Basic</a>
+                    <a href="/bestellen" class="cta cta--orange">Bestellen</a>
+                </div>
+            </div>
+
+            <div class="teaser-promotion teaser-promotion--blue">
+                <div class="t-header">
+                    <img class="t-head-img" src="/img/homepage/box2/header.png" alt="" />
+                    <h3 class="t-subhead">Volle Leistung für Ihr Smartphone.<br />&nbsp;</h3>
+                </div>
+
+                <div class="t-main">
+                    <ul class="check-list check-list--blue" data-jmselector="equal-heights-children">
+                        <li class="list-item">Internet-Flat mit 2 GB Highspeed-Volumen</li>
+                        <li class="list-item">Allnet-Flat (Min./SMS)</li>
+                        <li class="list-item">Für mehr Highspeed-Volumen: Wechsel in Smart M und Smart L jederzeit möglich</li>
+                        <li class="list-item">Innerhalb Deutschlands und im EU-Ausland</li>
+                        <li class="list-item">Bei Rufnummern-Mitnahme 25 € zusätzlich <a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/netto_mnp" target="blank">*</a></li>
+                        <li class="list-item">Ohne Vertragsbindung</li>
+                    </ul>
+                    <div class="price-box price-box--blue rt-modal-btn--white">
+                        <span class="pb-price">nur 7,99 €</span> <span class="pb-post">/ 4 Wochen</span>
+                        <div style="position: absolute; top: 1.5%; left: 92.5%;"><a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/netto_smart_s" target="blank">*</a></div>
+                    </div>
+                    <p class="t-one-time-price">Startpaket einmalig 9,99 € inkl. 4 Wochen Smart S (Option jederzeit abbestellbar)</p>
+                    <p class="align-center"><a href="/documents/produktinformationsblatt_smart_s.pdf" class="link-hero" target="_blank">Produktinformationsblatt</a></p>
+                </div>
+
+                <div class="t-footer">
+                    <a href="/tarife/smart" class="link-hero">Infos zu NettoKOM Smart S</a>
+                    <a href="/bestellen/smart" class="cta cta--blue">Bestellen</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="page-section">
+    <div class="section">
+
+        <div class="section-teaser section-teaser--margin" data-jmname="equalheights-not-mobile" data-jmselector="equalheights-not-mobile" data-jmdominit="true">
+
+            <div class="teaser-outline">
+                <div class="t-header">
+                    <h2 class="t-head">Guthaben aufladen</h2>
+                </div>
+                <div class="t-main" data-jmselector="equal-heights-children">
+                    <ul class="triangle-list">
+                        <li class="list-item">NettoKOM Aufladekarten in Höhe von 5&euro;, 15&euro;, 25&euro; erhalten Sie in jeder Netto-Filiale an der Kasse.</li>
+                        <li class="list-item">Oder ganz einfach Aufladen per auto- matischer Aufladung oder per Direktaufladung im eingeloggten Kunden-Bereich.</li>
+                    </ul>
+                </div>
+                <a href="/tarife/basic/aufladen">
+                    <div class="t-footer">
+                        <span class="link-hero">Zur Online-Aufladung</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="teaser-outline">
+                <div class="t-header">
+                    <h2 class="t-head">SIM-Karten Freischaltung</h2>
+                </div>
+                <div class="t-main" data-jmselector="equal-heights-children">
+
+                    <div class="video-container">
+                        <iframe class="video" src="https://www.youtube.com/embed/EUguZpy8ex4" allowfullscreen="" frameborder="0"></iframe>
+                    </div>
+
+                </div>
+                <a href="/hilfe/faq#4-6">
+                    <div class="t-footer">
+                        <span class="link-hero">Mehr Infos</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="teaser-outline">
+                <div class="t-header">
+                    <h2 class="t-head">Neu: Highspeed Booster</h2>
+                </div>
+                <div class="t-main" data-jmselector="equal-heights-children">
+                    <ul class="triangle-list">
+                        <li class="list-item">Gültig für alle Smart- und Internet-Optionen</li>
+                        <li class="list-item">Highspeed Booster S: Zusätzlich 100 MB Highspeed-Volumen für 2,00 € hinzubuchbar <a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/Speedbooster_S" target="blank">*</a></li>
+                        <li class="list-item">Highspeed Booster L: Zusätzlich 1 GB Highspeed-Volumen für 5,00 € hinzubuchbar <a class="rt-modal-btn" data-jmdominit="true" data-jmname="tooltipLegal" href="/Legal/_Note/Speedbooster_L" target="blank">*</a></li>
+                    </ul>
+                </div>
+                <a href="https://mein.nettokom.de/de" target="_blank">
+                    <div class="t-footer">
+                        <span class="link-hero">Zur Buchung</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        </main>
+
+        <footer class="page-footer" role="contentinfo">
+    <div class="section">
+        <a class="netto-logo-discount" href="http://www.netto-online.de" target="_blank"></a>
+
+        <div class="footer-aside">
+            Sie haben eine Frage?<br>
+            Wir sind gerne für Sie da! <a href="/hilfe/kontakt" class="link">Kontakt</a>
+        </div>
+
+        <div class="legal">
+			<p class="copyright">
+				Vertragspartner ist die Telefónica Germany GmbH & Co. OHG,<br />
+				Georg-Brauchle-Ring 50, 80992 München<br />
+				&copy; 2019 Telefónica Germany GmbH & Co. OHG
+			</p>
+
+            <nav class="footer-nav">
+                <ul class="footer-nav-items">
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/impressum">Impressum</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/datenschutz">Datenschutz</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/agb">AGB</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/hilfe/kontakt">Kontakt</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/hilfe/faq">FAQ</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/tarife/tarifuebersicht">Tarifübersicht</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <!-- GTM Tracking -->
+    <script>
+        var dataLayer = [{
+  "page": {
+    "ref": "http://www.nettokom.de/",
+    "url": "http://www.nettokom.de:8081/",
+    "template": "",
+    "osit": "",
+    "mosit": "",
+    "type": ""
+  },
+  "site": {
+    "brand": "NettoKOM",
+    "portal_id": "Responsive",
+    "language": "de",
+    "status": 200,
+    "context": ""
+  }
+}];
+    </script>
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFT9CB" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WFT9CB');</script>
+    <!-- End GTM Tracking -->
+</body>
+</html>

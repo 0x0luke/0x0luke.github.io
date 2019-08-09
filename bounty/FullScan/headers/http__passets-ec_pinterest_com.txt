@@ -1,0 +1,12 @@
+403 Forbidden
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET
+Access-Control-Max-Age: 86400
+Access-Control-Expose-Headers: X-CDN
+Vary: Origin
+Cache-Control: no-cache,no-store
+Retry-Count: 0
+Content-Type: application/xml
+Content-Length: 243
+X-Cdn: fastly
+X-Amz-Bucket-Region: us-east-1

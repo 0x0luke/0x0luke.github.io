@@ -1,0 +1,19 @@
+404 Not Found
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Cf-Ray: 5032288b8f9fbfd4-MAN
+Date: Thu, 08 Aug 2019 14:25:13 GMT
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=c5793b98-3564-4f45-b295-2366712bf3c3
+Server: cloudflare
+Set-Cookie: __cfduid=de028dccb6e033ed596faf407f22be60c1565274313; expires=Fri, 07-Aug-20 14:25:13 GMT; path=/; domain=.randy-maugans-i-iz-untruthful-dishonest-and-i-lackz-integrity.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=c5793b98-3564-4f45-b295-2366712bf3c3
+X-Request-Id: c5793b98-3564-4f45-b295-2366712bf3c3
+Retry-Count: 0

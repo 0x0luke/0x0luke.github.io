@@ -1,0 +1,12 @@
+200 OK
+Server-Timing: origin; dur=347 edge; dur=198 cdn-cache; desc=REVALIDATE
+X-Akamai-Transformed: 9 45367 0 pmb=mRUM,3
+Expires: Thu, 08 Aug 2019 09:44:37 GMT
+Content-Type: text/html
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=900
+Server: Apache
+Etag: "c780-58f8e25090ff6"
+Vary: Accept-Encoding
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 09:29:37 GMT

@@ -1,0 +1,14 @@
+200 OK
+Vary: Accept-Encoding
+Retry-Count: 0
+Last-Modified: Thu, 08 Aug 2019 00:22:28 GMT
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Via: 1.1 vegur
+Cf-Ray: 502fba79cd78bfbb-MAN
+Content-Type: text/html
+Etag: W/"5d4b6b44-7227"
+Expires: Fri, 09 Aug 2019 07:20:33 GMT
+Cache-Control: max-age=86400
+Date: Thu, 08 Aug 2019 07:20:33 GMT
+Cf-Cache-Status: EXPIRED

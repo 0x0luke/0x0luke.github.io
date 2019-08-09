@@ -1,0 +1,18 @@
+200 OK
+Edge-Cache-Tag: CT-3962444023,P-10670,L-3962443838,L-4093819635,L-4093819655,E-4093819630,E-4093819675,MENU-3974052453,PGS-ALL,SW-2,SD-20
+X-Hs-Content-Id: 3962444023
+Cf-Cache-Status: MISS
+Access-Control-Allow-Credentials: false
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/10670/hub_generated/template_assets/1555945759497/combined-css-c90d876be1961911b50375a3dc561b79.css>; rel=preload; as=style </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+Vary: Accept-Encoding
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Hs-Hub-Id: 10670
+X-Powered-By: HubSpot
+Retry-Count: 0
+Cf-Ray: 5030af392eddd21c-MAN
+X-Trace: 2B57AC97224B6B6AE0D6A95820317D63DB3F7175F2000000000000000000
+Server: cloudflare
+Date: Thu, 08 Aug 2019 10:07:39 GMT
+Cache-Control: s-maxage=7200,max-age=5
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d437d7f6e8a5ab6c74ad93406525c9cd81565258858; expires=Fri, 07-Aug-20 10:07:38 GMT; path=/; domain=.www.worcestersbestchef.com; HttpOnly __cfruid=8e119dad0444ec0992ad9d1ce7b11720d693cd31-1565258858; path=/; domain=.www.worcestersbestchef.com; HttpOnly

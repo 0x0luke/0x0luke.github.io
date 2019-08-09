@@ -1,0 +1,16 @@
+200 OK
+Etag: W/"5d4adbd0-1516"
+Referrer-Policy: origin
+Expect-Ct: max-age=0
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy: default-src https: blob: data: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'
+Retry-Count: 0
+Vary: Accept-Encoding
+Expires: Thu, 08 Aug 2019 09:24:05 GMT
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Date: Thu, 08 Aug 2019 09:24:06 GMT
+Strict-Transport-Security: max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1;mode=block

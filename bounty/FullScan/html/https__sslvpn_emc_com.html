@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SSL VPN</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div style="width:980px;margin:auto;margin-bottom:0px;">
+	
+    <div style="width:980px;height:65px;margin:auto;background-image:url('images/banner_main.jpg');">&nbsp;</div>
+    
+	<div style="width:980px;margin:auto; background-image:url('images/banner_bar.jpg');">&nbsp;</div>
+    
+
+</div>
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+</script>
+
+
+<div id='shell' style="width:978px;margin:auto;border:1px solid #CCCCCC;border-top:0px solid #CCCCCC;position:relative;">
+
+  <div id='leftCol' style="width:730px;margin:0px;border-right:1px dashed #CCCCCC;float:left">
+           
+           
+           
+    <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/feature_1.jpg" align="left" style="margin-right:25px" /> <img src="images/title_main.gif" style="margin-top:20px;"/> <br />
+      Legacy EMC's SSL VPN infrastructure provides access to network applications and resources using the SSL encryption.<br />
+
+<br />
+
+      ** Note: Sometimes connecting to  the gateway close to the Legacy EMC <br /> internal resource may help improve the  performance.
+
+</td></tr>
+</table>
+
+        <div class="padding10" style="padding-top:0px;padding-right:20px;padding-bottom:0px"> 
+<p><span class="boldOrange">First Time Use:</span> </p>
+        <strong class="boldBlue"><b>Legacy EMC Employee and on-site Contractors (on Legacy EMC Network):  </b><br />Download and install the VPN Client Packages from the appropriate links below:</strong><br /><!-- size9 -->
+
+        	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f6f6f6" class="displayTable blueBg  navText" style="margin-top:5px;">
+              <tr >
+                <th align="left" ><span style="font-weight: bold;">Operating System</span></th>
+                <th align="left"><span style="font-weight: bold">Version</span></th>
+                <th align="left"><span style="font-weight: bold">Instructions for Use</span></th>
+                
+              </tr>
+              
+              <tr>
+                <td><a href="https://sslvpn.emc.com/ssl-dl/windows/AC4504029.zip">Windows 10 64 bit and above (ZIP)</td>
+                <td>4.5.04029</td>
+                <td> <b><a href="https://sslvpn.emc.com/docs/AnyConnect_VPNDist_3110010.pdf"> Windows 10</b> </td>
+                
+              </tr>
+              <tr>
+                <td><a href="https://sslvpn.emc.com/ssl-dl/mac/Cisco-AnyConnect-VPN-4.4.02039.zip">Mac OSX (zip)</td>
+                <td>4.4.02039</td>
+                <td><b><a href="https://sslvpn.emc.com/docs/AnyConnect_NonManagEd_MacOSX_Install_Instructions.pdf">Mac OSx</b></td>
+                
+              </tr>
+		<tr>
+                <td><a href="https://sslvpn.emc.com/ssl-dl/Linux/anyconnect-linux64-4.5.04029-predeploy-k9.tar.gz">Linux (TAR)</td>
+                <td>4.5.04029</td>
+                <td><b></b></td>
+                
+              </tr>
+              
+              
+            </table>
+<p>
+<strong class="boldBlue">From Outside EMC network:</strong><br /><!-- size9 -->
+<strong class="boldBlue">Download and install the VPN Client Packages from the appropriate links below:</strong><br /><!-- size9 -->
+
+<strong class="boldBlue"><a href="https://vpndist.emc.com/">https://vpndist.emc.com</strong><br /></a><!-- size9 -->
+<class="boldBlue">** Requires RSA SecurID Token **<br /><!-- size9 -->
+</p>
+
+<p>This SSL VPN gateway is for <b> EMC EMPLOYEE and On-Site Contractor (TEMP) </b> use only.<br /> 
+Third party users (vendors, partners and suppliers) please use <br /> 
+<a href="https://tpasslvpn.emc.com/">https://tpasslvpn.emc.com</a>. </p>
+ 
+
+<p><span class="boldOrange">Subsequent Use:</span> </p>
+        <strong class="boldBlue">STEP-1: Launch SSL VPN Anyconnect Plug-in (Cisco Secure Mobility Client) directly from the Start Menu</strong><br /><!-- size9 -->
+<p>
+<strong class="boldBlue">STEP-2: Select the SSL VPN Gateway from the pull-down list </strong><br /><!-- size9 -->
+</p>
+
+<p>
+<strong class="boldBlue">STEP-3: Access EMC Resources </strong><br /><!-- size9 -->
+</p>
+
+        	<p><B>Important!: </B>The SSL VPN gateway will perform posture assessments(compliancy checks) as soon as you connect and only compliant EMC issued assets will be allowed with full network access.
+However, during initial roll-out phase, certain non-compliant systems may be allowed to connect.
+ 
+ </p>
+
+ </p>
+
+
+              <script>    
+               	//sets up default reference
+	var tabInitFlag = null;
+	var theTab;
+	var theDiv;
+	
+	function setTabClass(id){
+	//alert("in setTabClass id = " + id);
+	
+	
+	if(tabInitFlag == null) {//do this only once first time
+	theTab = document.getElementById('tab_1');
+	
+	theDiv = document.getElementById('tier_1');
+	
+	tabInitFlag = true;
+	}
+	
+	
+	
+	var theSubStringIndex  = id.substr(id.indexOf('_')+1);
+					
+		var theNewTabID = 'tab_' + theSubStringIndex;
+		var theNewDivID = 'tier_' + theSubStringIndex;
+		
+	//get the new "clicked" tab and div
+	var theNewTab = document.getElementById(theNewTabID);
+	var theNewDiv = document.getElementById(theNewDivID);
+	
+	
+	//var tabNum = 'tab'+ theSubStringIndex;
+	
+	
+		if(theNewTab != theTab){
+			//clear the old tab and div
+			theTab.className = "off";
+			theDiv.style.display = 'none';
+			
+			
+			theNewTab.className = "on";
+			theNewDiv.style.display = '';
+			
+			//set the newTab and div to be the "currentTab" and currentDiv
+			theTab = theNewTab;
+			theDiv = theNewDiv;
+	
+		} 
+	
+	}
+	
+
+                
+              </script>
+      
+      
+                </td>
+              </tr>
+            </table>
+            <!-- ends tabs -->
+            
+          
+        
+    </div><!-- ends padding10 div -->
+        
+        
+                    
+  </div><!-- ends leftCol -->
+    
+   
+
+
+ <div id='rightCol' style="width:225px;margin:0px;margin-top:15px;border:0px solid #CCCCCC;float:right;">
+ 
+				  <div id='relatedInfo' style="margin-right:10px;border:1px solid #CCCCCC;">
+             
+                        <div class=" titleBar" style="border-bottom:1px solid white"> Related Information</div>
+             
+                                                            
+<img src="images/inset1.jpg" width="213" height="110"/><br />
+            			<div class="padding10">
+                        
+                        
+                        <b>For Technical Help:</b> Call the IT Global Service Desk at 1-877-800-8126 (Toll Free), directly at +1 508 898 5812</a><br /><br />               
+            			</div>
+<div id='reference' style="margin-right:10px;border:1px solid #CCCCCC;" class="rightColumnContainer">
+             
+                        <div class=" titleBar" style="border-bottom:1px solid white;">References &amp; Guides</div>
+                        <img src="images/inset2.jpg" width="213" height="110"/><br />
+             			<div class="padding10">
+             			
+
+
+                         <ul class="rightLinks defaultLinks defaultBullet">
+                          <li ><a href="/docs/Quick_Start.pdf">SSL-VPN-Quick-Start-Guide</a></li>
+<li ><a href="/docs/AnyConnect-Upgrade-Guide.pdf">AnyConnect Upgrade Guide</a></li>
+
+                           <li style="margin-bottom:0px;"><a href="check/check.html">Compliancy Check – <br />
+								EMC Provided Windows Systems Only (From External and Securid Login required) <br /></a></li> <br />
+<li style="margin-bottom:0px;"><a href="http://OTPWEBPRD02.corp.emc.com/sslvpn/check.html">Compliancy Check – <br />
+								EMC Provided Windows Systems Only <b>(From Internal/Corp LAN)</b><br /></a></li> 
+
+<br /><li ><a href="/docs/Notice-to-Aircard-Users.doc"> Notice-to-Aircard-Users (Known training video display error fix)</a></li>
+
+                         </ul>  
+            
+            		</div>
+            
+                
+                            <br />
+                   </div>         
+             
+                                	
+        </div><!-- ends rightCol -->
+
+<div style="clear:both;font-size:1px;">&nbsp;</div>
+
+</div><!-- ends shell -->
+
+  
+	<div  id='footer' style="width:980px;margin:auto;padding:5px;border-top:0px solid #CCC">
+
+    
+    <span class="footerText" style="margin-right:20px;">&copy;&nbsp;EMC Corporation. All rights reserved.</span><span class="footerText"> |&nbsp;&nbsp;<a class="aFooter2" href="http://www.emc.com/site/legal.jsp?openfolder=legal_info" target="_blank">Legal
+      Info</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="aFooter2" href="http://www.emc.com/site/privacy.jsp" target="_blank">Privacy
+      Info</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="aFooter2" href="http://www.channelemc.isus.emc.com/">Channel
+      EMC</a><!-- | <a class="aFooter2" href="sitemap.asp">Site Map</a>&nbsp;&nbsp;|   --></span>  
+    
+
+</div>
+</body>
+</html>
+
+
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+200 OK
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 50271eb23a1dbfde-MAN
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: EXPIRED
+Vary: Accept-Encoding
+X-Hs-Content-Campaign-Id: 6639b9d3-40a7-491e-a595-96b4d315e939
+X-Hs-Content-Id: 712554079
+X-Powered-By: HubSpot
+X-Trace: 2B35307008F9DB748F9D1CA683382827ED3437BAAA000000000000000000
+Retry-Count: 0
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-712554079,P-230272,L-10004597785,L-5496770355,L-700512028,E-4309689472,E-4322726336,E-4474821355,E-699748479,E-699794239,E-702248096,E-707846442,E-707923412,MENU-2565942148,MENU-2565942263,PGS-ALL,SW-2,SD-22
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/hub/230272/hub_generated/template_assets/1563481265947/combined-css-4488e1b76ba35cd92cda35c989edc9e4.css>; rel=preload; as=style </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Hub-Id: 230272
+Date: Wed, 07 Aug 2019 06:16:06 GMT
+Set-Cookie: __cfduid=d93f6fe78d1a5e0814731a8acb33864101565158566; expires=Thu, 06-Aug-20 06:16:06 GMT; path=/; domain=.www.singervalve.com; HttpOnly __cfruid=0009316f3d1f75cc3aa2cbe92195c807872cf3ad-1565158566; path=/; domain=.www.singervalve.com; HttpOnly
+Server: cloudflare

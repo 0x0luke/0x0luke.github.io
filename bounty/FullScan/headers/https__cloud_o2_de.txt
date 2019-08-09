@@ -1,0 +1,13 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Thu, 08 Aug 2019 11:28:03 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Referrer-Policy: strict-origin
+Vary: Accept-Encoding
+Content-Security-Policy: default-src * data: blob:; script-src freegeoip.net *.facebook.com *.fbcdn.net *.facebook.net *.google-analytics.com *.googleapis.com *.gstatic.com *.youtube.com *.ytimg.com *.google.com 'unsafe-inline' 'unsafe-eval' blob: data: 'self'; style-src data: blob: 'unsafe-inline' *;
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Set-Cookie: JSESSIONID=F11531E57770FA1B5D85B53876361EA0.2244; Path=/; Secure; HttpOnly
+X-Content-Type-Options: nosniff

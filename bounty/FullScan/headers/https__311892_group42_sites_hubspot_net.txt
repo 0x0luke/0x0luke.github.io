@@ -1,0 +1,14 @@
+404 Not Found
+Retry-Count: 0
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Thu, 08 Aug 2019 10:37:33 GMT
+Cf-Ray: 5030db093a34d20c-MAN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Accept-Encoding
+X-Hubspot-Notfound: true
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=dba60ad5a84b8d78b5c089dd6038021011565260653; expires=Fri, 07-Aug-20 10:37:33 GMT; path=/; domain=.311892.group42.sites.hubspot.net; HttpOnly __cfruid=f7c3ea5ecf16f79a43dc62cc6984666c5265cd84-1565260653; path=/; domain=.311892.group42.sites.hubspot.net; HttpOnly
+Cf-Cache-Status: MISS
+Access-Control-Allow-Credentials: false
+X-Trace: 2BE909AE58C69E151CE722397494F839465B08BA8B000000000000000000

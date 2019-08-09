@@ -1,0 +1,12 @@
+500 Server Error
+Date: Thu, 08 Aug 2019 14:26:59 GMT
+Content-Length: 92
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+X-Application-Context: application:aws,AWS_QA,qa:8080
+Content-Type: application/json;charset=utf-8
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Expires: 0
+X-Frame-Options: DENY

@@ -1,0 +1,18 @@
+404 Not Found
+Date: Wed, 07 Aug 2019 04:16:46 GMT
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7bf8a55f-b94c-43f7-8cc6-c3e644607171
+X-Dc: gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Content-Type: text/html; charset=utf-8
+Set-Cookie: __cfduid=d5d683d1cc7ad630875bd37ffe399990b1565151406; expires=Thu, 06-Aug-20 04:16:46 GMT; path=/; domain=.calidadie.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Cf-Ray: 50266fe03e66bff2-MAN
+X-Shopify-Stage: production
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=7bf8a55f-b94c-43f7-8cc6-c3e644607171
+Retry-Count: 0
+X-Request-Id: 7bf8a55f-b94c-43f7-8cc6-c3e644607171
+X-Content-Type-Options: nosniff

@@ -1,0 +1,14 @@
+200 OK
+Cf-Ray: 50306d2eac1ed20c-MAN
+Retry-Count: 0
+Set-Cookie: __cfduid=dfbde78b90c3a6457b20df41d5cf6d3e41565256153; expires=Fri, 07-Aug-20 09:22:33 GMT; path=/; domain=.digitalocean.com; HttpOnly
+Last-Modified: Wed, 07 Aug 2019 20:23:09 GMT
+Etag: W/"5d4b332d-2a5ad"
+Server: cloudflare
+Date: Thu, 08 Aug 2019 09:22:33 GMT
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html
+Content-Security-Policy: frame-ancestors https://marina.digitalocean.com https://digitaloceaninc.lookbookhq.com
+X-Frame-Options: ALLOW-FROM https://marina.digitalocean.com/
+X-Content-Security-Policy: frame-ancestors https://marina.digitalocean.com https://digitaloceaninc.lookbookhq.com
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

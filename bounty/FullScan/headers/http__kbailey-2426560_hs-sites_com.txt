@@ -1,0 +1,18 @@
+200 OK
+Retry-Count: 0
+Cf-Cache-Status: MISS
+Cache-Control: s-maxage=7200,max-age=5
+Server: cloudflare
+Set-Cookie: __cfduid=d1ea714130e5564eccf1cd3b6438410281565149038; expires=Thu, 06-Aug-20 03:37:18 GMT; path=/; domain=.www.learntosailri.com; HttpOnly __cfruid=19b20eac8ba4120ea1473738057f4aaf27a45dc8-1565149038; path=/; domain=.www.learntosailri.com; HttpOnly
+Access-Control-Allow-Credentials: false
+Edge-Cache-Tag: CT-4275724828,P-2426560,L-4275724433,L-4275724453,L-4275724513,CW-4275729683,CW-4275729698,CW-4275729703,E-4275724368,MENU-4275724923,PGS-ALL,SW-1,SD-10
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/2426560/hub_generated/template_assets/1555959588936/combined-css-3b43191620f837c18dd78b1138506b3a.css>; rel=preload; as=style </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+Vary: Accept-Encoding
+X-Hs-Content-Id: 4275724828
+X-Hs-Hub-Id: 2426560
+X-Powered-By: HubSpot
+Content-Type: text/html;charset=utf-8
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Date: Wed, 07 Aug 2019 03:37:18 GMT
+Cf-Ray: 50263612fff5361b-MAN
+X-Trace: 2B5D1DCB9D795A4EF1E4D03761844F7C7E18178C08000000000000000000

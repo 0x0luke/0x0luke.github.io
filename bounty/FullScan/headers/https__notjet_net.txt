@@ -1,0 +1,14 @@
+200 OK
+Retry-Count: 0
+Etag: "46f19-bw4XcNyWkQa+0ha/fbyNXn6MqTM"
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Next.js 8.0.0
+Server: openresty
+Date: Wed, 07 Aug 2019 08:01:15 GMT
+Jet-Dr-Orpheus: {"headerSchemaVersion":3,"correlationIds":["4e0d341afa644b6fae425fb357676aeb"],"messageId":"9b882f33578943e8924f42bfaa9f2b16","parentIds":["df62cf2ebc3640ea906b829a66553dce"],"producerId":"Batman-API","ticksFromEpoch":637007616744074400,"payloadSchemaUri":"CmsProxy/cms/GET/1.0","mTags":[],"pTags":[["phaser","2;eb3d80599f6748ccb6f4c7d438e91116;9x6au;9GSao;93oFG;7uvR;98Cw0;9Jp4i;9JJvH;9zfkN;996pFe;9uJgwR;92CBI;9HLr;9J12T;9ln3;9vFW8X;9MAixN;9gQC;9GQ1;9UbxmC;7tJh;1565164874"]]}
+Jet-Geo-Ip: {"country_code":"GB","time_zone":"Europe/London"}
+Jet: 4:1.781:1565024991:38fa1
+Set-Cookie: jet.csrf=s3v6YEECeOCUvfhFdZgzemxs; path=/; secure; httponly signupShown=; path=/; expires=Sat, 01 Jan 2039 00:00:00 GMT; domain=notjet.net; secure signupShown=0; Domain=notjet.net; Path=/; Expires=Sat, 01 Jan 2039 00:00:00 GMT jid=fc4ad559-4fc8-47d5-a1d8-d32115b7e3f1; path=/; expires=Sat, 01 Jan 2039 00:00:00 GMT; domain=notjet.net; secure; httponly jid=fc4ad559-4fc8-47d5-a1d8-d32115b7e3f1; Domain=notjet.net; Path=/; Expires=Sat, 01 Jan 2039 00:00:00 GMT jet-referer=%2F; Path=/ jet-phaser=2%3Beb3d80599f6748ccb6f4c7d438e91116%3B9x6au%3B9GSao%3B93oFG%3B7uvR%3B98Cw0%3B9Jp4i%3B9JJvH%3B9zfkN%3B996pFe%3B9uJgwR%3B92CBI%3B9HLr%3B9J12T%3B9ln3%3B9vFW8X%3B9MAixN%3B9gQC%3B9GQ1%3B9UbxmC%3B7tJh%3B1565164874; path=/; expires=Fri, 06 Sep 2019 08:01:14 GMT; secure; httponly jet-phaser=2%3Beb3d80599f6748ccb6f4c7d438e91116%3B9x6au%3B9GSao%3B93oFG%3B7uvR%3B98Cw0%3B9Jp4i%3B9JJvH%3B9zfkN%3B996pFe%3B9uJgwR%3B92CBI%3B9HLr%3B9J12T%3B9ln3%3B9vFW8X%3B9MAixN%3B9gQC%3B9GQ1%3B9UbxmC%3B7tJh%3B1565164874; Max-Age=2592000000; Path=/; Expires=Mon, 26 Sep 2101 08:01:14 GMT; HttpOnly jet.qa-id=e68a424c-3579-4c96-b1ab-32cfdee4d586; path=/; expires=Fri, 06 Sep 2019 08:01:14 GMT; secure; httponly jet.qa-clientTicket=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOiJkZjNlMjliYTY1MDk0MjcwOGM5MzZkNDBmNTNmNDBlMiIsImlzcyI6ImpldC5jb20iLCJhdWQiOiJ3ZWJjbGllbnQifQ.-lqngytyslOI0MBK366hFDZAw4CrAWittTx7cD0AGDU; path=/; expires=Fri, 06 Sep 2019 08:01:14 GMT; secure; httponly X-Akamai-Chosen=qa_phased_nomad_eastus2 akacd_phased_release=3742617672~rv=58~id=16b0ea1bfb3c300145bd4377fdafa63f; path=/;
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding

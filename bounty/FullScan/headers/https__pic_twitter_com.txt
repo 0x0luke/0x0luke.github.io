@@ -1,0 +1,14 @@
+200 OK
+Content-Security-Policy: referrer always;
+Content-Type: text/html; charset=utf-8
+X-Connection-Hash: c7c2bd96c06f29ff95c51c2038a604e3
+X-Xss-Protection: 0
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:57:54 GMT
+Expires: Thu, 08 Aug 2019 15:02:54 GMT
+Referrer-Policy: unsafe-url
+Set-Cookie: personalization_id="v1_+ka7JZUMeLHBtblPhYbF2g=="; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:57:54 GMT; Path=/; Domain=.twitter.com guest_id=v1%3A156527627429138225; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:57:54 GMT; Path=/; Domain=.twitter.com
+Strict-Transport-Security: max-age=631138519
+Cache-Control: private,max-age=300
+Server: tsa_f
+X-Response-Time: 108

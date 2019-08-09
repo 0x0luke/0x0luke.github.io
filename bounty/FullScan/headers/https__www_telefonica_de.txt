@@ -1,0 +1,12 @@
+200 OK
+Vary: Accept-Encoding, Cookie
+Cache-Control: no-transform, max-age=300
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: SAMEORIGIN
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+X-Xss-Protection: 1; mode=block
+Date: Thu, 08 Aug 2019 14:44:53 GMT
+Retry-Count: 0
+Expires: Thu, 08 Aug 2019 14:49:53 GMT
+X-Cache-Status: EXPIRED

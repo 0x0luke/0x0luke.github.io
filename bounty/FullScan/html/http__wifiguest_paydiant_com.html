@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        
+
+        <title>PayPal&#39;s white label mobile wallet solution. - PayPal Developer</title>
+
+        <meta>
+
+        
+        
+        
+        <meta name="user-guid" content="702c41fa16cac1200010aad1fffaab41">
+        <meta name="google-site-verification" content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+
+        <link rel="icon" sizes="32x32" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png">
+        <link rel="apple-touch-icon-precomposed" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png">
+
+        <link rel="stylesheet" type="text/css" href="/css/docs.css">
+
+        
+            
+        
+
+        
+        
+
+        
+        
+  <script src="/components/requirejs/require.js"
+    data-main="/js/master"></script>
+
+        
+    </head>
+
+    <body class="dx-docs" >
+        <header class="header vx_globalNav-main" id="header">
+            <a class="header__block header__brand" href="/" aria-label="PayPal Developer"></a>
+            <a class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0" aria-label="Toggle top-level navigation"></a>
+            <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2" data-product=""></div>
+
+            <div class="header__nav">
+                <div class="header__nav--left">
+                    <ul class="dx-nav-0 dx-nav-0-docs">
+                        <li class="dx-nav-0-item dx-nav-active">
+                            <a class="dx-nav-0-link" href="/docs/">Docs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/checkout/">Checkout</a>
+                                    <span class="dx-nav-0-desc">Add checkout buttons to your page and more</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/commerce-platform/">PayPal Commerce Platform</a>
+                                    <span class="dx-nav-0-desc">Add an end-to-end payment solution</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/subscriptions">Subscriptions</a>
+                                    <span class="dx-nav-0-desc">Add recurring billing as a payment option</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/payouts/">Payouts</a>
+                                    <span class="dx-nav-0-desc">Send money to many recipients at the same time</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/invoicing/">Invoicing</a>
+                                    <span class="dx-nav-0-desc">Set up invoicing in your order management system</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="/docs/">View All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="/docs/api/">APIs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/api/overview">REST APIs</a>
+                                    <span class="dx-nav-0-desc">PayPal’s current HTTP-based RESTful APIs</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/apex/home/" target="_blank">API Explorer</a>
+                                    <span class="dx-nav-0-desc">Try our interactive tool and explore PayPal REST API capabilities</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="/support/">Support</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="/support/">Support Overview</a>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/us/smarthelp/personal/search?q=Search.....&channel=mts">FAQ</a>
+                                    <span class="dx-nav-0-desc">Search our FAQ site</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-community.com/mts">Technical Support Community</a>
+                                    <span class="dx-nav-0-desc">Raise technical and integration questions with our engineers and others</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-support.com/">Report a Bug or Integration Issue</a>
+                                    <span class="dx-nav-0-desc">Open a ticket to report a bug or ask for integration help</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                  <a class="dx-nav-0-sub-link" href="/docs/contact-sales/">Contact Sales</a>
+                                  <span class="dx-nav-0-desc">Get help setting up your account and accessing integration resources</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="header__search dx-form-search" id="siteSearch" name="search" action="/search" method="get">
+                        <label class="sr-only" for="siteQ">Enter search term</label>
+                        <input class="dx-search-input" placeholder="Search">
+                    </form>
+                </div>
+
+                <div class="header__nav--right">
+                    <div class="dx-auth-block profile__container">
+                        
+                        <div class="dx-auth-logged-out">
+                            <a class="dx-auth-login dx-btn dx-btn-primary" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications" data-dxa="login,nav-click,nav-login">Log into Dashboard</a>
+                            
+                        </div>
+                        
+                        <div id="dx-auth-info" hidden data-login-url="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications" data-logout-url="https://www.paypal.com/signout?returnUri=PAGEURL" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dx-main vx_foreground-container">
+            
+            
+                
+                
+                    <div class="dx-flex">
+                        
+    <div class="dx-main-nav-slug"></div>
+    <div class="dx-main-nav dx-mobile-nav">
+        <nav class="tip-nav">
+            
+            
+                <ul><li class="tip-nav-active-parent tip-nav-active"><a href="/docs/wlw/">White Label Wallet</a><ul><li><a href="/docs/wlw/release-notes/">Release notes</a></li><li><h5>APIs</h5></li><li><a href="/docs/wlw/b2b-mta/101/">B2B Mobile Transaction 101</a><ul></ul></li><li><a href="/docs/wlw/b2b-mta/">B2B Mobile Transaction</a><ul><li><a href="/docs/wlw/b2b-mta/methods/">Methods</a><ul><li><a href="/docs/wlw/b2b-mta/methods/#b2b-request-and-response-structure">B2B Request and Response Structure</a></li><li><a href="/docs/wlw/b2b-mta/methods/#b2b-status-responses">B2B Status Responses</a></li><li><a href="/docs/wlw/b2b-mta/methods/#alphabetical-methods-list">Alphabetical Methods List</a></li><li><a href="/docs/wlw/b2b-mta/methods/#by-purpose-methods-list">By Purpose Methods List</a></li><li><a href="/docs/wlw/b2b-mta/methods/#cancelmobiletransaction">cancelMobileTransaction</a></li><li><a href="/docs/wlw/b2b-mta/methods/#cancelpaymentaccountenrollment">cancelPaymentAccountEnrollment</a></li><li><a href="/docs/wlw/b2b-mta/methods/#continuepaymentaccountenrollment">continuePaymentAccountEnrollment</a></li><li><a href="/docs/wlw/b2b-mta/methods/#createcustomer">createCustomer</a></li><li><a href="/docs/wlw/b2b-mta/methods/#createdevice">createDevice</a></li><li><a href="/docs/wlw/b2b-mta/methods/#enrollcustomerandprovisioncard">enrollCustomerAndProvisionCard</a></li><li><a href="/docs/wlw/b2b-mta/methods/#invokeadditionalprocess">invokeAdditionalProcess</a></li><li><a href="/docs/wlw/b2b-mta/methods/#obtainmobiledevicecheckouttoken">obtainMobileDeviceCheckoutToken</a></li><li><a href="/docs/wlw/b2b-mta/methods/#refreshcustomercardbalances">refreshCustomerBalances</a></li><li><a href="/docs/wlw/b2b-mta/methods/#releasemobiledevicecheckouttoken">releaseMobileDeviceCheckoutToken</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievecustomer">retrieveCustomer</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievecustomerblockeddevices">retrieveCustomerBlockedDevices</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievecustomercardinfo">retriveCustomerCardInfo</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievecustomerdevices">retrieveCustomerDevices</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrieveincompletepaymentaccountenrollments">retrieveIncompletePaymentAccountEnrollments</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievemobiletransactionmetadata">retrieveMobileTransactionMetadata</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievemobiletransactionmetadata-webhook">retrieveMobileTransactionMetadata webhook</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrievepaginateduserreceipts">retrievePaginatedUserReceipts</a></li><li><a href="/docs/wlw/b2b-mta/methods/#retrieveuserreceiptbypaydiantrefid">retrieveUserReceiptByPaydiantRefId</a></li><li><a href="/docs/wlw/b2b-mta/methods/#startpaymentaccountenrollment">startPaymentAccountEnrollment</a></li><li><a href="/docs/wlw/b2b-mta/methods/#updatecustomer">updateCustomer</a></li><li><a href="/docs/wlw/b2b-mta/methods/#updatecustomercard">updateCustomerCard</a></li><li><a href="/docs/wlw/b2b-mta/methods/#updatedeviceblockstatus">updateDeviceBlockStatus</a></li><li><a href="/docs/wlw/b2b-mta/methods/#updatemobiletransaction">updateMobileTransaction</a></li></ul></li><li><a href="/docs/wlw/b2b-mta/status-codes/">Status Codes</a><ul><li><a href="/docs/wlw/b2b-mta/status-codes/#response-status-codes">Response status codes</a></li><li><a href="/docs/wlw/b2b-mta/status-codes/#payment-status-codes">Payment status codes</a></li></ul></li><li><a href="/docs/wlw/b2b-mta/use-cases/">Use Cases</a><ul><li><a href="/docs/wlw/b2b-mta/use-cases/#cash-withdrawal-with-surcharge">Cash withdrawal with surcharge</a></li><li><a href="/docs/wlw/b2b-mta/use-cases/#atm-deposit-of-cash-and-checks">ATM deposit of cash and checks</a></li><li><a href="/docs/wlw/b2b-mta/use-cases/#fuel-transaction-with-webhook-push">Fuel transaction with Webhook push</a></li></ul></li></ul></li><li><a href="/docs/wlw/b2bcc/101/">B2B Customer Care 101</a><ul></ul></li><li><a href="/docs/wlw/b2bcc/">B2B Customer Care</a><ul><li><a href="/docs/wlw/b2bcc/cards/">Cards</a><ul><li><a href="/docs/wlw/b2bcc/cards/#addcustomercard">addCustomerCard</a></li><li><a href="/docs/wlw/b2bcc/cards/#deletecustomercardinfo">deleteCustomerCardInfo</a></li><li><a href="/docs/wlw/b2bcc/cards/#provisioncustomercard">provisionCustomerCard</a></li><li><a href="/docs/wlw/b2bcc/cards/#refreshcustomercardbalances">refreshCustomerCardBalances</a></li><li><a href="/docs/wlw/b2bcc/cards/#retrievecustomercardinfo">retrieveCustomerCardInfo</a></li><li><a href="/docs/wlw/b2bcc/cards/#retrievesupportedtendertypes">retrieveSupportedTenderTypes</a></li><li><a href="/docs/wlw/b2bcc/cards/#submittransactionprocessingevent">submitTransactionProcessingEvent</a></li><li><a href="/docs/wlw/b2bcc/cards/#updatecustomercardinfo">updateCustomerCardInfo</a></li></ul></li><li><a href="/docs/wlw/b2bcc/customers/">Customer</a><ul><li><a href="/docs/wlw/b2bcc/customers/#createcustomerinfo">createCustomerInfo</a></li><li><a href="/docs/wlw/b2bcc/customers/#deletecustomer">deleteCustomer</a></li><li><a href="/docs/wlw/b2bcc/customers/#iscustomerexists">isCustomerExists</a></li><li><a href="/docs/wlw/b2bcc/customers/#retrievecustomerbyuri">retrieveCustomerbyUri</a></li><li><a href="/docs/wlw/b2bcc/customers/#retrievecustomerlookupinfo">retrieveCustomerLookupInfo</a></li><li><a href="/docs/wlw/b2bcc/customers/#retrievecustomersemailbyuri">retrieveCustomersEmailByUri</a></li><li><a href="/docs/wlw/b2bcc/customers/#retrievecustomertransactionshistory">retrieveCustomerTransactionsHistory</a></li><li><a href="/docs/wlw/b2bcc/customers/#retrievecustomerwalletinfo">retrieveCustomerWalletInfo</a></li><li><a href="/docs/wlw/b2bcc/customers/#updatecustomerinfo">updateCustomerInfo</a></li><li><a href="/docs/wlw/b2bcc/customers/#updatecustomeractivation">updateCustomerActivation</a></li></ul></li><li><a href="/docs/wlw/b2bcc/devices/">Devices</a><ul><li><a href="/docs/wlw/b2bcc/devices/#deletecustomerdevice">deleteCustomerDevice</a></li><li><a href="/docs/wlw/b2bcc/devices/#retrievecustomerdevices">retrieveCustomerDevices</a></li><li><a href="/docs/wlw/b2bcc/devices/#retrieveissuingpartnerdevicetypes">retrieveIssuingPartnerDeviceTypes</a></li><li><a href="/docs/wlw/b2bcc/devices/#updatecustomerdeviceactivation">updateCustomerDeviceActivation</a></li></ul></li><li><a href="/docs/wlw/b2bcc/loyalty/">Loyalty</a><ul><li><a href="/docs/wlw/b2bcc/loyalty/#processexternalactivity">processExternalActivity</a></li><li><a href="/docs/wlw/b2bcc/loyalty/#queryactivities">queryActivities</a></li></ul></li><li><a href="/docs/wlw/b2bcc/pinspasswords/">PINs, Passcodes, and Passwords</a><ul><li><a href="/docs/wlw/b2bcc/pinspasswords/#resetcustomerpasscode">resetCustomerPasscode</a></li><li><a href="/docs/wlw/b2bcc/pinspasswords/#resetcustomerpassword">resetCustomerPassword</a></li><li><a href="/docs/wlw/b2bcc/pinspasswords/#retrievecustomercredentialsspecification">retrieveCustomerCredentialsSpecification</a></li><li><a href="/docs/wlw/b2bcc/pinspasswords/#updatecustomerpin">updateCustomerPIN</a></li><li><a href="/docs/wlw/b2bcc/pinspasswords/#updatecustomersecurityinfo">updateCustomerSecurityInfo</a></li><li><a href="/docs/wlw/b2bcc/pinspasswords/#updateexpiredcustomerpassword">updateExpiredCustomerPassword</a></li></ul></li><li><a href="/docs/wlw/b2bcc/verification/">Verification</a><ul><li><a href="/docs/wlw/b2bcc/verification/#authenticatecustomerlogin">authenticateCustomerLogin</a></li><li><a href="/docs/wlw/b2bcc/verification/#authenticatecustomermfa">authenticateCustomerMFA</a></li><li><a href="/docs/wlw/b2bcc/verification/#authenticaterecoverycode">authenticateRecoveryCode</a></li><li><a href="/docs/wlw/b2bcc/verification/#completeapplicationverification">completeApplicationVerification</a></li><li><a href="/docs/wlw/b2bcc/verification/#completeapplicationverificationwithmfa">completeApplicationVerificationWithMFA</a></li><li><a href="/docs/wlw/b2bcc/verification/#completeemailverification">completeEmailVerification</a></li><li><a href="/docs/wlw/b2bcc/verification/#completeemailverificationwithmfa">completeEmailVerificationWithMFA</a></li><li><a href="/docs/wlw/b2bcc/verification/#retrieveapplicationverificationcode">retrieveApplicationVerificationCode</a></li><li><a href="/docs/wlw/b2bcc/verification/#retrieveemailverificationcode">retrieveEmailVerificationCode</a></li><li><a href="/docs/wlw/b2bcc/verification/#retrievecustomermfaquestions">retrieveCustomerMFAQuestions</a></li><li><a href="/docs/wlw/b2bcc/verification/#retrieverecoverycode">retrieveRecoveryCode</a></li><li><a href="/docs/wlw/b2bcc/verification/#submitavsverification">submitAVSVerification</a></li><li><a href="/docs/wlw/b2bcc/verification/#submitpostverification">submitPostVerification</a></li><li><a href="/docs/wlw/b2bcc/verification/#updatecustomermfaquestions">updateCustomerMFAQuestions</a></li></ul></li></ul></li><li><h5>Integrations</h5></li><li><a href="/docs/wlw/3ds-2/">Integrate 3D Secure 2.0</a><ul></ul></li><li><a href="/docs/wlw/paypal-integration/">Integrate PayPal</a><ul></ul></li><li><a href="/docs/wlw/apple-pay/">Integrate Apple Pay</a><ul></ul></li><li><h5>Offer Campaign (SSP)</h5></li><li><a href="/docs/wlw/ssp-help/">Offer Campaign Portal</a><ul></ul></li><li><h5>Business Analytics</h5></li><li><a href="/docs/wlw/reporting-and-analytics/">Reporting and Analytics</a><ul><li><a href="/docs/wlw/reporting-and-analytics/dashboards/">Reporting and Analytics Dashboards</a><ul><li><a href="/docs/wlw/reporting-and-analytics/dashboards/#dashboard-features">Dashboard Features</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/#list-of-dashboards">List of Dashboards</a></li></ul></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/">All Dashboards</a><ul><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#mobile-summary-dashboard">Mobile Summary Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#mobile-spend-dashboard">Mobile Spend Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#mobile-transactions-dashboard">Mobile Transactions Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#user-enrollment-dashboard">User Enrollment Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#user-activity-dashboard">User Activity Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#offer-usage-dashboard">Offer Usage Dashboard</a></li><li><a href="/docs/wlw/reporting-and-analytics/dashboards/all/#fuel-preauthorization-dashboard">Fuel Preauthorization Dashboard</a></li></ul></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/">Data Feeds</a><ul><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/">Standard Data Feeds</a><ul><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#user-data-feed">User</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#device-data-feed">Device</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#payment-account-data-feed">Payment Account</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#transaction-data-feed">Transaction</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#line-item-data-feed">Line Item</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#all-offer-campaigns-data-feed">All Offer Campaigns</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#all-offer-campaigns-data-feed">All Offer Campaigns</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#all-offer-activity-data-feed">All Offer Activity</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/standard/#partner-loyalty-data-feed">Partner Loyalty</a></li></ul></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/">Supplemental Data Feeds</a><ul><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#acceptance-location-data-feed">Acceptance Location</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#acceptance-partner-data-feed">Acceptance Partner</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#accepted-forms-of-payment-by-location-data-feed">Accepted Forms of Payment By Location</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#additional-customer-information-data-feed">Customer Information</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#all-fuel-receipt-line-items-data-feed">All Fuel Receipt Line Items</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#forms-of-payment-by-issuing-partner-data-feed">Forms of Payment by Issuing Partner</a></li><li><a href="/docs/wlw/reporting-and-analytics/data-feeds/supplemental/#partner-pre-auth-data-feed">Partner Pre-Auth</a></li></ul></li></ul></li></ul></li><li><h5>SDKs</h5></li><li><a href="/docs/wlw/ios-sdk/101/">iOS SDK 101</a><ul></ul></li><li><a href="/docs/wlw/ios-sdk/">iOS Reference Guide</a><ul><li><a href="/docs/wlw/ios-sdk/security/">Security Requirements</a><ul><li><a href="/docs/wlw/ios-sdk/security/#data-storage">Data Storage</a></li><li><a href="/docs/wlw/ios-sdk/security/#clear-app-memory-of-all-sensitive-data">Clear App Memory of All Sensitive Data</a></li><li><a href="/docs/wlw/ios-sdk/security/#secure-data-entry">Secure Data Entry</a></li><li><a href="/docs/wlw/ios-sdk/security/#code-protections">Code Protections</a></li><li><a href="/docs/wlw/ios-sdk/security/#owasp-top-mobile-controls">OWASP Top Mobile Controls</a></li><li><a href="/docs/wlw/ios-sdk/security/#security-validation">Security Validations</a></li><li><a href="/docs/wlw/ios-sdk/security/#jailbroken-devices">Jailbroken Devices</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/authentication/">Authentication Module</a><ul><li><a href="/docs/wlw/ios-sdk/authentication/#initialize-authentication-facade">Initialize Authentication Facade</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#loginbyusernamepassword">loginByUsernamePassword</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#loginbypin">loginByPIN</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#loginbynonce">loginByNonce</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#loginbyfederatedidentity">loginByFederatedIdentity</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#isauthorizationtokenexist">isAuthorizationTokenExist</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#generatedeviceauthenticationtokenforusername">generateDeviceAuthenticationTokenForUsername</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#loginwithdeviceauthenticationtoken">loginWithDeviceAuthenticationToken</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#expiredeviceauthenticationtoken">expireDeviceAuthenticationToken</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#logout">logout</a></li><li><a href="/docs/wlw/ios-sdk/authentication/#registerwithmfa">registerWithMFA</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/ble/">BLE Module</a><ul><li><a href="/docs/wlw/ios-sdk/ble/#initialize-ble-facade">Initialize BLE Facade</a></li><li><a href="/docs/wlw/ios-sdk/ble/#set-optional-ble-properties">Set Optional BLE Properties</a></li><li><a href="/docs/wlw/ios-sdk/ble/#registerbleevents">registerBLEEvents</a></li><li><a href="/docs/wlw/ios-sdk/ble/#pairbleevent">pairBLEEvent</a></li><li><a href="/docs/wlw/ios-sdk/ble/#statuschanged-delegate">statusChanged Delegate</a></li><li><a href="/docs/wlw/ios-sdk/ble/#didstopscanning-delegate">didStopScanning Delegate</a></li><li><a href="/docs/wlw/ios-sdk/ble/#bleeventreceived-delegate">BLEEventReceived Delegate</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/customer/">Customer/User Module</a><ul><li><a href="/docs/wlw/ios-sdk/customer/#initialize-customer-facade">Initialize Customer Facade</a></li><li><a href="/docs/wlw/ios-sdk/customer/#retrievecustomerdetails">retrieveCustomerDetails</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/decoder/">Decoder Module</a><ul><li><a href="/docs/wlw/ios-sdk/decoder/#initialize-decoder-facade">Initialize Decoder Facade</a></li><li><a href="/docs/wlw/ios-sdk/decoder/#set-optional-decoder-properties">Set Optional Decoder Properties</a></li><li><a href="/docs/wlw/ios-sdk/decoder/#startdecodersession">startDecoderSession</a></li><li><a href="/docs/wlw/ios-sdk/decoder/#decodeimage">decodeImage</a></li><li><a href="/docs/wlw/ios-sdk/decoder/#enddecodersession">endDecoderSession</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/device/">Device Module</a><ul><li><a href="/docs/wlw/ios-sdk/device/#initialize-device-management-facade">Initialize Device Management Facade</a></li><li><a href="/docs/wlw/ios-sdk/device/#getdeviceidentifier">getDeviceIdentifier</a></li><li><a href="/docs/wlw/ios-sdk/device/#isdevicesupported">isDeviceSupported</a></li><li><a href="/docs/wlw/ios-sdk/device/#isdeviceregistered">isDeviceRegistered</a></li><li><a href="/docs/wlw/ios-sdk/device/#resendapplicationinstanceverificationwithemail">resendApplicationInstanceVerificationWithEmail</a></li><li><a href="/docs/wlw/ios-sdk/device/#addadditionaldeviceinformation">addAdditionalDeviceInformation</a></li><li><a href="/docs/wlw/ios-sdk/device/#retrieveadditionaldeviceinformation">retrieveAdditionalDeviceInformation</a></li><li><a href="/docs/wlw/ios-sdk/device/#updateadditionaldeviceinformation">updateAdditionalDeviceInformation</a></li><li><a href="/docs/wlw/ios-sdk/device/#deleteadditionaldeviceinformation">deleteAdditionalDeviceInformation</a></li><li><a href="/docs/wlw/ios-sdk/device/#removedevice">removeDevice</a></li><li><a href="/docs/wlw/ios-sdk/device/#updatedevicedescription">updateDeviceDescription</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/loyalty/">Loyalty Module</a><ul><li><a href="/docs/wlw/ios-sdk/loyalty/#initialize-loyalty-management-facade">Initialize Loyalty Management Facade</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#isregisteredforloyalty">isRegisteredForLoyalty</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#retrieveglobalprofilemetadata">retrieveGlobalProfileMetadata</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#registercustomerforloyalty">registerCustomerForLoyalty</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#retrieveavailableloyaltyprograms">retrieveAvailableLoyaltyPrograms</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#retrievemyloyaltyprograms">retrieveMyLoyaltyPrograms</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#retrieveloyaltyprogram">retrieveLoyaltyProgram</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#retrievetransactionloyaltypoints">retrieveTransactionLoyaltyPoints</a></li><li><a href="/docs/wlw/ios-sdk/loyalty/#recordexternalactivity">recordExternalActivity</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/offers/">Offers Module</a><ul><li><a href="/docs/wlw/ios-sdk/offers/#initialize-offers-facade">Initialize Offers Facade</a></li><li><a href="/docs/wlw/ios-sdk/offers/#retrieveavailableoffercampaignsummaries">retrieveAvailableOfferCampaignSummaries</a></li><li><a href="/docs/wlw/ios-sdk/offers/#retrieveavailableoffercampaigndetailwithacceptancepartnerlist">retrieveAvailableOfferCampaignDetailWithAcceptancePartnerList</a></li><li><a href="/docs/wlw/ios-sdk/offers/#retrievemyoffersummaries">retrieveMyOfferSummaries</a></li><li><a href="/docs/wlw/ios-sdk/offers/#activateoffer">activateOffer</a></li><li><a href="/docs/wlw/ios-sdk/offers/#retrievemyofferdetailwithacceptancepartnerlist">retrieveMyOfferDetailWithAcceptancePartnerList</a></li><li><a href="/docs/wlw/ios-sdk/offers/#retrieveoffercampaignsummaryusingcouponcode">retrieveOfferCampaignSummaryUsingCouponCode</a></li><li><a href="/docs/wlw/ios-sdk/offers/#cancelactivatedoffer">cancelActivatedOffer</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/order/">Orders Module</a><ul><li><a href="/docs/wlw/ios-sdk/order/#initialize-order-facade">Initialize Order Facade</a></li><li><a href="/docs/wlw/ios-sdk/order/#retrieveordersummary">retrieveOrderSummary</a></li><li><a href="/docs/wlw/ios-sdk/order/#retrieveorderdetail">retrieveOrderDetail</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/accounts/">Payment Accounts Module</a><ul><li><a href="/docs/wlw/ios-sdk/accounts/#initialize-payment-instruments-management-facade">Initialize Payment Instruments Management Facade</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrievepaymentaccountconfigurations">retrievePaymentAccountConfigurations</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrievebillingaddresses">retrieveBillingAddresses</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrieveallpaymentaccounts">retrieveAllPaymentAccounts</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrievespecificpaymentaccount">retrieveSpecificPaymentAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#refreshpaymentaccountbalance">refreshPaymentAccountBalance</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#refreshpointsbalance">refreshPointstBalance</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrieveloadconfiguration">retrieveLoadConfiguration</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#addpaymentaccount">addPaymentAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#loadnewaccount">loadNewAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#variable-step-account-enrollment-4-related-calls">Variable Step Account Enrollment (4 related calls)</a><ul><li><a href="/docs/wlw/ios-sdk/accounts/#startpaymentaccountenrollment">startPaymentAccountEnrollment</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#continuepaymentaccountenrollment">continuePaymentAccountEnrollment</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#retrieveincompletepaymentaccountenrollments">retrieveIncompletePaymentAccountEnrollments</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#cancelpaymentaccountenrollment">cancelPaymentAccountEnrollment</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/accounts/#verifyaccount">verifyAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#updateexistingpaymentaccount">updateExistingPaymentAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#loadexistingaccount">loadExistingAccount</a></li><li><a href="/docs/wlw/ios-sdk/accounts/#deletepaymentaccount">deletePaymentAccount</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/tenders/">Payment Tenders Module</a><ul><li><a href="/docs/wlw/ios-sdk/tenders/#initialize-tender-type-facade">Initialize Tender Type Facade</a></li><li><a href="/docs/wlw/ios-sdk/tenders/#retrievesupportedtendertypes">retrieveSupportedTenderTypes</a></li><li><a href="/docs/wlw/ios-sdk/tenders/#retrievespecificsupportedtendertype">retrieveSpecificSupportedTenderType</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/preferences/">Preferences Module</a><ul><li><a href="/docs/wlw/ios-sdk/preferences/#initialize-preference-facade">Initialize Preference Facade</a></li><li><a href="/docs/wlw/ios-sdk/preferences/#retrievepreferencedetails">retrievePreferenceDetails</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/push-notifications/">Push Notifications Module</a><ul><li><a href="/docs/wlw/ios-sdk/push-notifications/#initialize-push-notification-management-facade">Initialize Push Notification Management Facade</a></li><li><a href="/docs/wlw/ios-sdk/push-notifications/#isdeviceregisteredforpushnotifications">isDeviceRegisteredForPushNotifications</a></li><li><a href="/docs/wlw/ios-sdk/push-notifications/#registerdeviceforpushnotifications">registerDeviceForPushNotifications</a></li><li><a href="/docs/wlw/ios-sdk/push-notifications/#unregisterdeviceforpushnotifications">unregisterDeviceForPushNotifications</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/receipt/">Receipt Module</a><ul><li><a href="/docs/wlw/ios-sdk/receipt/#initialize-receipt-facade">Initialize Receipt Facade</a></li><li><a href="/docs/wlw/ios-sdk/receipt/#retrievereceiptsummary">retrieveReceiptSummary</a></li><li><a href="/docs/wlw/ios-sdk/receipt/#retrievereceiptdetail">retrieveReceiptDetail</a></li><li><a href="/docs/wlw/ios-sdk/receipt/#retrievereceiptswithsplittenderpayments">retrieveReceiptsWithSplitTenderPayments</a></li><li><a href="/docs/wlw/ios-sdk/receipt/#retrievereceiptwithsplittenderpayments">retrieveReceiptWithSplitTenderPayments</a></li><li><a href="/docs/wlw/ios-sdk/receipt/#retrieverefundablereceiptswithsplittenderpayments">retrieveRefundableReceiptsWithSplitTenderPayments</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/registration/">Registration Module</a><ul><li><a href="/docs/wlw/ios-sdk/registration/#initialize-user-enrollment-facade">Initialize User Enrollment Facade</a></li><li><a href="/docs/wlw/ios-sdk/registration/#retrievemfaquestionswithmetadata">retrieveMfaQuestionsWithMetadata</a></li><li><a href="/docs/wlw/ios-sdk/registration/#retrievepasswordconfigurations">retrievePasswordConfigurations</a></li><li><a href="/docs/wlw/ios-sdk/registration/#retrievepasscodeconfigurations">retrievePasscodeConfigurations</a></li><li><a href="/docs/wlw/ios-sdk/registration/#registernewuser-wlw">registerNewUser (wlw)</a></li><li><a href="/docs/wlw/ios-sdk/registration/#registercustomer-sso">registerCustomer (SSO)</a></li><li><a href="/docs/wlw/ios-sdk/registration/#retrievecustomerprofilemetadata">retrieveCustomerProfileMetaData</a></li><li><a href="/docs/wlw/ios-sdk/registration/#resendverificationemail">resendVerificationEmail</a></li><li><a href="/docs/wlw/ios-sdk/registration/#updateuserprofile">updateUserProfile</a></li><li><a href="/docs/wlw/ios-sdk/registration/#updateuserpassword">updateUserPassword</a></li><li><a href="/docs/wlw/ios-sdk/registration/#updateuserpasscode">updateUserPasscode</a></li><li><a href="/docs/wlw/ios-sdk/registration/#updatemfaanswers">updateMFAAnswers</a></li><li><a href="/docs/wlw/ios-sdk/registration/#changeexpiredpassword">changeExpiredPassword</a></li><li><a href="/docs/wlw/ios-sdk/registration/#resetforgottenpassword">resetForgottenPassword</a></li><li><a href="/docs/wlw/ios-sdk/registration/#resetforgottenpasscode">resetForgottenPasscode</a></li></ul></li><li><a href="/docs/wlw/ios-sdk/transaction/">Transaction Module</a><ul><li><a href="/docs/wlw/ios-sdk/transaction/#initialize-transaction-facade">Initialize Transaction Facade</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#obtaincheckouttokenfor">obtainCheckoutTokenFor</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#releasecheckouttoken">releaseCheckoutToken</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#retrievetransctionmetadata">retrieveTransctionMetadata</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#updatetransaction">updateTransaction</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#retrievetransactioninformation-legacy">retrieveTransactionInformation (Legacy)</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#paymentwith-legacy">paymentWith (Legacy)</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#submitatmcashaccessamount-legacy">submitATMCashAccessAmount (Legacy)</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#generateaccesscode">generateAccessCode</a></li><li><a href="/docs/wlw/ios-sdk/transaction/#canceltransactionusingtoken">cancelTransactionUsingToken</a></li></ul></li></ul></li><li><a href="/docs/wlw/android-sdk/101/">Android SDK 101</a><ul></ul></li><li><a href="/docs/wlw/android-sdk/">Android Reference Guide</a><ul><li><a href="/docs/wlw/android-sdk/dev-environment-setup/">Development Environment Setup</a><ul><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#android-sdk-package-contents">Android SDK Package Contents</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#set-up-your-development-environment">Set Up Your Development Environment</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#configure-your-android-api-for-the-wlw-project">Configure Your Android API for the wlw Project</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#configure-your-development-environment-with-the-wlw-service">Configure Your Development Environment with the wlw Service</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#configure-your-sdk-instance">Configure Your SDK Instance</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#enable-system-logging">Configure the SDK Logging Utility</a></li><li><a href="/docs/wlw/android-sdk/dev-environment-setup/#success-and-failure-callbacks">Success and Failure Callbacks</a></li></ul></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/">Mobile App Planning</a><ul><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#sdk-structure">SDK Structure</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#ui-package">UI Package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#listeners-and-adapters">Listeners and Adapters</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#core-package">Core Package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#facade-package">Facade Package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#service-package">Service package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#exception-package">Exception Package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#domain-package">Domain Package</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#code-protections">Code Protections</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#owasp-top-mobile-controls">OWASP Top Mobile Controls</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#security-validation">Security Validation</a></li><li><a href="/docs/wlw/android-sdk/mobile-app-planning/#rooted-devices">Rooted Devices</a></li></ul></li><li><a href="/docs/wlw/android-sdk/security/">Security Module</a><ul><li><a href="/docs/wlw/android-sdk/security/#set-ui-package-security-service-listeners">Set UI Package Security Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/security/#login-with-pin">Login with PIN</a></li><li><a href="/docs/wlw/android-sdk/security/#login-with-nonce">Login with Nonce</a></li><li><a href="/docs/wlw/android-sdk/security/#login-by-federated-id">Login by Federated ID</a></li><li><a href="/docs/wlw/android-sdk/security/#login-with-device-authentication-token">Login with Device Authentication Token</a></li><li><a href="/docs/wlw/android-sdk/security/#generate-device-authentication-token">Generate Device Authentication Token</a></li><li><a href="/docs/wlw/android-sdk/security/#check-device-authentication-status">Check Device Authentication Status</a></li><li><a href="/docs/wlw/android-sdk/security/#logout">Logout</a></li><li><a href="/docs/wlw/android-sdk/security/#unlink-device">Unlink Device</a></li></ul></li><li><a href="/docs/wlw/android-sdk/customer/">Customer Module</a><ul><li><a href="/docs/wlw/android-sdk/customer/#retrieve-customer-data">Retrieve Customer Data</a></li></ul></li><li><a href="/docs/wlw/android-sdk/device-info/">Device Info Module</a><ul><li><a href="/docs/wlw/android-sdk/device-info/#set-ui-package-device-info-service-listeners">Set UI Package Device Info Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/device-info/#add-custom-device-properties">Add Custom Device Properties</a></li><li><a href="/docs/wlw/android-sdk/device-info/#retrieve-custom-device-property-values">Retrieve Custom Device Property Values</a></li><li><a href="/docs/wlw/android-sdk/device-info/#update-custom-device-properties">Update Custom Device Properties</a></li><li><a href="/docs/wlw/android-sdk/device-info/#delete-custom-device-properties">Delete Custom Device Properties</a></li></ul></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/">Google Cloud Messaging Utility</a><ul><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#add-gcm-services-to-android-manifest-file">Add GCM Services to Android Manifest File</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#set-ui-package-gcm-service-listeners">Set UI Package GCM Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#check-current-device-registration">Check Current Device Registration</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#register-for-gcm-and-wlw-messaging">Register for GCM and wlw Messaging</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#register-for-wlw-messaging">Register for wlw Messaging</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#disable-messaging-from-wlw">Disable Messaging from wlw</a></li><li><a href="/docs/wlw/android-sdk/google-cloud-messaging-utility/#disable-messaging-from-gcm-and-wlw">Disable Messaging from GCM and wlw</a></li></ul></li><li><a href="/docs/wlw/android-sdk/preferences/">Preferences Module</a><ul><li><a href="/docs/wlw/android-sdk/preferences/#set-ui-package-preference-service-listeners">Set UI Package Preference Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/preferences/#timeout">Timeout</a></li></ul></li><li><a href="/docs/wlw/android-sdk/payment-account-management/">Payment Account Management Module</a><ul><li><a href="/docs/wlw/android-sdk/payment-account-management/#payment-account-metadata">Payment Account Metadata</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#set-ui-package-payment-account-service-listeners">Set UI Package Payment Account Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#retrieve-all-payment-accounts">Retrieve All Payment Accounts</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#retrieve-a-single-payment-account">Retrieve a Single Payment Account</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#retrieve-account-without-balance-refresh">Retrieve Account Without Balance Refresh</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#refresh-an-account-balance">Refresh an Account Balance</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#get-payment-account-configurations">Get Payment Account Configurations</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#get-payment-account-billing-addresses">Get Payment Account Billing Addresses</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#get-all-tender-types">Get All Tender Types</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#get-one-tender-type">Get One Tender Type</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#add-payment-account-single-step">Add Payment Account (Single Step)</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#non-metadata-implementations">Non-Metadata Implementations</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#provision-a-payment-account-single-step">Provision a Payment Account (Single Step)</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#start-payment-account-enrollment-variable-steps">Start Payment Account Enrollment (Variable Steps)</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#continue-payment-account-enrollment-variable-steps">Continue Payment Account Enrollment (Variable Steps)</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#retrieve-payment-account-enrollments">Retrieve Payment Account Enrollments</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#cancel-payment-account-enrollments">Cancel Payment Account Enrollments</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#delete-payment-account">Delete Payment Account</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#verify-payment-account">Verify Payment Account</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#update-payment-account">Update Payment Account</a></li><li><a href="/docs/wlw/android-sdk/payment-account-management/#gift-account-management-services">Gift Account Management Services</a></li></ul></li><li><a href="/docs/wlw/android-sdk/user-registration/">User Registration Module</a><ul><li><a href="/docs/wlw/android-sdk/user-registration/#set-ui-package-user-registration-service-listeners">Set UI Package User Registration Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/user-registration/#retrieve-client-token">Retrieve Client Token</a></li></ul></li><li><a href="/docs/wlw/android-sdk/image-download/">Image Download Module</a><ul><li><a href="/docs/wlw/android-sdk/image-download/#set-ui-package-image-download-listeners">Set UI Package Image Download Listeners</a></li><li><a href="/docs/wlw/android-sdk/image-download/#download-images">Download Images</a></li></ul></li><li><a href="/docs/wlw/android-sdk/token-management/">Token Management Module</a><ul><li><a href="/docs/wlw/android-sdk/token-management/#set-ui-package-token-management-listeners">Set UI Package Token Management Listeners</a></li><li><a href="/docs/wlw/android-sdk/token-management/#obtain-checkout-token">Obtain Checkout Token</a></li><li><a href="/docs/wlw/android-sdk/token-management/#release-checkout-token">Release Checkout Token</a></li><li><a href="/docs/wlw/android-sdk/token-management/#activate-camera">Activate Camera</a></li><li><a href="/docs/wlw/android-sdk/token-management/#change-view-finder-dimension">Change View Finder Dimension</a></li><li><a href="/docs/wlw/android-sdk/token-management/#configure-camera">Configure Camera</a></li><li><a href="/docs/wlw/android-sdk/token-management/#release-camera">Release Camera</a></li></ul></li><li><a href="/docs/wlw/android-sdk/transactions/">Transaction Module</a><ul><li><a href="/docs/wlw/android-sdk/transactions/#transaction-retrieval-service">Transaction Retrieval Service</a></li><li><a href="/docs/wlw/android-sdk/transactions/#set-retrieval-listeners">Set Retrieval Listeners</a></li><li><a href="/docs/wlw/android-sdk/transactions/#retrieve-split-tender-transaction-information">Retrieve Split Tender Transaction Information</a></li><li><a href="/docs/wlw/android-sdk/transactions/#apply-tender-discounts">Apply Tender Discounts</a></li><li><a href="/docs/wlw/android-sdk/transactions/#clear-tender-discounts">Clear Tender Discounts</a></li><li><a href="/docs/wlw/android-sdk/transactions/#process-payment-service">Process Payment Service</a></li><li><a href="/docs/wlw/android-sdk/transactions/#process-split-tender-payment">Process Split Tender Payment</a></li><li><a href="/docs/wlw/android-sdk/transactions/#atm-cash-service">ATM Cash Service</a></li><li><a href="/docs/wlw/android-sdk/transactions/#withdraw-atm-cash">Withdraw ATM Cash</a></li><li><a href="/docs/wlw/android-sdk/transactions/#process-refund-service">Process Refund Service</a></li><li><a href="/docs/wlw/android-sdk/transactions/#process-a-refund">Process a Refund</a></li><li><a href="/docs/wlw/android-sdk/transactions/#cancel-transaction-service">Cancel Transaction Service</a></li><li><a href="/docs/wlw/android-sdk/transactions/#cancel-a-transaction">Cancel a Transaction</a></li></ul></li><li><a href="/docs/wlw/android-sdk/transaction-flow-rule/">Transaction Flow Rule Module</a><ul><li><a href="/docs/wlw/android-sdk/transaction-flow-rule/#set-listeners">Set Listeners</a></li><li><a href="/docs/wlw/android-sdk/transaction-flow-rule/#retrieve-transaction-metadata-without-polling">Retrieve Transaction Metadata Without Polling</a></li><li><a href="/docs/wlw/android-sdk/transaction-flow-rule/#update-transaction">Update Transaction</a></li><li><a href="/docs/wlw/android-sdk/transaction-flow-rule/#generate-access-code">Generate Access Code</a></li></ul></li><li><a href="/docs/wlw/android-sdk/offers/">Offers Module</a><ul><li><a href="/docs/wlw/android-sdk/offers/#set-ui-package-offer-service-listeners">Set UI Package Offer Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/offers/#retrieve-available-offer-campaign-summaries">Retrieve Available Offer Campaign Summaries</a></li><li><a href="/docs/wlw/android-sdk/offers/#retrieve-available-offer-campaign-detail-with-aps">Retrieve Available Offer Campaign Detail with APs</a></li><li><a href="/docs/wlw/android-sdk/offers/#retrieve-my-offer-detail-with-aps">Retrieve My Offer Detail with APs</a></li><li><a href="/docs/wlw/android-sdk/offers/#retrieve-my-offer-summaries">Retrieve My Offer Summaries</a></li><li><a href="/docs/wlw/android-sdk/offers/#retrieve-campaigns-associated-with-a-coupon-code">Retrieve Campaigns Associated with a Coupon Code</a></li><li><a href="/docs/wlw/android-sdk/offers/#activate-an-offer">Activate an Offer</a></li><li><a href="/docs/wlw/android-sdk/offers/#deactivate-my-offer">Deactivate My Offer</a></li></ul></li><li><a href="/docs/wlw/android-sdk/loyalty/">Loyalty Module</a><ul><li><a href="/docs/wlw/android-sdk/loyalty/#set-loyalty-manager-listener">Set Loyalty Manager Listener</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#check-loyalty-registration">Check Loyalty Registration</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#get-loyalty-properties">Get Loyalty Properties</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#create-loyalty-profile">Create Loyalty Profile</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#get-available-loyalty-programs">Get Available Loyalty Programs</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#get-enrolled-subscribed-loyalty-programs">Get Enrolled (Subscribed) Loyalty Programs</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#get-a-specific-loyalty-program">Get a Specific Loyalty Program</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#refresh-loyalty-points-balance">Refresh Loyalty Points Balance</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#get-points-earned">Get Points Earned</a></li><li><a href="/docs/wlw/android-sdk/loyalty/#record-external-activity-points">Record External Activity Points</a></li></ul></li><li><a href="/docs/wlw/android-sdk/order-history/">Order History Module</a><ul><li><a href="/docs/wlw/android-sdk/order-history/#set-order-history-service-listeners">Set Order History Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/order-history/#get-order-summary">Get Order Summary</a></li><li><a href="/docs/wlw/android-sdk/order-history/#get-order-details">Get Order Details</a></li></ul></li><li><a href="/docs/wlw/android-sdk/receipts/">Receipt Management Module</a><ul><li><a href="/docs/wlw/android-sdk/receipts/#set-receipt-management-service-listeners">Set Receipt Management Service Listeners</a></li><li><a href="/docs/wlw/android-sdk/receipts/#retrieve-receipt-summary">Retrieve Receipt Summary</a></li><li><a href="/docs/wlw/android-sdk/receipts/#retrieve-receipt-details">Retrieve Receipt Details</a></li><li><a href="/docs/wlw/android-sdk/receipts/#retrieve-refundable-receipts">Retrieve Refundable Receipts</a></li><li><a href="/docs/wlw/android-sdk/receipts/#retrieve-refundable-split-tender-receipts">Retrieve Refundable Split Tender Receipts</a></li></ul></li><li><a href="/docs/wlw/android-sdk/logging-utility/">Logging Utility</a><ul><li><a href="/docs/wlw/android-sdk/logging-utility/#using-the-wlw-logging-utility">Using the Paydiant Logging Utility</a></li><li><a href="/docs/wlw/android-sdk/logging-utility/#setting-error-display-messages-for-internally-logged-events">Setting Error Display Messages for Internally Logged Events</a></li><li><a href="/docs/wlw/android-sdk/logging-utility/#disable-internal-logging-for-select-events">Disable Internal Logging for Select Events</a></li><li><a href="/docs/wlw/android-sdk/logging-utility/#logging-event-types">Logging Event Types</a></li><li><a href="/docs/wlw/android-sdk/logging-utility/#logging-utility-methods">Logging Utility Methods</a></li></ul></li><li><a href="/docs/wlw/android-sdk/developer-utilities/">Developer Utilities Module</a><ul><li><a href="/docs/wlw/android-sdk/developer-utilities/#bluetooth-le-library-utility">Bluetooth LE Library Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#heartbeat-utility">Heartbeat Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#device-property-utility">Device Property Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#app-utility">App Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#app-authenticity-verification-utility">App Authenticity Verification Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#date-time-conversion-utility">Date Time Conversion Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#cryptographic-utility">Cryptographic Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#wlw-wi-fi-configuration-parser">Paydiant Wi-Fi Configuration Parser</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#location-utility">Location Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#payment-account-utility">Payment Account Utility</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#retrieve-default-payment-account">Retrieve Default Payment Account</a></li><li><a href="/docs/wlw/android-sdk/developer-utilities/#online-ordering-integration">Online Ordering Integration</a></li></ul></li><li><a href="/docs/wlw/android-sdk/error-handling-guidelines/">Error Handling Guidelines</a><ul><li><a href="/docs/wlw/android-sdk/error-handling-guidelines/#internal-error-reference">Internal Error Reference</a></li><li><a href="/docs/wlw/android-sdk/error-handling-guidelines/#server-error-reference-pre-sdk-54">Server Error Reference (Pre-SDK 5.4)</a></li><li><a href="/docs/wlw/android-sdk/error-handling-guidelines/#server-error-reference-sdk-54-and-later">Server Error Reference (SDK 5.4 and Later)</a></li></ul></li><li><a href="/docs/wlw/android-sdk/custom-logging/">Appendix A - Custom Logging</a><ul><li><a href="/docs/wlw/android-sdk/custom-logging/#ui-implementation">UI Implementation</a></li><li><a href="/docs/wlw/android-sdk/custom-logging/#core-package-methods">Core Package Methods</a></li><li><a href="/docs/wlw/android-sdk/custom-logging/#paydiant-logging-format-specification">Paydiant Logging Format Specification</a></li><li><a href="/docs/wlw/android-sdk/custom-logging/#logging-event-syntax-and-parameters">Logging Event Syntax and Parameters</a></li></ul></li><li><a href="/docs/wlw/android-sdk/deprecated-methods/">Appendix B - Deprecated and Removed Methods</a><ul><li><a href="/docs/wlw/android-sdk/deprecated-methods/#deprecation-schedule">Deprecation Schedule</a></li></ul></li></ul></li></ul></li></ul>
+            
+        </nav>
+    </div>
+
+                        <article class="content dx-content ">
+                            
+    
+
+	<span class="label u-mobile-hide" data-js="product-section-label"></span>
+    <h1 class="dx-content-title">PayPal&#39;s white label mobile wallet solution.</h1>
+
+    
+<p><img src="/img/docs/instore/wlw/wlw-home/wlw-logo-plus-phone.png" alt="WLW logo"></p>
+<p>Paydiant is now PayPal&apos;s <a href="/docs/instore/wlw">White Label Wallet</a> (WLW) platform.</p>
+<p>The WLW Platform puts the power of PayPal into a physical location that enables in-person mobile payments. Partners use the WLW APIs described here to deploy branded mobile wallet apps that work at the point of purchase at retail, restaurant, fuel site, cash access atm, and other in-person locations.</p>
+<ul>
+<li>For recent changes to the documentation, see <a href="/docs/instore/wlw/overall-release-notes/">Release Notes</a>.</li>
+</ul>
+<h2 id="api-guides">API Guides</h2>
+<p>The WLW API Guides describe the protocols and methods used to access the WLW Platform through the available WLW Gateways.</p>
+<ul>
+<li><a href="/docs/instore/wlw/b2b-mta/">B2B Mobile Transaction API</a></li>
+<li><a href="/docs/instore/wlw/b2bcc/">B2B Customer Care</a></li>
+</ul>
+<p>The &quot;101&quot; guides provide brief tutorials on how to use these APIs:</p>
+<ul>
+<li><a href="/docs/instore/wlw/b2b-mta-101/">B2B Mobile Transaction API 101</a></li>
+<li><a href="/docs/instore/wlw/b2bcc-101/">B2B Customer Care 101</a></li>
+</ul>
+<h2 id="integration-guides">Integration guides</h2>
+<p>Integration guides describe how to add Apple Pay or PayPal into a WLW-powered mobile wallet solution.</p>
+<ul>
+<li><a href="/docs/instore/wlw/apple-pay-integration/">Apple Pay</a></li>
+<li><a href="/docs/instore/wlw/paypal-integration/">PayPal</a></li>
+</ul>
+<h2 id="business-analytics">Business Analytics</h2>
+<p>The WLW Reporting and Analytics Guide lists the data feeds and dashboards available to monitor wallet usage.</p>
+<ul>
+<li><a href="/docs/instore/wlw/reporting-and-analytics/">Reporting and Analytics Guide</a></li>
+</ul>
+<h2 id="campaign-portal-ssp">Campaign Portal (SSP)</h2>
+<p>The WLW Offer Campaign Portal is a web-based tool used to design and deploy offer campaigns for WLW-powered mobile wallets. The Campaign Portal Help files are available here and from the Portal using the <code>Help</code> link on every page.</p>
+<ul>
+<li><a href="/docs/instore/wlw/ssp-help/">Offer Campaigns</a></li>
+<li><a href="/docs/instore/wlw/ssp-help/notifications/">Notification Campaigns</a></li>
+</ul>
+<p>More WLW guides will be released as they become available.</p>
+<h2 id="paydiant-sdk-guides">Paydiant SDK Guides</h2>
+<p>The WLW SDKs are deprecated as of January 1, 2019. For reference you can find them here:</p>
+<ul>
+<li><a href="/docs/instore/wlw/android-sdk-reference">Android SDK</a></li>
+<li><a href="/docs/instore/wlw/ios-sdk-reference">iOS SDK</a></li>
+</ul>
+
+
+
+                        </article>
+                    </div>
+                
+            
+
+            <footer class="footer">
+              
+                
+              
+
+                <section class="section">
+                    <div class="section__content">
+                        <div class="grid">
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Developer</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="/docs/" rel="nofollow">Documentation</a></li>
+                                    <li><a href="/docs/api/" rel="nofollow">APIs</a></li>
+                                    <li><a href="https://medium.com/paypal-engineering" rel="nofollow">Engineering Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Support</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="/docs/faq/" rel="nofollow">FAQ</a></li>
+                                    <li><a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">Help Center</a></li>
+                                    <li><a href="https://www.paypal-support.com/" rel="nofollow">Technical Support</a></li>
+                                    <li><a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">Community</a></li>
+                                    <li><a href="/docs/contact-sales/" rel="nofollow">Contact Sales</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Resources</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://demo.paypal.com" rel="nofollow">PayPal Demo</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/mpp/partner-program" rel="nofollow">Partners</a></li>
+                                    <li><a href="https://github.com/paypal/" rel="nofollow">GitHub</a></li>
+                                    <li><a href="https://www.paypal-status.com/product/production" rel="nofollow">API Status</a></li>
+                                    <li><a href="/docs/psd2-compliance/" rel="nofollow">PSD2 Compliance</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Family</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://paypal.com/" rel="nofollow">PayPal</a></li>
+                                    <li><a href="https://braintreepayments.com/" rel="nofollow">Braintree</a></li>
+                                    <li><a href="https://venmo.com/" rel="nofollow">Venmo</a></li>
+                                    <li><a href="https://www.paydiant.com/" rel="nofollow">Paydiant</a></li>
+                                    <li><a href="https://xoom.com/" rel="nofollow">Xoom</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid__item grid__item--6">
+                                <ul class="footer__legal">
+                                    <li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">Privacy</a></li>
+                                    <li><a href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">Legal</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--6">
+                                <p class="footer__copyright">© 2018 PayPal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </main>
+        <div class="fbt">
+            <a class="fbt-link" href="https://developer.paypal.com/feedback/" target="_blank">Feedback</a>
+        </div>
+
+        <div class="dx-search-panel u-hide">
+  <button class="dx-search-panel-close">╳</button>
+  <div class="dx-search-panel-content">
+    <div class="dx-search-input-wrapper grid">
+      <input id="siteQ" class="dx-search-panel-input grid__item grid__item--10" type="text" name="q" type="search" value="" key="search_placeholder" placeholder="Search our developer docs..." autocomplete="off">
+      <button class="dx-btn-search grid__item grid__item--2"><img src="/components/dx/img/search-icon.svg"></button>
+      <button class="dx-btn-clear-x trigger-clear u-hide">╳</button>
+    </div>
+    <div class="dx-search-panel-default-view">
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">Popular Search Queries</div>
+          <ul>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-sandbox" data-search="sandbox" tabindex="0">sandbox</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-get-client-id-and-secret" data-search="get client id and secret" tabindex="0">client id and secret</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-ipn" data-search="IPN" tabindex="0">IPN (Instant Payment Notifications)</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-refund-payments" data-search="refund payments" tabindex="0">refund payments</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-buttons" data-search="buttons" tabindex="0">buttons</a></li>
+          </ul>
+        </div>
+        <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Help</div>
+        <div class="dx-search-panel-support grid">
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal.com/us/smarthelp/search?q=Search.....&channel=mts" target="_top" class="block block--outlined-search-panel block--link block--full-height" target="_blank">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="/img/support/dev_portal_bulb.svg" alt="FAQ's">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="faq,faq-click,faq-referrer">FAQ's</p>
+                </div>
+                </div>
+            </a>
+          </div>
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal-community.com/mts" target="_blank" class="block block--outlined-search-panel block--link block--full-height">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="/img/support/dev_portal_forum.svg" alt="Forum">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="community,community-click,community-referrer">Tech Support Community</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Community</div>
+        <ul>
+          <li data-dxa="search-panel,click,community-link-test-credit-card"><a href="https://www.paypal-community.com/t5/REST-APIs/Test-Credit-Card-numbers-for-use-on-PayPal-sandbox/m-p/1124657" target="_blank">Test Credit Card numbers for use on PayPal sandbox</a></li>
+          <li data-dxa="search-panel,click,community-link-merchant-security-upgrade"><a href="https://www.paypal-community.com/t5/NVP-SOAP-APIs/Merchant-Security-Upgrade-Testing-PP-LIVE-8238/m-p/1459239" target="_blank">Merchant Security Upgrade Testing</a></li>
+          <li data-dxa="search-panel,click,community-link-inserting-company-logo"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/inserting-company-logo-in-payment-page/td-p/1512480" target="_blank">Inserting company logo in payment page</a></li>
+          <li data-dxa="search-panel,click,community-link-xo-as-guest-turned-on-but-not-available"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Checkout-as-Guest-Option-Turned-on-but-option-not-available-to/m-p/1215152" target="_blank">Checkout as Guest Option Turned on, but option not available to customers</a></li>
+          <li data-dxa="search-panel,click,community-link-create-spec-button-for-3-types"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Create-specific-paypal-button-for-3-types-of-payment-options/m-p/1540082#M772" target="_blank">Create specific paypal button for 3 types of payment options</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dx-search-panel-custom-view u-hide">
+    <div class="dx-search-panel-content">
+      <div class="dx-search-panel-search-results">
+        <div class="dx-search-items"></div>
+        <button class="dx-btn dx-btn-load-more"> Load More</button>
+      </div>
+      <div class="dx-search-panel-search-no-results u-hide">
+        <p class="no-results"></p>
+      <button class="dx-btn dx-btn-clear trigger-clear"> Clear All</button>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="dx-search-panel-overlay u-hide"></div>
+
+        
+        
+
+        
+          
+        
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+404 Not Found
+Set-Cookie: __cfduid=d5ea0cd24994206884334767a5621b3a91565250688; expires=Fri, 07-Aug-20 07:51:28 GMT; path=/; domain=.lima.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ec5b7db1-8dca-4030-8805-932dbc354201
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ec5b7db1-8dca-4030-8805-932dbc354201
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Cf-Ray: 502fe7c37bb2d220-MAN
+Date: Thu, 08 Aug 2019 07:51:28 GMT
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Request-Id: ec5b7db1-8dca-4030-8805-932dbc354201
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Download-Options: noopen

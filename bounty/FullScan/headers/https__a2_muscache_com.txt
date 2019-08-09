@@ -1,0 +1,16 @@
+403 Forbidden
+Server: AmazonS3
+Accept-Ranges: bytes bytes bytes bytes
+X-Served-By: cache-bwi5144-BWI, cache-lhr6325-LHR
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Request-Id: B9F1A2CC7D0A1800
+Via: 1.1 varnish 1.1 varnish
+X-Amz-Id-2: FTZZ1pUYkxpcAdmt+qD0F+NV/v6slYcFD1bxEMdTmmYqe5hQiciYTM83Kpw5XVXicOdM24rM7MQ=
+Content-Type: application/xml
+X-Cache-Hits: 0, 0
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 07:52:02 GMT
+Strict-Transport-Security: max-age=10886400; includeSubDomains
+X-Cache: MISS, MISS
+X-Timer: S1565164323.604934,VS0,VE77
+Timing-Allow-Origin: *

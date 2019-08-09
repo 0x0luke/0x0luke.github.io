@@ -1,0 +1,8 @@
+200 OK
+Vary: Accept-Encoding
+Server: gunicorn/19.7.1
+Via: 1.1 google
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Set-Cookie: session=eyJpZCI6bnVsbCwidXNlcl9pZCI6bnVsbH0.EC3C6g.0YgSJ7SNNBIbNesbGjPO4-7wrZs; HttpOnly; Path=/
+Date: Thu, 08 Aug 2019 14:27:54 GMT

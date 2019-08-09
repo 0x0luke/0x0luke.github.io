@@ -1,0 +1,19 @@
+200 OK
+X-Cache: Miss from cloudfront
+Via: 1.1 08d297d5e120c5b805e6aecbe5aad429.cloudfront.net (CloudFront)
+X-Powered-By: Next.js 8.0.3
+Set-Cookie: gfc_country=ID; Max-Age=31536000; Path=/; Expires=Thu, 06 Aug 2020 03:34:28 GMT; Secure location=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsYXRpdHVkZSI6LTYuMTc2NzM1MiwibG9uZ2l0dWRlIjoxMDYuODI2NTA0LCJhZGRyZXNzIjoiSmFrYXJ0YSIsImNvdW50cnlDb2RlIjoiSUQiLCJpc0FjY3VyYXRlIjpmYWxzZX0.e-Ml_F1rxzKVn6Bc8dk-mykTwTmr927j-1mpxzTrsRM; Path=/; Secure next-i18next=en; path=/; expires=Fri, 07 Aug 2020 03:34:28 GMT
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Dns-Prefetch-Control: off
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+Vary: Accept-Encoding
+Content-Language: en
+Date: Wed, 07 Aug 2019 03:34:28 GMT
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block
+X-Amz-Cf-Id: yqw_1cN0P8rEKYsYibSMPy9agE_hszYC96NpajoiG2knxgrUpe6ACA==
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Pop: MAN50-C1
+Content-Type: text/html; charset=utf-8

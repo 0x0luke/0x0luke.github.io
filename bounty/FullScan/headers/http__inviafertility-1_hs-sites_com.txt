@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: s-maxage=7200,max-age=5
+Edge-Cache-Tag: CT-3982607627,P-389004,L-3983058446,L-912691391,L-912691461,CW-5854893008,E-912693211,MENU-2569406407,MENU-2569406427,MENU-2569406437,PGS-ALL,SW-0,SD-4
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/AsyncSupport/static-1.58/js/post_listing_asset.js>; rel=preload; as=script </hs-fs/hub/389004/hub_generated/template_assets/1564588745801/combined-css-3f21c035149e76413ff9ffb66b0605b5.css>; rel=preload; as=style </hs/hsstatic/cos-i18n/static-1.10/bundles/project.js>; rel=preload; as=script </hs/hsstatic/slick/static-1.43/bundles/project.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Hub-Id: 389004
+Server: cloudflare
+Date: Wed, 07 Aug 2019 03:36:37 GMT
+Set-Cookie: __cfduid=d07af91386a66a40c72ccfee4c8f26cd81565148997; expires=Thu, 06-Aug-20 03:36:37 GMT; path=/; domain=.www.inviafertility.com; HttpOnly __cfruid=30fe69c155fd2ab638d326eaa64165a4df1f9059-1565148997; path=/; domain=.www.inviafertility.com; HttpOnly
+X-Hs-Content-Id: 3982607627
+X-Powered-By: HubSpot
+X-Trace: 2BD17830F21625D12B775F5D4454F712E087FEEA5C000000000000000000
+Retry-Count: 0
+Cf-Cache-Status: EXPIRED
+Vary: Accept-Encoding
+Cf-Ray: 502635122af3d224-MAN
+Access-Control-Allow-Credentials: false
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+Content-Type: text/html;charset=utf-8

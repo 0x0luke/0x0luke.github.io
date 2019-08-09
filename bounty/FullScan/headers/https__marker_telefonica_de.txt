@@ -1,0 +1,13 @@
+200 OK
+X-Cache: Miss from cloudfront
+Via: 1.1 4feba86b7801a97314059f4feaca62a8.cloudfront.net (CloudFront)
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 12:28:01 GMT
+Last-Modified: Mon, 04 Feb 2019 08:31:19 GMT
+Etag: "6af0ac3404a3e8966b71a906870db89b"
+Accept-Ranges: bytes
+Server: AmazonS3
+Content-Type: text/plain
+Content-Length: 102
+X-Amz-Cf-Pop: MAN50-C1
+X-Amz-Cf-Id: VmoFXHVAw22YA3N8BKwVWwD0KIILDmADGDt9mJZiXD_tL2POXhxNhg==

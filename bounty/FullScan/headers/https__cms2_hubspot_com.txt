@@ -1,0 +1,10 @@
+403 Forbidden
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Access-Control-Allow-Credentials: false
+Server: cloudflare
+Cf-Ray: 5030bbcf9eb63651-MAN
+Date: Thu, 08 Aug 2019 10:16:14 GMT
+Set-Cookie: __cfduid=d21095815ee60727bce0dc1d15727e32d1565259374; expires=Fri, 07-Aug-20 10:16:14 GMT; path=/; domain=.hubspot.com; HttpOnly

@@ -1,0 +1,22 @@
+200 OK
+Via: 1.1 varnish
+X-Served-By: cache-lhr6335-LHR
+X-Timer: S1565165684.318431,VS0,VE327
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes bytes
+Date: Wed, 07 Aug 2019 08:14:44 GMT
+Age: 0 0
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0
+Content-Security-Policy: default-src 'self' 'unsafe-inline' *.pinterest.com *.pinimg.com www.google-analytics.com; style-src * 'unsafe-inline'; img-src * data:;
+Set-Cookie: _dev_sess=TWc9PSZ5RW9PWDRIRmYwRlRpSVZhZkoyYWEybmdwYkRFQ2M2ZnBBci9iOXlLWHBHanRCS2NVaUtwa3VwdTZwMTh1N0VNR3M0dW5ieW9uSlVTMUJYR1N6aDZFQT09JjZ3dTIxY2xEOTF4WjZRM1hXc3pITlQ5dmo1az0=; Expires=Wed, 07-Aug-2019 08:20:44 GMT; Max-Age=360; Path=/ session=eyJjc3JmX3Rva2VuIjoiNDlkZWEzNzJmNzI4ZjA3M2FmY2U0ZDc2ODZlZGM2ZjAzM2VkNDRkYSJ9.XUqIdA.DMU5lOgfIRDue9fFfghAZ5dmw0A; HttpOnly; Path=/
+Strict-Transport-Security: max-age=31556926;
+Pragma: no-cache
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+X-Cache-Hits: 0
+Retry-Count: 0
+X-Cache: MISS
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pinterest-Generated-By: devsite-prod-0a011c50
+X-Content-Type-Options: nosniff

@@ -1,0 +1,19 @@
+404 Not Found
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Server: cloudflare
+X-Shopify-Stage: production
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d4eaa1d9-0f8c-4c1b-8c6b-965eaad35156
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=d4eaa1d9-0f8c-4c1b-8c6b-965eaad35156
+Date: Wed, 07 Aug 2019 11:45:52 GMT
+Content-Type: text/html; charset=utf-8
+X-Permitted-Cross-Domain-Policies: none
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Request-Id: d4eaa1d9-0f8c-4c1b-8c6b-965eaad35156
+Cf-Ray: 502901c0cc43366f-MAN
+Set-Cookie: __cfduid=d72c8b803e636f2363b7509b207c0c7101565178352; expires=Thu, 06-Aug-20 11:45:52 GMT; path=/; domain=.catherinefivepillars.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding

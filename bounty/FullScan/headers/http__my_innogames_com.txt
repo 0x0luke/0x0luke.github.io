@@ -1,0 +1,17 @@
+200 OK
+Via: 1.1 varnish
+X-Served-By: cache-lhr6327-LHR
+X-Cache: HIT
+Age: 697
+X-Cache-Hits: 3
+X-Timer: S1565249581.138433,VS0,VE0
+Vary: Accept-Encoding,Accept-Language,X-UA-Device
+X-Powered-By: PHP/7.1.30
+Cache-Control: public, max-age=1800
+Date: Thu, 08 Aug 2019 07:33:01 GMT
+Strict-Transport-Security: max-age=300
+Server: Apache
+Content-Language: en
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Retry-Count: 0

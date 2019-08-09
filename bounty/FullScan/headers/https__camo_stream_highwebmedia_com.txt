@@ -1,0 +1,14 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff nosniff
+Date: Thu, 08 Aug 2019 09:32:59 GMT
+Set-Cookie: __cfduid=d506b218487a0f464df6b38d6b9708be01565256779; expires=Fri, 07-Aug-20 09:32:59 GMT; path=/; domain=.highwebmedia.com; HttpOnly
+Cf-Ray: 50307c7568cf366f-MAN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: deny
+Retry-Count: 0
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+X-Xss-Protection: 1; mode=block 1; mode=block
+Vary: Accept-Encoding
+Server: cloudflare

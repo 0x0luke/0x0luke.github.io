@@ -1,0 +1,17 @@
+200 OK
+Date: Thu, 08 Aug 2019 09:09:56 GMT
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Link: <https://engineering.creditkarma.com/wp-json/>; rel="https://api.w.org/" <https://wp.me/aknfo>; rel=shortlink
+X-Rq: lhr2 102 196 3120
+Server: nginx
+X-Cache: hit
+Content-Type: text/html; charset=UTF-8
+X-Powered-By: WordPress.com VIP <https://wpvip.com>
+Content-Security-Policy: default-src https://engineering.creditkarma.com; connect-src 'self' https://www.creditkarma.com https://www.google-analytics.com https://creditkarma-preprod.go-vip.co; script-src 'self' data: https://s0.wp.com https://stats.wp.com https://secure.gravatar.com https://www.googletagmanager.com https://www.google-analytics.com https://js-agent.newrelic.com https://bam.nr-data.net 'unsafe-inline' 'report-sample' *.wp.com 'unsafe-eval'; style-src 'self' https://secure.gravatar.com 'unsafe-inline' 'report-sample' https://fonts.googleapis.com; img-src https://pixel.wp.com https://engineering.creditkarma.com data: https://www.google.com *.googleusercontent.com https://www.google-analytics.com https://secure.gravatar.com https://www.google.com https://www.googletagmanager.com; font-src 'self' data: https://wordpress.com https://fonts.gstatic.com; frame-src https://widgets.wp.com https://player.vimeo.com; report-uri https://sentry.io/api/1310889/security/?sentry_key=ba47dbe0293547cf8b27f3b643bb1873;
+Cache-Control: max-age=300, must-revalidate
+X-Hacker: If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.
+X-Xss-Protection: 1; mode=block
+Age: 156
+Vary: Accept-Encoding
+Accept-Ranges: bytes

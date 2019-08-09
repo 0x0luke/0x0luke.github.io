@@ -1,0 +1,25 @@
+200 OK
+X-Content-Type-Options: nosniff
+Age: 0 0
+X-Served-By: cache-lhr6324-LHR
+Proxied-By: Service Gateway
+Set-Cookie: AWSELB=8B0BBB2D029641EE02D6A729AAB8CE9ACA7EA3F368264A136A766C6D00C48760E1005D8BD1E28C6413298E34A52F061C1DD58C8E5859D6CAD8BF5F9D023595E7DBB60C0E75;PATH=/;MAX-AGE=900
+X-Cache-Hits: 0
+X-Timer: S1565249851.969786,VS0,VE788
+Content-Type: text/html;charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 08 Aug 2019 07:37:31 GMT
+Via: 1.1 varnish
+Etag: "2b22e-58f9181c459a2-gzip"
+Last-Modified: Thu, 08 Aug 2019 02:06:33 GMT
+Accept-Ranges: bytes bytes bytes
+Retry-Count: 0
+X-Dispatcher: dispatcher1uswest2
+Strict-Transport-Security: max-age=31536000
+Server: Apache
+Cache-Control: max-age=60, no-cache="set-cookie"
+X-Cache: MISS
+X-Vhost: publish
+Vary: Accept-Encoding,User-Agent
+Content-Security-Policy: frame-ancestors *.newrelic.com
+Expires: Thu, 01 Jan 1970 00:00:00 GMT

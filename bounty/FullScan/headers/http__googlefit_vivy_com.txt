@@ -1,0 +1,14 @@
+401 
+Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS, DELETE
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Cache-Control: no-store
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Access-Control-Allow-Origin: *
+Date: Thu, 08 Aug 2019 08:35:52 GMT
+Access-Control-Max-Age: 3600
+Pragma: no-cache
+Www-Authenticate: Bearer realm="oauth2-resource", error="unauthorized", error_description="Full authentication is required to access this resource"

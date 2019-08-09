@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]> ><! <![endif]-->
+<html lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <!-- start: Meta -->
+    <meta charset='utf-8'>
+    <title>
+      Authy Dashboard
+    </title>
+    <meta content="authenticity_token" name="csrf-param" /><meta content="c2271e521d0b28a25d3c26c60f19d92b" name="csrf-token" />
+    <meta content='Welcome to Authy Dashboard' name='description'>
+    <meta content='origin' name='referrer'>
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- end: Mobile Specific -->
+    <!-- start: CSS -->
+    <link rel="stylesheet" href="/assets/sessions-b194bfcb3da6bfbea07098aed832cb5d.css">
+    <!-- end: CSS -->
+    <!-- start: Favicon and Touch Icons -->
+    <link href='/assets/icons/apple-touch-icon-144-precomposed-52844f23ae5cccb535ba19ccc468f038.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+    <link href='/assets/icons/apple-touch-icon-114-precomposed-b5c7f855a1d3b8b0b90d048ad2a1befc.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='/assets/icons/apple-touch-icon-72-precomposed-f0c8d1f16e58fb818167ab28f918f049.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='/assets/favicon-127471814e7ba4af4e244dcbc44c6ea6.ico' rel='shortcut icon'>
+    <!-- end: Favicon -->
+    <link href='//cdnjs.cloudflare.com/ajax/libs/authy-forms.css/2.2/form.authy.min.css' media='screen' rel='stylesheet' type='text/css'>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+      {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+      ;if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1040773425961662');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img src="https://www.facebook.com/tr?id=1040773425961662&amp;ev=PageView&amp;noscript=1" width="1px" height="1px" style="display:none" alt="Tr?id=1040773425961662&amp;ev=pageview&amp;noscript=1" />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body data-action='sessions_signin'>
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe height='0' src='//www.googletagmanager.com/ns.html?id=GTM-MLMQK3' style='display:none;visibility:hidden' width='0'></iframe>
+    </noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MLMQK3');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- start: Page container -->
+    <div id='page-container'>
+      
+      <div class='signin-page'>
+        <div class='container'>
+          <div class='session-header'>
+            <div class='row'>
+              <h1>
+                Sign In
+              </h1>
+              <div class='subtitle'>
+                This dashboard is for Authy developers and application managers only. It is not for Authy end users. If you're an Authy user and need additional info or assistance, please visit
+                <a href="https://www.authy.com/personal" target="_blank">Authy website.</a>
+              </div>
+            </div>
+          </div>
+          <div class='signin-options'>
+            <div class='row'>
+              <div class='col-sm-6'>
+                <div class='section'>
+                  <h3>
+                    Already have a Twilio account?
+                  </h3>
+                  <p>
+                    This is for registered users via Twilio website or Authy accounts already connected with Twilio.
+                  </p>
+                  <div class='text-center'>
+                    <a href="https://www.twilio.com/user/account/ahoy-authy" id="twilio-signin-button" class="twilio-button">Sign In with Twilio</a>
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-6'>
+                <div class='section authy-user'>
+                  <h3>
+                    Are you an existing Authy user?
+                  </h3>
+                  <form action="/logon" accept-charset="UTF-8" role="form" class="form-horizontal signup-form" novalidate="novalidate" method="post"><input type="hidden" name="authenticity_token" value="c2271e521d0b28a25d3c26c60f19d92b" /><div class='form-group m-l-0 m-r-0'>
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required="required" autocomplete="off" />
+                    <div class='arrow-right'></div>
+                    <div class='validation-error'></div>
+                  </div>
+                  <div class='form-group m-l-0 m-r-0'>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required="required" />
+                    <div class='arrow-right'></div>
+                    <div class='validation-error'></div>
+                  </div>
+                  <div class='row row-signin'>
+                    <div class='col-sm-6 m-0 p-0'>
+                      <input type="submit" value="Sign In" class="btn btn-signup m-l-0" />
+                    </div>
+                    <div class='col-sm-6 m-0 p-0 m-t-15'>
+                      <div class='forgot-password'>
+                        <a href='/reset_password'>Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='additional-info m-t-40'>
+            I'm not a registered user.
+            <a href="https://www.twilio.com/try-twilio">Sign up for free</a>
+          </div>
+        </div>
+      </div>
+      <div class='modal fade' id='modal-session'>
+        
+      </div>
+    </div>
+    <!-- start: JavaScript -->
+    <script src="/assets/sessions-e7843b972ef715a09823841aaea5ad0c.js"></script>
+    <!--[if lt IE 9]>
+      <script src="/assets/plugins/crossbrowserjs/html5shiv-978db68794e1d11a2eb0ac8f2707161c.js"></script>
+      <script src="/javascripts/plugins/crossbrowserjs/response.min.js"></script>
+      <script src="/assets/plugins/crossbrowserjs/excanvas.min-f7cd22293439da3ca416c7938bf4228e.js"></script>
+    <![endif]-->
+    <script src='/form.authy.min.js' type='text/javascript'></script>
+    
+    <!-- end: JavaScript -->
+  </body>
+</html>

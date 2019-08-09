@@ -1,0 +1,19 @@
+404 Not Found
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b1d81af6-ab76-49a0-8fe1-a6761726b2ef
+X-Download-Options: noopen
+Date: Thu, 08 Aug 2019 14:25:03 GMT
+Content-Type: text/html; charset=utf-8
+Set-Cookie: __cfduid=df495d6b7392deb4d96c49aaf989ec0771565274303; expires=Fri, 07-Aug-20 14:25:03 GMT; path=/; domain=.catherineomc.shopify.com; HttpOnly
+Vary: Accept-Encoding
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=b1d81af6-ab76-49a0-8fe1-a6761726b2ef
+X-Dc: gcp-us-central1,gcp-us-central1
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Retry-Count: 0
+X-Request-Id: b1d81af6-ab76-49a0-8fe1-a6761726b2ef
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5032284dfd41bfed-MAN

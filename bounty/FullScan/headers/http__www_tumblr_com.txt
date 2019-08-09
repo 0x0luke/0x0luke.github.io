@@ -1,0 +1,17 @@
+200 OK
+Date: Wed, 07 Aug 2019 04:42:01 GMT
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: origin-when-cross-origin
+Age: 0
+Expect-Ct: max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+X-Content-Type-Options: nosniff
+Server: ATS
+P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
+Strict-Transport-Security: max-age=15552000
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding Accept-Encoding
+X-Rid: 2mq6f25ekklkp
+X-Frame-Options: deny
+X-Ua-Compatible: IE=Edge,chrome=1
+Retry-Count: 0
+Content-Security-Policy: script-src 'self' https://assets.tumblr.com https://sb.scorecardresearch.com/beacon.js https://ssl.google-analytics.com/ga.js https://www.google-analytics.com/analytics.js https://fc.yahoo.com/sdarla/php/client.php https://s.yimg.com/rq/darla/ https://www.googletagservices.com/tag/js/gpt.js https://securepubads.g.doubleclick.net/gpt/ https://securepubads.g.doubleclick.net/gampad/ads https://pagead2.googlesyndication.com/pagead/osd.js https://www.google.com/recaptcha/api.js https://consent.cmp.oath.com https://*.gemini.yahoo.com https://s.yimg.com/av/gemini/ga/gemini-iframe.js https://s.yimg.com/av/curveball/ 'unsafe-eval' 'nonce-4JfPJFt8EdFqckl0kO5tsRL0' https://www.google.com/recaptcha/api.js https://www.gstatic.com; object-src 'none'; worker-src blob:; base-uri 'self'; report-uri https://www.tumblr.com/svc/cspreports;

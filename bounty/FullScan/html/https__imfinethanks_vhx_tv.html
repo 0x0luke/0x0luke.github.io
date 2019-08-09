@@ -1,0 +1,1054 @@
+<!doctype html>
+<!--
+ __   __  __  __    __  __
+/\ \ | | /\ \_\ \  /\_\_\_\
+\ \ \' | \ \  __ \ \/_/\_\/_
+ \ \__|   \ \_\ \_\  /\_\/\_\
+  \/_/     \/_/\/_/  \/_/\/_/
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>I&#39;m Fine, Thanks</title>
+
+  <meta name="title" content="I&#39;m Fine, Thanks">
+  <meta name="description" content="A feature-length documentary about a crew of filmmakers who criss crossed the country talking to every day people about how they fell into lives of complacency (and most importantly, what they did to change their lives and create their own paths to happiness).">
+  <meta name="keywords" content="movie, video, streaming, downloads, vhx, distribution, filmmaker, donate, artist, diy">
+
+  <link rel="alternate" type="application/json+oembed" href="https://embed.vhx.tv/oembed?url=https://imfinethanks.vhx.tv&format=json" title="I&#39;m Fine, Thanks" />
+  <link rel="alternate" type="text/xml+oembed" href="https://embed.vhx.tv/oembed?url=https://imfinethanks.vhx.tv&format=xml" title="I&#39;m Fine, Thanks" />
+
+  <link rel="shortcut icon" href="https://cdn.vhx.tv/assets/favicon.png" type="image/png">
+  <link rel="canonical" href="http://imfinethanks.vhx.tv">
+
+  <link rel="stylesheet" href="https://static.vhx.tv/theme/stylesheets/vhx.stylesheet.css">
+  <style>
+  
+      /* -----------------------------------------------------
+  
+  	document / reset
+  
+  ------------------------------------------------------ */
+  body {
+  	font-family: 'Merriweather Sans', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: #999999;
+    background: #000000;
+    line-height: 19px;
+  }
+  ul, li {
+  	padding: 0;
+  	margin: 0;
+  	list-style: none;
+  }
+  a:link,
+  a:visited {
+  	color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+  	color: #ffffff;
+  	text-decoration: underline;
+  }
+  
+  /* -----------------------------------------------------
+  
+  	header
+  
+  ------------------------------------------------------ */
+  .nav-pri {
+    display: none;
+    text-align: center;
+    background: #000000;
+  }
+  .nav-pri li {
+  	display: inline-block;
+   }
+  .nav-pri a {
+  	padding: 10px 25px;
+  	display: inline-block;  
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .nav-pri a:link,
+  .nav-pri a:visited {
+    background: #000000;
+    color: #ffffff;
+  }
+  .nav-pri a:hover,
+  .nav-pri a:active {
+    color: #ffffff;
+    background: none;
+    text-decoration: none;
+  	background: rgba(250,250,250,.1);
+  }
+  .subpage-grid {
+  	display: none;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+  }
+  .subpage-grid ul {
+  	width: 150%;
+    height: 110px;
+  }
+  .subpage-grid li {
+  	float: left;
+    width: 125px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;  
+  }
+  .subpage-grid li img {
+  	width: 150%;
+    position: relative;
+    left: -15%;
+    top: -5%;
+  }
+  
+   
+  /* -----------------------------------------------------
+  
+  	feature
+  
+  ------------------------------------------------------ */
+  .feature {
+  	background: #000000;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s;
+  	-webkit-transition: all .3s;  
+  }
+  .feature .load-msg {
+  	display: none;
+  }
+  .loading.feature {
+  	position: fixed;
+    background: #000000 url('https://dr56wvhu2c8zo.cloudfront.net/robussandbox/assets/2fdd579d-48fa-409e-bbb3-b1e7420e2c76/loader.gif') 50% 50% no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+   }
+   .social {
+  	position: absolute;
+  	top: 10px;
+  	left: 10px;
+   }
+   .social li {
+    float: left;
+    margin-right: 3px;
+   }
+   .social .email {
+  	display: inline-block;
+    max-width: 200px;
+    padding: 3px 5px;
+    margin: 0px 4px 10px 14px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #F7F7F7;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+    background: #FFF;
+    background: -moz-linear-gradient(top, #FFF 0%, #DFDFDF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #DFDFDF));
+    background: -webkit-linear-gradient(top, #FFF 0%, #DFDFDF 100%);
+    background: -o-linear-gradient(top, #FFF 0%, #DFDFDF 100%);
+    background: -ms-linear-gradient(top, #FFF 0%, #DFDFDF 100%);
+    background: linear-gradient(to bottom, #FFF 0%, #DFDFDF 100%);
+    position: relative;
+  	top: -5px;
+   }
+   #vhx-preview-container {
+  	 background: #000000 \9;
+   }
+  @media screen and (max-width: 450px){
+  	.feature {
+    	margin-top: 30px;
+   	}
+  }
+  
+  	/* account
+  	-------------------------------------------------- */
+    .account {
+  	  position: absolute;
+    	top: 0;
+  	  right: 0;
+      z-index: 50;    
+     }
+     .account a {
+  	  display: block;
+  		padding: 5px 35px;
+  		text-transform: uppercase;
+  		font-size: 12px;
+     }
+  	.account a:link,
+    .account a:visited {
+  	  background: #000000;
+    	color: #ffffff;
+  	}
+    .account a:hover,
+    .account a:active {
+  		color: #ffffff;
+  	  background: #000000;
+    	text-decoration: none;
+    }
+  	@media screen and (max-width: 450px){
+  		.account {
+      	top: -30px;
+  			width: 100%;
+        padding: 5px 0px;
+        text-align: center;
+   		}
+  	}  
+    
+  	/* image grid
+  	-------------------------------------------------- */
+    .loading.feature .image-grid {
+      position: absolute;
+      top: -999999px;
+    }
+    .feature .image-grid {
+      left: -3.8%;
+      width: 120%;
+      overflow: absolute;
+      position: relative;
+      background: #000000;
+     }
+    .feature .image-grid img {
+      width: 150%;
+      position: relative;
+      top: -5%;
+      left: -12.5%;
+      display: block;
+      height: auto;
+      background: #000000;
+    }
+    .feature .image-grid li {
+      float: left;
+      width: 15%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;   
+      height: auto;
+      overflow: hidden;
+      border-bottom: 5px solid #fff;
+      border-right: 5px solid #fff;
+      background: #999;    
+     }
+    .feature .image-grid img:hover {
+      opacity: .7;
+      cursor: pointer;
+    }
+    
+  	/* header title
+  	-------------------------------------------------- */  
+    .loading.feature h1 {
+  	  left: -999999px;
+    }
+  	.feature h1 {
+     	pointer-events: none;
+      position: absolute;
+      top: auto;
+      width: 100%;
+      text-align: center;
+      line-height: 54px;
+      z-index: 10;
+      height: auto;
+      background: url('https://dr56wvhu2c8zo.cloudfront.net/onthemove/assets/ba29caf5-61d4-46aa-9d1f-d4d2dcc530c8/bg-white-transparent.png') repeat 0 0 \9;
+      background: rgba(255,255,255,.6);
+      margin: 0 auto 0 auto;
+    }
+    .feature h1:hover {
+      cursor: pointer;
+    } 
+    .feature h1 span {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      transition: all .5s;
+      -webkit-transition: all .5s;
+    }
+    
+  	/* options
+  	-------------------------------------------------- */  
+    .loading.feature .feature-options {
+  	  left: -999999px;
+    }
+  	.feature-options {
+      position: relative;
+      text-align: center;
+      margin: auto;
+      max-width: 650px;
+    }
+    .feature-options li {
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      width: 40%;
+      display: inline-block;
+  		margin: 0px 3% 40px 3%
+    }
+    .feature-options a:link,
+    .feature-options a:visited {
+      display: block;
+      background: #e35118;
+      padding: 15px 0px;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .feature-options a:hover,
+    .feature-options a:active {
+      transition: all .4s;
+      -webkit-transition: all .4s;
+      color: #fff;
+      background: #a63508;
+      text-decoration: none;
+    }
+    
+  	/* media queries
+  	-------------------------------------------------- */  
+    @media screen and (max-width: 750px){
+  		.feature h1 {
+  			line-height: 48px;
+       }
+  		.feature h1 span { 
+        font-size: 42px;
+      }
+      .feature-options a:link,
+      .feature-options a:visited {
+         font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 650px){
+  		.feature h1 {
+  			line-height: 38px;
+       }
+  		.feature h1 span { 
+        font-size: 34px;
+      }
+      .feature-options a:link,
+      .feature-options a:visited {
+         font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 550px){
+  		.feature h1 {
+  			line-height: 32px;
+       }
+  		.feature h1 span { 
+        font-size: 28px;
+      }
+      .feature-options li {
+  			display: block;
+        margin: 20px auto;
+        width: 70%;
+      }
+      .feature-options a:link,
+      .feature-options a:visited {
+         font-size: 14px;
+      }
+    }
+    @media screen and (max-width: 450px){
+  		.feature h1 {
+  			line-height: 24px;
+       }
+  		.feature h1 span { 
+        font-size: 21px;
+      }
+      .feature-options li {
+        width: 100%;
+      }
+    }
+    
+  /* -----------------------------------------------------
+  
+  	primary
+  
+  ------------------------------------------------------ */
+  .primary {
+  	background: #000000;
+    font-size: 13px;
+    color: #999999;
+    width: 70%;
+    max-width: 1000px;
+    margin: 40px auto 50px auto;
+  }
+  .primary .col-3-5 {
+  	float: right;
+  }
+  .primary .group {
+  	text-align: center;
+  }
+  .primary .btn {
+  	display: inline-block;
+    text-align: center;
+   }
+   @media screen and (max-width: 450px){
+  	.primary .btn {
+  		float: none;
+      width: 100%;
+   	}
+  }
+  .synopsis {
+    font-size: 14px;
+    padding: 25px 0;
+    line-height: 21px;
+    max-width: 700px;
+    margin: 25px auto;
+    border-top: 2px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  .synopsis .title-2 {
+  	text-align: center;
+  }
+  .primary .main {
+  	max-width: 700px;
+  	margin: auto;
+  }
+  .callout {
+    width: 400px;
+    margin: auto;
+    bottom: 25px;
+    color: #fff;
+    text-align: center;
+  }
+  .callout img {
+    width: 150px;
+   }
+  @media screen and (max-width: 650px){
+  	.callout {
+  		width: 100%;
+  	}
+  	.callout img {
+    	width: 125px;
+  	}
+  }
+  @media screen and (max-width: 450px){
+  	.callout .col-1-2 {
+  		float: none;
+  	  width: 100%;
+  	}
+  }
+   
+  /* packages
+  -------------------------------------------------- */  
+  .packages {
+  	padding-left: 60px;
+  }
+  .packages .desc {
+  	margin: 20px 0;
+    text-align: left;
+  }
+  .packages img {
+  	width :100%;
+   }
+  @media screen and (max-width: 650px){
+  	.packages {
+    	padding-left: 0;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 40px;
+    }
+    .packages li {
+  		margin-bottom: 50px;
+    }
+  }
+   
+  /* twitter
+  -------------------------------------------------- */  
+  .twitter li {
+  	margin: 20px 0;
+  	line-height: 18px;
+  }
+  .twitter li a:link,
+  .twitter li a:visited {
+  	color: #ffffff;
+  	text-decoration: none; 	
+  }
+  .twitter li a:hover,
+  .twitter li a:active {
+  	color: #ffffff;
+    opacity: .7;  
+  	text-decoration: underline;
+  }
+  .twitter .time-ago a:link,
+  .twitter .time-ago a:visited {
+  	color: #ffffff;
+    opacity: .5;
+  	display: block;
+  }
+  .mid {
+  	width: 600px;
+  	margin: auto;
+  }
+  .mid .packages .title-2 {
+  	text-align: center;
+  }
+  .mid .packages .btn {
+  	float: none;
+    width: 350px;
+    margin: auto;
+    display: block;
+  }
+  
+  
+  /* -----------------------------------------------------
+  
+  	footer
+  
+  ------------------------------------------------------ */
+  	.footer {
+  	  width: 100%;
+      border-top: 2px solid #fff;
+      margin: 20px auto 0 auto;
+    }
+    .nav-site {
+    	width: 70%;
+    	max-width: 1000px;    
+    	padding: 25px 0;
+  	  font-size: 12px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+     }
+   	.nav-site li {
+    	display: inline-block;
+  	  padding-right: 10px;
+  	 }
+    .brand-vhx {
+  		position: absolute;
+      right: 0;
+      top: 15px;
+     }
+  	.brand-vhx img {
+    	width: 60px;
+    }
+    @media screen and (max-width: 650px){
+    	.brand-vhx {
+      	position: static;
+        display: block;
+        text-align: center;
+        margin: 20px auto 0 auto;
+      }
+   	}
+    @media screen and (max-width: 450px){
+  	  .nav-site li.brand-vhx {
+      	display: none;
+      }
+    }
+  
+  /* -----------------------------------------------------
+  
+  	global
+  
+  ------------------------------------------------------ */
+  
+  	/* headers
+  	-------------------------------------------------- */
+  	.title-1 {
+      font-size: 54px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #000;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      padding: 5px 0;
+      display: inline-block;
+      text-transform: uppercase;
+   	}
+  	.title-2 {
+  		color: #fff;
+      text-transform: uppercase;
+  		font-size: 16px;
+  	}
+    
+    /* buttons
+  	-------------------------------------------------- */
+  	.btn,
+    a.btn {
+  	  display: block;
+    	background: #e35118;
+  	  padding: 15px 0px;
+  	  text-align: center;
+    	width: 100%;
+  	  color: #fff;
+    	font-weight: 600;
+  	  text-transform: uppercase;
+  	  font-size: 14px;
+      width: 200px;
+    }
+    a.btn:hover,
+    a.btn:active {
+  	  text-decoration: none;
+      background: #a63508;
+    }
+    
+  /* -----------------------------------------------------
+  
+  	utiltiies
+  
+  ------------------------------------------------------ */	
+  
+  	/* grid row
+  	-------------------------------------------------- */
+  	.row:after {
+  		content: ""; 
+  		display: block;
+  		height: 0; 
+  		clear: both;
+  		visibility: hidden;
+  	}
+  
+  	/* grid column
+  	-------------------------------------------------- */
+  	.col { float: left; }
+    .col-push { float: right; }
+  	.col-1-1 { float: left; width: 100%; }
+  	.col-1-2 { float: left; width: 50%; }
+  	.col-1-3 { float: left; width: 33.33333%; }
+  	.col-2-3 { float: left; width: 66.66667%; }
+  	.col-1-4 { float: left; width: 25%; }
+  	.col-2-4 { float: left; width: 50%; }
+  	.col-3-4 { float: left; width: 75%; }
+    .col-1-5 { float: left; width: 20%; }
+  	.col-2-5 { float: left; width: 40%; }
+  	.col-3-5 { float: left; width: 60%; }
+    .col-4-5 { float: left; width: 80%; }
+    @media screen and (max-width: 650px){
+  	.col-2-5 { float: none; width: 100%; }
+  	.col-3-5 { float: none; width: 100%; }  
+    }
+    
+  	/* misc
+  	-------------------------------------------------- */
+  	.group:after {
+  		content: "."; 
+  		display: block;
+  		height: 0; 
+  		clear: both;
+  		visibility: hidden;
+  	}
+  </style>
+
+  
+
+  <script src="https://dr56wvhu2c8zo.cloudfront.net/assets/theme/javascripts/modernizr.js?v=6"></script>
+
+
+    <script>
+      var _gaq = _gaq || [];
+  
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+        ga('create', 'UA-19540423-6', 'auto');
+      ga('require', 'displayfeatures');
+      ga('set', 'dimension1', 'imfinethanks');
+      ga('send', 'pageview');
+  
+      var Tracking = {
+        EVENTS:     {"EVENT_SALE_INITIATED":"sale_initiated","EVENT_SALE_COMPLETE":"sale_complete","EVENT_SALE_COMPLETE_GIFT":"sale_conversion-gift","EVENT_SALE_ERROR":"sale_error","EVENT_SALE_COMPLETE_SAVE_CARD":"sale_complete_save_card","EVENT_SALE_MISSING_EMAIL":"sale_missing_email","EVENT_SALE_UNCONFIRMED_EMAIL":"sale_unconfirmed_email","EVENT_SALE_MISSING_CC":"sale_missing_cc","EVENT_SALE_MISSING_CVC":"sale_missing_cvc","EVENT_SALE_MISSING_EXP":"sale_missing_exp","EVENT_SALE_MISSING_ZIP":"sale_missing_zip","EVENT_SALE_INVALID_CC":"sale_invalid_cc","EVENT_SALE_INVALID_CVC":"sale_invalid_cvc","EVENT_SALE_INVALID_EXP":"sale_invalid_exp","EVENT_SALE_INVALID_ZIP":"sale_invalid_zip","EVENT_SALE_INVALID_COUPON":"sale_invalid_coupon","EVENT_SALE_INACTIVE_COUPON":"sale_inactive_coupon","EVENT_SALE_GEOBLOCKED_COUPON":"sale_geoblocked_coupon","EVENT_SALE_EXPIRED_CC":"sale_expired_cc","EVENT_SALE_PLAY_TRAILER":"sale_play_trailer","EVENT_SALE_PROCESSING_ERROR":"sale_processing_error","EVENT_SALE_UNKNOWN_ERROR":"sale_unknown_error","EVENT_SALE_INCOMPLETE_FORM":"sale_incomplete_form","EVENT_SALE_SHARE_FACEBOOK":"sale_share_facebook","EVENT_SALE_SHARE_TWITTER":"sale_share_twitter","EVENT_SALE_SHARE_EMAIL":"sale_share_email","EVENT_SALE_START_WATCHING":"sale_start_watching","EVENT_SALE_SAVE_CARD":"sale_save_card","EVENT_SALE_SHOW_PAYMENT_TAB":"sale_show_payment_tab","EVENT_SALE_SHOW_DETAILS_TAB":"sale_show_details_tab","EVENT_ADMIN_SIGNUP":"admin_signup","EVENT_ADMIN_ADD_SITE":"admin_add_site","EVENT_ADMIN_PUBLISH_THEME":"admin_publish_theme","EVENT_ADMIN_CREATE_VIDEO":"admin_create_video","EVENT_ADMIN_UPLOAD_VIDEO":"admin_upload_video","EVENT_ADMIN_UPLOAD_VIDEO_NATIVE":"admin_upload_video_native","EVENT_ADMIN_UPLOAD_VIDEO_DROPBOX":"admin_upload_video_dropbox","EVENT_ADMIN_TRANSCODE_VIDEO":"admin_transcode_video","EVENT_ADMIN_CREATE_EXTRA":"admin_create_extra","EVENT_ADMIN_UPLOAD_EXTRA":"admin_upload_extra","EVENT_ADMIN_UPLOAD_EXTRA_NATIVE":"admin_upload_video_native","EVENT_ADMIN_CONNECT_PAYOUT":"admin_connect_payout","EVENT_ADMIN_CREATE_SCREENER":"admin_create_screener","EVENT_ADMIN_CREATE_COUPON":"admin_create_coupon","EVENT_ADMIN_CREATE_UPDATE":"admin_create_update","EVENT_ADMIN_PUBLISH_UPDATE":"admin_publish_update","EVENT_ADMIN_CREATE_PARTNER":"admin_create_partner","EVENT_ADMIN_SENT_FREE_COPIES":"admin_sent_free_copies","EVENT_ADMIN_UPLOADED_FOLLOWERS_CS":"admin_uploaded_followers_csv","EVENT_ADMIN_ADDED_FOLLOWERS":"admin_added_followers","EVENT_ADMIN_CREATE_SUBSCRIPTION":"admin_create_subscription","EVENT_ADMIN_LINK_HELP":"admin_link_help","EVENT_ADMIN_LINK_FAQ":"admin_link_faq","EVENT_ADMIN_LINK_GETTING_STARTED":"admin_link_getting_started","EVENT_ADMIN_LINK_HOWTO":"admin_link_howto","EVENT_ADMIN_LINK_BEST_PRACTICES":"admin_link_best_practices","EVENT_ADMIN_LINK_DEV_DOCS":"admin_link_dev_docs","EVENT_FORUM_CREATE_THREAD":"forum_create_thread","EVENT_FORUM_CREATE_POST":"forum_create_post","EVENT_UPDATE_COMMENT":"comment_update","EVENT_VIDEO_COMMENT":"video_comment","EVENT_SITE_HERO_WATCH_TRAILER":"site_hero_watch_trailer","EVENT_SITE_HERO_BUY":"site_hero_buy","EVENT_SITE_FOOTER_BUY":"site_footer_buy","EVENT_SITE_FOOTER_IOS":"site_footer_ios","EVENT_SITE_BUY":"site_buy","EVENT_SITE_UNAVAILABLE_REQUEST":"site_unavailable_request","EVENT_SITE_SEARCH":"site_search","EVENT_SITE_SEARCH_EMPTY":"site_search_empty","EVENT_SITE_SEARCH_VIDEO_CLICK":"search_video","EVENT_SITE_SEARCH_COLLECTION_CLICK":"search_collection","EVENT_SITE_VIDEO_BUY":"site_video_buy","EVENT_SITE_VIDEO_WATCH_TRAILER":"site_video_watch_trailer","EVENT_SITE_COLLECTION_BUY":"site_collection_buy","EVENT_SITE_PRODUCT_PREORDER":"site_product_preorder","EVENT_SITE_PRODUCT_BUY":"site_product_buy","EVENT_SITE_PRODUCT_RENT":"site_product_rent","EVENT_SITE_CAROUSEL_NEXT":"site_carousel_next","EVENT_SITE_CAROUSEL_PREV":"site_carousel_prev","EVENT_SITE_CAROUSEL_COIN":"site_carousel_coin","EVENT_SITE_CAROUSEL_WATCH_NOW":"site_carousel_watch_now","EVENT_SITE_CAROUSEL_TRAILER":"site_carousel_trailer","EVENT_SITE_HOME":"site_home","EVENT_SITE_BROWSE":"site_browse","EVENT_SITE_SETTINGS":"site_settings","EVENT_SITE_FORUMS":"site_forums","EVENT_SITE_SUPPORT":"site_help","EVENT_SITE_CONTACT":"site_contact","EVENT_SITE_VIEW_PRODUCTS":"site_products","EVENT_SITE_VIEW_PRODUCT":"site_product","EVENT_SITE_COLLECTION_CLICK":"site_collection","EVENT_SITE_VIDEO_CLICK":"site_video","EVENT_SITE_EXTRA_CLICK":"site_extras","EVENT_SITE_CATEGORY_CLICK":"site_category","EVENT_SITE_MOVIE_CLICK":"site_movie","EVENT_SITE_PLAYLIST_CLICK":"site_playlist","EVENT_SITE_SERIES_CLICK":"site_series","EVENT_SITE_SEASON_CLICK":"site_season","EVENT_SITE_TERMS":"site_tos","EVENT_SITE_PRIVACY":"site_privacy","EVENT_SITE_COOKIES":"site_cookies","EVENT_SITE_WATCHLIST_REMOVE":"site_removewatchlist","EVENT_SITE_WATCHLIST_ADD":"site_addwatchlist","EVENT_SITE_CONTEXT_HOMEPAGE":"site_context_homepage","EVENT_SITE_CONTEXT_COLLECTION":"site_context_collection","EVENT_SITE_CONTEXT_CATEGORY":"site_context_category","EVENT_SITE_CONTEXT_MOVIE":"site_context_movie","EVENT_SITE_CONTEXT_PLAYLIST":"site_context_playlist","EVENT_SITE_CONTEXT_SERIES":"site_context_series","EVENT_SITE_CONTEXT_UPNEXT":"site_context_upnext","EVENT_AUTHENTICATION_LOGIN":"authentication_login","EVENT_AUTHENTICATION_ACTIVATION_STARTED":"activationstarted","EVENT_AUTHENTICATION_ACTIVATION_COMPLETE":"activation","EVENT_AUTHENTICATION_SIGNIN_VIEW":"signin","EVENT_AUTHENTICATION_SIGNIN_STARTED":"signinstarted","EVENT_AUTHENTICATION_SIGNIN_COMPLETE":"authentication","EVENT_AUTHENTICATION_SIGNUP_VIEW":"signup","EVENT_AUTHENTICATION_SIGNUP_STARTED":"signupstarted","EVENT_AUTHENTICATION_PURCHASE_STARTED":"purchasestarted","EVENT_AUTHENTICATION_SIGNUP_COMPLETE":"authentication","EVENT_AUTHENTICATION_CONVERSION":"conversion","EVENT_AUTHENTICATION_REGISTRATION":"register","EVENT_SETTINGS_SAVE_PROFILE":"settings_save_profile","EVENT_SETTINGS_SAVE_NOTIFICATIONS":"settings_save_notifications","EVENT_SETTINGS_SAVE_CARD":"settings_save_card","EVENT_DEVICES_DOWNLOAD_IOS":"devices_download_ios","EVENT_DEVICES_DOWNLOAD_APPLETV":"devices_download_appletv","EVENT_DEVICES_DOWNLOAD_ANDROID":"devices_download_android","EVENT_DEVICES_DOWNLOAD_ANDROIDTV":"devices_download_androidtv","EVENT_DEVICES_DOWNLOAD_AMAZON_FIRE":"devices_download_amazon_fire","EVENT_DEVICES_DOWNLOAD_XBOX":"devices_download_xbox","EVENT_DEVICES_DOWNLOAD_ROKU":"devices_download_roku","EVENT_DEVICES_DOWNLOAD_CHROMECAST":"devices_download_chromecast","EVENT_NEWSLETTER_SIGNUP":"event_newsletter_signup","EVENT_METADATA_CAST":"metadata_click_cast","EVENT_METADATA_CREW":"metadata_click_crew","EVENT_METADATA_GENRES":"metadata_click_genres","EVENT_METADATA_RATING":"metadata_click_rating"},
+        PROPERTIES: {"PROPERTY_COLLECTOR_URL":"https://collector.vhx.tv/pixel.gif","PROPERTY_CURRENT_USER_ID":"current_user_id","PROPERTY_CURRENT_USER_EMAIL":"current_user_email","PROPERTY_CURRENT_SITE_ID":"current_site_id","PROPERTY_CURRENT_SITE_KEY":"current_site_key","PROPERTY_COLLECTION_ID":"collection_id","PROPERTY_DEVICE":"device","PROPERTY_DEVICE_ID":"device_id","PROPERTY_NAME":"name","PROPERTY_PLATFORM":"platform","PROPERTY_PLATFORM_ID":"platform_id","PROPERTY_PLATFORM_VERSION":"platform_version","PROPERTY_PRODUCT_ID":"product_id","PROPERTY_REFERRER":"referrer","PROPERTY_SESSION_ID":"session_id","PROPERTY_TIMESTAMP":"timestamp","PROPERTY_TYPE":"type","PROPERTY_URL":"url","PROPERTY_USER_AGENT":"user_agent","PROPERTY_USER_ID":"user_id","PROPERTY_VIDEO_ID":"video_id","PROPERTY_VIEW":"view"},
+        SITE_GANALYTICS_ENABLED: false
+      };
+  
+        Tracking.SITE_GANALYTICS_ENABLED = true;
+          ga('create', '', 'auto', { 'name': 'site' });
+  
+        ga('site.require', 'displayfeatures');
+        ga('site.set', 'dimension1', 'imfinethanks');
+        ga('site.send', 'pageview');
+  
+        var _vhx = {
+          environment: 'production',
+          site: { id: '2038', domain: 'imfinethanks.vhx.tv', host: 'imfinethanks.vhx.tv' },
+          geo:  { country: 'it' }
+        };
+  
+        (function() {
+          var vhx = document.createElement('script'); vhx.type = 'text/javascript'; vhx.async = true;
+          vhx.src = 'https://cdn.vhx.tv/assets/tracker.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vhx, s);
+        })();
+  
+      var _current_user = {"id":null,"email":null,"name":null},
+          _current_site = {"id":2038,"facebook_pixel_codes":[],"twitter_pixel_codes":[],"adwords_pixel_codes":[],"key":"imfinethanks"};
+    </script>
+</head>
+<body class="sites sites-show">
+  <section>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+
+
+<div class="subpage-grid">
+	<ul class="group">
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/0a70f92b-4af8-4f73-854c-ee7d171202f2/Danielle+Leporte.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/c7133d5e-ba9b-4066-8afc-5ef1808bd7e6/Picture+7.png" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/bde46e85-54be-4c30-bf3c-5aaa0ba1933b/Week1Selects+2.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/615cbe7c-b6f3-47a9-bcc8-e128e72631f7/Week1Selects+4.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/5ba51170-7524-49b7-b9dd-6c8c3eb283ae/ImFineThanks+15.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/31091de5-4e62-4719-a9c4-9c74329fe9ef/ImFineThanks+17.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/cb30c62e-33bf-44d4-b36e-92e8d7476d4c/ImFineThanks+28.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/2583bfbc-cfee-4e75-8b89-501140ede638/ImFineThanks+70.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/fcb26bf8-a315-4d4a-83c9-a85ccbb893c5/ImFineThanks+71.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/33e4af48-5e41-4c38-9b74-1cbd21829775/ImFineThanks+75.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/c7dd525c-db40-45e0-81e3-59508949f76f/ImFineThanks+76.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/454da7eb-ebdf-4946-94ec-7154ec80c9ac/ImFineThanks+112.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/e3d0c581-5bdd-484c-a0c6-a120544d207a/ImFineThanks+79.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/188d1b2f-95f9-4c5c-9f37-33a24f02ce13/ImFineThanks+82.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/e23d862b-279f-44aa-a06b-a76573441ab9/ImFineThanks+95.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/12d9601a-f7ea-4225-b4af-d7a400961b55/ImFineThanks+96.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/6bdf1f14-7c03-4156-a13c-f54542b36b08/ImFineThanks+97.jpg" /></li>
+	  <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/1cb74d2f-0dd0-4286-bbc4-58c9a824df1e/Chris+Guillebeau.jpg" /></li>
+  </ul>
+</div>
+    <div class="clear"></div>
+  </section>
+
+  <section>
+    <!-- Feature -->
+    <div class="feature loading">
+    
+    	<h1><span class="title-1">I&#39;m Fine, Thanks:    A Documentary</span></h1>
+    
+      <!-- trailer -->
+      <section class="trailer">
+          
+    	 <!-- slideshow -->
+        <ul class="image-grid" data-gallery>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/0a70f92b-4af8-4f73-854c-ee7d171202f2/Danielle+Leporte.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/c7133d5e-ba9b-4066-8afc-5ef1808bd7e6/Picture+7.png" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/bde46e85-54be-4c30-bf3c-5aaa0ba1933b/Week1Selects+2.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/615cbe7c-b6f3-47a9-bcc8-e128e72631f7/Week1Selects+4.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/5ba51170-7524-49b7-b9dd-6c8c3eb283ae/ImFineThanks+15.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/31091de5-4e62-4719-a9c4-9c74329fe9ef/ImFineThanks+17.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/cb30c62e-33bf-44d4-b36e-92e8d7476d4c/ImFineThanks+28.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/2583bfbc-cfee-4e75-8b89-501140ede638/ImFineThanks+70.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/fcb26bf8-a315-4d4a-83c9-a85ccbb893c5/ImFineThanks+71.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/33e4af48-5e41-4c38-9b74-1cbd21829775/ImFineThanks+75.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/c7dd525c-db40-45e0-81e3-59508949f76f/ImFineThanks+76.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/454da7eb-ebdf-4946-94ec-7154ec80c9ac/ImFineThanks+112.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/e3d0c581-5bdd-484c-a0c6-a120544d207a/ImFineThanks+79.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/188d1b2f-95f9-4c5c-9f37-33a24f02ce13/ImFineThanks+82.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/e23d862b-279f-44aa-a06b-a76573441ab9/ImFineThanks+95.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/12d9601a-f7ea-4225-b4af-d7a400961b55/ImFineThanks+96.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/6bdf1f14-7c03-4156-a13c-f54542b36b08/ImFineThanks+97.jpg" /></li>
+          <li><img src="https://dr56wvhu2c8zo.cloudfront.net/imfinethanks/assets/1cb74d2f-0dd0-4286-bbc4-58c9a824df1e/Chris+Guillebeau.jpg" /></li>
+        </ul>
+        
+        <ul class="social">
+          <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" 
+              data-via="grantpeelle" 
+              data-text="" 
+              data-counturl="http://imfinethanks.vhx.tv" 
+              data-url="http://imfinethanks.vhx.tv">Tweet</a>
+          </li>
+          <li>
+          	<div class="fb-like" 
+            	data-href="http://facebook.com/imfinethanksmovie" 
+              data-send="false" 
+              data-layout="button_count" 
+              data-show-faces="false"></div>
+          </li>
+          <li>
+            <a class="email" href="mailto:?subject=Buy I&#39;m Fine, Thanks on VHX!&body=http://imfinethanks.vhx.tv"><i class="icon-envelope-alt"></i> Share</a>
+          </li>
+        </ul>
+      </section>
+    
+    </div>
+    
+    <!-- Primary -->
+    <section class="primary">
+      
+      <section class="row">
+      	<div class="col-1-1">
+        <!-- options -->
+        <ul class="feature-options">
+          
+          <li class="buy-btn"><a href="/buy">$5 Buy Now</a></li>
+          <li class="trailer-btn"><a href="" data-preview-url="824">Preview</a></li>
+        </ul>
+    
+    		<ul class="callout row">
+    			<li class="col-1-2">
+            <img src="https://dr56wvhu2c8zo.cloudfront.net/onthemove/assets/a9e5b5c4-edbb-4dca-b9a0-bc0cff573cae/watch-anytime-white.png" />
+    	    	<h4>Watch Anytime</h4>
+    			</li>
+    			<li class="col-1-2">
+    			<img src="https://dr56wvhu2c8zo.cloudfront.net/brick/assets/7b894f98-b595-4745-b6e3-b412ef60b198/drm-free-white.png" />
+    	    	<h4>Download DRM Free</h4>
+    			</li>
+    		</ul>
+        
+        <div class="synopsis">
+        	<h2 class="title-2">I&#39;m Fine, Thanks</h2>
+          <p><p>A feature-length documentary about a crew of filmmakers who criss crossed the country talking to every day people about how they fell into lives of complacency (and most importantly, what they did to change their lives and create their own paths to happiness).</p></p>
+        </div>
+      </section>
+      
+      <section class="row main">
+        <div class="col-3-5">
+        
+          <!-- Packages -->
+          <ul class="packages group">
+                <li class="group">
+    
+                    <h3 class="title-2">I&#39;m Fine, Thanks HD DRM-Free Download</h3>
+                    <div class="visual"><img src="https://vhx.imgix.net/imfinethanks/assets/62a29f5d-832c-4fb6-a676-1e9fde0cb59a/TitleCard.jpg?auto=format%2Ccompress&amp;fit=crop&amp;h=720&amp;w=1280" /></div>
+                    <div class="desc"><p>"I'm Fine, Thanks" follows a documentary crew of 5 around the United States as they interview everyday people on how they got trapped in complacent, dull lives and careers - and the steps they took to change their lives forever. Told through a collection of intimate, hilarious and at-times heartbreaking stories from a cross section of America, I'm Fine, Thanks is a "coming of age" movie for the already "of age." It's a rally cry for personal empowerment and a wake-up call to anyone who is driving through life asleep at the wheel.</p></div>
+                    <a class="btn btn-size-15" href="/buy/im-fine-thanks-hd-drm-free-download">$5 Buy Now</a>
+    
+                 </li>
+          </ul> 
+        </div>
+        
+        <div class="col-2-5">
+          <!-- Twitter Feed -->
+          <div class="twitter" data-count="10" data-twitter-handle="grantpeelle">
+            <h4 class="title-2"><a href="#">@grantpeelle</a></h4>
+                <ul class="scroll">
+                  <li class="twitter-tweet">
+                    <span><a target='_blank' href='https://twitter.com/emitoms'>@emitoms</a> I&<a target='_blank' href='https://twitter.com/search?q=%2339'>#39</a>;d love to see you make a video.</span>
+                    <span class="time-ago"><a href="http://twitter.com/grantpeelle/status/1039655203333648387" target="_blank">11 months ago - reply</a></span>
+                  </li>
+                  <li class="twitter-tweet">
+                    <span><a target='_blank' href='https://twitter.com/search?q=%232017bestnine'>#2017bestnine</a> <a target='_blank' href='https://t.co/eAmLp7IYnT'>https://t.co/eAmLp7IYnT</a></span>
+                    <span class="time-ago"><a href="http://twitter.com/grantpeelle/status/941010853226217474" target="_blank">over 1 year ago - reply</a></span>
+                  </li>
+                  <li class="twitter-tweet">
+                    <span>RT <a target='_blank' href='https://twitter.com/stillmotion'>@stillmotion</a>: Story is a relationship between the teller and the listener, a responsibility.Story is an affirmation of our ties to one a…</span>
+                    <span class="time-ago"><a href="http://twitter.com/grantpeelle/status/881693925890818049" target="_blank">about 2 years ago - reply</a></span>
+                  </li>
+                  <li class="twitter-tweet">
+                    <span><a target='_blank' href='https://twitter.com/ryankoral'>@ryankoral</a> <a target='_blank' href='https://twitter.com/gototell'>@gototell</a> <a target='_blank' href='https://twitter.com/Podcast'>@Podcast</a> Thanks, Ryan. You are a great podcast host. What an awesome experience you created.</span>
+                    <span class="time-ago"><a href="http://twitter.com/grantpeelle/status/777914389580156928" target="_blank">almost 3 years ago - reply</a></span>
+                  </li>
+                  <li class="twitter-tweet">
+                    <span>I love how Wilmington hangs flags from the light poles downtown. <a target='_blank' href='https://twitter.com/search?q=%23summertime'>#summertime</a> <a target='_blank' href='https://twitter.com/search?q=%23fourthofjuly'>#fourthofjuly</a> <a target='_blank' href='https://t.co/DlGYnosTAG'>https://t.co/DlGYnosTAG</a></span>
+                    <span class="time-ago"><a href="http://twitter.com/grantpeelle/status/748236906832400385" target="_blank">about 3 years ago - reply</a></span>
+                  </li>
+                </ul>
+          </div>
+        </div>
+    	</section>
+    </section>    <div class="clear"></div>
+  </section>
+
+  <section>
+    <div class="footer row">
+  <!-- MODULE / Site Navigation -->
+  <nav class="nav-site">
+    <ul>
+      <li><a href="/faq">Help / FAQ</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/tos">Terms of Use</a></li>
+      <li><a href="/buy">Buy the Film</a></li>
+        <!-- VHX Link -->
+		  <li class="brand-vhx">
+    		<a href="http://vhx.tv" title="Powered by VHX" target="_blank">
+	      <img src="http://dr56wvhu2c8zo.cloudfront.net/assets/powered_by_vhx_white.png" alt="Powered by VHX">
+    		</a>
+		  </li>
+    </ul>
+  </nav>
+</div>
+    <div class="clear"></div>
+  </section>
+
+  <script>
+    var _site = {
+      color:        '#30909d',
+      key:          'imfinethanks',
+      facebook_url: 'http://facebook.com/imfinethanksmovie',
+      twitter_name: 'grantpeelle'
+    };
+  
+    var _config = {
+      country_code: 'it'
+    };
+  </script>
+  
+  <script src="https://static.vhx.tv/theme/javascripts/vhx.javascript.min.js"></script>
+  
+<script>
+  var _flash = {
+    alert:  "",
+    notice: ""
+  };
+
+  
+      $(document).ready(function() {
+        var	grid = {
+        parent: 		$('.feature'),
+        container: 	$('.image-grid'),
+        item: 			$('.image-grid li'),
+        header: 		$('.feature h1'),
+        title: 			$('.feature h1 span'),
+        buy: 				$('.feature .buy-btn'),
+        trailer: 		$('.feature .trailer-btn')
+      };
+      
+  var	THM = {
+  
+      /* init grid
+      ---------------------------------------------*/
+      initGrid: function() {
+        var self = this;
+        
+        if (grid.item.length < 18) {
+      
+          var how_many = 18 - grid.item.length;
+        
+          for (var i=0;i<how_many;i++) {
+            grid.container.append('<li class="grid-empty"></li>');
+          }
+      
+          grid.item = $('.image-grid li');
+        }
+      
+        self.shuffleList(grid.container);
+      
+        $(window).on('resize', function() {
+          self.adjustGrid();
+        });
+      
+        $(window).trigger('resize');
+      
+        self.showGrid(grid.container, function() {
+          grid.header.fadeIn(1000);
+          grid.buy.fadeIn(1000);
+          grid.trailer.fadeIn(1000);
+        });
+      },
+          
+      /* adjust grid
+      ---------------------------------------------*/
+      adjustGrid: function() {
+        var grid_height = (.15 * $(window).width()),
+            header_margin_top = (grid_height - grid.title.outerHeight()) / 2,
+            trailer_margin_top = (grid_height - grid.trailer.outerHeight()) / 2,
+            buy_margin_top = ((grid_height - grid.buy.outerHeight()) / 2) + (2*grid_height) + 10;
+        
+        grid.container.height((grid_height*3)+20);
+        grid.item.height(grid_height);
+        grid.header.css({'top': grid_height + 5, 'height': grid_height});
+        grid.title.css({'marginTop': header_margin_top + 'px'});
+        grid.buy.css({'marginTop': buy_margin_top + 'px' });
+        grid.trailer.css({'marginTop': trailer_margin_top + 'px' });
+        
+        if (grid.parent.hasClass('loading')) {
+          grid.item.hide();
+          grid.header.hide();
+          grid.buy.hide();
+          grid.trailer.hide();
+          grid.parent.removeClass('loading');
+        }
+     	},
+  
+      /* show images
+      ---------------------------------------------*/
+      showGrid: function(grid, callback) {
+        var interval = 0,
+            loaded = true,
+            images = grid.find('li');
+    
+        var loading_images = setInterval(function() { 
+          interval++;
+          grid.find('li').each(function() {
+            if ($(this).height() === 0) {
+              loaded = false;
+            }
+          });
+            
+          if (loaded || interval >= 20) {
+              clearInterval(loading_images);
+              var x = 50;
+              
+              count = images.length;
+    
+              for (i=0;i<count;i++) {
+                if (i === count-1){
+                  $(images[i]).delay(x).fadeIn(30,function(){
+                    callback();
+                  });
+                }
+                else {
+                  $(images[i]).delay(x).fadeIn(30);              
+                }
+                x += 25;              
+              }
+          }
+        }, 300);
+      },
+        
+      /* shuffle utility
+      ---------------------------------------------*/
+      shuffle: function(items) {
+        var cached = items.slice(0), temp, i = cached.length, rand;
+        while(--i) {
+          rand = Math.floor(i * Math.random());
+          temp = cached[rand];
+          cached[rand] = cached[i];
+          cached[i] = temp;
+        }
+        return cached;
+      },
+    
+      /* shuffle list
+      ---------------------------------------------*/
+      shuffleList: function(list) {
+        var self = this,
+            nodes = list.children(), i = 0;
+            
+        nodes = Array.prototype.slice.call(nodes);
+        nodes = self.shuffle(nodes);
+        while(i < nodes.length) {
+            list.append(nodes[i]);
+            ++i;
+        }
+      }
+        
+  }	
+  
+  if ($('.image-grid').length > 0 ) {
+  	THM.initGrid();
+  }
+      });
+    </script>
+
+<script src="https://cdn.vhx.tv/assets/shared/flash.js"></script>
+
+
+    <script src="https://cdn.vhx.tv/assets/api.js" data-vhx-site="imfinethanks.vhx.tv"></script>
+</body>
+</html>

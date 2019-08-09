@@ -1,0 +1,27 @@
+404 Not Found
+Edge-Control: no-store
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes bytes bytes bytes
+Vary: Accept-Encoding
+Content-Security-Policy: default-src 'self' https: blob:; child-src * blob:; connect-src 'self' https: wss: *.amap.com *.inspectlet.com; font-src 'self' data: *.muscache.com fonts.gstatic.com use.typekit.net; img-src 'self' https: data: *.inspectlet.com; media-src 'self' https:; script-src 'self' 'unsafe-eval' a0.muscache.com cdn.siftscience.com ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com a.cdn.intentmedia.net maps.googleapis.com ajax.googleapis.com *.g.doubleclick.net www.google.com www.gstatic.com smartlock.google.com accounts.google.com app.link cdn.branch.io api.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com widget.us.criteo.com *.gbc.criteo.net ethn.io s.yimg.jp api.geetest.com cdn.ampproject.org storage.googleapis.com/workbox-cdn/ tagmanager.google.com pay.google.com blob: webapi.amap.com restapi.amap.com *.inspectlet.com 'nonce-7a3bab35588c010e2e9ed8f234d30c'; style-src 'self' https: 'unsafe-inline'; report-uri /tracking/csp?action=invalid_action&controller=base&report_only=false&req_uuid=1d60d5f4-a397-445d-b1c5-fe8664094a66&version=5bbc68e6da6f8c2e9f5cdce0c42ef6597149658a
+X-Envoy-Upstream-Service-Time: 224
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: W/"5fe4987780ad12270b0e6d621ce85732"
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 08:50:13 GMT
+X-Served-By: cache-bwi5146-BWI, cache-lhr6324-LHR
+X-Cache: MISS, MISS
+Content-Type: application/json; charset=utf-8
+Set-Cookie: jitney_client_session_id=472ddfdf-9efc-4114-8289-b6b59b869f3e; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:13 GMT; secure jitney_client_session_created_at=1565254213; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:13 GMT; secure jitney_client_session_updated_at=1565254213; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:13 GMT; secure
+Age: 0 0 0 0
+X-Content-Type-Options: nosniff
+Status: 404 Not Found
+Cache-Control: no-cache
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+X-Cache-Hits: 0, 0
+X-Timer: S1565254214.529741,VS0,VE309
+Server: nginx
+Server-Timing: total;dur=217
+Via: 1.1 varnish 1.1 varnish

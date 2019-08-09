@@ -1,0 +1,16 @@
+501 Not Implemented
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/plain; charset=utf-8
+Content-Length: 76
+Access-Control-Allow-Origin: https://www.irccloud.com
+X-Irccloud-Sid: 8
+Referrer-Policy: strict-origin-when-cross-origin
+X-Xss-Protection: 1; mode=block
+Cf-Ray: 502fcd9def263621-MAN
+Date: Thu, 08 Aug 2019 07:33:37 GMT
+Retry-Count: 0
+Server: cloudflare
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: chrome=1
+Strict-Transport-Security: max-age=31536000

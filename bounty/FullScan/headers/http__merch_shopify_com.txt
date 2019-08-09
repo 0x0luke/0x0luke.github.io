@@ -1,0 +1,28 @@
+200 OK
+Server: cloudflare
+X-Shardid: 55
+X-Request-Id: 5d334c56-1b61-4e97-bc36-ffe3aee9dde5
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=5d334c56-1b61-4e97-bc36-ffe3aee9dde5
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+X-Alternate-Cache-Key: cacheable:c6b3701a6751264c2a48273417a6e201
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 04:16:57 -0000; secure; HttpOnly _landing_page=%2Fpassword; Expires=Wed, 21-Aug-19 04:16:57 GMT; Path=/; HttpOnly _orig_referrer=https%3A%2F%2Fmerch.shopify.com%2F; Expires=Wed, 21-Aug-19 04:16:57 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 04:16:57 -0000; HttpOnly
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: 55
+Strict-Transport-Security: max-age=7889238
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Date: Wed, 07 Aug 2019 04:16:57 GMT
+X-Robots-Tag: nofollow
+Cf-Ray: 50267028cfd7d220-MAN
+X-Sorting-Hat-Shopid: 8732632
+Etag: cacheable:2857b16d91e2e78f73d687da1d4b6836
+X-Shopify-Stage: production
+Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=5d334c56-1b61-4e97-bc36-ffe3aee9dde5
+X-Shopid: 8732632
+Content-Language: en
+X-Cache: miss

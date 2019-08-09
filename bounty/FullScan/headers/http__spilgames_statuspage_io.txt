@@ -1,0 +1,25 @@
+200 OK
+Content-Language: en
+X-Robots-Tag: none
+Set-Cookie: ADRUM_BTa=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BT1=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BTa="R:1105|g:2c167fc0-15d7-4849-a52c-2f4047603294"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 07:55:44 GMT; Path=/ ADRUM_BTa="R:1105|g:2c167fc0-15d7-4849-a52c-2f4047603294|n:Okta_6d5b1e30-d05a-4894-a37b-81b5f6c60e0e"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 07:55:44 GMT; Path=/ ADRUM_BT1="R:1105|i:14616"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 07:55:44 GMT; Path=/ ADRUM_BT1="R:1105|i:14616|e:48"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 07:55:44 GMT; Path=/ sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ JSESSIONID=E382E0A4884C6C8C1ED41A1939090A59; Path=/; Secure; HttpOnly t=slate; Path=/ DT=DI0W7uPX9O-S6GDQwH5SurNPw; Expires=Sat, 07-Aug-2021 07:55:14 GMT; Path=/; Secure sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+Server: nginx
+X-Rate-Limit-Remaining: 847
+P3p: CP="HONK"
+Content-Type: text/html;charset=utf-8
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 07:55:14 GMT
+Report-To: {"group":"csp-report","max_age":31536000,"endpoints":[{"url":"https://okta.report-uri.com/r/d/csp/reportOnly"}],"include_subdomains":true}
+X-Frame-Options: SAMEORIGIN
+X-Okta-Request-Id: XUvVYnVE-sReuH4SEfBOAgAAAe0
+X-Ua-Compatible: IE=edge
+Retry-Count: 0
+Cache-Control: no-cache, no-store
+Content-Security-Policy-Report-Only: default-src 'self' ok1static.oktacdn.com spilgames.okta.com; connect-src 'self' ok1static.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com; script-src 'unsafe-inline' 'unsafe-eval' 'self' ok1static.oktacdn.com; style-src 'unsafe-inline' 'self' ok1static.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-src 'self' login.okta.com; img-src 'self' ok1static.oktacdn.com spilgames.okta.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-ancestors 'self'; report-uri https://okta.report-uri.com/r/d/csp/reportOnly; report-to csp-report
+X-Rate-Limit-Limit: 850
+X-Rate-Limit-Reset: 1565250943
+Pragma: no-cache
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.io/r/default/hpkp/reportOnly"
+Expires: 0
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=315360000
+X-Xss-Protection: 1; mode=block; report=https://okta.report-uri.com/r/d/xss/enforce

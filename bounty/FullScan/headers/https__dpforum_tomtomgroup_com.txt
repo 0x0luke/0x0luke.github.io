@@ -1,0 +1,8 @@
+401 Unauthorized
+Www-Authenticate: Basic realm="Restricted Content"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: nginx
+Date: Thu, 08 Aug 2019 14:55:13 GMT
+Content-Type: text/html
+Content-Length: 172
+Retry-Count: 0

@@ -1,0 +1,13 @@
+200 OK
+X-Now-Trace: lhr1
+Server: now
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline; filename="index.html"
+Etag: W/"3818373c0c5553b37adad6e21044ac95c30c39e9aa0238903642a87bac74239c"
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+X-Now-Cache: HIT
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=63072000
+Date: Thu, 08 Aug 2019 08:37:53 GMT
+X-Now-Id: lhr1:45gfs-1565253473683-97bafaac5fff

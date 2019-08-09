@@ -1,0 +1,17 @@
+200 OK
+Date: Wed, 07 Aug 2019 04:22:01 GMT
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; frame-src 'self' https://*.duosecurity.com; img-src 'self' data: https://static.duosecurity.com; object-src 'none'
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+X-Content-Security-Policy: default-src 'self'; frame-src 'self' https://*.duosecurity.com; img-src 'self' data: https://static.duosecurity.com; object-src 'none'
+Server: Duo/1.0
+Pragma: no-cache
+Set-Cookie: csrfp_token=e9f3a4da3ca622a13fc5c7cc39bb41b6; expires=Wed, 07-Aug-2019 04:52:01 GMT; Max-Age=1800; secure
+X-Robots-Tag: noindex, nofollow
+X-Frame-Options: deny
+X-Ua-Compatible: IE=edge

@@ -1,0 +1,18 @@
+200 OK
+Last-Modified: Tue, 30 Jul 2019 12:12:04 GMT
+Cache-Control: public, must-revalidate, max-age=0
+Age: 110195
+X-Cache: Miss from cloudfront
+Via: 1.1 6b8db06427c7e39e9e30be778e233838.cloudfront.net (CloudFront), 1.1 c297fc1c701a784a294131e9afa72b23.cloudfront.net (CloudFront)
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 06:56:28 GMT
+Set-Cookie: __cfduid=d429b748651f76b49ae0421475ad90a3f1565247388; expires=Fri, 07-Aug-20 06:56:28 GMT; path=/; domain=.airbnbcitizen.com; HttpOnly
+X-Amz-Cf-Pop: LHR62-C3 LHR50-C1
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: cloudflare
+Cf-Ray: 502f97305bc7d208-MAN
+Content-Type: text/html
+X-Amz-Cf-Id: 8U57a7WD9et9Dr8obFVjJCWeVLL2FHaNIuLtB7dj38B7uabFYM8pag==
+X-Content-Type-Options: nosniff

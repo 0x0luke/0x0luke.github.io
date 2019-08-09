@@ -1,0 +1,13 @@
+403 Forbidden
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-TCP-Info,X-Session-Info
+Server: nginx
+Content-Type: text/html
+Cache-Control: no-store
+Pragma: no-cache
+X-Tcp-Info: h0=4187280392;h1=2106614245;h2=3630042693;h3=3446730562;h4=2634922246;
+X-Session-Info: addr=89.238.135.143;port=36820;argp=
+Date: Thu, 08 Aug 2019 11:25:10 GMT
+Content-Length: 146
+Retry-Count: 0
+Timing-Allow-Origin: *

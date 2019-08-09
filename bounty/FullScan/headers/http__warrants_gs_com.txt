@@ -1,0 +1,25 @@
+200 OK
+Date: Thu, 08 Aug 2019 07:20:32 GMT
+Device_os_version: 10.13
+Is_wireless_device: false
+Vary: Accept-Encoding
+Is_mobile: false
+Is_tablet: false
+Resolution_height: 800
+Server: Apache
+Resolution_width: 1280
+Retry-Count: 0
+Viewport_initial_scale: 
+Viewport_width: width_equals_max_image_width
+Content-Type: text/html
+Physical_screen_height: 175
+Ajax_preferred_geoloc_api: none
+Mobile_browser: Chrome
+Mobile_browser_version: 70
+Physical_screen_width: 280
+X-Akamai-Transformed: 9 42862 0 pmb=mRUM,3
+Etag: "bc63-58b3ea3d69bb6"
+X-Xss-Protection: 1; mode=block
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Mac OS X;device_os_version=10.13;is_tablet=false;is_wireless_device=false2;mobile_browser=Chrome;mobile_browser_version=70;physical_screen_height=175;physical_screen_width=280;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false
+Device_os: Mac OS X

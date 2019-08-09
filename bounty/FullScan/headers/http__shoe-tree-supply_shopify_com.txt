@@ -1,0 +1,18 @@
+404 Not Found
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Cf-Ray: 50267047ede9bfc5-MAN
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9b9f9036-7551-48b7-872f-1d12eff20ba2
+Date: Wed, 07 Aug 2019 04:17:02 GMT
+Set-Cookie: __cfduid=d047348d4333ce6f56019a0227982a9f31565151422; expires=Thu, 06-Aug-20 04:17:02 GMT; path=/; domain=.shoe-tree-supply.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Permitted-Cross-Domain-Policies: none
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: 9b9f9036-7551-48b7-872f-1d12eff20ba2
+Retry-Count: 0
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=9b9f9036-7551-48b7-872f-1d12eff20ba2
+X-Download-Options: noopen

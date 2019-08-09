@@ -1,0 +1,10 @@
+401 Unauthorized
+Cache-Control: no-store
+Pragma: no-cache
+Www-Authenticate: Bearer realm="oauth2-resource", error="unauthorized", error_description="Full authentication is required to access this resource"
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: DENY
+Date: Wed, 07 Aug 2019 12:32:17 GMT
+Content-Type: application/json;charset=utf-8
+X-Content-Type-Options: nosniff
+Retry-Count: 0

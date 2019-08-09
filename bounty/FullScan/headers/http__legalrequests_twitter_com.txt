@@ -1,0 +1,10 @@
+200 OK
+Date: Wed, 07 Aug 2019 04:43:17 GMT
+Strict-Transport-Security: max-age=631138519
+X-Response-Time: 357
+Retry-Count: 0
+Content-Security-Policy: script-src 'self' https://*.twimg.com https://twitter.com https://ton.twitter.com; frame-ancestors 'self'; font-src https://twitter.com https://*.twimg.com data: https://ton.twitter.com 'self'; media-src https://twitter.com https://*.twimg.com https://ton.twitter.com blob: 'self'; connect-src 'self' blob:; style-src 'self' https://*.twimg.com https://twitter.com https://ton.twitter.com; object-src 'none'; default-src 'self'; frame-src 'self' https://*.twimg.com https://twitter.com https://ton.twitter.com; img-src https://twitter.com https://*.twimg.com data: https://ton.twitter.com blob: 'self'; report-uri https://twitter.com/i/csp_report?a=PJUXAYTJOJSC22LOORQWWZI%3D&ro=false;
+X-Connection-Hash: dc45a93518355ff7bcc6e77e57775d61
+X-Xss-Protection: 0
+Content-Type: text/html; charset=utf-8
+Server: tsa_f

@@ -1,0 +1,12 @@
+200 OK
+Expires: -1
+Content-Security-Policy: connect-src 'self' r.3gl.net;default-src 'self';script-src 'self' secure.p02.eloqua.com g.3gl.net 'nonce-MDM5ODY2Njk0YWRjNDgwNDg5ZDQxOWVmNzcyMjE1NTc=';style-src 'self' 'nonce-ZmYyYzNkODU5Y2RlNDliZmI4NzM5NjVlZGM1OTU4M2U=';upgrade-insecure-requests
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 6864
+Cache-Control: private,no-cache, no-store
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 07:39:02 GMT
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+P3p: CP="IDC DSP COR DEVa TAIa OUR BUS PHY ONL UNI COM NAV CNT STA",

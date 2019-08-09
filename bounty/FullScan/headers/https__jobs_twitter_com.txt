@@ -1,0 +1,15 @@
+200 OK
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://syndication.twitter.com; font-src 'self' https://*.twimg.com https://*.twitter.com data:; frame-src 'self' https://twitter.com https://*.twitter.com https://www.google.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://www.google-analytics.com https://cdn.cms-twdigitalassets.com https://t.co https://s1259914507.t.eloqua.com https://dc.ads.linkedin.com https://www.glassdoor.com/track/ data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' 'sha256-fQA5TUUFOgZ9EqMDjFVCpyabQhMDT+xAqFnjFxdGfbc=' https://*.twimg.com https://*.twitter.com https://www.google.com https://www.gstatic.com https://static.ads-twitter.com; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self'
+X-Frame-Options: SAMEORIGIN
+X-Response-Time: 117
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=631138519
+Age: 4
+Date: Wed, 07 Aug 2019 12:40:52 GMT
+Server: tsa_f
+X-Connection-Hash: c4ce5b033fd8dfcb2d1164444c1414de
+X-Xss-Protection: 0
+Retry-Count: 0
+Content-Type: text/html
+Expires: Wed, 07 Aug 2019 12:40:52 GMT
+Cache-Control: max-age=0

@@ -1,0 +1,23 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: connect-src 'self' https: wss://ws.airbnb.com; default-src 'self' https:; font-src 'self' data: https://*.muscache.com fonts.gstatic.com https://use.typekit.net; frame-src *; img-src 'self' https: data:; media-src 'self' https:; script-src 'self' 'unsafe-eval' https://a0.muscache.com https://cdn.siftscience.com https://ss.musthird.com https://t1.musthird.com https://bat.bing.com https://connect.facebook.net https://www.google-analytics.com https://www.googleadservices.com https://tpc.googlesyndication.com https://www.googletagmanager.com https://a.cdn.intentmedia.net https://maps.googleapis.com https://ajax.googleapis.com https://*.g.doubleclick.net https://www.google.com https://www.gstatic.com https://smartlock.google.com https://accounts.google.com https://app.link https://cdn.branch.io https://api.branch.io https://bam.nr-data.net https://js-agent.newrelic.com https://sslwidget.criteo.com https://static.criteo.net https://dis.criteo.com https://widget.us.criteo.com https://*.gbc.criteo.net https://ethn.io https://s.yimg.jp https://api.geetest.com https://cdn.ampproject.org https://storage.googleapis.com/workbox-cdn/ https://tagmanager.google.com https://pay.google.com https://b92.yahoo.co.jp 'sha256-rAm9O8JPZLtQmd84zMDzhsG5q35JscESxxcaFL7+DDc=' 'sha256-ck0NYnSq6evDrSU3QAgDAso6GSMHXE8SDlqTKWnxpKI=' 'sha256-9ZdLPFhnEQLHZCKEYdkKXUj5at+zztFTTILAt3y65+0=' 'sha256-anj/wlPABxVCuYmPnySD3CBbxtX3l2p5OQbQvHP9FsA=' 'sha256-MnioL5BuRJUruaRXOEDN6ssuUoUDtjvvCVp2PicfIIM=' https://cloud.wordlift.io 'sha256-04PBC3ZcJLDsBbGu/eadmY/SnSquex1JMVAO1WbO4Fw=' 'sha256-0N41Mt0Pk7ejIC5PcMACa+IAeHbqWts01xABrXvutn8='; style-src 'self' https: 'unsafe-inline'; report-uri /tracking/csp?controller=luxury-loop&action=%2F&req_uuid=4c35b571-8d92-449d-9832-0f45b8515a4c&version=sha%3D153cf2272cca&report_only=false; report-to /tracking/csp?controller=luxury-loop&action=%2F&req_uuid=4c35b571-8d92-449d-9832-0f45b8515a4c&version=sha%3D153cf2272cca&report_only=false
+Date: Thu, 08 Aug 2019 11:15:08 GMT
+X-Debug-Listing-Parent-Rule-Match: 1
+Akamai-Grn: 0.ccb0f748.1565262907.2eee4bcf
+Debug-Http_x_akamai_edgescape: JP
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=Edge,chrome=1
+Cache-Control: no-store, max-age=0, private, must-revalidate
+Etag: W/"470f6-EcwMEzHU4qdkCi9T+2Et1SmFO8w"
+X-Envoy-Upstream-Service-Time: 421
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+X-Is-Lr20-Cohort: 1
+X-Debug-New-Origin: 1
+Server: nginx
+Vary: Accept-Encoding
+Link: <https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_luxury-retreats-8738f4e8b6eb6118d86cfdf49ad15592.css>;rel=preload;as=style,<https://a0.muscache.com/airbnb/static/packages/common-0899817928108a7ad87c18bbdef856d8.css>;rel=preload;as=style,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Server-Name: www.lrbeta.com
+Set-Cookie: sticky_locale=en; Domain=.luxuryretreats.com; Path=/; Expires=Sun, 08 Aug 2021 11:15:07 GMT; Secure bev=1565262908_O7efc9ZBM%2BcwsDVU; Domain=.luxuryretreats.com; Path=/; Expires=Sat, 07 Aug 2021 11:15:07 GMT; Secure flags=268697600; Domain=.luxuryretreats.com; Path=/; Secure _user_attributes=%7B%22curr%22%3A%22JPY%22%2C%22device_profiling_session_id%22%3A%221565262907--4f720b9c9edda4cf3801dfef%22%2C%22giftcard_profiling_session_id%22%3A%221565262907--2f16a94497e8a6943957e7e3%22%2C%22reservation_profiling_session_id%22%3A%221565262907--6e80164b55c68545c3fbf606%22%7D; Domain=.luxuryretreats.com; Path=/; Expires=Sun, 08 Aug 2021 11:15:07 GMT; Secure SRVID=luxury-loop-production-544b4f44c-cb59k_172.21.182.129:30600; path=/
+Retry-Count: 0

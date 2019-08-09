@@ -1,0 +1,16 @@
+200 OK
+Pragma: no-cache
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0, no-store, must-revalidate
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, DELETE
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+Content-Security-Policy: default-src 'self' https://*.marcus.com https://*.uatmarcus.com https://*.gs.com 'unsafe-inline'; font-src 'self' https://*.zopim.com  https://*.marcus.com https://*.gs.com https://*.rcrsv.io wss://*.rcrsv.io data:; script-src 'self' https://dspsandbox.zendesk.com   https://assets.adobedtm.com https://*.go-mpulse.net https://*.akstat.io https://*.dynatrace.com https://*.zopim.com https://assets.zendesk.com https://honestdollarhelp1510158891.zendesk.com https://honestdollarhelp1510158891.zendesk.com https://help.uat.invest.goldman.com https://gsinvestsandbox.zendesk.com https://gsam.122.2o7.net https://d439808-003-e1.dc.gs.com https://maps.googleapis.com https://*.marcus.com https://cdn.plaid.com https://analytics.twitter.com https://static.zdassets.com https://ds-aksb-a.akamaihd.net wss://*.rcrsv.io https://*.rcrsv.io 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://dspsandbox.zendesk.com  https://*.marcus.com https://*.dynatrace.com https://*.go-mpulse.net https://*.akstat.io wss://*.zopim.com https://ekr.zdassets.com https://ekr.zdassets.com https://*.uatmarcus.com https://gsam.122.2o7.net https://honestdollarhelp1510158891.zendesk.com https://honestdollarhelp1510158891.zendesk.com https://help.uat.invest.goldman.com https://gsinvestsandbox.zendesk.com https://*.gs.com https://*.demdex.net wss://*.rcrsv.io https://*.rcrsv.io 'unsafe-inline' data:; object-src 'self' https://*.marcus.com; child-src 'self' https://dspsandbox.zendesk.com  https://*.gs.com https://*.marcus.com https://*.uatmarcus.com https://cdn.plaid.com https://*.demdex.net https://*.docusign.net https://*.docusign.com; frame-src 'self' https://*.gs.com https://dspsandbox.zendesk.com https://*.marcus.com https://*.uatmarcus.com https://cdn.plaid.com https://demo.docusign.net https://*.demdex.net https://*.rcrsv.io wss://*.rcrsv.io https://*.docusign.net https://*.docusign.com; img-src 'self' * data:; style-src 'self' https://d439808-003-e1.dc.gs.com https://*.rcrsv.io wss://*.rcrsv.io 'unsafe-inline';
+Date: Thu, 08 Aug 2019 09:31:56 GMT
+Vary: Accept-Encoding
+Set-Cookie: JSESSIONID=4F62B918B29F6DBB216CED1BB486512B; Path=/; Secure; HttpOnly
+Server: Apache
+Content-Type: text/html;charset=UTF-8
+Access-Control-Allow-Credentials: true

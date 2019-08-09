@@ -1,0 +1,13 @@
+200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+Retry-Count: 0
+Pragma: no-cache
+X-Xss-Protection: 0
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 08 Aug 2019 08:37:02 GMT
+Server: ESF
+Content-Type: text/html; charset=utf-8
+Content-Language: en-US
+Content-Security-Policy: script-src 'report-sample' 'nonce-/Da4sEJhuXhWfnXI0R2klA' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /o/cspreport

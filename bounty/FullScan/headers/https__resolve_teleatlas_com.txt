@@ -1,0 +1,10 @@
+401 Unauthorized
+Www-Authenticate: Digest realm="TeleAtlas Resolve", qop="auth", nonce="225cf417945d0f342180a071e9764547", opaque="cc8c33acfc1dc39f609f10fbeec44d26"
+Content-Type: text/html;charset=utf-8
+Content-Length: 954
+Retry-Count: 0
+Server: Apache-Coyote/1.1
+Pragma: No-cache
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 UTC
+Date: Wed, 07 Aug 2019 12:27:38 GMT

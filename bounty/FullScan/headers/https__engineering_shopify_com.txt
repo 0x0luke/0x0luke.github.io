@@ -1,0 +1,27 @@
+200 OK
+X-Shopify-Stage: production
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Thu, 08 Aug 2019 14:25:14 GMT
+X-Sorting-Hat-Shopid: 7794361
+X-Shopid: 7794361
+X-Request-Id: 63bad98b-7a90-4a59-b7e5-643afe94a564
+Content-Type: text/html; charset=utf-8
+X-Cache: hit, server
+X-Shardid: 55
+Content-Language: en
+Strict-Transport-Security: max-age=7889238
+Etag: cacheable:a3619b5834e51cdaf88d931c3f9d257b
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Retry-Count: 0
+Set-Cookie: __cfduid=d4a6e80f51698ec8779817dfc66e2e8fb1565274314; expires=Fri, 07-Aug-20 14:25:14 GMT; path=/; domain=.engineering.shopify.com; HttpOnly _shopify_y=e268b436-4c60-4a2f-abd6-03676f886a69; path=/; expires=Sun, 08 Aug 2021 02:03:38 -0000 cart_currency=CAD; path=/; expires=Thu, 22 Aug 2019 14:25:14 -0000 _orig_referrer=; Expires=Thu, 22-Aug-19 14:25:14 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:25:14 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:25:14 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:25:14 -0000; HttpOnly
+X-Sorting-Hat-Podid: 55
+Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=63bad98b-7a90-4a59-b7e5-643afe94a564
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+Cf-Ray: 503228914b793627-MAN
+X-Alternate-Cache-Key: cacheable:8023337c4cffdd0b3ae665ed92aa7c65
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=63bad98b-7a90-4a59-b7e5-643afe94a564
+Server: cloudflare
+X-Content-Type-Options: nosniff
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}

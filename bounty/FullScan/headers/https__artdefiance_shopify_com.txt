@@ -1,0 +1,19 @@
+404 Not Found
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Date: Wed, 07 Aug 2019 11:45:17 GMT
+Set-Cookie: __cfduid=d9b1bdaca074fadeed26ad2bb83f7b8111565178316; expires=Thu, 06-Aug-20 11:45:16 GMT; path=/; domain=.artdefiance.shopify.com; HttpOnly
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=bcadedcf-f70d-46f7-a201-bb7800be945c
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Cf-Ray: 502900e09e40d21c-MAN
+Vary: Accept-Encoding
+X-Request-Id: bcadedcf-f70d-46f7-a201-bb7800be945c
+Retry-Count: 0
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=bcadedcf-f70d-46f7-a201-bb7800be945c
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+X-Frame-Options: DENY

@@ -1,0 +1,28 @@
+200 OK
+X-Alternate-Cache-Key: cacheable:c944e0bd0ed79e9addf18cbc237f6143
+Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=db30d494-541f-4ad7-8434-50b7f021774e
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=password&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fstorefront&source%5Bsection%5D=storefront&source%5Buuid%5D=db30d494-541f-4ad7-8434-50b7f021774e
+Content-Language: en
+X-Cache: hit, server
+Set-Cookie: secure_customer_sig=; path=/; expires=Sun, 07 Aug 2039 04:16:48 -0000; secure; HttpOnly _landing_page=%2Fpassword; Expires=Wed, 21-Aug-19 04:16:48 GMT; Path=/; HttpOnly _orig_referrer=https%3A%2F%2Fconsultant-launch.shopify.com%2F; Expires=Wed, 21-Aug-19 04:16:48 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Wed, 21 Aug 2019 04:16:48 -0000; HttpOnly
+Cf-Ray: 50266fed5d8ed218-MAN
+X-Sorting-Hat-Shopid: 20815411
+Strict-Transport-Security: max-age=7889238
+X-Content-Type-Options: nosniff
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Etag: cacheable:6b587743a932113e2e205d1f883491a2
+X-Shopify-Stage: production
+Server: cloudflare
+Retry-Count: 0
+X-Shardid: 55
+X-Robots-Tag: nofollow
+X-Request-Id: db30d494-541f-4ad7-8434-50b7f021774e
+Date: Wed, 07 Aug 2019 04:16:48 GMT
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: 55
+X-Shopid: 20815411
+X-Download-Options: noopen
+X-Dc: gcp-us-east1,gcp-us-east1
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

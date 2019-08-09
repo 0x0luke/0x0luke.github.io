@@ -1,0 +1,15 @@
+200 OK
+Content-Type: application/json; charset=utf8
+Date: Wed, 07 Aug 2019 07:46:10 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Via: 1.1 a1cb6e97bccd4899987b343ae5d4c252.cloudfront.net (CloudFront)
+Retry-Count: 0
+Ml-Correlation-Id: 578c5837-7c88-4570-8627-2a0877a500a9
+X-Ratelimit-Limit: 301
+X-Ratelimit-Remaining: 300
+X-Amz-Cf-Pop: LHR3-C2
+Content-Length: 7
+Cache-Control: no-cache, no-store, must-revalidate
+X-Amz-Cf-Id: ctbTExCSt1erDl7jnb1Ifys2Wy5ubUtziXM39dWWPwfSVas3-xtw_g==
+X-Ratelimit-Reset: 1
+X-Cache: Miss from cloudfront

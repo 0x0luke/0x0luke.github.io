@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v16500 -->
+
+  <title>WeTransfer Support</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hc:meta:server:OcfJ5bOIAhWVFWRcsigGGQbCDXWcWGGo1OEhIqj5RDZl/e6Mbic/qG+8qFtgFKB0q/c7AFWnHRBq6yih3CGBuw==" />
+  <link rel="canonical" href="https://wetransfer.zendesk.com/hc/en-us" />
+<link rel="alternate" hreflang="en" href="https://wetransfer.zendesk.com/hc/en-us" />
+<link rel="alternate" hreflang="es" href="https://wetransfer.zendesk.com/hc/es" />
+<link rel="alternate" hreflang="fr" href="https://wetransfer.zendesk.com/hc/fr" />
+<link rel="alternate" hreflang="it" href="https://wetransfer.zendesk.com/hc/it" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="//static.zdassets.com/hc/assets/application-f10bf79069ccb485e66c627058c1ae16.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//p20.zdassets.com/hc/theming_assets/63313/439936/style.css?digest=360303814912" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="//theme.zdassets.com/theme_assets/63313/e95e47aab5af98abdb66fdb19a5f3d60141cbc46.png" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//static.zdassets.com/hc/assets/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-11792855-7', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5NXNZZ');</script>
+<!-- End Google Tag Manager -->
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<!--<script src="//statuspage-production.s3.amazonaws.com/se-v1.js">-->
+<script type="text/javascript" src="https://cdn.statuspage.io/se-v2.js"></script>
+<script>
+</script>
+
+<script src="https://use.typekit.net/jqg4qdf.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+
+
+
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="wetransfer.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
+/*]]>*/</script>
+
+<script>
+zE(function() {
+$zopim(function(){
+$zopim.livechat.hideAll();
+ 
+
+$.ajax({
+type: "GET",
+url: "/api/v2/users/me.json", 
+dataType: 'json',
+
+success: function(data){
+
+if(data.user.id != null) {
+  
+<!--console.log(data.user.email);-->
+ 
+  $zopim.livechat.getName();
+  
+ 
+  
+
+$zopim.livechat.setName(data.user.name);
+$zopim.livechat.setEmail(data.user.email);
+$zopim.livechat.badge.show();
+
+
+
+  }
+}
+});
+});
+});
+  
+
+</script>
+
+
+
+
+  <script type="text/javascript" src="//p20.zdassets.com/hc/theming_assets/63313/439936/script.js?digest=360303814912"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div class="header-background-full-width">
+<header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+    	<img src="//theme.zdassets.com/theme_assets/63313/73d288aef11fd389f67637bd04810f03229387cc.png
+" alt="" />
+    </a>
+    <a title="Home" href="/hc/en-us">
+       Help Center
+    </a>
+  </div>
+  <div class="nav-and-search">
+  <div class="nav-wrapper">
+    <span class="icon-menu"></span>
+    <nav class="user-nav" id="user-nav">
+      <a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a>   
+      <a href="https://www.wetransfer.com/">Back to WeTransfer.com</a>
+       <a href="https://wetransfer.homerun.co/">Work with us?</a>
+     
+      <div class="dropdown language-selector" aria-haspopup="true">
+      	<a id="languageDrop" class="dropdown language-selector dropdown-toggle">
+           English (US)
+        </a>
+        <span class="dropdown-menu dropdown-menu-end" role="menu">
+           <!--Next Langauage-->
+        	<a href="https://wetransfer.zendesk.com/hc/en-us" rel="nofollow" role="menuitem">
+            English (US)
+          </a>
+           <!--Next Langauage-->
+          <a href="https://wetransfer.zendesk.com/hc/fr"  rel="nofollow" role="menuitem">
+                Français
+          </a>  
+           <!--Next Langauage-->
+           <a href="https://wetransfer.zendesk.com/hc/es"  rel="nofollow" role="menuitem">
+                Español
+          </a>  
+          <!--Next Langauage-->
+           <a href="https://wetransfer.zendesk.com/hc/it"  rel="nofollow" role="menuitem">
+                Italiano
+          </a> 
+          <!--Next Language-->
+           <!--Next Langauage-->
+           <!--Next Langauage-->
+           <!--Next Langauage-->
+          
+        </span>
+      </div>
+      
+      
+      <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="What can we help you with?" autocomplete="off" aria-label="What can we help you with?" /></form>
+    </nav>
+        <a class="login" data-auth-action="signin" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fwetransfer.zendesk.com%2Fhc%2Fen-us&amp;locale=en-us">Sign in</a>
+
+  </div>
+      <!--<form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="What can we help you with?" autocomplete="off" aria-label="What can we help you with?" /></form>-->
+  </div>
+</header>
+</div>
+
+
+  <main role="main">
+    <div class="container">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <div class="wt-sidebar">
+         <section class="wt-article-side-list">
+        <span class="wt-article-side-title">WeTransfer Status</span>
+        <ul class="article-list">
+          <li>
+
+             <div class="meta">
+              <!-- the colored dot gets an extra class and description text gets inserted via javascript -->
+              <a href="https://wetransfer.statuspage.io/" target="_blank">
+                <span class="color-dot"></span>
+                <span class="color-description"></span>
+              </a>
+            </div>
+
+          </li>
+        </ul>
+           </section>
+ <hr>
+      
+        <section class="wt-article-side-list">
+          <div data-recent-articles></div>
+      </section>
+        
+       <hr>
+        
+      <section class="wt-article-side-list">
+        <span class="wt-article-side-title">Popular Articles</span>
+        <ul class="article-list">
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360026114851-New-Feature-Uploading-Folders">
+                New Feature: Uploading Folders
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360030166132-New-Feature-Received-Transfers-Overview-RTO-">
+                New Feature: Received Transfers Overview (RTO)
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360030655272-New-Feature-Link-transfer-confirmation-emails">
+                New Feature: Link transfer confirmation emails
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/209683263-New-Feature-Set-up-your-Plus-backgrounds-Videos-Images">
+                New Feature: Set up your Plus backgrounds - Videos &amp; Images
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/202672713-What-does-Plus-offer-me-">
+                What does Plus offer me?
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360027530332-Save-your-Collect-boards-across-devices-with-a-Collect-account">
+                Save your Collect boards across devices with a Collect account
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360000337546-We-ll-never-ask-for-your-email-login-to-download-files">
+                We&#39;ll never ask for your email login to download files
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/204126825-My-transfer-gets-stuck-at-100-and-the-file-size-keeps-growing">
+                My transfer gets stuck at 100% and the file size keeps growing
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/204220425-I-can-t-open-the-transfer-sent-to-me-Unable-to-unzip-">
+                I can&#39;t open the transfer sent to me (Unable to unzip)
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360001205243-How-to-report-an-error-or-bug-to-our-Support-team">
+                How to report an error or bug to our Support team
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/115005738083-Somebody-else-is-using-my-Gmail-address-to-send-transfers">
+                Somebody else is using my Gmail address to send transfers
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360025459652-The-transfer-I-m-trying-to-download-is-unavailable-">
+                The transfer I&#39;m trying to download is unavailable?
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360000780226-WeTransfer-3-GDPR">
+                WeTransfer &lt;3 GDPR
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360000348746-Verifying-your-email-address">
+                Verifying your email address
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/208554176-Phishing-attempts-and-weird-WeTransfer-imitations">
+                Phishing attempts and weird WeTransfer imitations
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/208554156-How-to-recognise-spammers">
+                How to recognise spammers
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360001316946-WeTransfer-FiftyThree-What-does-it-all-mean-">
+                WeTransfer &amp; FiftyThree - What does it all mean?
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/210512863-Introducing-the-WeTransfer-Public-API">
+                Introducing the WeTransfer Public API
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/115002594186-How-to-view-a-summary-of-a-transfer-">
+                How to view a summary of a transfer?
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/115005047423-Who-is-the-artist-of-that-awesome-wallpaper-">
+                Who is the artist of that awesome wallpaper!?
+              </a>
+            </li>
+          
+            <li class="">
+              <a href="/hc/en-us/articles/360028234792-What-s-new-on-WeTransfer-">
+                What&#39;s new on WeTransfer?
+              </a>
+            </li>
+          
+        </ul>
+      </section>
+    
+ <hr>
+        <section class="wt-article-side-list">
+        <span class="wt-article-side-title">Reach out on social</span>
+        <ul class="article-list">
+          <li><img src="//theme.zdassets.com/theme_assets/63313/c84ec85f9a2b8a02d591a4589c0c2b30497a72a6.svg" /><a href="https://twitter.com/wetransfer" target="_blank">Twitter</a></li>
+          <li><img src="//theme.zdassets.com/theme_assets/63313/9962aea3b7d35a58c10e579a741e74629a280ba9.svg" /><a href="https://www.facebook.com/wetransfer" target="_blank">Facebook</a></li>
+        </ul>
+        </section>
+      </div><!-- .wt-sidebar -->
+
+
+			<div class="blocks-container">
+        
+      
+       <div id="FRattention" class="wt-article-side-title attention">
+				<h3 class="notice-tip">Attention!</h3>
+        Notre centre de support est actuellement en train de se 						refaire une beauté. Pour accéder à l’ensemble de nos 								articles, merci de visiter notre site en Anglais 
+        <a href="https://wetransfer.zendesk.com/hc/en-us" style="color:rgb(23, 24, 26)!important;">ici.</a>
+			</div>
+        
+        
+      <div id="ESattention" class="wt-article-side-title attention attention">
+				<h3 class="notice-tip">Atención</h3>
+      El centro de ayuda español se encuentra actualmente en desarrollo. Para ver todos los artículos disponibles, visite el centro    <a href="https://wetransfer.zendesk.com/hc/en-us" style="color:rgb(23, 24, 26)!important;">de ayuda en inglés.</a>
+			</div>
+        
+              <div id="ITattention" class="wt-article-side-title attention">
+				<h3 class="notice-tip">Attenzione</h3>
+     Il centro di assistenza Italiano è attualmente in fase di sviluppo. Per vedere tutti gli articoli disponibili, visita il centro  <a href="https://wetransfer.zendesk.com/hc/en-us" style="color:rgb(23, 24, 26)!important;">assistenza in Inglese.</a>
+			</div>
+        
+         <div id="NLattention" class="wt-article-side-title attention">
+				<h3 class="notice-tip">Attention</h3>
+    This is a test for dutch <a href="https://wetransfer.zendesk.com/hc/en-us" style="color:rgb(23, 24, 26)!important;">Go here for English.</a>
+			</div>
+        
+        
+    
+      
+        
+        
+        
+        <!--<div id="maintenance"class="wt-article-side-title maintenance">
+				<h3 class="notice-tip">Attention!</h3>
+       There will be maintenance on our platform on Wednesday 12th of September from 6.30AM CET for an estimated period of 1 hour. During this time, Plus users may be logged out of their Plus account and there may be some interruption to transfers in progress. 
+			</div>-->
+        
+          <nav class="sub-nav">
+  <h1>WeTransfer Support</h1>
+  </nav>
+
+        <ul class="blocks-list">
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/200169863-Knowledge-Base' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Knowledge Base</h4>
+                <p class="blocks-item-description">Get down to the basics &amp; the nitty gritty with these articles. Carefully curated to get you on your way again.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/200170903-WeTransfer-Plus' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">WeTransfer Plus</h4>
+                <p class="blocks-item-description">Everything you ever wanted to know about Plus, setting up a profile page and plenty more is stored away here.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/200170913-Apps-Mobile' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Apps &amp; Mobile</h4>
+                <p class="blocks-item-description">We’ve got mobile apps, mac apps, appetizers - you name it! Find them, and all the answers to your questions, here.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/201255686-Troubleshooting' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Troubleshooting</h4>
+                <p class="blocks-item-description">Is our service getting you down or are you having a rough day? Don&#39;t worry - We’ve got things covered here. </p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/201270873-Security-Privacy' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Security/Privacy</h4>
+                <p class="blocks-item-description">We hold your security and privacy to the highest standards. Here you’ll find how we keep you and your files safe.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/201860243-Paper-and-Paste-' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Paper® and Paste™</h4>
+                <p class="blocks-item-description">Welcome to the family, Paper and Paste! Bring your ideas to life by learn how to use these awesome products.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/360000095523-API' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">API</h4>
+                <p class="blocks-item-description">Learn all about the WeTransfer API. Whether it’s getting things from A to B or collecting stuff in one place.</p>
+              </a>
+            </li>
+          
+            <li class="blocks-item">
+              
+              <a href='/hc/en-us/categories/360000095543-Tips-Tricks-Insights' class="blocks-item-link">
+                <div class="category-icon"></div>
+                <h4 class="blocks-item-title">Tips, Tricks &amp; Insights</h4>
+                <p class="blocks-item-description">Learn about different tips and tricks to enhance your workflow! This is also the place to find some insights into the...</p>
+              </a>
+            </li>
+          
+        </ul>
+        
+        <div class="article-more-questions">
+          Have more questions? <div class="more-questions-div"><a href="/hc/en-us/requests/new">Submit a request</a></div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!--
+    
+      <section class="articles">
+        <h3>Promoted articles</h3>
+        <ul class="article-list promoted-articles">
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360026114851-New-Feature-Uploading-Folders">
+                New Feature: Uploading Folders
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360030166132-New-Feature-Received-Transfers-Overview-RTO-">
+                New Feature: Received Transfers Overview (RTO)
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360030655272-New-Feature-Link-transfer-confirmation-emails">
+                New Feature: Link transfer confirmation emails
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/209683263-New-Feature-Set-up-your-Plus-backgrounds-Videos-Images">
+                New Feature: Set up your Plus backgrounds - Videos &amp; Images
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/202672713-What-does-Plus-offer-me-">
+                What does Plus offer me?
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360027530332-Save-your-Collect-boards-across-devices-with-a-Collect-account">
+                Save your Collect boards across devices with a Collect account
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360000337546-We-ll-never-ask-for-your-email-login-to-download-files">
+                We&#39;ll never ask for your email login to download files
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/204126825-My-transfer-gets-stuck-at-100-and-the-file-size-keeps-growing">
+                My transfer gets stuck at 100% and the file size keeps growing
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/204220425-I-can-t-open-the-transfer-sent-to-me-Unable-to-unzip-">
+                I can&#39;t open the transfer sent to me (Unable to unzip)
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360001205243-How-to-report-an-error-or-bug-to-our-Support-team">
+                How to report an error or bug to our Support team
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/115005738083-Somebody-else-is-using-my-Gmail-address-to-send-transfers">
+                Somebody else is using my Gmail address to send transfers
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360025459652-The-transfer-I-m-trying-to-download-is-unavailable-">
+                The transfer I&#39;m trying to download is unavailable?
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360000780226-WeTransfer-3-GDPR">
+                WeTransfer &lt;3 GDPR
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360000348746-Verifying-your-email-address">
+                Verifying your email address
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/208554176-Phishing-attempts-and-weird-WeTransfer-imitations">
+                Phishing attempts and weird WeTransfer imitations
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/208554156-How-to-recognise-spammers">
+                How to recognise spammers
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360001316946-WeTransfer-FiftyThree-What-does-it-all-mean-">
+                WeTransfer &amp; FiftyThree - What does it all mean?
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/210512863-Introducing-the-WeTransfer-Public-API">
+                Introducing the WeTransfer Public API
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/115002594186-How-to-view-a-summary-of-a-transfer-">
+                How to view a summary of a transfer?
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/115005047423-Who-is-the-artist-of-that-awesome-wallpaper-">
+                Who is the artist of that awesome wallpaper!?
+              </a>
+            </li>
+          
+            <li class="promoted-articles-item">
+              <a href="/hc/en-us/articles/360028234792-What-s-new-on-WeTransfer-">
+                What&#39;s new on WeTransfer?
+              </a>
+            </li>
+          
+        </ul>
+      </section>
+    
+
+  </section>
+
+
+  
+
+
+
+  <section class="section activity">
+    <div data-app="recent-activity" data-url="/hc/api/internal/recent_activities?locale=en-us"></div>
+  </section>
+-->
+</section>
+</div>
+
+  </main>
+
+  <footer class="footer container">
+ 
+
+  <div class="footer-inner">
+   
+    <!-- <a title="Home" href="/hc/en-us">WeTransfer Support</a> -->
+   
+    <!--
+    <article class="article">
+    <div class="footer-question">
+    <h3>Have another question?</h3>
+     <a class="button-large" role="button" href="/hc/en-us/requests/new">Submit a request</a>
+    </div>
+
+    </article>
+  	-->
+
+    <div class="footer-language-selector">
+      
+        <div class="dropdown language-selector" aria-haspopup="true">
+          <a class="dropdown-toggle">
+            English (US)
+          </a>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            
+              <a href="/hc/change_language/es?return_to=%2Fhc%2Fes" dir="ltr" rel="nofollow" role="menuitem">
+                Español
+              </a>
+            
+              <a href="/hc/change_language/fr?return_to=%2Fhc%2Ffr" dir="ltr" rel="nofollow" role="menuitem">
+                Français
+              </a>
+            
+              <a href="/hc/change_language/it?return_to=%2Fhc%2Fit" dir="ltr" rel="nofollow" role="menuitem">
+                Italiano
+              </a>
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="//static.zdassets.com/hc/assets/locales/en-us-4931a3f281d249e0469d05c95f1dd989.js"></script>
+  <script src="https://wetransfer.zendesk.com/auth/v2/host.js" data-brand-id="439936" data-return-to="https://wetransfer.zendesk.com/hc/en-us" data-theme="hc" data-locale="en-us" data-auth-origin="439936,false,true"></script>
+  <script type="text/javascript" src="https://p20.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"wetransfer","environment":"production","name":"WeTransfer Support"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:Pqal3RQ0zQM8gNo8F/4+44bldxA8kXZFcONVGNoC3xFinIK0yZvwvsYpFjvFwpiOK9BBZfVuCv3O6VybrtoanA==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":false},"current_record_id":null,"current_record_url":null,"current_record_title":null,"search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://wetransfer.zendesk.com","current_host_mapping":null,"current_path":null,"authentication_domain":"https://wetransfer.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"f14c987dab04f4fe0d4aef5d0167968a080fca52","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://wetransfer.zendesk.com/hc/admin/plan?locale=en-us","manage_content_url":"https://wetransfer.zendesk.com/hc/en-us","arrange_content_url":"https://wetransfer.zendesk.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://wetransfer.zendesk.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://wetransfer.zendesk.com/knowledge/user_segments?brand_id=439936","has_community_enabled":false,"has_internal_sections":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://wetransfer.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"https://wetransfer.zendesk.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"theming_center_url":"https://wetransfer.zendesk.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://wetransfer.zendesk.com/knowledge/arrange?brand_id=439936","article_verification_url":"https://wetransfer.zendesk.com/knowledge/verification?brand_id=439936","has_article_verification":false,"guide_language_settings_url":"https://wetransfer.zendesk.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://wetransfer.zendesk.com/knowledge/import_articles?brand_id=439936","has_community_trialing":false,"community_plan_state":"not_started"};
+</script>
+
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f7df1e023e4e6519581275e166f4c28e.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://wetransfer.zendesk.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("front_page_viewed", "BAh7BjoKX21ldGF7CzoPYWNjb3VudF9pZGkCUfc6E2hlbHBfY2VudGVyX2lkaQRpdOwLOg1icmFuZF9pZGkDgLYGOgx1c2VyX2lkMDoOdXNlcl9yb2xlSSIOYW5vbnltb3VzBjoGRVQ6C2xvY2FsZUkiCmVuLXVzBjsLVA==--121d34540587a6efb4f2566ba45bf9387a160788");
+})();
+
+  </script>
+</body>
+</html>

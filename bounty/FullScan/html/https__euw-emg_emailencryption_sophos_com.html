@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=9; IE=8;" />
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="/style.css?bId=201907151045B939" />
+<script type="text/javascript" src="/scripts/smg.js?bId=201907151045B939"></script>
+<title>OneWorld Encrypted Mail Gateway Console</title>
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript">
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
+function userLogin() {
+
+	var remember = document.getElementById('remember');
+	var username = document.getElementById('j_username');
+	var logonForm = document.getElementById('logon');
+	
+	if(remember) {
+		if(remember.checked == true) {
+			//add cookie
+			createCookie("rememberEDP", "true", 365);
+			createCookie("usernameEDP", username.value, 365);
+		} else {
+			//remove cookie
+			eraseCookie("rememberEDP");
+			eraseCookie("usernameEDP");
+		}
+	}
+	
+	logonForm.submit();
+}
+
+//Repopulate username if remember me checked.
+//Also sets the focus to the most appropriate input, depending on the remember me state.
+function loadRemember() {
+	var remember = document.getElementById('remember');
+	if(remember) {
+		var username = document.getElementById('j_username');
+		var rememberValue = readCookie("rememberEDP");
+	
+		if(rememberValue) {
+			remember.checked = rememberValue;
+		} else {
+			remember.checked = null;
+		}
+		var userNameValue = readCookie("usernameEDP");
+		if(userNameValue) {
+			username.value = userNameValue;
+			document.logon.j_password.focus();
+		}
+		else
+		{
+			document.logon.j_username.focus();
+		}
+	}
+	else
+	{
+		document.logon.j_username.focus();
+	}
+}
+</script>
+</head>
+<body onload="loadRemember();">
+<div id="container">
+	<div class="pageheader fullbg">
+		<div class="pageheader">
+			<div class="pagelogo">
+				<div style="position:absolute; top: 0px; left:0px;">
+    				<table cellspacing='0' cellpadding='0'>
+                    	<tr>
+                        	<td class="pageHeaderLogo">                   	
+								<img src="/headerLogo.htm?enterprise=__default__" border='0' title='logo' alt='logo' height='87px' />                       	
+                        	</td>
+                       </tr>
+                  	</table>
+                </div>
+            </div>
+        	<div class="pageheaderend"></div>
+		</div>
+	</div>
+	<div id="main-content">
+		<!--- Complex Filters -->
+		<div id="subsection-headerC">
+			<div id="loginform">
+				<table>
+					<tr>
+						<td class="error-msg">
+							
+						</td>
+					</tr>
+				</table>
+				<form id="logon" action="j_spring_security_check" method="post" name="logon" autocomplete="off">
+					<input type="hidden" name="_csrf" value="ffa99033-11f8-4475-9f5b-8fc3397290a4" />
+					<dl>
+						<dt>User Name:</dt>
+						<dd><input id="j_username" type="text" name="j_username" onkeypress="return submitenter(event, userLogin)" autocomplete="off" /></dd>
+						<dt>Password:</dt>
+						<dd><input type="password" name="j_password" autocomplete="off" onkeypress="return submitenter(event, userLogin)" /></dd>
+						<dd><a href="/anonymous/passwordRecovery.htm" class="sideNavOff">
+								Forgot your password?
+							</a>
+						</dd>
+						<dd><input id="remember" type="checkbox" name="remember" />Remember me</dd>
+						<dd class="loginbutton">
+							<input id="loginButtonAnchor" type="button" value="Login" name="login" onclick="userLogin()" />
+						</dd>
+					</dl>
+				</form>
+			</div>
+		</div>
+		<div class="subsection-headerD">
+			<pre class="disclaimer-text"></pre>
+		</div>
+	</div>
+</div>
+<!-- FOOTER BRANDING include - START -->
+<div class="footer">
+	<div class="footertext">&copy; 2018 Echoworx All rights reserved.</div>
+	
+</div>
+<!-- FOOTER BRANDING include - END --> 
+<!-- Version information -->
+</body></html>

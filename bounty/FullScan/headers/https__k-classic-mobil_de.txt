@@ -1,0 +1,11 @@
+200 200
+Server: Apache
+Strict-Transport-Security: max-age=31536000
+Date: Thu, 08 Aug 2019 11:11:02 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, public, max-age=1
+Content-Security-Policy: frame-ancestors 'self' http://kaufland.de http://*.kaufland.de https://kaufland.de https://*.kaufland.de
+Vary: Accept-Encoding
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Set-Cookie: sessionBridge=62370d9e-4b80-45b2-ab19-160ab6e295b9; Max-Age=604800; Expires=Thu, 15-Aug-2019 11:11:01 GMT; Domain=k-classic-mobil.de; Path=/; Secure; HttpOnly JSESSIONID=8F4E0991ABBCD173969DE8C34121BD1B.kflprda; Path=/selfcare; Secure; HttpOnly
+Content-Language: de-DE

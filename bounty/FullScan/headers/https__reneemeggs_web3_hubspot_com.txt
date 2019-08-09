@@ -1,0 +1,14 @@
+404 Not Found
+Set-Cookie: __cfduid=d797e057555ded17f322d95c30dd0639a1565260041; expires=Fri, 07-Aug-20 10:27:21 GMT; path=/; domain=.hubspot.com; HttpOnly
+Vary: Accept-Encoding
+Cf-Ray: 5030cc1dbb01bfbb-MAN
+Date: Thu, 08 Aug 2019 10:27:22 GMT
+Retry-Count: 0
+X-Hubspot-Notfound: true
+X-Trace: 2BDDE167A91426BB71A29B64AE46931B1F9812EE2D000000000000000000
+Cache-Control: s-maxage=5,max-age=5
+Access-Control-Allow-Credentials: false
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

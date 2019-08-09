@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 08 Aug 2019 11:38:51 GMT
+Set-Cookie: _auth=0; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 11:38:51 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=sIOrcyWZsG3KbcR8itaGQhTNWjaqalhh; expires=Thu, 06-Aug-2020 11:38:51 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSZDNzhXRUQ5Q2ZrNERaQkxLWngzQ01wanVjQjNHQXJpZ2p1YXhERzRXMEdsZFlleC9RbUt1bWJhaC9SbkUwWXVhTzZ3VXc3NzNBQS8yYmM4TmU0ei8vUHdhWkt6QlNrSjBZZW9xNlNmeE82aVZsb2dVbUJtS1BRT0plTm5uUmZJY2JROEwrUUFnNHFLdloxS2x6K1ZNVkE9PSY3ZUFnQ2l3ZGhKVGpzVUdyM1lxV2JDMjh0OW89; Domain=.pinterest.com; expires=Sun, 02-Aug-2020 11:38:51 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="db8871bd-c064-4381-9ff9-cff15aa7451f"; Max-Age=86400; Path=/; HttpOnly
+X-Upstream-Proxy: pythonvianode
+Vary: User-Agent, Cookie, Accept-Encoding
+Pinterest-Generated-By: coreapp-webapp-prod-0a01c82c, coreapp-webapp-prod-0a01c82c coreapp-webapp-prod-0a01c82c coreapp-webapp-prod-0a01c82c
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+X-Pinterest-Rid: 9683254242427021
+Pinterest-Version: d28c701
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+X-Envoy-Upstream-Service-Time: 134
+X-Cdn: akamai
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-cOsUvbBZlv' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+X-Upstream-Env: python node

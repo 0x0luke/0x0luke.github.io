@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>IRCCloud Blog</title>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200i,300,300i,600,400i,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/main.css?v=20180406">
+        <link rel="alternate" href="/feed.xml" type="application/atom+xml">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1><a href="/"><img src="/logo@2x.png" width="52" height="52">IRC<span class="cloud">Cloud</span> Blog</a></h1>
+        </div>
+        
+        <div id="content">
+            <div id="postList">
+
+    
+    <div class="postHeader">
+    <p class="meta">
+        <span class="date">
+            Tuesday January 22
+            <span class="year">2019</span>
+        </span>
+        
+            <span class="author">• posted by james</span>
+        
+    </p>
+    <h1><a href="/bouncer/" rel="self">Bouncer: connect with other clients</a></h1>
+</div>
+
+<div class="post">
+    
+        <p>Today we’re launching one of our most requested features. Paid subscribers can now use 3rd party IRC clients to connect to the IRCCloud service, just as you would with a traditional bouncer.</p>
+
+<div class="figure figure--right">
+    <p class="image">
+        <img src="/static/2019-01-22-bouncer/menu.png" width="326" height="346" alt="Connect with another client menu item" />
+    </p>
+</div>
+
+<p>Open the menu for one of your IRC or Slack connections and choose the “Connect with another client…” option for details on how to connect.</p>
+
+<p>For IRC connections, you’ll be prompted to generate a unique server password.</p>
+
+<h3 id="backlog-replay">Backlog replay</h3>
+
+<p><em><strong>Note:</strong> backlog replay isn’t currently available for Slack connections</em></p>
+
+<p>Bouncer passwords are shown to you in the following format:</p>
+
+<p><code>bnc:xxxxxxxx…</code></p>
+
+<p>If you’d like the bouncer to replay missed messages whenever you reconnect with your client, you’ll need to change this format to include a <code>clientid</code> of your choosing.</p>
+
+<p>This is used to identify and track the messages your client has seen to make sure we only replay undelivered messages.</p>
+
+<p>The clientid can be anything, but can’t include spaces. Just make sure to use a different id for each client you use.</p>
+
+<p>Once you’ve chosen a clientid, rewrite your password in the following format:</p>
+
+<p><code>bnc@clientid:xxxxxxxx…</code></p>
+
+<p>For example, if your generated password was <code>bnc:abcxyz</code> and you chose <code>laptop</code> as a clientid, you’d connect with the following server password:</p>
+
+<p><code>bnc@laptop:abcxyz</code></p>
+
+<h3 id="security">Security</h3>
+
+<p>A bouncer password grants full access to the associated network connection, so make sure to keep it safe.</p>
+
+<p>You can revoke or regenerate a bouncer password at any time, in case you no longer need it or it becomes compromised. This will also disconnect any client currently using that password.</p>
+
+<h3 id="backlog-timestamps">Backlog timestamps</h3>
+
+<p>The latest versions of most 3rd party clients support the <code>server-time</code> IRCv3 feature, which the bouncer will use to provide the correct timestamp for backlog replay.</p>
+
+<p>However, some clients may need a little coaxing:</p>
+
+<ul>
+  <li><strong>irssi</strong>: install the <code>server_time.pl</code> script from <a href="https://scripts.irssi.org/">scripts.irssi.org</a>.</li>
+  <li><strong>weechat</strong>: follow these <a href="https://wiki.znc.in/Weechat#Enabling_server-time_.26_other_IRCv3_capabilities">instructions to enable server-time</a></li>
+</ul>
+
+    
+</div>
+
+
+    
+    <div class="postHeader">
+    <p class="meta">
+        <span class="date">
+            Monday May 14
+            <span class="year">2018</span>
+        </span>
+        
+            <span class="author">• posted by james</span>
+        
+    </p>
+    <h1><a href="/slack-integration/" rel="self">Slack integration</a></h1>
+</div>
+
+<div class="post">
+    
+        <p>As <a href="https://get.slack.help/hc/en-us/articles/201727913-Connect-to-Slack-over-IRC-and-XMPP">Slack prepares to shut down their IRC gateway</a>, it’s time for us to fully launch our native Slack integration for paid accounts.</p>
+
+<p>We’ve been testing this in the labs for a couple of months so things are pretty stable now. To use our integration make sure you’ve upgraded your account, then open the <a href="https://www.irccloud.com/?/addNetwork">Add a network</a> screen from the web interface. You’ll see an “Add Slack Workspace” button on the right:</p>
+
+<div class="figure">
+    <p class="image">
+        <img src="/static/2018-05-14-slack-integration/addslack.png" width="703" height="120" alt="Add Slack button on the add network screen" />
+    </p>
+</div>
+
+<p>You can also migrate any existing Slack IRC gateway connections to use our integration from the <a href="https://www.irccloud.com/?/settings=labs">labs page</a> or by choosing the “Upgrade slack integration…” menu item for a connection.</p>
+
+<p>There are a few things you might need to setup in your Slack workspace for this integration to work, more details are available in our <a href="https://www.irccloud.com/faq#faq-slack">FAQ entry</a>.</p>
+
+<p>Here’s a side by side comparison of a workspace in Slack and in IRCCloud:</p>
+
+<div class="figure">
+    <p class="image">
+        <a href="/static/2018-05-14-slack-integration/sidebyside-slack.png" target="_blank"><img src="/static/2018-05-14-slack-integration/sidebyside-slack.png" width="360" height="326" alt="Slack and IRCCloud side by side comparison - Slack" /></a>
+        <a href="/static/2018-05-14-slack-integration/sidebyside-irccloud.png" target="_blank"><img src="/static/2018-05-14-slack-integration/sidebyside-irccloud.png" width="360" height="326" alt="Slack and IRCCloud side by side comparison - IRCCloud" /></a>
+    </p>
+</div>
+
+<p>You should notice our Slack integration is a lot closer to the native Slack experience than the old IRC gateway was. Here’s a list of features we’ve added support for:</p>
+
+<ul>
+  <li><a href="/avatars">Avatars</a></li>
+  <li><a href="/reply-threads">Reply threads and reactions</a></li>
+  <li>Display names</li>
+  <li>Custom emoji</li>
+  <li>Message attachments</li>
+  <li>Message editing</li>
+  <li>Typing indicators</li>
+  <li>Status messages and emoji</li>
+  <li>Slash commands using /slack</li>
+  <li>Shared channels</li>
+</ul>
+
+<p>These features are all built using <a href="https://ircv3.net/">IRCv3</a> extensions, and our integration functions as a standard IRC server, backed by the Slack <a href="https://api.slack.com/rtm">real time messaging</a> API.</p>
+
+<p>For now, due to the authentication flow, it’s only available to paid users within our apps, but in future we might open it up to people running their own IRC clients.</p>
+
+<p>Let us know how you get on with this integration, and send us any feedback/bugs/feature requests on <a href="https://twitter.com/irccloud">Twitter</a>, <a href="mailto:team@irccloud.com">email</a> or <a href="https://www.irccloud.com/invite?channel=%23feedback&amp;hostname=irc.irccloud.com&amp;port=6697&amp;ssl=1">IRC</a>.</p>
+
+    
+</div>
+
+
+    
+    <div class="postHeader">
+    <p class="meta">
+        <span class="date">
+            Monday April 09
+            <span class="year">2018</span>
+        </span>
+        
+            <span class="author">• posted by james</span>
+        
+    </p>
+    <h1><a href="/avatars/" rel="self">Image avatars</a></h1>
+</div>
+
+<div class="post">
+    
+        <p>Today we’re releasing image avatars, a new feature we’ve been testing in our <a href="https://www.irccloud.com/?/settings=labs">labs</a> section. They come in 2 flavours, public and private, and look like this:</p>
+
+<div class="figure">
+    <p class="image">
+        <a href="/static/2018-04-09-avatars/messages.png" target="_blank">
+            <img src="/static/2018-04-09-avatars/messages.png" width="416" height="469" alt="An example of inline avatars" />
+        </a>
+    </p>
+</div>
+
+<p>You’ll need to make sure the “User icons” setting is switched on in <a href="https://www.irccloud.com/?/settings=design">Layout &amp; Design</a> to see avatars. There’s also a separate setting to disable image avatars completely.</p>
+
+<p>You can click on an avatar or nickname to see a larger version of it in the context menu. Avatars will also appear at the top of private messages.</p>
+
+<h3 id="public-avatars">Public avatars</h3>
+
+<p>A public avatar will work on most IRC networks, using an image tied to your user ID, a bit like a gravatar.</p>
+
+<p>Upload a public avatar from your <a href="https://www.irccloud.com/?/settings=account">account settings</a> and it’ll be visible to other IRCCloud users on any server based on your ident/hostmask.</p>
+
+<h3 id="private-avatars">Private avatars</h3>
+
+<p>Private avatars are only available on <a href="https://www.irccloud.com/?/teams">private team servers</a> for now, and you can use a different image for each team.</p>
+
+<p>Choose a team avatar by clicking the user icon next to your nickname in the input box.</p>
+
+<h3 id="behind-the-scenes">Behind the scenes</h3>
+
+<p>Private avatars work using an updated version of <a href="https://ircv3.net/irc/#v3-2-metadata">IRCv3 metadata</a>, a deprecated protocol extension that we’re helping to revisit and restore. Technically, any IRC server or client could support metadata avatars today, they just aren’t widely implemented yet.</p>
+
+<p>We use the metadata framework to set your avatar to an unguessable URL, that won’t be published outside of the team.</p>
+
+<p>If you’re running your own bot on a team server, you can give it an avatar by uploading an image and configuring it to send the following command on connect:</p>
+
+<pre><code>METADATA * SET avatar https://example.com/your-uploaded-avatar.png
+</code></pre>
+
+<p>Public avatars work differently. They rely on a URL that maps an image to your user ID (the bit in your ident/hostmask that looks like <code>sid3</code> or <code>uid7</code>). We use this to detect other IRCCloud users and check whether they have a public avatar by loading that URL, e.g. <code>https://static.irccloud-cdn.com/avatar-redirect/3</code>.</p>
+
+<p>We don’t expect other IRC clients to support public avatars, since they only work for IRCCloud users, but they could if they wanted to. It’s intended as a stop-gap until IRCv3 metadata is more widely adopted, and a way for people to try out and get used to avatars on IRC.</p>
+
+<p>As usual, let us know what you think on <a href="https://twitter.com/irccloud">Twitter</a>, <a href="mailto:team@irccloud.com">email</a> or <a href="https://www.irccloud.com/invite?channel=%23feedback&amp;hostname=irc.irccloud.com&amp;port=6697&amp;ssl=1">IRC</a>.</p>
+
+    
+</div>
+
+
+    
+    <div class="postHeader">
+    <p class="meta">
+        <span class="date">
+            Monday August 07
+            <span class="year">2017</span>
+        </span>
+        
+            <span class="author">• posted by james</span>
+        
+    </p>
+    <h1><a href="/reply-threads/" rel="self">Reply threads</a></h1>
+</div>
+
+<div class="post">
+    
+        <p>As part of our <a href="/ircv3">ongoing</a> IRC modernisation work, we’re introducing threaded conversations for team servers today.</p>
+
+<div class="figure">
+    <p class="image">
+        <a href="/static/reply-threads/threads.png" target="_blank">
+            <img src="/static/reply-threads/threads.png" width="614" height="446" alt="Screenshot of reply threads" />
+        </a>
+    </p>
+    <p class="caption">Reply threads: collapsed, expanded, and opened in a side pane.</p>
+</div>
+
+<p>Behind the scenes, this feature uses an <a href="http://ircv3.net/specs/client-tags/reply.html">IRCv3 message tag</a>, meaning any IRC server could support it in future, but we’re not aware of any in widespread use so far.</p>
+
+<p>By default, reply threads will display in an <strong>expanded</strong> state, where all messages are visible in the main chat area in their original sequence. On the first message of a thread, a single speech bubble icon appears on the left, while all subsequent replies get double bubbles.</p>
+
+<div class="figure">
+    <img src="/static/reply-threads/expanded.png" width="584" height="97" alt="An expanded reply thread" />
+</div>
+
+<p>You can click on any of these bubble icons to open up the thread in its own side pane. This lets you follow and reply to a thread independently of any other messages sent to a channel.</p>
+
+<p>You can also <strong>collapse</strong> threads, leaving only the original message showing in the main chat area, with the reply count and participants summarised underneath. You can click on this summary line to open the thread in a pane as before.</p>
+
+<div class="figure">
+    <img src="/static/reply-threads/collapsed.png" width="584" height="63" alt="A collapsed reply thread" />
+</div>
+
+<p>Collapsing threads lets you choose which conversations you want to give your full attention, while filtering out those you’re less interested in. Depending on how your teams and channels use threads, you may want to collapse all threads by default, so we’ve added a per-channel setting you can toggle from the options menu.</p>
+
+<div class="figure">
+    <img src="/static/reply-threads/collapse-all.png" width="324" height="340" alt="Per channel setting to collapse all reply threads" />
+</div>
+
+<p>Threads can also be expanded and collapsed individually, by using the plus and minus icons that appear on the right when you hover over a threaded message. This is also where you’ll find the reply icon (curling arrow), which lets you start a new thread.</p>
+
+<p><img src="/static/reply-threads/actions.png" width="168" height="58" alt="Message actions for adding replies and reactions to messages, and collapsing and expanding a thread" /></p>
+
+<p>Another feature seen here is the <strong>reaction</strong> icon (smiley face), which lets you choose an emoji to attach to a message. It’s a nice way to give quick feedback on a message. We released emoji reactions on team servers at the end of last year, but never blogged about them. They’re another feature built with <a href="http://ircv3.net/specs/client-tags/react.html">message tags</a>.</p>
+
+<div class="figure">
+    <img src="/static/reply-threads/reactions.png" width="398" height="78" alt="Emoji reactions" />
+</div>
+
+<hr />
+
+<p>We looked at a lot of different message threading approaches in other chat services while designing IRC replies, and we’ve tried to create useful, familiar interactions, while avoiding common implementation weaknesses. But we recognise this is new territory for IRC, so we’ll be paying close attention to feedback as people experiment and come up with new ways to use threads.</p>
+
+<p>As always, you can <a href="https://twitter.com/irccloud">tweet</a>, <a href="mailto:team@irccloud.com">email</a> or <a href="https://www.irccloud.com/invite?channel=%23feedback&amp;hostname=irc.irccloud.com&amp;port=6697&amp;ssl=1">find us on IRC</a> to share your thoughts.</p>
+
+<p>We also hope to see more servers supporting these features in future; we think they have a lot of potential to make IRC more manageable for communities and teams alike.</p>
+
+    
+</div>
+
+
+    
+    <div class="postHeader">
+    <p class="meta">
+        <span class="date">
+            Friday February 24
+            <span class="year">2017</span>
+        </span>
+        
+            <span class="author">• posted by russ</span>
+        
+    </p>
+    <h1><a href="/feb-2017-security-notice/" rel="self">February 2017 Security Notice</a></h1>
+</div>
+
+<div class="post">
+    
+        <p>Today <a href="https://www.cloudflare.com">Cloudflare</a>, one of our infrastructure
+providers, revealed that they were subject to a <a href="https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/">security
+vulnerability</a>
+which may have resulted in some private IRCCloud data, including
+passwords and chat history, being leaked between September 2016 and
+February 2017.</p>
+
+<p>No payment details were affected.</p>
+
+<p>We understand the chances of any information being compromised
+are very low, but we take these issues very seriously indeed. We are
+immediately requiring all users to re-authenticate when they next load
+IRCCloud. We’re sorry for the inconvenience this will cause.</p>
+
+<p>We recommend that all IRCCloud users change their account passwords,
+and we are reviewing our security in light of this issue.</p>
+
+    
+</div>
+
+
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+  
+  
+    <a href="/page2" class="page_next">Older posts →</a>
+  
+</div>
+
+            
+            <div id="footer">
+                <p>
+                    <a href="https://www.irccloud.com/">IRCCloud</a> •
+                    <a href="https://www.irccloud.com/about">About</a> •
+                    <a href="https://www.irccloud.com/jobs">Jobs</a> •
+                    <a href="https://www.irccloud.com/changelog">Changelog</a> •
+                    <a href="https://www.irccloud.com/faq">FAQ</a> •
+                    <a href="https://www.irccloud.com/?/upgrade">Subscriptions</a> •
+                    <a href="https://www.twitter.com/irccloud">@irccloud</a> •
+                    <a href="mailto:team@irccloud.com">team@irccloud.com</a>
+                </p>
+                <p>© IRCCloud Ltd.</p>
+            </div>
+        </div>
+    </body>
+</html>

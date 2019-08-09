@@ -1,0 +1,14 @@
+400 no stream name
+Server: Varnish
+Retry-After: 0
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 11:38:21 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lhr6330-LHR
+Content-Type: text/html; charset=utf-8
+Content-Length: 436
+Retry-Count: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1565264301.269420,VS0,VE0
+Vary: Origin

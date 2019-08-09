@@ -1,0 +1,28 @@
+200 OK
+X-Shardid: 99
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001} {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+X-Sorting-Hat-Shopid: 21449212004
+Etag: cacheable:d3122685991c58b6f051edbeef72f11a
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ee6bb607-71e7-49b7-b48e-af2df5b0a73f
+Cf-Ray: 50325a37e822bfed-MAN
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]} {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Retry-Count: 0
+Content-Language: en
+Strict-Transport-Security: max-age=7889238
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ee6bb607-71e7-49b7-b48e-af2df5b0a73f
+X-Content-Type-Options: nosniff
+Set-Cookie: __cfduid=d4d04475bd7e40cb1958edeefe709d9d11565276348; expires=Fri, 07-Aug-20 14:59:08 GMT; path=/; domain=.jp.store.ui.com; HttpOnly _shopify_y=f96a33f0-3d0a-4f22-9096-115dccfd943e; path=/; expires=Sun, 08 Aug 2021 02:37:32 -0000 cart_currency=JPY; path=/; expires=Thu, 22 Aug 2019 14:59:08 -0000 _orig_referrer=; Expires=Thu, 22-Aug-19 14:59:08 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:59:08 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:59:08 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:59:08 -0000; HttpOnly
+X-Dc: gcp-us-central1,gcp-us-east1,gcp-us-east1
+X-Request-Id: ee6bb607-71e7-49b7-b48e-af2df5b0a73f
+Server: cloudflare
+X-Alternate-Cache-Key: cacheable:c527851bd2b4d8b771faae98a1f5047f
+X-Frame-Options: DENY
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: 99
+X-Shopid: 21449212004
+X-Cache: hit, server
+Date: Thu, 08 Aug 2019 14:59:08 GMT
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

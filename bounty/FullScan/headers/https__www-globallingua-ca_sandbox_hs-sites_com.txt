@@ -1,0 +1,22 @@
+200 OK
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-7200s
+X-Trace: 2B3C819CF1C9AF94AD27A39B148B037C3465AEA4CA000000000000000000
+Edge-Cache-Tag: CT-4381296119,CG-502888,P-502888,CW-4287931956,CW-4341830144,CW-7148786214,CW-7149681226,E-4273981758,E-4335871509,E-4335871514,E-4335871654,E-4335871669,E-4335886004,E-4348506512,E-4348506517,E-4348545567,E-4360875106,E-4360875486,E-4361171026,E-4361171031,E-4361171336,E-4361171366,E-4417571218,E-4513958200,E-4530167290,E-5419188518,E-5480682022,E-5480683197,PGS-ALL,SW-3,SD-38
+Vary: Accept-Encoding
+Content-Type: text/html;charset=utf-8
+Retry-Count: 0
+Set-Cookie: __cfduid=d411d88d78b376db5dfad432ffb6354951565159876; expires=Thu, 06-Aug-20 06:37:56 GMT; path=/; domain=.www.globallingua.ca; HttpOnly __cfruid=8ff3423e43aff23f65779e20f4f25e3316085b0a-1565159876; path=/; domain=.www.globallingua.ca; HttpOnly
+Strict-Transport-Security: max-age=0
+X-Hs-Hub-Id: 502888
+X-Powered-By: HubSpot
+Server: cloudflare
+Date: Wed, 07 Aug 2019 06:37:56 GMT
+Cf-Cache-Status: HIT
+Age: 6331
+Content-Security-Policy: upgrade-insecure-requests
+X-Hs-Content-Id: 4381296119
+Cache-Control: s-maxage=7200,max-age=5
+Cf-Ray: 50273eab1d5bd21c-MAN
+Access-Control-Allow-Credentials: false
+Link: </hs-fs/css/502888/hub_generated/template_assets/1556295058239/combined-css-64fef307baec3c424972011725c71e24.css>; rel=preload; as=style

@@ -1,0 +1,19 @@
+200 OK
+Server: Apache
+Access-Control-Allow-Headers: X-Requested-With
+X-Server: V1
+Retry-Count: 0
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,1
+Expires: Thu, 08 Aug 2019 07:13:33 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+V-Age: 26263
+X-Hits: 84
+X-Ua-Compatible: IE=edge,chrome=1
+Content-Type: text/html; charset=UTF-8
+X-Set-Cookie: 
+X-Storage: page
+X-Varnish: 399902795 391428676
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 07:13:33 GMT
+Vary: Accept-Encoding

@@ -1,0 +1,17 @@
+404 Not Found
+Strict-Transport-Security: max-age=15552000; preload
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Methods: OPTIONS
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+X-Xss-Protection: 0
+Retry-Count: 0
+Pragma: no-cache
+Access-Control-Expose-Headers: X-FB-Debug, X-Loader-Length
+Vary: Origin Accept-Encoding
+Cache-Control: private, no-cache, no-store, must-revalidate
+Access-Control-Allow-Origin: https://www.facebook.com
+X-Fb-Debug: 5ZKq0tz2CIfeDQ8Lj0P4WKUwiZ60cfGnRoyubBF0zTcnDc5TmRoxveSHmUhexkiyJMoySwkMadTJFEQXGS/aKg==
+Date: Thu, 08 Aug 2019 16:12:14 GMT
+Access-Control-Allow-Credentials: true
+X-Frame-Options: DENY
+Content-Type: text/html; charset="utf-8"

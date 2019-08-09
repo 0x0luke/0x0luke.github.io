@@ -1,0 +1,16 @@
+200 OK
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1;mode=block
+Expect-Ct: max-age=0
+Date: Thu, 08 Aug 2019 09:23:31 GMT
+Expires: Thu, 08 Aug 2019 09:23:30 GMT
+Cache-Control: no-cache
+Retry-Count: 0
+Etag: W/"5d4b7b6e-1516"
+Referrer-Policy: origin
+Server: nginx
+Content-Security-Policy: default-src https: blob: data: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=UTF-8

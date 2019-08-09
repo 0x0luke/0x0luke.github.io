@@ -1,0 +1,19 @@
+404 Not Found
+Set-Cookie: __cfduid=d08e22436da6f44656cd74a057f6247bd1565274311; expires=Fri, 07-Aug-20 14:25:11 GMT; path=/; domain=.misten.shopify.com; HttpOnly
+X-Shopify-Stage: production
+Content-Security-Policy: frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=82ec4a39-df00-4ae5-bed1-b50107d8a66b
+Content-Type: text/html; charset=utf-8
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=82ec4a39-df00-4ae5-bed1-b50107d8a66b
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:25:11 GMT
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Dc: gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Permitted-Cross-Domain-Policies: none
+Cf-Ray: 5032287c8e863681-MAN
+X-Request-Id: 82ec4a39-df00-4ae5-bed1-b50107d8a66b
+X-Content-Type-Options: nosniff

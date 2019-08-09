@@ -1,0 +1,13 @@
+200 OK
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Retry-Count: 0
+Cache-Control: max-age=604800, public
+Expires: Thu, 15 Aug 2019 07:03:18 GMT
+X-Cache: HIT
+Date: Thu, 08 Aug 2019 07:03:18 GMT
+Content-Type: text/html; charset=UTF-8
+Via: 1.1 ttt 1.1 varnish-v4
+X-Ua-Compatible: IE=edge
+X-Varnish: 10240932 10206021
+Age: 3889

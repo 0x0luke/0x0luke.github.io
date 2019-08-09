@@ -1,0 +1,19 @@
+404 Not Found
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=33f756e2-1631-433a-ae8c-128c2aa2fca2
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+X-Shopify-Stage: production
+Content-Type: text/html; charset=utf-8
+X-Request-Id: 33f756e2-1631-433a-ae8c-128c2aa2fca2
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 50322867d8613627-MAN
+Date: Thu, 08 Aug 2019 14:25:07 GMT
+Set-Cookie: __cfduid=d08327f249502c9e9a6e10bbc50f915a91565274307; expires=Fri, 07-Aug-20 14:25:07 GMT; path=/; domain=.khanbot.shopify.com; HttpOnly
+X-Frame-Options: DENY
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=33f756e2-1631-433a-ae8c-128c2aa2fca2
+X-Dc: gcp-us-central1,gcp-us-central1
+Retry-Count: 0
+Server: cloudflare
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding

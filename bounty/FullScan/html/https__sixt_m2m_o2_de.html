@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!--
+	only wimps use browsers, real men read the source
+-->
+<meta name="AUTHOR" content="Frank Tilchner" />
+<meta name="ROBOTS" content="index,follow" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+<title>Sixt</title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle btn btn-default" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="fa fa-bars"></span>
+        </button>
+        <a class="navbar-brand" href="?"><img src="img/telefonica.png" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="?">Installieren <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    
+    <form method="post" class="form-horizontal">
+      <div class="form-group ">
+        <label for="asset" class="col-sm-2 control-label">LVID</label>
+        <div class="col-sm-6">
+          <input type="text" name="asset" class="form-control" required="required" autofocus="on" placeholder="XXXXXXXX" value="" />
+                  </div>
+              </div>
+      <div class="form-group ">
+        <label for="installer" class="col-sm-2 control-label">Installateur</label>
+        <div class="col-sm-6">
+          <input type="text" name="installer" class="form-control" autocomplete="on" required="required" placeholder="Max Mustermann"  value="" />
+                  </div>
+              </div>
+      <div class="form-group ">
+        <label for="fin" class="col-sm-2 control-label">FIN</label>
+        <div class="col-sm-6">
+          <input type="text" name="fin" class="form-control" required="required" placeholder="WBS1230001X123456" value="" />
+                  </div>
+              </div>
+      <div class="form-group ">
+        <label for="serial" class="col-sm-2 control-label">Seriennummer</label>
+        <div class="col-sm-1">
+          <input type="text" name="serial[0]" class="form-control" disabled="disabled" value="G7"/>
+        </div>
+        <div class="col-sm-1">
+          <input type="text" name="serial[1]" class="form-control serial" placeholder="8A2" maxlength="3" value="" />
+                  </div>
+        <div class="col-sm-1">
+          <input type="text" name="serial[2]" class="form-control serial" placeholder="0D1" maxlength="3" value="" />
+                  </div>
+        <div class="col-sm-1">
+          <input type="text" name="serial[3]" class="form-control serial" placeholder="6B16" maxlength="4" value="" />
+                  </div>
+        <div class="col-sm-2">
+
+        </div>
+              </div>
+      <div class="form-group ">
+        <label for="odo" class="col-sm-2 control-label">Tachometer</label>
+        <div class="col-sm-6">
+          <div class="input-group">
+            <input type="number" name="odo" class="form-control" min="0" max="999999" required="required" placeholder="100" value="" />
+            <span class="input-group-addon">Kilometer</span>
+          </div>
+        </div>
+              </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+          <button type="submit" class="btn btn-primary">Absenden</button>
+        </div>
+      </div>
+    </form>
+    <footer>
+      <div class="pull-right">
+      <a target="_blank" href="http://www.telefonica.de"><img alt="Telfónica Logo" src="img/telefonica_min.png"></a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+$("input.serial").keyup(function(event) {
+  var val=$(this).val();
+  if ($.inArray(event.keyCode, [46, 9, 27, 13, 110, 190, 16]) !== -1 ||
+    // Allow: Ctrl+A, Command+A
+    (event.keyCode == 65 && ( event.ctrlKey === true || event.metaKey === true ) ) ||
+    // Allow: home, end, left, right, down, up
+  (event.keyCode >= 35 && event.keyCode <= 40)) {
+    // let it happen, don't do anything
+    return;
+  }
+
+  var inputs = $(this).closest('form').find(':input');
+  if(event.keyCode==8 && val.length==0){
+    inputs.eq( inputs.index(this)- 1 ).focus();
+    inputs.eq( inputs.index(this)- 1 ).val(inputs.eq( inputs.index(this)- 1 ).val());
+  }
+  else{
+    if(val.length==$(this).attr('maxlength')){
+      inputs.eq( inputs.index(this)+ 1 ).focus();
+    }
+  }
+
+
+
+});
+</script>
+</body>

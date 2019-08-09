@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <title>Login to Livestream</title>
+    <meta http-equiv="Content-Type" content="charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"98c87a9b4f","applicationID":"89882504","transactionName":"cA1fFRNfCA4HRhwQVkARWA4PQ0sMB0M=","queueTime":0,"applicationTime":25,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="fb-app-id" content="142371818162" />
+<meta name="google-site-verification" content="yvnVRYqcoNrpjgPQFJxvIfIrGO3vyexEo9iXriUwcU4" />
+<!-- IE9 Task bar meta -->
+<meta name="application-name" content="Livestream" />
+<meta name="msapplication-tooltip" content="Watch, like and share live events on Livestream. Live stream video and connect your event to audiences on the web and mobile devices using Livestream's award winning platform and services." />
+<meta name="msapplication-starturl" content="http://livestream.com?ie9pinned=true" />
+<meta name="msapplication-navbutton-color" content="#c00" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/m/icon-iphone@2x.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/m/icon-ipad.png">
+<link rel="apple-touch-icon-precomposed" href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/m/icon-iphone.png">
+<link rel="shortcut icon" type="image/x-icon" href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/favicon.ico?v=3">
+<link rel="icon" type="image/ico" href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/favicon.ico?v=3">
+
+<script type="text/javascript">
+//<![CDATA[
+
+  var _sf_startpt=(new Date()).getTime()
+
+//]]>
+</script>
+
+    <script type="text/javascript">
+//<![CDATA[
+
+    // reading cookie without jquery
+    function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+    }
+    var cuId = parseInt(readCookie('__cu_id'), 10);
+    window.currentUserId = isNaN(cuId) ? null : cuId;
+    window.currentUser = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+    window.lsconfig = {
+        assets : {
+            host : '//cdn.livestream.com/deploy/website/production/f8f3ad3',
+            prefix : '/assets',
+            path : function (asset) {
+                return this.host + this.prefix + (asset === null || asset === undefined ? '' : '/' + asset);
+            }
+        },
+    accountCreated : false,
+    supportUrl : 'https://help.livestream.com/hc/en-us/requests/new',
+    curatedEventstUrl : '/curated_events',
+    recurlySubDomain : 'livestream',
+    recurlyPublicKey: 'sjc-xHmhbxeRoJdKF9tPZK9tLQ',
+    apiUrl : 'https://api.new.livestream.com',
+    mixpanelToken : "61d57ff4b45a23016c9a98558467649b",
+    mixpanelDebug : false,
+    searchOptions : {"algolia_app_id":"7KJECL120U","algolia_search_key":"98f12273997c31eab6cfbfbe64f99d92","algolia_search_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos"},"algolia_discovery_index_list":{"Events":"events","Accounts":"accounts","Videos":"videos","Categories":"categories"},"analytics_search_index_list":{"Accounts":"analytics-accounts","Events":"analytics-events","Videos":"analytics-videos","Images":"analytics-images","Statuses":"analytics-statuses"}},
+    notApplicable : 'NA',
+    client_ip : "89.238.135.143",
+    api : {
+        relativeUrlEndpoint : "/api",
+        absoluteUrlEndpoint : "//api.new.livestream.com",
+        host : "api.new.livestream.com",
+        playerHost : "player-api.new.livestream.com"
+    },
+    googleMapApiKey : "AIzaSyD7nYNk4wqnfVaDIm0YPYSQdbhRoG6tFug",
+    isLocked: false,
+    account: {
+    },
+    userData: '',
+    upgradePlan: '',
+    accountBillingPath: '/my_account/plans',
+    facebookPermissions : {
+        scope : 'email,user_birthday,publish_actions,manage_pages'
+    },
+    fbGraphApi: 'graph.facebook.com/v2.12',
+    events : {
+    perRow : 10,
+    curatePerRow : 10,
+    socket: {
+    socketIOURL: "https://api.new.livestream.com/servers/sio/leastloaded",
+    }
+    },
+    account_id:"null",
+    };
+
+//]]>
+</script>
+    <meta property = "fb:app_id" content="142371818162"/>
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no"/>
+    <link href="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/modals.css" media="screen" rel="stylesheet" type="text/css" />
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="6JM+0M7lfbQJebN48T5YXo5vFUII3bJ9ZCjutQuI5dM=" name="csrf-token" />
+    <link rel="P3Pv1" href="/w3c/p3p.xml">
+    <!-- Cookie consent -->
+<script type="text/javascript">
+    var GDPR = (function () {
+
+        var retryCount = 1;
+        var cookieConsent;
+        var COUNTRY_CODES = ['AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR',
+            'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'MT', 'NL', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK'];
+        var ESSENTIAL_COOKIE_LIST = ['__cu', '__cu_id', 'vuid', '__cu_short_name', 'req_auth', 'cookie_consent', 'code'];
+        var COOKIE_CONSENT = 'cookie_consent';
+        var countryCode = undefined;
+
+        function getCookie(cookieName) {
+          var name = cookieName + '=';
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return null;
+        }
+
+        function getQueryParameter (parameterName) {
+            parameterName = parameterName.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+            var regex = new RegExp('[\\?&]' + parameterName + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return (results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' ')));
+        }
+
+        function triggerEvent (eventName) {
+            var event = window.document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+            window.dispatchEvent(event);
+        }
+
+        // cookie policy header should be shown only for EU user, who has not yet consented
+        // and he is not logged in
+        function checkAndShowCookiePolicyHeader () {
+            var isEU = COUNTRY_CODES.indexOf(countryCode) !== -1;
+            if (cookieConsent === null && isEU && !getCookie('__cu_id')) {
+                var header = document.querySelector('.js-cookie_policy');
+                if (!header) {
+                    return;
+                }
+                header.classList.remove('hide');
+                document.body.classList.add('gdpr');
+                var okButton = header.querySelector('.js-cookie_ok');
+                okButton.addEventListener('click', function () {
+                    setConsent(true);
+                    document.body.classList.remove('gdpr');
+                    header.classList.add('hide');
+                    setTimeout(function () {
+                        triggerEvent('resize');
+                    }, 250);
+                });
+                // Triggering a resize event so that the clients align themselves when header is shown
+                setTimeout(function () {
+                    triggerEvent('resize');
+                }, 250);
+            }
+        }
+
+        function setConsent (hasConsented) {
+            setCookie(COOKIE_CONSENT, hasConsented);
+
+            var previousValue = getCookie(COOKIE_CONSENT);
+            if (hasConsented && previousValue === 'false') {
+                window.location.reload();
+            }
+        }
+
+        function setCookie (name, value) {
+            var date = new Date();
+            date.setFullYear(date.getFullYear() + 2);
+
+            document.cookie = name + '=' + value.toString() +
+                '; expires=' + date.toGMTString() +
+                '; path=/' +
+                '; domain=.' + getDomain(window.location.hostname);
+        }
+
+        function getDomain (subDomain) {
+            var parts = subDomain.split('.');
+            if (parts.length < 2) {
+                return;
+            }
+
+            return parts[parts.length - 2] + '.' + parts[parts.length - 1];
+        }
+
+        function deleteCookie (name) {
+            // Cookies are not deleted at least in chrome unless you specify all the parts corrects i.e. path & domain.
+            // Assuming path is / and working out all possible combinations of domain
+            var currentDomain = window.location.hostname;
+            var domains = ['', currentDomain, '.' + currentDomain];
+
+            var mainDomain = getDomain(currentDomain);
+            if (mainDomain !== currentDomain) {
+                domains.push(mainDomain);
+                domains.push('.' + mainDomain);
+            }
+
+            for (var i = 0; i < domains.length; i++) {
+                document.cookie = name + '=deleted;' +
+                'domain=' + domains[i] + ';expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
+            }
+        }
+
+        function denyConsent () {
+            // Delete all non essential cookies by enumerating the cookies
+            var cookies = document.cookie.split(';');
+            var parts, name, index;
+
+            for (var i = 0; i < cookies.length; i++ ) {
+                parts = cookies[i];
+                index = parts.indexOf('=');
+
+                if (index !== -1) {
+                    name = parts.substr(0, index).trim();
+                    if (ESSENTIAL_COOKIE_LIST.indexOf(name) === -1) {
+                        deleteCookie(name);
+                    }
+                }
+            }
+            setConsent(false);
+        }
+
+        function initializeCookieFunctions () {
+            window.cookieFunctions = {
+                getCookie : function (name) {
+                    return getCookie(name);
+                },
+                setCookie : function (options) {
+                    if (cookieConsent || cookieConsent === null || ESSENTIAL_COOKIE_LIST.indexOf(options.name) !== -1) {
+                        // set cookie
+                        if (!options.expires) {
+                            options.expires = 365;
+                        }
+
+                        if (typeof options.expires === 'number') {
+                            var days = options.expires;
+                            var t = options.expires = new Date();
+                            t.setDate(t.getDate() + days);
+                        }
+
+                        document.cookie = [
+                            encodeURIComponent(options.name), '=', encodeURIComponent(options.value),
+                            options.expires ? '; expires=' + options.expires.toUTCString() : '',
+                            options.path    ? '; path=' + options.path : '',
+                            options.domain  ? '; domain=' + options.domain : '',
+                            options.secure  ? '; secure' : ''
+                        ].join('');
+                    }
+                },
+                removeCookie : function (options) {
+                    deleteCookie(options.name);
+                },
+                isCookiesAllowed : function () {
+                    return cookieConsent || cookieConsent === null;
+                },
+                setUserConsent : function () {
+                    setConsent(true);
+                },
+                denyUserConsent : function () {
+                    denyConsent();
+                }
+            };
+        }
+
+        function getCountryCode () {
+            var code = getQueryParameter('code') || getCookie('code');
+            if (code) {
+                countryCode = code;
+                checkConsent();
+                return setCookie('code', countryCode);
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status == 200) {
+                    try {
+                        var response = JSON.parse(xhr.response);
+                        countryCode = response.country;
+                        checkConsent();
+                    } catch (e) {
+                        // snub error
+                    }
+                }
+            };
+            xhr.open('GET', '/client/location');
+            xhr.send();
+
+        }
+
+        function checkConsent () {
+            var consent;
+            var isEU = COUNTRY_CODES.indexOf(countryCode) !== -1;
+            if (!isEU) {
+                //No EU, No GDPR!
+                return onGDPRInitialized(true);
+            }
+
+            var cookieValue = getCookie(COOKIE_CONSENT);
+            return onGDPRInitialized(cookieValue === 'false' ? false : null);
+        }
+
+        function onGDPRInitialized (consent) {
+            cookieConsent = consent;
+            if (consent === false) {
+                // Nothing to do
+                return
+            }
+
+            triggerEvent('loadTracking')
+            if (window._waitingForCountry) {
+                checkAndShowCookiePolicyHeader();
+            }
+        }
+
+        function init () {
+            var cu = getCookie('__cu');
+            var cuId = parseInt(getCookie('__cu_id'), 10);
+
+            window.currentUserId = isNaN(cuId) ? null : cuId;
+            window.currentUser = (cu !== null ? JSON.parse(cu) : {});
+
+            initializeCookieFunctions();
+
+            if (getCookie(COOKIE_CONSENT) === 'true') {
+                // Consent given
+                return onGDPRInitialized(true);
+            }
+
+            getCountryCode();
+        }
+
+        function check () {
+            if (countryCode !== undefined) {
+                return checkAndShowCookiePolicyHeader();
+            }
+
+            // Wait for the country to be initialized.
+            window._waitingForCountry = true;
+        }
+
+        init();
+
+        return {
+            check: check
+        };
+    })();
+</script>
+
+<!-- VUID -->
+<script type="text/javascript">
+!function(t){function n(){return 2147483647}function o(t,o){return 0===arguments.length&&(o=0,t=n()),Math.floor(Math.random()*(t-o+1))+o}function e(t){var n=(new Date).getTime()/1e3,o=parseInt(n,10);return t?n:Math.round(1e3*(n-o))/1e3+" "+o}function r(t,n){var o,e,r,i;return n|=0,o=Math.pow(10,n),t*=o,i=t>0|-(t<0),r=t%1==.5*i,e=Math.floor(t),r&&(t=e+(i>0)),(r?t:Math.round(t))/o}function i(t){var n,o,e=t+"",r=e.charCodeAt(0);return 55296<=r&&r<=56319?(n=r,1===e.length?r:(o=e.charCodeAt(1),1024*(n-55296)+(o-56320)+65536)):r}function a(){return r(o()/n()*2147483647)}function u(t){var n,o,e,r=t.toString(),a=1;if(void 0!==r&&""!==r)for(a=0,n=r.length-1;n>=0;n--)o=i(r.charAt(n)),a=(a<<6&268435455)+o+(o<<14),(e=266338304&a)&&(a^=e>>21);return a}function c(t,n,o,e,r,i){var a;return arguments.length>1?(o&&(a=new Date,a.setDate(a.getDate()+o)),document.cookie=t+"="+encodeURIComponent(n)+(a?"; expires="+a.toGMTString():"")+(e?"; path="+e:"")+(r?"; domain="+r:"")+(i?"; secure":""),!0):decodeURIComponent((("; "+document.cookie).split("; "+t+"=")[1]||"").split(";")[0])}var h,d;h={cookie:c("vuid")},h.cookie||(h.cookie="pl"+(2147483647&(a()^u(e()))).toString()+"."+(2147483647&(a()^u(t.navigator.userAgent)).toString())),d=t.location.hostname.split("."),d.length>2&&d.shift(),c("vuid",h.cookie,730,"/","."+d.join("."),!1)}(window);
+</script>
+
+    <script type="text/javascript">
+    dataLayer = [];
+    var loadInitialGtmData = function () {
+        function getPlan (cu) {
+            if (cu.plan_info && cu.plan_info.id) {
+                switch(cu.plan_info.id) {
+                    case -1:
+                        return 'No Plan';
+                    case 1:
+                        return 'Free';
+                    case 2:
+                    case 4:
+                        return 'Basic';
+                    case 3:
+                    case 5:
+                    case 12:
+                    case 13:
+                        return 'Premium';
+                    case 8:
+                    case 9:
+                        return 'Enterprise';
+                    case 10:
+                        return 'Free Trial';
+                    case 11:
+                        return 'Mevo';
+                }
+            }
+            return 'unknown';
+        }
+
+        function readCookie (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1,c.length);
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length,c.length);
+                }
+            }
+            return null;
+        }
+
+        var user = (readCookie('__cu') !== null ? JSON.parse(decodeURIComponent(readCookie('__cu'))) : {});
+        var userId = readCookie('__cu_id');
+        var gtm_data = JSON.parse('{}');
+        gtm_data.account_id = userId ? userId : 'Unknown';
+        gtm_data.session_type = userId ? 'Logged In' : 'Logged Out';
+        gtm_data.plan_type = getPlan(user);
+        gtm_data.page = (typeof gtm_data.page === 'undefined' ? 'Others' : gtm_data.page);
+        var vuid = readCookie('vuid');
+        if (vuid) {
+            gtm_data.vuid = vuid;
+        }
+        dataLayer = dataLayer || [];
+        dataLayer.push(gtm_data);
+    };
+
+    // Google Tag Manager
+    var loadGtm = function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    };
+    // End Google Tag Manager
+
+    var initializeGTM = function () {
+        loadInitialGtmData();
+        loadGtm(window,document,'script','dataLayer', 'GTM-KNG43F');
+    };
+
+    if (window.cookieFunctions.isCookiesAllowed()) {
+        initializeGTM();
+    } else {
+        window.addEventListener('loadTracking', initializeGTM, {once : true});
+    }
+</script>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KNG43F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+  </head>
+  <body id="home" class="modal_page_body_styles">
+    <div id="fb-root"></div>
+    <div id="pagewrap" class="no_footer">
+      <div class="login_flow lightbox-wrap join_lightbox_styles
+   webPageStyles " >
+    <div class="join_header">
+    </div>
+
+  <div class="content">
+  	<div style="position:absolute;left:-9999px;top:-9999px;"><img src="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/loading-13x13.gif" width="1" height="1" /></div>
+<div style="background: url(//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/loading-13x13.gif);display:none;"></div>
+
+
+
+
+
+
+
+
+<form accept-charset="UTF-8" action="https://livestream.com/session" class="form_enclosed login_container" id="form_login_livestream" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6JM+0M7lfbQJebN48T5YXo5vFUII3bJ9ZCjutQuI5dM=" /></div>
+  <h3 class="join_heading">Login to Your Account</h3>
+  <input id="post_action_popup" name="post_action[popup]" type="hidden" /><input id="post_action_redirect" name="post_action[redirect]" type="hidden" value="https://livestream.com/my_account/donations" />
+  
+  <input id="origin" name="origin" type="hidden" value="my_account" />
+  <input id="from" name="from" type="hidden" value="new" />
+
+  <div  >
+    <input class="text email" data-field="email" id="email" name="session[email]" placeholder="Email Address" size="30" type="email" />
+    
+  </div>
+
+  <div  >
+    <input class="password text" data-field="password" id="password" name="session[password]" placeholder="Password" size="30" type="password" />
+    
+  </div>
+
+
+  <input class="join_button" id="login_button" name="commit" type="submit" value="Login" />
+  <input disabled="disabled" id="connect_facebook" name="connect_facebook" type="hidden" value="1" />
+
+  <div class="join_link_container">
+    <a href="/reset_password/new?post_action%5Bpopup%5D=&amp;post_action%5Bredirect%5D=https%3A%2F%2Flivestream.com%2Fmy_account%2Fdonations" class="join_link link_left link_gray" data-modal="true" data-remote="true" id="forgot-password" title="Forgot your password?">Forgot password?</a>
+  <a href="/join?post_action%5Bpopup%5D=&amp;post_action%5Bredirect%5D=https%3A%2F%2Flivestream.com%2Fmy_account%2Fdonations" class="join_link link_right" data-modal="true" data-remote="true" id="modal-join-livestream" title="Join Livestream">Join Livestream</a>
+  </div>
+</form>  <form accept-charset="UTF-8" action="https://livestream.com/session" class="form_enclosed form_login_fb join_fb_container" id="form_login_fb" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6JM+0M7lfbQJebN48T5YXo5vFUII3bJ9ZCjutQuI5dM=" /></div>
+      <input id="fb_login_post_action_popup" name="post_action[popup]" type="hidden" /><input id="fb_login_post_action_redirect" name="post_action[redirect]" type="hidden" value="https://livestream.com/my_account/donations" />
+  <input id="fb_login_origin" name="origin" type="hidden" value="my_account" />
+  <input id="through_resource" name="through_resource" type="hidden" value="true" />
+
+
+    <a href="javascript:void(0)" id="login_with_fb" class="join_facebook_link facebook_join">Login with Facebook</a>
+</form><style type="text/css">
+  .login_flow{
+    margin: 0 auto;
+  }
+</style>
+
+    <input type="hidden" id="modal_refresh" value="false"/>
+    <input type="hidden" id="js_module" value="login_modal"/>
+    <input type="hidden" id="modal_width" value="400"/>
+    <input type="hidden" id="popup_val" value="false"/>
+  </div>
+</div>
+
+    </div>
+            <script>var require = {"baseUrl":"","optimize":"none","waitSeconds":0};</script>
+      <script data-main="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/modal_application" data-layout="login_modal" data-full_page="true" src="//cdn.livestream.com/deploy/website/production/f8f3ad3/assets/require.js"></script>
+
+  </body>
+</html>

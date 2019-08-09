@@ -1,0 +1,18 @@
+404 Not Found
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a59c35f4-7762-4864-a8b5-db0479b32912
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=a59c35f4-7762-4864-a8b5-db0479b32912
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+X-Request-Id: a59c35f4-7762-4864-a8b5-db0479b32912
+Date: Wed, 07 Aug 2019 04:16:56 GMT
+Vary: Accept-Encoding
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: __cfduid=d03564c7b945e64a329e4b3be0ec2e06c1565151416; expires=Thu, 06-Aug-20 04:16:56 GMT; path=/; domain=.loreal.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+X-Shopify-Stage: production
+Cf-Ray: 50267022bdded218-MAN
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Server: cloudflare

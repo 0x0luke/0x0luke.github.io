@@ -1,0 +1,15 @@
+200 OK
+Date: Wed, 07 Aug 2019 11:17:20 GMT
+Cache-Control: public
+Via: 1.1 ttt 1.1 varnish-v4
+X-Cache: HIT
+Set-Cookie: f5_cspm=1234; TS011027f0=0153d5fefe069efa71585fefda2496dba5560cf499a2336f10860ce78d7ba84dd78cefd0eedb4582cf4b2112439f33d9883e478ff94d8b4da989adfedad53ab661af0cac3f; Path=/
+X-Varnish: 49978832 49800140
+Retry-Count: 0
+Last-Modified: Tue, 06 Aug 2019 09:13:32 GMT
+X-Ua-Compatible: IE=edge
+Accept-Ranges: bytes
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Expires: Wed, 07 Aug 2019 10:17:13 GMT
+Age: 4608

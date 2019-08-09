@@ -1,0 +1,26 @@
+200 OK
+Content-Language: en
+Etag: "1565261163"
+Fastly-Soc-X-Request-Id: 3557626c7a14e17fd4919473cd56aad328fda27b08ce03a25e2d4e75eab2b23d
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: DENY
+X-Cache: HIT, MISS
+X-Cache-Hits: 20, 0
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Date: Thu, 08 Aug 2019 11:39:08 GMT
+X-Timer: S1565264348.075989,VS0,VE561
+X-Ua-Compatible: IE=edge
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Age: 3184
+X-Served-By: cache-lhr6330-LHR
+Link: <https://newsroom.pinterest.com/en>; rel="canonical", <https://newsroom.pinterest.com/en>; rel="shortlink" <https://newsroom.pinterest.com/en/newsroom>; rel="revision"
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Content-Security-Policy: default-src 'self' https://api.segment.io https//*.doubleclick.net https://*.fls.doubleclick.net https://*.g.doubleclick.net https://*.facebook.com https://*.google.com https://*.google-analytics.com https://*.inbenta.io https://*.pinimg.com https://*.pinterest.com https://*.youtube.com https://api.company-target.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.ads-twitter.com https://googleads.g.doubleclick.net https://connect.facebook.net https://*.google.com https://*.googleadservices.com https://www.googletagmanager.com https://*.google-analytics.com https://www.gstatic.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://*.twitter.com https://cdn.segment.com https://sdk.inbenta.io https://tag.demandbase.com https://scripts.demandbase.com https://api.demandbase.com https://autocomplete.demandbase.com https://id.rlcdn.com https://d.company-target.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://*.pinimg.com https://*.pinterest.com; img-src 'self' data: https://secure.adnxs.com https://static.ads-twitter.com https://www.bizographics.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://connect.facebook.net https://www.facebook.com https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://www.googletagmanager.com https://www.gstatic.com https://*.linkedin.com https://*.ads.linkedin.com https://*.dc.ads.linkedin.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://t.co https://*.twitter.com https://*.youtube.com
+Last-Modified: Thu, 08 Aug 2019 10:46:03 GMT
+X-Request-Id: 2099d6207378e191861bdd40ca28ff9a8b04bb1045dab081446376e456ed23e8
+Vary: Cookie,Accept-Encoding
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0

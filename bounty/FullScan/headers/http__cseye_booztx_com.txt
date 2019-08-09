@@ -1,0 +1,12 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-cache, private
+Set-Cookie: PHPSESSID=03fe4f8740963dc75daf127df86d8500; path=/; secure; HttpOnly
+Vary: Accept-Encoding
+X-Time: 0.016
+Date: Thu, 08 Aug 2019 07:05:06 GMT
+Cf-Ray: 502fa3d8effbd218-MAN
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Frame-Options: SAMEORIGIN
+Server: cloudflare
+Retry-Count: 0

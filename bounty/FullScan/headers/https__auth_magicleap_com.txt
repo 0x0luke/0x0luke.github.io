@@ -1,0 +1,20 @@
+200 OK
+X-Amz-Cf-Pop: LHR62-C3
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Cache: Miss from cloudfront
+Set-Cookie: rf=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly rf.sig=42xhzFJpp-jQLqKnWcQYc7Fzl3lv4nbURT_HGFjf3Rg; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly us=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure us.sig=ikazhNoz36bOD4GH9We_ROqgzXfqJaJ1EAb3uZJqlSQ; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure rf=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly rf.sig=42xhzFJpp-jQLqKnWcQYc7Fzl3lv4nbURT_HGFjf3Rg; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly us=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure us.sig=ikazhNoz36bOD4GH9We_ROqgzXfqJaJ1EAb3uZJqlSQ; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure
+Vary: Accept-Encoding
+Referrer-Policy: origin-when-cross-origin
+Content-Security-Policy: default-src 'self' https://auth-static-1.magicleap.com; script-src 'self' https://auth-static-1.magicleap.com 'unsafe-inline' data: https://magicleap.com/assets/js/ https://www.google-analytics.com https://storage.googleapis.com/workbox-cdn/releases/ https://www.googletagmanager.com https://cc.cdn.civiccomputing.com/ https://cdn.amplitude.com; style-src 'self' https://auth-static-1.magicleap.com 'unsafe-inline'; font-src 'self' data: https://auth-static-1.magicleap.com https://magicleap.com/assets/fonts/; img-src 'self' https://auth-static-1.magicleap.com data: https://www.google-analytics.com; child-src 'self'; connect-src 'self' https://auth-static-1.magicleap.com/ https://api.magicleap.com/identity/ https://magicleap.com/assets/ https://sentry.io/api/ https://storage.googleapis.com/workbox-cdn/releases/ https://apikeys.civiccomputing.com/ https://cdn.amplitude.com https://api.amplitude.com; frame-ancestors 'self'; report-uri https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/ZaVnC4dhaV28yHS4BYrfHxrW2B5buCJF1GecGLsD5w6I24zsRsbBDLfIYEr7UQPRYS2gSDvkGihttbG_T9IWqrnvoavJW1ilBi-SBoN24o44xn-pUt3IYg==
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Via: 1.1 7a71153df5fe7b23e438dedb00b3bf4a.cloudfront.net (CloudFront)
+Date: Wed, 07 Aug 2019 07:45:39 GMT
+Etag: "d635-jB94Tk2QFU4is+LaK7DYNeQVLJY"
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Id: OFyXxxUSkRdzzYsf2VeVME1K5175knsDkp0xZNEqDTuQqTv6mAn2aQ==
+X-Powered-By: Made with Love in Florida
+Server-Timing: signin; dur=0.43404299999999996; desc="/signin", render-page; dur=0.041288; desc="render page", compression; dur=0.344838; desc="compression"
+X-Xss-Protection: 1; mode=block
+X-Download-Options: noopen

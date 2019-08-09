@@ -1,0 +1,15 @@
+200 
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Strict-Transport-Security: max-age=31536000
+Date: Thu, 08 Aug 2019 14:25:28 GMT
+Server: -
+Set-Cookie: AWSALB=FGNCuOQk+tdq6HwBvqoOdxRNLM+91AlyAJmWNwyYgcOSQ8fi+EMJdhBo+hpkQPqNhyEBLKhydGiXapK/psjrFfVRB0+hllDkcPgeTry+mkg0KzWLuIDJ/d3GMeqp; Expires=Thu, 15 Aug 2019 14:25:28 GMT; Path=/ SESSION=d7ca11c3-374d-4b1e-97e9-056b82fe0d37; Domain=sophos.com; Path=/; HttpOnly
+Cache-Control: no-store,no-cache,must-revalidate,max-age=0;
+X-Xss-Protection: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Public-Key-Pins: pin-sha256="0GmR6MqgSqAtzK1+njH3zTqvxctv2ooXhUuEuTw+DtI="; max-age=5184000; includeSubDomains
+Content-Language: en-US
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'none'

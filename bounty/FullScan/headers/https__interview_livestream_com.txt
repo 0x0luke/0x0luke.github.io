@@ -1,0 +1,21 @@
+200 OK
+Via: 1.1 varnish
+X-Served-By: cache-lhr6320-LHR
+X-Goog-Stored-Content-Encoding: identity
+X-Goog-Stored-Content-Length: 10575
+Last-Modified: Tue, 26 Feb 2019 20:08:10 GMT
+X-Goog-Generation: 1551211690325613
+X-Goog-Metageneration: 1
+X-Goog-Meta-Mtime: 2019-02-21T12:04:05.209280133+02:00
+Fastly-Restarts: 1
+X-Cache: MISS
+Vary: Accept-Encoding
+Retry-Count: 0
+Expires: Thu, 08 Aug 2019 11:14:39 GMT
+Etag: "a1b46b7b61f650dfc423129115d82a2f"
+Date: Thu, 08 Aug 2019 11:14:40 GMT
+Age: 0
+X-Cache-Hits: 0
+X-Timer: S1565262880.621755,VS0,VE672
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes

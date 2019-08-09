@@ -1,0 +1,15 @@
+200 OK
+Server: CK-FG-server
+Cache-Control: max-age=0, no-cache, no-store
+Set-Cookie: CKTRACEID=aa40450f-47b0-4749-9b23-2d3ee8896454; Secure; HttpOnly; SameSite=Strict; Domain=.creditkarma.com; Path=/ ck_web=Fe26.2**adb4795225180bcb1c68fbd5c5f22d396c1d40253a67adcfe2a7699ab83ab64d*npHuUToLKuLYxkS49HCQ7w*sAVFe23Y1LEWYnT7HAU2YEx-KSZ40xI51H3K8ZihMUneqJ1T46gBttOOP_R0sqlp4dOFUTZcktcfPnr1smIMg94X-oyUffWc6dBdQ_gATyA_BUMR97yAdHzm5yoyIh3h**fb58405ab8ecd8470a4bdd8359fcb8ac84b692acd7eed4e89c8620813b8f4c6b*UaCwa7ltbCtGU-BBUUN3Tez94rg689ZgjWsnLLQxmQs; Max-Age=31536000; Expires=Fri, 07 Aug 2020 07:07:37 GMT; Secure; HttpOnly; SameSite=Strict; Domain=www.creditkarma.com; Path=/
+L5d-Success-Class: 1.0
+Vary: accept-encoding
+X-Xss-Protection: 1; mode=block
+Expires: Thu, 08 Aug 2019 07:07:37 GMT
+Date: Thu, 08 Aug 2019 07:07:37 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: base-uri 'self';connect-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net https://www.google-analytics.com https://stats.g.doubleclick.net https://www.sentry.io https://sentry.io;default-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net;font-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net data:;img-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net https://creditkarma-cms.imgix.net/ https://creditkarma.imgix.net/ https://ck-content.imgix.net/ https://ck-assets.imgix.net/ https://www.google-analytics.com https://seal.digicert.com https://stats.g.doubleclick.net https://www.google.com data:;object-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net;script-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net https://www.google-analytics.com https://www.googleadservices.com https://seal.digicert.com https://js-agent.newrelic.com 'strict-dynamic' 'report-sample' data: 'nonce-847635b43b84312cc8878e566a69b23e';style-src 'self' *.creditkarma.com https://creditkarmacdn-a.akamaihd.net *.nr-data.net 'unsafe-inline' data: https://fonts.googleapis.com;worker-src 'self';report-uri https://sentry.io/api/1213169/security/?sentry_key=6ccb2738843e424b8bc559905d29b115
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache

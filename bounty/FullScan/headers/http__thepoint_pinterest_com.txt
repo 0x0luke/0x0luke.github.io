@@ -1,0 +1,23 @@
+200 OK
+Last-Modified: Tue, 06 Aug 2019 00:11:36 GMT
+X-Request-Id: y4euaaxcvzm5kg6hwp3744jv
+Date: Thu, 08 Aug 2019 07:42:07 GMT
+Age: 3367
+X-Timer: S1565250128.778878,VS0,VE5
+Cache-Control: max-age=3600
+Content-Security-Policy: default-src 'self' https://cgit.drupalcode.org https://www.google-analytics.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinterest.com https://*.google.com; img-src 'self' https://*.pinimg.com https://www.google-analytics.com data:; style-src 'self' 'unsafe-inline';
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Served-By: cache-lhr6335-LHR
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000
+Expires: Tue, 06 Aug 2019 01:34:05 GMT
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+X-Cache: HIT
+X-Cache-Hits: 1
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Content-Type: text/html
+Etag: W/"5d48c5b8-615a"
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+Via: 1.1 varnish

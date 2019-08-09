@@ -1,0 +1,17 @@
+200 OK
+Date: Wed, 07 Aug 2019 04:16:33 GMT
+Retry-Count: 0
+Content-Security-Policy: block-all-mixed-content
+X-Ua-Compatible: IE=Edge;chrome=1
+X-Amz-Cf-Id: JebrKKVyaLKIsreou3a7MT8bvoCU4uoaoJHMBoy6yrRUj4nSRE8uWg==
+Cache-Control: no-cache, no-store, must-revalidate
+Via: 1.1 1134a22c328d83d656b1bf94245e1dec.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR62-C2
+Access-Control-Allow-Headers: X-Seek-Site, X-SeekAPI-Locale, Authorization, Content-Type, Cache-Control, X-Seek-EC-SessionId, X-Requested-With
+Server: nginx
+Pragma: no-cache
+Expires: -1
+P3p: policyref="/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI OUR IND"
+Set-Cookie: ASP.NET_SessionId=4nykrkxy3cf3s3tonek5w5p4; path=/; secure; HttpOnly JobseekerSessionId=62795855-a4d9-4e5e-8cd4-081cb24a0133; domain=seek.com.au; path=/ JobseekerVisitorId=d2ca1d4c-9cd5-4f62-9d47-faff691f37c7; domain=seek.com.au; expires=Wed, 07-Aug-2024 04:16:33 GMT; path=/ responsive-trial=firefox:6; domain=seek.com.au; expires=Thu, 06-Aug-2020 14:00:00 GMT; path=/
+X-Cache: Miss from cloudfront
+Content-Type: text/html; charset=utf-8

@@ -1,0 +1,20 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Cache: Miss from cloudfront
+Via: 1.1 67ef3abac0a476e3c8690ff0f09febb8.cloudfront.net (CloudFront)
+X-Powered-By: Made with Love in Florida
+Vary: Accept-Encoding
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Set-Cookie: rf=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly rf.sig=42xhzFJpp-jQLqKnWcQYc7Fzl3lv4nbURT_HGFjf3Rg; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly us=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure us.sig=ikazhNoz36bOD4GH9We_ROqgzXfqJaJ1EAb3uZJqlSQ; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure rf=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly rf.sig=42xhzFJpp-jQLqKnWcQYc7Fzl3lv4nbURT_HGFjf3Rg; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure; httponly us=; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure us.sig=ikazhNoz36bOD4GH9We_ROqgzXfqJaJ1EAb3uZJqlSQ; path=/; expires=Wed, 07 Aug 2019 07:45:39 GMT; domain=.magicleap.com; secure
+Etag: "d61a-m1sshyQfv/jaheQE1HliLCrBBfU"
+X-Amz-Cf-Pop: LHR62-C3
+X-Amz-Cf-Id: 9ellrt6i1TACHHxuV9hPHmlBw2Xi5Dm-qXiMhBcmgWJARUp_gOdi7Q==
+Content-Security-Policy: default-src 'self' https://auth-static-1.magicleap.com; script-src 'self' https://auth-static-1.magicleap.com 'unsafe-inline' data: https://magicleap.com/assets/js/ https://www.google-analytics.com https://storage.googleapis.com/workbox-cdn/releases/ https://www.googletagmanager.com https://cc.cdn.civiccomputing.com/ https://cdn.amplitude.com; style-src 'self' https://auth-static-1.magicleap.com 'unsafe-inline'; font-src 'self' data: https://auth-static-1.magicleap.com https://magicleap.com/assets/fonts/; img-src 'self' https://auth-static-1.magicleap.com data: https://www.google-analytics.com; child-src 'self'; connect-src 'self' https://auth-static-1.magicleap.com/ https://api.magicleap.com/identity/ https://magicleap.com/assets/ https://sentry.io/api/ https://storage.googleapis.com/workbox-cdn/releases/ https://apikeys.civiccomputing.com/ https://cdn.amplitude.com https://api.amplitude.com; frame-ancestors 'self'; report-uri https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/ZaVnC4dhaV28yHS4BYrfHxrW2B5buCJF1GecGLsD5w6I24zsRsbBDLfIYEr7UQPRYS2gSDvkGihttbG_T9IWqrnvoavJW1ilBi-SBoN24o44xn-pUt3IYg==
+Referrer-Policy: origin-when-cross-origin
+X-Frame-Options: DENY
+Date: Wed, 07 Aug 2019 07:45:39 GMT
+Server-Timing: signin; dur=27.050188; desc="/signin", render-page; dur=26.570148; desc="render page", generate-etag; dur=0.294819; desc="generate etag", compression; dur=0.34075; desc="compression"

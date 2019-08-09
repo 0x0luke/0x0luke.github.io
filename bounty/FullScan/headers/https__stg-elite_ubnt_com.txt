@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Server: nginx
+Via: 1.1 7654e8d5fbf72d40d262281571df7baf.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR62-C3
+Cache-Control: no-cache public,must-revalidate,proxy-revalidate,max-age=0
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Date: Wed, 07 Aug 2019 12:59:23 GMT
+Last-Modified: Thu, 09 Aug 2018 10:53:24 GMT
+Expires: Wed, 07 Aug 2019 12:59:22 GMT
+X-Amz-Cf-Id: npnnNeApu1WZliNFTxC6HgkhCNNhOqi4JJ8aSLWrlBcPTj1dVp-TQw==

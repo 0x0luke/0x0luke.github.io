@@ -1,0 +1,18 @@
+404 Not Found
+X-Download-Options: noopen
+X-Dc: gcp-us-central1,gcp-us-central1
+Retry-Count: 0
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=27ec984a-45d1-4252-b5da-689ad7aa88f4
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Server: cloudflare
+Cf-Ray: 50266ffe8bd1d21c-MAN
+Vary: Accept-Encoding
+X-Request-Id: 27ec984a-45d1-4252-b5da-689ad7aa88f4
+X-Shopify-Stage: production
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=27ec984a-45d1-4252-b5da-689ad7aa88f4
+Date: Wed, 07 Aug 2019 04:16:51 GMT
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+Set-Cookie: __cfduid=d044feb939b19f6ec256f5fc3a8cc0bd41565151410; expires=Thu, 06-Aug-20 04:16:50 GMT; path=/; domain=.fifa-gambling.shopify.com; HttpOnly

@@ -1,0 +1,16 @@
+200 OK
+Etag: "6d343522ebd48b1b130202be2c334912"
+Cache-Control: max-age=3600
+X-Cache: HIT
+Vary: Accept-Encoding,Fastly-SSL
+Last-Modified: Wed, 07 Aug 2019 15:35:14 GMT
+Content-Type: text/html; charset=utf-8
+Date: Thu, 08 Aug 2019 14:59:56 GMT
+Via: 1.1 varnish
+X-Cache-Hits: 5
+Accept-Ranges: bytes
+X-Timer: S1565276396.001695,VS0,VE0
+X-Amz-Meta-Surrogate-Control: max-age=864000
+Retry-Count: 0
+Age: 82176
+X-Served-By: cache-lhr6339-LHR

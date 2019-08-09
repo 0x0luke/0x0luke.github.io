@@ -1,0 +1,24 @@
+404 Not Found
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=31536000
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 50310bc1fb853645-MAN
+X-Cache: Error from cloudfront
+Origin-Trial: Ap4C3Xkq2Ua0L0IXOW9Dg5YlN8smsUhzAttgUFkJQZwUuLBLAMTBnR5vy3A+FhbNIKGxhOKVxMIambM0NRLd6wsAAABgeyJvcmlnaW4iOiJodHRwczovL2lyY2Nsb3VkLmNvbTo0NDMiLCJmZWF0dXJlIjoiQmFkZ2luZyIsImV4cGlyeSI6MTU2MjMyNjQ3MCwiaXNTdWJkb21haW4iOnRydWV9
+Retry-Count: 0
+Server: cloudflare
+X-Frame-Options: DENY
+Access-Control-Allow-Origin: https://www.irccloud.com
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store
+Expires: 0
+Via: 1.1 1ec0bb05703028c61e280acc1eda60ce.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: Xz4_WaEfQCGd42D7M-obZbm_Er8CGKaSpNfuchjz_71bGD-EIZmsJw==
+Content-Type: text/html; charset=utf-8
+Date: Thu, 08 Aug 2019 11:10:48 GMT
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: chrome=1
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Etag: W/"18ee-CPnQu4RchxUFF8qhdDxM8AuTkUc"
+Vary: Accept-Encoding
+X-Amz-Cf-Pop: LHR50-C1

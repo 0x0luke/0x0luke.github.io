@@ -1,0 +1,26 @@
+200 OK
+Content-Language: en
+Fastly-Soc-X-Request-Id: 5b8e20d50862836d7ccbdb448ca47056ab365b547599d80b7c517c822c3b3699
+X-Cache: HIT, HIT
+X-Cache-Hits: 40, 1
+Content-Type: text/html; charset=UTF-8
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Xss-Protection: 1; mode=block
+Vary: Cookie,Accept-Encoding
+X-Served-By: cache-lhr6351-LHR
+X-Timer: S1565250113.031082,VS0,VE4
+Content-Security-Policy: default-src 'self' https://api.segment.io https//*.doubleclick.net https://*.fls.doubleclick.net https://*.g.doubleclick.net https://*.facebook.com https://*.google.com https://*.google-analytics.com https://*.inbenta.io https://*.pinimg.com https://*.pinterest.com https://*.youtube.com https://api.company-target.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.ads-twitter.com https://googleads.g.doubleclick.net https://connect.facebook.net https://*.google.com https://*.googleadservices.com https://www.googletagmanager.com https://*.google-analytics.com https://www.gstatic.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://*.twitter.com https://cdn.segment.com https://sdk.inbenta.io https://tag.demandbase.com https://scripts.demandbase.com https://api.demandbase.com https://autocomplete.demandbase.com https://id.rlcdn.com https://d.company-target.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://*.pinimg.com https://*.pinterest.com; img-src 'self' data: https://secure.adnxs.com https://static.ads-twitter.com https://www.bizographics.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://connect.facebook.net https://www.facebook.com https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://www.googletagmanager.com https://www.gstatic.com https://*.linkedin.com https://*.ads.linkedin.com https://*.dc.ads.linkedin.com https://js-agent.newrelic.com https://bam.nr-data.net https://*.pinimg.com https://*.pinterest.com https://t.co https://*.twitter.com https://*.youtube.com
+Last-Modified: Thu, 08 Aug 2019 00:07:27 GMT
+Link: <https://business.pinterest.com/en>; rel="canonical", <https://business.pinterest.com/en>; rel="shortlink" <https://business.pinterest.com/en/homepage/marketing-with-pinterest>; rel="revision"
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 07:41:53 GMT
+Etag: "1565222847"
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Age: 27264
+X-Frame-Options: DENY
+X-Request-Id: f68208199a9dded21390240a5f601ea211033d2ed2d0a43bb93c10596148895a
+X-Ua-Compatible: IE=edge
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Accept-Ranges: bytes

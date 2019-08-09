@@ -1,0 +1,19 @@
+404 Not Found
+X-Content-Type-Options: nosniff
+X-Envoy-Upstream-Service-Time: 160
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=Edge,chrome=1
+Server-Timing: total;dur=149
+Set-Cookie: jitney_client_session_id=33bcf67c-7cc9-4b5c-bad0-73b3524cd1e3; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:14 GMT; secure jitney_client_session_created_at=1565254214; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:14 GMT; secure jitney_client_session_updated_at=1565254214; domain=.airbnb.com; path=/; expires=Fri, 09-Aug-2019 08:50:14 GMT; secure bm_sz=74B4FAA1AC1757E08039F9EBE7F22AC7~YAAQzvwKF3SPsGxsAQAAT+RrcAS3HHIE02ORUDhqr/5Ll1e6tzoNFbNvB2Hw/GNiNa/6HtMBGcv+tX4+BX5GJJ3eCbH/t0wmz/nrhCitj+B356WBdhE4ay4BBp5a4eQ3+gdrhFMlgu5ANUAa3wZoDHEH79oi/YcZT5ce9v3LfQPB2eMhtGZnzoz7J9YKX9A1; Domain=.airbnb.com; Path=/; Expires=Thu, 08 Aug 2019 12:50:14 GMT; Max-Age=14400; HttpOnly _abck=70557E23495F4DBA31D2EFCBEF94069C~-1~YAAQzvwKF3WPsGxsAQAAT+RrcAJ/v+r69Ne4hKUhJx8Mp9RovmJDjTt4Q0e1KL62L3d/wbPHOqag62mXthxqfZqAHmmcxXXklFOeKqahWWZTwYq4Qt5dKY6o1ti8rNqpoojUdYR1RL3wrIR4xp9WPKKyyn82bpHKrZz4NLFe15FsxK5cb09oyJuuiEs6maV3punxkxLW92LxMhMNRCJBrkbuWW+9WLDFInHEt1Auh//xFYnWRdd3g379ahlgWWka4PHGmE0c82dao7x9wfgIuQCYXIj8FFEcgQ6YJQ==~-1~-1~-1; Domain=.airbnb.com; Path=/; Expires=Fri, 07 Aug 2020 08:50:14 GMT; Max-Age=31536000; Secure
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Date: Thu, 08 Aug 2019 08:50:14 GMT
+Etag: W/"5fe4987780ad12270b0e6d621ce85732"
+Content-Security-Policy: default-src 'self' https: blob:; child-src * blob:; connect-src 'self' https: wss: *.amap.com *.inspectlet.com; font-src 'self' data: *.muscache.com fonts.gstatic.com use.typekit.net; img-src 'self' https: data: *.inspectlet.com; media-src 'self' https:; script-src 'self' 'unsafe-eval' a0.muscache.com cdn.siftscience.com ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com a.cdn.intentmedia.net maps.googleapis.com ajax.googleapis.com *.g.doubleclick.net www.google.com www.gstatic.com smartlock.google.com accounts.google.com app.link cdn.branch.io api.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com widget.us.criteo.com *.gbc.criteo.net ethn.io s.yimg.jp api.geetest.com cdn.ampproject.org storage.googleapis.com/workbox-cdn/ tagmanager.google.com pay.google.com blob: webapi.amap.com restapi.amap.com *.inspectlet.com 'nonce-54ab49a33a0e8291ed80d9a74c9f35'; style-src 'self' https: 'unsafe-inline'; report-uri /tracking/csp?action=invalid_action&controller=base&report_only=false&req_uuid=678d9798-68a4-43f9-91f1-530d16566898&version=3c54116df046553d9a705edf23b3ef1999430c4d
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding
+Status: 404 Not Found
+Cache-Control: no-cache
+Referrer-Policy: same-origin

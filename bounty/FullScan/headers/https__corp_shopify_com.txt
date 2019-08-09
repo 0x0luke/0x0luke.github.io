@@ -1,0 +1,19 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=567de067-bf60-4bec-aa14-c28a96a0b9f3
+X-Dc: gcp-us-central1,gcp-us-central1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 14:25:04 GMT
+Vary: Accept-Encoding
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=567de067-bf60-4bec-aa14-c28a96a0b9f3
+Set-Cookie: __cfduid=d46309c23fd1d262f59439c20fd05155c1565274304; expires=Fri, 07-Aug-20 14:25:04 GMT; path=/; domain=.corp.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Cf-Ray: 503228513825bfca-MAN
+X-Content-Type-Options: nosniff
+Server: cloudflare
+X-Frame-Options: DENY
+X-Download-Options: noopen
+Content-Type: text/html; charset=utf-8
+X-Request-Id: 567de067-bf60-4bec-aa14-c28a96a0b9f3
+X-Shopify-Stage: production

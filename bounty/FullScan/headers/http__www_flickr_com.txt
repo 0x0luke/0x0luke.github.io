@@ -1,0 +1,18 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Request-Id: c14e7392
+Via: 1.1 2e1f3d15666e9163d434e29e234ec245.cloudfront.net (CloudFront)
+X-Served-By: ip-10-78-83-181.ec2.internal
+X-Amz-Cf-Pop: LHR4
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Vary: Accept-Encoding
+X-Amz-Cf-Id: SYDXftDjQWHcWWPdGUkO2eJr1pTfUQqt-CUdrF1j2mUmfqpkGAQUAQ==
+Date: Wed, 07 Aug 2019 03:30:53 GMT
+Pragma: no-cache
+Content-Security-Policy: style-src 'unsafe-inline' https://*.flickr.com https://*.staticflickr.com https://cdn.yahooapis.com https://yui-s.yahooapis.com https://*.braintreegateway.com https://*.sandbox.paypal.com https://*.paypal.com https://*.paypalobjects.com https://tagmanager.google.com https://www.googletagmanager.com https://assets.adobedtm.com https://*.2o7.net https://api.digitalriver.com https://cdn.siftscience.com https://*.flickrpro.com https://securepubads.g.doubleclick.net https://boards.greenhouse.io; default-src https://*.flickr.com https://*.staticflickr.com https://tpc.googlesyndication.com; img-src data: blob: https://*.flickr.com https://*.staticflickr.com https://ec.yimg.com https://image.maps.api.here.com https://*.paypal.com https://*.pinterest.com http://*.static-alpha.flickr.com https://tagmanager.google.com https://www.googletagmanager.com https://assets.adobedtm.com https://*.2o7.net https://hexagon-analytics.com https://*.flickrpro.com https://*.everesttech.net; media-src https://*.flickr.com https://*.staticflickr.com https://*.http.atlas.cdn.yimg.com http://*.static-alpha.flickr.com https://*.flickrpro.com; script-src 'unsafe-eval' 'unsafe-inline' 'nonce-f3c090490fff78419a43562ed2597a9f' https://*.flickr.com https://*.staticflickr.com https://cdn.yahooapis.com https://yui-s.yahooapis.com https://*.braintreegateway.com https://*.sandbox.paypal.com https://*.paypal.com https://*.paypalobjects.com https://tagmanager.google.com https://www.googletagmanager.com https://assets.adobedtm.com https://*.2o7.net https://api.digitalriver.com https://cdn.siftscience.com https://*.flickrpro.com https://securepubads.g.doubleclick.net https://boards.greenhouse.io; connect-src https://*.flickr.com https://cdn.yahooapis.com https://yui-s.yahooapis.com http://api.flickr.com https://*.pinterest.com https://*.braintreegateway.com https://*.sandbox.paypal.com https://*.paypal.com https://*.paypalobjects.com https://tagmanager.google.com https://www.googletagmanager.com https://assets.adobedtm.com https://*.2o7.net https://cdn.siftscience.com https://store.digitalriver.com https://*.flickrpro.com https://*.demdex.net https://securepubads.g.doubleclick.net https://api.greenhouse.io; frame-src https://*.flickr.com https://combo.staticflickr.com https://*.braintreegateway.com https://*.sandbox.braintreegateway.com https://assets.braintreegateway.com/ https://*.paypal.com https://*.paypalobjects.com https://assets.adobedtm.com https://*.2o7.net https://tpc.googlesyndication.com https://boards.greenhouse.io; child-src https://*.flickr.com https://combo.staticflickr.com https://*.braintreegateway.com https://*.sandbox.braintreegateway.com https://assets.braintreegateway.com/ https://*.paypal.com https://*.paypalobjects.com https://assets.adobedtm.com https://*.2o7.net https://tpc.googlesyndication.com https://boards.greenhouse.io; font-src https://*.staticflickr.com https://*.flickr.com data:; worker-src blob:; report-uri https://www.flickr.com/csp_report.gne?src=adsecflickr;
+Cache-Control: no-cache, max-age=0, must-revalidate, no-store
+Set-Cookie: xb=004913; Domain=.flickr.com; Path=/; Expires=Thu, 06 Aug 2020 03:30:53 GMT mobile_allow_www=; Domain=.flickr.com; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT
+X-Cache: Miss from cloudfront

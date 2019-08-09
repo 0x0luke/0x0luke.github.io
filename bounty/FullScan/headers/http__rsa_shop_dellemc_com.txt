@@ -1,0 +1,15 @@
+500 Internal Server Error
+Www-Authenticate: Basic realm="CT"
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html;charset=ISO-8859-1
+X-Content-Type-Options: nosniff
+Date: Wed, 07 Aug 2019 03:26:27 GMT
+Vary: Accept-Encoding
+Pragma: no-cache
+Set-Cookie: JSESSIONID=EEB85CF0AD7D0A82111182DA960EC28A; Path=""; HttpOnly quoteCheckoutSelectReseller=""; Path=/
+Server: Apache-Coyote/1.1
+Access-Control-Allow-Origin: *
+Expires: Wed, 07 Aug 2019 03:26:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Retry-Count: 0

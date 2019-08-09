@@ -1,0 +1,21 @@
+200 OK
+X-Fw-Server: Flywheel/5.0.0
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Via: 1.1 337b3ec803634031823bd56035e09183.cloudfront.net (CloudFront)
+X-Fw-Type: FLYWHEEL_BOT
+Server: Flywheel/5.0.0
+X-Amz-Cf-Id: wS67LDL4AZ8goEjMkBEMMfsMQwff2KZmBDZcFvahpaEpyeH-DX-xgQ==
+Date: Thu, 08 Aug 2019 16:12:40 GMT
+X-Fw-Hash: 5qkdn7kwst
+Cache-Control: public
+X-Cacheable: YES
+X-Fw-Static: NO
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+X-Amz-Cf-Pop: LHR62-C2
+X-Cache: Miss from cloudfront
+Link: <https://www.zynga.com/wp-json/>; rel="https://api.w.org/" <https://www.zynga.com/>; rel=shortlink
+X-Fw-Dynamic: TRUE
+X-Fw-Serve: TRUE
+X-Hits: 167

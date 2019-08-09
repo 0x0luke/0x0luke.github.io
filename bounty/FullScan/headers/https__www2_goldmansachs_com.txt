@@ -1,0 +1,25 @@
+200 OK
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT
+Device_os_version: 10.14
+Viewport_width: width_equals_max_image_width
+Is_mobile: false
+Server: Apache
+X-Xss-Protection: 1; mode=block
+Is_tablet: false
+Mobile_browser_version: 70
+Physical_screen_height: 175
+Retry-Count: 0
+Content-Type: text/html
+Etag: "c780-58f8e252af855"
+X-Akamai-Device-Characteristics: ajax_preferred_geoloc_api=none;device_os=Mac OS X;device_os_version=10.14;is_tablet=false;is_wireless_device=false2;mobile_browser=Chrome;mobile_browser_version=70;physical_screen_height=175;physical_screen_width=280;resolution_height=800;resolution_width=1280;viewport_initial_scale=;viewport_width=width_equals_max_image_width;is_mobile=false
+Resolution_width: 1280
+Ajax_preferred_geoloc_api: none
+Is_wireless_device: false
+Physical_screen_width: 280
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 09:29:35 GMT
+Resolution_height: 800
+X-Akamai-Transformed: 9 45367 0 pmb=mRUM,3
+Device_os: Mac OS X
+Mobile_browser: Chrome
+Viewport_initial_scale: 

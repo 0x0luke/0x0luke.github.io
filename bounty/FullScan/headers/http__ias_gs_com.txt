@@ -1,0 +1,19 @@
+404 Not Found
+Gs: b1
+Etag: "17c7fb9-gzip"
+Content-Security-Policy: default-src 'self' gap: https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline'; font-src 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com data:; script-src 'self' https://assets.adobedtm.com https://ds-aksb-a.akamaihd.net https://*.gsam.com https://*.gs.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com https://gsam.122.2o7.net https://api.darksky.net 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://gsam.122.2o7.net https://*.gs.com https://*.gsam.com https://*.demdex.net https://*.omtrdc.net https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline' data:; object-src 'self'; child-src gap: 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com; frame-src gap: 'self' https://t2.jiji.com https://www.google.com https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com https://vds.issproxy.com; img-src 'self' * data:; style-src 'self' https://*.gs.com https://*.gsam.com https://*.gsacquisition.com https://*.goldmansachsbdc.com https://*.goldman.com https://*.gscio.com https://*.ayco.com https://*.gsselect.com https://*.goldmansachsahc.com https://*.gsipventures.com https://*.gsamsymposium.com 'unsafe-inline';
+X-Datastream-Origin-Mex-Latency: 90
+Date: Thu, 08 Aug 2019 07:20:07 GMT
+Accept-Ranges: bytes
+Retry-Count: 0
+Cache-Control: max-age=0
+X-Datastream-Cache-Status: 0
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=16070400; includeSubDomains; preload
+X-Datastream-Midmile-Rtt: 5
+Set-Cookie: NSC_psjhjo.htbn.ht.dpn-443-wb=30dfa3dbe14d575e7895065d41b2711465068890ff93d0449621a2ff9c9746e7c0a29cc6;path=/;secure;httponly
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: text/html

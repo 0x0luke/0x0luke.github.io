@@ -1,0 +1,13 @@
+200 OK
+Date: Thu, 08 Aug 2019 07:39:41 GMT
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline';img-src 'self' *.o2online.de data:;script-src 'self' 'unsafe-eval' ; font-src 'self' data:;frame-ancestors 'none'
+Set-Cookie: JSESSIONID=71C841109C9A1D4DC6C0396C039CA328; Path=/mypay-frontend2/; HttpOnly
+Content-Length: 3605

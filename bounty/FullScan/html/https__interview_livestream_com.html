@@ -1,0 +1,289 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Livestream Interview</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="en" http-equiv="Content-Language">
+  <meta content="Livestream Interview." name="description">
+  <meta content="livestream, interview, webrtc" name="keywords">
+  <meta content="1 Month" name="revisit-after">
+  <meta content="Global" name="distribution">
+  <meta content="all,index,follow" name="robots">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+
+  <script>
+    // check protocol & redirect --------------------------------------------------
+    if (window.location.protocol !== 'https:') {
+      window.location.href = 'https:' +
+        window.location.href.substring(window.location.protocol.length);
+    }
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="styles/interview.css">
+  <link rel="stylesheet" type="text/css" href="styles/chat.css">
+  <link rel="stylesheet" type="text/css" href="styles/landing.css">
+
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/pubnub.min.js"></script>
+  <script type="text/javascript" src="js/vendor/adapter.min.js"></script>
+  <script type="text/javascript" src="js/vendor/html-sanitizer.min.js"></script>
+
+  <script type="text/javascript" src="js/date.js"></script>
+  <script type="text/javascript" src="js/tools.js"></script>
+  <script type="text/javascript" src="js/class-pupnub.js"></script>
+  <script type="text/javascript" src="js/webrtc.js"></script>
+</head>
+
+<body id="body" oncontextmenu="return false;">
+
+<div id="TMP" style="position: absolute; z-index: 111; text-align:left; top: 100px;"></div>
+<div class="page-chat">
+  <div class="chat-top">
+    <div class="chat-clear"></div>
+    <div class="chat-text-title">CHAT</div>
+  </div>
+  <div class="chat-body">
+    <div class="chat-body-scroll">
+      <div class="chat-body-message"></div>
+    </div>
+  </div>
+  <div class="chat-bottom">
+    <textarea id="chat-text-message" maxlength="100">Type your text here</textarea>
+  </div>
+</div>
+<div class="page-body">
+  <div class="body-main">
+    <span class="livestream-logo">Livestream Studio Interview</span>
+    <div class="livestream-povered"></div>
+    <table class="livestream-status" cellpadding="0">
+      <tr>
+        <td class="status-mic"></td>
+        <td class="status-cam"></td>
+        <td class="status-message-td">
+          <div class="status-message">
+            <div>Waiting for camera...</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="allow-webcam-message">
+      <table>
+        <tr>
+          <td>
+            <div style="height:60px;"></div>
+            <span style="border-bottom:3px solid #cf202e;">Click "Allow"</span> above to turn on your webcam &nbsp;
+          </td>
+          <td class="arrow"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="join-interview">
+      <div class="join-interview-caption">Are you ready to join the Live Interview?</div>
+      <div class="join-interview-text">Enter your name and click "Join Interview" to start.</div>
+      <div class="join-interview-input">
+        <center>
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <input type="text" value="Type your name" id="join-edit">
+              </td>
+              <td id="join-button">
+                <div>JOIN INTERVIEW</div>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </div>
+    <video id="video-remote" autoplay="autoplay"></video>
+    <div id="remote-video-disable">Program video has been deactivated</div>
+    <video id="video-local" muted autoplay="autoplay"></video>
+    <div id="video-local-you">YOU</div>
+    <div id="video-local-audio-icon"></div>
+    <table class="video-local-status" cellpadding="0" cellpadding="1">
+      <tr>
+        <td class="video-local-mic-off"></td>
+        <td class="video-local-cam-off"></td>
+      </tr>
+    </table>
+    <!--video id="video-test"></video-->
+  </div>
+  <div class="body-splitter"></div>
+  <div class="body-bottom">
+    <table>
+      <tr>
+        <td>
+          <div class="button leave-internet-btn">
+            <div>LEAVE INTERVIEW</div>
+          </div>
+        </td>
+        <td>
+          <div class="button hold-btn">
+            <div>HOLD</div>
+          </div>
+        </td>
+        <td>
+          <div id="label-status-text">&nbsp;</div>
+        </td>
+        <td id="ping_info"></td>
+        <td id="ping_info_send"></td>
+      </tr>
+    </table>
+    <div class="settings-page">
+      <div class="settings-panel connection-stats-pre">
+        <div class="connection-stats"></div>
+      </div>
+      <div class="settings-panel connection-status-text-pre">
+        <div class="connection-status-text">p2p</div>
+      </div>
+      <div class="settings-panel settings-panel-splitter-pre">
+        <div class="settings-panel-splitter"></div>
+      </div>
+      <div class="button settings-panel mute-button"></div>
+      <div class="button settings-panel cam-button"></div>
+      <div class="button settings-panel settings-button"></div>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+
+<!-- Landing Page -->
+<div class="landing-page"></div>
+
+<!-- Message Boxes -->
+<div class="message-box-msg"></div>
+
+<div class="message-box-no-support" name="BrowserNotSupport">
+  <div class="message-box-header" style="background-color: #cf202e; height:10px;"></div>
+  <div class="message-box-body">
+    <table>
+      <tr>
+        <td width="68">
+          <div class="img-warning"></div>
+        </td>
+        <td>
+          <div class="header-text"></div>
+          <div class="body-text"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="broadcast-logs" id="broadcast-logs0">&nbsp;</div>
+<div class="broadcast-logs" id="broadcast-logs1">&nbsp;</div>
+<div id="broadcast-stats">&nbsp;</div>
+<div id="all-logs">&nbsp;</div>
+
+<!-- Settings Window -->
+<div class="opacity-box"></div>
+<div class="settings-message-box" id="settings-message-box">
+  <div class="settings-message-box-top">Settings</div>
+  <div class="settings-message-box-body">
+    <div class="select-combobox" name="cam">
+      <div class="select-btn">
+        <div class="select-btn-pic"></div>
+        <div class="select-btn-button"></div>
+        <div class="select-btn-center">Default camera</div>
+        <div style="clear:both;"></div>
+      </div>
+      <div class="select-text">
+        <div class="select-text-scrollbox">
+          <div class="select-combobox-item" device="1"> Type 1</div>
+          <div class="select-combobox-item" device="2"> Type 2</div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
+    <div class="select-combobox" name="mic">
+      <div class="select-btn">
+        <div class="select-btn-pic"></div>
+        <div class="select-btn-button"></div>
+        <div class="select-btn-center">Default microphone</div>
+        <div style="clear:both;"></div>
+      </div>
+      <div class="select-text">
+        <div class="select-text-scrollbox">
+          <div class="select-combobox-item" device="1"> Type 1</div>
+          <div class="select-combobox-item" device="2"> Type 2</div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 18px;"></div>
+    <div>
+      <input type="checkbox" id="show-program" checked><label for="show-program">Show Program video from Studio</label>
+    </div>
+    <!-- FOR WEBRTC PARAMS BEGIN -->
+    <div style="height: 28px;" class="webrtc-params"></div>
+    <div class="webrtc-params">WebRtc Params</div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="DtlsSrtpKeyAgreement" checked><label for="DtlsSrtpKeyAgreement">DtlsSrtpKeyAgreement</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googImprovedWifiBwe" checked><label for="googImprovedWifiBwe">googImprovedWifiBwe</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googCpuOveruseDetection" checked><label for="googCpuOveruseDetection">googCpuOveruseDetection</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googCpuOveruseEncodeUsage" checked><label for="googCpuOveruseEncodeUsage">googCpuOveruseEncodeUsage</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="text" id="googCpuUnderuseThreshold" value="55" style="width: 30px;"> googCpuUnderuseThreshold
+    </div>
+    <div class="webrtc-params">
+      <input type="text" id="googCpuOveruseThreshold" value="85" style="width: 30px;"> googCpuOveruseThreshold
+    </div>
+    <div class="webrtc-params">
+      <input type="text" id="googHighStartBitrate" value="0" style="width: 30px;"> googHighStartBitrate
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googSkipEncodingUnusedStreams" checked><label for="googSkipEncodingUnusedStreams">googSkipEncodingUnusedStreams</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="text" id="googScreencastMinBitrate" value="30" style="width: 30px;"> googScreencastMinBitrate
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googHighBitrate" checked><label for="googHighBitrate">googHighBitrate</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googVeryHighBitrate" checked><label for="googVeryHighBitrate">googVeryHighBitrate</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="checkbox" id="googPayloadPadding" checked><label for="googPayloadPadding">googPayloadPadding</label>
+    </div>
+    <div class="webrtc-params">
+      <input type="text" id="googNumUnsignalledRecvStreams" value="10" style="width: 30px;"> googNumUnsignalledRecvStreams
+    </div>
+    <!-- FOR WEBRTC PARAMS END -->
+    <div style="height: 30px;"></div>
+    <table>
+      <tr>
+        <td>
+          <div class="settings-btn" id="settings-btn-ok">
+            <div>SAVE</div>
+          </div>
+        </td>
+        <td>
+          <div class="settings-btn-cancel" id="settings-btn-cancel">
+            <div>CANCEL</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="start-devices">
+  <div></div>
+</div>
+
+<script type="text/javascript" src="js/stream.js"></script>
+<script type="text/javascript" src="js/landing.js"></script>
+<script type="text/javascript" src="js/audiouv.js"></script>
+</body>
+</html>

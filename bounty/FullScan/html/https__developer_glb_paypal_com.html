@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        
+
+        <title>PayPal Developer Documentation - PayPal Developer</title>
+
+        <meta>
+
+        
+        
+        
+        <meta name="user-guid" content="6b22b7fc16cac1200016173cfffafb35">
+        <meta name="google-site-verification" content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+
+        <link rel="icon" sizes="32x32" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png">
+        <link rel="apple-touch-icon-precomposed" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png">
+
+        <link rel="stylesheet" type="text/css" href="/css/docs.css">
+
+        
+            
+        
+
+        
+        
+
+        
+        
+  <script src="/components/requirejs/require.js"
+    data-main="/js/master"></script>
+
+        
+    </head>
+
+    <body class="full-width" >
+        <header class="header vx_globalNav-main" id="header">
+            <a class="header__block header__brand" href="/" aria-label="PayPal Developer"></a>
+            <a class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0" aria-label="Toggle top-level navigation"></a>
+            <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2" data-product=""></div>
+
+            <div class="header__nav">
+                <div class="header__nav--left">
+                    <ul class="dx-nav-0 dx-nav-0-docs">
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="/docs/">Docs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/checkout/">Checkout</a>
+                                    <span class="dx-nav-0-desc">Add checkout buttons to your page and more</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/commerce-platform/">PayPal Commerce Platform</a>
+                                    <span class="dx-nav-0-desc">Add an end-to-end payment solution</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/subscriptions">Subscriptions</a>
+                                    <span class="dx-nav-0-desc">Add recurring billing as a payment option</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/payouts/">Payouts</a>
+                                    <span class="dx-nav-0-desc">Send money to many recipients at the same time</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/invoicing/">Invoicing</a>
+                                    <span class="dx-nav-0-desc">Set up invoicing in your order management system</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="/docs/">View All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="/docs/api/">APIs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="/docs/api/overview">REST APIs</a>
+                                    <span class="dx-nav-0-desc">PayPal’s current HTTP-based RESTful APIs</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/apex/home/" target="_blank">API Explorer</a>
+                                    <span class="dx-nav-0-desc">Try our interactive tool and explore PayPal REST API capabilities</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="/support/">Support</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="/support/">Support Overview</a>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/us/smarthelp/personal/search?q=Search.....&channel=mts">FAQ</a>
+                                    <span class="dx-nav-0-desc">Search our FAQ site</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-community.com/mts">Technical Support Community</a>
+                                    <span class="dx-nav-0-desc">Raise technical and integration questions with our engineers and others</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-support.com/">Report a Bug or Integration Issue</a>
+                                    <span class="dx-nav-0-desc">Open a ticket to report a bug or ask for integration help</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                  <a class="dx-nav-0-sub-link" href="/docs/contact-sales/">Contact Sales</a>
+                                  <span class="dx-nav-0-desc">Get help setting up your account and accessing integration resources</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="header__search dx-form-search" id="siteSearch" name="search" action="/search" method="get">
+                        <label class="sr-only" for="siteQ">Enter search term</label>
+                        <input class="dx-search-input" placeholder="Search">
+                    </form>
+                </div>
+
+                <div class="header__nav--right">
+                    <div class="dx-auth-block profile__container">
+                        
+                        <div class="dx-auth-logged-out">
+                            <a class="dx-auth-login dx-btn dx-btn-primary" data-js="auth-btn" href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.glb.paypal.com%2Fdeveloper%2Fapplications" data-dxa="login,nav-click,nav-login">Log into Dashboard</a>
+                            
+                        </div>
+                        
+                        <div id="dx-auth-info" hidden data-login-url="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.glb.paypal.com%2Fdeveloper%2Fapplications" data-logout-url="https://www.paypal.com/signout?returnUri=PAGEURL" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dx-main vx_foreground-container">
+            
+            
+                
+                    <article class="content">
+                        
+    
+<div class="homepage-notification hide">
+    <div class="section__content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+          <g fill="#FFF" fill-rule="evenodd" transform="translate(-1 -1)">
+            <polygon fill="none" points="0 18 18 18 18 0 0 0"/>
+            <path d="M8,10 L10,10 L10,4 L8,4 L8,10 Z M8,14 L10,14 L10,12 L8,12 L8,14 Z M9,1 C4.589,1 1,4.59 1,9 C1,13.412 4.589,17 9,17 C13.411,17 17,13.412 17,9 C17,4.59 13.411,1 9,1 L9,1 Z"/>
+          </g>
+        </svg>
+    </div>
+</div>
+
+<section class="section section--grad-blue">
+  <div class="section__content">
+    <h2 class="homepage-products-title">Explore our payment products and solutions</h2>
+
+    <div class="homepage-products">
+      <a class="homepage-product" href="/docs/checkout/">
+        <div class="grid">
+          <h3 class="homepage-product-title">Checkout</h3>
+          <img class="homepage-product-img" src="/img/homepage/checkout.svg" alt="Checkout icon"/>
+        </div>
+        <p class="homepage-product-desc">Help increase sales with Smart Payment Buttons.</p>
+      </a>
+
+      <a class="homepage-product" href="/docs/commerce-platform/">
+        <div class="grid">
+          <h3 class="homepage-product-title">PayPal Commerce Platform</h3>
+        </div>
+        <p class="homepage-product-desc">Get our global, end-to-end payment solutions and technologies for marketplaces, e-commerce solution providers, and more.</p>
+      </a>
+
+      <a class="homepage-product" href="/docs/subscriptions/">
+        <div class="grid">
+          <h3 class="homepage-product-title">Subscriptions</h3>
+          <img class="homepage-product-img" src="/img/homepage/billing.svg" alt="Subscriptions icon"/>
+        </div>
+        <p class="homepage-product-desc">Get paid consistently with a subscription plan.</p>
+      </a>
+
+      <a class="homepage-product" href="/docs/payouts/">
+        <div class="grid">
+          <h3 class="homepage-product-title">Payouts</h3>
+          <img class="homepage-product-img" src="/img/homepage/payouts.svg" alt="Payouts icon"/>
+        </div>
+        <p class="homepage-product-desc">Send money to many recipients at the same time.</p>
+      </a>
+
+      <a class="homepage-product" href="/docs/invoicing/">
+        <div class="grid">
+          <h3 class="homepage-product-title">Invoicing</h3>
+          <img class="homepage-product-img" src="/img/homepage/invoicing.svg" alt="Invoicing icon"/>
+        </div>
+        <p class="homepage-product-desc">Get paid fast when you send professional, customizable invoices from any device.</p>
+      </a>
+
+      <a class="homepage-product" href="/docs/accept-payments/#credit-card-acceptance-on-your-website-or-mobile-app">
+        <div class="grid">
+          <h3 class="homepage-product-title">Accept card payments</h3>
+          <img class="homepage-product-img" src="/img/homepage/cards.svg" alt="Accept card payments icon"/>
+        </div>
+        <p class="homepage-product-desc">Get paid by credit card on the web, in your app, or in person. See our payment options.</p>
+      </a>
+    </div>
+    
+    <div align="right" style="padding-right:10px">
+        <a href="/docs/" style="color: #f5f7fa">See all docs</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="section__content section__content--mid">
+    <h2>Get the Smart Payment Buttons code</h2>
+
+    <div class="text-center">
+    <iframe src="https://www.paypal.com/webapps/hermes/button?version=4&env=production&style.size=medium&style.layout=vertical&funding.allowed=credit&funding.disallowed=venmo&sessionID=46171950e0&locale.x=en_US&logLevel=warn&uid=f6713002fd&xcomponent=1&style.shape=rect&style.label=paypal" width="250" height="173" frameBorder="0"></iframe>
+    </div>
+    Add this button code to your website to render the Smart Payment Buttons.
+    <div class="dx-content">
+      <pre lang="html">&lt;script src="https://www.paypal.com/sdk/js?client-id=sb">&lt;/script>
+&lt;script>paypal.Buttons().render('body');&lt;/script></pre>
+    </div>
+    <br>
+
+    <p>Next, learn how to <a class="home-product-link__product" href="/docs/checkout/">integrate PayPal Checkout Smart Payment Buttons</a> on your site.</p>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="section__content section__content--mid">
+    <h2>Third-party solution providers</h2>
+    <p>Our solution providers already have PayPal built-in and can help you with creating an online store, managing finances, building a website, and more.</p>
+
+    <div class="grid">
+      <div class="grid__item grid__item--4 center">
+        <h3>Shopping Carts</h3>
+        <p>Third-party shopping cart software for accepting payments.</p>
+
+        <ul class="list-img">
+          
+          <li>
+            <a class="dx-no-eel" href="https://www.bigcommerce.com/paypal-launch?utm_source=paypal&amp;utm_medium=partner&amp;utm_campaign=partnerdir&amp;content=category"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/bigcommerce.png" alt="BigCommerce logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="https://www.magento.com/home?utm_source=PayPalPartnerDirectory&amp;utm_medium=partnerlink&amp;utm_campaign=PartnerDirectoryMagento"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/magento.png" alt="Magento logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="https://www.shopify.com/paypal?utm_source=paypal&amp;utm_medium=partner%20&amp;utm_campaign=Partner%20Directory%20Shopify%20Category"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/shopify-v2.png" alt="Shopify logo"></a>
+          </li>
+          
+          <li>
+            <a href="https://www.paypal.com/us/webapps/mpp/solution-providers/easy-setup-online-stores">More Stores</a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid__item grid__item--4 center">
+        <h3>Financial Management</h3>
+        <p>Ready-made solutions for billing, invoicing, accounting, and more.</p>
+
+        <ul class="list-img">
+          
+          <li>
+            <a class="dx-no-eel" href="https://www.xero.com/paypal/?utm_source=PayPal&amp;utm_medium=referral&amp;utm_campaign=Add-on%20Partner%20-%20PayPal&amp;xtid=PayPal"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/xero.png" alt="Xero logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="http://info.ariasystems.com/PayPal-Partner.html?utm_source=PayPal%20Partner%20Directory&amp;utm_medium=partner%20link&amp;utm_campaign=Partner%20Directory%20Aria"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/aria.png" alt="Aria logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="https://appcenter.intuit.com/cmsimages/promo/quickbooks/qbpaypal.html?cid=PAR_paypal_US_paypalpagedirectory_QBO"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos2/Intuit-v1.png" alt="Intuit Quickbooks logo"></a>
+          </li>
+          
+          <li>
+            <a href="https://www.paypal.com/us/webapps/mpp/solution-providers/financial-management">More Management</a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid__item grid__item--4 center">
+        <h3>Specialty Platforms</h3>
+        <p>Alternative ways to sell online through specialty platforms and marketplaces.</p>
+
+        <ul class="list-img">
+          
+          <li>
+            <a class="dx-no-eel" href="https://pages.ebay.com/seller-center/index.html"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos2/ebay.png" alt="eBay logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="https://swappa.com/partners/paypal?utm_source=PayPal%20Partner&amp;utm_medium=Partner%20Site&amp;utm_content=%20Marketplaces%20Preferred%20Partner&amp;utm_campaign=PayPal%20Partner"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/swappa.png" alt="Swappa logo"></a>
+          </li>
+          
+          <li>
+            <a class="dx-no-eel" href="https://www.jvzoo.com/?utm_source=PayPal%20Partner%20Directory&amp;utm_medium=partner%20link&amp;utm_campaign=Partner%20Directory%20JVZoo"><img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/solution-providers/logos/jvzoo.png" alt="JVZoo logo"></a>
+          </li>
+          
+          <li>
+            <a href="https://www.paypal.com/us/webapps/mpp/solution-providers/specialty-online-platforms-marketplaces">More Platforms</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="u-hide" id="nonce">19GWVvALythN92JO9U6AlSF7sLQCqMOD/U/VwokymV/YT0PL</div>
+
+
+
+                    </article>
+                
+                
+            
+
+            <footer class="footer">
+              
+                
+              
+
+                <section class="section">
+                    <div class="section__content">
+                        <div class="grid">
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Developer</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="/docs/" rel="nofollow">Documentation</a></li>
+                                    <li><a href="/docs/api/" rel="nofollow">APIs</a></li>
+                                    <li><a href="https://medium.com/paypal-engineering" rel="nofollow">Engineering Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Support</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="/docs/faq/" rel="nofollow">FAQ</a></li>
+                                    <li><a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow">Help Center</a></li>
+                                    <li><a href="https://www.paypal-support.com/" rel="nofollow">Technical Support</a></li>
+                                    <li><a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow">Community</a></li>
+                                    <li><a href="/docs/contact-sales/" rel="nofollow">Contact Sales</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Resources</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://demo.paypal.com" rel="nofollow">PayPal Demo</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/mpp/partner-program" rel="nofollow">Partners</a></li>
+                                    <li><a href="https://github.com/paypal/" rel="nofollow">GitHub</a></li>
+                                    <li><a href="https://www.paypal-status.com/product/production" rel="nofollow">API Status</a></li>
+                                    <li><a href="/docs/psd2-compliance/" rel="nofollow">PSD2 Compliance</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Family</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://paypal.com/" rel="nofollow">PayPal</a></li>
+                                    <li><a href="https://braintreepayments.com/" rel="nofollow">Braintree</a></li>
+                                    <li><a href="https://venmo.com/" rel="nofollow">Venmo</a></li>
+                                    <li><a href="https://www.paydiant.com/" rel="nofollow">Paydiant</a></li>
+                                    <li><a href="https://xoom.com/" rel="nofollow">Xoom</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid__item grid__item--6">
+                                <ul class="footer__legal">
+                                    <li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow">Privacy</a></li>
+                                    <li><a href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow">Legal</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--6">
+                                <p class="footer__copyright">© 2018 PayPal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </main>
+        <div class="fbt">
+            <a class="fbt-link" href="https://developer.paypal.com/feedback/" target="_blank">Feedback</a>
+        </div>
+
+        <div class="dx-search-panel u-hide">
+  <button class="dx-search-panel-close">╳</button>
+  <div class="dx-search-panel-content">
+    <div class="dx-search-input-wrapper grid">
+      <input id="siteQ" class="dx-search-panel-input grid__item grid__item--10" type="text" name="q" type="search" value="" key="search_placeholder" placeholder="Search our developer docs..." autocomplete="off">
+      <button class="dx-btn-search grid__item grid__item--2"><img src="/components/dx/img/search-icon.svg"></button>
+      <button class="dx-btn-clear-x trigger-clear u-hide">╳</button>
+    </div>
+    <div class="dx-search-panel-default-view">
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">Popular Search Queries</div>
+          <ul>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-sandbox" data-search="sandbox" tabindex="0">sandbox</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-get-client-id-and-secret" data-search="get client id and secret" tabindex="0">client id and secret</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-ipn" data-search="IPN" tabindex="0">IPN (Instant Payment Notifications)</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-refund-payments" data-search="refund payments" tabindex="0">refund payments</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-buttons" data-search="buttons" tabindex="0">buttons</a></li>
+          </ul>
+        </div>
+        <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Help</div>
+        <div class="dx-search-panel-support grid">
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal.com/us/smarthelp/search?q=Search.....&channel=mts" target="_top" class="block block--outlined-search-panel block--link block--full-height" target="_blank">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="/img/support/dev_portal_bulb.svg" alt="FAQ's">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="faq,faq-click,faq-referrer">FAQ's</p>
+                </div>
+                </div>
+            </a>
+          </div>
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal-community.com/mts" target="_blank" class="block block--outlined-search-panel block--link block--full-height">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="/img/support/dev_portal_forum.svg" alt="Forum">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="community,community-click,community-referrer">Tech Support Community</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Community</div>
+        <ul>
+          <li data-dxa="search-panel,click,community-link-test-credit-card"><a href="https://www.paypal-community.com/t5/REST-APIs/Test-Credit-Card-numbers-for-use-on-PayPal-sandbox/m-p/1124657" target="_blank">Test Credit Card numbers for use on PayPal sandbox</a></li>
+          <li data-dxa="search-panel,click,community-link-merchant-security-upgrade"><a href="https://www.paypal-community.com/t5/NVP-SOAP-APIs/Merchant-Security-Upgrade-Testing-PP-LIVE-8238/m-p/1459239" target="_blank">Merchant Security Upgrade Testing</a></li>
+          <li data-dxa="search-panel,click,community-link-inserting-company-logo"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/inserting-company-logo-in-payment-page/td-p/1512480" target="_blank">Inserting company logo in payment page</a></li>
+          <li data-dxa="search-panel,click,community-link-xo-as-guest-turned-on-but-not-available"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Checkout-as-Guest-Option-Turned-on-but-option-not-available-to/m-p/1215152" target="_blank">Checkout as Guest Option Turned on, but option not available to customers</a></li>
+          <li data-dxa="search-panel,click,community-link-create-spec-button-for-3-types"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Create-specific-paypal-button-for-3-types-of-payment-options/m-p/1540082#M772" target="_blank">Create specific paypal button for 3 types of payment options</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dx-search-panel-custom-view u-hide">
+    <div class="dx-search-panel-content">
+      <div class="dx-search-panel-search-results">
+        <div class="dx-search-items"></div>
+        <button class="dx-btn dx-btn-load-more"> Load More</button>
+      </div>
+      <div class="dx-search-panel-search-no-results u-hide">
+        <p class="no-results"></p>
+      <button class="dx-btn dx-btn-clear trigger-clear"> Clear All</button>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="dx-search-panel-overlay u-hide"></div>
+
+        
+        
+        <script src="../../js/checkout/mock-xo-code-editor.js"></script>
+        
+
+        
+          
+        
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+

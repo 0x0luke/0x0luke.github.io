@@ -1,0 +1,18 @@
+404 Not Found
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=5bb6ef23-4cb6-4e0a-9a5d-66a5536a4107
+X-Shopify-Stage: production
+Cf-Ray: 502670489d80d220-MAN
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Request-Id: 5bb6ef23-4cb6-4e0a-9a5d-66a5536a4107
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=5bb6ef23-4cb6-4e0a-9a5d-66a5536a4107
+Retry-Count: 0
+Server: cloudflare
+Date: Wed, 07 Aug 2019 04:17:02 GMT
+Content-Type: text/html; charset=utf-8
+Set-Cookie: __cfduid=ded53f4e3254d87f4b0195b41f21111f51565151422; expires=Thu, 06-Aug-20 04:17:02 GMT; path=/; domain=.shankystore.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Dc: gcp-us-central1,gcp-us-central1

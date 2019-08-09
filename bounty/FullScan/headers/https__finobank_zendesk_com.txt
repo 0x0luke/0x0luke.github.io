@@ -1,0 +1,26 @@
+200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000;
+Set-Cookie: _zendesk_shared_session=-akIwUVBHTVROQVJPaHMxZ1ZSbkpybFZyUWFoTXVXdE85elgwVCtqZ3E1ZmxxbjNYVDArc1VBTlFtdExwU0thMG1teUxFUkxnd1pVKy95ZEc4T09Cbjl0SVgyYTJBSUV6YVU3Y3YzYmp3Y1NBTmw4RGh4N0lBOE9lTUJqNXBmMEpKOFN1cDRaQkZFN1IrWFYvSU5PYTlTeHlyTXFYcHcxOEZrSWgreG5jcy9LSnU4ZmlpdWpGUjZBbE1aK0xINzdYOVVlQ0NoTjdybjliZ0hrNXhaQ256UT09LS0vMDNPUmNoc2hQWXVvaGNlaUdZeERnPT0%3D--d6228bbec045a5d829000768788c72b3bb40939e; path=/; secure; HttpOnly _zendesk_authenticated=; path=/; expires=Thu, 01 Jan 1970 00:00:00 -0000; secure; HttpOnly _help_center_session=TUlMdjJOMk9leDVkUE8xWFB1ZSswTDlRMURWVFBLdDhxZ01QVW9xRWoyd21ZbEJOU3UwR0trSzRNT3NxWUloTTB2bnRWK2ZwcnBhNnFaaHRLUlRDRE5MTVc3cmlQMzFpRnRTTFdxU3BOWlRLNDZyNWhTVWUxczE2NGxuc2JXWktjKzNvV1JtSkdCSFllQUFnWkhBempRNzgrMEYvVW1SNDg4TmFQNlBhRkd0SmkrY0IzV0syZ21qaEdaaW8wbC9QS2FwcGNvUnBidHpvT1FpT3duSUczTlI1aU9od2pFUG9KYmlodUNoRUdTOD0tLXFyV0JJNU9GQUkxME1RQnRGR05aL1E9PQ%3D%3D--2efe9edac61bb90f783c5edf3fdd2e3beec0305b; path=/; secure; HttpOnly
+X-Request-Id: 503285dec99e366f-LHR
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+Etag: W/"eda88846c386d9374fac4b63bef92a24"
+Server: cloudflare
+Cache-Tags: resource:restricted#show, pod:pod20
+X-Runtime: 0.104171
+Cf-Cache-Status: BYPASS
+Cf-Ray: 503285dec99e366f-MAN
+Date: Thu, 08 Aug 2019 15:28:56 GMT
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+P3p: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+X-Zendesk-User-Id: 
+X-Zendesk-Origin-Server: help-center-unicorn-7748485d8b-bl5x9
+Content-Language: es
+Protocol: HTTP/1.0
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding

@@ -1,0 +1,13 @@
+200 OK
+Wpe-Backend: apache
+Cache-Control: max-age=600, must-revalidate
+X-Cacheable: SHORT
+X-Cache: HIT: 3
+Date: Thu, 08 Aug 2019 07:22:39 GMT
+Vary: Accept-Encoding Accept-Encoding Accept-Encoding,Cookie
+Link: <https://leasequery.com/wp-json/>; rel="https://api.w.org/" <https://leasequery.com/?p=33077>; rel=shortlink
+Retry-Count: 0
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+X-Cache-Group: normal
+X-Pass-Why: 

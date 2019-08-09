@@ -1,0 +1,16 @@
+200 OK
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Ray: 5026261ff9e7bff2-MAN
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Referrer-Policy: same-origin
+Date: Wed, 07 Aug 2019 03:26:25 GMT
+Server: cloudflare
+X-Ua-Compatible: IE=edge
+Link: <https://blog.dellemc.com/wp-json/>; rel="https://api.w.org/"
+X-Frame-Options: SAMEORIGIN
+Age: 440
+Retry-Count: 0
+Vary: Accept-Encoding
+Cf-Cache-Status: HIT

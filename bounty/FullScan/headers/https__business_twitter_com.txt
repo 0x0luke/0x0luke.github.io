@@ -1,0 +1,16 @@
+200 OK
+Date: Thu, 08 Aug 2019 14:58:32 GMT
+Server: tsa_f
+X-Connection-Hash: 256763453280a1fd5ea674c71a285484
+Cache-Control: max-age=0
+Retry-Count: 0
+Expires: Thu, 08 Aug 2019 14:58:32 GMT
+Set-Cookie: personalization_id="v1_iw7GKf0brzfrgB4UX4JIWg=="; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:32 GMT; Path=/; Domain=.twitter.com guest_id=v1%3A156527631233482941; Max-Age=63072000; Expires=Sat, 7 Aug 2021 14:58:32 GMT; Path=/; Domain=.twitter.com
+X-Response-Time: 115
+X-Xss-Protection: 0
+Accept-Ranges: bytes
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://*.twitter.com https://syndication.twitter.com; font-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com data:; frame-src 'self' https://twitter.com https://*.twitter.com https://www.google.com https://www.youtube.com https://player.simplecast.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://twitter.com https://t.co https://www.google-analytics.com https://cdn.cms-twdigitalassets.com https://images.newscred.com https://images1.newscred.com https://images2.newscred.com https://images3.newscred.com https://images4.newscred.com https://images-cdn.newscred.com https://*.g.doubleclick.net https://px.ladsp.com https://tag.ladsp.com https://www.google.com/ads/ga-audiences https://pixel.newscred.com https://dc.ads.linkedin.com data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' https://*.twimg.com https://*.twitter.com https://twitterinc.tt.omtrdc.net https://cdn.tt.omtrdc.net https://static.ads-twitter.com https://googleads.g.doubleclick.net https://www.google-analytics.com https://www.googletagmanager.com https://www.googleadservices.com https://cdn.cms-twdigitalassets.com; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self' ads.twitter.com
+X-Frame-Options: ALLOW-FROM https://ads.twitter.com/
+Age: 7146
+Content-Type: text/html
+Strict-Transport-Security: max-age=631138519

@@ -1,0 +1,12 @@
+500 Server Error
+Date: Wed, 07 Aug 2019 11:50:14 GMT
+Content-Length: 92
+Retry-Count: 0
+X-Frame-Options: DENY
+X-Application-Context: application:aws,AWS_QA,qa:8080
+Content-Type: application/json;charset=utf-8
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0

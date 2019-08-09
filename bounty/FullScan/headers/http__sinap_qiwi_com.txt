@@ -1,0 +1,22 @@
+200 OK
+Content-Type: application/json
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Set-Cookie: auth_ukafokfuabbuzdckyiwlunsh=MDAzfF98X3x0Al0NWHYBZRxuSypWegVQB1V4b3QScnorUQ5UYA9GeHcuDwVcaGAAYEN7CFRFU1gTaEcCNlAcCUV8URJpf2BUIl5CUFgkAXgCMkx3VDQBBVUCYmdpQnBhfwYCUW8GQg==;Domain=.qiwi.com;Path=/;Max-Age=86400;HttpOnly
+Strict-Transport-Security: max-age=31536000
+X-Xss-Protection: 1; mode=block 1; mode=block
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Credentials: true
+Content-Security-Policy: default-src 'self'
+X-Permitted-Cross-Domain-Policies: master-only
+Strict-Transport: max-age=31536000
+X-B3-Spanid: 18937ed14f2e307d
+X-B3-Traceid: 18937ed14f2e307d
+X-Frame-Options: DENY
+X-B3-Parentspanid: 18937ed14f2e307d
+Access-Control-Allow-Headers: 
+Retry-Count: 0
+Server: QRATOR
+Date: Wed, 07 Aug 2019 04:05:16 GMT
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff nosniff
+Access-Control-Allow-Origin: *

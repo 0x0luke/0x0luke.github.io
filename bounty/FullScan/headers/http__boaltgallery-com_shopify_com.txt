@@ -1,0 +1,18 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+X-Sorting-Hat-Podid: -1
+X-Request-Id: ab5d6bba-dd06-41eb-a734-aeab618642ef
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ab5d6bba-dd06-41eb-a734-aeab618642ef
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Set-Cookie: __cfduid=deb54c5664cdfcfc9a2994b0d8303c3541565151404; expires=Thu, 06-Aug-20 04:16:44 GMT; path=/; domain=.boaltgallery-com.shopify.com; HttpOnly
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=ab5d6bba-dd06-41eb-a734-aeab618642ef
+Date: Wed, 07 Aug 2019 04:16:44 GMT
+Content-Type: text/html; charset=utf-8
+X-Dc: gcp-us-central1,gcp-us-central1
+Cf-Ray: 50266fd56a10d208-MAN
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Shopify-Stage: production
+Retry-Count: 0
+Server: cloudflare

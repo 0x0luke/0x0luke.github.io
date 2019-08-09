@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>GS360 Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="top">
+    <div id="logo"></div>
+    <div id="title"></div>
+</div>
+<div class="wrapper">
+    <p class="login">Login</p>
+    <a href="/cgi-bin/external/login.cgi?From=aHR0cHM6Ly9xYS0zNjAuZ3MuY29tLw%3D%3D&auth_mask=8289&icorn_id_cookie_name=GSId&icorn_sso_token_name=GSSSO&use_secure_cookies=yes&failed_cookie_name=GSFailedLogins&version=APACHE_ICORN_V4_Apache_2.4&webid_lang=ja" class="language">&#26085;&#26412;&#35486;</a>
+
+    <p class="pleaseLogin">You are entering an area of the site that contains sensitive content. Please login.</p>
+    <div id="notification"><div id="notificationText">
+
+
+    </div></div>
+    <form action="authenticate.cgi" method="post" id="loginForm" novalidate="novalidate">
+        <!-- WebID hidden status fields -->
+        <input type="hidden" name="referpg" value="aHR0cHM6Ly9xYS0zNjAuZ3MuY29tLw==" />
+        <input type="hidden" name="authmask" value="8289" />
+        <input type="hidden" name="failed_cookie_name" value="GSFailedLogins" />
+        <input type="hidden" name="failed_login_threshold" value="10" />
+        <input type="hidden" name="use_secure_cookie" value="yes" />
+        <input type="hidden" name="use_persistent_cookie" value="%s" />
+        <input type="hidden" name="icorn_id_cookie_name" value="GSId">
+        <input type="hidden" name="icorn_sso_token_name" value="GSSSO">
+        <input type="hidden" name="plugin_version" value="APACHE_ICORN_V4_Apache_2.4">
+        <input type="hidden" name="http_referer" value="qa-360.gs.com">
+        <div class="inputWrap">
+            <div class="inputContainer">
+                <div class="inputContent">
+                    <input placeholder="User Name" type="email" name="username" id="username" value="" maxlength="64" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus="autofocus">
+
+                    <label for="username">User Name</label>
+                </div>
+            </div>
+            <div class="avatarIcon"></div>
+        </div>
+        <div class="inputWrap">
+            <div class="inputContainer">
+                <div class="inputContent">
+                    <input placeholder="Password" type="password" name="password" id="password" value="" maxlength="20" autocomplete="off" autocorrect="off" autocapitalize="off">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="passwordIcon"></div>
+        </div>
+        <div class="inputWrapAlt">
+            <input type="checkbox" name="persistent_login" value="persistent_login" id="remember">
+            <label for="remember">Remember me</label>
+            <a href="/pwdreset/goldman360/username" class="help">Trouble logging in?</a>
+        </div>
+        <button type="submit" value="Login" class="button blueGradient">Login</button>
+    </form>
+    <div id="assistanceText">
+        <p>If you have a SecurID&reg; Card, please enter your password or PIN followed by the six digit code.</p>
+        <div class="phoneNumbers">
+            <p>For assistance please call:</p>
+            <p class="region">US &amp; Canada:</p>
+            <a class="regionPhone" href="tel:1-866-727-7000">1-866-727-7000</a>
+            <p class="region">The Americas:</p>
+            <a class="regionPhone" href="tel:1-212-357-9994">1-212-357-9994</a>
+            <p class="region">Europe &amp; Africa:</p>
+            <a class="regionPhone" href="tel:44-20-7552-2555">44-20-7552-2555</a>
+            <p class="region">Japan:</p>
+            <a class="regionPhone" href="tel:81-3-6437-4844">81-3-6437-4844</a>
+            <p class="region">Asia:</p>
+            <a class="regionPhone" href="tel:65-6889-2266">65-6889-2266</a>
+        </div>
+        <a class="infoLinks" href="http://www.goldmansachs.com/privacy-and-security/how-you-can-protect-yourself.html">Important Information about Phishing</a>
+        <a class="infoLinks" href="http://www.goldmansachs.com/investor-relations/financials/current/subsidiary-financial-info/gsco/index.html">GS&amp;Co.'s Statement of Financial Condition</a>
+        <p class="small">Only authorized use of this system is permitted.</p>
+        <p class="small">&copy; Copyright <span id="year"></span>, Goldman Sachs All rights reserved.</p>
+    </div>
+</div>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

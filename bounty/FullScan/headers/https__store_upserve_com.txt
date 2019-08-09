@@ -1,0 +1,27 @@
+200 OK
+X-Shopid: 1740100
+X-Shopify-Stage: production
+X-Permitted-Cross-Domain-Policies: none
+X-Sorting-Hat-Shopid: 1740100
+X-Sorting-Hat-Podid: 61
+Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=cc6f81c7-4033-4a28-afda-ec093119afe4
+X-Request-Id: cc6f81c7-4033-4a28-afda-ec093119afe4
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=cc6f81c7-4033-4a28-afda-ec093119afe4
+Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Cache: hit, server
+Strict-Transport-Security: max-age=7889238
+X-Alternate-Cache-Key: cacheable:7d850c5aea30327b3c2928d4a2292b31
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Nel: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
+Cf-Ray: 50325a43ad5fd218-MAN
+X-Shardid: 61
+Set-Cookie: __cfduid=d468715179cfeebcdf5ce70fa52b3111d1565276350; expires=Fri, 07-Aug-20 14:59:10 GMT; path=/; domain=.store.upserve.com; HttpOnly _shopify_y=76f02843-bd9e-424f-a059-961ad69dfe26; path=/; expires=Sun, 08 Aug 2021 02:37:34 -0000 cart_currency=USD; path=/; expires=Thu, 22 Aug 2019 14:59:10 -0000 _orig_referrer=; Expires=Thu, 22-Aug-19 14:59:10 GMT; Path=/; HttpOnly secure_customer_sig=; path=/; expires=Mon, 08 Aug 2039 14:59:10 -0000; secure; HttpOnly _shopify_country=United+Kingdom; path=/ _landing_page=%2F; Expires=Thu, 22-Aug-19 14:59:10 GMT; Path=/; HttpOnly cart_sig=; path=/; expires=Thu, 22 Aug 2019 14:59:10 -0000; HttpOnly
+Etag: cacheable:ac02d51304acdf91325e7f14d66101c2
+X-Dc: gcp-us-east1,gcp-us-east1
+Server: cloudflare
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Content-Language: en
+Date: Thu, 08 Aug 2019 14:59:10 GMT

@@ -1,0 +1,19 @@
+404 Not Found
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=3d1d992d-a7a6-4d76-898e-8cfbb5ae3d9c
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+X-Request-Id: 3d1d992d-a7a6-4d76-898e-8cfbb5ae3d9c
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=3d1d992d-a7a6-4d76-898e-8cfbb5ae3d9c
+Retry-Count: 0
+Server: cloudflare
+Cf-Ray: 5029029d0c4dbfbb-MAN
+Date: Wed, 07 Aug 2019 11:46:28 GMT
+Set-Cookie: __cfduid=d0039caf0cc56bb88f058ec08fead5a501565178388; expires=Thu, 06-Aug-20 11:46:28 GMT; path=/; domain=.datura.shopify.com; HttpOnly
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-central1,gcp-us-central1
+X-Frame-Options: DENY
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+X-Sorting-Hat-Podid: -1
+X-Shopify-Stage: production

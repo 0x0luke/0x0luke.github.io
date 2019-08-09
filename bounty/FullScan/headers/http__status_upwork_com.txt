@@ -1,0 +1,20 @@
+200 OK
+X-Cache: Miss from cloudfront
+Content-Type: text/html; charset=utf-8
+Access-Control-Allow-Origin: *
+X-Status-Page-Id: 55a1f951d0ef560d6e00006e
+Via: 1.1 varnish, 1.1 f715245c12dc1f6bdadc387db50e442c.cloudfront.net (CloudFront)
+Date: Wed, 07 Aug 2019 04:44:07 GMT
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+X-Amz-Cf-Id: yZ_GoKxxBpLC9rX-4vb9UuB6Gdat148xuphKXW9U1US9wD8ZMcK0dQ==
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Retry-Count: 0
+Etag: W/"fd66-e7uzGVNiaa9uBbucOtPRCJ8hb+o"
+X-Varnish: 335040098 335019368
+X-Amz-Cf-Pop: LHR3-C2
+Cf-Ray: 502697f13e88d214-MAN
+Set-Cookie: __cfduid=d44917f92d3eb8a0052f59a85ce89cec11565153047; expires=Thu, 06-Aug-20 04:44:07 GMT; path=/; domain=.upwork.com; HttpOnly
+Accept-Ranges: bytes
+Age: 2660

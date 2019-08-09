@@ -1,0 +1,24 @@
+200 OK
+Status: 200 OK
+Strict-Transport-Security: max-age=259200;
+Server: cloudflare
+Date: Thu, 08 Aug 2019 15:23:53 GMT
+Cache-Tags: resource:help_center#index, pod:pod13
+X-Zendesk-User-Id: 
+Vary: Accept-Encoding
+X-Runtime: 0.327154
+X-Content-Type-Options: nosniff
+Cf-Ray: 50327e752dd5365d-MAN
+X-Ua-Compatible: IE=edge
+Content-Language: en-us
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0, public, s-maxage=180, stale-while-revalidate=60, stale-if-error=10800
+X-Request-Id: 50327e752dd5365d-SEA
+Protocol: HTTP/1.0
+Cf-Cache-Status: EXPIRED
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Etag: W/"6f89f2e13debfb6c9a301d204ae5b267"
+X-Zendesk-Origin-Server: help-center-unicorn-6b7f7c9674-bthsv
+Retry-Count: 0

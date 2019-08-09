@@ -1,0 +1,22 @@
+200 OK
+Cache-Control: s-maxage=7200,max-age=0
+Access-Control-Allow-Credentials: false
+Age: 4009
+Content-Security-Policy: upgrade-insecure-requests
+Edge-Cache-Tag: CT-4552129062,P-344772,L-4543924607,L-516725860,E-4247880843,E-4386981250,E-4441134149,E-4575209342,E-4584853177,E-500495152,E-5461842568,E-5463593971,E-5471891834,E-568196821,E-5952975887,MENU-11337142560,MENU-5472119099,MENU-5472129149,MENU-5472130927,MENU-5472135589,MENU-5472209262,MENU-5472584341,PGS-ALL,SW-2,SD-22
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Wed, 07 Aug 2019 05:43:40 GMT
+X-Powered-By: HubSpot
+X-Trace: 2BB95BC32F05CA3FDA79E9A646026411FA29F9E1AC000000000000000000
+Server: cloudflare
+Link: </hs-fs/hub/344772/hub_generated/template_assets/1561631407372/combined-css-9d537eb27be949a240f19c81b22a960b.css>; rel=preload; as=style </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+X-Hs-Content-Id: 4552129062
+Cf-Ray: 5026ef2ddcd8bfed-MAN
+X-Hs-Hub-Id: 344772
+Content-Type: text/html;charset=utf-8
+Cf-Cache-Status: HIT
+Retry-Count: 0
+X-Hs-Cache-Config: BrowserCache-0s-EdgeCache-7200s
+Strict-Transport-Security: max-age=0
+Vary: Accept-Encoding
+Set-Cookie: __cfduid=d35a5f0832376d99632e825d10a51f6571565156620; expires=Thu, 06-Aug-20 05:43:40 GMT; path=/; domain=.www.intelliflo.com; HttpOnly __cfruid=e7ecd03ec929c0f7dfdfdcdf1af7b74e57a4c65e-1565156620; path=/; domain=.www.intelliflo.com; HttpOnly

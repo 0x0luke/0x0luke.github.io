@@ -1,0 +1,18 @@
+404 Not Found
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=abb2b114-e6bd-46e5-aedf-fc7855afbb3c
+Cf-Ray: 5026702b1aadbfbb-MAN
+Date: Wed, 07 Aug 2019 04:16:58 GMT
+X-Request-Id: abb2b114-e6bd-46e5-aedf-fc7855afbb3c
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=abb2b114-e6bd-46e5-aedf-fc7855afbb3c
+Server: cloudflare
+Set-Cookie: __cfduid=da6809f695b09d0217e73f6e03d8c57be1565151418; expires=Thu, 06-Aug-20 04:16:58 GMT; path=/; domain=.milkyway-stars.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-central1,gcp-us-central1
+X-Shopify-Stage: production
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0

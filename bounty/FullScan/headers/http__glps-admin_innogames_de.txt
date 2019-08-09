@@ -1,0 +1,14 @@
+401 
+Www-Authenticate: Basic realm="Realm"
+X-Xss-Protection: 1; mode=block
+Content-Language: en-DK
+Content-Type: text/html;charset=UTF-8
+Expires: 0
+X-Frame-Options: DENY
+Server: nginx
+Set-Cookie: JSESSIONID=E35CD39E8DB48D8F1D3355E5DBF34D46; Path=/; HttpOnly
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Retry-Count: 0
+Date: Thu, 08 Aug 2019 07:33:13 GMT

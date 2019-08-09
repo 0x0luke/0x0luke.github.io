@@ -1,0 +1,438 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://sentry.paribus.co/_static/1563898618/sentry/images/favicon.ico" rel="shortcut icon" type="image/png"/>
+
+  <link rel="icon" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/apple-touch-icon-152x152.png">
+
+  <link rel="mask-icon" sizes="any" href="https://sentry.paribus.co/_static/1563898618/sentry/images/icons/sentry-glyph-black.svg" color="#FB4226">
+
+  
+  <link href="/_static/1563898618/sentry/dist/sentry.css" rel="stylesheet"/>
+  
+
+  <title>Login | Sentry</title>
+
+  <script>
+  window.csrfCookieName = 'sc';
+  window.globalStaticUrl = '/_static/1563898618/sentry/dist/';
+  </script>
+
+  
+
+  <script src="/_static/1563898618/sentry/dist/vendor.js"></script>
+  
+  <script src="/_static/1563898618/sentry/dist/app.js"></script>
+
+  <script>
+    for (var n in window.exports.default) {
+      window[n] = window.exports.default[n];
+    }
+    window.$ = window.jQuery;
+
+    window.moment.locale("en");
+
+    // if the ads.js file loads below it will mark this variable as false
+    window.adblockSuspected = true;
+
+    Sentry.ConfigStore.loadInitialData({"features":[],"singleOrganization":true,"urlPrefix":"https://sentry.paribus.co","needsUpgrade":false,"user":null,"invitesEnabled":true,"isOnPremise":true,"mediaUrl":"/_static/1563898618/sentry/","gravatarBaseUrl":"https://secure.gravatar.com","messages":[],"dsn":"https://d4d4681a8b614aad8086f6b4bf0915f5@sentry.paribus.co/1","version":{"current":"8.22.0","build":"8.22.0","upgradeAvailable":true,"latest":"9.1.2"},"statuspage":null,"supportEmail":"youssef.naimi@capitalone.com","isAuthenticated":false});
+  </script>
+  <script src="/_static/1563898618/sentry/js/ads.js"></script>
+
+  
+
+
+<script>
+Raven.config('https://d4d4681a8b614aad8086f6b4bf0915f5@sentry.paribus.co/1', {
+  release: '8.22.0',
+  whitelistUrls: ["*"]
+}).install();
+Raven.setUserContext({"ip_address":"89.238.135.143"});
+</script>
+
+  
+
+<script>
+  (function() {
+    var SRC = "/_static/1563898618/sentry/dist/pwstrength.js";
+
+    var async_load = function() {
+      var first, s;
+      s = document.createElement('script');
+      s.src = SRC;
+      s.type = 'text/javascript';
+      s.async = true;
+      s.addEventListener('load', function() {
+        if (window.sentrypw) {
+          window.sentrypw.addStrengthIndicator(
+            '#register #id_password',
+            '.password-strength',
+          );
+        }
+      }, false);
+      first = document.getElementsByTagName('script')[0];
+      return first.parentNode.insertBefore(s, first);
+    };
+
+    window.addEventListener('load', async_load, false);
+  })();
+</script>
+
+
+
+  
+  
+</head>
+
+<body class="narrow auth org-login">
+  
+  <div class="app">
+    
+
+    
+
+    
+    
+<div id="blk_alerts" class="messages-container"></div>
+<script>
+$(function(){
+  ReactDOM.render(React.createFactory(Sentry.Alerts)({
+     className: "alert-list"
+  }), document.getElementById('blk_alerts'));
+});
+</script>
+<div id="blk_indicators"></div>
+<script>
+$(function(){
+  ReactDOM.render(React.createFactory(Sentry.Indicators)({
+     className: "indicators-container"
+  }), document.getElementById('blk_indicators'));
+});
+</script>
+
+
+    
+
+    
+    
+    
+
+    
+
+    <div class="container">
+      
+      <div class="content">
+        
+        
+        
+<div class="pattern-bg"></div>
+<section class="org-login">
+  <div class="box box-modal">
+    <div class="box-header">
+      
+        
+          
+        
+        <a href="/">
+          
+            <span class="icon-sentry-logo-full"></span>
+          
+          
+        </a>
+      
+    </div>
+    <div class="box-content with-padding">
+      
+  <div class="pattern-bg"></div>
+  <section class="org-login">
+    
+<div style="padding-bottom: 10px">
+  <div class="align-center">
+    <img src="/_static/1563898618/sentry/images/default-organization-logo.png" class="org-avatar">
+
+    <h3>Sentry</h3>
+  </div>
+
+  
+    <ul class="nav nav-tabs auth-toggle">
+      <li class="active">
+        <a href="#login" data-toggle="tab">Login</a>
+      </li>
+      
+    </ul>
+
+    <div class="tab-content basic-login">
+      <div class="tab-pane active" id="login">
+        <form class="form-stacked" action="" method="post" autocomplete="off">
+          <input type='hidden' name='csrfmiddlewaretoken' value='8b5Ilc9F3ZiwjH2eT44bCcASWsiYIKQv' />
+
+          <input type="hidden" name="op" value="login" />
+
+          
+
+
+          
+            
+
+
+    
+	<div id="div_id_username" class="form-group">
+		
+			<label for="id_username" class="control-label  requiredField">
+				Account<span class="asteriskField">*</span>
+			</label>
+		
+
+        
+
+        
+
+        
+            
+                <div class="controls ">
+                    <input class="textinput textInput form-control" id="id_username" maxlength="128" name="username" placeholder="username or email" type="text" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                </div>
+            
+        
+	</div>
+    
+
+
+          
+            
+
+
+    
+	<div id="div_id_password" class="form-group">
+		
+			<label for="id_password" class="control-label  requiredField">
+				Password<span class="asteriskField">*</span>
+			</label>
+		
+
+        
+
+        
+
+        
+            
+                <div class="controls ">
+                    <input class="textinput textInput form-control" id="id_password" name="password" placeholder="password" type="password" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                </div>
+            
+        
+	</div>
+    
+
+
+          
+
+          <fieldset class="form-actions">
+            <button type="submit" class="btn btn-primary">Login</button> <a class="pull-right" style="margin-top: 9px" href="/account/recover/">Lost your password?</a>
+          </fieldset>
+        </form>
+      </div>
+      <div class="tab-pane" id="register">
+        <form class="form-stacked" action="" method="post" autocomplete="off">
+          <input type='hidden' name='csrfmiddlewaretoken' value='8b5Ilc9F3ZiwjH2eT44bCcASWsiYIKQv' />
+
+          <input type="hidden" name="op" value="register" />
+
+          
+
+
+          
+
+          <div class="password-strength"></div>
+
+          <fieldset class="form-actions">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  
+</div>
+
+  </section>
+
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script>
+  $(function() {
+    $('select').select2({placeholder: '--'});
+  });
+  </script>
+  
+  <script>
+  $('.auto-select').click(function() {
+    if (document.selection) {
+      var range = document.body.createTextRange();
+      range.moveToElementText(this.firstChild);
+      range.select();
+    } else if (window.getSelection) {
+      var range = document.createRange();
+      range.selectNode(this.firstChild);
+      window.getSelection().addRange(range);
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  $(function() {
+    // This is duplicated from <ProjectSelector>
+    $('.project-dropdown').on('shown.bs.dropdown', function(event){
+      $(event.target).find('input[type=text]').focus();
+    });
+  });
+  $(function() {
+    var slideShow = function() {
+
+      var slideWidth = $(".slide").width();
+      var numSlides = 0;
+      var currentSlide;
+
+      // Find all slides
+
+      $(".slide").each(function(i) {
+        numSlides++;
+
+        var slide = i + 1;
+        var isActive;
+
+        if ($(this).hasClass("active")) {
+          isActive = true;
+          currentSlide = slide;
+        }
+
+        $(this).addClass("slide-" + slide );
+
+        // Build dot nav
+
+        $(".dot-nav").append('<li class="'+ (isActive ? "active" : "") + '"><a href="#" class="show-slide" data-show-slide="'+ slide +'"></a></li>')
+      });
+
+      // Input handlers
+
+      $(".show-slide").click(function() {
+        showSlide($(this).attr("data-show-slide"));
+      });
+
+      $(".close").click(function() {
+        $(".welcome-modal").fadeOut();
+      });
+
+      $(".slide-show-next").click(function() {
+        if (currentSlide + 1 <= numSlides) {
+          showSlide(currentSlide + 1);
+        } else {
+          showSlide(1);
+        }
+      });
+
+      $(".slide-show-prev").click(function() {
+        if (currentSlide - 1 != 0) {
+          showSlide(currentSlide - 1);
+        } else {
+          showSlide(numSlides);
+        }
+      });
+
+      this.showSlide = function(location) {
+        currentSlide = location;
+
+        // Clear active items
+        $(".slide").removeClass("active");
+        $(".dot-nav li").removeClass("active");
+
+        // Set new active items
+
+        $(".dot-nav li a[data-show-slide="+ location +"]").parent("li").addClass("active");
+        $(".slide-" + location).addClass("active");
+
+        // Use margin to show slide
+
+        $(".welcome-slides").css("margin-left", -(slideWidth * location) + slideWidth);
+
+        // Animate shit
+
+        $(".slide-" + location + " [data-animate]").addClass("animated");
+      }
+
+      showSlide(1);
+    }
+
+    // $( "body" ).keypress(function( event ) {
+    //   if ( event.which == 96 ) {
+    //      event.preventDefault();
+    //      $(".welcome-modal").fadeIn();
+    //   }
+    // });
+
+    slideShow();
+  });
+  </script>
+  
+
+  
+</body>
+</html>

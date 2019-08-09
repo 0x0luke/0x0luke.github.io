@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Cache-Control: public, max-age=0
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Last-Modified: Wed, 07 Aug 2019 19:12:25 GMT
+Etag: W/"d08-16c6d7f25a8"
+Strict-Transport-Security: max-age=15552000
+Content-Security-Policy: default-src 'self'; script-src 'self' assets.adobedtm.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' *.2o7.net; connect-src 'self' https://identity-api.flickr.com cognito-idp.us-east-1.amazonaws.com *.demdex.net
+X-Frame-Options: DENY
+Date: Thu, 08 Aug 2019 09:28:29 GMT
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade

@@ -1,0 +1,18 @@
+404 Not Found
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Server: cloudflare
+Cf-Ray: 5026701ceb93bfb1-MAN
+Date: Wed, 07 Aug 2019 04:16:55 GMT
+Retry-Count: 0
+Set-Cookie: __cfduid=d6b14f22294d8f155bce8ce0fb523e9bc1565151415; expires=Thu, 06-Aug-20 04:16:55 GMT; path=/; domain=.levelwear-2.shopify.com; HttpOnly
+X-Sorting-Hat-Podid: -1
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=4b25f90b-fc9a-4882-a8a8-b7aec9b38879
+X-Permitted-Cross-Domain-Policies: none
+X-Request-Id: 4b25f90b-fc9a-4882-a8a8-b7aec9b38879
+Content-Type: text/html; charset=utf-8
+X-Download-Options: noopen
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=4b25f90b-fc9a-4882-a8a8-b7aec9b38879
+X-Shopify-Stage: production

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Log in as a Bamboo user - Rackspace Bamboo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <meta name="application-name" content="Bamboo" />
+
+    <link rel="shortcut icon" href="/s/en_US/60209/1/_/images/icons/favicon.ico" type="image/x-icon"/>
+
+    <script type="text/javascript">
+        (function (window) {
+            window.BAMBOO = (window.BAMBOO || {});
+            BAMBOO.contextPath = '';
+            BAMBOO.staticResourcePrefix = '/s/en_US/60209/1/_';
+        })(window);
+    </script>
+
+    
+
+        
+
+
+    <script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["bamboo.web.resources:variables.password-variable-keywords"]="[\u0022password\u0022,\u0022sshKey\u0022,\u0022secret\u0022,\u0022passphrase\u0022]";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\u0022\u0022";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.bamboo.plugins.branchinator:branchinator-resources.known-navigation-sources"]="[\u0022header\u0022,\u0022plan\u0022,\u0022email\u0022]";
+WRM._unparsedData["com.atlassian.bamboo.plugins.branchinator:branchinator-resources.builds-sort-orderings"]="[{\u0022column\u0022:\u0022buildStatus\u0022,\u0022label\u0022:\u0022Build status\u0022,\u0022selected\u0022:false},{\u0022column\u0022:\u0022planName\u0022,\u0022label\u0022:\u0022Plan name\u0022,\u0022selected\u0022:false},{\u0022column\u0022:\u0022completionDate\u0022,\u0022label\u0022:\u0022Completion date\u0022,\u0022selected\u0022:false}]";
+WRM._unparsedData["bamboo.web.resources:bamboo-js.branch-workflow-integration-strategies"]="{\u0022pr\u0022:[\u0022BRANCH_UPDATER\u0022],\u0022manually\u0022:[\u0022BRANCH_UPDATER\u0022,\u0022GATE_KEEPER\u0022],\u0022matching_vcs_branch\u0022:[\u0022BRANCH_UPDATER\u0022,\u0022GATE_KEEPER\u0022],\u0022new_vcs_branch\u0022:[\u0022BRANCH_UPDATER\u0022,\u0022GATE_KEEPER\u0022]}";
+WRM._unparsedData["bamboo.web.resources.common:util-dark-features.enabled-dark-features"]="[\u0022nps.survey.inline.dialog\u0022]";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.rack-data-provider"]="\u0022\u0022";
+</script>
+<link type="text/css" rel="stylesheet" href="/s/c3def8a149e2c3a0ccc3862ed8725730-CDN/en_US/60209/1/e89e970788bd3037a7940753a2386f16/_/download/contextbatch/css/aui,atl.general,-_super/batch.css?analytics-enabled=true&amp;analytics-uploadable=true&amp;bamboo-nps-dark-feature=true&amp;bamboo-nps-non-anonymous-access=true&amp;is-server-instance=true&amp;nps-acknowledged=true&amp;nps-enabled=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/3e9e56d0563a7ac16fda471dca0f17fb-CDN/en_US/60209/1/e89e970788bd3037a7940753a2386f16/_/download/contextbatch/css/aui,atl.general,-_super/batch.css?conditionalComment=lt+IE+9"  media="all">
+<![endif]-->
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/60209/1/cd50388c6b28f70ebf79d85cd92cd577/_/download/contextbatch/js/_super/batch.js" ></script>
+<script type="text/javascript" src="/s/90ba39c7e3aec9968522b4482e152ad4-CDN/en_US/60209/1/e89e970788bd3037a7940753a2386f16/_/download/contextbatch/js/aui,atl.general,-_super/batch.js?analytics-enabled=true&amp;analytics-uploadable=true&amp;bamboo-nps-dark-feature=true&amp;bamboo-nps-non-anonymous-access=true&amp;is-server-instance=true&amp;locale=en-US&amp;nps-acknowledged=true&amp;nps-enabled=true" ></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/60209/1/e89e970788bd3037a7940753a2386f16/_/download/contextbatch/js/aui,atl.general,-_super/batch.js?conditionalComment=lt+IE+9" ></script>
+<![endif]-->
+
+
+
+<meta name="decorator" content="login" />
+    <meta name="topCrumb" content="login" />
+</head>
+<body class="aui-layout aui-theme-default dec_login aui-page-focused aui-page-focused-medium">
+        <ul id="assistive-skip-links" class="assistive">
+            <li><a href="#main-nav">Skip to navigation</a></li>
+            <li><a href="#content">Skip to content</a></li>
+        </ul>
+        <div id="page">
+<header id="header" role="banner">
+<section class="notifications">
+    
+    <div id="system-state-banner" class="aui-message warning" style="display: none;">
+        
+        <span id="system-state-banner-info"></span>
+        <span class="aui-icon icon-warning"></span>
+    </div>
+
+</section>    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger href="#app-switcher"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true"><div role="application"><div class="app-switcher-loading">Loading&hellip;</div></div></div><script>
+            (function (NL) {
+                var initialise = function () {
+                    // For some milestones of AUI, the atlassian soy namespace was renamed to aui. Handle that here by ensuring that window.atlassian is defined.
+                    window.atlassian = window.atlassian || window.aui;
+                    new NL.AppSwitcher({
+                        dropdownContents: '#app-switcher'
+                    });
+                };
+                if (NL.AppSwitcher) {
+                    initialise();
+                } else {
+                    NL.onInit = initialise;
+                }
+            }(window.NL = (window.NL || {})));
+            window.NL.environment = {isUserAdmin: false, isAppSuggestionAvailable: false};</script></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-bamboo"><a href="/"><span class="aui-header-logo-device">Atlassian Bamboo</span></a></h1><ul class="aui-nav"><li id="system_projects" ><a href="/allProjects.action" id="allProjects" >Projects</a></li><li id="system_build_menu" >                    <a class=" aui-dropdown2-trigger" aria-controls="bamboo.global.header-build.menu" aria-haspopup="true" role="button" title="Build" tabindex="0" data-aui-trigger>Build</a><div id="bamboo.global.header-build.menu" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true"><div role="application"><div class="aui-dropdown2-section"><ul class="aui-list-truncate"><li><a href="/allPlans.action" id="allPlansTab" >All build plans</a></li><li><a href="/currentActivity.action" id="currentTab" >Build activity</a></li></ul></div></div></div></li><li id="system_deploy_menu" >                    <a class=" aui-dropdown2-trigger" aria-controls="bamboo.deployments-deploy.menu" aria-haspopup="true" role="button" title="Deploy" tabindex="0" data-aui-trigger>Deploy</a><div id="bamboo.deployments-deploy.menu" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true"><div role="application"><div class="aui-dropdown2-section"><ul class="aui-list-truncate"><li><a href="/deploy/viewAllDeploymentProjects.action" id="deployments" accesskey="D" >All Deployment Projects</a></li></ul></div></div></div></li></ul></div><div class="aui-header-secondary"><ul class="aui-nav"><li id="system_help_menu" >                    <a class=" aui-dropdown2-trigger" aria-controls="bamboo.global.header-help.menu" aria-haspopup="true" role="button" title="Help" tabindex="0" data-aui-trigger><span class="aui-icon aui-icon-small aui-iconfont-help">Help</span></a><div id="bamboo.global.header-help.menu" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true"><div role="application"><div class="aui-dropdown2-section"><ul class="aui-list-truncate"><li><a href="https://confluence.atlassian.com/display/BAMBOO/Bamboo+Documentation+Home" id="bamboo-on-premises-help"  rel="help">Online help</a></li><li><a href="/about.action" id="about-link"  rel="about">About Bamboo</a></li></ul></div></div></div></li></ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+
+
+</header><!-- END #header -->
+
+
+<section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content"><header>
+
+<h1>Log in</h1></header>
+    
+
+
+
+<form id="loginForm" name="loginForm" action="/userlogin.action" method="post" class="aui">
+
+<div class="form-content-container">
+
+
+
+
+<input type="hidden" name="os_destination" value="/start.action" id="loginForm_os_destination"/>
+
+<div id="fieldArea_loginForm_os_username" class="field-group">
+
+<label for="loginForm_os_username" id="fieldLabelArea_loginForm_os_username">Username</label>    
+<input type="text" name="os_username" value="" id="loginForm_os_username" class="text " autofocus/>
+
+
+<script>
+(function (field) {
+    if (field['autofocus'] !== true) { field.focus(); }
+}(document.getElementById('loginForm_os_username')));
+</script>
+
+</div>
+<div id="fieldArea_loginForm_os_password" class="field-group">
+
+<label for="loginForm_os_password" id="fieldLabelArea_loginForm_os_password">Password</label>    
+<input type="password" name="os_password" value="" id="loginForm_os_password" class="text password"/>
+
+
+
+</div>
+<div class="field-group">
+
+    <div id="fieldArea_os_cookie_id" class="checkbox">
+
+            
+<input type="checkbox" name="os_cookie" value="true" id="os_cookie_id" class="checkbox" accesskey="R"/>
+<input type="hidden" name="checkBoxFields" value="os_cookie" />
+<label for="os_cookie_id" id="label_os_cookie_id"><u>R</u>emember my login on this computer</label>
+
+
+    </div>
+</div></div><!-- END .form-content-container -->
+
+    <div class="buttons-container">
+        <div class="buttons">
+<input type="submit" name="save" value="Log in" class="assistive" id="loginForm_defaultSave" tabindex="-1"/>    
+<input type="submit" name="save" value="Log in" class="aui-button aui-button-primary" id="loginForm_save" accesskey="S"/>
+<a class="cancel" accesskey="`" href="/forgotPassword.action">Can&rsquo;t access your account?</a>
+        </div>
+    </div>
+        <input type="hidden" name="atl_token" value="bf31bc458cc270631f2f1ab167f678ba7aa5dbed" />
+</form></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section>
+            <footer id="footer" role="contentinfo" class="has-notifications">
+                <section class="notifications">
+    <div id="license-message" class="aui-message warning">
+        <p class="title">
+            <span class="aui-icon icon-warning"></span>
+            <strong>Unleash the full power of Bamboo - <a href="http://www.atlassian.com/software/bamboo/pricing?utm_source=starter&sid=B57B-V4HQ-Q78Z-BGBS">Upgrade</a> to unlimited jobs and remote agents today! (0 free jobs remaining).</strong>
+        </p>
+        
+    </div>
+                </section>
+            <div class="footer-body">
+                <p><a href="http://www.atlassian.com/software/bamboo/">Continuous integration</a> powered by <a href="http://www.atlassian.com/software/bamboo/">Atlassian Bamboo</a> version 6.2.2 build 60209 - <time datetime="2017-10-13T10:08:30-0500" title="13 Oct 2017 10:08 AM">13 Oct 17</time>
+                </p>
+                <ul>
+                    <li><a href="https://support.atlassian.com/contact/">Report a problem</a></li><li><a href="http://jira.atlassian.com/secure/CreateIssue.jspa?pid=11011&amp;issuetype=4">Request a feature</a></li><li><a href="http://www.atlassian.com/about/contact.jsp">Contact Atlassian</a></li>                </ul>
+                <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+            </div> <!-- END .footer-body -->
+        </footer> <!-- END #footer -->
+    </div> <!-- END #page -->
+    </body>
+</html>

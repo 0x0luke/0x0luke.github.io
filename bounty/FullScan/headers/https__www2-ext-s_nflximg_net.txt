@@ -1,0 +1,18 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Expires: 0
+Pragma: no-cache
+Via: 1.1 i-050c43a321ca507b2 (us-west-2)
+X-Robots-Tag: index
+X-Xss-Protection: 1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport
+Cache-Control: no-cache, no-store, must-revalidate
+Server: nq_website_core-prod-release 525bd696-4062-41ef-98be-b25325901342
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Netflix.proxy.execution-Time: 158
+X-Originating-Url: https://www.netflix.com/gb/
+Date: Thu, 08 Aug 2019 11:21:02 GMT
+Set-Cookie: flwssn=8fdbc456-0b8c-420f-9f08-e09e3e25c0fa; Domain=.netflix.com; Path=/; Expires=Thu, 08 Aug 2019 14:21:02 GMT memclid=30fdc6cc-e146-4730-aaa5-57c4ff44544b; Max-Age=31536000; Expires=Fri, 7 Aug 2020 11:21:02 GMT; Path=/; Domain=.netflix.com
+Strict-Transport-Security: max-age=31536000
+X-Netflix.nfstatus: 1_1
+Retry-Count: 0

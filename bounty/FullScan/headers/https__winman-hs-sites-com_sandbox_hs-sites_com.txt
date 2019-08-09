@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: s-maxage=0,max-age=0
+Vary: Accept-Encoding
+X-Trace: 2BF6B8F2B40B1851150C9A366AA627688E411BD0D6000000000000000000
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Set-Cookie: __cfduid=d5c8da2db6fce31a270e42945cf157e091565159722; expires=Thu, 06-Aug-20 06:35:22 GMT; path=/; domain=.www.winman.com; HttpOnly __cfruid=fc0750ffaf1450f6668858ac1036b6e953a89f81-1565159722; path=/; domain=.www.winman.com; HttpOnly
+Access-Control-Allow-Credentials: false
+X-Hs-Hub-Id: 210990
+Retry-Count: 0
+X-Powered-By: HubSpot
+Date: Wed, 07 Aug 2019 06:35:22 GMT
+Cf-Cache-Status: MISS
+Cf-Ray: 50273ae99fc5bfed-MAN
+Edge-Cache-Tag: CT-4106906672,CG-210990,P-210990,L-4065523221,L-4086892303,L-4187520250,L-4232776475,E-3997447854,E-4085838726,E-4113755148,E-4194878100,MENU-4058128126,PGS-ALL,SW-4,SD-40
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs-fs/css/210990/hub_generated/template_assets/1555953957113/combined-css-ef8ede92c3c2769ff1ea5ed602787b76.css>; rel=preload; as=style </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script </_hcms/forms/v2.js>; rel=preload; as=script
+X-Hs-Cache-Config: BrowserCache-0s-EdgeCache-0s
+X-Hs-Content-Id: 4106906672

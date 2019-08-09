@@ -1,0 +1,24 @@
+200 OK
+X-Served-By: cache-lhr6327-LHR
+X-Cache: HIT, MISS
+X-Cache-Hits: 4, 0
+Content-Language: en
+Fastly-Soc-X-Request-Id: d416808ecebee8803fc4a05b6dd193e0cf08f377b0145fd83c161db4e6d5ddfb
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Ua-Compatible: IE=edge,chrome=1
+X-Timer: S1565264324.389541,VS0,VE555
+Content-Type: text/html; charset=utf-8
+Link: <http://about.pinterest.com/sites/about/files/search_meta_tag.jpg>; rel="image_src",<https://about.pinterest.com/en>; rel="canonical",<https://about.pinterest.com/en>; rel="shortlink"
+X-Content-Type-Options: nosniff
+X-Request-Id: de5d0430675a2e2a7cdef1f31b9b182e2299b44a283386574f9da67ea3238b74
+Date: Thu, 08 Aug 2019 11:38:44 GMT
+Cache-Control: public, max-age=3600
+Etag: "1565264231-1"
+Accept-Ranges: bytes
+Age: 93
+Vary: Cookie,Accept-Encoding
+Set-Cookie: _ss_country_code=GB; Secure; Path=/
+Retry-Count: 0
+Last-Modified: Thu, 08 Aug 2019 11:37:11 GMT
+X-Frame-Options: SameOrigin

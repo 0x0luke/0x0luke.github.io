@@ -1,0 +1,20 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+P3p: CP="This is not a P3P policy. See https://www.pinterest.com/_/_/help/articles/pinterest-and-p3p for more info."
+Vary: User-Agent, Cookie, Accept-Encoding
+X-Pinterest-Rid: 2106373894837815
+Date: Thu, 08 Aug 2019 11:40:23 GMT
+Content-Security-Policy: connect-src 'self'   *.pinimg.com *.pinterest.com *.branch.io *.facebook.com accounts.google.com *.dropboxapi.com cdn.ampproject.org *.cdn.ampproject.org pinterest-aberdeen.s3.amazonaws.com pinterest-media-upload.s3.amazonaws.com pinterest-poughkeepsie.s3.amazonaws.com pinterest-waterloo.s3.amazonaws.com *.cedexis.com *.cedexis-radar.net *.zendesk.com *.zdassets.com wss://*.zopim.com *.zopim.com blob: *.adyen.com *.adyenpayments.com; media-src 'self' *.pinimg.com blob: data:; object-src 'self'; prefetch-src *; script-src 'nonce-XMHHaKeOfc' 'strict-dynamic' 'report-sample' 'self'  *.pinterest.com *.pinimg.com *.google.com connect.facebook.net *.google-analytics.com *.accountkit.com *.facebook.com *.googletagmanager.com *.bnc.lt bnc.lt *.branch.io *.yozio.com cdn.ampproject.org *.cdn.ampproject.org radar.cedexis.com *.cedexis-test.com static.zdassets.com ekr.zdassets.com *.zopim.com *.zopim.org *.zopim.io 'unsafe-inline' 'unsafe-eval' *.adyen.com *.adyenpayments.com; base-uri 'none'; report-uri /_/_/csp_report/
+X-Upstream-Env: python node
+X-Envoy-Upstream-Service-Time: 205
+Content-Type: text/html; charset=utf-8
+X-Upstream-Proxy: pythonvianode
+Pinterest-Generated-By: coreapp-webapp-prod-0a010c8e, coreapp-webapp-prod-0a010c8e coreapp-webapp-prod-0a010c8e coreapp-webapp-prod-0a010c8e
+Set-Cookie: _auth=0; expires=Sun, 02-Aug-2020 11:40:22 GMT; httponly; Max-Age=31103999; Path=/; secure csrftoken=DgYrWuq4KYiXXk4lHrTZsXDsyrRG6roI; expires=Thu, 06-Aug-2020 11:40:22 GMT; Max-Age=31449600; Path=/; secure _pinterest_sess=TWc9PSZxNElybmZRdlpKRjJGWERoWHkwbXpTRHNGQnpNSllGRmFOZ052Q2xHUWZjM3EzaVZTcUtCeGYrWnFDRytaQkh0RFVwaFhiS20zSERXM2RSeHhUTitFQzlXTUFmN2xlb1VuVFFsYy9WV2VKSGZ2MVkwcVJzTnJXbzlhRnh3dWxpL1NQWVBJUnRVRytrL0xuTC9pSktoamc9PSZBd0JnUHlUZlB1M3dLYXJDMFRGaVdwL3hlUEE9; expires=Sun, 02-Aug-2020 11:40:22 GMT; httponly; Max-Age=31103999; Path=/; secure _routing_id="dcfca295-9ed1-4147-8335-d4430ea07ab9"; Max-Age=86400; Path=/; HttpOnly
+X-Cdn: akamai
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+X-Ua-Compatible: IE=edge
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Pinterest-Version: d28c701

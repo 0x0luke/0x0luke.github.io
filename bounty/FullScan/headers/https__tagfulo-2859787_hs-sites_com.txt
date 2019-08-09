@@ -1,0 +1,13 @@
+404 Not Found
+Server: cloudflare
+Content-Type: text/html;charset=utf-8
+Access-Control-Allow-Credentials: false
+Vary: Accept-Encoding
+Date: Thu, 08 Aug 2019 09:59:42 GMT
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Retry-Count: 0
+Cf-Ray: 5030a39a1d1bbfe3-MAN
+X-Trace: 2B80FC3E2D1E73B9F5385EF9BDD09A2DD62FCFB8D2000000000000000000
+Set-Cookie: __cfduid=dc0c42426f89fef1a9b3ac696a4f4467b1565258382; expires=Fri, 07-Aug-20 09:59:42 GMT; path=/; domain=.hs-sites.com; HttpOnly __cfruid=dca4ffb01f2c8027531bc48035a75ffe333f69bc-1565258382; path=/; domain=.hs-sites.com; HttpOnly
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Hubspot-Notfound: true

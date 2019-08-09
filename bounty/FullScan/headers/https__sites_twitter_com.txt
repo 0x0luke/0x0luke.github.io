@@ -1,0 +1,13 @@
+200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-QscEoekfBcdjHNrOl3G/Zg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /cspreport
+Expires: Mon, 01-Jan-1990 00:00:00 GMT
+Retry-Count: 0
+Server: GSE
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Date: Thu, 08 Aug 2019 14:58:27 GMT
+Alt-Svc: quic=":443"; ma=2592000; v="46,43,39"
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff

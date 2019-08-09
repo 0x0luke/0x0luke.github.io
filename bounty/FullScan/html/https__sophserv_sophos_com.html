@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sophos ID - Login</title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.6.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet">
+    
+    
+    <link rel="shortcut icon" href="/static/images/sophosfavicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/static/css/sid_login.css?2940b489">
+    
+    
+
+    
+    <!--[if lt IE 9]>
+    
+    <script type="text/javascript" src="/static/js/sid_fixes.js?daf6b5ec"></script>
+    
+    <![endif]-->
+    
+    
+    
+    
+    <script type="text/javascript" src="/static/js/sid_login.js?96e92a8d"></script>
+    
+    
+    <script type="text/javascript" src="/static/js/sid_login_en.js?6132e463"></script>
+    
+    <script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1777052651']);
+    _elqQ.push(['elqTrackPageView']);
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//img06.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+</script>
+    
+<script type="text/javascript">
+var csrf_token = "Ijg5MzlkM2U1ZTUyNzMzZGNmOTNmNmIwZDZkZGQ2NjYzNTRkOGZiNjYi.XUwxOw.e8yIrVNDpMaLYQwvvUayQ0f3kNU";
+
+jQuery.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrf_token);
+        }
+    }
+});
+</script>
+    
+    <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.6.0/js/okta-sign-in-no-jquery.js" type="text/javascript"></script>
+    
+
+    <noscript>
+        <style>
+            .hide-no-js {
+                display: none;
+            }
+            #no-js-warning {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+
+  </head>
+  <body class="body-anon">
+    
+<div id="no-js-warning" class="alert alert-danger" role="alert">
+    <b>Looks like you have JavaScript turned off! Please enable it to access Sophos ID.</b>
+</div>
+
+    
+
+<div id="sid-container" class="hide-no-js">
+
+    <div class="row">
+        <div class="col-sm-12">
+            
+            <div class="panel panel-primary center-box">
+                <div class="panel-heading text-center">
+                    <img class="logo-sophos" src="/static/images/logo-sophos.svg" alt="Sophos Logo">
+                </div>
+            
+                <div class="panel-body">
+                
+    <h4 class="text-center">Sign in with your Sophos ID.</h4>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="okta-login-container"></div>
+            <script type="text/javascript">
+            jQuery(function($) {
+                var baseUrl = 'https://sophos.okta.com';
+                var profileUrl = 'https://id.sophos.com/web/profile';
+                var propertiesPath = '/static/okta/i18n/';
+                var langCode = 'en';
+
+                function getI18nJson(type, countryCode) {
+                    // English does not use the language code in the filename
+                    var suffix = countryCode === 'en' ? '' : '_' + countryCode;
+                    return $.getJSON(propertiesPath + type + suffix + '.json')
+                    .then(function (res) {
+                        return res;
+                    });
+                }
+
+                function getParameterByName(name, url) {
+                    if (!url) url = window.location.href;
+                    name = name.replace(/[\[\]]/g, "\\$&");
+                    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                        results = regex.exec(url);
+                    if (!results) return null;
+                    if (!results[2]) return '';
+                    return decodeURIComponent(results[2].replace(/\+/g, " "));
+                }
+
+                function successCallback(res) {
+                    if (res.status === 'SUCCESS') {
+                        if (getParameterByName('fromURI') == null) {
+                            res.session.setCookieAndRedirect(profileUrl);
+                        } else {
+                            res.session.setCookieAndRedirect(getParameterByName('fromURI'));
+                        }
+                    }
+                }
+
+                $('.language-switcher .dropdown-menu a').click(function () {
+                    var newLang = $(this).attr('data-lang-code');
+                    var re = new RegExp("[a-z]{2}(_[A-Z]{2})?");
+                    var pathArray = window.location.pathname.split('/').filter(function(x) { return x != ""; });
+                    var newPathname = '';
+                    if (pathArray.length > 0 && pathArray[pathArray.length-1].match(re)) {
+                        pathArray.pop();
+                        pathArray.push(newLang);
+                        newPathname = pathArray.join('/');
+                    } else {
+                        newPathname = [window.location.pathname, newLang].join('/');
+                    }
+                    var newHref = window.location.protocol + '//' + window.location.host + '/'
+                        + newPathname + window.location.search;
+                    window.location.href = newHref;
+                });
+
+                $.when(getI18nJson('country', langCode), getI18nJson('login', langCode))
+                .then(function (countryLabels, loginLabels) {
+                    // Bootstrap the Okta Sign-In Widget
+                    var oktaSignIn = new OktaSignIn({
+                        baseUrl: baseUrl,
+                        country: countryLabels,
+                        labels: loginLabels
+                    });
+                    oktaSignIn.renderEl(
+                        { el: '#okta-login-container' },
+                        successCallback
+                    );
+                });
+
+                
+
+                
+                $('#okta-sign-in .o-form-button-bar').waitUntilExists(function() {
+                    var $btn = $('.button', this);
+                    var btn_text = $btn.val();
+                    $btn.replaceWith('<button class="btn btn-success" data-type="save" type="submit"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>' + btn_text + '</button>');
+                });
+
+                
+                $('#okta-sign-in span.input-icon').waitUntilExists(function() {
+                    $(this).remove();
+                });
+
+                
+                $('#okta-sign-in .o-form-input-name-username').waitUntilExists(function() {
+                    $('input[name=username]', this)
+                        .attr('placeholder', "Email Address")
+                        .addClass('form-control');
+                    $('span.input-tooltip', this)
+                        .removeClass().addClass('input-tooltip glyphicon glyphicon-envelope')
+                        .qtip('destroy', true);
+                });
+                $('#okta-sign-in .o-form-input-name-password').waitUntilExists(function() {
+                    $('input[name=password]', this)
+                        .attr('placeholder', "Password")
+                        .addClass('form-control');
+                    $('span.input-tooltip', this)
+                        .removeClass().addClass('input-tooltip glyphicon glyphicon-lock')
+                        .qtip('destroy', true);
+                });
+            });
+            </script>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-xs-6 text-left">
+            <a id="create-sophos-id" name="create-sophos-id" href="https://id.sophos.com/web/register/">Create Sophos ID</a>
+        </div>
+        <div class="col-xs-6 text-right">
+            <a id="forgot-password" name="forgot-password" href="https://id.sophos.com/web/forgot_password/">Forgot Password</a>
+        </div>
+    </div>
+
+                </div>
+                
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-6 text-left">
+                            <ul class="list-inline">
+                                <li>
+                                    
+
+<div class="dropup language-switcher">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        English&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        <li><a href="https://id.sophos.com/web/change_language/de" data-lang-code="de">Deutsch</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/en" data-lang-code="en">English</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/es" data-lang-code="es">Español</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/fr" data-lang-code="fr">Français</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/it" data-lang-code="it">Italiano</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/ja" data-lang-code="ja">日本語</a></li>
+        
+        <li><a href="https://id.sophos.com/web/change_language/zh_CN" data-lang-code="zh_CN">简体中文</a></li>
+        
+    </ul>
+</div>
+
+                                </li>
+                                <li>
+                                    
+                                    <a id="login" name="login" href="https://id.sophos.com">Sign In</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            
+                            <a class="right-footer-link" href="https://id.sophos.com/web/sophos_id">Sophos ID Help</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container-fluid sid-footer">
+                <p>&copy; 1997 - 2019 Sophos Ltd. All rights reserved.</p>
+                <ul class="list-inline">
+                    <li><a href="https://id.sophos.com/web/legal/">Legal</a></li>
+                    <li><a href="https://id.sophos.com/web/privacy/">Privacy</a></li>
+                    <li><a href="https://id.sophos.com/web/cookie_information/">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+200 OK
+Date: Thu, 08 Aug 2019 11:15:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self' data: https://*.typekit.net https://*.typekit.com https://csi.gstatic.com https://www.google.com https://captcha.guard.qcloud.com https://captcha.gtimg.com;  style-src 'self' 'unsafe-inline' https://use.typekit.com https://captcha.gtimg.com;  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.typekit.com/ https://maps.googleapis.com https://www.google.com https://www.gstatic.com https://captcha.guard.qcloud.com https://captcha.gtimg.com; report-uri /nmr/browser_metrics/log_csp_report
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _session_id_for_n143=024dc54eb419712ded803ae783b34eee; path=/; secure; HttpOnly
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Server: nginx
+X-Frame-Options: sameorigin
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: "30cf73436172f59d92b281af8fb32b05"
+X-Runtime: 0.024361
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Request-Id: 736cd0fd9cf26fdca78e9eeef6155ee3

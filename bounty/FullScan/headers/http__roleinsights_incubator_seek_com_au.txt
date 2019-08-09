@@ -1,0 +1,12 @@
+200 OK
+Last-Modified: Tue, 06 Aug 2019 05:00:00 GMT
+Cache-Control: Cache-Control public, must-revalidate, proxy-revalidate, max-age=0
+Server: AmazonS3
+X-Cache: Miss from cloudfront
+Content-Type: text/html
+Retry-Count: 0
+Date: Wed, 07 Aug 2019 04:16:37 GMT
+Via: 1.1 a7a209acee14726bdc56f2b8600564e0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LHR3-C2
+X-Amz-Cf-Id: s69KFW0T8AKN_5f-h3hljchaMgv90ImPhdcpK3-5iAcyo_yKTA6qqw==
+Vary: Accept-Encoding

@@ -1,0 +1,13 @@
+200 OK
+P3p: policyref="/w3c/p3p.xml", CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT", CP="CAO PSA OUR"
+Server: openresty
+Date: Wed, 07 Aug 2019 05:40:02 GMT
+Etag: W/"9a843f20677a52ca79af903123147af0"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 1294fcde-a570-4bb7-978e-f12745760209
+Status: 200 OK
+X-Runtime: 0.002272
+X-Backend-Server: 0fc099299147
+X-Frame-Options: ALLOWALL
+Access-Control-Allow-Credentials: true
+Retry-Count: 0

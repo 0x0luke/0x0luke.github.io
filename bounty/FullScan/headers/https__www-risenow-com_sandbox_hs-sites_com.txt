@@ -1,0 +1,20 @@
+200 OK
+X-Trace: 2B8D3C7401822EDE95326C6A7C6C6052FD8A77C17F000000000000000000
+Date: Wed, 07 Aug 2019 06:40:10 GMT
+Access-Control-Allow-Credentials: false
+X-Hs-Content-Id: 5416116197
+X-Hs-Hub-Id: 2988238
+X-Powered-By: HubSpot
+X-Robots-Tag: none
+Set-Cookie: __cfduid=df68ccb3932eb4276d76b12d64c3f76ad1565160009; expires=Thu, 06-Aug-20 06:40:09 GMT; path=/; domain=.hs-sites.com; HttpOnly __cfruid=9f6870cbed1c9424e9e1e26b915b096eaa72e95e-1565160010; path=/; domain=.hs-sites.com; HttpOnly
+X-Hs-Combine-Css: Retry
+Retry-Count: 0
+Cf-Ray: 502741ed1eb9bfe8-MAN
+Server: cloudflare
+Edge-Cache-Tag: CT-5416116197,CG-2988238,P-2988238,L-5404913233,L-5404937651,L-5405168821,CW-5406744338,CW-5407039562,E-5404912812,E-5404913228,MENU-5405182145,PGS-ALL,SW-3,SD-38
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Link: </hs/hsstatic/HubspotToolsMenu/static-1.37/js/index.js>; rel=preload; as=script </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.3/bundles/project.js>; rel=preload; as=script
+Vary: Accept-Encoding
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-0s
+Content-Type: text/html;charset=utf-8
+Cache-Control: s-maxage=0,max-age=5

@@ -1,0 +1,18 @@
+404 Not Found
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Status: 404 Not Found
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Set-Cookie: has_recent_activity=1; path=/; expires=Wed, 07 Aug 2019 14:05:57 -0000 _gh_sess=Qjd6T1VRQU5Zc2FKSmFCOFlFcXpkbFBRNmZCVDNhZWlGVUJRNDRsVjBHL2ZWVFExQXdlVFUrbGZ0RUhzaGQyUm94M3lHVGlnSldVV3lja3dLaUlyelNGM2ZRTE1heHhBZDI2emJHc3VvYzk3R2UzZHdYSjlFTkMwZXZ3aWtiUXlQcXFseGY0TlRBR3JSTFFmbzBaYUE4OGlHby8ycjFxdlU1bWd5NzloaFU2OVp2VituQ1d4amxzTUtCTzVaREhJMGsySVN1UFd2VCtjajNJMmh2bWxYbkMrN2pXejg2SnlXcWVPYmx6RVlVVko5TTZlWEZFeU02cDREeUE3eE4weWF1bmcrTXJCbzZTd3U3WEdTUHg2Mnc9PS0tSVoxZWNmWXU3ckhDRS9sRGtGSDBHdz09--4e7c200dcbe97fb791e53786b1f62a09e37adb48; path=/; secure; HttpOnly
+X-Github-Request-Id: BB8A:2C02A:540929:81294A:5D4ACCB5
+Server: GitHub.com
+Vary: X-PJAX
+Cache-Control: no-cache
+X-Request-Id: 5ecbda99-2cb3-4947-aca5-b92b427d0ef4
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+Expect-Ct: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com wss://live.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com
+Date: Wed, 07 Aug 2019 13:05:58 GMT

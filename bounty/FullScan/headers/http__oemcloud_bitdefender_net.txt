@@ -1,0 +1,15 @@
+200 OK
+Server: nginx
+Retry-Count: 0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; frame-src *; img-src * data: blob:; font-src 'self' data:; media-src *; connect-src *
+X-Frame-Options: Sameorigin DENY
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Date: Thu, 08 Aug 2019 07:17:47 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: ocsokduwftmq=4eotcdj7i5p3m9hknqp8emqe06; path=/; HttpOnly oc_sessionPassphrase=faJufiuMsh5hFk9x6Ms2ix5%2BnyFVkh0iqygS1iHisWrwxE0sig9b7%2BI%2F2B58VaMPdGAyXhEjhQYikdqIODCxFegbV6pIFLYEuNW%2Fq91q9Xx6QOBFeq8DusbVDqZntomZ; path=/; secure; httponly
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff nosniff
+X-Robots-Tag: none
+Strict-Transport-Security: max-age=31536000; includeSubDomains

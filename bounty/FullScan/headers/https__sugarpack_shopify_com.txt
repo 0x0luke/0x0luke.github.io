@@ -1,0 +1,19 @@
+404 Not Found
+X-Permitted-Cross-Domain-Policies: none
+X-Dc: gcp-us-east1,gcp-us-central1,gcp-us-central1
+Cf-Ray: 503228818bd7d21c-MAN
+Retry-Count: 0
+X-Shopify-Stage: production
+X-Download-Options: noopen
+Content-Type: text/html; charset=utf-8
+X-Sorting-Hat-Podid: -1
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block; report=/xss-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=77b2b892-421d-43c7-9b99-217d8ab33bd5
+X-Request-Id: 77b2b892-421d-43c7-9b99-217d8ab33bd5
+Server: cloudflare
+Set-Cookie: __cfduid=d3b211755d4ad3f3e2491b1bf2725ca5e1565274311; expires=Fri, 07-Aug-20 14:25:11 GMT; path=/; domain=.sugarpack.shopify.com; HttpOnly
+Content-Security-Policy: frame-ancestors 'none'; report-uri /csp-report?source%5Baction%5D=index&source%5Bapp%5D=Shopify&source%5Bcontroller%5D=storefront_section%2Fshop&source%5Bsection%5D=storefront&source%5Buuid%5D=77b2b892-421d-43c7-9b99-217d8ab33bd5
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Date: Thu, 08 Aug 2019 14:25:12 GMT

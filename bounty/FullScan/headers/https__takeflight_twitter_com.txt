@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html
+Date: Thu, 08 Aug 2019 14:58:34 GMT
+X-Xss-Protection: 0
+Cache-Control: max-age=0
+Content-Security-Policy: default-src 'self' ; connect-src 'self'	https://syndication.twitter.com https://s1259914507.t.eloqua.com https://www.google-analytics.com; font-src 'self' https://*.twimg.com https://*.twitter.com data:; frame-src 'self' https://twitter.com https://*.twitter.com https://www.google.com; img-src 'self' https://*.twimg.com https://*.twitter.com https://www.google-analytics.com https://cdn.cms-twdigitalassets.com https://s1259914507.t.eloqua.com https://linkedin.com https://www.linkedin.com https://*.ads.linkedin.com https://t.co/i/adsct data:; media-src 'self' https://*.twimg.com https://*.twitter.com https://cdn.cms-twdigitalassets.com; object-src 'self' ; script-src 'self' 'sha256-ppW1Vv+qSVcs+/pIj1ZXvMiCLoyHyCdRqtDMeK9fQ9w=' 'sha256-fQA5TUUFOgZ9EqMDjFVCpyabQhMDT+xAqFnjFxdGfbc=' https://*.twimg.com https://*.twitter.com https://static.ads-twitter.com https://snap.licdn.com/li.lms-analytics/insight.min.js https://*.ads.linkedin.com https://linkedin.com/csp https://www.linkedin.com/csp; style-src 'self' 'unsafe-inline' 	https://*.twimg.com https://*.twitter.com; report-uri https://twitter.com/i/csp_report; frame-ancestors 'self'
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: 6f12b246cfcbc84b3edf642674492c98
+X-Frame-Options: SAMEORIGIN
+X-Response-Time: 117
+Retry-Count: 0
+Age: 53714
+Expires: Thu, 08 Aug 2019 14:58:34 GMT
+Server: tsa_f

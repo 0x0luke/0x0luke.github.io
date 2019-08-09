@@ -1,0 +1,19 @@
+200 OK
+Set-Cookie: __cfduid=d02ee48a6b6a5e9656770985d33e388271565276490; expires=Fri, 07-Aug-20 15:01:30 GMT; path=/; domain=.www.madrills.com; HttpOnly; Secure _session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTc4ZThjYTAyZGI5YThmNjYxYjA3Y2QyMzcxNTdiNTRlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMStMa0k3V2R5Y1g2bUVRdnI3aFd0Z0hHQ2RHeTFjNHJDSDFPZEwxWVRKaVE9BjsARg%3D%3D--d7532a734db6d7182b7750b041680413f9e120f6; domain=.madrills.com; path=/; expires=Sat, 08-Aug-2020 15:01:30 GMT; secure; HttpOnly
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Phusion Passenger
+Date: Thu, 08 Aug 2019 15:01:30 GMT
+X-Runtime: 0.144035
+Via: 1.1 vegur
+Retry-Count: 0
+X-Request-Id: 4ff061eb-3853-431c-b461-d3d79584de38
+X-Ua-Compatible: IE=Edge,chrome=1
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Status: 200 OK
+X-Rack-Cache: miss
+Cf-Ray: 50325db04f33d20c-MAN
+Cache-Control: max-age=0, private, must-revalidate
+P3p: CP="ALL DSP COR CURa ADMa DEVa OUR IND COM NAV"

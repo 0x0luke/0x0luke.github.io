@@ -1,0 +1,11 @@
+200 OK
+Content-Security-Policy: script-src 'self'
+Content-Type: text/html
+Etag: "42974c42745de35e021580c7d363afb02f3329a1"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+Date: Thu, 08 Aug 2019 09:28:22 GMT

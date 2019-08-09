@@ -1,0 +1,25 @@
+200 OK
+X-Ua-Compatible: IE=edge
+Content-Language: en
+Expires: 0
+Pragma: no-cache
+X-Robots-Tag: none
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=315360000
+Public-Key-Pins-Report-Only: pin-sha256="r5EfzZxQVvQpKo3AgYRaT7X2bDO/kj3ACwmxfdT2zt8="; pin-sha256="MaqlcUgk2mvY/RFSGeSwBRkI+rZ6/dxe/DuQfBT/vnQ="; pin-sha256="72G5IEvDEWn+EThf3qjR7/bQSWaS2ZSLqolhnO6iyJI="; pin-sha256="rrV6CLCCvqnk89gWibYT0JO6fNQ8cCit7GGoiVTjCOg="; max-age=60; report-uri="https://okta.report-uri.io/r/default/hpkp/reportOnly"
+Vary: Accept-Encoding
+P3p: CP="HONK"
+X-Rate-Limit-Limit: 850
+X-Rate-Limit-Reset: 1565254752
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store
+Set-Cookie: ADRUM_BTa=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BT1=R; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ ADRUM_BTa="R:587|g:fa8b66b4-3bc9-4405-9bd3-2c169827666c"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 08:58:42 GMT; Path=/ ADRUM_BTa="R:587|g:fa8b66b4-3bc9-4405-9bd3-2c169827666c|n:Okta_6d5b1e30-d05a-4894-a37b-81b5f6c60e0e"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 08:58:42 GMT; Path=/ ADRUM_BT1="R:587|i:14744"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 08:58:42 GMT; Path=/ ADRUM_BT1="R:587|i:14744|e:39"; Version=1; Max-Age=30; Expires=Thu, 08-Aug-2019 08:58:42 GMT; Path=/ sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ JSESSIONID=6D6696B8A992E2E66C12A30D6AA97808; Path=/; Secure; HttpOnly t=blue-dark; Path=/ DT=DI0mUxc05C4S0e0-AiHi00bAw; Expires=Sat, 07-Aug-2021 08:58:12 GMT; Path=/; Secure sid=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+X-Xss-Protection: 1; mode=block; report=https://okta.report-uri.com/r/d/xss/enforce
+Report-To: {"group":"csp-report","max_age":31536000,"endpoints":[{"url":"https://okta.report-uri.com/r/d/csp/reportOnly"}],"include_subdomains":true}
+Date: Thu, 08 Aug 2019 08:58:12 GMT
+Server: nginx
+X-Okta-Request-Id: XUvkJPn40ywrCijd@i84fgAAAYA
+X-Rate-Limit-Remaining: 849
+Content-Security-Policy-Report-Only: default-src 'self' ok3static.oktacdn.com algolia.okta.com; connect-src 'self' ok3static.oktacdn.com *.mixpanel.com *.mapbox.com app.pendo.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com; script-src 'unsafe-inline' 'unsafe-eval' 'self' ok3static.oktacdn.com; style-src 'unsafe-inline' 'self' ok3static.oktacdn.com app.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-src 'self' login.okta.com; img-src 'self' ok3static.oktacdn.com algolia.okta.com *.mapbox.com app.pendo.io data.pendo.io cdn.pendo.io pendo-static-5634101834153984.storage.googleapis.com; frame-ancestors 'self'; report-uri https://okta.report-uri.com/r/d/csp/reportOnly; report-to csp-report
+X-Content-Type-Options: nosniff
+Retry-Count: 0

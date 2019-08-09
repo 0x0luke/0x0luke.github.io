@@ -1,0 +1,24 @@
+200 OK
+X-Envoy-Upstream-Service-Time: 174
+Via: 1.1 varnish 1.1 varnish
+Date: Thu, 08 Aug 2019 06:56:26 GMT
+Age: 0
+X-Timer: S1565247386.162974,VS0,VE267
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: IE=Edge,chrome=1
+Link: <https://a0.muscache.com/airbnb/static/packages/common-0899817928108a7ad87c18bbdef856d8.css>;rel=preload;as=style,<https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-e64d8c7801ed36a9c7ae891d555a7620.css>;rel=preload;as=style,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin,<https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2>;rel=preload;as=font;type=font/woff2;crossorigin=crossorigin
+Set-Cookie: cdn_exp_dac1bb51f8021f9df=treatment; expires=Mon, 07 Oct 2019 06:56:26 GMT; domain=.airbnb.co.uk; path=/ cdn_exp_386c0b4d37dbea98e=control; expires=Mon, 07 Oct 2019 06:56:26 GMT; domain=.airbnb.co.uk; path=/ cdn_exp_6006dbfd9073e1a4a=treatment; expires=Mon, 07 Oct 2019 06:56:26 GMT; domain=.airbnb.co.uk; path=/ 016951b48=treatment; expires=Mon, 07 Oct 2019 06:56:26 GMT; domain=.airbnb.co.uk; path=/ cache_state=0; domain=.airbnb.co.uk; path=/;  Secure
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+Vary: Accept-Encoding
+Server: nginx
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=1200, public
+Content-Security-Policy: child-src blob:; connect-src 'self' https: wss://ws.airbnb.com https://netverify.com https://*.netverify.com *.inspectlet.com wss: *.amap.com https://*.mapbox.com; default-src 'self' https: blob:; font-src 'self' data: https://*.muscache.com fonts.gstatic.com https://use.typekit.net; frame-ancestors *; frame-src *; img-src 'self' https: data: *.inspectlet.com https://*.mapbox.com; media-src 'self' https: blob:; script-src 'self' 'unsafe-eval' https://a0.muscache.com https://cdn.siftscience.com https://ss.musthird.com https://t1.musthird.com https://bat.bing.com https://connect.facebook.net https://www.google-analytics.com https://www.googleadservices.com https://tpc.googlesyndication.com https://www.googletagmanager.com https://a.cdn.intentmedia.net https://maps.googleapis.com https://ajax.googleapis.com https://*.g.doubleclick.net https://www.google.com https://www.gstatic.com https://smartlock.google.com https://accounts.google.com https://app.link https://cdn.branch.io https://api.branch.io https://bam.nr-data.net https://js-agent.newrelic.com https://sslwidget.criteo.com https://static.criteo.net https://dis.criteo.com https://widget.us.criteo.com https://*.gbc.criteo.net https://ethn.io https://s.yimg.jp https://api.geetest.com https://cdn.ampproject.org https://storage.googleapis.com/workbox-cdn/ https://tagmanager.google.com https://pay.google.com 'sha256-rAm9O8JPZLtQmd84zMDzhsG5q35JscESxxcaFL7+DDc=' 'sha256-ck0NYnSq6evDrSU3QAgDAso6GSMHXE8SDlqTKWnxpKI=' 'sha256-9ZdLPFhnEQLHZCKEYdkKXUj5at+zztFTTILAt3y65+0=' 'sha256-anj/wlPABxVCuYmPnySD3CBbxtX3l2p5OQbQvHP9FsA=' 'sha256-MnioL5BuRJUruaRXOEDN6ssuUoUDtjvvCVp2PicfIIM=' https://netverify.com https://*.netverify.com https://icm.aexp-static.com https://qicm.americanexpress.com https://qwww435.americanexpress.com https://checkout.americanexpress.com https://www.paypalobjects.com https://c.paypal.com https://www.paypal.com *.inspectlet.com blob: https://webapi.amap.com https://restapi.amap.com https://*.mapbox.com; style-src 'self' https: 'unsafe-inline' https://*.mapbox.com; worker-src 'self'; report-uri /tracking/csp?controller=core-guest-loop&action=%2F&req_uuid=f499672a-55bc-4ef7-89f0-b0dde77a8b4f&version=sha%3Dbc848d45283d&report_only=false; report-to /tracking/csp?controller=core-guest-loop&action=%2F&req_uuid=f499672a-55bc-4ef7-89f0-b0dde77a8b4f&version=sha%3Dbc848d45283d&report_only=false
+X-Served-By: cache-bwi5128-BWI, cache-lhr6351-LHR
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+Accept-Ranges: bytes
+Etag: W/"3eb46-pkgwZWje7lLViXXh7590vRya+68"

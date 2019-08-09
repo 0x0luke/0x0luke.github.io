@@ -1,0 +1,11 @@
+200 OK
+Retry-Count: 0
+Set-Cookie: __cfduid=d4090f9cd7c8006e09b0655bcd101b2411565154604; expires=Thu, 06-Aug-20 05:10:04 GMT; path=/; domain=.bitdefender.com; HttpOnly
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Cf-Ray: 5026bdf7eedfd20c-MAN
+Date: Wed, 07 Aug 2019 05:10:04 GMT
+Content-Type: text/html
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

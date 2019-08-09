@@ -1,0 +1,12 @@
+200 OK
+Retry-Count: 0
+Content-Security-Policy: upgrade-insecure-requests
+Referrer-Policy: origin-when-cross-origin
+X-Powered-By: Salesforce.com ApexPages
+P3p: CP="CUR OTR STA"
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 07 Aug 2019 04:23:27 GMT
+Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding
