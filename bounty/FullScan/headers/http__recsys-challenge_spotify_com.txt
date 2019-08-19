@@ -1,8 +1,0 @@
-200 OK
-Via: 1.1 google
-Retry-Count: 0
-Date: Wed, 07 Aug 2019 04:19:56 GMT
-Content-Type: text/html; charset=utf-8
-Server: gunicorn/19.7.1
-Vary: Accept-Encoding
-Set-Cookie: session=eyJpZCI6bnVsbCwidXNlcl9pZCI6bnVsbH0.ECvi7A.tELorkImst8312IXcHLHwIm6ADA; HttpOnly; Path=/

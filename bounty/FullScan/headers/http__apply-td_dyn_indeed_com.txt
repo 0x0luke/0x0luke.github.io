@@ -1,8 +1,0 @@
-503 Service Unavailable
-Server: nginx
-Date: Thu, 08 Aug 2019 07:32:30 GMT
-Content-Type: text/html
-Retry-Count: 0
-Cache-Control: no-cache
-Lb_pool: mesos_external_pool
-Strict-Transport-Security: max-age=31536000

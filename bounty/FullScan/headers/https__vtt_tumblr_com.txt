@@ -1,8 +1,0 @@
-403 Forbidden
-Alt-Svc: quic=":443"; ma=2592000; v="44,43,39,35"
-Content-Type: application/xml
-Date: Wed, 07 Aug 2019 12:38:01 GMT
-Server: AmazonS3
-X-Amz-Bucket-Region: us-east-1
-Retry-Count: 0
-Access-Control-Allow-Origin: *

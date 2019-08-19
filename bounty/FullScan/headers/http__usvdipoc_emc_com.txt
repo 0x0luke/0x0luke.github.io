@@ -1,9 +1,0 @@
-200 OK
-Content-Type: text/html;charset=UTF-8
-Strict-Transport-Security: max-age=31536000
-Content-Security-Policy: default-src 'self';font-src 'self' data:;script-src 'self' 'unsafe-inline' 'unsafe-eval' data:;style-src 'self' 'unsafe-inline';frame-ancestors 'none'
-X-Content-Type-Options: nosniff
-X-Xss-Protection: 1; mode=block
-Retry-Count: 0
-Set-Cookie: JSESSIONID=919A1EFA26DE6A907CADC14DE2D37204; Path=/; Secure; HttpOnly
-Content-Length: 3097

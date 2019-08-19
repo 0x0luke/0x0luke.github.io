@@ -1,7 +1,0 @@
-200 OK
-Set-Cookie: web_ui_lang=ru; Path=/; Domain=.tamtam.chat; Expires=2019-11-06T11:35:24.518Z
-Retry-Count: 0
-Content-Length: 8398
-Content-Type: text/html; charset=utf-8
-Strict-Transport-Security: max-age=2592000;includeSubdomains
-Content-Security-Policy-Report-Only: default-src 'self' blob:; script-src https://web.tamtam.chat https://www.googletagmanager.com/ https://www.google-analytics.com/ https://mc.yandex.ru/ blob: 'self' 'unsafe-inline'; style-src https://web.tamtam.chat 'unsafe-inline'; img-src https://*.mycdn.me https://*.ok.ru https://web.tamtam.chat https://www.google-analytics.com/ https://mc.yandex.ru/ https://stats.g.doubleclick.net/ https://*.tenor.com/ blob: data: 'self'; connect-src wss://ws.tamtam.chat/websocket https://*.mycdn.me/ https://ok.ru/web-api/tamtam https://mc.yandex.ru/ https://*.mapbox.com/ https://*.tenor.com/ https://ipapi.co/ 'self' blob:; media-src https://web.tamtam.chat https://*.mycdn.me https://*.ok.ru blob:; report-uri /csp/report

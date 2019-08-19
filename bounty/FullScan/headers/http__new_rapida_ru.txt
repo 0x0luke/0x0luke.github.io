@@ -1,9 +1,0 @@
-200 OK
-Server: nginx
-Date: Wed, 07 Aug 2019 04:15:33 GMT
-Content-Length: 2
-Vary: Accept-Encoding
-Content-Security-Policy-Report-Only: default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report
-Content-Type: text/html; charset=utf-8
-Retry-Count: 0
-Strict-Transport-Security: max-age=31536000; max-age=31536000;
