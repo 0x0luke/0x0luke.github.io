@@ -101,7 +101,7 @@ Typer.speed=3;
 Typer.file="0x0.txt";
 Typer.init();
  
-var timer = setInterval("t();", 90);
+var timer = setInterval("t();", 45);
 function t() {
 	Typer.addText({"keyCode": 123748});
 	
