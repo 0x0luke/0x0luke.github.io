@@ -97,7 +97,7 @@ function replaceUrls(text) {
 	}
 }
 
-Typer.speed=3;
+Typer.speed=8;
 Typer.file="0x0.txt";
 Typer.init();
  
