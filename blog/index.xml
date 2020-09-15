@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0x0luke&#39;s Pentesting Workshop</title>
+    <link>http://0x0luke.github.io/blog/</link>
+    <description>Recent content on 0x0luke&#39;s Pentesting Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2020 09:38:25 +0100</lastBuildDate>
+    
+	<atom:link href="http://0x0luke.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bug Hunting With Splunk</title>
+      <link>http://0x0luke.github.io/blog/posts/bug-hunting-with-splunk/</link>
+      <pubDate>Tue, 15 Sep 2020 09:38:25 +0100</pubDate>
+      
+      <guid>http://0x0luke.github.io/blog/posts/bug-hunting-with-splunk/</guid>
+      <description>Test Test Test</description>
+    </item>
+    
+  </channel>
+</rss>
